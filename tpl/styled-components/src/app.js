@@ -1,5 +1,5 @@
-import React from "react";
-import GlobalStyle from "./global-styles";
+import React from 'react';
+import GlobalStyle from './global-styles';
 
 export default function App() {
 	return (
