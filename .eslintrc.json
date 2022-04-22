@@ -14,5 +14,12 @@
     "sourceType": "module"
   },
   "plugins": ["react", "@typescript-eslint", "prettier"],
-  "rules": {}
+  "rules": {
+    "no-unused-vars": 0
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
 }
