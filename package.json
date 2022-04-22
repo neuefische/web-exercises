@@ -4,7 +4,8 @@
   "description": "Session exercises",
   "main": "n.a.",
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "markdown-toc": "npx markdown-toc -i README.md"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.20.0",
