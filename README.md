@@ -1,4 +1,4 @@
-# web-exercise
+# web exercises
 
 Exercises for the neuefische web bootcamps.
 
