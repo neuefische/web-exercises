@@ -6,11 +6,12 @@ These exercises are tailored as templates for codesandbox
 
 <!-- toc -->
 
-- [Generate Codesandbox from GitHub](#generate-codesandbox-from-github)
-- [Adding new exercises](#adding-new-exercises)
-- [Review new or changed exercises](#review-new-or-changed-exercises)
-- [Update exercises](#update-exercises)
-- [OPTIONAL: Import project to Codesandbox](#optional-import-project-to-codesandbox)
+- [web exercises](#web-exercises)
+  - [Generate Codesandbox from GitHub](#generate-codesandbox-from-github)
+  - [Adding new exercises](#adding-new-exercises)
+  - [Review new or changed exercises](#review-new-or-changed-exercises)
+  - [Update exercises](#update-exercises)
+  - [OPTIONAL: Import project to Codesandbox](#optional-import-project-to-codesandbox)
 
 <!-- tocstop -->
 
@@ -36,12 +37,15 @@ These exercises are tailored as templates for codesandbox
 In order to satisfy our review process, please follow these steps:
 
 1. Open a new branch following our [Branch guidelines](./docs/BRANCHES.md)
-2. Add a new project in the desired folder/session:  
+2. Go to [codesandbox](https://codesandbox.io/) and create a new Project there.
+3. Create your exercise in codesandbox.
+4. Download the project to you local machine.
+5. Add the downloaded project in the desired folder/session:  
    Example: `sessions/js-array-methods/`
-3. Commit the changes following [Commit guidelines](./docs/COMMITS.md)
-4. Open a new pull request
-5. Wait until the pull request has at least 2 approvals (enforced by branch protection)
-6. Add the GitHubBox link to the session exercise (This URL will generate a sandbox from the current main)
+6. Commit the changes following [Commit guidelines](./docs/COMMITS.md)
+7. Open a new pull request
+8. Wait until the pull request has at least 2 approvals (enforced by branch protection)
+9. Add the GitHubBox link to the session exercise (This URL will generate a sandbox from the current main)
 
 Example: https://githubbox.com/neuefische/web-exercises/tree/main/sessions/react-props-01
 
