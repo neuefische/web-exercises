@@ -1,9 +1,6 @@
 {
-  "name": "javascript",
+  "name": "static-html-css-js",
   "version": "1.0.0",
-  "description": "JavaScript template",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  }
+  "description": "Static HTML template with CSS and JS",
+  "main": "index.html"
 }
