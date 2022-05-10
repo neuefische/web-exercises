@@ -1,7 +1,5 @@
 console.clear();
 
-console.clear();
-
 // Get DOM Elements
 const laser = document.querySelector('[data-js="laser"]');
 const cat = document.querySelector('[data-js="cat"]');
