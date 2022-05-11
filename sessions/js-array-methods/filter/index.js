@@ -23,12 +23,6 @@ const cards = [
 	},
 ];
 
-// Filter: returns an array of max. same length
-// but with unaltered content
-// is called with a function that returns a 'truthy' or 'falsy' value
-const notBookmarkedCards = cards.filter(card => !card.isBookmarked);
-console.log(notBookmarkedCards);
-
 // 1: Filter the array for cards with the 'html' tag
 // HINT: use the array method "includes"
 const onlyCardsWithTagHTML = null;
