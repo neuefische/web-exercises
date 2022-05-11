@@ -1,0 +1,15 @@
+.App__container {
+  padding: 5px;
+  background-color: #12121a;
+  color: #ccd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.App__card-grid {
+  display: grid;
+  gap: 30px;
+  padding: 20px;
+}
