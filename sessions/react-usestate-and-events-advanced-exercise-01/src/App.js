@@ -22,7 +22,7 @@ because their states now only live inside the Form component.
 5. Lift up both states from your Form to your App component.
 6. In your App.js, write a function createUser(name, email)
 where you call the set functions of both states to update them.
-7. Pass createUser() as an `onCreateUser` prop to your Form component.
+7. Pass createUser as an `onCreateUser` prop to your Form component.
 Make sure to accept `onCreateUser` in your Form as well.
 8. Inside the Form's handleSubmit(), replace setName() and setEmail()
 with your newly accepted prop `onCreateUser()`.
