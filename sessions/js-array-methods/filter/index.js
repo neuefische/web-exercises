@@ -36,5 +36,5 @@ const onlyCardsWithTagHTML = null;
 // 2: Filter the array for cards with 3 tags.
 const allCardsWith3Tags = null;
 
-// 3: Filter the array for cards with the 'html' and 'js' tag that are also bookmarked.
-const allCardsWithTagsHTMLAndJSThatAreBookmarked = null;
+// 3: Filter the array for cards with the 'html' or 'js' tag that are also bookmarked.
+const allCardsWithTagsHTMLOrJSThatAreBookmarked = null;
