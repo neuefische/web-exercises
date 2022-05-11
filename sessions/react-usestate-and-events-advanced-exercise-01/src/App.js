@@ -20,7 +20,7 @@ because their states now only live inside the Form component.
 
 4. Comment out `{name}` and `{email}` for the moment.
 5. Lift up both states from your Form to your App component.
-6. In your App.js, write a function createUser()(name, email)
+6. In your App.js, write a function createUser(name, email)
 where you call the set functions of both states to update them.
 7. Pass createUser() as an `onCreateUser` prop to your Form component.
 Make sure to accept `onCreateUser` in your Form as well.
