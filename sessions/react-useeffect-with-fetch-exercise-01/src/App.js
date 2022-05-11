@@ -1,6 +1,8 @@
 /* Exercise:
-Change the code below so that the "loadPokemon" function is only executed
-when the app component is rendered.
+For now the pokemon are only fetched when we click the button below. Lets change the code such our app does this automatically.
+	- Remove the 'Load Pokemon' button.
+	- Change the code below so that the "loadPokemon" function is only executed
+	when the app component is rendered.
 
 Hint: Don't forget the dependency array!
 */
