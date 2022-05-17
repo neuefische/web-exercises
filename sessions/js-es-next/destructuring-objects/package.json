@@ -1,0 +1,9 @@
+{
+  "name": "destructuring-objects",
+  "version": "1.0.0",
+  "description": "JavaScript template",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
