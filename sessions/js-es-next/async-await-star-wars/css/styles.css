@@ -1,11 +1,12 @@
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
+.tag-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
 }
 
-body {
-	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
-		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+.tag {
+	list-style: none;
+	padding: 2px 8px;
+	background: papayawhip;
+	border-radius: 5px;
 }
