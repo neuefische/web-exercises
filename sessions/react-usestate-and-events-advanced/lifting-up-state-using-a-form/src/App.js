@@ -29,7 +29,7 @@ with your newly accepted prop `onCreateUser()`.
 Make sure to pass the correct values to this function.
  */
 
-import { useState } from 'react';
+import {useState} from 'react';
 import './styles.css';
 
 export default function App() {
@@ -39,7 +39,7 @@ export default function App() {
 	function handleSubmit(event) {
 		event.preventDefault();
 		const form = event.target;
-		const { name, email } = form.elements;
+		const {name, email} = form.elements;
 		setName(name.value);
 		setEmail(email.value);
 		form.reset();

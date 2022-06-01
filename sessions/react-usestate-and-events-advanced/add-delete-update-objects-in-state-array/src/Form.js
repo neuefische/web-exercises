@@ -1,8 +1,8 @@
-export default function Form({ handleSubmit }) {
+export default function Form({handleSubmit}) {
 	function onSubmit(event) {
 		event.preventDefault();
 		const form = event.target;
-		const { name } = form.elements;
+		const {name} = form.elements;
 		handleSubmit(name.value);
 		form.reset();
 	}

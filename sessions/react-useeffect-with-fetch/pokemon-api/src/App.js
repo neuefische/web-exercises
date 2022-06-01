@@ -8,7 +8,7 @@ Hint: Don't forget the dependency array!
 */
 
 import './styles.css';
-import { useState } from 'react';
+import {useState} from 'react';
 
 export default function App() {
 	const [pokemon, setPokemon] = useState([]);
@@ -27,7 +27,7 @@ export default function App() {
 		<main className="App">
 			<button onClick={loadPokemon}>Load Pokémon</button>
 			<ul>
-				{pokemon.map(({ name }) => (
+				{pokemon.map(({name}) => (
 					<li key={name}>{name}</li>
 				))}
 			</ul>
