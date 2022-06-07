@@ -7,6 +7,7 @@
  *
  * 1. Use the <Routes> and <Route> components to render the four page components based on the current route.
  * Use the following routes: "/", "/team", "/product", "account"
+ * Don't forget to add the <BrowserRouter> component to the index.js
  *
  * 2. The "home" page contains a link to the "team" page. Make the link work by using the <Link> component.
  *
@@ -20,6 +21,7 @@
  * (Tip: <NavLink> component from "react-router" provides an "active" class)
  *
  * 7. The "account" page includes a login button. Use the event handler to switch programmatically to the "/" page, after the user clicks on the button.
+ * (Tip: "react-router" provides the "useNavigate" hook)
  */
 
 import Header from './components/Header';
