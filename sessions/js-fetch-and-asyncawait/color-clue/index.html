@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<title>HTML & CSS & JS</title>
+		<link rel="stylesheet" href="./css/styles.css" />
+	</head>
+	<body>
+		<main>
+			<div>
+				<h1>Color Clue</h1>
+				<p>Can you guess the correct color to the color name?</p>
+			</div>
+			<h2 data-js="nameDisplay">loading...</h2>
+			<form action="">
+				<input data-js="colorInput" type="color" value="#6BAB90" />
+			</form>
+			<button type="button" data-js="submitButton">Check</button>
+			<div data-js="restartScreen" class="display--hidden">
+				<p class="score-text" data-js="distanceDisplay">Score:</p>
+				<button type="button" data-js="restartButton">Restart</button>
+			</div>
+		</main>
+	</body>
+	<script src="./js/index.js"></script>
+</html>
