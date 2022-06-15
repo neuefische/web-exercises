@@ -1,0 +1,32 @@
+/* Exercise: We have a navigation with some links that look like buttons as part of a header. Now we want to arrange the links with flexbox to achieve a more responsive layout of the menu. The following criteria should be met:
+
+- The links are horizontally spaced as far apart as possible.
+- The first link is placed at the beginning and the last link at the end.
+- If you reduce the width of the viewport, then the links wrap to the next line when the space becomes too small.
+- There should be a minimum vertical and horizontal gap of about 10 px between the links.
+
+Hint: Look carefully which element should be the flexbox container.
+
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: monospace;
+}
+
+header {
+	padding: 50px 10px 20px;
+	background-color: aliceblue;
+}
+
+.button {
+	background-color: lightskyblue;
+	padding: 0.6rem 1.5rem;
+	color: black;
+	border-radius: 5px;
+	text-decoration: none;
+	font-size: 1.2rem;
+}
