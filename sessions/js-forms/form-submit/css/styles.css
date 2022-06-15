@@ -1,0 +1,29 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 20px auto;
+	max-width: 300px;
+}
+
+form * {
+	display: block;
+}
+
+fieldset {
+	margin: 10px 0;
+	display: grid;
+	justify-items: start;
+	gap: 5px;
+}
+
+button {
+	margin-top: 0.5rem;
+}
+
+legend {
+	background-color: black;
+	color: white;
+	padding: 0.2rem;
+}
