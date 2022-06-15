@@ -1,0 +1,22 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 20px auto;
+	max-width: 300px;
+}
+
+form * {
+	display: block;
+}
+
+button {
+	margin-top: 0.5rem;
+}
+
+legend {
+	background-color: black;
+	color: white;
+	padding: 0.2rem;
+}

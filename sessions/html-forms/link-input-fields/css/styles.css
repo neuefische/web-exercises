@@ -1,0 +1,16 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 20px auto;
+	max-width: 300px;
+}
+
+form * {
+	display: block;
+}
+
+button {
+	margin-top: 0.5rem;
+}
