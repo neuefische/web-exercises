@@ -1,0 +1,53 @@
+/* Scroll down to get to the exercise! */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	line-height: 1.5;
+	padding: 20px;
+}
+
+h1,
+h2 {
+	line-height: 1.2;
+	border-bottom: 5px dotted indigo;
+	text-align: center;
+}
+
+img {
+	border-radius: 50%;
+	max-width: 50%;
+	height: auto;
+}
+
+/* ------- The exercise starts here ------- */
+
+/* Exercise 1: The first section contains a image and a about text. Style this section with flexbox so that the image is centered.*/
+
+/* your solution: */
+
+/* Exercise 2: The tech stack list needs to be polished! Arrange the listitems with flexbox according to the following criteria:
+
+- Each listitem should be as wide as its characters plus the padding.
+- The space before, after and between the listitems are the same.
+- If the width is to small to contain all listitems in one row, they should wrap to the next line.
+- And there should always be a horizontal and vertical gap of 10px between each listitem.
+
+*/
+
+ul {
+	list-style: none;
+	padding-left: 0;
+	border-radius: 15px;
+}
+
+/* ------- The End ------- */
+
+li {
+	padding: 8px 15px 6px;
+	background-color: indigo;
+	color: white;
+	border-radius: 15px;
+}
