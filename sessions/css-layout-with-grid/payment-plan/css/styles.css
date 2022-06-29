@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+	background-color: rgb(35, 86, 87);
+}
+
+.plans {
+	margin: 0 auto;
+	padding: 2rem;
+	max-width: 50rem;
+
+	/* Add styles to the container */
+}
+
+.plans__option {
+	background-color: white;
+	padding: 2rem;
+	border-radius: 6px;
+}
+
+.plans__option--highlight {
+	background-color: rgb(101, 180, 228);
+	color: white;
+}
+
+.plans__name {
+	margin: 0 0 1rem 0;
+	font-size: 1rem;
+}
+
+.plans__price {
+	font-size: 2.5rem;
+	font-weight: bold;
+	margin: 0;
+}
