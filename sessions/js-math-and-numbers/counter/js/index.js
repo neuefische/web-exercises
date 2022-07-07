@@ -6,4 +6,4 @@ Exercise: Implement a simple counter
 - [ ] Show the value in the <p> element.
 */
 
-const counter = 0;
+// let counter = 0;
