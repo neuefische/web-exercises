@@ -23,9 +23,9 @@
 
 import Movie from './Movie.js';
 import Form from './Form.js';
-import { useState } from 'react';
-import { nanoid } from 'nanoid';
-import { useImmer } from 'use-immer';
+import {useState} from 'react';
+import {nanoid} from 'nanoid';
+import {useImmer} from 'use-immer';
 import './styles.css';
 
 const initialMovieData = [

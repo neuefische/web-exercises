@@ -1,4 +1,4 @@
-export default function Movie({ id, name, like, toggleStatus }) {
+export default function Movie({id, name, like, toggleStatus}) {
 	function handleToggle() {
 		toggleStatus(id);
 	}
