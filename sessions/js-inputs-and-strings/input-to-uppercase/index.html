@@ -3,21 +3,22 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-		<title>HTML & CSS & JS</title>
+		<title>JS Inputs & Strings Exercise 1 - Uppercase</title>
 		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 	<body>
-		<section>
+		<form class="form">
 			<label for="first-input">First Input:</label>
 			<input
 				id="first-input"
-				class="input"
-				placeholder="Type here ..."
+				class="form__input"
 				type="text"
-				data-js="firstInput"
+				data-js="first-input"
+				aria-describedby="help-text"
 			/>
-			<button data-js="button-uppercase">&uarr;</button>
-		</section>
+			<p id="help-text">Type something to test your code.</p>
+			<button type="button" data-js="button-uppercase">&uarr;</button>
+		</form>
+		<script src="./js/index.js" defer></script>
 	</body>
-	<script src="./js/index.js"></script>
 </html>

@@ -1,17 +1,26 @@
-* {
+*,
+*::before,
+*::after {
 	box-sizing: border-box;
 }
 
-section {
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+.form {
 	display: grid;
 	grid-gap: 20px;
 	align-content: center;
-	width: 400px;
 	height: 100vh;
 	margin: 0 auto;
+	padding: 25px;
+	max-width: 500px;
 }
 
-.input {
-	border: 4px solid lightslategray;
-	padding-left: 10px;
+.form__input {
+	border: 1px solid lightslategray;
+	padding: 5px 10px;
 }

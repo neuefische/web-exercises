@@ -3,22 +3,23 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-		<title>HTML & CSS & JS</title>
+		<title>JS Inputs & Strings Exercise 3 - Switch Inputs</title>
 		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 	<body>
-		<section>
+		<form class="form">
 			<label for="first-input">First Input:</label>
 			<input
 				id="first-input"
-				class="input"
-				placeholder="Type here ..."
+				class="form__input"
 				type="text"
-				data-js="firstInput"
+				data-js="first-input"
+				aria-describedby="help-text"
 			/>
-			<button data-js="button-uppercase">&uarr;</button>
-			<button data-js="button-lowercase">&darr;</button>
-		</section>
+			<p id="help-text">Type something to test your buttons.</p>
+			<button type="button" data-js="button-uppercase">&uarr;</button>
+			<button type="button" data-js="button-lowercase">&darr;</button>
+		</form>
+		<script src="./js/index.js" defer></script>
 	</body>
-	<script src="./js/index.js"></script>
 </html>

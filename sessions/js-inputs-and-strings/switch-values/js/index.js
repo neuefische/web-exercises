@@ -1,6 +1,11 @@
-console.clear();
+/*
+Tasks:
+1. Add a second input.
+2. Add a third button for implementing a switch functionality in JS: When the button is clicked, the first input field should display the value of the second input field and the second should display the value of the first.
+3. Adjust the event listener for your uppercase and lowercase buttons: Make sure that they also apply to your new second input as well.
+*/
 
-const input = document.querySelector('[data-js="firstInput"]');
+const input = document.querySelector('[data-js="first-input"]');
 const uppercaseButton = document.querySelector('[data-js="button-uppercase"]');
 const lowercaseButton = document.querySelector('[data-js="button-lowercase"]');
 
@@ -11,11 +16,3 @@ uppercaseButton.addEventListener('click', () => {
 lowercaseButton.addEventListener('click', () => {
 	input.value = input.value.toLowerCase();
 });
-
-/*
-Tasks:
-1. Add a second input.
-2. Add a third button.
-3. In JS, add an event listener for your switch button. The button should switch the value between the two inputs.
-4. Make sure that your upper and lower case button now  apply to your new second input as well.
-*/
