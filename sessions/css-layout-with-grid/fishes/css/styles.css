@@ -2,6 +2,8 @@
 *::before,
 *::after {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
@@ -26,10 +28,6 @@ body {
 
 .fishes__headline {
 	margin: 0 0 1rem 0;
-}
-
-.fishes__description {
-	margin: 0;
 }
 
 .fishes__icon {
