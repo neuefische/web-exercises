@@ -2,8 +2,5 @@
   "name": "javascript-basic-functions-exercise",
   "version": "1.0.0",
   "description": "JavaScript exercises for basic functions",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  }
+  "main": "index.html"
 }
