@@ -4,7 +4,7 @@
 
 /* Exercise 1: Adjust the overall layout with Flexbox according to the following criteria:
 
-- The content is aligned in the center and should stay in the center when changing the size of the viewport.
+- The content should be aligned in the center and should stay in the center when changing the size of the viewport.
 - The heading "My Personal Travel Diary" should also be aligned in the center of the page.
 - Note: The layout of the article elements should stay the same!
 
@@ -39,7 +39,7 @@ img {
 /* Exercise 2: Our diary posts should also be presented in a more responsive layout. Therefore, we want to meet the following criteria:
 
 - There should be a vertical and horizontal gap between the posts of 20px.
-- The posts are aligned in the center and should stay in the center when changing the size of the viewport.
+- The posts should be aligned in the center and should stay in the center when changing the size of the viewport.
 - If the width of the viewport is too small, then the posts should wrap to the next line.
 */
 
@@ -49,7 +49,7 @@ img {
 	/* solution: */
 }
 
-.diary-post {
+.diary__post {
 	max-width: 400px;
 	background-color: white;
 	border-radius: 5px;

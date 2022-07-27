@@ -28,12 +28,12 @@ img {
 
 /* your solution: */
 
-/* Exercise 2: The tech stack list needs to be polished! Arrange the listitems with flexbox according to the following criteria:
+/* Exercise 2: The tech stack list needs to be polished! Arrange the list items with flexbox according to the following criteria:
 
-- Each listitem should be as wide as its characters plus the padding.
-- The space before, after and between the listitems are the same.
-- If the width is to small to contain all listitems in one row, they should wrap to the next line.
-- And there should always be a horizontal and vertical gap of 10px between each listitem.
+- Each list item should be as wide as its characters plus the padding.
+- The space before, after and between the list items should be the same.
+- If the width is to small to contain all list items in one row, they should wrap to the next line.
+- There should always be a horizontal and vertical gap of 10px between each list item.
 
 */
 
