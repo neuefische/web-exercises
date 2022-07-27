@@ -1,0 +1,26 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-prettier",
+    "stylelint-config-styled-components",
+    "stylelint-config-property-sort-order-smacss"
+  ],
+  "plugins": ["stylelint-order", "stylelint-a11y"],
+  "processors": ["stylelint-processor-styled-components"],
+  "rules": {
+    "order/order": ["custom-properties", "declarations"],
+    "selector-type-case": [
+      "lower",
+      {
+        "ignoreTypes": ["/^\\$\\w+/"]
+      }
+    ],
+    "value-keyword-case": ["lower", {"ignoreKeywords": ["dummyValue"]}],
+    "selector-type-no-unknown": [
+      true,
+      {
+        "ignoreTypes": ["/^\\$\\w+/"]
+      }
+    ]
+  }
+}

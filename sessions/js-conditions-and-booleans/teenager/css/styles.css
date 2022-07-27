@@ -1,0 +1,14 @@
+* {
+	box-sizing: border-box;
+}
+
+h1 {
+	text-align: center;
+}
+
+form {
+	margin: 40px auto;
+	display: grid;
+	gap: 8px;
+	max-width: 400px;
+}
