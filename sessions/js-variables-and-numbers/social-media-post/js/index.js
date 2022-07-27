@@ -1,7 +1,7 @@
 console.clear();
 
 /*
-1. Create the data for a little social media post. Create variables for the following data using the const keyword:
+1. Create the data for a small social media post. Create a const variable for each data point listed below.:
 	- a title
 	- a text
 	- the number of likes
@@ -14,7 +14,7 @@ console.clear();
 // --^-- write your code here --^--
 
 /*
-2. Log all variables to the console. Then increase the likes by one and log the amount of likes again. Adapt your code from 1.1 if necessary.
+2. Log all variables to the console. Increase the likes by one and log the amount of likes again. Adapt your code from 1.1 if necessary.
 */
 
 // --v-- write your code here --v--
