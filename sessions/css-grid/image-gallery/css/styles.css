@@ -1,3 +1,14 @@
+/*
+Use grid to change the layout:
+
+[ ] - Spring is displayed in the upper left corner
+[ ] - Summer is displayed in the upper right corner
+[ ] - Autumn is displayed at the bottom left
+[ ] - Winter is displayed at the bottom left
+
+Hint: you need only two lines of code in your grid container
+*/
+
 *,
 *::before,
 *::after {

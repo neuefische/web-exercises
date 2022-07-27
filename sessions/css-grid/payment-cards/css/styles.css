@@ -1,3 +1,12 @@
+/*
+Use grid to change the layout:
+
+[ ] - Three Cards are displayed next to each other
+[ ] - There is a gap the cards
+
+Hint: you need only three lines of code in your grid container
+*/
+
 *,
 *::before,
 *::after {
@@ -10,10 +19,10 @@ body {
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
 		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
-	background-color: rgb(35, 86, 87);
+	background-color: #E3E5E8;
 }
 
-.plans {
+.cards {
 	margin: 0 auto;
 	padding: 2rem;
 	max-width: 50rem;
@@ -21,23 +30,23 @@ body {
 	/* Add styles to the container */
 }
 
-.plans__option {
+.cards__option {
 	background-color: white;
 	padding: 2rem;
 	border-radius: 6px;
 }
 
-.plans__option--highlight {
-	background-color: rgb(101, 180, 228);
+.cards__option--highlight {
+	background-color: #fa4b12;
 	color: white;
 }
 
-.plans__name {
+.cards__name {
 	margin: 0 0 1rem 0;
 	font-size: 1rem;
 }
 
-.plans__price {
+.cards__price {
 	font-size: 2.5rem;
 	font-weight: bold;
 }

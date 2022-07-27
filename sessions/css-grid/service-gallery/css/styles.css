@@ -1,3 +1,11 @@
+/*
+Use grid to change the layout:
+
+[ ] - Services are displayed in three columns and two rows
+
+Hint: you need only two lines of code in your grid container
+*/
+
 *,
 *::before,
 *::after {
@@ -9,7 +17,7 @@
 body {
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
 		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-	background-color: rgb(49, 49, 57);
+	background-color: #252629;
 }
 
 .services {
@@ -26,7 +34,7 @@ body {
 
 .services__headline {
 	margin: 0 0 1rem 0;
-	color: rgb(255, 0, 128);
+	color: #fa4b12;
 }
 
 .services__text {
