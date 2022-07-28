@@ -12,7 +12,7 @@ printSquare(3);
 printSquare(5);
 
 /*
-2: We want to use a function which consumes the radius of a circle and logs
+2: We want to use a function which accepts the radius of a circle as a parameter and logs
    the circumference to the console. The function does not exist yet.
    The formula is: circumference = 2 * Pi * radius
 */

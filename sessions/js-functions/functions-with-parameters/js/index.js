@@ -6,7 +6,7 @@ console.log('Exercise 1:');
 1: The function below is not executed. Can you figure out why? Find the bug and fix it.
 */
 
-// Uncomment the following line of code and figure out why it does not work:
+// Uncomment the next line of code and figure out why it does not work:
 // logText;
 
 function logText() {
