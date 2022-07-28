@@ -23,7 +23,7 @@ printSquare(5);
 // printCircumference(6);
 
 /*
-3: We want to use a function which consumes the width and length of a rectangle
+3: We want to use a function which accepts the width and length of a rectangle
    and prints the following text to the console: "The area of the rectangle is ?".
    The function should print the correct area instead of the question mark "?".
    The function does not exist yet.
