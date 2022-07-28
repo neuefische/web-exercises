@@ -1,12 +1,11 @@
 console.clear();
 
 /*
-1: Create the data for a little social media post. Create variables for the following data using the const keyword:
-  - a title
-  - a text
-  - the number of likes
-  - the user who created the post
-  - a boolean called isReported
+1: Create the data for a book in an online store. Create variables for the following data:
+  - the book title
+  - the author
+  - the rating
+  - the number of sales
 */
 
 // --v-- write your code here --v--
@@ -14,8 +13,15 @@ console.clear();
 // --^-- write your code here --^--
 
 /*
-2: Log all variables to the console. Then increase the likes by one and log all variables again. Adapt your code from 1.1 if neccesary.
-Hint: to increase a value you can use following syntax: n = n + 1
+2: Log all variables to the console, for example:
+
+Title: The Lord of the Javascript
+Author: Mario
+Rating: 4.2
+Sales: 120
+
+Increase the number of sales and change the rating of the book afterwards.
+Then log all variables to the console again.
 */
 
 // --v-- write your code here --v--
@@ -24,10 +30,10 @@ Hint: to increase a value you can use following syntax: n = n + 1
 
 /*
 3: This code is quite repetitive and hard to read.
- - Write a function called logData which console logs all
+ - Write a function called logBookData which console logs all
    variables when it is called.
  - Then replace the console logs above with this function.
- - Now increase the number of likes 2 more times and log the data after each increase.
+ - Now increase the number of sales 2 more times and log the data after each increase.
 */
 
 // --v-- write your code here --v--
