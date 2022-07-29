@@ -1,8 +1,13 @@
 /*
-Create a fork for each exercise:
-1. Input value of first input should be copied to second input on button click
-2. Input value of first input should be copied in uppercase to second input on button click
-3. Input values should switch on button click: First input should display the value of the second input and vice versa.
+
+1. On button click: the value of the first input field is copied to second input field
+Important! Create a fork for each sub challenge  
+
+2. On button click: the value of the first input field is copied in uppercase to second input field
+Important! Create a fork for each sub challenge 
+
+3. On button click: the values switch. The first input field display the value of the second input field and vice versa.
+Important! Create a fork for each sub challenge 
 
 */
 
