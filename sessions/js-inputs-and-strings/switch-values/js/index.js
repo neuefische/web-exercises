@@ -1,15 +1,15 @@
 /*
 
-Switching th input value from first and second fields when clicking the button
+Switch the input values of the two input fields when clicking the button
 
-- [ ] Add a second input element to the index.html 
-- [ ] Declare a variable and assign the second input element
-- [ ] Add a third button element to the index.html 
-- [ ] Declare a variable and assign the third button element (the switch button)
-- [ ] Implementing a switch functionality: When the switch button is clicked, the first input field display the value of the second input field and the second display the value of the first
-- [ ] Add an event listener and convert to the uppercase and lowercase buttons: Make sure that they also apply to the new second input value as well
+- [ ] Add a second input element to the index.html
+- [ ] Assign the second input element to a variable
+- [ ] Add a third button (a switch button) to the index.html
+- [ ] Assign the third button to a variable
+- [ ] Make sure that when the switch button is clicked, the values of the two input fields are being switched
+- [ ] Make sure that all three buttons work on both input fields
 
-Hint: the HTML entity for the switch buttton is: &updownarrow 
+Hint: the HTML entity for the switch button is: &updownarrow
 
 */
 
@@ -18,9 +18,9 @@ const uppercaseButton = document.querySelector('[data-js="button-uppercase"]');
 const lowercaseButton = document.querySelector('[data-js="button-lowercase"]');
 
 uppercaseButton.addEventListener('click', () => {
-	input.value = input.value.toUpperCase();
+	firstInput.value = firstInput.value.toUpperCase();
 });
 
 lowercaseButton.addEventListener('click', () => {
-	input.value = input.value.toLowerCase();
+	firstInput.value = firstInput.value.toLowerCase();
 });
