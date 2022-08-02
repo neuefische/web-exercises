@@ -9,11 +9,8 @@ body {
 		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }
 
-legend {
-	background-color: gray;
-	color: white;
-}
-
-li {
-	margin-bottom: 1em;
+form {
+	display: grid;
+	gap: 8px;
+	max-width: 400px;
 }
