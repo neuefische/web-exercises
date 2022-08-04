@@ -20,11 +20,10 @@ const colors = [
 ];
 
 /*
-1: Create colored boxes from the array of hex codes.
-  1.1: Create an anonymous arrow function inside the forEach function call which receives one element, namely the colorCode.
-  1.2: inside this function create a new div and give it the color-box css class
-  1.3: Set the background-color of the new element to the colorCode.
-  1.4: Add the Element to the page.
+1: Create colored boxes from the array of hex codes using the `forEach` array method.
+  1.1: For each hex code a new `div` with the class `color-box` should be created
+  1.2: The `background-color` of the `div` should be the current hex code
+  1.3: The element should be added to the page
 */
 
 colors.forEach();
