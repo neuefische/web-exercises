@@ -29,8 +29,8 @@ const colors = [
 colors.forEach();
 
 /*
-Instead of writing the callback function directly inside the forEach method, we can use a function reference.
-  1.5: Create a new function called renderColorBox
-  1.6: Copy your code from the arrow function into this new function.
-  1.7: Use the forEach method with renderColorBox to create the color boxes a second time!
+2: Instead of writing the callback function directly inside the forEach method, we can use a function reference.
+  2.1: Create a new function called renderColorBox
+  2.3: Copy your code from the arrow function into this new function.
+  2.4: Use the forEach method with renderColorBox to create the color boxes a second time!
 */
