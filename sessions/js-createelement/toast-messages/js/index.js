@@ -1,6 +1,6 @@
 console.clear();
 
-const toastMessageContainer = document.querySelector('[data-js="toast-messages-container"]');
+const toastContainer = document.querySelector('[data-js="toast-container"]');
 const addButton = document.querySelector('[data-js="add-button"]');
 const clearButton = document.querySelector('[data-js="clear-button"]');
 

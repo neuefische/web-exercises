@@ -19,7 +19,7 @@ body {
 	max-width: 15rem;
 }
 
-.toast-messages-container {
+.toast-container {
 	display: flex;
 	flex-direction: column-reverse;
 	gap: 1rem;
@@ -32,7 +32,7 @@ body {
 	padding: 2rem;
 }
 
-.toast-message {
+.toast-container__message {
 	background-color: #fff;
 	padding: 1rem;
 	border-radius: 6px;
