@@ -49,7 +49,7 @@ nav li {
 /* The exercise starts here. */
 /* -------------------------------------------------------- */
 
-/* 1. This styles should apply to the headline */
+/* 1. These styles should apply to the headline */
 FIX_ME {
 	outline: 2px dashed red;
 	font-size: 2rem;
@@ -57,84 +57,84 @@ FIX_ME {
 	color: #2673bb;
 }
 
-/* 2. This styles should apply to all links */
+/* 2. These styles should apply to all links */
 FIX_ME {
 	outline: 2px dashed red;
 	color: #ff00e6;
 }
 
-/* 3. This styles should apply to all external links (Use can use the attribute selector) */
+/* 3. These styles should apply to all external links (you can use the attribute selector) */
 FIX_ME {
 	outline: 2px dashed red;
 	color: #ff8000;
 }
 
-/* 4. This styles should apply to all links in the main navigation */
+/* 4. These styles should apply to all links in the main navigation */
 FIX_ME {
 	outline: 2px dashed red;
 	color: #ffffff;
 	text-decoration: none;
 }
 
-/* 5. This styles should apply to the main navigation link corresponding to the current page */
+/* 5. These styles should apply to the main navigation link corresponding to the current page */
 FIX_ME {
 	outline: 2px dashed red;
 	color: #22e781;
 }
 
-/* 6. This styles should apply to all links in the footer */
+/* 6. These styles should apply to all links in the footer */
 FIX_ME {
 	outline: 2px dashed red;
 	color: inherit;
 }
 
-/* 7. This styles should apply to all paragraphs and all lists (Please use a class selector) */
+/* 7. These styles should apply to all paragraphs and all lists (please use a class selector) */
 FIX_ME {
 	outline: 2px dashed red;
 	color: #2c3f3f;
 }
 
-/* 8. This styles should apply to all "notes" */
+/* 8. These styles should apply to all "notes" */
 FIX_ME {
 	outline: 2px dashed red;
 	font-size: 0.8em;
 	color: #808080;
 }
 
-/* 9. This styles should apply to the welcome text */
+/* 9. These styles should apply to the welcome text */
 FIX_ME {
 	outline: 2px dashed red;
 	font-size: 1.2rem;
 	color: #000000;
 }
 
-/* 10. This styles should apply to the paragraph in the footer */
+/* 10. These styles should apply to the paragraph in the footer */
 FIX_ME {
 	outline: 2px dashed red;
 	color: #ffffff;
 }
 
-/* 11. This styles should apply to all lists */
+/* 11. These styles should apply to all lists */
 FIX_ME {
 	outline: 2px dashed red;
 	padding: 1rem 2rem;
 	background: #caced2;
 }
 
-/* 12. This styles should apply to all list items */
+/* 12. These styles should apply to all list items */
 FIX_ME {
 	outline: 2px dashed red;
 	margin: 0 0 0.5rem 0;
 }
 
-/* 13. This styles should apply to all nested lists */
+/* 13. These styles should apply to all nested lists */
 FIX_ME {
 	outline: 2px dashed red;
 	margin: 0.5rem 0 0 0;
 	background-color: #f1f1f1;
 }
 
-/* 14. This styles should apply to all list items in nested lists */
+/* 14. These styles should apply to all list items in nested lists */
 FIX_ME {
 	outline: 2px dashed red;
 	margin: 0;
