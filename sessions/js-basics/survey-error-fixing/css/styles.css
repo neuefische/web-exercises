@@ -23,14 +23,11 @@ body {
 .header {
 	background-color: rgb(35, 154, 197);
 	padding: 1rem;
-}
-
-.title {
 	text-align: center;
 	font-size: 1.8rem;
 }
 
-.main {
+.content {
 	display: flex;
 	flex-direction: column;
 	padding: 1rem;

@@ -1,5 +1,7 @@
 console.clear();
 
+// ------------------ 1 & 2 -----------------
+
 // 1. This code selects the "next" button using an ID. This is bad practice. Can you find a better solution?
 const nextButton = document.querySelector('#next');
 nextButton.addEventListener('click', () => {
@@ -11,6 +13,8 @@ const prevButton = document.querySelector('[data-js="prev-button"]');
 prevButton.addEventListener('prev', () => {
 	console.log('Go to previous question');
 });
+
+// ------------------ 3 & 4 -----------------
 
 const firstChoiceButton = document.querySelector('[data-js="choice-button-1"]');
 const secondChoiceButton = document.querySelector('[data-js="choice-button-2"]');
