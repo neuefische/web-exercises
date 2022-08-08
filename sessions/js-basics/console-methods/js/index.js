@@ -1,19 +1,21 @@
 console.clear();
 
-// Your exercise starts here!
+// The exercise starts here!
 
-// In this exercise we want to practice some console methods.
+// All console methods can be found on mdn for reference: https://developer.mozilla.org/en-US/docs/Web/API/console
 
-// 1. Store the sentence 'Happy coding!' in a variable with the name 'coding'.
+// 1. Store the sentence 'Happy coding!' in a variable named 'coding'.
 
-// 2. Use the right way to output the data of the variable 'coding' as a message in the console.
+// 2. Display the variable 'coding' as a message in the console.
 
-// 3. Now store the value 'Happy hacking!' in the variable 'hacking' and use the right method to output the variable in the console.
+// 3. Store the sentence 'Happy hacking!' in the variable named 'hacking'. 
 
-// 4. We want to get rid of all messages in our console. Do you remember the right method to clear your console?
+// 4. Display the variable 'hacking' as a message in the console.
 
-// 5. Next step is to store the text 'This is an error!' in the variable 'error'.
+// 5. Which method is used to clear the console? Use it to tidy up the console.
 
-// 6. Now we want that the value of our error variable is shown as a error message in the console. Choose the right console method.
+// 6. Store the text 'This is an error!' in the variable 'error'.
 
-// Hooray! You reached the end of your exercise!
+// 7. Which method is used to display an error message in the console? Use it do display the error message in the console.
+
+// Well done!
