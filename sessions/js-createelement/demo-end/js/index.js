@@ -10,7 +10,7 @@ form.addEventListener('submit', event => {
 	const cardText = textInput.value;
 	newCard.classList.add('card');
 	newCard.innerHTML = `
-		<h2>Card</h2>
+		<h2 class="card__title">Card</h2>
 		<p>${cardText}</p>
 	`;
 	cardContainer.append(newCard);
