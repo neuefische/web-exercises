@@ -6,4 +6,8 @@ Exercise: Implement a simple counter
 - [ ] The counter should be shown in the result element.
 */
 
-let counter = 0;
+const counter = 0;
+
+const resultOutput = document.querySelector('[data-js="result"]');
+const addButton = document.querySelector('[data-js="add-button"]');
+const subtractButton = document.querySelector('[data-js="subtract-button"]');
