@@ -1,5 +1,5 @@
 /*
-Exercise: Implement the calculator funtionality!
+Exercise: Implement the calculator functionality!
 
 - [ ] All results should be stored in the element holding the result
 - [ ] The add-button should add the two numbers written in the input fields.
