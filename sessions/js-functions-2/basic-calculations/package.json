@@ -1,0 +1,17 @@
+{
+  "name": "basic-calculations",
+  "version": "0.0.10",
+  "description": null,
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "keywords": [],
+  "dependencies": {},
+  "devDependencies": {
+    "react-scripts": "1.0.0"
+  }
+}
