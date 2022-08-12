@@ -2,7 +2,12 @@ console.clear();
 
 /*
 Complete the functions add, subtract, multiply, divide and remainder.
-They should return the result of the respective calculation.
+They should return the result of the respective calculation:
+- add: the sum of the two numbers
+- subtract: the difference between the two numbers
+- multiply: the product of the numbers
+- divide: the division of the two numbers
+- remainder: the modulo or remainder of of "a modulo b"
 */
 
 function add(a, b) {

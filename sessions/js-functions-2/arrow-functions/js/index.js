@@ -8,7 +8,9 @@ Use implicit returns when possible
 function getCurrentHour() {
 	const now = new Date();
 	const currentHour = now.getHours();
-	if (currentHour <= 12) {
+	if (currentHour === 0) {
+		return '12am';
+	} else if (currentHour <= 11) {
 		return currentHour + 'am';
 	} else {
 		return currentHour - 12 + 'pm';
