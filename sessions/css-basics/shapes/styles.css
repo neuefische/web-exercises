@@ -1,11 +1,10 @@
-body {
-  background: lightcoral;
+* {
+	box-sizing: border-box;
 }
 
 .shapes {
-  width: 75px;
-  height: 75px;
-  margin: 30px;
-  background: black;
-  box-shadow: 0 0 5px 0 black;
+	width: 75px;
+	height: 75px;
+	margin: 30px;
+	background-color: black;
 }
