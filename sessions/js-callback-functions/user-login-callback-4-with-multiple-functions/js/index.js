@@ -33,5 +33,5 @@ function handleUserLogin(onSuccess, onError, userName) {
 // Call the function "handleUserLogin" and pass three arguments in this order:
 // - callback function: "showWelcomeMessage"
 // - callback function: "showErrorMessage"
-// - user name string: "JohnFoo"
+// - user name string: "John Doe"
 // (You should see the log from "showErrorMessage" in the console)
