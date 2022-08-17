@@ -1,7 +1,7 @@
 console.clear();
 
 function handleUserLogin(onSuccess) {
-	onSuccess('JaneDoe');
+	onSuccess('Jane Doe');
 }
 
 // The exercise starts here!

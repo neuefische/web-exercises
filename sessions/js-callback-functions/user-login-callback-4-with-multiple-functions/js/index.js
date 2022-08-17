@@ -1,7 +1,7 @@
 console.clear();
 
 function handleUserLogin(onSuccess, onError, userName) {
-	if (userName === 'JaneDoe') {
+	if (userName === 'Jane Doe') {
 		onSuccess(userName, 'admin');
 	} else {
 		onError(`Unknown user "${userName}"`);
@@ -26,12 +26,12 @@ function handleUserLogin(onSuccess, onError, userName) {
 // Call the function "handleUserLogin" and pass three arguments in this order:
 // - callback function: "showWelcomeMessage"
 // - callback function: "showErrorMessage"
-// - user name string: "JaneDoe"
+// - user name string: "Jane Doe"
 // (You should see the log from "showWelcomeMessage" in the console)
 
 // 4.
 // Call the function "handleUserLogin" and pass three arguments in this order:
 // - callback function: "showWelcomeMessage"
 // - callback function: "showErrorMessage"
-// - user name string: "JohnFoo"
+// - user name string: "John Doe"
 // (You should see the log from "showErrorMessage" in the console)

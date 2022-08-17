@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<title>HTML & CSS & JS</title>
+		<link rel="stylesheet" href="./css/styles.css" />
+    	<script src="./js/index.js" defer></script>
+	</head>
+	<body>
+		<section>
+			<h2 id="form-heading">Your personal information</h2>
+			<p id="form-description">
+				Please give us your name, age and hobbies to better target you with unwanted ads.
+			</p>
+
+			<form data-js="form" aria-labeledby="form-heading" aria-describedby="form-description">
+				<fieldset>
+					<legend>Enter your information</legend>
+					<label for="name">Name</label>
+					<input id="name" type="text" name="name" />
+					<label for="age">Age</label>
+					<input id="age" type="text" name="age" />
+					<label for="married">Married</label>
+					<input type="checkbox" name="married" id="married" />
+					<label for="hobbies">Hobbies</label>
+					<textarea name="hobbies" id="hobbies" cols="30" rows="10"></textarea>
+				</fieldset>
+				<button>Submit</button>
+			</form>
+		</section>
+	</body>
+</html>
