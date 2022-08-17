@@ -20,13 +20,16 @@ function fetchFilms(url) {
 // --^-- write/change code here --^--
 
 /* Exercise:
-Apply your new knowledge about the desctructuring assignment to change the filmTitleList function.
+Apply your new knowledge about the desctructuring assignment to change the filmTitleList function below.
 */
 
 function filmTitleList(films) {
 	const list = document.createElement('ul');
 	list.className = 'list';
 	document.body.append(list);
+
+	// --v-- write/change code here --v--
+
 	films.forEach(film => {
 		const item = document.createElement('li');
 		item.className = 'item';
@@ -38,6 +41,9 @@ function filmTitleList(films) {
       <li>${film.running_time} min</li>
     </ul>
     `;
+
+	// --^-- write/change code here --^--
+	
 		list.append(item);
 	});
 }
