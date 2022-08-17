@@ -26,7 +26,7 @@ function handleUserLogin(onSuccess, onError, userName) {
 // Call the function "handleUserLogin" and pass three arguments in this order:
 // - callback function: "showWelcomeMessage"
 // - callback function: "showErrorMessage"
-// - user name string: "JaneDoe"
+// - user name string: "Jane Doe"
 // (You should see the log from "showWelcomeMessage" in the console)
 
 // 4.
