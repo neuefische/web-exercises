@@ -43,10 +43,10 @@ In order to satisfy our review process, please follow these steps:
    - Option 2: Download an existing codesandbox (see screenshot below)
 3. Commit the changes following [Commit guidelines](./docs/COMMITS.md)
 4. Open a new pull request
-5. Wait until the pull request has at least 2 approvals (enforced by branch protection)
+5. Wait until the pull request has at least 1 approval (enforced by branch protection)
 6. Add the GitHubBox link to the session exercise (This URL will generate a sandbox from the current main)
 
-Example: https://githubbox.com/neuefische/web-exercises/tree/main/sessions/example
+Example: https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/example/exercise-01
 
 ![Export Codesandbox](docs/resources/codesandbox-export.png)
 
@@ -73,7 +73,7 @@ Since we generate the exercises from the GitHub folder, we don't have to update 
 2. Add new solutions in designated folder in codesandbox
 3. Add solutions with suffix `(solution 01)`
 
-> Each exercise should have two independent solutions.
+> Each exercise should have one independent solution.
 
 Example: https://codesandbox.io/dashboard/all/sessions/example
 
