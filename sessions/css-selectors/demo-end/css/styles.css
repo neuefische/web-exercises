@@ -1,0 +1,108 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* universal selector*/
+
+* {
+  box-sizing: border-box;
+}
+
+/* type selector*/
+
+body {
+  margin: 20px;
+}
+
+h1,
+h2 {
+  background-color: midnightblue;
+  color: white;
+  padding: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* class selector */
+
+.question-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.button {
+  background-color: indigo;
+  color: white;
+  width: 100px;
+  padding: 5px;
+}
+
+.button--submit {
+  background-color: hotpink;
+  color: black;
+}
+
+/* id selector: don't use it!!!! */
+
+#submit {
+}
+
+/* attribute selector */
+
+ul[role='list'] {
+  list-style: none;
+}
+
+a[href^='/'] {
+  color: hotpink;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* pseudo-classes */
+
+a:hover {
+  background-color: indigo;
+  color: white;
+  font-size: 1.4rem;
+}
+
+/*li:not(:first-child):not(:last-child) {
+  background-color: lightgrey;
+}*/
+
+li:nth-child(3n + 2) {
+  background-color: lightgrey;
+}
+
+/*pseudo-elements*/
+
+p::first-letter {
+  font-size: 2rem;
+}
+
+input::placeholder {
+  color: midnightblue;
+}
+
+a[href^='https']::before {
+  content: '🌍';
+  margin-right: 5px;
+}
+
+/* child selector */
+
+p > a {
+  margin: 0 5px;
+}
+
+/* adjacent sibling selector*/
+
+h2 + ul {
+  margin-top: 50px;
+}
