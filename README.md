@@ -6,12 +6,13 @@ These exercises are tailored as templates for codesandbox
 
 <!-- toc -->
 
-- [Generate Codesandbox from GitHub](#generate-codesandbox-from-github)
-- [Adding new exercises](#adding-new-exercises)
-- [Review new or changed exercises](#review-new-or-changed-exercises)
-- [Update exercises](#update-exercises)
-- [OPTIONAL: Local development](#optional-local-development)
-- [OPTIONAL: Import project to Codesandbox](#optional-import-project-to-codesandbox)
+- [web exercises](#web-exercises)
+  - [Generate Codesandbox from GitHub](#generate-codesandbox-from-github)
+  - [Adding new exercises](#adding-new-exercises)
+  - [Review new or changed exercises](#review-new-or-changed-exercises)
+  - [Update exercises](#update-exercises)
+  - [OPTIONAL: Local development](#optional-local-development)
+  - [OPTIONAL: Import project to Codesandbox](#optional-import-project-to-codesandbox)
 
 <!-- tocstop -->
 
@@ -44,7 +45,7 @@ In order to satisfy our review process, please follow these steps:
 3. Commit the changes following [Commit guidelines](./docs/COMMITS.md)
 4. Open a new pull request
 5. Wait until the pull request has at least 1 approval (enforced by branch protection)
-6. Add the GitHubBox link to the session exercise (This URL will generate a sandbox from the current main)
+6. Add the Codesandbox link to the session exercise (This URL will generate a sandbox from the current main)
 
 Example: https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/example/exercise-01
 
