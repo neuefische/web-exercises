@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<title>HTML Zoo Form</title>
+		<link rel="stylesheet" href="./css/styles.css" />
+	</head>
+	<body>
+		<section aria-label="contact">
+			<h2 id="form-heading">Zoo Visitor Sign Up</h2>
+			<p id="form-description">
+			  Please provide all necessary information on your stay with us.
+			</p>
+		  
+			<form aria-labeledby="form-heading" aria-describedby="form-description">
+			  <fieldset>
+				<legend>Enter your information</legend>
+		  
+				<label for="email-input">Tell us your furry email address</label>
+				<input
+				  id="email-input"
+				  type="email"
+				  name="email"
+				  placeholder="What's your email?"
+				  aria-label="Your email address"
+				/>
+		  
+				<label for="date-input">When do you want to visit us?</label>
+				<input id="date-input" type="date" name="date" />
+		  
+				<fieldset class="radio-options">
+				  <legend>Which one of these animals would you like to visit?</legend>
+				  <input id="relaxed-sloth" type="radio" name="your-power-animal" />
+				  <label for="relaxed-sloth">Relaxed Sloths</label>
+				  <input id="jumpy-kangaroo" type="radio" name="your-power-animal" />
+				  <label for="jumpy-kangaroo">Jumpy Kangaroos</label>
+				  <input id="singing-racoon" type="radio" name="your-power-animal" />
+				  <label for="singing-racoon">Singing racoons</label>
+				</fieldset>
+		  
+				<label for="text-input">Any safety concerns on your side?</label>
+				<textarea
+				  id="text-input"
+				  type="textarea"
+				  placeholder="80 characters max"
+				  rows="4"
+				  cols="50"
+				  maxlength="80"
+				  name="additional-info"
+				></textarea>
+		  
+				<label for="consent-input"
+				  >I hereby consent to the processing of my data.</label
+				>
+				<input id="consent-input" type="checkbox" name="consent" />
+				<label for="newsletter-input">I want the newsletter, please.</label>
+				<input id="newsletter-input" type="checkbox" name="newsletter" />
+		  
+				<button type="reset">Reset</button>
+				<button type="submit">Submit</button>
+			  </fieldset>
+			</form>
+		  </section>
+	</body>
+</html>

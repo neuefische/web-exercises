@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+	margin: 20px auto;
+	max-width: 300px;
+}
+
+  form {
+    display: block;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+  }
+
+  .radio-options {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  textarea {
+    margin-bottom: 10px;
+  }
+
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+
+  button {
+    margin-top: 0.5rem;
+  }
+
+  legend {
+    background-color: black;
+    color: white;
+    padding: 0.2rem;
+  }
