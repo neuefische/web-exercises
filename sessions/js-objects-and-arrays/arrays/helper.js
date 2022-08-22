@@ -4,7 +4,7 @@ export default function checkConditions(...conditions) {
         if (firstValueToCompare === secondValueToCompare) {
           return true;
         } else {
-          console.log(
+          console.error(
             `expected: ${variableName} equals ${secondValueToCompare}, currently: ${variableName} equals ${firstValueToCompare}.`,
           );
           return false;
