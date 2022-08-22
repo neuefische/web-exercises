@@ -1,0 +1,9 @@
+{
+  "name": "js-objects-and-arrays-arrays-and-objects",
+  "version": "1.0.0",
+  "description": "Exercise to arrays and objects",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
