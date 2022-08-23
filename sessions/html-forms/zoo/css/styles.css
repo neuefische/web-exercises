@@ -11,37 +11,51 @@ body {
 	max-width: 300px;
 }
 
-  form {
-    display: block;
-  }
+form {
+	display: block;
+}
 
-  input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-  }
+input:not(input[type='checkbox']) {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+}
 
-  .radio-options {
-    margin-bottom: 10px;
-    display: flex;
-    align-items: flex-start;
-  }
+.radio-options {
+	margin-bottom: 10px;
+	display: flex;
+	align-items: flex-start;
+}
 
-  textarea {
-    margin-bottom: 10px;
-  }
+.radio-options > legend {
+	background-color: #c8f;
+	color: white;
+	padding: 0.2rem;
+}
 
-  input[type="radio"] {
-    margin-right: 10px;
-  }
+textarea {
+	margin-bottom: 10px;
+}
 
-  button {
-    margin-top: 0.5rem;
-  }
+input[type='checkbox'] {
+	vertical-align: middle;
+}
 
-  legend {
-    background-color: black;
-    color: white;
-    padding: 0.2rem;
-  }
+label {
+	display: block;
+}
+
+input[type='radio'] {
+	bottom: 2px;
+}
+
+button {
+	margin-top: 0.5rem;
+}
+
+legend {
+	background-color: black;
+	color: white;
+	padding: 0.2rem;
+}
