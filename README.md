@@ -45,7 +45,7 @@ In order to satisfy our review process, please follow these steps:
 3. Commit the changes following [Commit guidelines](./docs/COMMITS.md)
 4. Open a new pull request
 5. Wait until the pull request has at least 1 approval (enforced by branch protection)
-6. Add the codesandbox link to the session exercise which was generated with `githubbox`. Don't forget to correct the branchname from your feature branch to `main`.
+6. Add the codesandbox link to the session exercise which was generated with `githubbox` (→ change `github.com` to `githubbox.com` in your browser bar). Don't forget to correct the branchname from your feature branch to `main`.
 
 Example: https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/example/exercise-01
 
