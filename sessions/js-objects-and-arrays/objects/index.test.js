@@ -7,9 +7,9 @@ import {
   } from './index';
   
   test('Exersice 1: Object personWithNameAgeEmail has properties name, age and email', () => {
-    expect(personWithNameAgeEmail.name).toBeDefined();
-    expect(personWithNameAgeEmail.age).toBeDefined();
-    expect(personWithNameAgeEmail.email).toBeDefined();
+    expect(personWithNameAgeEmail).toHaveProperty("name");
+    expect(personWithNameAgeEmail).toHaveProperty("age");
+    expect(personWithNameAgeEmail).toHaveProperty("email");
   });
   
   test('Exersice 2: nameOfAlex is "Alex" and ageOfAlex ist 24', () => {
@@ -18,12 +18,12 @@ import {
   });
   
   test('Exersice 3: personToChange.name is "Alex" and personToChange.age is 35', () => {
-    expect(personToChange.name).toEqual('Alex');
-    expect(personToChange.age).toEqual(35);
+    expect(personToChange).toHaveProperty("name", "Alex");
+    expect(personToChange).toHaveProperty("age", 35);
   });
   
   test('Exersice 4: petPluto.age is 5 and petPluto.breed is husky', () => {
-    expect(petPluto.age).toEqual(5);
-    expect(petPluto.breed).toEqual('husky');
+    expect(petPluto).toHaveProperty("age", 5);
+    expect(petPluto).toHaveProperty("breed", "husky");
   });
   
