@@ -1,73 +1,43 @@
-import checkConditions, {checkKeys} from './helper';
-
 console.clear();
 
-{
-  console.log('EXERCISE 1');
-  // Create an object person with the properties "name", "age" and "email".
+// EXERCISE 1
+// Create an object personWithNameAgeEmail with the properties "name", "age" and "email".
 
-  // --v-- write code here --v--
+const personWithNameAgeEmail = {
+  example: 'example',
+};
 
-  const person = {
-    example: 'example',
-  };
+// EXERCISE 2
+// Set the values of name and age equal to the corresponding values of the personAlex object.
 
-  // --^-- write code here --^--
+const personAlex = {
+  name: 'Alex',
+  age: 24,
+};
 
-  checkConditions([
-    checkKeys(person, ['name', 'age', 'email']),
-    true,
-    'person includes the keys "name", "age" and "email"',
-  ]);
-}
+const nameOfAlex = 'Change me';
+const ageOfAlex = 'Change me';
 
-{
-  console.log('EXERCISE 2');
-  // Set the values of name and age equal to the corresponding values of the person object.
+// EXERCISE 3
+// Change the value of name to "Alex" and the value of age to "35" by updating the object personToChange: person.existingProperty = newValue.
 
-  const person = {
-    name: 'Alex',
-    age: 24,
-  };
+const personToChange = {
+  name: 'Kim',
+  age: 24,
+};
 
-  // --v-- write code here --v--
+// EXERCISE 4
+// Add the properties age "5" and breed "husky" to the object petPluto: pet.newProperty = newValue.
 
-  const name = person;
-  const age = person;
+const petPluto = {
+  name: 'Pluto',
+  species: 'dog',
+};
 
-  // --^-- write code here --^--
-
-  checkConditions([name, 'Alex', 'name'], [age, 24, 'age']);
-}
-
-{
-  console.log('EXERCISE 3');
-  // Change the value of name to "Kim" and the value of age to "35" by updating the object: person.existingProperty = newValue.
-
-  const person = {
-    name: 'Alex',
-    age: 24,
-  };
-
-  // --v-- write code here --v--
-
-  // --^-- write code here --^--
-
-  checkConditions([person.name, 'Kim', 'name'], [person.age, 35, 'age']);
-}
-
-{
-  console.log('EXERCISE 4');
-  // Add the properties age "5" and breed "husky" to the object pet: pet.newProperty = newValue.
-
-  const pet = {
-    name: 'Pluto',
-    species: 'dog',
-  };
-
-  // --v-- write code here --v--
-
-  // --^-- write code here --^--
-
-  checkConditions([pet.age, 5, 'age'], [pet.breed, 'husky', 'breed']);
-}
+export {
+  personWithNameAgeEmail,
+  nameOfAlex,
+  ageOfAlex,
+  personToChange,
+  petPluto,
+};
