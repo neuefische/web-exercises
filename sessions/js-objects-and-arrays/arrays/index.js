@@ -1,147 +1,62 @@
-import checkConditions from './helper';
-
 console.clear();
 
-{
-  console.log('EXERCISE 1');
-  // Modify the array exampleArray so that it contains a number and a string (in that order).
+// EXERCISE 1
+// Modify the array exampleArray so that it contains a number and a string.
 
-  // --v-- write code here --v--
+const exampleArray = [true];
 
-  const exampleArray = [true, 10];
+// EXERCISE 2
+// Nest an array inside array nestedArray. After that exampleArray should contain an array as an element.
 
-  // --^-- write code here --^--
+const nestedArray = ['example', 10, true];
 
-  checkConditions(
-    [typeof exampleArray[0], 'number', 'first Element'],
-    [typeof exampleArray[1], 'string', 'second Element'],
-  );
-}
+// EXERCISE 3
+// Change the value of firstNumber to equal the first value of numbers using bracket notation.
 
-{
-  console.log('EXERCISE 2');
-  // Nest an array inside array exampleArray. After that exampleArray should contain an array as an element.
+const numbers = [20, 10, 50];
 
-  // --v-- write code here --v--
+const firstNumber = 'change me';
 
-  const exampleArray = ['example', 10, true];
+// EXERCISE 4
+// Change the fruit stored at index 0 of fruits to mango.
 
-  // --^-- write code here --^--
+const fruits = ['apple', 'banana', 'grapefruit'];
 
-  checkConditions([
-    exampleArray.some(element => Array.isArray(element)),
-    true,
-    'exampleArray includes an array',
-  ]);
-}
+// EXERCISE 5
+// Change the value of nestedNumber to equal fourth number of nestedNumbers using bracket notation.
 
-{
-  console.log('EXERCISE 3');
-  // Change the value of firstNumber to equal the first value of numbers using bracket notation.
+const nestedNumbers = [10, [20, 30, [40, 50]]];
 
-  const numbers = [20, 10, 50];
+const nestedNumber = 'change me';
 
-  // --v-- write code here --v--
+// EXERCISE 6
+// Put "rat" onto the end of petsWithPush variable by useing the array method push.
 
-  const firstNumber = 'pls edit me';
+const petsWithPush = ['dog', 'cat', 'rabbit'];
 
-  // --^-- write code here --^--
+// EXERCISE 7
+// Use the pop method to remove the last item from fruitsWithPop.
 
-  checkConditions([firstNumber, 20, 'firstNumber']);
-}
+const fruitsWithPop = ['apple', 'banana', 'mango'];
 
-{
-  console.log('EXERCISE 4');
-  // Change the fruit stored at index 0 of fruits to mango.
+// EXERCISE 8
+// Put "hamster" onto the start of unshiftedPets variable by useing the array method unshift.
 
-  // --v-- write code here --v--
+const unshiftedPets = ['dog', 'cat', 'rabbit'];
 
-  const fruits = ['apple', 'banana', 'grapefruit'];
+// EXERCISE 9
+// Use the shift method to remove the first item from shiftedFruits.
 
-  // --^-- write code here --^--
+const shiftedFruits = ['apple', 'banana', 'mango'];
 
-  checkConditions([fruits[0], 'mango', 'first Fruit']);
-}
-
-{
-  console.log('EXERCISE 5');
-  // Change the value of nestedNumber to equal fourth number of nestedNumbers using bracket notation.
-
-  const nestedNumbers = [10, [20, 30, [40, 50]]];
-
-  // --v-- write code here --v--
-
-  const nestedNumber = 'pls edit me';
-
-  // --^-- write code here --^--
-
-  checkConditions([nestedNumber, 40, 'nestedNumber']);
-}
-
-{
-  console.log('EXERCISE 6');
-  // Put "rat" onto the end of pets variable by useing the array method push.
-
-  // --v-- write code here --v--
-
-  const pets = ['dog', 'cat', 'rabbit'];
-
-  // --^-- write code here --^--
-
-  checkConditions([
-    pets.includes('rat'),
-    true,
-    'pets includes an element "rat"',
-  ]);
-}
-
-{
-  console.log('EXERCISE 7');
-  // Use the pop method to remove the last item from fruits.
-
-  // --v-- write code here --v--
-
-  const fruits = ['apple', 'banana', 'mango'];
-
-  // --^-- write code here --^--
-
-  checkConditions([
-    fruits.includes('mango'),
-    false,
-    'fruits includes an element "mango"',
-  ]);
-}
-
-{
-  console.log('EXERCISE 8');
-  // Put "hamster" onto the start of pets variable by useing the array method unshift.
-
-  // --v-- write code here --v--
-
-  const pets = ['dog', 'cat', 'rabbit'];
-
-  // --^-- write code here --^--
-
-  checkConditions([
-    pets.includes('hamster'),
-    true,
-    'pets includes an element "hamster"',
-  ]);
-}
-
-{
-  console.log('EXERCISE 9');
-  // Use the shift method to remove the first item from fruits.
-
-  // --v-- write code here --v--
-
-  const fruits = ['apple', 'banana', 'mango'];
-
-  // --^-- write code here --^--
-
-  checkConditions([
-    fruits.includes('apple'),
-    false,
-    'fruits includes an element "apple"',
-  ]);
-}
+export {
+  exampleArray,
+  nestedArray,
+  firstNumber,
+  fruits,
+  nestedNumber,
+  petsWithPush,
+  fruitsWithPop,
+  unshiftedPets,
+  shiftedFruits,
+};
