@@ -5,5 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
+  },
+  "devDependencies": {
+    "jest": "^28.1.3"
   }
 }
