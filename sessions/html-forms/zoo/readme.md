@@ -10,7 +10,7 @@ Switch to the index.html file and add all missing inputs and form elements!
 
 ## Email Address
 
-In order to get back to you, the Zoo needs to know your email address. Create the necessary `input field` and the corresponding `label`.
+In order to get back to you, the Zoo needs to know your email address. Create the necessary `input field` of type `email` and add the corresponding `label`.
 
 ## Arrival Date
 
