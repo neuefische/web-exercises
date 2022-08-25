@@ -50,22 +50,22 @@ const people = [
 const nameOfFirstPerson = 'change me';
 
 // EXERCISE 2
-// Change the value of the variable otherFriends to equal the other friends of Homer.
+// Change the value of the variable homersOtherFriends to equal the other friends of Homer.
 
 const homersOtherFriends = 'change me';
 
 // EXERCISE 3
-// Change the value of the variable age to equal the age of the third person.
+// Change the value of the variable ageOfThirdPerson to equal the age of the third person.
 
 const ageOfThirdPerson = 'change me';
 
 // EXERCISE 4
-// Change the value of the variable mothersName to equal the mothers name of the second person.
+// Change the value of the variable mothersNameOfSecondPerson to equal the mothers name of the second person.
 
 const mothersNameOfSecondPerson = 'change me';
 
 // EXERCISE 5
-// Change the value of the variable animaltype to equal the type of animal of Lisas pet.
+// Change the value of the variable animaltypeOfLisasPet to equal the type of animal of Lisas pet.
 
 const animaltypeOfLisasPet = 'change me';
 
