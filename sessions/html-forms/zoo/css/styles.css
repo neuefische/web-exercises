@@ -36,6 +36,8 @@ input:not(input[type='checkbox']) {
 
 textarea {
 	margin-bottom: 10px;
+	height: 4rem;
+	width: 100%;
 }
 
 input[type='checkbox'] {
