@@ -1,5 +1,12 @@
 # Objects
 
-In the exercises, the described variable is to be adjusted / added or the value of an object is to be changed / added. At the end perform tests to see if the tasks have been solved correctly. The exact task can be found in the respective exercises.
+In this exercise, you will encounter the following tasks:
 
-Please go to the index.js file to start the exercises.
+- assign or add a variable to a value of an object,
+- the variable itself is an object and you need to adjust it.
+
+If you want to check whether you solved the tasks correctly, open the "Tests" tab of Codesandbox.
+
+The exact task can be found in the respective exercises.
+
+Please switch to the index.js file to start the exercises. You will find the exact tasks there.

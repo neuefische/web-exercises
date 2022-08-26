@@ -11,7 +11,7 @@ const exampleArray = [true];
 const nestedArray = ['example', 10, true];
 
 // EXERCISE 3
-// Change the value of firstNumber to equal the first value of numbers using bracket notation.
+// Change the value of firstNumber to equal the first value of the numbers array using bracket notation.
 
 const numbers = [20, 10, 50];
 
@@ -23,14 +23,14 @@ const firstNumber = 'change me';
 const fruits = ['apple', 'banana', 'grapefruit'];
 
 // EXERCISE 5
-// Change the value of nestedNumber to equal fourth number of nestedNumbers using bracket notation.
+// Change the value of nestedNumber to equal the fourth number of nestedNumbers using bracket notation.
 
 const nestedNumbers = [10, [20, 30, [40, 50]]];
 
 const nestedNumber = 'change me';
 
 // EXERCISE 6
-// Put "rat" onto the end of petsWithPush variable by useing the array method push.
+// Put "rat" onto the end of petsWithPush variable by using the array method `.push()`.
 
 const petsWithPush = ['dog', 'cat', 'rabbit'];
 
@@ -40,7 +40,7 @@ const petsWithPush = ['dog', 'cat', 'rabbit'];
 const fruitsWithPop = ['apple', 'banana', 'mango'];
 
 // EXERCISE 8
-// Put "hamster" onto the start of unshiftedPets variable by useing the array method unshift.
+// Put "hamster" onto the start of unshiftedPets variable by using the array method unshift.
 
 const unshiftedPets = ['dog', 'cat', 'rabbit'];
 

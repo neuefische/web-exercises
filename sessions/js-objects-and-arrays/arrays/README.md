@@ -1,5 +1,13 @@
 # Arrays
 
-In the exercises it is necessary to adjust a variable or call a method. The variable is either to be assigned to a value from an array, is itself an array and is to be adjusted according to the specifications, or a method is to be called on the array. At the end perform tests to see if the tasks have been solved correctly. The exact task can be found in the respective exercises.
+In this exercise, you will encounter the following tasks:
 
-Please go to the index.js file to start the exercises.
+- assign a variable to a value of an array,
+- the variable itself is an array and you need to adjust it,
+- call a method on a given array.
+
+If you want to check whether you solved the tasks correctly, open the "Tests" tab of Codesandbox.
+
+The exact task can be found in the respective exercises.
+
+Please switch to the index.js file to start the exercises. You will find the exact tasks there.
