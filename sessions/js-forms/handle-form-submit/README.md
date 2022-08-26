@@ -12,6 +12,6 @@ Log all form data (in object form) into the console in the submit event handler.
 
 The formula is: `age + badness`
 
-Log to the console _(replace the values between &lt; and &gt;)_:
+Log to the console _(replace the values between the quotes)_:
 
-> The age-badness-sum of &lt;firstName&gt; is &lt;age-badness-sum&gt;
+> The age-badness-sum of "firstName" is "age-badness-sum"
