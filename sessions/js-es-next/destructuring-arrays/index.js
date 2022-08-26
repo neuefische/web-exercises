@@ -1,120 +1,63 @@
-import checkConditions from './helper';
-
 console.clear();
 
-/*
-1: Rewrite the code below to use array destructuring instead of assigning each value to a variable.
-*/
+// EXERCISE 1
+// Rewrite the code below to use array destructuring instead of assigning each value to a variable.
 
-{
-  console.log('EXERCISE 1');
+const item = ['Egg', 0.25, 12];
 
-  const item = ['Egg', 0.25, 12];
+const name = 'Change me';
+const price = 'Change me';
+const quantity = 'Change me';
 
-  // --v-- write code here --v--
+// EXERCISE 2
+// Rewrite the code below to use array destructuring instead of assigning each value to a variable.
 
-  const name = item[0];
-  const price = item[1];
-  const quantity = item[2];
+const personChris = [12, 'Chris', 'Owen'];
 
-  // --^-- write code here --^--
+const firstNameOfChris = 'Change me';
+const lastNameOfChris = 'Change me';
+const ageOfChris = 'Change me';
 
-  checkConditions(
-    [name, item[0], 'name'],
-    [price, item[1], 'Price'],
-    [quantity, item[2], 'quantity'],
-  );
-}
+// EXERCISE 3
+// Rewrite the code below to use array destructuring instead of assigning each value to a variable.
+// Make sure not to have unused variables.
 
-/*
-2: Rewrite the code below to use array destructuring instead of assigning each value to a variable.
-*/
+const personAlex = ['Alex', 12, 'Main'];
 
-{
-  console.log('EXERCISE 2');
+const firstNameOfAlex = 'Change me';
+const lastNameOfAlex = 'Change me';
 
-  const person = [12, 'Chris', 'Owen'];
+// EXERCISE 4
+// Use Array Destructuring to get the last name from the array.
 
-  // --v-- write code here --v--
+const students = ['Christina', 'Jon', 'Alexandare'];
 
-  const firstName = person[1];
-  const lastName = person[2];
-  const age = person[0];
+const lastName = 'Change me';
 
-  // --^-- write code here --^--
+// EXERCISE 5
+// Use Array Destructuring to get all of the names from this Nested Array.
 
-  checkConditions(
-    [firstName, person[1], 'firstName'],
-    [lastName, person[2], 'lastName'],
-    [age, person[0], 'age'],
-  );
-}
+const nestedStudents = ['Chris', ['Ahmad', 'Antigoni'], ['Toby', 'Sam']];
 
-/*
-3: Rewrite the code below to use array destructuring instead of assigning each value to a variable.
-Make sure not to have unused variables.
-*/
+const student1 = 'Change me';
+const student2 = 'Change me';
+const student3 = 'Change me';
+const student4 = 'Change me';
+const student5 = 'Change me';
 
-{
-  console.log('EXERCISE 3');
-
-  const person = ['Chris', 12, 'Owen'];
-
-  // --v-- write code here --v--
-
-  const firstName = person[0];
-  const lastName = person[2];
-
-  // --^-- write code here --^--
-
-  checkConditions(
-    [firstName, person[0], 'firstName'],
-    [lastName, person[2], 'lastName'],
-  );
-}
-
-/*
-4: Use Array Destructuring to get the last name from the array.
-*/
-
-{
-  console.log('EXERCISE 4');
-
-  const students = ['Christina', 'Jon', 'Alexandare'];
-
-  // --v-- write code here --v--
-
-  const lastName = students[2];
-
-  // --^-- write code here --^--
-
-  checkConditions([lastName, students[2], 'name']);
-}
-
-/*
-5: Use Array Destructuring to get all of the names from this Nested Array.
-*/
-
-{
-  console.log('EXERCISE 5');
-
-  const moreStudents = ['Chris', ['Ahmad', 'Antigoni'], ['Toby', 'Sam']];
-
-  // --v-- write code here --v--
-
-  const student1 = moreStudents[0];
-  const student2 = moreStudents[1][0];
-  const student3 = moreStudents[1][1];
-  const student4 = moreStudents[2][0];
-  const student5 = moreStudents[2][1];
-
-  // --^-- write code here --^--
-
-  checkConditions(
-    [student1, moreStudents[0], 'student1'],
-    [student2, moreStudents[1][0], 'student2'],
-    [student3, moreStudents[1][1], 'student3'],
-    [student4, moreStudents[2][0], 'student4'],
-    [student5, moreStudents[2][1], 'student5'],
-  );
-}
+export {
+  name,
+  price,
+  quantity,
+  firstNameOfChris,
+  lastNameOfChris,
+  ageOfChris,
+  firstNameOfAlex,
+  lastNameOfAlex,
+  lastName,
+  student1,
+  student2,
+  student3,
+  student4,
+  student5,
+};
