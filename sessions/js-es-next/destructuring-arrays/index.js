@@ -5,18 +5,18 @@ console.clear();
 
 const item = ['Egg', 0.25, 12];
 
-const name = 'Change me';
-const price = 'Change me';
-const quantity = 'Change me';
+const name = 'Destructure the array item';
+const price = 'Destructure the array item';
+const quantity = 'Destructure the array item';
 
 // EXERCISE 2
 // Rewrite the code below to use array destructuring instead of assigning each value to a variable.
 
 const personChris = [12, 'Chris', 'Owen'];
 
-const firstNameOfChris = 'Change me';
-const lastNameOfChris = 'Change me';
-const ageOfChris = 'Change me';
+const firstNameOfChris = 'Destructure the array personChris';
+const lastNameOfChris = 'Destructure the array personChris';
+const ageOfChris = 'Destructure the array personChris';
 
 // EXERCISE 3
 // Rewrite the code below to use array destructuring instead of assigning each value to a variable.
@@ -24,26 +24,26 @@ const ageOfChris = 'Change me';
 
 const personAlex = ['Alex', 12, 'Main'];
 
-const firstNameOfAlex = 'Change me';
-const lastNameOfAlex = 'Change me';
+const firstNameOfAlex = 'Destructure the array personAlex';
+const lastNameOfAlex = 'Destructure the array personAlex';
 
 // EXERCISE 4
 // Use Array Destructuring to get the last name from the array.
 
 const students = ['Christina', 'Jon', 'Alexandare'];
 
-const lastName = 'Change me';
+const lastName = 'Destructure the array students';
 
 // EXERCISE 5
 // Use Array Destructuring to get all of the names from this Nested Array.
 
 const nestedStudents = ['Chris', ['Ahmad', 'Antigoni'], ['Toby', 'Sam']];
 
-const student1 = 'Change me';
-const student2 = 'Change me';
-const student3 = 'Change me';
-const student4 = 'Change me';
-const student5 = 'Change me';
+const student1 = 'Destructure the array nestedStudents';
+const student2 = 'Destructure the array nestedStudents';
+const student3 = 'Destructure the array nestedStudents';
+const student4 = 'Destructure the array nestedStudents';
+const student5 = 'Destructure the array nestedStudents';
 
 export {
   name,
