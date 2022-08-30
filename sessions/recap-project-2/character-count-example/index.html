@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Character Count Example</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <form class="form">
+      <h1>Fix me</h1>
+      <label class="form__label" for="question">Question:</label>
+      <textarea
+        maxlength="200"
+        data-js="question"
+        name="question"
+        id="question"
+        cols="24"
+        rows="3"
+      ></textarea>
+      <small data-js="characterCount" class="form__character-count"
+        >(<span data-js="amountLeft"></span> characters left)</small
+      >
+      <button>Create card</button>
+    </form>
+  </body>
+  <script src="./js/index.js"></script>
+</html>
