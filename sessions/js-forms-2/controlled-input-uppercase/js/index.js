@@ -1,10 +1,10 @@
 console.clear();
 
-const input = document.querySelector('[data-js="firstValue"]');
+const input = document.querySelector('[data-js="toUpperCase"]');
 
 let value = '';
 
-input.addEventListener('change', event => {
+input.addEventListener('input', event => {
   value = event.target.value;
 
   input.value = value.toUpperCase();

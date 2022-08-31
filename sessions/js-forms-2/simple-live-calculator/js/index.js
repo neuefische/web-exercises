@@ -7,12 +7,12 @@ const result = document.querySelector('[data-js="result"]');
 let firstValue = 0;
 let secondValue = 0;
 
-firstInput.addEventListener('change', event => {
+firstInput.addEventListener('input', event => {
   firstValue = event.target.value;
   calculateResult();
 });
 
-secondInput.addEventListener('change', event => {
+secondInput.addEventListener('input', event => {
   secondValue = event.target.value;
   calculateResult();
 });
