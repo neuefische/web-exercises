@@ -1,32 +1,28 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }
 
 .form {
-  margin: 20px auto;
-  max-width: 320px;
-  display: grid;
-  justify-items: start;
-  gap: 12px;
+	margin: 20px auto;
+	max-width: 320px;
+	display: grid;
+	justify-items: start;
+	gap: 12px;
 }
 
 .form__label {
-  display: block;
+	display: block;
 }
 
 .form__character-count {
-  font-size: inherit;
-  color: #666;
-}
-
-.hidden {
-  display: none;
+	font-size: inherit;
+	color: #666;
 }

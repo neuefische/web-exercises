@@ -1,8 +1,8 @@
 console.clear();
 
-const questionElement = document.querySelector('[data-js="question"]');
+const questionElement = document.querySelector('[data-js="personalMessage"]');
 const amountLeft = document.querySelector('[data-js="amountLeft"]');
-const maxLength = questionElement.getAttribute('maxLength');
+const maxLength = questionElement.getAttribute('maxlength');
 
 const updateAmountLeft = value => {
 	amountLeft.innerText = value;
