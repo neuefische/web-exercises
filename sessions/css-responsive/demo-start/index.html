@@ -1,96 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>My Cute Puppies Website</title>
-		<link rel="stylesheet" href="css/styles.css" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<title>HTML & CSS</title>
+		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 	<body>
-		<!-- a website about cute puppies -->
-		<div class="container">
-			<header>
-				<h1>My Cute Puppies Website</h1>
-			</header>
-			<nav>
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</nav>
-			<main>
-				<h2>Here are some cute puppies</h2>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, molestias ipsam!
-					Exercitationem, voluptatibus. Saepe, sunt? Quod, voluptates. Consequatur, quod
-					eos! Quos, quia!
-				</p>
-				<div class="gallery">
-					<figure>
-						<img
-							src="https://images.unsplash.com/photo-1583511655826-05700d52f4d9?w=480&h=600&fit=crop&q=80"
-							alt="a cute puppy"
-						/>
-						<figcaption>Exhibit A</figcaption>
-					</figure>
-					<figure>
-						<img
-							src="https://images.unsplash.com/photo-1518378188025-22bd89516ee2?w=480&h=600&fit=crop&q=80"
-							alt="a cute puppy"
-						/>
-						<figcaption>Exhibit B</figcaption>
-					</figure>
-					<figure>
-						<img
-							src="https://images.unsplash.com/photo-1619980296991-5c0d64b23950?w=480&h=600&fit=crop&q=80"
-							alt="a cute puppy"
-						/>
-						<figcaption>Exhibit C</figcaption>
-					</figure>
-				</div>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, molestias ipsam!
-					Exercitationem, voluptatibus. Saepe, sunt? Quod, voluptates. Consequatur, quod
-					eos! Quos, quia!
-				</p>
-				<div class="gallery">
-					<figure>
-						<img
-							src="https://images.unsplash.com/photo-1514571948039-d3cb9e8f9750?w=480&h=600&fit=crop&q=80"
-							alt="a cute puppy"
-						/>
-						<figcaption>Exhibit D</figcaption>
-					</figure>
-					<figure>
-						<img
-							src="https://images.unsplash.com/photo-1613210581288-ae09b0bdf17f?w=480&h=600&fit=crop&q=80"
-							alt="a cute puppy"
-						/>
-						<figcaption>Exhibit E</figcaption>
-					</figure>
-					<figure>
-						<img
-							src="https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=480&h=600&fit=crop&q=80"
-							alt="a cute puppy"
-						/>
-						<figcaption>Exhibit F</figcaption>
-					</figure>
-				</div>
-			</main>
-			<aside>
-				<h2>Puppy facts</h2>
-				<ul>
-					<li>Puppies are cute</li>
-					<li>Puppies are great companions</li>
-					<li>Puppies are great pets</li>
-					<li>Puppies are awesome</li>
-				</ul>
-			</aside>
-			<footer>
-				<p>&copy; 2029 - My Cute Puppies Website</p>
-			</footer>
-		</div>
+		<main>
+			<h1>CSS Responsive Demo</h1>
+
+			<section class="playground">
+				<h2>Responsive Units</h2>
+				<section class="section">
+					<h3>Responsive Unit: %</h3>
+					<p>This box wants to be half the width of its parent.</p>
+					<div class="box box--percent">🐊</div>
+				</section>
+
+				<section class="section">
+					<h3>Responsive Unit: vw</h3>
+					<p>This box wants to be half as wide as the viewport <b>width</b>.</p>
+					<div class="box box--vw">🦌</div>
+				</section>
+
+				<section class="section">
+					<h3>Responsive Unit: vh</h3>
+					<p>This box wants to be half as wide as the viewport <b>height</b>.</p>
+					<div class="box box--vh">🦩</div>
+				</section>
+
+				<section class="section">
+					<h3>Responsive Unit: em</h3>
+					<p>
+						This box wants five times as wide and high as the <b>current</b> font size.
+					</p>
+					<div class="box box--em">🦧</div>
+				</section>
+
+				<section class="section">
+					<h3>Responsive Unit: rem</h3>
+					<p>This box wants five times as wide and high as the <b>root</b> font size.</p>
+					<div class="box box--rem">🦍</div>
+				</section>
+
+				<section class="section">
+					<h3>Math in CSS: calc()</h3>
+					<p>
+						This box wants to be half as wide a the parent element minus two times the
+						current font size.
+					</p>
+					<div class="box box--calc">🦚</div>
+				</section>
+			</section>
+			<section class="playground">
+				<h2>Media Queries</h2>
+
+				<section class="section">
+					<h3>min-width</h3>
+					<p>
+						This box should be 200px wide on small screens and 400px wide on screens
+						that are at least 768px wide.
+					</p>
+					<div class="box box--min-width">🦬</div>
+				</section>
+
+				<section class="section">
+					<h3>Multiple min-widths</h3>
+					<p>
+						This box should be
+						<ul>
+							<li>100% wide on small screens</li>
+							<li>75% wide on screens that are at least 768px wide</li>
+							<li>300px wide on screens that are at least 1024px wide.</li>
+						</ul>
+
+						Also it should become green on screens that are at least 1024px wide.
+					</p>
+					<div class="box box--min-width-2">🐩</div>
+				</section>
+
+				<section class="section">
+					<h3>Prefers Color Scheme</h3>
+					<p>
+						This box should have
+						<ul>
+							<li>black text and a white background on light mode and</li>
+							<li>white text and a black background on dark mode.</li>
+						</ul>
+					</p>
+					<div class="box box--color-scheme">CSS!</div>
+				</section>
+			</section>
+		</main>
 	</body>
 </html>
