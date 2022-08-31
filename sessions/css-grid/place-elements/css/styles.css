@@ -29,6 +29,7 @@ body {
 	gap: 20px;
 	grid-template-columns: repeat(5, 1fr 2fr);
 	grid-template-rows: repeat(10, 50px);
+	padding: 10px;
 }
 
 .container__element {
