@@ -2,7 +2,8 @@
 
 /* I've made use of native CSS variables and calculations to give you an idea
 of how they work, and how they can be useful. You don't need to adjust these
-to complete the challenge. */
+to complete the challenge. Feel free to take a look, then scroll down to
+the start of the introduction. */
 
 @import 'fonts.css';
 
@@ -50,7 +51,9 @@ to complete the challenge. */
 which elements need to change at what point. It's always useful to change
 the size of your viewport or take a look at the dev tools, as well.
 Your solution doesn't need to be pixel-perfect. If it looks close enough,
-that's fine. Your main objective is to understand the concept of media queries. */
+that's fine. Your main objective is to understand the concept of media queries.
+Once you feel ready to write your media queries, scroll down further to where
+you'll find the prompts to write your code.*/
 
 /* Hint 2: You do NOT need to change the HTML to complete this challenge. */
 
@@ -124,7 +127,7 @@ body {
 }
 
 /* Page Content */
-/* Note: understanding what main-content and main-section do is
+/* Note: understanding what main-content and card-section do is
 fairly essential to completing this challenge. */
 
 .main-content {
