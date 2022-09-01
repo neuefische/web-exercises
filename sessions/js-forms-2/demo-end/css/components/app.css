@@ -1,0 +1,26 @@
+.app {
+	max-width: 30rem;
+	margin: 0 auto;
+}
+
+.app__title {
+	color: var(--light);
+	margin: 2rem 0;
+	text-align: center;
+	font-size: 1.8rem;
+}
+
+.app__form {
+	background-color: var(--light-grey);
+	padding: 1.5rem;
+}
+
+.app__storage {
+	background-color: var(--light);
+	padding: 1.5rem;
+}
+
+.app__headline {
+	font-size: 1.4rem;
+	margin: 0 0 2rem 0;
+}
