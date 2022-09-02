@@ -15,6 +15,7 @@ Create a `while` loop that
 
 - runs if `number` is less or equal to 0.9,
 - increments `count` by 1 in each iteration
+- logs `number` to the console
 - sets `number` to a random number; you can use `Math.random()` here.
 
 If you're done, test your loop by refreshing the browser several times and watching the console!

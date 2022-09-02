@@ -1,7 +1,6 @@
 console.clear();
 
-// Part 5: create a while loop that generates and logs random numbers between 0 and 1 and exits when the number
-// is larger than 0.9
+// `while` loop
 
 const number = 0;
 const count = 0;
