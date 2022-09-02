@@ -1,6 +1,0 @@
-{
-  "name": "simple-todolist",
-  "version": "1.0.0",
-  "description": "A to-do list with two input fields, a headline and a textfield for the task",
-  "main": "index.html"
-}
