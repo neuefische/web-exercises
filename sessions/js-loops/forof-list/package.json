@@ -1,6 +1,6 @@
 {
-  "name": "static-html-css-js",
+  "name": "for-of-programming-languages",
   "version": "1.0.0",
-  "description": "Static HTML template with CSS and JS",
+  "description": "Creating a list of programming languages challenge",
   "main": "index.html"
 }
