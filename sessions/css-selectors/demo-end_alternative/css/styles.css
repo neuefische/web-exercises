@@ -1,0 +1,146 @@
+/* I am the root pseudo-class. The html type selector and
+I target pretty much the same stuff, but my specificity is 
+higher. I'm frequently used to store global CSS variables. */
+
+:root {
+	/* Color Variables */
+
+	--nemo: #ff4a11;
+	--granite: #252629;
+	--water: #f3f5f9;
+	--foam: #ffffff;
+
+	/* Unit Variables */
+	--gap: 20px;
+}
+
+/* I'm the universal selector. I target EVERYTHING. */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* PART 1: I'm a type selector. I target a specific type of element. */
+body {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+h1 {
+	color: var(--nemo);
+	text-shadow: 3px 3px var(--granite);
+}
+
+h1,
+h2 {
+	margin: var(--gap);
+}
+
+h3 {
+	margin-bottom: var(--gap);
+}
+
+a {
+	text-decoration: none;
+}
+
+/* PART 2: I'm a class selector. I correspond with the classes declared as part
+of an HTML tag. Like <section class="main-section">. */
+.main-content {
+	width: 80%;
+	margin: auto;
+}
+
+.main-section {
+	padding: var(--gap);
+	background-color: var(--water);
+	margin-bottom: var(--gap);
+}
+
+.box {
+	width: 100px;
+	height: 100px;
+	text-align: center;
+}
+
+.box--pink {
+	background-color: lightpink;
+}
+
+/* PART 3: I'm an attribute selector. I correspond with the attributes declared 
+as part of HTML tags. */
+
+button[type='button'] {
+	padding: var(--gap);
+}
+
+ul[role='list'] {
+	list-style-type: none;
+}
+
+a[href^='https'] {
+	color: hotpink;
+	padding: 8px;
+	margin: 0 0 8px 0;
+}
+
+/* PART 4: I'm a pseudo-class. I'm  a keyword added to a selector that 
+specifies a special state of the selected element. */
+
+a[href^='https']:hover {
+	background-color: hotpink;
+	color: #fff;
+}
+
+input[type='text']:focus {
+	outline: 2px solid hotpink;
+	border: none;
+	border-radius: 3px;
+}
+
+/* PART 5: I'm a pseudo-element. I'm a keyword added to a selector that lets
+you style a specific part of the selected element. */
+
+p::first-letter {
+	font-size: 32px;
+}
+
+a[href^='https']:before {
+	content: '🍰';
+	margin-right: 8px;
+}
+
+/* PART 6: I'm the ID selector. I shouldn't be used. */
+
+#very-important-text {
+	color: #fff;
+}
+
+/* PART 7: I'm a descendant combinator. I will select all descendants
+of the parent element, but only those descendants that match my type. */
+
+.main-section .text {
+	color: var(--granite);
+	/* This should overwrite the color rule of the ID selector, but because 
+  of its very high specificity, the ID selector rule remains. There is
+  nothing short of using !important that overrules any ID's specificity. */
+}
+
+/* PART 8: I'm a child combinator. I will select all direct children
+of the parent element, but only those children that match my type. */
+
+.main-section > article {
+	padding: var(--gap);
+	background-color: lightpink;
+	border: 4px dotted #fff;
+}
+
+/* PART 9: I'm an adjacent sibling selector. The rules I  declare 
+only count for myself and my adjacent sibling. */
+
+section div + span {
+	color: hotpink;
+}
