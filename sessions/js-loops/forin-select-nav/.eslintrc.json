@@ -17,7 +17,8 @@
   "rules": {
     "no-unused-vars": 0,
     "react/prop-types": 0,
-    "react/react-in-jsx-scope": 0
+    "react/react-in-jsx-scope": 0,
+    "guard-for-in": 0
   },
   "settings": {
     "react": {
