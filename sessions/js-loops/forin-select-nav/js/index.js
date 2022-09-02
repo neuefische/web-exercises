@@ -2,7 +2,7 @@ console.clear();
 
 const main = document.querySelector('[data-js="main"]');
 
-// Part 3: create a select input with all languages as options (keys should be used as values)
+// Part 1: Creating a Select Input
 
 const languages = {
 	DE: 'German',
@@ -31,7 +31,7 @@ for (const key in languages) {
 
 // --^-- write/change code here --^--
 
-// Part 3.1: create a navigation bar (keys should be used as values)
+// Part 2: Creating a Navigation Bar
 
 const nav = {
 	home: {href: '/home', text: 'Home'},

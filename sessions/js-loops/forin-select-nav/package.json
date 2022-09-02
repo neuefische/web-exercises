@@ -1,6 +1,6 @@
 {
-  "name": "static-html-css-js",
+  "name": "forin-select-nav",
   "version": "1.0.0",
-  "description": "Static HTML template with CSS and JS",
+  "description": "For in loop challenge with select navigation",
   "main": "index.html"
 }
