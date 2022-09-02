@@ -1,7 +1,7 @@
 {
-  "name": "javascript",
+  "name": "while-loop",
   "version": "1.0.0",
-  "description": "JavaScript template",
+  "description": "Challenge for while loop and random numbers",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
