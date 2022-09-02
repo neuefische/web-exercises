@@ -1,6 +1,6 @@
 {
-  "name": "static-html-css-js",
+  "name": "for-stars",
   "version": "1.0.0",
-  "description": "Static HTML template with CSS and JS",
+  "description": "For loop and stars challenge",
   "main": "index.html"
 }

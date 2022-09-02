@@ -8,20 +8,13 @@ const STAR_FILLED =
 
 const main = document.querySelector('[data-js="main"]');
 
-// Part 2.1: for loop that uses create element to create 1 to 5 stars
+// Part 1: Create 5 stars using a for loop
 
 // --v-- write/change code here --v--
 
-for (let i = 0; i <= 4; i++) {
-	const star = document.createElement('img');
-	star.dataset.js = 'star';
-	star.src = STAR_EMPTY;
-	main.append(star);
-}
-
 // --^-- write/change code here --^--
 
-// Part 2.2: for loop that manipulate the src property of the created stars (based on an input)
+// Part 2: for loop that manipulate the src property of the created stars (based on an input)
 
 const stars = document.querySelectorAll('[data-js="star"]');
 stars.forEach((star, index) => {
@@ -32,14 +25,5 @@ stars.forEach((star, index) => {
 
 function fillStars(indexToFill) {
 	// --v-- write/change code here --v--
-
-	for (let i = 0; i <= 4; i++) {
-		if (i <= indexToFill) {
-			stars[i].src = STAR_FILLED;
-		} else {
-			stars[i].src = STAR_EMPTY;
-		}
-	}
-
 	// --^-- write/change code here --^--
 }
