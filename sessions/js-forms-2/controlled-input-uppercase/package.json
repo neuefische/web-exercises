@@ -1,0 +1,6 @@
+{
+  "name": "controlled-input-uppercase",
+  "version": "1.0.0",
+  "description": "An input field that converts the entered text to uppercase",
+  "main": "js/index.js"
+}
