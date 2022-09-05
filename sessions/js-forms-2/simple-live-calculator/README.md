@@ -11,9 +11,7 @@ As soon as one of these values change, both values shall be multiplied. The resu
 
 The following hints might guide you:
 
-- You may need to declare global `let` variables for both input fields and initialize them with a starting number.
-- Consider the `input` event for both input fields; on each input, you want to set the event target's value to your global variables.
-- If you calculate the result with a `calculateResult()` function, you can set the `textContent` of your output to this result.
-- Don't forget to call `calculateResult()` on every input event!
+- Consider the `input` event for both input fields.
+- How do you set the text content for an HTML element again?
 
-Switch to the index.html file and validate the form in the mentioned way!
+Switch to the [index.js](./js/index.js) file and implement the task.
