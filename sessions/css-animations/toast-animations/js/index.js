@@ -5,8 +5,8 @@ const toast = document.querySelector('[data-js="toast"]');
 let timeoutId = null;
 
 toast.addEventListener('click', () => {
-	exitToast();
 	clearTimeout(timeoutId);
+	exitToast();
 });
 
 submitButton.addEventListener('click', () => {
