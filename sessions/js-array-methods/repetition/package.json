@@ -1,6 +1,13 @@
 {
-  "name": "array-repetition",
+  "name": "js-array-methods-repetition-tests",
   "version": "1.0.0",
-  "description": "Array methods exercises",
-  "main": "index.js"
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "jest": "29.0.2"
+  },
+  "keywords": []
 }
