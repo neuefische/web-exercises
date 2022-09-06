@@ -2,8 +2,8 @@ console.clear();
 
 // `while` loop
 
-const number = 0;
-const count = 0;
+let number = 0;
+let count = 0;
 
 // --v-- write/change code here --v--
 
