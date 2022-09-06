@@ -1,6 +1,6 @@
 {
-  "name": "checkbox-input",
+  "name": "calculator",
   "version": "1.0.0",
-  "description": "Static HTML template with CSS and JS",
+  "description": "calculator challenge",
   "main": "index.html"
 }
