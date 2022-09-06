@@ -19,18 +19,4 @@ const colors = [
 	'#A5A5A5',
 ];
 
-/*
-1: Create colored boxes from the array of hex codes using the `forEach` array method.
-  1.1: For each hex code a new `div` with the class `color-box` should be created
-  1.2: The `background-color` of the `div` should be the current hex code
-  1.3: The element should be added to the page
-*/
-
 colors.forEach();
-
-/*
-2: Instead of writing the callback function directly inside the forEach method, we can use a function reference.
-  2.1: Create a new function called renderColorBox
-  2.3: Copy your code from the arrow function into this new function.
-  2.4: Use the forEach method with renderColorBox to create the color boxes a second time!
-*/
