@@ -14,7 +14,7 @@ The following hints may guide you:
 
 - The loop should have
   - an internal counter variable
-  - a criteria to be met by the counter variable
+  - a criterion to be met by the counter variable
   - a rule how the counter variable is increased.
 - Create an `img` element in each iteration; you may declare it to a variable called `star`.
 - Set the `src` property of the `star` variable to `STAR_EMPTY`.
@@ -24,7 +24,7 @@ The following hints may guide you:
 
 By now, we have five stars, but clicking them does nothing. Let's create a clickable star rating!
 
-Look at the first code section of this part: We query all elements with a `data-js="star"` attribute. Now, we iterate through this `stars` array with `forEach`, add a listener for a click event to each star and call the `fillstars()` function with the argument `index`.
+Look at the first code section of this part: We query all elements with a `data-js="star"` attribute. Now, we iterate through this `stars` array with a `for` loop, add a listener for a click event to each star and call the `fillstars()` function with the argument `i` (i.e. the current star element).
 
 #### Part 2.1 Refactor Part 1
 
@@ -34,7 +34,7 @@ Add `star.dataset.js = 'star'` to each created element. Make sure to do this bef
 
 #### Part 2.2 Add Rating
 
-No we can write the `fillStars` function:
+Now we can write the `fillStars` function:
 
 - create a for loop with five iterations (as in part 1)
 - check if the counter variable is less or equal to `indexToFill`

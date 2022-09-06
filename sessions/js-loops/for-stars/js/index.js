@@ -14,14 +14,14 @@ const main = document.querySelector('[data-js="main"]');
 
 // --^-- write/change code here --^--
 
-// Part 2: for loop that manipulate the src property of the created stars (based on an input)
+// Part 2: Filling Stars on Click with for loop
 
 const stars = document.querySelectorAll('[data-js="star"]');
-stars.forEach((star, index) => {
-	star.addEventListener('click', () => {
-		fillStars(index);
+for (let i = 0; i < stars.length; i++) {
+	stars[i].addEventListener('click', () => {
+		fillStars(i);
 	});
-});
+}
 
 function fillStars(indexToFill) {
 	// --v-- write/change code here --v--
