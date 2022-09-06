@@ -7,11 +7,14 @@ let timeoutId = null;
 toast.addEventListener('click', () => {
 	exitToast();
 	clearTimeout(timeoutId);
+	timeoutId = null;
 });
 
 submitButton.addEventListener('click', () => {
 	enterToast();
-	timeoutId = setTimeout(exitToast, 5000);
+	if (timeoutId === null) {
+		timeoutId = setTimeout(exitToast, 5000);
+	}
 });
 
 function enterToast() {
