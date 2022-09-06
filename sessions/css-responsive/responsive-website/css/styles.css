@@ -1,7 +1,7 @@
 /* ==[ ATTENTION! ]== */
 
 /* I've made use of native CSS variables and calculations to give you an idea
-of how they work, and how they can be useful. You don't need to adjust these
+of how they work and how they can be useful. You don't need to adjust these
 to complete the challenge. Feel free to take a look, then scroll down to
 the start of the introduction. */
 
@@ -40,18 +40,21 @@ the start of the introduction. */
 	/* Calculating the nav height */
 	--nav-height: calc(var(--regular-line-height) + (2 * var(--gap)));
 
-	/* Calculating the extact margin required to put the main content
+	/* Calculating the exact margin required to put the main content
     right under the header and nav*/
 	--main-content-margin-top: calc(var(--header-height) + var(--nav-height));
 }
 
 /* ==[ INTRODUCTION ]== */
 
-/* Hint 1: Investigate! Take a good long look at the previews to find out 
+/* !-- In short: Look at the selectors, then scroll down to the bottom of the file. 
+Write your media queries there. --! */
+
+/* Hint 1: Investigate! Take a good, long look at the previews to find out 
 which elements need to change at what point. It's always useful to change
-the size of your viewport or take a look at the dev tools, as well.
+the size of your viewport or to take a look at the dev tools.
 Your solution doesn't need to be pixel-perfect. If it looks close enough,
-that's fine. Your main objective is to understand the concept of media queries.
+it's fine. Your main objective is to understand the concept of media queries.
 Once you feel ready to write your media queries, scroll down further to where
 you'll find the prompts to write your code.*/
 

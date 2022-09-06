@@ -60,38 +60,38 @@ h1 {
 	margin: auto;
 }
 
-.--one {
+.box--one {
 	background-color: lightblue;
 
 	width: 100px;
 	height: 100px;
 }
 
-.--two {
+.box--two {
 	background-color: lightgreen;
 
 	width: 100px;
 	height: 100px;
 }
 
-.--three {
+.box--three {
 	background-color: lightpink;
 
 	width: 50px;
 	height: 250px;
 }
 
-.--four {
+.box--four {
 	background-color: lightgray;
 
 	width: 100px;
 	height: 100px;
 }
 
-.--five {
+.box--five {
 	width: 100%;
 }
 
-.--five img {
+.box--five img {
 	width: 100%;
 }
