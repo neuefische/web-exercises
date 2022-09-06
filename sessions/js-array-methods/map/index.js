@@ -32,3 +32,5 @@ const questionsAndAnswersTogether = null;
 
 // 3: Create an array of objects with the two properties question and answer.
 const questionAndAnswer = null;
+
+export {lowerCaseAnswers, questionsAndAnswersTogether, questionAndAnswer};
