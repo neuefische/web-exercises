@@ -1,0 +1,42 @@
+/*
+Use flexbox to fulfill the following tasks:
+
+[ ] - The links should be horizontally spaced as far apart as possible.
+[ ] - The first link should be placed at the beginning and the last link at the end.
+
+Hint: Look carefully which element should be the flexbox container. 
+Do you need to write an extra class?
+*/
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(155, 148, 142);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.header {
+  padding: 20px;
+  background-color: rgb(139, 133, 132);
+  color: rgb(0 0 0 / 0.75);
+}
+
+.navigation__link {
+  background-color: rgb(28, 199, 128);
+  color: rgb(0 0 0 / 0.5);
+  padding: 5px 14px;
+  border-radius: 5px;
+}
+
+.navigation__menu {
+  display: flex;
+}

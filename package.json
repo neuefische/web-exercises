@@ -1,13 +1,29 @@
 {
-  "name": "web-sessions",
+  "name": "web-exercises",
   "version": "1.0.0",
   "description": "Session exercises",
+  "homepage": "https://github.com/neuefische/web-exercises#readme",
+  "bugs": {
+    "url": "https://github.com/neuefische/web-exercises/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neuefische/web-exercises.git"
+  },
+  "license": "MIT",
+  "author": "Gregor Adams",
   "main": "n.a.",
+  "workspaces": [
+    "sessions/*/*"
+  ],
   "scripts": {
+    "markdown-toc": "npx markdown-toc -i README.md",
     "prepare": "husky install",
-    "markdown-toc": "npx markdown-toc -i README.md"
+    "ncu": "npx npm-check-updates"
   },
   "dependencies": {
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
     "@typescript-eslint/eslint-plugin": "^5.20.0",
     "@typescript-eslint/parser": "^5.20.0",
     "eslint": "^8.13.0",
@@ -17,8 +33,10 @@
     "husky": "^7.0.4",
     "lint-staged": "^12.4.0",
     "prettier": "^2.6.2",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-scripts": "^5.0.1",
+    "styled-components": "^5.3.5",
     "stylelint": "^13.13.1",
     "stylelint-a11y": "^1.2.3",
     "stylelint-config-prettier": "^8.0.2",
@@ -29,19 +47,5 @@
     "stylelint-processor-styled-components": "^1.10.0",
     "tslib": "^2.4.0",
     "typescript": "^4.6.3"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/neuefische/web-sessions.git"
-  },
-  "author": "Gregor Adams",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/neuefische/web-sessions/issues"
-  },
-  "homepage": "https://github.com/neuefische/web-sessions#readme",
-  "devDependencies": {
-    "@commitlint/cli": "^16.2.3",
-    "@commitlint/config-conventional": "^16.2.1"
   }
 }

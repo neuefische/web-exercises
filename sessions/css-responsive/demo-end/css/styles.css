@@ -1,0 +1,152 @@
+/* ==[ PLAYGROUND Challenge! ]== */
+
+/* This challenge includes several smaller challenges and allows you to
+play around with the concepts you've learned. Read the instructions 
+carefully. */
+
+:root {
+	/* Color Variables */
+
+	--nemo: #ff4a11;
+	--granite: #252629;
+	--water: #f3f5f9;
+	--foam: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+	background-color: var(--foam);
+}
+
+h1 {
+	font-size: 3rem;
+	width: 80%;
+	margin: 20px auto;
+	color: var(--nemo);
+	text-shadow: 4px 4px var(--granite);
+}
+
+.playground {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: auto;
+	padding: 20px;
+	gap: 30px;
+
+	width: 80%;
+	min-height: 100vh;
+}
+
+.section {
+	width: 100%;
+	background-color: var(--water);
+	padding: 20px;
+}
+
+.box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 32px;
+}
+
+/* Responsive Units */
+
+.box--percent {
+	background-color: lightblue;
+
+	width: 50%;
+	height: 100px;
+}
+
+.box--vw {
+	background-color: lightgreen;
+
+	width: 50vw;
+	height: 100px;
+}
+
+.box--vh {
+	background-color: lightseagreen;
+
+	width: 50vh;
+	height: 100px;
+}
+
+.box--em {
+	background-color: lightslategrey;
+	font-size: 32px;
+	width: 5em;
+	height: 5em;
+}
+
+.box--rem {
+	background-color: lightpink;
+	font-size: 32px;
+	width: 5rem;
+	height: 5rem;
+}
+
+.box--calc {
+	background-color: lightgoldenrodyellow;
+	font-size: 32px;
+	width: calc(50% - 2em);
+	height: 100px;
+}
+
+/* Media Queries */
+
+.box--min-width {
+	background-color: lightgrey;
+	width: 200px;
+	height: 100px;
+}
+
+@media (min-width: 768px) {
+	.box--min-width {
+		width: 400px;
+	}
+}
+
+.box--min-width-2 {
+	background-color: lightcoral;
+	width: 100%;
+	height: 100px;
+}
+
+@media (min-width: 768px) {
+	.box--min-width-2 {
+		width: 75%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.box--min-width-2 {
+		width: 300px;
+		background-color: lightgreen;
+	}
+}
+
+.box--color-scheme {
+	background-color: white;
+	color: black;
+	width: 100px;
+	height: 100px;
+}
+
+@media (prefers-color-scheme: dark) {
+	.box--color-scheme {
+		background-color: black;
+		color: white;
+	}
+}

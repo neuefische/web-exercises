@@ -6,11 +6,13 @@ These exercises are tailored as templates for codesandbox
 
 <!-- toc -->
 
-- [Generate Codesandbox from GitHub](#generate-codesandbox-from-github)
-- [Adding new exercises](#adding-new-exercises)
-- [Review new or changed exercises](#review-new-or-changed-exercises)
-- [Update exercises](#update-exercises)
-- [OPTIONAL: Import project to Codesandbox](#optional-import-project-to-codesandbox)
+- [web exercises](#web-exercises)
+  - [Generate Codesandbox from GitHub](#generate-codesandbox-from-github)
+  - [Adding new exercises](#adding-new-exercises)
+  - [Review new or changed exercises](#review-new-or-changed-exercises)
+  - [Update exercises](#update-exercises)
+  - [OPTIONAL: Local development](#optional-local-development)
+  - [OPTIONAL: Import project to Codesandbox](#optional-import-project-to-codesandbox)
 
 <!-- tocstop -->
 
@@ -36,14 +38,18 @@ These exercises are tailored as templates for codesandbox
 In order to satisfy our review process, please follow these steps:
 
 1. Open a new branch following our [Branch guidelines](./docs/BRANCHES.md)
-2. Add a new project in the desired folder/session:  
-   Example: `sessions/js-array-methods/`
+2. Add a new project in the desired session folder:  
+   Example: `sessions/js-array-methods/map`
+   - Option 1: Copy one of the [templates](./templates)
+   - Option 2: Download an existing codesandbox (see screenshot below)
 3. Commit the changes following [Commit guidelines](./docs/COMMITS.md)
 4. Open a new pull request
-5. Wait until the pull request has at least 2 approvals (enforced by branch protection)
-6. Add the GitHubBox link to the session exercise (This URL will generate a sandbox from the current main)
+5. Wait until the pull request has at least 1 approval (enforced by branch protection)
+6. Add the codesandbox link to the session exercise which was generated with `githubbox` (→ change `github.com` to `githubbox.com` in your browser bar). Don't forget to correct the branchname from your feature branch to `main`.
 
-Example: https://githubbox.com/neuefische/web-exercises/tree/main/sessions/react-props-01
+Example: https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/example/exercise-01
+
+![Export Codesandbox](docs/resources/codesandbox-export.png)
 
 ---
 
@@ -64,23 +70,38 @@ our [Sessions on Codesandbox](https://codesandbox.io/dashboard/all/sessions).
 
 Since we generate the exercises from the GitHub folder, we don't have to update the example starters
 
-Example: https://codesandbox.io/dashboard/all/sessions/js-array-methods
-
 1. Delete old solutions
-2. Add new session in designated folder
+2. Add new solutions in designated folder in codesandbox
 3. Add solutions with suffix `(solution 01)`
 
-> Each exercise should have two independent solutions.
+> Each exercise should have one independent solution.
 
-Example: https://codesandbox.io/dashboard/all/sessions/examples
+Example: https://codesandbox.io/dashboard/all/sessions/example
 
 ![Codesandbox exercise and solutions](docs/resources/codesandbox-exercise-and-solutions.png)
 
 ---
 
+## OPTIONAL: Local development
+
+To develop on your local machine, please follow these steps:
+
+1. Run `npm i` in the root of this repository
+2. Start the development server:
+
+- Option 1: Run script in root: `npm run start --workspace=example-exercise-01`  
+  This will run the start script of the session workspace.
+- Option 2: Run script in workspace: `cd sessions/example/exercise-01 && npm run start`
+  This will go to the directory and then run the script there.
+- Option 3:Run the script from the package.json (see screenshot below)
+
+![Run script in VSC](docs/resources/run_script_vsc.png)
+
+---
+
 ## OPTIONAL: Import project to Codesandbox
 
-> This guide uses the ["javascript"](./tpl/javascript) template from [the template folder](./tpl)
+> This guide uses the ["javascript"](templates/javascript) template from [the template folder](./templates)
 
 1. Open https://codesandbox.io/
 2. Create a new sandbox

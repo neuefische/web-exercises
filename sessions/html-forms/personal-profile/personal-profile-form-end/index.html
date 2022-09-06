@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Personal Profile Form</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <section>
+      <h2 id="title">Create your Personal Profile</h2>
+
+      <form aria-labelledby="title">
+        <p id="personal-information">
+          We want to get to know you! Please enter your personal information.
+        </p>
+        <fieldset aria-describedby="personal-information">
+          <legend>Personal Information</legend>
+          <label for="input-firstname">First Name:</label>
+          <input id="input-firstname" type="text" name="first-name" />
+          <label for="input-lastname">Last Name:</label>
+          <input id="input-lastname" type="text" name="last-name" />
+          <label for="input-birthday">Your Birthday:</label>
+          <input id="input-birthday" type="date" name="birthday" />
+        </fieldset>
+        <p id="further-information">
+          Can you tell us a little bit more? We want to annoy you with unwanted
+          ads.
+        </p>
+        <fieldset aria-describedby="further-information">
+          <legend>Further Information</legend>
+          <label for="input-color">Favourite Color:</label>
+          <input
+            id="input-color"
+            type="color"
+            name="favourite-color"
+            value="#E5430F"
+          />
+          <label for="select-pet">What's your favourite pet?</label>
+          <select id="select-pet" name="favourite-pet">
+            <option value="">--Please choose an option--</option>
+            <option value="cat">Cat</option>
+            <option value="dog">Dog</option>
+            <option value="goldfish">Goldfish</option>
+            <option value="nothing">I do not like pets.</option>
+          </select>
+        </fieldset>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>

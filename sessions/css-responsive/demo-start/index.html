@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<title>HTML & CSS</title>
+		<link rel="stylesheet" href="./css/styles.css" />
+	</head>
+	<body>
+		<main>
+			<h1>CSS Responsive Demo</h1>
+
+			<section class="playground">
+				<h2>Responsive Units</h2>
+				<section class="section">
+					<h3>Responsive Unit: %</h3>
+					<p>This box wants to be half the width of its parent.</p>
+					<div class="box box--percent">🐊</div>
+				</section>
+
+				<section class="section">
+					<h3>Responsive Unit: vw</h3>
+					<p>This box wants to be half as wide as the viewport <b>width</b>.</p>
+					<div class="box box--vw">🦌</div>
+				</section>
+
+				<section class="section">
+					<h3>Responsive Unit: vh</h3>
+					<p>This box wants to be half as wide as the viewport <b>height</b>.</p>
+					<div class="box box--vh">🦩</div>
+				</section>
+
+				<section class="section">
+					<h3>Responsive Unit: em</h3>
+					<p>
+						This box wants five times as wide and high as the <b>current</b> font size.
+					</p>
+					<div class="box box--em">🦧</div>
+				</section>
+
+				<section class="section">
+					<h3>Responsive Unit: rem</h3>
+					<p>This box wants five times as wide and high as the <b>root</b> font size.</p>
+					<div class="box box--rem">🦍</div>
+				</section>
+
+				<section class="section">
+					<h3>Math in CSS: calc()</h3>
+					<p>
+						This box wants to be half as wide a the parent element minus two times the
+						current font size.
+					</p>
+					<div class="box box--calc">🦚</div>
+				</section>
+			</section>
+			<section class="playground">
+				<h2>Media Queries</h2>
+
+				<section class="section">
+					<h3>min-width</h3>
+					<p>
+						This box should be 200px wide on small screens and 400px wide on screens
+						that are at least 768px wide.
+					</p>
+					<div class="box box--min-width">🦬</div>
+				</section>
+
+				<section class="section">
+					<h3>Multiple min-widths</h3>
+					<p>
+						This box should be
+						<ul>
+							<li>100% wide on small screens</li>
+							<li>75% wide on screens that are at least 768px wide</li>
+							<li>300px wide on screens that are at least 1024px wide.</li>
+						</ul>
+
+						Also it should become green on screens that are at least 1024px wide.
+					</p>
+					<div class="box box--min-width-2">🐩</div>
+				</section>
+
+				<section class="section">
+					<h3>Prefers Color Scheme</h3>
+					<p>
+						This box should have
+						<ul>
+							<li>black text and a white background on light mode and</li>
+							<li>white text and a black background on dark mode.</li>
+						</ul>
+					</p>
+					<div class="box box--color-scheme">CSS!</div>
+				</section>
+			</section>
+		</main>
+	</body>
+</html>

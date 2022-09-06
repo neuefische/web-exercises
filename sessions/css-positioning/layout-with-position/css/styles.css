@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	margin: 80px 0 45px 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+/**
+ *
+ * Place the header at the top of the viewport and make sure, that it remains there when the
+ * document is scrolled.
+ */
+.header {
+	background: #140523;
+	color: #ffffff;
+	height: 80px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+	padding: 10px;
+}
+
+.header__text {
+	color: #ff4a11;
+}
+
+.header__heading {
+	margin: 0;
+}
+
+/**
+ *
+ * Place the footer at the bottom of the viewport and make sure, that it remains there when the
+ * document is scrolled.
+ */
+.footer {
+	background: #140523;
+	color: #ffffff;
+	height: 48px;
+}
+
+/**
+ *
+ * Define the card as reference frame for descendant elements, that require absolute positioning.
+ */
+.card {
+	margin: 20px 10%;
+	border: 5px solid #252629;
+	padding: 3% 10%;
+	scroll-margin-top: 100px;
+	border-radius: 2rem;
+}
+
+.card__heading {
+	margin: 0 0 10px 0;
+}
+
+/**
+ * Place the bookmark in the top, right corner of each card.
+ */
+.card__bookmark {
+	border: 2px solid #ff4a11;
+	font-size: 2em;
+	padding: 6px 12px;
+	border-radius: 50%;
+	box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+}
+
+/**
+ * The go-to-top button should cover all other elements, so that it is always visible, and
+ * unaffected when the document is scrolled.
+ */
+.goto-top {
+	width: 48px;
+	height: 48px;
+	padding: 8px;
+	border-radius: 50%;
+	background: #ff4a11;
+	color: white;
+	box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+	text-decoration: none;
+	flex-shrink: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

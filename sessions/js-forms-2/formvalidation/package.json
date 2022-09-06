@@ -1,0 +1,6 @@
+{
+  "name": "formvalidation",
+  "version": "1.0.0",
+  "description": "A form with various input fields to be validated",
+  "main": "index.html"
+}
