@@ -21,4 +21,4 @@ Switch to the [styles.css](./css/styles.css) file and make something great happe
 
 ## Notes
 
-- You only have to touch the `js/index.js` file.
+- You only have to touch the [styles.css](./css/styles.css) file.
