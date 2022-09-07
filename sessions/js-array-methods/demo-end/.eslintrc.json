@@ -18,7 +18,8 @@
     "no-unused-vars": 0,
     "react/prop-types": 0,
     "react/react-in-jsx-scope": 0,
-    "quotes": 0
+    "quotes": 0,
+    "capitalized-comments": 0
   },
   "settings": {
     "react": {

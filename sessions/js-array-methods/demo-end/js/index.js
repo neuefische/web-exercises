@@ -82,3 +82,31 @@ const games = [
 			"Oh noes! A priceless vase is lost on a distant planet where men have been eliminated and women have invented the eponymous machine to let them mate. It's your job to bravely retrieve the trinket in this third-person action game.",
 	},
 ];
+
+/* forEach */
+
+games.forEach(game => {
+	const card = document.createElement('div');
+
+	const headline = document.createElement('h2');
+	headline.textContent = game.name;
+	card.append(headline);
+
+	const description = document.createElement('p');
+	description.textContent = game.description;
+	card.append(description);
+
+	document.body.append(card);
+});
+
+/* map */
+
+const onlyNames = games.map(game => game.name);
+
+console.log(onlyNames);
+
+/* filter */
+
+const gamesBefore2000 = games.filter(game => game.publishingYear < 2000);
+
+console.log(gamesBefore2000);
