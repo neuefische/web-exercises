@@ -24,13 +24,10 @@ const cards = [
 	},
 ];
 
-// 1: Create an array of lower case answer strings.
-const lowerCaseAnswers = null;
+const lowerCaseAnswers = null; // ['as often as you like.', ...]
 
-// 2: Create an array of strings that are concatenated questions and answers
-const questionsAndAnswersTogether = null;
+const questionsAndAnswersTogether = null; // ['"How often can I use <header>?" - "As often as you like."', ...]
 
-// 3: Create an array of objects with the two properties question and answer.
-const questionAndAnswer = null;
+const questionAndAnswer = null; // [{ question: 'How often can I use <header>?', answer: 'As often as you like.'}, {...}]
 
 export {lowerCaseAnswers, questionsAndAnswersTogether, questionAndAnswer};

@@ -21,7 +21,10 @@ describe('Mapping Challenge', () => {
 				question: 'How often can I use <header>?',
 				answer: 'As often as you like.',
 			},
-			{question: 'How often can I use <aside>?', answer: 'As often as you like.'},
+			{
+				question: 'How often can I use <aside>?',
+				answer: 'As often as you like.',
+			},
 			{
 				question: 'On which types can I use destructuring assignment?',
 				answer: 'On Objects and Arrays',
