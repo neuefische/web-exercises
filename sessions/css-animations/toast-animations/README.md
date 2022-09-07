@@ -1,6 +1,6 @@
 # Toast Animation
 
-In this codesandbox you are gonna practice to animate properties in CSS!
+In this CodeSandbox you are going to practice animating properties in CSS!
 
 ## Task
 
