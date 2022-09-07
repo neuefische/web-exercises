@@ -8,15 +8,31 @@ function addStorageEntry(title, email, password) {
 	const entryElement = document.createElement('li');
 	entryElement.className = 'storage__entry';
 
-	entryElement.innerHTML = `
-		<h3	class="storage__title">${title}</h3>
-		<dl class="storage__credentials">
-			<dt>Email:</dt>
-			<dd>${email}</dd>
-			<dt>Password:</dt>
-			<dd>${password}</dd>
-		</dl>
-	`;
+	const headline = document.createElement('h3');
+	headline.className = 'storage__title';
+	headline.textContent = title;
+	entryElement.append(headline);
+
+	const descriptionList = document.createElement('dl');
+	descriptionList.className = 'storage__credentials';
+
+	const descriptionTermOne = document.createElement('dt');
+	descriptionTermOne.textContent = 'Email:';
+	descriptionList.append(descriptionTermOne);
+
+	const descriptionDetailsOne = document.createElement('dd');
+	descriptionDetailsOne.textContent = email;
+	descriptionList.append(descriptionDetailsOne);
+
+	const descriptionTermTwo = document.createElement('dt');
+	descriptionTermTwo.textContent = 'Password:';
+	descriptionList.append(descriptionTermTwo);
+
+	const descriptionDetailsTwo = document.createElement('dd');
+	descriptionDetailsTwo.textContent = password;
+	descriptionList.append(descriptionDetailsTwo);
+
+	entryElement.append(descriptionList);
 
 	storage.append(entryElement);
 }
