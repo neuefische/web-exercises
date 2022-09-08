@@ -5,8 +5,8 @@ const storage = document.querySelector('[data-js="storage"]');
 const passwordInput = document.querySelector('[data-js="password-input"]');
 
 function addStorageEntry(title, email, password) {
-	const entryElement = document.createElement('li');
-	entryElement.className = 'storage__entry';
+	const entry = document.createElement('li');
+	entry.className = 'storage__entry';
 
 	const headline = document.createElement('h3');
 	headline.className = 'storage__title';
