@@ -5,20 +5,36 @@ const storage = document.querySelector('[data-js="storage"]');
 const passwordInput = document.querySelector('[data-js="password-input"]');
 
 function addStorageEntry(title, email, password) {
-	const entryElement = document.createElement('li');
-	entryElement.className = 'storage__entry';
+	const entry = document.createElement('li');
+	entry.className = 'storage__entry';
 
-	entryElement.innerHTML = `
-		<h3	class="storage__title">${title}</h3>
-		<dl class="storage__credentials">
-			<dt>Email:</dt>
-			<dd>${email}</dd>
-			<dt>Password:</dt>
-			<dd>${password}</dd>
-		</dl>
-	`;
+	const headline = document.createElement('h3');
+	headline.className = 'storage__title';
+	headline.textContent = title;
+	entry.append(headline);
 
-	storage.append(entryElement);
+	const descriptionList = document.createElement('dl');
+	descriptionList.className = 'storage__credentials';
+
+	const descriptionTermEmail = document.createElement('dt');
+	descriptionTermEmail.textContent = 'Email:';
+	descriptionList.append(descriptionTermEmail);
+
+	const descriptionDetailsEmail = document.createElement('dd');
+	descriptionDetailsEmail.textContent = email;
+	descriptionList.append(descriptionDetailsEmail);
+
+	const descriptionTermPassword = document.createElement('dt');
+	descriptionTermPassword.textContent = 'Password:';
+	descriptionList.append(descriptionTermPassword);
+
+	const descriptionDetailsPassword = document.createElement('dd');
+	descriptionDetailsPassword.textContent = password;
+	descriptionList.append(descriptionDetailsPassword);
+
+	entry.append(descriptionList);
+
+	storage.append(entry);
 }
 
 function updatePasswordStrength(text) {
