@@ -32,7 +32,7 @@ function addStorageEntry(title, email, password) {
 	descriptionDetailsTwo.textContent = password;
 	descriptionList.append(descriptionDetailsTwo);
 
-	entryElement.append(descriptionList);
+	entry.append(descriptionList);
 
 	storage.append(entryElement);
 }
