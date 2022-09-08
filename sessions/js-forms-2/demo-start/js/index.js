@@ -11,7 +11,7 @@ function addStorageEntry(title, email, password) {
 	const headline = document.createElement('h3');
 	headline.className = 'storage__title';
 	headline.textContent = title;
-	entryElement.append(headline);
+	entry.append(headline);
 
 	const descriptionList = document.createElement('dl');
 	descriptionList.className = 'storage__credentials';
