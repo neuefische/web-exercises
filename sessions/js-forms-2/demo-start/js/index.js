@@ -34,7 +34,7 @@ function addStorageEntry(title, email, password) {
 
 	entry.append(descriptionList);
 
-	storage.append(entryElement);
+	storage.append(entry);
 }
 
 function updatePasswordStrength(text) {
