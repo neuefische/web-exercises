@@ -36,8 +36,14 @@ const titlesWithDuration = null; // ['Crepes (60min)', ...]
 const timePerServing = null; // [20, 10, 432, 12]
 
 // EXTRA:
-// HINT: use first map() and then Array.prototype.join() with "method chaining":
+
+// HINT: use first map() and then Array.prototype.join() with "method chaining" like so:
+// myArray.map(...).join(', ');
+
 const allTitlesInOneString = null; // 'Crepes, Scrambled Eggs, ...'
+
+// For more information how to join an array,
+// see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join#joining_an_array_four_different_ways
 
 /*
  2: `filter` exercises
