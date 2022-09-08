@@ -83,10 +83,14 @@ const games = [
 	},
 ];
 
-/* forEach */
+/** forEach **/
 
 games.forEach(game => {
-	const card = document.createElement('div');
+	console.log(game.name);
+});
+
+games.forEach(game => {
+	const card = document.createElement('article');
 
 	const headline = document.createElement('h2');
 	headline.textContent = game.name;
@@ -99,14 +103,27 @@ games.forEach(game => {
 	document.body.append(card);
 });
 
-/* map */
+/** map **/
 
-const onlyNames = games.map(game => game.name);
+const uppercaseNames = games.map(game => {
+	return game.name.toUpperCase();
+});
 
-console.log(onlyNames);
+const uppercaseNamesShorthandSyntax = games.map(game => game.name);
 
-/* filter */
+console.log(uppercaseNames);
+console.log(uppercaseNamesShorthandSyntax);
+
+/** filter **/
 
 const gamesBefore2000 = games.filter(game => game.publishingYear < 2000);
 
 console.log(gamesBefore2000);
+
+/** Method chaining **/
+
+const uppercaseNamesBefore2000 = games
+	.filter(game => game.publishingYear < 2000)
+	.map(game => game.name.toUpperCase());
+
+console.log(uppercaseNamesBefore2000);
