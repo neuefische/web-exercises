@@ -10,46 +10,18 @@
 	</head>
 	<body>
 		<header class="header">
-			<h1 class="header__title">Bookmarks</h1>
+			<h1 class="header__title">Quiz-App</h1>
 		</header>
 		<main>
-			<ul class="card-list">
-				<li class="card-list__item">
-					<article class="card" data-js="card">
-						<h2 class="card__question">
-							Daniel Radcliffe became a global star in the film industry due to his
-							performance in which film franchise?
-						</h2>
-						<button class="card__button-answer" type="button" data-js="answer-button">
-							Show answer
-						</button>
-						<p class="card__answer" data-js="answer">Harry Potter</p>
-						<ul class="card__tag-list">
-							<li class="card__tag-list-item">#danielradcliffe</li>
-							<li class="card__tag-list-item">#hewhomustnotbenamed</li>
-							<li class="card__tag-list-item">#abracadabra</li>
-						</ul>
-						<div class="card__button-bookmark">
-							<button
-								class="bookmark bookmark--active"
-								aria-label="bookmark"
-								type="button"
-								data-js="bookmark-button"
-							>
-								<svg
-									class="bookmark__icon"
-									xmlns="http://www.w3.org/2000/svg"
-									viewbox="0 0 24 24"
-								>
-									<path
-										d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"
-									/>
-								</svg>
-							</button>
-						</div>
-					</article>
-				</li>
-			</ul>
+			<form class="form" aria-label="Add a new question">
+				<label for="question">Your question:</label>
+				<textarea id="question" rows="7" name="question"></textarea>
+				<label for="answer">Your answer:</label>
+				<textarea id="answer" rows="7" name="answer"></textarea>
+				<label for="tag">Tag:</label>
+				<input type="text" />
+				<button class="form__submit-button" type="submit">Submit</button>
+			</form>
 		</main>
 
 		<nav class="navigation">
@@ -68,7 +40,7 @@
 						</svg>
 					</a>
 				</li>
-				<li class="navigation__list-item navigation__list-item--active">
+				<li class="navigation__list-item">
 					<a
 						class="navigation__link"
 						href="./bookmarks.html"
@@ -86,7 +58,7 @@
 						</svg>
 					</a>
 				</li>
-				<li class="navigation__list-item">
+				<li class="navigation__list-item navigation__list-item--active">
 					<a class="navigation__link" href="./form.html" aria-label="go to form page">
 						<svg style="width: 24px; height: 24px" viewbox="0 0 24 24">
 							<path
