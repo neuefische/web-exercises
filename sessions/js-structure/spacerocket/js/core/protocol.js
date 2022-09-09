@@ -55,11 +55,3 @@ export function launch(launchFunction) {
 		render(window.rocket, state);
 	}
 }
-
-export function getRocket() {
-	if (!window.rocket) {
-		throw new Error('No rocket found');
-	}
-
-	return window.rocket;
-}

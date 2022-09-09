@@ -1,4 +1,4 @@
-import {getRocket} from './protocol.js';
+import {getRocket} from './rocket.js';
 
 export function countdown() {
 	const rocket = getRocket();

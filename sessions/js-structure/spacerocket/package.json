@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Static HTML template with CSS and JS",
   "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest"
+  },
   "devDependencies": {
     "jest": "^29.0.0",
     "@types/jest": "^29.0.0",

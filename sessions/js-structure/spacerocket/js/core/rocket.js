@@ -15,3 +15,11 @@ export function getNewRocket() {
 	// Dirty deep clone 🫠
 	return JSON.parse(JSON.stringify(rocket));
 }
+
+export function getRocket() {
+	if (!window.rocket) {
+		throw new Error('No rocket found');
+	}
+
+	return window.rocket;
+}

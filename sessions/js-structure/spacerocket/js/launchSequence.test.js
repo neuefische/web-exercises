@@ -2,24 +2,12 @@ import {getNewRocket} from './core/rocket.js';
 import {FISHSAT, NFSAT} from './payload/satellites.js';
 import launchSequenceFunction from './launchSequence.js';
 
-let windowSpy;
-
-beforeEach(() => {
-	windowSpy = jest.spyOn(window, 'window', 'get');
-});
-
-afterEach(() => {
-	windowSpy.mockRestore();
-});
-
 test('The default export of launchSequence.js is a function', () => {
 	expect(typeof launchSequenceFunction).toBe('function');
 });
 
 test('launch() function correctly launches the rocket', () => {
-	windowSpy.mockImplementation(() => ({
-		rocket: getNewRocket(),
-	}));
+	global.window = {rocket: getNewRocket()};
 
 	expect(() => launchSequenceFunction()).not.toThrow();
 
