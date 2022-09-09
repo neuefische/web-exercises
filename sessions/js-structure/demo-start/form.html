@@ -13,15 +13,16 @@
 			<h1 class="header__title">Quiz-App</h1>
 		</header>
 		<main>
-			<form class="form" aria-label="Add a new question">
+			<form class="form" aria-label="Add a new question" data-js="form">
 				<label for="question">Your question:</label>
 				<textarea id="question" rows="7" name="question"></textarea>
 				<label for="answer">Your answer:</label>
 				<textarea id="answer" rows="7" name="answer"></textarea>
 				<label for="tag">Tag:</label>
-				<input type="text" />
+				<input id="tag" type="text" name="tag" />
 				<button class="form__submit-button" type="submit">Submit</button>
 			</form>
+			<ul class="form__card-list" data-js="form-card-list"></ul>
 		</main>
 
 		<nav class="navigation">
