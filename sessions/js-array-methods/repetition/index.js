@@ -18,7 +18,7 @@ const recipes = [
 		servings: 10,
 	},
 	{
-		title: 'Carot Cake',
+		title: 'Carrot Cake',
 		duration: 120,
 		ingredients: ['carrots', 'flour', 'eggs', 'salt', 'milk', 'sugar'],
 		servings: 10,
@@ -26,7 +26,7 @@ const recipes = [
 ];
 
 /*
- 1: map exercises:
+ 1: `map` exercises
 */
 
 const onlyTitles = null; // ['Crepes', ...]
@@ -36,11 +36,17 @@ const titlesWithDuration = null; // ['Crepes (60min)', ...]
 const timePerServing = null; // [20, 10, 432, 12]
 
 // EXTRA:
-// HINT: use first map() and then Array.prototype.join() with "method chaining":
+
+// HINT: use first map() and then Array.prototype.join() with "method chaining" like so:
+// myArray.map(...).join(', ');
+
 const allTitlesInOneString = null; // 'Crepes, Scrambled Eggs, ...'
 
+// For more information how to join an array,
+// see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join#joining_an_array_four_different_ways
+
 /*
- 2: filter exercises:
+ 2: `filter` exercises
 */
 
 const recipesThatOnlyTake60minutesOrLess = null;
@@ -49,6 +55,12 @@ const allRecipesWithMoreThan2Servings = null;
 
 const allRecipesWithTitlesLongerThan12Characters = null;
 
-// EXTRA:
-// HINT: use Array.prototype.includes
-const allRecipesWithEggs = null;
+export {
+	onlyTitles,
+	titlesWithDuration,
+	timePerServing,
+	allTitlesInOneString,
+	recipesThatOnlyTake60minutesOrLess,
+	allRecipesWithMoreThan2Servings,
+	allRecipesWithTitlesLongerThan12Characters,
+};

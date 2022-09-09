@@ -1,0 +1,13 @@
+{
+  "name": "js-array-methods-repetition-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "jest": "29.0.2"
+  },
+  "keywords": []
+}
