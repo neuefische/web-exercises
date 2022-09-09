@@ -31,6 +31,8 @@ function handleSubmit() {
 		const data = Object.fromEntries(formData);
 
 		createCard(data);
+		event.target.reset();
+		event.target.elements.question.focus();
 	});
 }
 
@@ -102,8 +104,28 @@ function createCard(data) {
 
 	toggleAnswer();
 	toggleBookmark();
+	countCharactersLeft();
+}
+
+function countCharactersLeft() {
+	const formFields = document.querySelectorAll('[data-js*="input"]');
+	const counterOutputs = document.querySelectorAll('[data-js*=amount-left]');
+
+	formFields.forEach((formField, index) => {
+		counterOutputs.forEach(output => {
+			output.innerText = formField.maxLength;
+		});
+		formField.addEventListener('input', () => {
+			const currentAmountLeft = formField.maxLength - formField.value.length;
+			updateAmount(currentAmountLeft, index);
+		});
+	});
+	function updateAmount(value, index) {
+		counterOutputs[index].innerText = value;
+	}
 }
 
 toggleBookmark();
 toggleAnswer();
 handleSubmit();
+countCharactersLeft();
