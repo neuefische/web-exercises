@@ -17,11 +17,11 @@ export function render(rocket, state) {
 	visualElement.appendChild(stateElement);
 
 	const triesElement = document.createElement('div');
-	triesElement.textContent = `Tries: ${state.tries}`;
+	triesElement.textContent = `Tries: ${state?.tries}`;
 	stateElement.appendChild(triesElement);
 
 	const costElement = document.createElement('div');
-	costElement.textContent = `Total Cost: ${dollarFormatter.format(state.cost)}`;
+	costElement.textContent = `Total Cost: ${dollarFormatter.format(state?.cost)}`;
 	stateElement.appendChild(costElement);
 
 	const rocketElement = document.createElement('div');
@@ -102,4 +102,7 @@ export function render(rocket, state) {
 	}
 }
 
-render(undefined, JSON.parse(window.localStorage.getItem('state')));
+render(
+	undefined,
+	JSON.parse(window.localStorage.getItem('state') ?? JSON.stringify({tries: 0, cost: 0})),
+);
