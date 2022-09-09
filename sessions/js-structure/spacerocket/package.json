@@ -1,0 +1,11 @@
+{
+  "name": "js-structure-spacerocket",
+  "version": "1.0.0",
+  "description": "Static HTML template with CSS and JS",
+  "main": "index.html",
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "@types/jest": "^29.0.0",
+    "eslint-plugin-jest": "^27.0.2"
+  }
+}
