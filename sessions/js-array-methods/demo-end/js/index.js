@@ -75,11 +75,11 @@ const games = [
 	},
 	{
 		id: 10,
-		name: 'Rex Nebular and the Cosmic Gender Bender',
-		publishingYear: 1992,
+		name: 'Extreme Laser Cats From Jupiter',
+		publishingYear: 2042,
 		devices: ['DOS', 'Mac'],
 		description:
-			"Oh noes! A priceless vase is lost on a distant planet where men have been eliminated and women have invented the eponymous machine to let them mate. It's your job to bravely retrieve the trinket in this third-person action game.",
+			"Have you heard of the Extreme Laser Cats From Jupiter? Of course you have! Unfortunately, they have decided to attack earth. The Apocalypse is upon us - and it's very cute.",
 	},
 ];
 
