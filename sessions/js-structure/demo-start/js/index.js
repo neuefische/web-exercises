@@ -50,7 +50,7 @@ const list = document.querySelector('[data-js="authors-list"]');
 addButton.addEventListener('click', () => {
 	if (!list.children.length) {
 		const headline = document.createElement('h2');
-		headline.textContent = 'Famous Authors';
+		headline.textContent = `Famous ${getPlural('Author')}`;
 		list.append(headline);
 	}
 
