@@ -1,26 +1,3 @@
-function toggleBookmark() {
-	const bookmarkButtons = document.querySelectorAll('[data-js="bookmark-button"]');
-
-	bookmarkButtons.forEach(button => {
-		button.addEventListener('click', () => {
-			button.classList.toggle('bookmark--active');
-		});
-	});
-}
-
-function toggleAnswer() {
-	const cardElements = document.querySelectorAll('[data-js="card"]');
-
-	cardElements.forEach(card => {
-		const answerButton = card.querySelector('[data-js="answer-button"]');
-		const answer = card.querySelector('[data-js="answer"]');
-
-		answerButton.addEventListener('click', () => {
-			answer.classList.toggle('card__answer--active');
-		});
-	});
-}
-
 function handleSubmit() {
 	const form = document.querySelector('[data-js="form"]');
 
@@ -33,6 +10,47 @@ function handleSubmit() {
 		createCard(data);
 		event.target.reset();
 		event.target.elements.question.focus();
+	});
+}
+
+function toggleBookmark() {
+	const bookmarkButtons = document.querySelectorAll('[data-js="bookmark-button"]');
+
+	bookmarkButtons.forEach(button => {
+		button.addEventListener('click', () => {
+			button.classList.toggle('bookmark--active');
+		});
+	});
+}
+
+function countCharactersLeft() {
+	const formFields = document.querySelectorAll('[data-js*="input"]');
+	const counterOutputs = document.querySelectorAll('[data-js*=amount-left]');
+
+	formFields.forEach((formField, index) => {
+		counterOutputs.forEach(output => {
+			output.innerText = formField.maxLength;
+		});
+		formField.addEventListener('input', () => {
+			const currentAmountLeft = formField.maxLength - formField.value.length;
+			updateAmount(currentAmountLeft, index);
+		});
+	});
+	function updateAmount(value, index) {
+		counterOutputs[index].innerText = value;
+	}
+}
+
+function toggleAnswer() {
+	const cardElements = document.querySelectorAll('[data-js="card"]');
+
+	cardElements.forEach(card => {
+		const answerButton = card.querySelector('[data-js="answer-button"]');
+		const answer = card.querySelector('[data-js="answer"]');
+
+		answerButton.addEventListener('click', () => {
+			answer.classList.toggle('card__answer--active');
+		});
 	});
 }
 
@@ -105,24 +123,6 @@ function createCard(data) {
 	toggleAnswer();
 	toggleBookmark();
 	countCharactersLeft();
-}
-
-function countCharactersLeft() {
-	const formFields = document.querySelectorAll('[data-js*="input"]');
-	const counterOutputs = document.querySelectorAll('[data-js*=amount-left]');
-
-	formFields.forEach((formField, index) => {
-		counterOutputs.forEach(output => {
-			output.innerText = formField.maxLength;
-		});
-		formField.addEventListener('input', () => {
-			const currentAmountLeft = formField.maxLength - formField.value.length;
-			updateAmount(currentAmountLeft, index);
-		});
-	});
-	function updateAmount(value, index) {
-		counterOutputs[index].innerText = value;
-	}
 }
 
 toggleBookmark();
