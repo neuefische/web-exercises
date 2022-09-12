@@ -1,6 +1,8 @@
 import {getNewRocket, getRocket} from './core/rocket.js';
 import {FISHSAT, NFSAT} from './payload/satellites.js';
-import launchSequenceFunction from './launchSequence.js';
+import * as launchSequence from './launchSequence.js';
+
+const launchSequenceFunction = launchSequence?.default;
 
 beforeEach(() => {
 	global.rocket = getNewRocket();
@@ -14,7 +16,7 @@ test('The default export of launchSequence.js is a function', () => {
 	expect(typeof launchSequenceFunction).toBe('function');
 });
 
-test('launch() function does not throw', () => {
+test('launchSequence function does not throw', () => {
 	expect(() => launchSequenceFunction()).not.toThrow();
 });
 

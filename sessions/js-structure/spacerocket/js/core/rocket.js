@@ -17,9 +17,9 @@ export function getNewRocket() {
 }
 
 export function getRocket() {
-	if (!window.rocket) {
+	if (!global.rocket) {
 		throw new Error('No rocket found');
 	}
 
-	return window.rocket;
+	return global.rocket;
 }
