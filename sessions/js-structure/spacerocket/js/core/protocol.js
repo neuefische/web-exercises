@@ -23,7 +23,6 @@ function logTry(cost) {
 
 export function launch(launchFunction) {
 	window.rocket = getNewRocket();
-	console.log('new rocket', window.rocket);
 	try {
 		launchFunction();
 
@@ -45,7 +44,6 @@ export function launch(launchFunction) {
 
 		window.rocket.success = true;
 	} catch (error) {
-		console.log('caught error', window.rocket);
 		window.rocket.error = error;
 	} finally {
 		const state = logTry(

@@ -179,6 +179,21 @@ button:active {
 	animation-timing-function: cubic-bezier(0.82, 0, 0.22, 0.95);
 }
 
+.no-js {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: max-content;
+	padding: 1rem;
+	color: var(--foam);
+	opacity: 0.9;
+	max-width: 95vw;
+	animation: fadeIn 0.75s;
+	animation-delay: 0.75s;
+}
+
 .state {
 	position: absolute;
 	top: 12px;
