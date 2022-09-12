@@ -7,7 +7,7 @@ export const rocket = {
 	liftoff: false,
 	payload: [],
 	payloadDeployed: false,
-	cost: 12_000_000,
+	cost: 12000000,
 	success: false,
 };
 

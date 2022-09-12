@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 		<title>HTML & CSS & JS</title>
 		<link rel="stylesheet" href="./css/styles.css" />
-		<script src="./js/index.js" type="module"></script>
+		<script src="./js/index.js" type="module" defer></script>
 	</head>
 	<body>
 		<main class="layout">
@@ -51,14 +51,14 @@
 						<dt>Step 1: Load Payload</dt>
 						<dd>
 							<code>core/load.js</code> provides the
-							<code>loadPayload()</code> function. It can be used to load the required
-							mission payload. Refer to the Mission Briefing for the payload to be
-							loaded.
+							<code>loadPayload(payload)</code> function. It can be used to load the
+							required mission payload. Refer to the Mission Briefing for the payload
+							to be loaded.
 						</dd>
 						<dt>Step 2: Fueling</dt>
 						<dd>
-							<code>core/fuel.js</code> provides the <code>fuel()</code> function. The
-							fuel subroutine must be called first in the launch sequence.
+							<code>core/fuel.js</code> provides the <code>fuel()</code> function.
+							Fueling should be done before starting the countdown.
 						</dd>
 						<dt>Step 3: Countdown</dt>
 						<dd>
@@ -71,8 +71,7 @@
 						<dd>
 							<code>core/liftoff.js</code> provides the
 							<code>liftoff()</code> function. It must be called after an appropriate
-							countdown. It takes care of stage seperation and subsequent stage burns
-							to bring SpaceRocket™️ into the correct orbit.
+							countdown. It brings SpaceRocket™️ into the correct orbit.
 						</dd>
 						<dt>Step 5: Deploy Payload</dt>
 						<dd>
