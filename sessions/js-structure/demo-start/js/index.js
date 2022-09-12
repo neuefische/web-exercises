@@ -57,7 +57,6 @@ addButton.addEventListener('click', () => {
 	const listItem = document.createElement('li');
 	listItem.className = 'classical-authors__list-item';
 	listItem.textContent = getAuthorName();
-	count++;
 
 	list.append(listItem);
 });
