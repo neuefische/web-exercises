@@ -17,6 +17,7 @@
 	padding: 0.5rem;
 	width: 30%;
 	text-align: center;
+	margin-bottom: 0.5rem;
 }
 .classical-authors__list-item:nth-child(odd) {
 	background-color: var(--granite);

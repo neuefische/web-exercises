@@ -5,6 +5,10 @@
 	flex-direction: column;
 }
 
+.card + .card {
+	margin-top: 1.5rem;
+}
+
 .card-changed {
 	background-color: var(--water);
 	padding: 0.5rem;
