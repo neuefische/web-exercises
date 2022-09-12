@@ -26,14 +26,12 @@ body {
 }
 
 .header {
-	position: relative;
 	background: var(--color-primary);
 	color: white;
 }
 
 .page {
 	display: none;
-
 	padding: 3rem;
 }
 

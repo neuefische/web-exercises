@@ -1,4 +1,4 @@
-# Single Page Application (Part 2)
+# Single Page Application (Part 3)
 
 Up to now, we've used several HTML files for our app. In contrast, we can create a SPA
 ([single-page application](https://developer.mozilla.org/en-US/docs/Glossary/SPA)): It loads only a
