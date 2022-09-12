@@ -1,0 +1,5 @@
+@import './globals.css';
+
+@import './components/header.css';
+@import './components/card.css';
+@import './components/classical-authors.css';
