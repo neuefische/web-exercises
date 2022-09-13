@@ -1,6 +1,6 @@
 import {getAuthorName} from './utils/authors.js';
 import {getPlural} from './utils/words.js';
-import {changeCard} from './Card.js';
+import changeCard from './Card.js';
 import './Header.js';
 
 /** Card */

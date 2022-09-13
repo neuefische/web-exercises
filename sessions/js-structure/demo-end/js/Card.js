@@ -1,4 +1,4 @@
-export function changeCard(cardElement) {
+export default function changeCard(cardElement) {
 	const cardButton = cardElement.querySelector('[data-js="card-button"]');
 
 	cardButton.addEventListener('click', () => {
