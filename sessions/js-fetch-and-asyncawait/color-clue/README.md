@@ -1,4 +1,4 @@
-# Fetch with star wars cards
+# Fetch with random color clue
 
 To be clear: Fetching data can be frightening at the beginning. But don't worry, we are going to make you familiar with the syntax and it will be fine ;)
 
