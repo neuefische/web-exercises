@@ -1,4 +1,4 @@
-import {getPlural} from './utils/words';
+import {getPlural} from './utils/words.js';
 
 const headerButton = document.querySelector('[data-js="header-button"]');
 const headline = document.querySelector('[data-js="headline"]');
