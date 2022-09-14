@@ -1,0 +1,10 @@
+{
+  "name": "js-array-methods-2-challenge-01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  },
+  "keywords": []
+}
