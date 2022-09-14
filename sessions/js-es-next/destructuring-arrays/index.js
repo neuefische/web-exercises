@@ -50,7 +50,7 @@ const student5 = 'Destructure the array nestedStudents';
 
 const values = [1, 6, 7, 9, 12, 5, 4]
 
-const result = add()
+const result = add(1) // spread values inside this function call
 
 function add(...values) {
 return values.reduce((previousValue, currentValue) => previousValue + currentValue)
