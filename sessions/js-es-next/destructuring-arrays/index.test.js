@@ -13,6 +13,7 @@ import {
   student3,
   student4,
   student5,
+  result
 } from './index';
   
 test('Exersice 1: name is Egg, price is 0.25 and quantity is 12', () => {
@@ -42,5 +43,9 @@ test('Exersice 5: student1 is "Chris", student2 is "Ahmad", student3 is "Antigon
   expect(student3).toEqual('Antigoni');
   expect(student4).toEqual('Toby');
   expect(student5).toEqual('Sam');
+});
+
+test('Exersice 6: result is 44', () => {
+  expect(result).toEqual(44);
 });
   

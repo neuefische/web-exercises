@@ -35,7 +35,7 @@ const students = ['Christina', 'Jon', 'Alexandare'];
 const lastName = 'Destructure the array students';
 
 // EXERCISE 5
-// Use Array Destructuring to get all of the names from this Nested Array.
+// Use Array Destructuring to get all of the names from this nested array.
 
 const nestedStudents = ['Chris', ['Ahmad', 'Antigoni'], ['Toby', 'Sam']];
 
@@ -44,6 +44,17 @@ const student2 = 'Destructure the array nestedStudents';
 const student3 = 'Destructure the array nestedStudents';
 const student4 = 'Destructure the array nestedStudents';
 const student5 = 'Destructure the array nestedStudents';
+
+// EXERCISE 6
+// Spread the values of the values array in to the function call of the add function.
+
+const values = [1, 6, 7, 9, 12, 5, 4]
+
+const result = add()
+
+function add(...values) {
+return values.reduce((previousValue, currentValue) => previousValue + currentValue)
+}
 
 export {
   name,
@@ -60,4 +71,5 @@ export {
   student3,
   student4,
   student5,
+  result
 };
