@@ -1,8 +1,8 @@
 import {caesarCipher13} from '../../utils/cipher.js';
 
-const headlineText = 'Classical Authors';
-
 export function Header() {
+	const headlineText = 'Classical Authors';
+
 	const header = document.createElement('header');
 	header.className = 'header';
 
