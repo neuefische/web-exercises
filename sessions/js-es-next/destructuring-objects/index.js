@@ -21,7 +21,7 @@ const course = 'Destructure the object company';
 const user = {name: 'John', years: 30};
 
 const name = 'Destructure the object user';
-const years = 'Destructure the object user';
+const age = 'Destructure the object user';
 const isAdmin = 'Destructure the object user';
 
 // EXERCISE 3
@@ -55,7 +55,7 @@ const moreInformation = {
 export {
   course,
   name,
-  years,
+  age,
   isAdmin,
   dogName,
   dogGreed,
