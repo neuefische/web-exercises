@@ -1,113 +1,107 @@
 :root {
-  /* Color Variables */
+	/* Color Variables */
 
-  --nemo: #ff4a11;
-  --granite: #252629;
-  --water: #f3f5f9;
-  --foam: #ffffff;
+	--nemo: #ff4a11;
+	--granite: #252629;
+	--water: #f3f5f9;
+	--foam: #ffffff;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
-  background-color: var(--foam);
-  padding: 20px;
+	background-color: var(--foam);
+	padding: 20px;
 }
 
 main {
-  display: grid;
-  gap: 20px;
+	display: grid;
+	gap: 20px;
 }
 
 h1 {
-  font-size: 3rem;
-  color: var(--nemo);
+	font-size: 3rem;
+	color: var(--nemo);
 }
 
 h2 {
-  margin: 0;
-  color: var(--granite);
+	margin: 0;
+	color: var(--granite);
 }
 
 button {
-  border: none;
-  padding: 14px 20px;
-  cursor: pointer;
-  font-size: 1rem;
-  border-radius: 7px;
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+	border: none;
+	padding: 14px 20px;
+	cursor: pointer;
+	font-size: 1rem;
+	border-radius: 7px;
+	box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
 section {
-  position: relative;
-  padding: 20px;
-  border-radius: 14px;
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  align-items: center;
+	position: relative;
+	padding: 20px;
+	border-radius: 14px;
+	box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	align-items: center;
 }
 
 .button--color {
-  color: var(--water);
-  background-color: var(--granite);
-  /* add transition here */
+	color: var(--water);
+	background-color: var(--granite);
 }
 
 .button--color:hover {
-  background-color: var(--nemo);
-}
-
-.button--shadow {
-  background-color: var(--nemo);
-  color: var(--water);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  /* add transition here */
-}
-
-.button--shadow:hover {
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+	background-color: var(--nemo);
 }
 
 .button--scale {
-  background-color: #ccccd4;
-  /* add transition here */
+	background-color: #ccccd4;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px;
 }
 
 .button--scale:active {
-  transform: scale(0.9);
+	transform: scale(0.9);
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.button--shadow {
+	background-color: var(--nemo);
+	color: var(--water);
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.button--shadow:hover {
+	background-color: var(--granite);
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .button--position {
-  position: relative;
-  align-self: start;
-  background-color: var(--granite);
-  color: var(--water);
+	position: relative;
+	align-self: start;
+	background-color: var(--granite);
+	color: var(--water);
 }
 
 .position--0 {
-  left: 0;
-  /* add transition 'into state 0' here */
+	left: 0;
 }
 
 .position--1 {
-  left: 200px;
-  /* add transition 'into state 1' here */
+	left: 200px;
 }
 
 .position--2 {
-  left: 70%;
-  /* add transition 'into state 2' here */
+	left: 70%;
 }
