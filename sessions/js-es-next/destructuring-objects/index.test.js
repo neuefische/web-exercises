@@ -1,7 +1,7 @@
 import {
   course,
   name,
-  years,
+  age,
   isAdmin,
   dogName,
   dogGreed,
@@ -16,7 +16,7 @@ test('Exersice 1: course is "Web Development"', () => {
   
 test('Exersice 2: name is "John", years is 30 and isAdmin is false', () => {
   expect(name).toEqual('John');
-  expect(years).toEqual(30);
+  expect(age).toEqual(30);
   expect(isAdmin).toEqual(false);
 });
   
