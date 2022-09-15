@@ -6,15 +6,6 @@
 	border-radius: 8px;
 }
 
-.card--rephrased {
+.card--deciphered {
 	background-color: var(--water);
-}
-
-.card__button {
-	width: 60%;
-	margin: 0 auto;
-}
-
-.card__text {
-	text-align: justify;
 }

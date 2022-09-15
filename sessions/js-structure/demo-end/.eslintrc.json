@@ -18,7 +18,8 @@
     "no-unused-vars": 0,
     "react/prop-types": 0,
     "react/react-in-jsx-scope": 0,
-    "operator-linebreak": 0
+    "operator-linebreak": 0,
+    "new-cap": 0
   },
   "settings": {
     "react": {

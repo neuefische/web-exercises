@@ -40,14 +40,9 @@ h2 {
 
 main {
 	display: grid;
-	gap: 4rem;
-}
-
-section {
-	width: 100%;
-	max-width: 1000px;
-	padding: 0 1rem;
-	margin: 0 auto;
-	display: grid;
 	gap: 1rem;
+	width: 100%;
+	max-width: 700px;
+	padding: 0 1rem;
+	margin: 1rem auto;
 }
