@@ -24,12 +24,30 @@ button {
 	padding: 0.5rem;
 }
 
-button:hover {
+button:not(:disabled):hover {
 	background-color: var(--granite);
 	color: var(--water);
+}
+
+button:disabled {
+	opacity: 0.5;
 }
 
 h1,
 h2 {
 	margin: 0;
+}
+
+main {
+	display: grid;
+	gap: 4rem;
+}
+
+section {
+	width: 100%;
+	max-width: 1000px;
+	padding: 0 1rem;
+	margin: 0 auto;
+	display: grid;
+	gap: 1rem;
 }

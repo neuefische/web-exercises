@@ -1,7 +1,7 @@
 let count = 0;
-export function getAuthorName() {
-	const authors = ['Caesar', 'Horace', 'Homer', 'Ovid', 'Cicero'];
+const authors = ['Caesar', 'Horace', 'Homer', 'Ovid', 'Cicero'];
 
+export function getAuthorName() {
 	if (count > 4) {
 		count = 0;
 	}

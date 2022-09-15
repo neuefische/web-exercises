@@ -5,9 +5,8 @@ function getPlural(word) {
 }
 
 let count = 0;
+const authors = ['Caesar', 'Horace', 'Homer', 'Ovid', 'Cicero'];
 function getAuthorName() {
-	const authors = ['Caesar', 'Horace', 'Homer', 'Ovid', 'Cicero'];
-
 	if (count > 4) {
 		count = 0;
 	}
@@ -18,45 +17,44 @@ function getAuthorName() {
 }
 
 /** HEADER */
+
 const headerButton = document.querySelector('[data-js="header-button"]');
 const headline = document.querySelector('[data-js="headline"]');
 
 headerButton.addEventListener('click', () => {
 	headline.textContent = `Classical ${getPlural('Author')}`;
-	headerButton.classList.add('header__button-clicked');
+	headerButton.setAttribute('disabled', '');
 });
 
 /** Card */
 
-function changeCard(cardElement) {
+function initializeCard(cardElement) {
 	const cardButton = cardElement.querySelector('[data-js="card-button"]');
 
 	cardButton.addEventListener('click', () => {
 		cardElement.children[0].textContent = 'Real Latin Placeholder Text';
 		cardElement.children[1].textContent =
 			'Gallia est omnis divisa in partes tres, quarum unam incolunt Belgae, aliam Aquitani, tertiam qui ipsorum lingua Celtae, nostra Galli appellantur. (Caes. BG 1.1.1)';
-		cardButton.classList.add('card__button-clicked');
-		cardElement.classList.add('card-changed');
+		cardButton.setAttribute('disabled', '');
+		cardElement.classList.add('card--rephrased');
 	});
 }
 
-document.querySelectorAll('[data-js="card"]').forEach(card => changeCard(card));
+// Initialize all cards on the page
+document.querySelectorAll('[data-js="card"]').forEach(card => initializeCard(card));
 
 /** Classical Authors List */
 
-const addButton = document.querySelector('[data-js="add-button"]');
-const list = document.querySelector('[data-js="authors-list"]');
+const addAuthorButton = document.querySelector('[data-js="add-author-button"]');
+const authorsHeadline = document.querySelector('[data-js="authors-headline"]');
+const authorsList = document.querySelector('[data-js="authors-list"]');
 
-addButton.addEventListener('click', () => {
-	if (!list.children.length) {
-		const headline = document.createElement('h2');
-		headline.textContent = `Famous ${getPlural('Author')}`;
-		list.append(headline);
-	}
+addAuthorButton.addEventListener('click', () => {
+	authorsHeadline.textContent = `Famous ${getPlural('Author')}`;
 
 	const listItem = document.createElement('li');
 	listItem.className = 'classical-authors__list-item';
 	listItem.textContent = getAuthorName();
 
-	list.append(listItem);
+	authorsList.append(listItem);
 });
