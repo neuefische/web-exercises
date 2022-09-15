@@ -1,4 +1,4 @@
-import {createList, createLogOutput, createObject} from './utils.js';
+import {handleList, handleSingleValue, handleObject} from './utils.js';
 
 const students = [
 	{name: 'Lucille', age: 30, points: 26, happiness: 5},
@@ -8,29 +8,29 @@ const students = [
 	{name: 'Agnes', age: 34, points: 39, happiness: 4},
 ];
 
-createList(students, 'Original Students');
+handleList(students, 'Original Students');
 
 /** includes */
 
 const happinessIncludesTwo = students.map(student => student.happiness).includes(2);
 
-createLogOutput(happinessIncludesTwo, 'happinessIncludesTwo');
+handleSingleValue(happinessIncludesTwo, 'happinessIncludesTwo');
 
 /** find and findIndex */
 
 const personOverThirty = students.find(student => student.age > 30);
 
-createObject(personOverThirty, 'personOverThirty');
+handleObject(personOverThirty, 'personOverThirty');
 
 const indexOfStudentWith39Points = students.findIndex(student => student.points === 39);
 
-createLogOutput(indexOfStudentWith39Points, 'indexOfStudentWith39Points');
+handleSingleValue(indexOfStudentWith39Points, 'indexOfStudentWith39Points');
 
 /** sort and reverse */
 
 const sortedByAge = students.slice().sort((a, b) => a.age - b.age);
 
-createList(sortedByAge, 'sortedByAge');
+handleList(sortedByAge, 'sortedByAge');
 
 const sortedByName = students.slice().sort((a, b) => {
 	const nameA = a.name.toLowerCase();
@@ -44,16 +44,16 @@ const sortedByName = students.slice().sort((a, b) => {
 	return 0;
 });
 
-createList(sortedByName, 'sortedByName');
+handleList(sortedByName, 'sortedByName');
 
 const sortedByNameReversed = sortedByName.slice().reverse();
 
-createList(sortedByNameReversed, 'sortedByNameReversed');
+handleList(sortedByNameReversed, 'sortedByNameReversed');
 
 /** slice */
 
-createList(students, 'Not Original Anymore');
-createList(sortedByAge, 'Not Sorted By Age Anymore');
+handleList(students, 'Not Original Anymore');
+handleList(sortedByAge, 'Not Sorted By Age Anymore');
 
 // Add slice() before the sort methods above
 
@@ -61,14 +61,14 @@ createList(sortedByAge, 'Not Sorted By Age Anymore');
 
 const anyPersonHasZeroPoints = students.some(student => student.points === 0);
 
-createLogOutput(anyPersonHasZeroPoints, 'anyPersonHasZeroPoints');
+handleSingleValue(anyPersonHasZeroPoints, 'anyPersonHasZeroPoints');
 
 const everyPersonIsOlderThanThirty = students.every(student => student.age > 30);
 
-createLogOutput(everyPersonIsOlderThanThirty, 'everyPersonIsOlderThanThirty');
+handleSingleValue(everyPersonIsOlderThanThirty, 'everyPersonIsOlderThanThirty');
 
 /** reduce */
 
 const totalNumberOfPoints = students.map(student => student.points).reduce((a, b) => a + b);
 
-createLogOutput(totalNumberOfPoints, 'totalNumberOfPoints');
+handleSingleValue(totalNumberOfPoints, 'totalNumberOfPoints');

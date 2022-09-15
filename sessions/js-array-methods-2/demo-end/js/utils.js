@@ -1,4 +1,4 @@
-export function createList(students, nameOfList) {
+export function handleList(students, nameOfList) {
 	const list = document.createElement('ul');
 	list.setAttribute('role', 'list');
 	list.setAttribute('class', 'list');
@@ -65,7 +65,7 @@ export function createList(students, nameOfList) {
 	document.body.append(list);
 }
 
-export function createLogOutput(value, nameOfOutput) {
+export function handleSingleValue(value, nameOfOutput) {
 	const output = document.createElement('section');
 	output.setAttribute('class', 'output');
 
@@ -84,7 +84,7 @@ export function createLogOutput(value, nameOfOutput) {
 	document.body.append(output);
 }
 
-export function createObject(object, nameOfObject) {
+export function handleObject(object, nameOfObject) {
 	const list = document.createElement('ul');
 	list.setAttribute('role', 'list');
 	list.setAttribute('class', 'list');
