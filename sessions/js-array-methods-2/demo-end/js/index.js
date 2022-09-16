@@ -26,7 +26,7 @@ const indexOfStudentWith39Points = students.findIndex(student => student.points 
 
 handleSingleValue(indexOfStudentWith39Points, 'indexOfStudentWith39Points');
 
-/** sort and reverse */
+/** sort */
 
 const sortedByAge = students.slice().sort((a, b) => a.age - b.age);
 
@@ -46,10 +46,6 @@ const sortedByName = students.slice().sort((a, b) => {
 
 handleList(sortedByName, 'sortedByName');
 
-const sortedByNameReversed = sortedByName.slice().reverse();
-
-handleList(sortedByNameReversed, 'sortedByNameReversed');
-
 /** slice */
 
 handleList(students, 'Not Original Anymore');
@@ -66,9 +62,3 @@ handleSingleValue(anyPersonHasZeroPoints, 'anyPersonHasZeroPoints');
 const everyPersonIsOlderThanThirty = students.every(student => student.age > 30);
 
 handleSingleValue(everyPersonIsOlderThanThirty, 'everyPersonIsOlderThanThirty');
-
-/** reduce */
-
-const totalNumberOfPoints = students.map(student => student.points).reduce((a, b) => a + b);
-
-handleSingleValue(totalNumberOfPoints, 'totalNumberOfPoints');

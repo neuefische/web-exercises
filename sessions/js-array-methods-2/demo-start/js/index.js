@@ -26,7 +26,7 @@ const indexOfStudentWith39Points = null;
 
 // handleSingleValue(indexOfStudentWith39Points, 'indexOfStudentWith39Points');
 
-/** sort and reverse */
+/** sort */
 
 const sortedByAge = null;
 
@@ -35,10 +35,6 @@ const sortedByAge = null;
 const sortedByName = null;
 
 // handleList(sortedByName, 'sortedByName');
-
-const sortedByNameReversed = null;
-
-// handleList(sortedByNameReversed, 'sortedByNameReversed');
 
 /** slice */
 
@@ -54,9 +50,3 @@ const anyPersonHasZeroPoints = null;
 const everyPersonIsOlderThanThirty = null;
 
 // handleSingleValue(everyPersonIsOlderThanThirty, 'everyPersonIsOlderThanThirty');
-
-/** reduce */
-
-const totalNumberOfPoints = null;
-
-// handleSingleValue(totalNumberOfPoints, 'totalNumberOfPoints');
