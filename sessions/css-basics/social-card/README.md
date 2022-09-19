@@ -1,6 +1,4 @@
-# CSS Basics: Challenges
-
-## Social Card
+# Social Card
 
 Your task is to recreate the following social card.
 ![social card example](./assets/social-card.png)
