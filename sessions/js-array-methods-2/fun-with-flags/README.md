@@ -1,6 +1,6 @@
 # Fun with Flags
 
-In this challenge you will learn how to use the array method find and how it differes from filter.
+In this challenge you will learn how to use the array method find and how it differs from filter.
 
 ## Tasks
 
