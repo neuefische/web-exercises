@@ -7,8 +7,7 @@ const cards = [
 		isBookmarked: false,
 	},
 	{
-		question:
-			'Daniel Radcliffe became a global star in the film industry due to his performance in which film franchise?',
+		question: 'Daniel Radcliffe became a global star in the film industry due to his performance in which film franchise?',
 		answer: 'Harry Potter',
 		tags: ['hewhomustnotbenamed', 'danielradcliffe', 'abracadabra'],
 		isBookmarked: false,
