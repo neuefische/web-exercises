@@ -17,7 +17,7 @@ const cards = [
 		question:
 			'In the game series "The Legend of Zelda" what is the name of the main character?',
 		answer: 'Link',
-		tags: ['thelinktothepast', 'thelinkbetweenworlds', 'thelinkbetweenages'],
+		tags: ['linktothepast', 'linkbetweenworlds', 'linkbetweenages'],
 		isBookmarked: false,
 	},
 ];
