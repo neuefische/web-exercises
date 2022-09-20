@@ -1,7 +1,7 @@
 // Store the cards in a global state
 const cards = [
 	{
-		question: 'In the Kingdom Hearts series who provides the english voice for Master	Eraqus?',
+		question: 'In the Kingdom Hearts series who provides the english voice for Master Eraqus?',
 		answer: 'Mark Hamill',
 		tags: ['kingdomheart', 'mastereraqus', 'english voices'],
 		isBookmarked: false,
