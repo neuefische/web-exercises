@@ -1,6 +1,6 @@
 .form {
 	padding: 10rem 2rem 3rem 2rem;
-	max-width: 45rem;
+	max-width: 650px;
 	margin: 0 auto;
 	display: grid;
 	flex-direction: column;
@@ -21,7 +21,7 @@
 	width: 40%;
 	align-self: center;
 	background: var(--secondary);
-	color: var(--white);
+	color: var(--primary);
 	border: none;
 	margin: 0 auto;
 	padding: 1rem;

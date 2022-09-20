@@ -4,7 +4,7 @@
 	height: 3rem;
 	border-radius: 50%;
 	background: var(--secondary);
-	color: var(--white);
+	color: var(--primary);
 }
 
 .bookmark:hover {
