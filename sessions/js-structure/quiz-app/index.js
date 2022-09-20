@@ -13,8 +13,7 @@ const cards = [
 		isBookmarked: false,
 	},
 	{
-		question:
-			'In the game series "The Legend of Zelda" what is the name of the main character?',
+		question: 'In the game series "The Legend of Zelda" what is the name of the main character?',
 		answer: 'Link',
 		tags: ['linktothepast', 'linkbetweenworlds', 'linkbetweenages'],
 		isBookmarked: false,
