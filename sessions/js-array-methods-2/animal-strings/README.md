@@ -10,18 +10,18 @@ Below this array, you will find a couple of variables (e.g. `hippoExists`). They
 
 And now it's your turn: delete the value `null` and write code such that the variables have a value corresponding to their name. Use the following methods to achieve this goal:
 
-- `Array.includes`()`
-- `Array.find`()`
-- `Array.findIndex`()`
-- `Array.sort`()`
-- `Array.some`()`
-- `Array.every`()`
-- `Array.reduce`()`
+- `Array.includes()`
+- `Array.find()`
+- `Array.findIndex()`
+- `Array.sort()`
+- `Array.some()`
+- `Array.every()`
+- `Array.reduce()`
 
 Additionally, you will need:
 
-- `String.startsWith`()`
-- `String.endsWith`()`
+- `String.startsWith()`
+- `String.endsWith()`
 
 You will find some hints as comments.
 
