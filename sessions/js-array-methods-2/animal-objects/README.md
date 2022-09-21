@@ -10,20 +10,20 @@ Below this array, you will find a couple of variables (e.g. `firstAnimalStarting
 
 And now it's your turn: delete the value `null` and write code such that the variables have a value corresponding to their name. Use the following methods to achieve this goal:
 
-- `Array.includes`()`
-- `Array.find`()`
-- `Array.findIndex`()`
-- `Array.sort`()`
-- `Array.some`()`
-- `Array.every`()`
-- `Array.reduce`()`
-- `Array.reverse`()`
+- `Array.includes()`
+- `Array.find()`
+- `Array.findIndex()`
+- `Array.sort()`
+- `Array.some()`
+- `Array.every()`
+- `Array.reduce()`
+- `Array.reverse()`
 
 Additionally, at some point you will need:
 
-- `Array.filter`()`
-- `Array.map`()`
-- `String.startsWith`()`
+- `Array.filter()`
+- `Array.map()`
+- `String.startsWith()`
 
 You will find some hints as comments.
 
