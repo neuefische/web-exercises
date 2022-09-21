@@ -1,6 +1,6 @@
 # Array Methods 2: An Array with Objects
 
-This codesandbox offers a some exercises to recap some enhanced array methods. Let's dive directly into it!
+This CodeSandbox offers some more exercises to recap some advanced array methods. Let's dive in!
 
 ## Task
 
