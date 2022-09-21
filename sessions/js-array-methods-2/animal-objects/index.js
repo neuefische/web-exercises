@@ -78,7 +78,6 @@ const allAnimalsInEuropeWeighLessThanOnehundred = null;
 const weightOfAllAnimalsInAfrica = null;
 
 // Hint: As above, but divided by the number of animals in Africa.
-// Hint: Round the result to two numbers after the decimal point with `toFixed()`.
 const averageWeightOfAllAnimalsInAfrica = null;
 
 export {

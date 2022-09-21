@@ -272,6 +272,6 @@ describe('Array with Animal Objects', () => {
 		expect(weightOfAllAnimalsInAfrica).toBe(9046);
 	});
 	test('averageWeightOfAllAnimalsInAfrica', () => {
-		expect(averageWeightOfAllAnimalsInAfrica).toBe('753.83');
+		expect(averageWeightOfAllAnimalsInAfrica).toBeCloseTo(753.83);
 	});
 });
