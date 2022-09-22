@@ -13,6 +13,10 @@ function checkIfApiIsAvailable() {
 	 * Hint 2:
 	 * The fetch function returns a promise which resolves to a Response
 	 * object once it is ready.
+	 *
+	 * Hint 3:
+	 * The Response object has a `ok` property which is true if the response
+	 * is okay and false if it is not.
 	 **/
 	// --v-- write your code here --v--
 	// --^-- write your code here --^--
