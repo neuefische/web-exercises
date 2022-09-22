@@ -46,10 +46,11 @@ const anyAnimalEndsWithLetterZ = null;
 
 const everyAnimalHasMoreThanTwoLetters = null;
 
-const valuesForLengthOfAllAnimalNames = [3, 3, 8, 6, 4, 5, 5, 7, 5, 7, 10, 5, 5, 8, 6, 5, 5, 5];
-
-// Hint: Use the variable 'valuesForLengthOfAllAnimalNames' to sum up all letters.
-const sumOfAllAnimalLetters = null;
+// Hint: There are several ways to go here. Let's focus on two options:
+// Option 1: Concatenate all characters with `reduce()` and check for the `length` property of the result.
+// Option 2: Use `map()` to create an array with the length values of all strings,
+// 				then sum them up with `reduce()` (keyword: method chaining)
+const sumOfAllAnimalCharacters = null;
 
 export {
 	hippoExists,
