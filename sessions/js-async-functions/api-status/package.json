@@ -1,0 +1,6 @@
+{
+  "name": "api-status-challenge",
+  "version": "1.0.0",
+  "description": "Challenge For JS Async Functions Session to check an API status",
+  "main": "index.html"
+}
