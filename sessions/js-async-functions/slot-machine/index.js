@@ -7,7 +7,7 @@ console.clear();
 
 const root = document.body;
 
-// Assemble the machine…
+// Assemble the machine… (nothing to change here)
 const machine = Machine();
 const wheel1 = Wheel();
 const wheel2 = Wheel();
