@@ -14,4 +14,4 @@ Switch to the [index.js](./js/index.js) file and update the code in the click ha
 
 ## Notes
 
-- You only have to touch the `js/index.js` file.
+- You only need to touch the `js/index.js` file.
