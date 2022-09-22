@@ -6,7 +6,7 @@ Animate the relay runners along the race track using the `animate()` function.
 
 The first runner can start immediately after the "🏁 Start race" button was clicked.
 
-The second runner should only start after the they have been reached by the first one (the first animation has finished).
+The second runner should start after the first runner has reached them (in other words: when the first animation has finished).
 
 The same should be true for the third runner in relation to the second one.
 
