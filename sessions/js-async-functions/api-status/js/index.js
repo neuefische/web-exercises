@@ -1,7 +1,7 @@
 const icon = document.querySelector('[data-js="status-icon"]');
 const button = document.querySelector('[data-js="status-button"]');
 
-const api = 'https://example-apis.vercel.app/api/status';
+const apiStatusUrl = 'https://example-apis.vercel.app/api/status';
 
 // something needs to change here…
 // ↙️
