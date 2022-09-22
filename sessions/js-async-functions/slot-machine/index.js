@@ -38,8 +38,8 @@ spinButton.addEventListener('click', async () => {
 	 * e.g. `['🍉', '🍉', '🍇']` => 2
 	 *
 	 * Hint 4:
-	 * Two identical symbols in a row are worth 10 points.
-	 * Three identical symbols in a row are worth 100 points.
+	 * Two identical symbols are worth 10 points.
+	 * Three identical symbols are worth 100 points.
 	 * Every other combination is worth 0 points.
 	 *
 	 * Hint 5:
