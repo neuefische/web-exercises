@@ -24,8 +24,9 @@ spinButton.addEventListener('click', async () => {
 	spinButton.disabled = true;
 	/**
 	 * Hint 1:
-	 * The wheel element have a spin method that returns a promise.
+	 * The wheel elements have a spin method that returns a promise.
 	 * That promise resolves with the symbol that the wheel stopped on.
+	 * You can call it like this: `wheel1.spin()`.
 	 *
 	 * Hint 2:
 	 * You can use Promise.all to wait for all promises to resolve.
