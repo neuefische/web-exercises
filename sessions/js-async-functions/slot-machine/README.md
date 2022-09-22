@@ -1,17 +1,11 @@
-# Relay Race 🏃‍♀️
+# Slot Machine 🎰
 
 ## Task
 
-Animate the relay runners along the race track using the `animate()` function.
+Follow the instructions in the `index.js` file to create a slot machine game.
 
-The first runner can start immediately after the "🏁 Start race" button was clicked.
-
-The second runner should start after the first runner has reached them (in other words: when the first animation has finished).
-
-The same goes for the third runner in relation to the second one.
-
-Switch to the [index.js](./js/index.js) file and update the code in the click handler!
+Switch to the [index.js](./index.js) file and update the code in the click handler!
 
 ## Notes
 
-- You only need to touch the `js/index.js` file.
+- You only need to touch the `index.js` file.
