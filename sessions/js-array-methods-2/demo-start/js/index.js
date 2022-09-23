@@ -1,5 +1,7 @@
 import {handleList, handleSingleValue, handleObject} from './utils.js';
 
+const studentNames = ['Lucille', 'Gilbert', 'Jennie', 'Lydia', 'Agnes'];
+
 const students = [
 	{name: 'Lucille', age: 30, points: 26, happiness: 5},
 	{name: 'Gilbert', age: 45, points: 0, happiness: 1},
@@ -12,9 +14,9 @@ handleList(students, 'Original Students');
 
 /** includes */
 
-const happinessIncludesTwo = null;
+const studentNamesIncludesHarry = null;
 
-handleSingleValue(happinessIncludesTwo, 'happinessIncludesTwo');
+handleSingleValue(studentNamesIncludesHarry, 'studentNamesIncludesHarry');
 
 /** find and findIndex */
 
@@ -43,10 +45,10 @@ const sortedByName = null;
 
 /** some and every */
 
-const anyPersonHasZeroPoints = null;
+const anyStudentHasZeroPoints = null;
 
-// handleSingleValue(anyPersonHasZeroPoints, 'anyPersonHasZeroPoints');
+// handleSingleValue(anyStudentHasZeroPoints, 'anyStudentHasZeroPoints');
 
-const everyPersonIsOlderThanThirty = null;
+const everyStudentIsOlderThanThirty = null;
 
-// handleSingleValue(everyPersonIsOlderThanThirty, 'everyPersonIsOlderThanThirty');
+// handleSingleValue(everyStudentIsOlderThanThirty, 'everyStudentIsOlderThanThirty');
