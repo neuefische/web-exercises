@@ -1,6 +1,6 @@
 {
-  "name": "js-async-functions-blocking-demo",
+  "name": "js-async-functions-fetch-demo",
   "version": "1.0.0",
-  "description": "JS Asnyc Functions: Blocking Demo",
+  "description": "JS Asnyc Functions: Fetch Demo",
   "main": "index.html"
 }
