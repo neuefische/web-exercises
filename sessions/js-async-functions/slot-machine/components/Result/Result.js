@@ -3,7 +3,7 @@ import {Score} from '../Score/Score.js';
 
 export function Result() {
 	const resultElement = document.createElement('div');
-	resultElement.classList.add('info');
+	resultElement.classList.add('result');
 
 	const status = Status();
 	const score = Score();
