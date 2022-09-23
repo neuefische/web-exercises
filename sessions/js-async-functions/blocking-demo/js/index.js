@@ -11,13 +11,18 @@ function blockMainThreadFor5Seconds() {
 }
 
 blockButton.addEventListener('click', () => {
-	blockButton.setAttribute('disabled', '');
+	blockButton.disabled = true;
+
 	textarea.focus();
+
 	console.log('start blocking');
+
 	// Small delay to allow the textarea to get focus
 	setTimeout(() => {
 		blockMainThreadFor5Seconds();
+
 		console.log('done blocking');
-		blockButton.removeAttribute('disabled');
+
+		blockButton.disabled = false;
 	}, 100);
 });

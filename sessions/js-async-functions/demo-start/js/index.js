@@ -20,12 +20,12 @@ const tennis = document.querySelector('[data-js="ball"][data-type="tennis"]');
 const animateButton = document.querySelector('[data-js="animate-button"]');
 
 animateButton.addEventListener('click', () => {
-	animateButton.setAttribute('disabled', '');
+	animateButton.disabled = true;
 
 	soccer.animate(ballKeyframes, ballAnimation);
 	basketball.animate(ballKeyframes, ballAnimation);
 	football.animate(ballKeyframes, ballAnimation);
 	tennis.animate(ballKeyframes, ballAnimation);
 
-	animateButton.removeAttribute('disabled');
+	animateButton.disabled = false;
 });
