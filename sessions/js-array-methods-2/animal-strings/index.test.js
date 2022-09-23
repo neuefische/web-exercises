@@ -6,7 +6,7 @@ import {
 	animalsSortedAlphabetically,
 	anyAnimalEndsWithLetterZ,
 	everyAnimalHasMoreThanTwoLetters,
-	sumOfAllAnimalLetters,
+	sumOfAllAnimalCharacters,
 } from './index.js';
 
 describe('Array Methods with Strings', () => {
@@ -50,7 +50,7 @@ describe('Array Methods with Strings', () => {
 	test('everyAnimalHasMoreThanTwoLetters', () => {
 		expect(everyAnimalHasMoreThanTwoLetters).toBe(true);
 	});
-	test('sumOfAllAnimalLetters', () => {
-		expect(sumOfAllAnimalLetters).toBe(102);
+	test('sumOfAllAnimalCharacters', () => {
+		expect(sumOfAllAnimalCharacters).toBe(102);
 	});
 });

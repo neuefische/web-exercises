@@ -60,5 +60,5 @@ export {
 	animalsSortedAlphabetically,
 	anyAnimalEndsWithLetterZ,
 	everyAnimalHasMoreThanTwoLetters,
-	sumOfAllAnimalLetters,
+	sumOfAllAnimalCharacters,
 };
