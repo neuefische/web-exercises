@@ -1,0 +1,27 @@
+:root {
+	--nemo: #ff4a11;
+	--granite: #252629;
+	--water: #f3f5f9;
+	--foam: #ffffff;
+
+	--gap: 20px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+h1 {
+	color: var(--nemo);
+	text-shadow: 2px 2px var(--granite);
+	margin: 0.5rem 0 0 0.5rem;
+}
