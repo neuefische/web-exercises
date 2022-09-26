@@ -29,7 +29,7 @@ async function getJoke() {
 
 			const randomJoke = jokeData[randomIndex];
 
-			joke.append(randomJoke.joke);
+			joke.textContent = randomJoke.joke;
 		}
 		// Failure (Error during fetch)
 	} catch (error) {
