@@ -1,0 +1,9 @@
+body {
+	background-color: #f1f1f1;
+}
+
+main {
+	display: grid;
+	gap: 20px;
+	padding: 20px;
+}
