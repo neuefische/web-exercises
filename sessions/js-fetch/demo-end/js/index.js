@@ -25,7 +25,7 @@ async function getJoke() {
 			// Success
 			const jokeData = await response.json();
 
-			const randomIndex = getRandomInt(0, jokeData.length);
+			const randomIndex = getRandomInt(0, jokeData.length - 1);
 
 			const randomJoke = jokeData[randomIndex];
 
