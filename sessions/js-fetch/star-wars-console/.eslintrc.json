@@ -16,8 +16,7 @@
   "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
     "no-unused-vars": 0,
-    "camelcase": 0,
-    "new-cap": 0
+    "no-negated-condition": 0
   },
   "settings": {
     "react": {
