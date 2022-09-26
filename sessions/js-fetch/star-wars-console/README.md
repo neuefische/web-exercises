@@ -1,4 +1,4 @@
-# Fetch with Star Wars Cards
+# Fetch Star Wars API and Log to Console
 
 Fetching data is awesome, yet it can be frightening at the beginning. But don't worry, we are going to make you familiar with the syntax and it will be fine ;)
 
