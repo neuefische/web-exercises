@@ -7,8 +7,8 @@ export async function fetchNewColor() {
 	 * Hint 1:
 	 * Use the fetch API to get the hex value and the name of the closest
 	 * named color to the randomly generated `hexCode` from the color API.
-	 * These values can be found in `name.closest_named_hex` and
-	 * `name.value` properties of the response respectively.
+	 * These values can be found in `.name.closest_named_hex` and
+	 * `.name.value` properties of the response data respectively.
 	 *
 	 * Hint 2:
 	 * Call the `setColorToGuess` function to set the color to guess.
