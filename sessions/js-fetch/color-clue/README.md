@@ -1,6 +1,6 @@
 # Color Clue
 
-This project is a color guessing game: The user is presented the name of a color. The user then tries to choose the acutual color value using the color selector input.
+This project is a color guessing game: The user is presented the name of a color. The user then tries to choose the actual color value using the color selector input.
 
 Clicking the `Guess` button reveals a percentage how close the user was to the actual color value associated with the name.
 
@@ -15,7 +15,7 @@ Check out the [fetch.js](./js/fetch.js) file: There is a `fetchNewColor()` funct
 Your task is to implement the fetch functionality:
 
 1. Use the `fetch()` function to get data from the Color API.
-2. Use the `json()` function to load the body of the response as json.
+2. Use the `json()` function to load the body of the response as an object.
 3. Inspect the response and find the hex value and name of the closest named color.
 4. Call the `setColorToGuess()` function with the hex value and name of the closest named color.
 5. Guess colors! 🎉
