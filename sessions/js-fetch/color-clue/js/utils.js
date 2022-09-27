@@ -12,12 +12,19 @@ export const background = document.querySelector('body');
 export const IDLE_BACKGROUND_COLOR = '#c3c3c3';
 
 // Create a random Color hex code
-export const colorObject = {
+export const colorToGuess = {
 	hexCode: '#000000',
 	name: null,
 };
 
-export function randomHex() {
+export function setColorToGuess(hexCode, name) {
+	colorToGuess.hexCode = hexCode;
+	colorToGuess.name = name;
+
+	nameDisplay.textContent = `What does the color »${name}« look like?`;
+}
+
+export function getRandomHexCode() {
 	return new Array(6)
 		.fill(null)
 		.map(_entry => Math.floor(Math.random() * 16).toString(16))

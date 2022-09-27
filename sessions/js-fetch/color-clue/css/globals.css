@@ -3,6 +3,7 @@
 }
 
 body {
+	font-family: system-ui;
 	background-color: #c3c3c3;
 	margin: 0;
 	height: 100vh;
@@ -16,10 +17,11 @@ body {
 
 h1 {
 	font-size: 3.5rem;
+	margin-bottom: 0;
 }
 
 h2 {
-	font-size: 4rem;
+	font-size: 1.8rem;
 }
 
 button {
