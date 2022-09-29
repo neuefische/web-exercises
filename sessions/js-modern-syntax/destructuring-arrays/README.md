@@ -1,10 +1,12 @@
-In this exercise, you will encounter the following tasks:
+# Destructuring Arrays
 
-- desstructure an array by naming the desstructuring variables like the predetermined variables,
-- the value can correspond to a simple data type as well as to an array.
+In this Codesandbox, you will destructure arrays.
 
-If you want to check whether you solved the tasks correctly, open the "Tests" tab of Codesandbox.
+The exact task can be found in the respective exercises in the [index.js](./index.js) file.
 
-The exact task can be found in the respective exercises.
+## Hints
 
-Please switch to the index.js file to start the exercises. You will find the exact tasks there.
+- Use the variable names given in the task to destructure the given array.
+- If you want to check whether you solved the tasks correctly, open the "Tests" tab of Codesandbox.
+
+Please switch to the [index.js](./index.js) file to start the exercises.
