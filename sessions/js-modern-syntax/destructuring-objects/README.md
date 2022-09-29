@@ -1,10 +1,13 @@
-In this exercise, you will encounter the following tasks:
+# Destructuring Objects
 
-- desstructure an object by naming the desstructuring variables like the predetermined variables,
-- the value can correspond to a simple data type as well as to an object.
+In this Codesandbox, you will destructure objects.
 
-If you want to check whether you solved the tasks correctly, open the "Tests" tab of Codesandbox.
+The exact task can be found in the respective exercises in the [index.js](./index.js) file.
 
-The exact task can be found in the respective exercises.
+## Hints
 
-Please switch to the index.js file to start the exercises. You will find the exact tasks there.
+- Use the variable names given in the task to destructure the given object.
+- The value can correspond to a simple data type as well as to an object.
+- If you want to check whether you solved the tasks correctly, open the "Tests" tab of Codesandbox.
+
+Please switch to the [index.js](./index.js) file to start the exercises. You will find the exact tasks there.

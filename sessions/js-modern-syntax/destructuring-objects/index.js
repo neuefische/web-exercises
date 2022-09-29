@@ -9,8 +9,6 @@ const company = {
 	location: 'Hamburg',
 };
 
-const course = 'Destructure the object company';
-
 // EXERCISE 2
 // We have an object called 'user'.
 // Write the destructuring assignment that reads:
@@ -20,12 +18,9 @@ const course = 'Destructure the object company';
 
 const user = {name: 'John', years: 30};
 
-const name = 'Destructure the object user';
-const age = 'Destructure the object user';
-const isAdmin = 'Destructure the object user';
-
 // EXERCISE 3
-// Extract the variables from the dog object and rename them like the variables below.
+// Extract the variables from the dog object and
+// rename them like "dogName", "dogGreed", and "dogAge", respectively.
 
 const dog = {
 	name: 'Pluto',
@@ -33,23 +28,14 @@ const dog = {
 	age: 5,
 };
 
-const dogName = 'Destructure the object dog';
-const dogGreed = 'Destructure the object dog';
-const dogAge = 'Destructure the object dog';
-
 // EXERCISE 4
-// Extract the lastname variable from the person object as "personLastname". Store all other variables in an object called "moreInformation".
+// Extract the lastName variable from the person object as "personLastName".
+// Store all other variables in an object called "moreInformation".
 
 const person = {
-	lastname: 'Main',
+	lastName: 'Main',
 	age: 24,
-	firstname: 'Alex',
+	firstName: 'Alex',
 };
 
-const personLastname = 'Destructure the object person';
-const moreInformation = {
-	firstname: 'Destructure the object person',
-	age: 'Destructure the object person',
-};
-
-export {course, name, age, isAdmin, dogName, dogGreed, dogAge, personLastname, moreInformation};
+export {course, name, age, isAdmin, dogName, dogGreed, dogAge, personLastName, moreInformation};
