@@ -1,3 +1,10 @@
+:root {
+  --nemo: #ff4a11;
+  --granite: #252629;
+  --water: #f3f5f9;
+  --foam: #ffffff;
+}
+
 body {
 	background-color: #f1f1f1;
 }
