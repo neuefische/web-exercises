@@ -1,0 +1,6 @@
+{
+  "name": "js-fetch_star-wars-challenge",
+  "version": "1.0.0",
+  "description": "Fetch Star Wars API and display Cards",
+  "main": "index.html"
+}
