@@ -19,5 +19,6 @@ The following hints may guide you:
 - use a `try...catch` block
 - make sure to wait for all asynchronous operations
 - make sure to handle bad responses from the API as well
+- you can test bad responses via adding a random string of characters to the end of the URL stored in the url variable
 
 Please switch to the [index.js](js/index.js) file: May the force be with you!
