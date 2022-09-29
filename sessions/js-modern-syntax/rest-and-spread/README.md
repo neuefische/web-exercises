@@ -1,6 +1,6 @@
-# Destructuring Arrays
+# Rest and Spread Syntax
 
-In this Codesandbox, you will destructure arrays.
+In this Codesandbox, you will use a lot of dots `...` to train the rest and spread syntax.
 
 The exact task can be found in the respective exercises in the [index.js](./index.js) file.
 

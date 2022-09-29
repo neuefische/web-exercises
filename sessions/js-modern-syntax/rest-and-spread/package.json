@@ -1,0 +1,9 @@
+{
+  "name": "rest-and-spread",
+  "version": "1.0.0",
+  "description": "Rest and Spread Syntax Challenge for JS Modern Syntax",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
