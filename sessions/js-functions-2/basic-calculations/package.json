@@ -1,0 +1,9 @@
+{
+  "name": "basic-calculations",
+  "version": "1.0.0",
+  "description": "basic calculations JS js-functions-2 Session",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  }
+}

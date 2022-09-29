@@ -18,7 +18,8 @@
   ],
   "scripts": {
     "markdown-toc": "npx markdown-toc -i README.md",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "ncu": "npx npm-check-updates"
   },
   "dependencies": {
     "@commitlint/cli": "^16.2.3",

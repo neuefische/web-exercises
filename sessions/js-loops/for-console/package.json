@@ -1,0 +1,9 @@
+{
+  "name": "for-console",
+  "version": "1.0.0",
+  "description": "For Loop and console.log",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  }
+}

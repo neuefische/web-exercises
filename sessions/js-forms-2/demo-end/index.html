@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<title>🔑 Password Manager</title>
+		<link rel="stylesheet" href="./css/styles.css" />
+		<script src="./js/index.js" defer></script>
+	</head>
+	<body>
+		<main class="app">
+			<h1 class="app__title">🔑 Password Manager</h1>
+			<section class="app__form">
+				<h2 class="app__headline">Add new credentials</h2>
+				<form class="form" data-js="form">
+					<label class="form__label" for="title">Title:</label>
+					<input class="form__field" id="title" name="title" type="text" required />
+
+					<label class="form__label" for="email">Email:</label>
+					<input class="form__field" id="email" name="email" type="email" required />
+
+					<label class="form__label" for="password">Password:</label>
+					<input
+						class="form__field form__field--password"
+						data-js="password-input"
+						id="password"
+						name="password"
+						type="password"
+						required
+						minlength="8"
+					/>
+					<button class="form__submit" type="submit">Save credentials</button>
+				</form>
+			</section>
+			<section class="app__storage">
+				<h2 class="app__headline">Your saved credentials</h2>
+				<ul class="storage" data-js="storage"></ul>
+			</section>
+		</main>
+	</body>
+</html>

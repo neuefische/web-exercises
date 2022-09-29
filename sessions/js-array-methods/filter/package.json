@@ -1,0 +1,9 @@
+{
+  "name": "array-filter",
+  "version": "1.0.0",
+  "description": "Exercises for array filter",
+  "main": "index.js",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
+}

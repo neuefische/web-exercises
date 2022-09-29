@@ -1,0 +1,6 @@
+{
+  "name": "simple-live-calculator",
+  "version": "1.0.0",
+  "description": "Two input fields whose product will be output in a paragraph",
+  "main": "js/index.js"
+}

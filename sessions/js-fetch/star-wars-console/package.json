@@ -1,0 +1,6 @@
+{
+  "name": "js-fetch_star-wars-console",
+  "version": "1.0.0",
+  "description": "Fetch Star Wars API and log data to console",
+  "main": "index.html"
+}

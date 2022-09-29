@@ -1,0 +1,6 @@
+{
+  "name": "pokemon-page",
+  "version": "1.0.0",
+  "description": "Static HTML template with CSS",
+  "main": "index.html"
+}

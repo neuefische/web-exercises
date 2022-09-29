@@ -1,0 +1,85 @@
+:root {
+	--primary: #ffffff;
+	--secondary: #ff4a11;
+	--secondary-light: #fddcd2;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+h1,
+h2 {
+	text-align: center;
+}
+
+ul {
+	list-style: none;
+}
+
+.list {
+	background-color: var(--secondary-light);
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	border-radius: 8px;
+	width: 80%;
+	margin: 1rem auto;
+	padding: 0.5rem 0.5rem 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.list__heading {
+	color: var(--secondary);
+}
+
+.list__item {
+	background-color: var(--primary);
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	padding: 0 1rem 1rem;
+	border-radius: 10px;
+}
+
+.information {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr 1fr;
+	gap: 1rem;
+	justify-items: center;
+	grid-auto-flow: column;
+}
+
+.information__number {
+	font-size: 1.5rem;
+	color: var(--secondary);
+}
+
+.output {
+	background-color: var(--secondary-light);
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	width: 80%;
+	margin: 1rem auto;
+	padding: 0.5rem 0.5rem 2rem;
+	border-radius: 8px;
+}
+
+.output__heading {
+	color: var(--secondary);
+}
+
+.output__value {
+	font-size: 1.5rem;
+	text-align: center;
+}

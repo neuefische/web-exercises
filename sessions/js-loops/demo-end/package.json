@@ -1,0 +1,9 @@
+{
+  "name": "js-loops-demo-end",
+  "version": "1.0.0",
+  "description": "Demo End for JS Loops Session",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "js-objects-and-arrays-arrays",
+  "version": "1.0.0",
+  "description": "Exercise to arrays",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
+}
