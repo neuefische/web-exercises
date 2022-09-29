@@ -48,28 +48,28 @@ const student5 = 'Destructure the array nestedStudents';
 // EXERCISE 6
 // Spread the values of the values array in to the function call of the add function.
 
-const values = [1, 6, 7, 9, 12, 5, 4]
+const values = [1, 6, 7, 9, 12, 5, 4];
 
-const result = add(1) // spread values inside this function call
+const result = add(1); // Spread values inside this function call
 
 function add(...values) {
-return values.reduce((previousValue, currentValue) => previousValue + currentValue)
+	return values.reduce((previousValue, currentValue) => previousValue + currentValue);
 }
 
 export {
-  name,
-  price,
-  quantity,
-  firstNameOfChris,
-  lastNameOfChris,
-  ageOfChris,
-  firstNameOfAlex,
-  lastNameOfAlex,
-  lastName,
-  student1,
-  student2,
-  student3,
-  student4,
-  student5,
-  result
+	name,
+	price,
+	quantity,
+	firstNameOfChris,
+	lastNameOfChris,
+	ageOfChris,
+	firstNameOfAlex,
+	lastNameOfAlex,
+	lastName,
+	student1,
+	student2,
+	student3,
+	student4,
+	student5,
+	result,
 };

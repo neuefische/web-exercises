@@ -4,9 +4,9 @@ console.clear();
 // Extract only the course name from the company object.
 
 const company = {
-  name: 'neuefische',
-  course: 'Web Development',
-  location: 'Hamburg',
+	name: 'neuefische',
+	course: 'Web Development',
+	location: 'Hamburg',
 };
 
 const course = 'Destructure the object company';
@@ -28,9 +28,9 @@ const isAdmin = 'Destructure the object user';
 // Extract the variables from the dog object and rename them like the variables below.
 
 const dog = {
-  name: 'Pluto',
-  greed: 'husky',
-  age: 5,
+	name: 'Pluto',
+	greed: 'husky',
+	age: 5,
 };
 
 const dogName = 'Destructure the object dog';
@@ -41,25 +41,15 @@ const dogAge = 'Destructure the object dog';
 // Extract the lastname variable from the person object as "personLastname". Store all other variables in an object called "moreInformation".
 
 const person = {
-  lastname: 'Main',
-  age: 24,
-  firstname: 'Alex',
+	lastname: 'Main',
+	age: 24,
+	firstname: 'Alex',
 };
 
 const personLastname = 'Destructure the object person';
 const moreInformation = {
-  firstname: 'Destructure the object person',
-  age: 'Destructure the object person',
+	firstname: 'Destructure the object person',
+	age: 'Destructure the object person',
 };
 
-export {
-  course,
-  name,
-  age,
-  isAdmin,
-  dogName,
-  dogGreed,
-  dogAge,
-  personLastname,
-  moreInformation,
-};
+export {course, name, age, isAdmin, dogName, dogGreed, dogAge, personLastname, moreInformation};
