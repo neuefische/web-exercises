@@ -1,50 +1,26 @@
-import {
-	name,
-	price,
-	quantity,
-	firstNameOfChris,
-	lastNameOfChris,
-	ageOfChris,
-	firstNameOfAlex,
-	lastNameOfAlex,
-	lastName,
-	student1,
-	student2,
-	student3,
-	student4,
-	student5,
-	result,
-} from './index';
+import * as exercises from './index.js';
 
-test('Exercise 1: name is Egg, price is 0.25 and quantity is 12', () => {
-	expect(name).toEqual('Egg');
-	expect(price).toEqual(0.25);
-	expect(quantity).toEqual(12);
+test('Exercise 1: age is 32, contact has all other information', () => {
+	expect(exercises.age).toBe(32);
+	expect(exercises.contact).toHaveProperty('name', 'Jane Doe');
+	expect(exercises.contact).toHaveProperty('email', 'jane@doe.com');
+	expect(exercises.contact).toHaveProperty('phone', '12345');
 });
 
-test('Exercise 2: firstNameOfChris is "Chris", lastNameOfChris is "Owen" and ageOfChris is 12', () => {
-	expect(firstNameOfChris).toEqual('Chris');
-	expect(lastNameOfChris).toEqual('Owen');
-	expect(ageOfChris).toEqual(12);
+test('Exercise 2: "first" is "one", "second" is "two", "restOfList" is an array with "three", "four", "five"', () => {
+	expect(exercises.first).toBe('one');
+	expect(exercises.second).toBe('two');
+	expect(exercises.restOfList).toEqual(['three', 'four', 'five']);
 });
 
-test('Exercise 3: firstNameOfAlex is "Alex", lastNameOfAlex is "Main"', () => {
-	expect(firstNameOfAlex).toEqual('Alex');
-	expect(lastNameOfAlex).toEqual('Main');
+test('Exercise 3: sum is 20', () => {
+	expect(exercises.sum).toBe(20);
 });
 
-test('Exercise 4: lastName is "Alexandare"', () => {
-	expect(lastName).toEqual('Alexandare');
+test('Exercise 4: result is 6', () => {
+	expect(exercises.result).toBe(6);
 });
 
-test('Exercise 5: student1 is "Chris", student2 is "Ahmad", student3 is "Antigoni", student4 is "Toby" and student5 is "Sam"', () => {
-	expect(student1).toEqual('Chris');
-	expect(student2).toEqual('Ahmad');
-	expect(student3).toEqual('Antigoni');
-	expect(student4).toEqual('Toby');
-	expect(student5).toEqual('Sam');
-});
-
-test('Exercise 6: result is 44', () => {
-	expect(result).toEqual(44);
+test('Exercise 5: allFruits is an array starting with "cherry"', () => {
+	expect(exercises.allFruits).toEqual(['cherry', 'apple', 'banana', 'orange', 'papaya']);
 });
