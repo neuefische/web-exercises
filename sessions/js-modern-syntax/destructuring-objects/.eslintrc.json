@@ -18,9 +18,9 @@
     "no-lone-blocks": 0,
     "no-empty-pattern": 0,
     "no-unused-vars": 0,
-    "react/prop-types": 0,
     "react/react-in-jsx-scope": 0,
-    "no-undef": 0
+    "no-undef": 0,
+    "capitalized-comments": 0
   },
   "settings": {
     "react": {
