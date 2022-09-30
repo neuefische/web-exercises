@@ -2,8 +2,11 @@ console.clear();
 
 // EXERCISE 1
 // Use array destructuring to extract the variables "name", "price", and "quantity".
+// Make sure to export your variable as in the example below to make the tests work.
 
 const item = ['Egg', 0.25, 12];
+
+// example: export const [value1, value2] = array;
 
 // EXERCISE 2
 // Use array destructuring to extract the variables "firstNameOfChris", "lastNameOfChris", and "ageOfChris".
@@ -38,21 +41,3 @@ const result = add(1); // Spread values inside this function call
 function add(...values) {
 	return values.reduce((previousValue, currentValue) => previousValue + currentValue);
 }
-
-export {
-	name,
-	price,
-	quantity,
-	firstNameOfChris,
-	lastNameOfChris,
-	ageOfChris,
-	firstNameOfAlex,
-	lastNameOfAlex,
-	lastName,
-	student1,
-	student2,
-	student3,
-	student4,
-	student5,
-	result,
-};
