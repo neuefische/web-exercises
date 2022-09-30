@@ -1,7 +1,7 @@
 import * as exercises from './index';
 
 test('Exercise 1: course is "Web Development"', () => {
-	expect(course).toEqual('Web Development');
+	expect(exercises.course).toEqual('Web Development');
 });
 
 test('Exercise 2: name is "John", years is 30 and isAdmin is false', () => {
