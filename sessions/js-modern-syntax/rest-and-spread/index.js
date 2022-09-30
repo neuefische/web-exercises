@@ -25,9 +25,10 @@ const list = ['one', 'two', 'three', 'four', 'five'];
 // a) The `add` function does not work because it needs an array as argument.
 // b) Use the rest parameter with the `allNumbers` argument to fix it.
 // c) Make sure you understand what the rest parameter does here.
+// d) Note that the optional chaining `?.` is used to prevent an error to happen.
 
 function add(allNumbers) {
-	return allNumbers.reduce((a, b) => a + b);
+	return allNumbers.reduce?.((a, b) => a + b);
 }
 
 export const sum = add(3, 2, 3, 2, 1, 2, 3, 4);
