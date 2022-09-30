@@ -1,0 +1,10 @@
+{
+  "name": "js-modern-syntax-demo-start",
+  "version": "1.0.0",
+  "description": "Start of demo for JS Modern Syntax Session",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": []
+}
