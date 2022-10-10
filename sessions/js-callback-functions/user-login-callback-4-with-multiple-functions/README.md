@@ -2,7 +2,7 @@
 
 In this challenge, you will encounter the following tasks:
 
-- using multiple parameters inside callback functions
+- passing multiple callback functions to a higher order function
 
 ## Tasks
 
