@@ -14,7 +14,7 @@ const item = ['Egg', 0.25, 12];
 const personChris = [12, 'Chris', 'Owen'];
 
 // EXERCISE 3
-// Use array destructuring to extract the variables "firstNameOfAlex", and "lastNameOfAlex".
+// Use array destructuring to extract the variables "firstNameOfAlex" and "lastNameOfAlex".
 // Make sure not to have unused variables.
 
 const personAlex = ['Alex', 12, 'Main'];
