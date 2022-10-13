@@ -12,7 +12,6 @@ const tree = {
 
 const animals = ['Lion', 'Tiger', 'Penguin', 'Bear', 'Whale'];
 
-// Rest parameter in array destructuring
 
 /* ---------------- Rest Syntax ----------------- */
 
