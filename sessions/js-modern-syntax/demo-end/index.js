@@ -26,7 +26,7 @@ const {keepsLeavesInWinter = false} = tree;
 // console.log(keepsLeavesInWinter);
 // console.log(tree);
 
-// Rest parameter in object destructuring
+// Rest syntax in object destructuring
 const {name, ...information} = tree;
 
 // console.log(name);
