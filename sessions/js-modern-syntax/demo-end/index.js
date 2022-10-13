@@ -47,7 +47,7 @@ const animals = ['Lion', 'Tiger', 'Penguin', 'Bear', 'Whale'];
 // console.log(penguin);
 // console.log(tiger); // not defined
 
-// Rest parameter in array destructuring
+// Rest syntax in array destructuring
 const [lion, tiger, penguin, ...rest] = animals;
 console.log(lion);
 console.log(tiger);
