@@ -53,7 +53,7 @@ console.log(lion);
 console.log(tiger);
 console.log(rest[1]);
 
-/* ---------------- Rest Parameter ----------------- */
+/* ---------------- Rest Syntax ----------------- */
 
 function showZooAnimals(...allAnimals) {
 	console.log(allAnimals);
