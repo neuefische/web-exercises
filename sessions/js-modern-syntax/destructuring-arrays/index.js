@@ -33,6 +33,7 @@ const nestedStudents = ['Chris', ['Ahmad', 'Antigoni'], ['Toby', 'Sam']];
 
 // EXERCISE 6
 // Spread the values of the values array into the function call of the add function.
+// Keep in mind that you need to export the variable 'result' to make the test work. 
 
 const values = [1, 6, 7, 9, 12, 5, 4];
 
