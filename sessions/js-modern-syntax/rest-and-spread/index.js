@@ -23,8 +23,8 @@ const list = ['one', 'two', 'three', 'four', 'five'];
 
 // EXERCISE 3
 // a) The `add` function does not work because it needs an array as argument.
-// b) Use the rest parameter with the `allNumbers` argument to fix it.
-// c) Make sure you understand what the rest parameter does here.
+// b) Use the rest syntax with the `allNumbers` parameter to fix it.
+// c) Make sure you understand what the rest syntax does here.
 // d) Note that the optional chaining `?.` is used to prevent an error to happen.
 
 function add(allNumbers) {
