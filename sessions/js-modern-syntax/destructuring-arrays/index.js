@@ -9,7 +9,7 @@ const item = ['Egg', 0.25, 12];
 // example: export const [value1, value2] = array;
 
 // EXERCISE 2
-// Use array destructuring to extract the variables "firstNameOfChris", "lastNameOfChris", and "ageOfChris".
+// Use array destructuring to extract the variables "firstNameOfChris", "lastNameOfChris" and "ageOfChris".
 
 const personChris = [12, 'Chris', 'Owen'];
 
