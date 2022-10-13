@@ -19,5 +19,5 @@ test('Exercise 3: dogName is "Pluto", dogGreed is husky and dogAge is 5', () => 
 test('Exercise 4: personLastname is "Main" and the object moreInformation contains two key/values: firstname: "Alex" and age: 24', () => {
 	expect(exercises.personLastName).toEqual('Main');
 	expect(exercises.moreInformation).toHaveProperty('age', 24);
-	expect(exercises.moreInformation).toHaveProperty('firstname', 'Alex');
+	expect(exercises.moreInformation).toHaveProperty('firstName', 'Alex');
 });
