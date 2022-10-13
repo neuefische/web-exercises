@@ -1,6 +1,6 @@
 # Destructuring Arrays
 
-In this Codesandbox, you will destructure arrays.
+In this Codesandbox you will destructure arrays.
 
 The exact task can be found in the respective exercises in the [index.js](./index.js) file.
 
