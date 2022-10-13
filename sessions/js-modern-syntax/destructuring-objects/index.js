@@ -23,11 +23,11 @@ const user = {name: 'John', years: 30};
 
 // EXERCISE 3
 // Extract the variables from the dog object and
-// rename them like "dogName", "dogGreed", and "dogAge", respectively.
+// rename them like "dogName", "dogBreed", and "dogAge", respectively.
 
 const dog = {
 	name: 'Pluto',
-	greed: 'husky',
+	breed: 'husky',
 	age: 5,
 };
 
