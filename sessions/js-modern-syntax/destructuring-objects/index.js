@@ -32,8 +32,8 @@ const dog = {
 };
 
 // EXERCISE 4
-// Extract the lastName variable from the person object as "personLastName".
-// Store all other variables in an object called "moreInformation".
+// Extract the 'lastName' property from the person object as "personLastName".
+// Store all other properties in an object called "moreInformation".
 
 const person = {
 	lastName: 'Main',
