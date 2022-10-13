@@ -17,7 +17,7 @@ const company = {
 // Write the destructuring assignment that reads:
 //  2.1: 'name' property into the variable 'name'.
 //  2.2: 'years' property into the variable 'age'.
-//  2.3: 'isAdmin' property into the variable 'isAdmin' (false, if no such property)
+//  2.3: 'isAdmin' property into the variable 'isAdmin' (false, if no such property exists)
 
 const user = {name: 'John', years: 30};
 
