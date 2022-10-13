@@ -1,7 +1,7 @@
 console.clear();
 
 // EXERCISE 1
-// a) Destructure the "person" object; extract the variables "age" and "contact".
+// a) Destructure the "person" object, extract the variables "age" and "contact".
 // b) Use the rest parameter to collect the values of "name", "email", and "phone"
 // and put them into "contact".
 // c) Make sure to export your variable as in the example below to make the tests work.
