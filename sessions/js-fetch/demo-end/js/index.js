@@ -11,6 +11,9 @@ root.append(jokeSection);
 
 // Get a random joke from a Bad Jokes API
 async function getJoke() {
+	// Clear the joke section
+	jokeSection.innerHTML = '';
+
 	try {
 		const response = await fetch('https://example-apis.vercel.app/api/bad-jokes/random');
 
@@ -38,6 +41,9 @@ getJoke();
 // Get a list of all jokes from Bad Jokes API
 /*
 async function getJokes() {
+	// Clear the joke section
+	jokeSection.innerHTML = '';
+
 	try {
 		const response = await fetch('https://example-apis.vercel.app/api/bad-jokes');
 
