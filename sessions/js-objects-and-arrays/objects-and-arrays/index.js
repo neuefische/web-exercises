@@ -7,7 +7,7 @@ const people = [
     parents: {mothersName: 'Mona', fathersName: 'Abe'},
     pet: {animal: 'dog', name: "Santa's Little Helper"},
     friend: {name: 'Moe Szyslak', work: 'owner of Moes Tavern'},
-    'other freinds': ['Barney Gumble', 'Carl Carlson', 'Lenny Leonard'],
+    'other friends': ['Barney Gumble', 'Carl Carlson', 'Lenny Leonard'],
     color_cloth: 'white',
   },
   {
