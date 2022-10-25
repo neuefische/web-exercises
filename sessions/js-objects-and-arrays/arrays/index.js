@@ -6,7 +6,7 @@ console.clear();
 const exampleArray = [true];
 
 // EXERCISE 2
-// Nest an array inside array nestedArray. After that exampleArray should contain an array as an element.
+// Nest an array inside array nestedArray. After that nestedArray should contain an array as an element.
 
 const nestedArray = ['example', 10, true];
 
