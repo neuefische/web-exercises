@@ -4,16 +4,14 @@ This exercise offers first steps into the world of software testing. It's quite 
 
 ## Task
 
-In this exercise, you will encounter the following tasks:
+Have a look at the [index.test.js](index.test.js): there are predefined tests for the `getAnimal()` function.
 
-- If the name argument equals "cat", return `"I really like cats!"`
-- If there is a name argument, return `"I like [animalPlural]!"`
-  - Note: Please don't bother with irregular plurals for now.
-- If there is no argument given, return `"I do not like animals at all."`
+Read them very carefully to understand what the `getAnimal()` function is supposed to do. After doing so, your task is to implement the function so that all tests pass.
 
-Please switch to the [index.js](index.js) file to start the exercises. You will find the exact tasks there.
+Please switch to the [index.js](index.js) file to start and start liking animals!
 
 ## Notes
 
-- If you want to check whether you solved the tasks correctly, open the "Tests" tab of Codesandbox.
-- You only have to touch the `js/index.js` file.
+- Make sure to run `npm install` first.
+- You can run the test via the command `npm run test:watch`
+- You only have to touch the [index.js](index.js) file.
