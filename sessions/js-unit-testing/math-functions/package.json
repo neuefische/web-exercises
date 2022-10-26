@@ -1,7 +1,7 @@
 {
-  "name": "js-unit-testing-get-animal-challenge",
+  "name": "js-unit-testing-math-functions-challenge",
   "version": "1.0.0",
-  "description": "Challenge for the JS Unit Testing Session: getAnimal()",
+  "description": "Challenge for the JS Unit Testing Session: Mathematical Functions",
   "main": "index.js",
   "scripts": {
     "test:watch": "NODE_OPTIONS=--experimental-vm-modules npx jest --watchAll"
