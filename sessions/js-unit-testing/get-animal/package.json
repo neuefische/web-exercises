@@ -4,7 +4,7 @@
   "description": "Challenge for the JS Unit Testing Session: getAnimal()",
   "main": "index.js",
   "scripts": {
-    "test:watch": "NODE_OPTIONS=--experimental-vm-modules npx jest --watch"
+    "test:watch": "NODE_OPTIONS=--experimental-vm-modules npx jest --watchAll"
   },
   "type": "module",
   "devDependencies": {
