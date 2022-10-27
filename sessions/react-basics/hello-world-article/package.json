@@ -1,7 +1,7 @@
 {
-  "name": "react-basics-hello-world-challenge",
+  "name": "react-basics-hello-world-article-challenge",
   "version": "1.0.0",
-  "description": "React Basics: Hello World Challenge",
+  "description": "React Basics: Hello World Article Challenge",
   "main": "src/index.js",
   "dependencies": {
     "react": "18.1.0",
