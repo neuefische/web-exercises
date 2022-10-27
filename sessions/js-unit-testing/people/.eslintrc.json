@@ -15,7 +15,8 @@
   },
   "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
-    "no-undef": 0
+    "no-undef": 0,
+    "no-unused-vars": 0
   },
   "settings": {
     "react": {

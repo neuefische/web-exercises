@@ -1,7 +1,7 @@
 {
-  "name": "js-unit-testing-math-functions-challenge",
+  "name": "js-unit-testing-people-challenge",
   "version": "1.0.0",
-  "description": "Challenge for the JS Unit Testing Session: Mathematical Functions",
+  "description": "Challenge for the JS Unit Testing Session: People",
   "main": "index.js",
   "scripts": {
     "test:watch": "NODE_OPTIONS=--experimental-vm-modules npx jest --watchAll"
