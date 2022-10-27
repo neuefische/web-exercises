@@ -1,0 +1,11 @@
+.button {
+  background-color: var(--water);
+  border: none;
+  color: var(--granite);
+  font-size: 1.2rem;
+  transition: 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--nemo);
+}
