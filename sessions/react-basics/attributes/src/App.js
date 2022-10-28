@@ -2,5 +2,5 @@ import React from 'react';
 import './styles.css';
 
 export default function App() {
-	return <h1>Replace me with your Component!</h1>;
+	return <div>Replace me with an article</div>;
 }
