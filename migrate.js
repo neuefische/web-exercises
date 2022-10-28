@@ -98,18 +98,18 @@ function applyTemplate(challengeFolder, template) {
 
   const newChallengePackage = {
     ...challengePackage,
+    version: templatePackage?.version,
     scripts: templatePackage?.scripts,
+    type: templatePackage?.type,
     dependencies: templatePackage?.dependencies,
     devDependencies: templatePackage?.devDependencies,
-    type: templatePackage?.type,
+    nf: templatePackage?.nf,
     keywords: undefined,
     author: undefined,
     repository: undefined,
     license: undefined,
     bugs: undefined,
     homepage: undefined,
-    version: "0.0.0-unreleased",
-    nf: { template },
   };
 
   fs.writeJsonSync(

@@ -4,6 +4,7 @@
   "description": "Challenge for JS Array Methods 2 with Array of animal strings",
   "main": "index.js",
   "devDependencies": {
+    "@babel/core": "^7.19.6",
     "@types/jest": "^29.2.0",
     "eslint-plugin-jest": "^27.1.3",
     "eslint": "^8.26.0",
