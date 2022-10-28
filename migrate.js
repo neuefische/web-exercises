@@ -24,6 +24,8 @@ for (const challengeFolder of challengeFolders) {
     continue;
   }
 
+  let template;
+
   // if the challenge folder includes any files matching "**/*.test.js"
   if ((await globby("**/*.test.js", { cwd: challengeFolder })).length) {
     // this will require a non static template, we still need to figure out if
@@ -36,9 +38,11 @@ for (const challengeFolder of challengeFolders) {
     ) {
       // use the html-css-js template
       console.log("html-css-js", challengeFolder);
+      template = "html-css-js";
     } else {
       // use the js template
       console.log("js", challengeFolder);
+      template = "js";
     }
   } else {
     // this will require a static template
@@ -48,28 +52,33 @@ for (const challengeFolder of challengeFolders) {
     if ((await globby("**/*.js", { cwd: challengeFolder })).length) {
       // use the html-css-js-static template
       console.log("html-css-js-static", challengeFolder);
+      template = "html-css-js-static";
     } else {
       // use the html-css-static template
       console.log("html-css-static", challengeFolder);
+      template = "html-css-static";
     }
   }
+
+  applyTemplate(challengeFolder, template);
 }
 
 function applyTemplate(challengeFolder, template) {
-  const templateFolder = path.join(__dirname, "templates", template);
+  const templateFolder = path.join("templates", template);
 
   // copy the .eslintrc.json and sandbox.config.json file from the template folder to the challenge folder
-  fs.copyFileSync(
-    path.join(templateFolder, ".eslintrc.json"),
-    path.join(challengeFolder, ".eslintrc.json")
-  );
   fs.copyFileSync(
     path.join(templateFolder, "sandbox.config.json"),
     path.join(challengeFolder, "sandbox.config.json")
   );
 
   // delete the .eslintrc.json from the challenge folder if the template doesn't have it
-  if (!fs.existsSync(path.join(templateFolder, ".eslintrc.json"))) {
+  if (fs.existsSync(path.join(templateFolder, ".eslintrc.json"))) {
+    fs.copyFileSync(
+      path.join(templateFolder, ".eslintrc.json"),
+      path.join(challengeFolder, ".eslintrc.json")
+    );
+  } else {
     fs.removeSync(path.join(challengeFolder, ".eslintrc.json"));
   }
 
@@ -93,6 +102,14 @@ function applyTemplate(challengeFolder, template) {
     dependencies: templatePackage?.dependencies,
     devDependencies: templatePackage?.devDependencies,
     type: templatePackage?.type,
+    keywords: undefined,
+    author: undefined,
+    repository: undefined,
+    license: undefined,
+    bugs: undefined,
+    homepage: undefined,
+    version: "0.0.0-unreleased",
+    nf: { template },
   };
 
   fs.writeJsonSync(

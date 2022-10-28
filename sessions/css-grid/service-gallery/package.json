@@ -1,6 +1,9 @@
 {
   "name": "css-layout-with-grid-services",
-  "version": "1.0.0",
+  "version": "0.0.0-unreleased",
   "description": "CSS Layout with Grid - Exercise - Services",
-  "main": "index.html"
+  "main": "index.html",
+  "nf": {
+    "template": "html-css-static"
+  }
 }

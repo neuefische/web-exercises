@@ -1,6 +1,13 @@
 {
   "name": "js-array-methods-demo-end",
-  "version": "1.0.0",
+  "version": "0.0.0-unreleased",
   "description": "Finished Demo for JS Array Methods Session",
-  "main": "index.html"
+  "main": "index.html",
+  "scripts": {
+    "lint": "npx eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "nf": {
+    "template": "html-css-js-static"
+  }
 }

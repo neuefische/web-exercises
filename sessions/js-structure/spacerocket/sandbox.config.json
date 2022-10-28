@@ -1,6 +1,3 @@
 {
-  "infiniteLoopProtection": true,
-  "hardReloadOnChange": true,
-  "view": "browser",
-  "node": "16"
+  "template": "parcel"
 }

@@ -1,7 +1,9 @@
 {
   "name": "css-selectors-alternative-demo-start",
-  "version": "1.0.0",
+  "version": "0.0.0-unreleased",
   "description": "",
   "main": "index.html",
-  "keywords": []
+  "nf": {
+    "template": "html-css-static"
+  }
 }

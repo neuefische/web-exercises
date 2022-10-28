@@ -1,6 +1,9 @@
 {
   "name": "pokemon-page",
-  "version": "1.0.0",
+  "version": "0.0.0-unreleased",
   "description": "Static HTML template with CSS",
-  "main": "index.html"
+  "main": "index.html",
+  "nf": {
+    "template": "html-css-static"
+  }
 }

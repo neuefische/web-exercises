@@ -1,9 +1,13 @@
 {
   "name": "while-loop",
-  "version": "1.0.0",
+  "version": "0.0.0-unreleased",
   "description": "Challenge for while loop and random numbers",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "lint": "npx eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "nf": {
+    "template": "html-css-js-static"
   }
 }
