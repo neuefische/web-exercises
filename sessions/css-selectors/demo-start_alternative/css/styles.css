@@ -3,35 +3,35 @@ I target pretty much the same stuff, but my specificity is
 higher. I'm frequently used to store global CSS variables. */
 
 :root {
-	/* Color Variables */
+  /* Color Variables */
 
-	--nemo: #ff4a11;
-	--granite: #252629;
-	--water: #f3f5f9;
-	--foam: #ffffff;
+  --nemo: #ff4a11;
+  --granite: #252629;
+  --water: #f3f5f9;
+  --foam: #ffffff;
 
-	/* Unit Variables */
-	--gap: 20px;
+  /* Unit Variables */
+  --gap: 20px;
 }
 
 /* I'm the universal selector. I target EVERYTHING. */
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* PART 1: I'm a type selector. I target a specific type of element. */
 body {
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
-		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 h1 {
-	color: var(--nemo);
-	text-shadow: 3px 3px var(--granite);
+  color: var(--nemo);
+  text-shadow: 3px 3px var(--granite);
 }
 
 h1,
@@ -61,22 +61,22 @@ of an HTML tag. Like <section class="main-section">. */
 /* PART 3: I'm an attribute selector. I correspond with the attributes declared 
 as part of HTML tags. */
 
-button[type='button'] {
+button[type="button"] {
 }
 
-ul[role='list'] {
+ul[role="list"] {
 }
 
-a[href^='https'] {
+a[href^="https"] {
 }
 
 /* PART 4: I'm a pseudo-class. I'm  a keyword added to a selector that 
 specifies a special state of the selected element. */
 
-a[href^='https']:hover {
+a[href^="https"]:hover {
 }
 
-input[type='text']:focus {
+input[type="text"]:focus {
 }
 
 /* PART 5: I'm a pseudo-element. I'm a keyword added to a selector that lets
@@ -85,7 +85,7 @@ you style a specific part of the selected element. */
 p::first-letter {
 }
 
-a[href^='https']:before {
+a[href^="https"]:before {
 }
 
 /* PART 6: I'm the ID selector. I shouldn't be used. */
@@ -97,7 +97,7 @@ a[href^='https']:before {
 of the parent element, but only those descendants that match my type. */
 
 .main-section .text {
-	/* This should overwrite the color rule of the ID selector, but because 
+  /* This should overwrite the color rule of the ID selector, but because 
   of its very high specificity, the ID selector rule remains. The only way to
   overwrite rules declares inside of an ID selector is to use !important, which
   we want to avoid. */

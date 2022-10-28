@@ -1,24 +1,24 @@
 console.clear();
 
 const animalStrings = [
-	'cat',
-	'dog',
-	'elephant',
-	'rabbit',
-	'lion',
-	'tiger',
-	'horse',
-	'giraffe',
-	'zebra',
-	'penguin',
-	'polar bear',
-	'panda',
-	'koala',
-	'kangoroo',
-	'monkey',
-	'sloth',
-	'hippo',
-	'rhino',
+  "cat",
+  "dog",
+  "elephant",
+  "rabbit",
+  "lion",
+  "tiger",
+  "horse",
+  "giraffe",
+  "zebra",
+  "penguin",
+  "polar bear",
+  "panda",
+  "koala",
+  "kangoroo",
+  "monkey",
+  "sloth",
+  "hippo",
+  "rhino",
 ];
 
 const hippoExists = null;
@@ -53,12 +53,12 @@ const everyAnimalHasMoreThanTwoLetters = null;
 const sumOfAllAnimalCharacters = null;
 
 export {
-	hippoExists,
-	catStartingFromIndexFiveExists,
-	firstAnimalStartingWithLetterP,
-	indexOfGiraffe,
-	animalsSortedAlphabetically,
-	anyAnimalEndsWithLetterZ,
-	everyAnimalHasMoreThanTwoLetters,
-	sumOfAllAnimalCharacters,
+  hippoExists,
+  catStartingFromIndexFiveExists,
+  firstAnimalStartingWithLetterP,
+  indexOfGiraffe,
+  animalsSortedAlphabetically,
+  anyAnimalEndsWithLetterZ,
+  everyAnimalHasMoreThanTwoLetters,
+  sumOfAllAnimalCharacters,
 };

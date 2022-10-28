@@ -21,50 +21,55 @@
  * and pass the replaceMovie() function to it.
  *  */
 
-import Movie from './Movie.js';
-import Form from './Form.js';
-import {useState} from 'react';
-import {nanoid} from 'nanoid';
-import {useImmer} from 'use-immer';
-import './styles.css';
+import Movie from "./Movie.js";
+import Form from "./Form.js";
+import { useState } from "react";
+import { nanoid } from "nanoid";
+import { useImmer } from "use-immer";
+import "./styles.css";
 
 const initialMovieData = [
-	{
-		id: '28djdh72',
-		name: 'The Incredible Hulk',
-		like: false,
-	},
-	{
-		id: 'dknseu2',
-		name: 'Spiderman 1-25',
-		like: false,
-	},
-	{
-		id: 'dkwi02ksk',
-		name: 'Lord of the Rings',
-		like: false,
-	},
+  {
+    id: "28djdh72",
+    name: "The Incredible Hulk",
+    like: false,
+  },
+  {
+    id: "dknseu2",
+    name: "Spiderman 1-25",
+    like: false,
+  },
+  {
+    id: "dkwi02ksk",
+    name: "Lord of the Rings",
+    like: false,
+  },
 ];
 
 export default function App() {
-	const [movies, setMovies] = useState(initialMovieData);
+  const [movies, setMovies] = useState(initialMovieData);
 
-	function deleteMovie() {}
+  function deleteMovie() {}
 
-	function addMovie(name) {
-		// Hint: to set a unique id, use "id: nanoid()"
-	}
+  function addMovie(name) {
+    // Hint: to set a unique id, use "id: nanoid()"
+  }
 
-	function toggleLike() {}
+  function toggleLike() {}
 
-	return (
-		<div className="App">
-			<h1>React useState and Events - Advanced</h1>
-			<h2>Updating State Exercise</h2>
-			{movies.map(movie => (
-				<Movie id={movie.id} key={movie.id} name={movie.name} like={movie.like} />
-			))}
-			<Form handleSubmit={addMovie} />
-		</div>
-	);
+  return (
+    <div className="App">
+      <h1>React useState and Events - Advanced</h1>
+      <h2>Updating State Exercise</h2>
+      {movies.map((movie) => (
+        <Movie
+          id={movie.id}
+          key={movie.id}
+          name={movie.name}
+          like={movie.like}
+        />
+      ))}
+      <Form handleSubmit={addMovie} />
+    </div>
+  );
 }

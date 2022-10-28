@@ -4,20 +4,20 @@ const form = document.querySelector('[data-js="form"]');
 const tosError = document.querySelector('[data-js="tos-error"]');
 
 function hideTosError() {
-	tosError.setAttribute('hidden', '');
+  tosError.setAttribute("hidden", "");
 }
 
 function showTosError() {
-	tosError.removeAttribute('hidden');
+  tosError.removeAttribute("hidden");
 }
 
-form.addEventListener('submit', event => {
-	event.preventDefault();
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
 
-	// --v-- write your code here --v--
+  // --v-- write your code here --v--
 
-	// --^-- write your code here --^--
+  // --^-- write your code here --^--
 
-	// eslint-disable-next-line no-alert
-	alert('Form submitted');
+  // eslint-disable-next-line no-alert
+  alert("Form submitted");
 });

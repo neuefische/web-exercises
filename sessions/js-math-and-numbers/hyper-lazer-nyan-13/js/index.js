@@ -13,7 +13,7 @@ const restartButton = menu.querySelector('[data-js="restartButton"]');
 // --v-- Edit code here --v--
 
 function randomNumber(min, max) {
-	return 0;
+  return 0;
 }
 
 function countClick() {}
@@ -24,38 +24,41 @@ function countClick() {}
 let missedClicks = 0;
 
 // Run away
-laser.addEventListener('mouseover', () => {
-	laser.style.transform = `translate(${randomNumber(30, 70)}vw,${randomNumber(30, 70)}vh)`;
+laser.addEventListener("mouseover", () => {
+  laser.style.transform = `translate(${randomNumber(30, 70)}vw,${randomNumber(
+    30,
+    70
+  )}vh)`;
 });
 
 // Count miss
-document.addEventListener('click', () => {
-	countClick();
-	scoreDisplay.textContent = `missed clicks: ${missedClicks}`;
+document.addEventListener("click", () => {
+  countClick();
+  scoreDisplay.textContent = `missed clicks: ${missedClicks}`;
 });
 
 // Win
-laser.addEventListener('click', () => {
-	toggleVisibility();
-	menuText.textContent = `You caught the div and missed ${missedClicks} times!`;
+laser.addEventListener("click", () => {
+  toggleVisibility();
+  menuText.textContent = `You caught the div and missed ${missedClicks} times!`;
 });
 
 // Restart
-restartButton.addEventListener('click', event => {
-	event.stopPropagation();
-	toggleVisibility();
-	missedClicks = 0;
-	scoreDisplay.textContent = `missed clicks: ${missedClicks}`;
+restartButton.addEventListener("click", (event) => {
+  event.stopPropagation();
+  toggleVisibility();
+  missedClicks = 0;
+  scoreDisplay.textContent = `missed clicks: ${missedClicks}`;
 });
 
 // Toggle visibilities
 function toggleVisibility() {
-	menu.classList.toggle('display--none');
-	laser.classList.toggle('display--none');
-	scoreDisplay.classList.toggle('display--none');
+  menu.classList.toggle("display--none");
+  laser.classList.toggle("display--none");
+  scoreDisplay.classList.toggle("display--none");
 }
 
 // Let the cat follow the mouse ;)
-document.addEventListener('mousemove', event => {
-	cat.style.transform = `translate(calc(${event.clientX}px - 50%),calc(${event.clientY}px - 50%))`;
+document.addEventListener("mousemove", (event) => {
+  cat.style.transform = `translate(calc(${event.clientX}px - 50%),calc(${event.clientY}px - 50%))`;
 });

@@ -1,5 +1,5 @@
-import './Card.css';
+import "./Card.css";
 
-export default function Card({text}) {
-	return <p className="Card">{text}</p>;
+export default function Card({ text }) {
+  return <p className="Card">{text}</p>;
 }

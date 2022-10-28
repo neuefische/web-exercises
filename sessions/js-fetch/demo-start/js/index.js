@@ -1,6 +1,6 @@
 // Import Functions & Modules
-import {JokeSection} from '../components/JokeSection/JokeSection.js';
-import {Joke} from '../components/Joke/Joke.js';
+import { JokeSection } from "../components/JokeSection/JokeSection.js";
+import { Joke } from "../components/Joke/Joke.js";
 
 // Declare root Element
 const root = document.body;

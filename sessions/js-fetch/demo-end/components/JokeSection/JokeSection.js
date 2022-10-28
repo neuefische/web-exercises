@@ -1,6 +1,6 @@
 export function JokeSection() {
-	const sectionElement = document.createElement('section');
-	sectionElement.classList.add('joke-section');
+  const sectionElement = document.createElement("section");
+  sectionElement.classList.add("joke-section");
 
-	return sectionElement;
+  return sectionElement;
 }

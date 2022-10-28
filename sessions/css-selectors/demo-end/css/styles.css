@@ -54,11 +54,11 @@ a {
 
 /* attribute selector */
 
-ul[role='list'] {
+ul[role="list"] {
   list-style: none;
 }
 
-a[href^='/'] {
+a[href^="/"] {
   color: hotpink;
   text-transform: uppercase;
   font-weight: bold;
@@ -90,8 +90,8 @@ input::placeholder {
   color: midnightblue;
 }
 
-a[href^='https']::before {
-  content: '🌍';
+a[href^="https"]::before {
+  content: "🌍";
   margin-right: 5px;
 }
 

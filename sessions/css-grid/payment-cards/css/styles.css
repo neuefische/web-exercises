@@ -10,43 +10,43 @@ Hint: you need only three lines of code in your grid container
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
-		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
-	background-color: #E3E5E8;
+  background-color: #e3e5e8;
 }
 
 .cards {
-	margin: 0 auto;
-	padding: 2rem;
-	max-width: 50rem;
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 50rem;
 
-	/* Add styles to the container */
+  /* Add styles to the container */
 }
 
 .cards__option {
-	background-color: white;
-	padding: 2rem;
-	border-radius: 6px;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 6px;
 }
 
 .cards__option--highlight {
-	background-color: #fa4b12;
-	color: white;
+  background-color: #fa4b12;
+  color: white;
 }
 
 .cards__name {
-	margin: 0 0 1rem 0;
-	font-size: 1rem;
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
 }
 
 .cards__price {
-	font-size: 2.5rem;
-	font-weight: bold;
+  font-size: 2.5rem;
+  font-weight: bold;
 }

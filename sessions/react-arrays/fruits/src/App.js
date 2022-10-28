@@ -1,12 +1,12 @@
-import Card from './components/Card';
-import './styles.css';
+import Card from "./components/Card";
+import "./styles.css";
 
 export default function App() {
-	const fruits = [];
+  const fruits = [];
 
-	return (
-		<div className="App">
-			<Card text="banana" />
-		</div>
-	);
+  return (
+    <div className="App">
+      <Card text="banana" />
+    </div>
+  );
 }

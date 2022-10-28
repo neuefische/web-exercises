@@ -35,7 +35,7 @@ fieldset {
   border: 1px solid rgb(37, 38, 41);
 }
 
-input[type='color'] {
+input[type="color"] {
   margin: auto;
 }
 

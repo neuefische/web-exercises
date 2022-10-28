@@ -13,60 +13,60 @@ Use grid to fulfill the following tasks:
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
-		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-	background-color: #f7fdff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: #f7fdff;
 }
 
 .container {
-	display: grid;
-	gap: 20px;
-	grid-template-columns: repeat(5, 1fr 2fr);
-	grid-template-rows: repeat(10, 50px);
-	padding: 10px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(5, 1fr 2fr);
+  grid-template-rows: repeat(10, 50px);
+  padding: 10px;
 }
 
 .container__element {
-	padding: 10px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: rgb(186, 234, 246);
-	border-radius: 3px;
-	font-size: 2rem;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(186, 234, 246);
+  border-radius: 3px;
+  font-size: 2rem;
 }
 .element-1 {
-	background-color: #3a67a4;
-	/* Add styles here */
+  background-color: #3a67a4;
+  /* Add styles here */
 }
 
 .element-2 {
-	background-color: #3a67a4;
-	/* Add styles here */
+  background-color: #3a67a4;
+  /* Add styles here */
 }
 
 .element-5 {
-	background-color: #3a67a4;
-	/* Add styles here */
+  background-color: #3a67a4;
+  /* Add styles here */
 }
 
 .element-8 {
-	background-color: #3a67a4;
-	/* Add styles here */
+  background-color: #3a67a4;
+  /* Add styles here */
 }
 
 .element-fish {
-	background-color: #3a67a4;
-	/* Add styles here */
+  background-color: #3a67a4;
+  /* Add styles here */
 }
 
 .element-20 {
-	background-color: #3a67a4;
-	/* Add styles here */
+  background-color: #3a67a4;
+  /* Add styles here */
 }

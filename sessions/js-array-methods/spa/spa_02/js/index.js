@@ -10,30 +10,30 @@ const pageProfile = document.querySelector('[data-js="page-profile"]');
 
 const allPages = document.querySelectorAll('[data-js*="page"]');
 
-linkHome.addEventListener('click', () => {
-	allPages.forEach(page => {
-		page.classList.remove('current');
-	});
-	pageHome.classList.add('current');
+linkHome.addEventListener("click", () => {
+  allPages.forEach((page) => {
+    page.classList.remove("current");
+  });
+  pageHome.classList.add("current");
 });
 
-linkBookmarked.addEventListener('click', () => {
-	allPages.forEach(page => {
-		page.classList.remove('current');
-	});
-	pageBookmarked.classList.add('current');
+linkBookmarked.addEventListener("click", () => {
+  allPages.forEach((page) => {
+    page.classList.remove("current");
+  });
+  pageBookmarked.classList.add("current");
 });
 
-linkCreate.addEventListener('click', () => {
-	allPages.forEach(page => {
-		page.classList.remove('current');
-	});
-	pageCreate.classList.add('current');
+linkCreate.addEventListener("click", () => {
+  allPages.forEach((page) => {
+    page.classList.remove("current");
+  });
+  pageCreate.classList.add("current");
 });
 
-linkProfile.addEventListener('click', () => {
-	allPages.forEach(page => {
-		page.classList.remove('current');
-	});
-	pageProfile.classList.add('current');
+linkProfile.addEventListener("click", () => {
+  allPages.forEach((page) => {
+    page.classList.remove("current");
+  });
+  pageProfile.classList.add("current");
 });
