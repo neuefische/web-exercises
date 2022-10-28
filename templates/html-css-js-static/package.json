@@ -1,0 +1,10 @@
+{
+  "name": "template-html-css-js-satic",
+  "version": "1.0.0",
+  "description": "HTML, CSS and JS static",
+  "main": "index.html",
+  "scripts": {
+    "lint": "npx eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

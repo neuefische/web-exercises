@@ -37,12 +37,12 @@ These exercises are tailored as templates for codesandbox
 
 In order to satisfy our review process, please follow these steps:
 
-1. Open a new branch following our [Branch guidelines](./docs/BRANCHES.md)
+1. Create a new branch as `<sessionname>-<challengename>` e.g. `js-array-methods-map`
 2. Add a new project in the desired session folder:  
    Example: `sessions/js-array-methods/map`
    - Option 1: Copy one of the [templates](./templates)
    - Option 2: Download an existing codesandbox (see screenshot below)
-3. Commit the changes following [Commit guidelines](./docs/COMMITS.md)
+3. Commit the changes
 4. Open a new pull request
 5. Wait until the pull request has at least 1 approval (enforced by branch protection)
 6. Add the codesandbox link to the session exercise which was generated with `githubbox` (→ change `github.com` to `githubbox.com` in your browser bar). Don't forget to correct the branchname from your feature branch to `main`.

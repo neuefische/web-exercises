@@ -11,41 +11,15 @@
     "url": "git+https://github.com/neuefische/web-exercises.git"
   },
   "license": "MIT",
-  "author": "Gregor Adams",
   "main": "n.a.",
   "workspaces": [
     "sessions/*/*"
   ],
   "scripts": {
     "markdown-toc": "npx markdown-toc -i README.md",
-    "prepare": "husky install",
     "ncu": "npx npm-check-updates"
   },
   "dependencies": {
-    "@commitlint/cli": "^16.2.3",
-    "@commitlint/config-conventional": "^16.2.1",
-    "@typescript-eslint/eslint-plugin": "^5.20.0",
-    "@typescript-eslint/parser": "^5.20.0",
-    "eslint": "^8.13.0",
-    "eslint-config-xo": "^0.40.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.29.4",
-    "husky": "^7.0.4",
-    "lint-staged": "^12.4.0",
-    "prettier": "^2.6.2",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "react-scripts": "^5.0.1",
-    "styled-components": "^5.3.5",
-    "stylelint": "^13.13.1",
-    "stylelint-a11y": "^1.2.3",
-    "stylelint-config-prettier": "^8.0.2",
-    "stylelint-config-property-sort-order-smacss": "^7.1.0",
-    "stylelint-config-standard": "^22.0.0",
-    "stylelint-config-styled-components": "^0.1.1",
-    "stylelint-order": "^4.1.0",
-    "stylelint-processor-styled-components": "^1.10.0",
-    "tslib": "^2.4.0",
-    "typescript": "^4.6.3"
+    "prettier": "^2.7.1"
   }
 }
