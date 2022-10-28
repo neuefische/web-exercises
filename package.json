@@ -11,6 +11,7 @@
     "url": "git+https://github.com/neuefische/web-exercises.git"
   },
   "license": "MIT",
+  "type": "module",
   "main": "n.a.",
   "workspaces": [
     "sessions/*/*"
@@ -20,6 +21,8 @@
     "ncu": "npx npm-check-updates"
   },
   "dependencies": {
+    "fs-extra": "^10.1.0",
+    "globby": "^13.1.2",
     "prettier": "^2.7.1"
   }
 }
