@@ -1,6 +1,6 @@
 {
   "name": "web-exercises",
-  "version": "1.0.0",
+  "version": "0.0.0-unreleased",
   "description": "Session exercises",
   "homepage": "https://github.com/neuefische/web-exercises#readme",
   "bugs": {
@@ -10,19 +10,25 @@
     "type": "git",
     "url": "git+https://github.com/neuefische/web-exercises.git"
   },
-  "license": "MIT",
   "type": "module",
   "main": "n.a.",
   "workspaces": [
     "sessions/*/*"
   ],
   "scripts": {
+    "create": "node ./scripts/create.js",
     "markdown-toc": "npx markdown-toc -i README.md",
     "ncu": "npx npm-check-updates"
   },
   "dependencies": {
+    "branch-name": "^1.0.0",
+    "execa": "^6.1.0",
     "fs-extra": "^10.1.0",
     "globby": "^13.1.2",
-    "prettier": "^2.7.1"
+    "inquirer": "^9.1.4",
+    "ora": "^6.1.2",
+    "prettier": "^2.7.1",
+    "slugify": "^1.6.5",
+    "title-case": "^3.0.3"
   }
 }

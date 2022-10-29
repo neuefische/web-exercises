@@ -37,7 +37,7 @@ These exercises are tailored as templates for codesandbox
 
 In order to satisfy our review process, please follow these steps:
 
-1. Create a new branch as `<sessionname>-<challengename>` e.g. `js-array-methods-map`
+1. Create a new branch as `<sessionname>_<challengename>` e.g. `js-array-methods_map`
 2. Add a new project in the desired session folder:  
    Example: `sessions/js-array-methods/map`
    - Option 1: Copy one of the [templates](./templates)
