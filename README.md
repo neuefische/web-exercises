@@ -108,7 +108,7 @@ Open the the folder of the challenge on GitHub. Change the URL from `github.com`
 
 ```diff
 - https://github.com/neuefische/web-exercises/tree/main/sessions/js-array-methods/map
-+ https://githubbox.com/neuefische/web-exercises/tree/main/js-array-methods/map
++ https://githubbox.com/neuefische/web-exercises/tree/main/sessions/js-array-methods/map
 ```
 
 > 💡 While reviewing a challenge, you can share the link pointing to the respective branch. This way challenges can be reviewed on CodeSandbox before they are merged into the main branch.
@@ -118,7 +118,7 @@ Open the the folder of the challenge on GitHub. Change the URL from `github.com`
 We are using [`ghcd`](https://github.com/djfarly/ghcd#readme) (GitHub Clone Directory) which is a tool that "clones" (or rather downloads) a subdirectory of a GitHub repository. You can share the command containing the URL to the challenge folder on GitHub.
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/js-array-methods/map -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/map -i
 ```
 
 > 💡 While reviewing a challenge, you can share the command pointing to the respective branch. This way challenges can be reviewed locally before they are merged into the main branch.
