@@ -35,6 +35,8 @@ The folder structure of this repository is as follows:
 sessions/<session-name>/<challenge-name>/
 ```
 
+> ❗️ Avoid nesting challenges in folders. This makes it harder to discover challenges and to update them using tooling.
+
 ## Create a new challenge
 
 To create a new challenge run the following command:
@@ -98,6 +100,8 @@ All challenges must be reviewed before they are merged into the `main` branch. C
 
 Challenges can be reviewed by any neue fische web coach.
 
+> 💡 Challenges deliberately do not have to have passing tests to be merged. It is also fine to merge challenges with linting errors. Failing tests and linting errors are part of the challenge itself.
+
 ## Accessing the challenges
 
 There a two ways to access the challenges:
@@ -123,7 +127,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/map
 
 > 💡 While reviewing a challenge, you can share the command pointing to the respective branch. This way challenges can be reviewed locally before they are merged into the main branch.
 
-> ❗️ `ghcd` does not support branches containing slashes.
+> ❗️ `ghcd` does not support branch names containing slashes.
 
 You can append the `-i` flag to the command to let `ghcd` initialize a new git repository in the "cloned" folder. This is recommended for all challenges in from the curriculum after git has been introduced.
 
