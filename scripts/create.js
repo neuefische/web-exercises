@@ -119,7 +119,7 @@ try {
 
     // update the package.json
     const pkg = await fs.readJson(`${challengeDir}/package.json`);
-    pkg.name = `${sessionSlug}-${challengeSlug}`;
+    pkg.name = `${sessionSlug}_${challengeSlug}`;
     pkg.description = input.challengeName;
     await fs.writeJson(`${challengeDir}/package.json`, pkg, { spaces: 2 });
 
@@ -172,7 +172,7 @@ try {
 
     // update the package.json
     const pkg = await fs.readJson(`${challengeDir}/package.json`);
-    pkg.name = `${sessionSlug}-${challengeSlug}`;
+    pkg.name = `${sessionSlug}_${challengeSlug}`;
     pkg.description = input.challengeName;
     pkg.version = "0.0.0-unreleased";
     pkg.nf = { template: template.name };

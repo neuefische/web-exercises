@@ -1,121 +1,136 @@
 # web exercises
 
-Exercises for the neuefische web bootcamps.
-
-These exercises are tailored as templates for codesandbox
+A monorepo containing challenges, demos and starters for the neue fische web bootcamps.
+All of the challenges are designed to work locally as well as on CodeSandbox.
 
 <!-- toc -->
 
-- [web exercises](#web-exercises)
-  - [Generate Codesandbox from GitHub](#generate-codesandbox-from-github)
-  - [Adding new exercises](#adding-new-exercises)
-  - [Review new or changed exercises](#review-new-or-changed-exercises)
-  - [Update exercises](#update-exercises)
-  - [OPTIONAL: Local development](#optional-local-development)
-  - [OPTIONAL: Import project to Codesandbox](#optional-import-project-to-codesandbox)
+- [Structure of this Repository](#structure-of-this-repository)
+- [Create a new challenge](#create-a-new-challenge)
+  - [Empty](#empty)
+  - [HTML, CSS and JS with jest support](#html-css-and-js-with-jest-support)
+  - [HTML, CSS and JS static](#html-css-and-js-static)
+  - [HTML and CSS static](#html-and-css-static)
+  - [JS with jest support](#js-with-jest-support)
+  - [React minimal](#react-minimal)
+  - [Create React App](#create-react-app)
+- [Challenge requirements](#challenge-requirements)
+- [Review new or changed challenges](#review-new-or-changed-challenges)
+- [Accessing the challenges](#accessing-the-challenges)
+  - [CodeSandbox](#codesandbox)
+  - [Locally](#locally)
+- [Local development](#local-development)
 
 <!-- tocstop -->
 
----
+## Structure of this Repository
 
-## Generate Codesandbox from GitHub
+A _challenge_ is any form of challenge, exercise, demo or starter that is used in the web bootcamps.
 
-1. Open the folder in GitHub
-2. change the URL from `github.com` to `githubbox.com`
-   - Before: https://github.com/neuefische/web-exercises/tree/feature/array-map/sessions/js-array-methods/map
-   - After: https://githubbox.com/neuefische/web-exercises/tree/feature/array-map/sessions/js-array-methods/map
+A _session_ is a collection of challenges that are used in a specific bootcamp session.
 
-![codesanbox create](docs/resources/generate-codesandbox-from-github.png)
+The folder structure of this repository is as follows:
 
-![import project to codesandbox](docs/resources/generate-githubbox.png)
+```
+sessions/<session-name>/<challenge-name>/
+```
 
-![GithHub project url](docs/resources/generated-githubbox-done.png)
+## Create a new challenge
 
----
+To create a new challenge run the following command:
 
-## Adding new exercises
+```
+npm run create
+```
 
-In order to satisfy our review process, please follow these steps:
+> 💡 Make sure to run this command from the root of the repository and to run `npm i` before.
 
-1. Create a new branch as `<sessionname>_<challengename>` e.g. `js-array-methods_map`
-2. Add a new project in the desired session folder:  
-   Example: `sessions/js-array-methods/map`
-   - Option 1: Copy one of the [templates](./templates)
-   - Option 2: Download an existing codesandbox (see screenshot below)
-3. Commit the changes
-4. Open a new pull request
-5. Wait until the pull request has at least 1 approval (enforced by branch protection)
-6. Add the codesandbox link to the session exercise which was generated with `githubbox` (→ change `github.com` to `githubbox.com` in your browser bar). Don't forget to correct the branchname from your feature branch to `main`.
+This will ask you for the session name, challenge name and challenge type.
 
-Example: https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/example/exercise-01
+> 💡 If you follow the branch naming convention (`session-name_challenge-name`), the create script will automatically detect the session and challenge name from the branch name.
 
-![Export Codesandbox](docs/resources/codesandbox-export.png)
+This repository contains templates for most types of challenges. The following challenge types are available:
 
----
+### Empty
 
-## Review new or changed exercises
+This is a template for a challenge that does not contain any code.
 
-1. Switch to the branch on GitHub
-2. Use the folder from that branch
-3. Follow step 2 from [Generate Codesandbox from GitHub](#generate-codesandbox-from-github)
-4. Solve the exercise and save the sandbox
-5. Add your solution as a comment on the pull request
+### HTML, CSS and JS with jest support
 
----
+This is a template for a challenge that contains HTML, CSS and JavaScript files with jest support. CodeSandbox bundles the code and runs the tests automatically. Locally you can run the tests with `npm test`.
 
-## Update exercises
+### HTML, CSS and JS static
 
-Once a pull request has been approved and squashed onto the main branch, solutions can be added to
-our [Sessions on Codesandbox](https://codesandbox.io/dashboard/all/sessions).
+This is a template for a challenge that contains HTML, CSS and JavaScript files but has no bundler and therefore does not support tests.
 
-Since we generate the exercises from the GitHub folder, we don't have to update the example starters
+### HTML and CSS static
 
-1. Delete old solutions
-2. Add new solutions in designated folder in codesandbox
-3. Add solutions with suffix `(solution 01)`
+This is a template for a challenge that contains HTML and CSS files.
 
-> Each exercise should have one independent solution.
+### JS with jest support
 
-Example: https://codesandbox.io/dashboard/all/sessions/example
+This is a template for a challenge that contains only JavaScript files with jest support. CodeSandbox bundles the code and runs the tests automatically. Locally you can run the tests with `npm test`.
 
-![Codesandbox exercise and solutions](docs/resources/codesandbox-exercise-and-solutions.png)
+### React minimal
 
----
+This is a template for a challenge that contains a minimal React app. It uses `react-scripts` but only contains the bare minimum files from Create React App.
 
-## OPTIONAL: Local development
+### Create React App
 
-To develop on your local machine, please follow these steps:
+This is not a template but instead executes `npx create-react-app` to create a new React app.
 
-1. Run `npm i` in the root of this repository
-2. Start the development server:
+## Challenge requirements
 
-- Option 1: Run script in root: `npm run start --workspace=example-exercise-01`  
-  This will run the start script of the session workspace.
-- Option 2: Run script in workspace: `cd sessions/example/exercise-01 && npm run start`
-  This will go to the directory and then run the script there.
-- Option 3:Run the script from the package.json (see screenshot below)
+All challenges must at least contain a `README.md` and a `package.json` file.
 
-![Run script in VSC](docs/resources/run_script_vsc.png)
+The `README.md` file must contain the following information:
 
----
+- A title
+- A description of how to solve the challenge
 
-## OPTIONAL: Import project to Codesandbox
+The `package.json` file must at least contain the following information:
 
-> This guide uses the ["javascript"](templates/javascript) template from [the template folder](./templates)
+- A `name` field that follows the naming convention (`session-name_challenge-name`)
 
-1. Open https://codesandbox.io/
-2. Create a new sandbox
-3. Choose the "Import Project" tab
-4. Enter the URL to the folder that hosts the exercise
-5. Click the "Import and Fork" button
-6. Congratulation: You created a Sandbox from a GitHub folder
+## Review new or changed challenges
 
-![codesanbox create](docs/resources/codesandbox-create.png)
+All challenges must be reviewed before they are merged into the `main` branch. Create a pull request on GitHub and add the `needs review` label.
 
-![import project to codesandbox](docs/resources/import-project-to-codesandbox.png)
+Challenges can be reviewed by any neue fische web coach.
 
-![GithHub project url](docs/resources/github-project-url.png)
+## Accessing the challenges
 
-![import exercise to codesandbox](docs/resources/import-exercise-to-codesandbox.png)
+There a two ways to access the challenges:
 
-![codesandbox from GitHub](docs/resources/codesandbox-from-github.png)
+### CodeSandbox
+
+Open the the folder of the challenge on GitHub. Change the URL from `github.com` to `githubbox.com`. This will open the challenge in CodeSandbox. Copy the URL you are redirected to and share it. You can also select a spefic file and share the URL to that file. We recommend sharing the URL to the `README.md` file.
+
+```diff
+- https://github.com/neuefische/web-exercises/tree/main/sessions/js-array-methods/map
++ https://githubbox.com/neuefische/web-exercises/tree/main/js-array-methods/map
+```
+
+> 💡 While reviewing a challenge, you can share the link pointing to the respective branch. This way challenges can be reviewed on CodeSandbox before they are merged into the main branch.
+
+### Locally
+
+We are using [`ghcd`](https://github.com/djfarly/ghcd#readme) (GitHub Clone Directory) which is a tool that "clones" (or rather downloads) a subdirectory of a GitHub repository. You can share the command containing the URL to the challenge folder on GitHub.
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/js-array-methods/map -i
+```
+
+> 💡 While reviewing a challenge, you can share the command pointing to the respective branch. This way challenges can be reviewed locally before they are merged into the main branch.
+
+> ❗️ `ghcd` does not support branches containing slashes.
+
+You can append the `-i` flag to the command to let `ghcd` initialize a new git repository in the "cloned" folder. This is recommended for all challenges in from the curriculum after git has been introduced.
+
+## Local development
+
+To run commands in a workspace of the monorepo (a challenge folder) on your local machine:
+
+1. make sure you have run `npm i` in the root of this repository
+2. `cd` into the folder (`cd sessions/session-name/challenge-name`)
+3. run the script of you choice (`npm run test`)
