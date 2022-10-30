@@ -66,6 +66,9 @@ for (const challengeFolder of challengeFolders) {
 function applyTemplate(challengeFolder, template) {
   const templateFolder = path.join("templates", template);
 
+  // get session and challenge name from the folder name
+  const [sessionName, challengeName] = challengeFolder.split("/").slice(1);
+
   // copy the .eslintrc.json and sandbox.config.json file from the template folder to the challenge folder
   fs.copyFileSync(
     path.join(templateFolder, "sandbox.config.json"),
@@ -98,6 +101,7 @@ function applyTemplate(challengeFolder, template) {
 
   const newChallengePackage = {
     ...challengePackage,
+    name: `${sessionName}_${challengeName}`,
     version: templatePackage?.version,
     scripts: templatePackage?.scripts,
     type: templatePackage?.type,
@@ -111,6 +115,12 @@ function applyTemplate(challengeFolder, template) {
     bugs: undefined,
     homepage: undefined,
   };
+
+  // if the challenge folder does not include a README.md file,
+  // log a warning with the challenge folder name to the console
+  if (!fs.existsSync(path.join(challengeFolder, "README.md"))) {
+    console.warn("missing README.md", challengeFolder);
+  }
 
   fs.writeJsonSync(
     path.join(challengeFolder, "package.json"),
