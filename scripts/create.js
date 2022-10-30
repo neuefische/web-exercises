@@ -99,7 +99,7 @@ try {
   );
 
   const challengeDir = `./sessions/${sessionSlug}/${challengeSlug}`;
-  const tempChallengeDir = `.create-temp/${sessionSlug}-${challengeSlug}`;
+  const tempChallengeDir = `.create-temp/${sessionSlug}_${challengeSlug}`;
 
   if (template.type === "dir") {
     try {
