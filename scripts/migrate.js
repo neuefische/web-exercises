@@ -13,50 +13,49 @@ for (const challengeFolder of challengeFolders) {
   // if the folder name contains the word "react", skip it
   if (challengeFolder.includes("react")) continue;
 
-  // if the folder does not contain any html, css or js files, skip it
+  let template;
+
+  // if the folder does not contain any html, css or js files
   const files = await globby("*.html|*.css|*.js", {
     cwd: challengeFolder,
     onlyFiles: true,
     expandDirectories: false,
   });
   if (files.length === 0) {
-    console.log("skip", challengeFolder);
-    continue;
-  }
-
-  let template;
-
-  // if the challenge folder includes any files matching "**/*.test.js"
-  if ((await globby("**/*.test.js", { cwd: challengeFolder })).length) {
-    // this will require a non static template, we still need to figure out if
-    // we need the html-css-js template or the js template
-
-    // if the challenge folder includes any files matching "**/*.html" or "**/*.css"
-    if (
-      (await globby("**/*.html", { cwd: challengeFolder })).length ||
-      (await globby("**/*.css", { cwd: challengeFolder })).length
-    ) {
-      // use the html-css-js template
-      // console.log("html-css-js", challengeFolder);
-      template = "html-css-js";
-    } else {
-      // use the js template
-      // console.log("js", challengeFolder);
-      template = "js";
-    }
+    template = "empty";
   } else {
-    // this will require a static template
-    // we need to figure out if we need the html-css-js-static template or the html-css-static template
+    // if the challenge folder includes any files matching "**/*.test.js"
+    if ((await globby("**/*.test.js", { cwd: challengeFolder })).length) {
+      // this will require a non static template, we still need to figure out if
+      // we need the html-css-js template or the js template
 
-    // if the challenge folder includes any files matching "**/*.js"
-    if ((await globby("**/*.js", { cwd: challengeFolder })).length) {
-      // use the html-css-js-static template
-      // console.log("html-css-js-static", challengeFolder);
-      template = "html-css-js-static";
+      // if the challenge folder includes any files matching "**/*.html" or "**/*.css"
+      if (
+        (await globby("**/*.html", { cwd: challengeFolder })).length ||
+        (await globby("**/*.css", { cwd: challengeFolder })).length
+      ) {
+        // use the html-css-js template
+        // console.log("html-css-js", challengeFolder);
+        template = "html-css-js";
+      } else {
+        // use the js template
+        // console.log("js", challengeFolder);
+        template = "js";
+      }
     } else {
-      // use the html-css-static template
-      // console.log("html-css-static", challengeFolder);
-      template = "html-css-static";
+      // this will require a static template
+      // we need to figure out if we need the html-css-js-static template or the html-css-static template
+
+      // if the challenge folder includes any files matching "**/*.js"
+      if ((await globby("**/*.js", { cwd: challengeFolder })).length) {
+        // use the html-css-js-static template
+        // console.log("html-css-js-static", challengeFolder);
+        template = "html-css-js-static";
+      } else {
+        // use the html-css-static template
+        // console.log("html-css-static", challengeFolder);
+        template = "html-css-static";
+      }
     }
   }
 
