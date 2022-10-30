@@ -211,7 +211,7 @@ try {
     }
   }
 
-  spinner.succeed("Challenge created");
+  spinner.succeed("Challenge created at " + challengeDir);
 } catch (error) {
   if (fs.existsSync(".create-temp")) {
     fs.rmdirSync(".create-temp", { recursive: true, force: true });
