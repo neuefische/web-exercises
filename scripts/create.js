@@ -65,12 +65,16 @@ try {
       name: "sessionName",
       message: "What is the name of the session?",
       default: titleCaseName(maybeSessionName),
+      // make required
+      validate: (input) => (!input ? "Please enter a session name" : true),
     },
     {
       type: "input",
       name: "challengeName",
       message: "What is the name of the challenge/demo/starter/etc.?",
       default: titleCaseName(maybeChallengeName),
+      // make required
+      validate: (input) => (!input ? "Please enter a challenge name" : true),
     },
     {
       type: "list",
@@ -139,10 +143,14 @@ try {
       })
     );
 
-    try {
-      await execa("npm", ["i"], { stdout: undefined });
-    } catch {
-      // ignore
+    // make sure dependencies are installed
+    if (pkg.dependencies || pkg.devDependencies) {
+      spinner.text = "Installing dependencies…";
+      try {
+        await execa("npm", ["i"], { stdout: undefined });
+      } catch {
+        // ignore
+      }
     }
 
     try {
@@ -151,6 +159,10 @@ try {
       // ignore
     }
   } else if (template.type === "cmd") {
+    spinner.text = `Creating challenge via \`${
+      template.cmd[0]
+    } ${template.cmd[1].join(" ")}\`… (this may take a minute)`;
+
     try {
       if (fs.existsSync(challengeDir)) {
         throw new Error("Challenge already exists");
