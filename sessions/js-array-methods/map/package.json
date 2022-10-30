@@ -1,5 +1,5 @@
 {
-  "name": "array-map",
+  "name": "js-array-methods_map",
   "version": "0.0.0-unreleased",
   "description": "Array map exercises",
   "main": "index.js",
@@ -12,7 +12,8 @@
   },
   "scripts": {
     "lint": "npx eslint .",
-    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest"
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest",
+    "test:watch": "npm test -- --watchAll"
   },
   "type": "module",
   "nf": {

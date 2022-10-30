@@ -37,11 +37,11 @@ for (const challengeFolder of challengeFolders) {
       (await globby("**/*.css", { cwd: challengeFolder })).length
     ) {
       // use the html-css-js template
-      console.log("html-css-js", challengeFolder);
+      // console.log("html-css-js", challengeFolder);
       template = "html-css-js";
     } else {
       // use the js template
-      console.log("js", challengeFolder);
+      // console.log("js", challengeFolder);
       template = "js";
     }
   } else {
@@ -51,11 +51,11 @@ for (const challengeFolder of challengeFolders) {
     // if the challenge folder includes any files matching "**/*.js"
     if ((await globby("**/*.js", { cwd: challengeFolder })).length) {
       // use the html-css-js-static template
-      console.log("html-css-js-static", challengeFolder);
+      // console.log("html-css-js-static", challengeFolder);
       template = "html-css-js-static";
     } else {
       // use the html-css-static template
-      console.log("html-css-static", challengeFolder);
+      // console.log("html-css-static", challengeFolder);
       template = "html-css-static";
     }
   }
@@ -118,9 +118,9 @@ function applyTemplate(challengeFolder, template) {
 
   // if the challenge folder does not include a README.md file,
   // log a warning with the challenge folder name to the console
-  if (!fs.existsSync(path.join(challengeFolder, "README.md"))) {
-    console.warn("missing README.md", challengeFolder);
-  }
+  // if (!fs.existsSync(path.join(challengeFolder, "README.md"))) {
+  //   console.warn("missing README.md", challengeFolder);
+  // }
 
   fs.writeJsonSync(
     path.join(challengeFolder, "package.json"),

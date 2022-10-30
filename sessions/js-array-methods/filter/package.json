@@ -1,5 +1,5 @@
 {
-  "name": "array-filter",
+  "name": "js-array-methods_filter",
   "version": "0.0.0-unreleased",
   "description": "Exercises for array filter",
   "main": "index.js",
@@ -12,7 +12,8 @@
   },
   "scripts": {
     "lint": "npx eslint .",
-    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest"
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest",
+    "test:watch": "npm test -- --watchAll"
   },
   "type": "module",
   "nf": {

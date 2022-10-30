@@ -1,5 +1,5 @@
 {
-  "name": "simple-todolist",
+  "name": "js-forms-2_simple-todolist",
   "version": "0.0.0-unreleased",
   "description": "A to-do list with two input fields, a headline and a textfield for the task",
   "main": "index.html",

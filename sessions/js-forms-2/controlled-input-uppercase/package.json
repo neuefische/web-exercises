@@ -1,5 +1,5 @@
 {
-  "name": "controlled-input-uppercase",
+  "name": "js-forms-2_controlled-input-uppercase",
   "version": "0.0.0-unreleased",
   "description": "An input field that converts the entered text to uppercase",
   "main": "js/index.js",

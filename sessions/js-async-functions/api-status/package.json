@@ -1,5 +1,5 @@
 {
-  "name": "api-status-challenge",
+  "name": "js-async-functions_api-status",
   "version": "0.0.0-unreleased",
   "description": "Challenge For JS Async Functions Session to check an API status",
   "main": "index.html",

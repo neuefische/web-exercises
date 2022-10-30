@@ -1,5 +1,5 @@
 {
-  "name": "js-array-methods-2_animal-strings-challenge",
+  "name": "js-array-methods-2_animal-strings",
   "version": "0.0.0-unreleased",
   "description": "Challenge for JS Array Methods 2 with Array of animal strings",
   "main": "index.js",
@@ -12,7 +12,8 @@
   },
   "scripts": {
     "lint": "npx eslint .",
-    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest"
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest",
+    "test:watch": "npm test -- --watchAll"
   },
   "type": "module",
   "nf": {

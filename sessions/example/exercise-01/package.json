@@ -1,5 +1,5 @@
 {
-  "name": "@example/exercise-01",
+  "name": "example_exercise-01",
   "version": "0.0.0-unreleased",
   "description": "React template",
   "main": "src/index.js",

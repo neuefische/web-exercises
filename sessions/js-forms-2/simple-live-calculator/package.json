@@ -1,5 +1,5 @@
 {
-  "name": "simple-live-calculator",
+  "name": "js-forms-2_simple-live-calculator",
   "version": "0.0.0-unreleased",
   "description": "Two input fields whose product will be output in a paragraph",
   "main": "js/index.js",
