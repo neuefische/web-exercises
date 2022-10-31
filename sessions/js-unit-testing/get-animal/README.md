@@ -12,8 +12,6 @@ Please switch to the [index.js](index.js) file to start and start liking animals
 
 ## Notes
 
-- Make sure to run `npm install` first.
-- You can run the test via the command `npm run test:watch`
 - You only have to touch the [index.js](index.js) file.
 
 ## Development
