@@ -128,7 +128,7 @@ Challenges must be reviewed by at least one neue fische web coach.
 
 > 💡 Challenges deliberately do not have to have passing tests to be merged. It is also fine to merge exercises with linting errors. Failing tests and linting errors can be part of the exercise itself.
 
-## Accessing the exercises
+## Access the exercises
 
 There a two ways to access the exercises:
 
