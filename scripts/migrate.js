@@ -90,6 +90,12 @@ function applyTemplate(challengeFolder, template) {
     path.join(challengeFolder, ".gitignore")
   );
 
+  // copy the .prettierrc.json file from the template folder to the challenge folder
+  fs.copyFileSync(
+    path.join(templateFolder, ".prettierrc.json"),
+    path.join(challengeFolder, ".prettierrc.json")
+  );
+
   // patch the package.json file in the challenge folder by replacing the following fields:
   // - scripts
   // - dependencies
