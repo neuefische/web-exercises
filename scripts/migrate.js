@@ -129,7 +129,9 @@ function applyTemplate(challengeFolder, template) {
     // replace the string TITLE with the challenge name in the README.md file
     readme = readme.replace(
       /TITLE/g,
-      challengePackage.description || challengeName
+      challengePackage.description.includes("template")
+        ? challengeName
+        : challengePackage.description || challengeName
     );
     // remove comments from the README.md file
     readme = readme.replace(/<!--[\s\S]*?-->/g, "");

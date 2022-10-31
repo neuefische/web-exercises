@@ -15,3 +15,19 @@ The following hints might guide you:
   - Each component should have its own JS file. This file contains all functions belonging to this component.
 - Eventually, the [index.js file](./index.js) should only contain imports, function calls and the main `render()` function.
 - Don't forget to tell the browser that you are using modules now (inside of the [index.html file](./index.html)).
+
+## Development
+
+### CodeSandbox
+
+Select the "Browser" tab to view this project.
+
+### Local development
+
+To run project commands locally, you need to install the dependencies first using `npm i`.
+
+You can then use the following command:
+
+- `npm run lint` to run the linter
+
+Use the Live Preview Extension for Visual Studio Code to view this project in the browser: Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
