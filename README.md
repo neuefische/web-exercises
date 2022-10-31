@@ -9,18 +9,18 @@ All of the exercises are designed to work locally as well as on CodeSandbox.
 - [Branch Naming Convention](#branch-naming-convention)
 - [Create a new exercise](#create-a-new-exercise)
 - [Templates](#templates)
-  - [Empty (`templates/empty`)](#empty-templatesempty)
-  - [HTML, CSS and JS with jest support (`templates/html-css-js`)](#html-css-and-js-with-jest-support-templateshtml-css-js)
-  - [HTML, CSS and JS static (`templates/html-css-js-static`)](#html-css-and-js-static-templateshtml-css-js-static)
-  - [HTML and CSS static (`templates/html-css-static`)](#html-and-css-static-templateshtml-css-static)
-  - [JS with jest support (`templates/js`)](#js-with-jest-support-templatesjs)
-  - [React minimal (`templates/react-minimal`)](#react-minimal-templatesreact-minimal)
-  - [Create React App (`npx create-react-app`)](#create-react-app-npx-create-react-app)
+  * [Empty](#empty)
+  * [HTML, CSS and JS with jest support](#html-css-and-js-with-jest-support)
+  * [HTML, CSS and JS static](#html-css-and-js-static)
+  * [HTML and CSS static](#html-and-css-static)
+  * [JS with jest support](#js-with-jest-support)
+  * [React minimal](#react-minimal)
+  * [Create React App](#create-react-app)
 - [Challenge requirements](#challenge-requirements)
 - [Review new or changed exercises](#review-new-or-changed-exercises)
 - [Accessing the exercises](#accessing-the-exercises)
-  - [CodeSandbox](#codesandbox)
-  - [Locally](#locally)
+  * [CodeSandbox](#codesandbox)
+  * [Locally](#locally)
 - [Local development](#local-development)
 
 <!-- tocstop -->
@@ -69,33 +69,49 @@ This repository contains templates for most types of exercises.
 
 The following exercise types are available.
 
-### Empty (`templates/empty`)
+### Empty
+
+`templates/empty`
 
 An exercise that does not contain any code.
 
-### HTML, CSS and JS with jest support (`templates/html-css-js`)
+### HTML, CSS and JS with jest support
+
+`templates/html-css-js`
 
 An exercise that contains HTML, CSS and JavaScript files with jest support. CodeSandbox bundles the code and runs the tests automatically. Locally you can run the tests with `npm test`.
 
-### HTML, CSS and JS static (`templates/html-css-js-static`)
+### HTML, CSS and JS static
+
+`templates/html-css-js-static`
 
 An exercise that contains HTML, CSS and JavaScript files but has no bundler and therefore does not support tests.
 
-### HTML and CSS static (`templates/html-css-static`)
+### HTML and CSS static
+
+`templates/html-css-static`
 
 An exercise that contains HTML and CSS files.
 
-### JS with jest support (`templates/js`)
+### JS with jest support
+
+`templates/js`
 
 An exercise that contains only JavaScript files with jest support. CodeSandbox bundles the code and runs the tests automatically. Locally you can run the tests with `npm test`.
 
-### React minimal (`templates/react-minimal`)
+### React minimal
+
+`templates/react-minimal`
 
 An exercise that contains a minimal React app. It uses `react-scripts` but only contains the bare minimum files from Create React App.
 
-### Create React App (`npx create-react-app`)
+### Create React App
+
+`npx create-react-app`
 
 An exercises from executing `create-react-app` to create a new React app.
+
+> 💡 This is different from running `create-react-app` directly. It will update the `README.md` to match our conventions.
 
 ## Challenge requirements
 
