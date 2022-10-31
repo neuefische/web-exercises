@@ -9,18 +9,18 @@ All of the exercises are designed to work locally as well as on CodeSandbox.
 - [Branch Naming Convention](#branch-naming-convention)
 - [Create a new exercise](#create-a-new-exercise)
 - [Templates](#templates)
-  * [Empty](#empty)
-  * [HTML, CSS and JS with jest support](#html-css-and-js-with-jest-support)
-  * [HTML, CSS and JS static](#html-css-and-js-static)
-  * [HTML and CSS static](#html-and-css-static)
-  * [JS with jest support](#js-with-jest-support)
-  * [React minimal](#react-minimal)
-  * [Create React App](#create-react-app)
+  - [Empty](#empty)
+  - [HTML, CSS and JS with jest support](#html-css-and-js-with-jest-support)
+  - [HTML, CSS and JS static](#html-css-and-js-static)
+  - [HTML and CSS static](#html-and-css-static)
+  - [JS with jest support](#js-with-jest-support)
+  - [React minimal](#react-minimal)
+  - [Create React App](#create-react-app)
 - [Challenge requirements](#challenge-requirements)
 - [Review new or changed exercises](#review-new-or-changed-exercises)
 - [Accessing the exercises](#accessing-the-exercises)
-  * [CodeSandbox](#codesandbox)
-  * [Locally](#locally)
+  - [CodeSandbox](#codesandbox)
+  - [Locally](#locally)
 - [Local development](#local-development)
 
 <!-- tocstop -->
@@ -111,7 +111,7 @@ An exercise that contains a minimal React app. It uses `react-scripts` but only 
 
 An exercises from executing `create-react-app` to create a new React app.
 
-> 💡 This is different from running `create-react-app` directly. It will update the `README.md` to match our conventions.
+> 💡 This is different from running `create-react-app` directly. It will update the `README.md` and `package.json` to match our conventions.
 
 ## Challenge requirements
 
