@@ -1,8 +1,18 @@
 # TITLE
 
+<!--
+
+Describe the exercise in a few sentences. E.g.:
+
 Objects are everywhere. Let's become confident handling them!
 
+-->
+
 ## Task
+
+<!--
+
+Explaining the task in detail. E.g.:
 
 In this exercise, you will encounter the following tasks:
 
@@ -10,6 +20,8 @@ In this exercise, you will encounter the following tasks:
 - the variable itself is an object and you need to adjust it.
 
 Please switch to the [index.js](index.js) file to start the exercises. You will find the exact tasks there.
+
+-->
 
 ## Notes
 

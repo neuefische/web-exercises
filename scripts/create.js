@@ -53,8 +53,38 @@ try {
       description: "Create React App (via npx create-react-app)",
       sandboxConfig: { template: "create-react-app" },
       readme: `# TITLE
-      
-This is the description.
+
+<!--
+
+Describe the exercise in a few sentences. E.g.:
+
+This challenge offers a simple form with three input fields. Let's make it interactive using React!
+
+-->
+
+## Task
+
+<!--
+
+Explaining the task in detail. E.g.:
+
+Use an event handler to react to the form submission.
+
+Log all form data (in object form) into the console in the submit event handler.
+
+You can use the following hints as guideline:
+
+- Hint 1
+- Hint 2
+- ...
+
+Switch to the [App.js](./src/App.js) file and make something great happen!
+
+-->
+
+## Notes
+
+- You only have to touch the \`src/App.js\` file.
 
 ## Development
 

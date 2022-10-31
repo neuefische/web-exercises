@@ -116,10 +116,41 @@ function applyTemplate(challengeFolder, template) {
   };
 
   // if the challenge folder does not include a README.md file,
-  // log a warning with the challenge folder name to the console
-  // if (!fs.existsSync(path.join(challengeFolder, "README.md"))) {
-  //   console.warn("missing README.md", challengeFolder);
-  // }
+  // copy the README.md file from the template folder to the challenge folder
+  if (!fs.existsSync(path.join(challengeFolder, "README.md"))) {
+    fs.copyFileSync(
+      path.join(templateFolder, "README.md"),
+      path.join(challengeFolder, "README.md")
+    );
+
+    // replace the string TITLE with the challenge name in the README.md file
+    let readme = fs.readFileSync(path.join(challengeFolder, "README.md"), {
+      encoding: "utf-8",
+    });
+    readme = readme.replace(/TITLE/g, challengeName);
+    fs.writeFileSync(path.join(challengeFolder, "README.md"), readme, {
+      encoding: "utf-8",
+    });
+  } else {
+    // if the challenge folder includes a README.md file,
+    // add in the development section from the template README.md file
+    let readme = fs.readFileSync(path.join(challengeFolder, "README.md"), {
+      encoding: "utf-8",
+    });
+    const templateReadme = fs.readFileSync(
+      path.join(templateFolder, "README.md"),
+      {
+        encoding: "utf-8",
+      }
+    );
+    const developmentSection = templateReadme.match(/## Development(.*)$/)[0];
+
+    readme = readme + "\n" + developmentSection;
+
+    fs.writeFileSync(path.join(challengeFolder, "README.md"), readme, {
+      encoding: "utf-8",
+    });
+  }
 
   fs.writeJsonSync(
     path.join(challengeFolder, "package.json"),

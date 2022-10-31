@@ -1,8 +1,18 @@
 # TITLE
 
-This codesandbox offers a simple form with three input fields. Let's make it interactive with JS!
+<!--
+
+Describe the exercise in a few sentences. E.g.:
+
+This challenge offers a simple form with three input fields. Let's make it interactive with JS!
+
+-->
 
 ## Task
+
+<!--
+
+Explaining the task in detail. E.g.:
 
 Use JavaScript to react to the form submission.
 
@@ -15,6 +25,8 @@ You can use the following hints as guideline:
 - ...
 
 Switch to the [index.js](./js/index.js) file and make something great happen!
+
+-->
 
 ## Notes
 

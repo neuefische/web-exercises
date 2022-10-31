@@ -1,8 +1,18 @@
 # TITLE
 
-This codesandbox offers a simple static website. Let's make it more gorgeous with HTML and CSS!
+<!--
+
+Describe the exercise in a few sentences. E.g.:
+
+This challenge offers a simple static website. Let's make it more gorgeous with HTML and CSS!
+
+-->
 
 ## Task
+
+<!--
+
+Explaining the task in detail. E.g.:
 
 Build a personal website according to the ![wireframe](). Use the following hints as guidelines:
 
@@ -12,10 +22,11 @@ Build a personal website according to the ![wireframe](). Use the following hint
 
 Switch to the [index.html](./index.html) file and make something great happen!
 
+-->
+
 ## Notes
 
-- It should not be necessary to change the file xyz.
-- There is no need to do ...
+- You only have to touch the `index.html` file.
 
 ## Development
 

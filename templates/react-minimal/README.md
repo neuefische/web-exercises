@@ -1,8 +1,18 @@
 # TITLE
 
+<!--
+
+Describe the exercise in a few sentences. E.g.:
+
 For now, the pokemon are only fetched when we click the button below. Let's change the code in such a way that our app does this automatically.
 
+-->
+
 ## Task
+
+<!--
+
+Explaining the task in detail. E.g.:
 
 Switch to the [App.js](./src/App.js) file and
 
@@ -13,6 +23,8 @@ You can use the following hints as guideline:
 
 - The `loadPokemon` function should only be executed when the app is rendered.
 - Don't forget the dependency array!
+
+-->
 
 ## Notes
 
