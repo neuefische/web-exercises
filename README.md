@@ -67,7 +67,7 @@ This repository contains templates for most types of exercises.
 
 ## Templates
 
-The following exercise types are available.
+The following exercise types are available via the `create` script:
 
 ### Empty
 
