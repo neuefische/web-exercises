@@ -50,7 +50,18 @@ for (const challengeFolder of challengeFolders) {
       if ((await globby("**/*.js", { cwd: challengeFolder })).length) {
         // use the html-css-js-static template
         // console.log("html-css-js-static", challengeFolder);
-        template = "html-css-js-static";
+
+        // if the challenge folder does not include any files matching "**/*.html" or "**/*.css"
+        if (
+          !(await globby("**/*.html", { cwd: challengeFolder })).length &&
+          !(await globby("**/*.css", { cwd: challengeFolder })).length
+        ) {
+          // use the js template
+          // console.log("js", challengeFolder);
+          template = "js";
+        } else {
+          template = "html-css-js-static";
+        }
       } else {
         // use the html-css-static template
         // console.log("html-css-static", challengeFolder);
@@ -91,10 +102,14 @@ function applyTemplate(challengeFolder, template) {
   );
 
   // copy the .prettierrc.json file from the template folder to the challenge folder
-  fs.copyFileSync(
-    path.join(templateFolder, ".prettierrc.json"),
-    path.join(challengeFolder, ".prettierrc.json")
-  );
+  if (fs.existsSync(path.join(templateFolder, ".prettierrc.json"))) {
+    fs.copyFileSync(
+      path.join(templateFolder, ".prettierrc.json"),
+      path.join(challengeFolder, ".prettierrc.json")
+    );
+  } else {
+    fs.removeSync(path.join(challengeFolder, ".prettierrc.json"));
+  }
 
   // patch the package.json file in the challenge folder by replacing the following fields:
   // - scripts
@@ -157,25 +172,33 @@ function applyTemplate(challengeFolder, template) {
       encoding: "utf-8",
     });
 
-    if (!readme.includes("## Development")) {
-      const templateReadme = fs.readFileSync(
-        path.join(templateFolder, "README.md"),
-        {
-          encoding: "utf-8",
-        }
-      );
+    const templateReadme = fs.readFileSync(
+      path.join(templateFolder, "README.md"),
+      {
+        encoding: "utf-8",
+      }
+    );
 
-      if (templateReadme.includes("## Development")) {
-        const developmentSection =
-          templateReadme.match(/(## Development.*$)/ms)[0];
+    if (templateReadme.includes("## Development")) {
+      const developmentSection =
+        templateReadme.match(/(## Development.*$)/ms)[0];
 
+      const readmeDevelopmentSection = readme.match(/(## Development.*$)/ms)[0];
+
+      if (
+        readmeDevelopmentSection &&
+        readmeDevelopmentSection !== developmentSection
+      ) {
+        readme = readme.replace(readmeDevelopmentSection, developmentSection);
+      }
+      if (!readmeDevelopmentSection) {
         readme = readme + "\n" + developmentSection;
       }
-
-      fs.writeFileSync(path.join(challengeFolder, "README.md"), readme, {
-        encoding: "utf-8",
-      });
     }
+
+    fs.writeFileSync(path.join(challengeFolder, "README.md"), readme, {
+      encoding: "utf-8",
+    });
   }
 
   fs.writeJsonSync(
