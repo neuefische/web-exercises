@@ -84,6 +84,12 @@ function applyTemplate(challengeFolder, template) {
     fs.removeSync(path.join(challengeFolder, ".eslintrc.json"));
   }
 
+  // copy the .gitignore file from the template folder to the challenge folder
+  fs.copyFileSync(
+    path.join(templateFolder, ".gitignore"),
+    path.join(challengeFolder, ".gitignore")
+  );
+
   // patch the package.json file in the challenge folder by replacing the following fields:
   // - scripts
   // - dependencies
