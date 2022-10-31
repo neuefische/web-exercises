@@ -123,11 +123,16 @@ function applyTemplate(challengeFolder, template) {
       path.join(challengeFolder, "README.md")
     );
 
-    // replace the string TITLE with the challenge name in the README.md file
     let readme = fs.readFileSync(path.join(challengeFolder, "README.md"), {
       encoding: "utf-8",
     });
-    readme = readme.replace(/TITLE/g, challengeName);
+    // replace the string TITLE with the challenge name in the README.md file
+    readme = readme.replace(
+      /TITLE/g,
+      challengePackage.description || challengeName
+    );
+    // remove comments from the README.md file
+    readme = readme.replace(/<!--[\s\S]*?-->/g, "");
     fs.writeFileSync(path.join(challengeFolder, "README.md"), readme, {
       encoding: "utf-8",
     });
@@ -137,19 +142,26 @@ function applyTemplate(challengeFolder, template) {
     let readme = fs.readFileSync(path.join(challengeFolder, "README.md"), {
       encoding: "utf-8",
     });
-    const templateReadme = fs.readFileSync(
-      path.join(templateFolder, "README.md"),
-      {
-        encoding: "utf-8",
+
+    if (!readme.includes("## Development")) {
+      const templateReadme = fs.readFileSync(
+        path.join(templateFolder, "README.md"),
+        {
+          encoding: "utf-8",
+        }
+      );
+
+      if (templateReadme.includes("## Development")) {
+        const developmentSection =
+          templateReadme.match(/(## Development.*$)/ms)[0];
+
+        readme = readme + "\n" + developmentSection;
       }
-    );
-    const developmentSection = templateReadme.match(/## Development(.*)$/)[0];
 
-    readme = readme + "\n" + developmentSection;
-
-    fs.writeFileSync(path.join(challengeFolder, "README.md"), readme, {
-      encoding: "utf-8",
-    });
+      fs.writeFileSync(path.join(challengeFolder, "README.md"), readme, {
+        encoding: "utf-8",
+      });
+    }
   }
 
   fs.writeJsonSync(
