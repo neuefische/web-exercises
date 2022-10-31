@@ -24,7 +24,7 @@ This project is JavaScript only so there is nothing to view in the "Browser" tab
 
 ### Local development
 
-To run project commands locally, you need to install the dependencies first using `npm i`.
+To run project commands locally, you need to install the dependencies using `npm i` first.
 
 You can then use the following commands:
 

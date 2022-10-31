@@ -94,7 +94,7 @@ Select the "Browser" tab to view this project. If this project contains tests, s
 
 ### Local development
 
-To run project commands locally, you need to install the dependencies first using \`npm i\`.
+To run project commands locally, you need to install the dependencies using \`npm i\` first.
 
 You can then use the following commands:
 
