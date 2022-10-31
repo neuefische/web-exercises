@@ -24,7 +24,7 @@ function titleCaseName(name) {
         .replace(/Cli/g, "CLI");
 }
 
-const spinner = ora("Creating challenge…");
+const spinner = ora("Creating exercise…");
 
 try {
   if (fs.existsSync(".create-temp")) {
@@ -49,14 +49,14 @@ try {
     .concat({
       type: "cmd",
       name: "cra",
-      cmd: ["npx", ["create-react-app", "."]],
+      cmd: ["npx", ["create-react-app@latest", "."]],
       description: "Create React App (via npx create-react-app)",
       sandboxConfig: { template: "create-react-app" },
     });
 
   const currentBranch = await branchName.get();
 
-  const [maybeSessionName, maybeChallengeName] = currentBranch.split("_");
+  const [maybeSessionName, maybeExerciseName] = currentBranch.split("_");
 
   // ask user for session name
   const input = await inquirer.prompt([
@@ -66,15 +66,15 @@ try {
       message: "What is the name of the session?",
       default: titleCaseName(maybeSessionName),
       // make required
-      validate: (input) => (!input ? "Please enter a session name" : true),
+      validate: (input) => (!input ? "Please enter the session name" : true),
     },
     {
       type: "input",
-      name: "challengeName",
-      message: "What is the name of the challenge/demo/starter/etc.?",
-      default: titleCaseName(maybeChallengeName),
+      name: "exerciseName",
+      message: "What is the name of the exercise?",
+      default: titleCaseName(maybeExerciseName),
       // make required
-      validate: (input) => (!input ? "Please enter a challenge name" : true),
+      validate: (input) => (!input ? "Please enter the exercise name" : true),
     },
     {
       type: "list",
@@ -94,7 +94,7 @@ try {
     lower: true,
   }).replaceAll(".", "");
 
-  const challengeSlug = slugify(input.challengeName, {
+  const exerciseSlug = slugify(input.exerciseName, {
     lower: true,
   }).replaceAll(".", "");
 
@@ -102,13 +102,13 @@ try {
     (template) => template.name === input.template
   );
 
-  const challengeDir = `./sessions/${sessionSlug}/${challengeSlug}`;
-  const tempChallengeDir = `.create-temp/${sessionSlug}_${challengeSlug}`;
+  const exerciseDir = `./sessions/${sessionSlug}/${exerciseSlug}`;
+  const tempExerciseDir = `.create-temp/${sessionSlug}_${exerciseSlug}`;
 
   if (template.type === "dir") {
     try {
-      // copy the sessions/_template dir to the challenge dir
-      await fs.copy(template.dir, challengeDir, {
+      // copy the sessions/_template dir to the exercise dir
+      await fs.copy(template.dir, exerciseDir, {
         overwrite: false,
         errorOnExist: true,
         filter: (src) => {
@@ -117,20 +117,20 @@ try {
         },
       });
     } catch {
-      spinner.fail("Challenge already exists");
+      spinner.fail("Exercise already exists");
       process.exit(1);
     }
 
     // update the package.json
-    const pkg = await fs.readJson(`${challengeDir}/package.json`);
-    pkg.name = `${sessionSlug}_${challengeSlug}`;
-    pkg.description = input.challengeName;
-    await fs.writeJson(`${challengeDir}/package.json`, pkg, { spaces: 2 });
+    const pkg = await fs.readJson(`${exerciseDir}/package.json`);
+    pkg.name = `${sessionSlug}_${exerciseSlug}`;
+    pkg.description = input.exerciseName;
+    await fs.writeJson(`${exerciseDir}/package.json`, pkg, { spaces: 2 });
 
-    // find all files in the challenge dir
-    // replace all instances of "TITLE" with the challenge name
+    // find all files in the exercise dir
+    // replace all instances of "TITLE" with the exercise name
 
-    const files = await globby(`${challengeDir}/**/*`, {
+    const files = await globby(`${exerciseDir}/**/*`, {
       onlyFiles: true,
       expandDirectories: false,
     });
@@ -138,7 +138,7 @@ try {
     await Promise.all(
       files.map(async (file) => {
         const contents = await fs.readFile(file, "utf8");
-        const newContents = contents.replaceAll("TITLE", input.challengeName);
+        const newContents = contents.replaceAll("TITLE", input.exerciseName);
         await fs.writeFile(file, newContents, "utf8");
       })
     );
@@ -154,69 +154,69 @@ try {
     }
 
     try {
-      await execa("code", [path.resolve(challengeDir, "README.md")]);
+      await execa("code", [path.resolve(exerciseDir, "README.md")]);
     } catch {
       // ignore
     }
   } else if (template.type === "cmd") {
-    spinner.text = `Creating challenge via \`${
+    spinner.text = `Creating exercise via \`${
       template.cmd[0]
     } ${template.cmd[1].join(" ")}\`… (this may take a minute)`;
 
     try {
-      if (fs.existsSync(challengeDir)) {
-        throw new Error("Challenge already exists");
+      if (fs.existsSync(exerciseDir)) {
+        throw new Error("Exercise already exists");
       }
-      await fs.mkdir(tempChallengeDir, { recursive: true });
+      await fs.mkdir(tempExerciseDir, { recursive: true });
     } catch (e) {
-      spinner.fail("Challenge already exists");
+      spinner.fail("Exercise already exists");
       process.exit(1);
     }
 
     await execa(template.cmd[0], template.cmd[1], {
-      cwd: tempChallengeDir,
+      cwd: tempExerciseDir,
       stdout: undefined,
     });
 
-    await fs.move(path.resolve(tempChallengeDir), path.resolve(challengeDir), {
+    await fs.move(path.resolve(tempExerciseDir), path.resolve(exerciseDir), {
       overwrite: true,
     });
 
     // update the package.json
-    const pkg = await fs.readJson(`${challengeDir}/package.json`);
-    pkg.name = `${sessionSlug}_${challengeSlug}`;
-    pkg.description = input.challengeName;
+    const pkg = await fs.readJson(`${exerciseDir}/package.json`);
+    pkg.name = `${sessionSlug}_${exerciseSlug}`;
+    pkg.description = input.exerciseName;
     pkg.version = "0.0.0-unreleased";
     pkg.nf = { template: template.name };
-    await fs.writeJson(`${challengeDir}/package.json`, pkg, { spaces: 2 });
+    await fs.writeJson(`${exerciseDir}/package.json`, pkg, { spaces: 2 });
 
     // update the README.md
     const newReadme =
-      "# " + input.challengeName + "\n\nThis is the description.";
-    await fs.writeFile(`${challengeDir}/README.md`, newReadme, "utf8");
+      "# " + input.exerciseName + "\n\nThis is the description.";
+    await fs.writeFile(`${exerciseDir}/README.md`, newReadme, "utf8");
 
     // create sandbox config
     if (template.sandboxConfig) {
       await fs.writeJson(
-        `${challengeDir}/sandbox.config.json`,
+        `${exerciseDir}/sandbox.config.json`,
         template.sandboxConfig,
         { spaces: 2 }
       );
     }
 
     try {
-      await execa("code", [path.resolve(challengeDir, "README.md")]);
+      await execa("code", [path.resolve(exerciseDir, "README.md")]);
     } catch {
       // ignore
     }
   }
 
-  spinner.succeed("Challenge created at " + challengeDir);
+  spinner.succeed("Exercise created at " + exerciseDir);
 } catch (error) {
   if (fs.existsSync(".create-temp")) {
     fs.rmdirSync(".create-temp", { recursive: true, force: true });
   }
-  spinner.fail("Challenge creation failed");
+  spinner.fail("Exercise creation failed");
   console.error(error);
   process.exit(1);
 } finally {
