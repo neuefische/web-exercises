@@ -1,4 +1,4 @@
-# JS Unit Testing: Demo Start
+## JS Unit Testing: Demo Start
 
 Clone this demo to your computer:
 
@@ -6,4 +6,20 @@ Clone this demo to your computer:
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-unit-testing/demo-start -i
 ```
 
-> Note: replace the placeholder `<YOUR-NAME>` with your actual name
+## Development
+
+### CodeSandbox
+
+This project is JavaScript only so there is nothing to view in the "Browser" tab. Please select the "Tests" tab to check your progress.
+
+### Local development
+
+To run project commands locally, you need to install the dependencies using `npm i` first.
+
+You can then use the following commands:
+
+- `npm run test` to run the tests once
+- `npm run test:watch` to run the tests in watch mode
+- `npm run lint` to run the linter
+
+> 💡 Since this project is JavaScript only there is nothing to preview in the browser. Use `npm run test:watch` to check your progress.
