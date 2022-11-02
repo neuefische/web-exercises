@@ -7,9 +7,9 @@ single web document and updates the body content of that single document via Jav
 In the following codesandboxes, there is a dummy SPA of the Quiz App; additionally, there are two
 enhanced versions which make use of `forEach` in order to improve and reduce the necessary code.
 
-- [SPA_01: a working solution](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-array-methods/spa/spa_01?file=/README.md)
-- [SPA_02: simplified with `forEach`](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-array-methods/spa/spa_02?file=/README.md)
-- [SPA_03: `forEach` within `forEach`](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-array-methods/spa/spa_03?file=/README.md)
+- [SPA 1: a working solution](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-array-methods/spa-1?file=/README.md)
+- [SPA 2: simplified with `forEach`](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-array-methods/spa-2?file=/README.md)
+- [SPA 3: `forEach` within `forEach`](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-array-methods/spa-3?file=/README.md)
 
 **Task:**
 

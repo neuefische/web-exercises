@@ -4,8 +4,7 @@
 
 ## Notes
 
-- This is the final version of the demo
-- You find the starting point for this demo in `sessions/css-selectors/demo-start` 
+- You only have to touch the `index.html` file.
 
 ## Development
 

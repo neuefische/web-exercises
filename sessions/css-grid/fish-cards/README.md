@@ -1,11 +1,14 @@
-# demo-start_alternative
+# Fish Cards
 
-## Task
+In this challenge, you will encounter the following tasks:
 
-## Notes
+- creating a grid template
 
-- You only have to touch the [`css/styles.css`](./css/styles.css) file.
-- You find the end point for this demo in `sessions/css-selectors/demo-end_alternative`.
+Please switch to the ./css/styles.css file to start the challenge. You will find the exact tasks there.
+
+Expected Result:
+
+![result](./assets/grid-challenge_fish-cards.png)
 
 ## Development
 

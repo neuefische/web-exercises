@@ -1,9 +1,0 @@
-{
-  "name": "css-grid_fishes-cards",
-  "version": "0.0.0-unreleased",
-  "description": "CSS Layout with Grid - Exercise - Fishes",
-  "main": "index.html",
-  "nf": {
-    "template": "html-css-static"
-  }
-}
