@@ -26,7 +26,7 @@ Switch to the [index.html](./index.html) file and make something great happen!
 
 ## Notes
 
-- You only have to touch the `index.html` file.
+- You only have to touch the [`css/styles.css`](./css/styles.css) file.
 
 ## Development
 
