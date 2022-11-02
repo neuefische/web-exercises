@@ -4,7 +4,8 @@
 
 ## Notes
 
-- You only have to touch the `js/index.js` file.
+- This is the final version of the demo
+- You find the starting point for this demo in `sessions/js-structure/demo-start` 
 
 ## Development
 
