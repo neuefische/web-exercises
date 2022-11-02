@@ -118,7 +118,7 @@ An exercises from executing `create-react-app` to create a new React app.
 All exercises must at least contain:
 
 - A `README.md` file with title and a description how to solve the exercise
-- A `package.json` file with s `name` field that follows the naming convention (`session-name_exercise-name`)
+- A `package.json` file with the `name` field that follows the naming convention (`session-name_exercise-name`)
 
 ## Review new or changed exercises
 
