@@ -141,6 +141,11 @@ Open the the folder of the exercise on GitHub. Change the URL from `github.com` 
 + https://githubbox.com/neuefische/web-exercises/tree/main/sessions/js-array-methods/map
 ```
 
+The shareable link you need to copy looks like this:
+```
+https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-array-methods/map?file=/README.md
+```
+
 > 💡 While reviewing an exercise, you can share the link pointing to the respective branch. This way exercises can be reviewed on CodeSandbox before they are merged into the main branch.
 
 ### Locally
