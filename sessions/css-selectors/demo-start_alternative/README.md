@@ -4,7 +4,8 @@
 
 ## Notes
 
-- You only have to touch the `index.html` file.
+- You only have to touch the [`css/styles.css`](./css/styles.css) file.
+- You find the end point for this demo in `sessions/css-selectors/demo-end_alternative`.
 
 ## Development
 
