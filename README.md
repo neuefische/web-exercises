@@ -134,7 +134,7 @@ There a two ways to access the exercises:
 
 ### CodeSandbox
 
-Open the the folder of the exercise on GitHub. Change the URL from `github.com` to `githubbox.com`. This will open the exercise in CodeSandbox. Copy the URL you are redirected to and share it. You can also select a spefic file and share the URL to that file. We recommend sharing the URL to the `README.md` file.
+Open the the folder of the exercise on GitHub. Change the URL from `github.com` to `githubbox.com`. This will open the exercise in CodeSandbox. Select the README.md file and copy the URL directly to this file.
 
 ```diff
 - https://github.com/neuefische/web-exercises/tree/main/sessions/js-array-methods/map
