@@ -4,7 +4,8 @@
 
 ## Notes
 
-- You only have to touch the `index.html` file.
+- This is an example of a cute puppies website *without* responsive behaviour
+- You find this website *with* responsive behaviour in `session/css-reponsive/example-responsive`
 
 ## Development
 
