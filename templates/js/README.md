@@ -25,7 +25,7 @@ Please switch to the [index.js](index.js) file to start the exercises. You will 
 
 ## Notes
 
-- You only have to touch the `js/index.js` file.
+- You only have to touch the [`index.js`](./index.js) file.
 
 ## Development
 
