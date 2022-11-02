@@ -4,7 +4,7 @@
 
 ## Notes
 
-- You only have to touch the `index.html` file.
+- This is an example to demonstrate responsive behaviour with a cute puppies website
 
 ## Development
 
