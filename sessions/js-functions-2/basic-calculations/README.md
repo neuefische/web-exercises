@@ -2,9 +2,11 @@
 
 ## Task
 
+- Open the [`index.js`](./index.js) file and follow the instructions given there.
+
 ## Notes
 
-- You only have to touch the `js/index.js` file.
+- You only have to touch the [`index.js`](./index.js) file.
 
 ## Development
 
