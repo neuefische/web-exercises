@@ -13,7 +13,7 @@ Please consider
 - the `input` event as well as
 - how to read and write the value of a form field. There's definitely a difference between the value of the event's target and the (after-event) value of your input field.
 
-Switch to the [index.js](./js/index.js) and make things happen!
+Switch to the [`js/index.js`](./js/index.js) and make things happen!
 
 ## Development
 

@@ -10,11 +10,11 @@ The second runner should start after the first runner has reached them (in other
 
 The same goes for the third runner in relation to the second one.
 
-Switch to the [index.js](./js/index.js) file and update the code in the click handler!
+Switch to the [`js/index.js`](./js/index.js) file and update the code in the click handler!
 
 ## Notes
 
-- You only need to touch the `js/index.js` file.
+- You only need to touch the [`js/index.js`](./js/index.js) file.
 
 ## Development
 

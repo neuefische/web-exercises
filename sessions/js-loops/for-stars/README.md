@@ -2,7 +2,7 @@
 
 Loops are great whenever we want to do something several times. Let's make use of this feature and reach for the stars!
 
-Looking at the [index.js](./js/index.js), there are two images saved as variables `STAR_EMPTY` and `STAR_FILLED`. We are going to create a clickable five star rating!
+Looking at the [`js/index.js`](./js/index.js) , there are two images saved as variables `STAR_EMPTY` and `STAR_FILLED`. We are going to create a clickable five star rating!
 
 ## Task
 
@@ -41,7 +41,7 @@ Now we can write the `fillStars` function:
   - if yes, set the `src` property of `stars[i]` equal to "STAR_FILLED"
   - if no, the same property should equal "STAR_EMPTY"
 
-Please switch to the [index.js](./js/index.js) file and start rating!
+Please switch to the [`js/index.js`](./js/index.js) file and start rating!
 
 ## Development
 

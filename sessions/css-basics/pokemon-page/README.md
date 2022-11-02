@@ -2,7 +2,7 @@
 
 ## Task
 
-- Open the [`styles.css`](./css/styles.css) file and follow the instructions given there.
+- Open the [`css/styles.css`](./css/styles.css) file and follow the instructions given there.
 
 ## Notes
 

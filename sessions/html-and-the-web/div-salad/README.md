@@ -6,7 +6,7 @@
 
 ## Notes
 
-- You only have to touch the `index.html` file.
+- You only have to touch the [`index.html`](./index.html) file.
 
 ## Development
 

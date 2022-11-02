@@ -20,7 +20,7 @@ Build a personal website according to the ![wireframe](). Use the following hint
 - Hint 2
 - ...
 
-Switch to the [index.html](./index.html) file and make something great happen!
+Switch to the [`index.html`](./index.html) file and make something great happen!
 
 -->
 

@@ -6,7 +6,7 @@ We have a big database of news articles. Lets find in it the stuff that we are i
 
 ### Part 1: Filter
 
-Have a look at the [index.js](./js/index.js) file: There is a variable `filteredNews` declared with `news.filter()` and a return value `true`.
+Have a look at the [`js/index.js`](./js/index.js) file: There is a variable `filteredNews` declared with `news.filter()` and a return value `true`.
 
 You task is to change the filter method:
 
@@ -16,13 +16,13 @@ You task is to change the filter method:
 
 ### Part 2: Sort
 
-In the [index.js](./js/index.js) file, you will find another variable called `sortedNews` declared with the value of `filteredNews`.
+In the [`js/index.js`](./js/index.js) file, you will find another variable called `sortedNews` declared with the value of `filteredNews`.
 
 Use the sort method to sort all filtered cards by the length of their body text.
 
 ## Note
 
-You only have to change the [index.js](./js/index.js) file.
+You only have to change the [`js/index.js`](./js/index.js) file.
 
 ## Development
 

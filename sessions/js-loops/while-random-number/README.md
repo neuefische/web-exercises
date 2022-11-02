@@ -6,7 +6,7 @@ Let's create a couple of random numbers and stop if they grow too big!
 
 ## Task
 
-Looking at the [index.js](index.js), there are two variables:
+Looking at the [`index.js`](./index.js), there are two variables:
 
 - `number`: a random number, set in each iteration of the while loop
 - `count`: the number of iterations, increased by 1 everytime the while loop runs
@@ -20,7 +20,7 @@ Create a `while` loop that
 
 If you're done, test your loop by refreshing the browser several times and watching the console!
 
-Please switch to the [index.js](index.js) file and be random!
+Please switch to the [`index.js`](./index.js) file and be random!
 
 ## Development
 

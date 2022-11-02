@@ -14,7 +14,7 @@ The following hints might guide you:
 - Consider the `input` event for both input fields.
 - How do you set the text content for an HTML element again?
 
-Switch to the [index.js](./js/index.js) file and implement the task.
+Switch to the [`js/index.js`](./js/index.js) file and implement the task.
 
 ## Development
 

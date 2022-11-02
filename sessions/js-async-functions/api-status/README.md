@@ -4,7 +4,7 @@ This codesandbox offers a simple interface to check the status of an API. Just d
 
 ## Task
 
-Look at the [index.js](./js/index.js) file: There is a function called `checkIfAPIIsAvailable`; inside of this function, the `response` variable is declared with the result of `fetch(api)`.
+Look at the [`js/index.js`](./js/index.js) file: There is a function called `checkIfAPIIsAvailable`; inside of this function, the `response` variable is declared with the result of `fetch(api)`.
 
 The function is called everytime you click the button.
 
@@ -24,7 +24,7 @@ Can you display a '⏳' icon while waiting for the response?
 
 ## Notes
 
-- You only have to touch the [index.js](./js/index.js) file.
+- You only have to touch the [`js/index.js`](./js/index.js) file.
 
 ## Development
 

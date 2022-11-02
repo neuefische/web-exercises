@@ -6,7 +6,7 @@ Make sure to take a good look at the preview screens.
 
 ## Task
 
-- familiarize yourself with the `index.html` and `styles.css` files
+- familiarize yourself with the [`index.html`](./index.html) and [`css/styles.css`](./css/styles.css) files
 - find out how many breakpoints you need to implement
 - find out what needs to change to meet the visual guidelines established in the preview screens
 - ... enjoy!
@@ -15,7 +15,7 @@ Make sure to take a good look at the preview screens.
 
 #### Hint ✨
 
-_Several hints can be found in `styles.css` file._
+_Several hints can be found in [`css/styles.css`](./css/styles.css) file._
 
 ## Development
 

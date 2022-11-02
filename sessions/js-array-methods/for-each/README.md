@@ -4,7 +4,7 @@ The array method `forEach` is great for iterating through an array; let's use th
 
 ## Task 1
 
-In the [index.js](./js/index.js) file, there is an array `colors` containing some hex codes. Create colored boxes from the array of hex codes using the `forEach` array method.
+In the [`js/index.js`](./js/index.js) file, there is an array `colors` containing some hex codes. Create colored boxes from the array of hex codes using the `forEach` array method.
 
 The following hints may guide you:
 
@@ -20,11 +20,11 @@ Instead of writing the callback function directly inside the forEach method, we 
 - Copy your code from the arrow function into this new function.
 - Use the forEach method with renderColorBox to create the color boxes a second time!
 
-Switch to the [index.js](./js/index.js) file and make something great happen!
+Switch to the [`js/index.js`](./js/index.js) file and make something great happen!
 
 ## Notes
 
-- You only have to touch the [index.js](./js/index.js) file.
+- You only have to touch the [`js/index.js`](./js/index.js) file.
 
 ## Development
 

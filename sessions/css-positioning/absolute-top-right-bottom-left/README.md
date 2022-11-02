@@ -2,11 +2,11 @@
 
 ## Task
 
-- Open the [`styles.css`](./css/styles.css) file and follow the instructions given there.
+- Open the [`css/styles.css`](./css/styles.css) file and follow the instructions given there.
 
 ## Notes
 
-- You only have to touch the  [`styles.css`](./css/styles.css) file.
+- You only have to touch the [`css/styles.css`](./css/styles.css) file.
 
 ## Development
 

@@ -4,7 +4,7 @@ This CodeSandbox offers some exercises to recap some advanced array methods. Let
 
 ## Task
 
-In the [index.js](index.js) file, there is an `animalStrings` array with - guess what? - animal names as strings.
+In the [`index.js`](./index.js) file, there is an `animalStrings` array with - guess what? - animal names as strings.
 
 Below this array, you will find a couple of variables (e.g. `hippoExists`). They all are initialized with `null`.
 
@@ -25,7 +25,7 @@ Additionally, you will need:
 
 You will find some hints as comments.
 
-Switch to the [index.js](index.js) file and work with animals!
+Switch to the [`index.js`](./index.js) file and work with animals!
 
 ## Notes
 

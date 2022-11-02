@@ -30,7 +30,7 @@ In this challenge, you will encounter the following tasks:
 - user name string: "John Doe"
   (You should see the log from "showErrorMessage" in the console)
 
-Please switch to the [./js/index.js](js/index.js) file to start the challenge.
+Please switch to the [`js/index.js`](./js/index.js) file to start the challenge.
 
 ## Development
 

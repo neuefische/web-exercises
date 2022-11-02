@@ -11,7 +11,7 @@ Use the color values in the array `pixelValues` to create "pixel" elements and a
 - You can append all pixels directly to the canvas, no need for extra row grouping etc.
 - Hint: The colors are stored in Arrays inside another Array. How can you access these values with for loops?
 
-Switch to the [index.js](./js/index.js) file and make something great happen!
+Switch to the [`js/index.js`](./js/index.js) file and make something great happen!
 
 ## Development
 

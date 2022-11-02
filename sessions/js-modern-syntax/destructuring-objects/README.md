@@ -2,7 +2,7 @@
 
 In this Codesandbox, you will destructure objects.
 
-The exact task can be found in the respective exercises in the [index.js](./index.js) file.
+The exact task can be found in the respective exercises in the [`index.js`](./index.js) file.
 
 ## Hints
 
@@ -11,7 +11,7 @@ The exact task can be found in the respective exercises in the [index.js](./inde
 - Make sure to export the variable you have declared in order to make the tests work.
 - If you want to check whether you solved the tasks correctly, open the "Tests" tab of Codesandbox.
 
-Please switch to the [index.js](./index.js) file to start the exercises. You will find the exact tasks there.
+Please switch to the [`index.js`](./index.js) file to start the exercises. You will find the exact tasks there.
 
 ## Development
 
