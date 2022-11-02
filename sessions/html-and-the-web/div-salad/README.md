@@ -2,6 +2,8 @@
 
 ## Task
 
+- Open the [`index.html`](./index.html) file and follow the instructions given there.
+
 ## Notes
 
 - You only have to touch the `index.html` file.
