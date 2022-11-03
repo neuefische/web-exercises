@@ -9,7 +9,7 @@ Please switch to the [`css/styles.css`](./css/styles.css) file to start the chal
 
 Expected Result:
 
-![result](./assets/grid-challenge_place-items.png)
+![result](./assets/grid-challenge_place-elements.png)
 
 ## Development
 
