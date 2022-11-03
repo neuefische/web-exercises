@@ -1,139 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-		<title>Truthy and Falsy</title>
-		<link rel="stylesheet" href="./css/styles.css" />
-		<script src="./js/index.js" defer></script>
-	</head>
-	<body>
-		<header>
-			<h1>Truthy and Falsy</h1>
-		</header>
-		<main>
-			<h2>Challenge:</h2>
-			<ol>
-				<li>
-					Look at the following list of expressions and think about whether they are
-					truthy or falsy
-				</li>
-				<li>Check the radio buttons "truthy" or "falsy" for every expression</li>
-				<li>Open the index.js and check whether you are right using the console</li>
-			</ol>
-			<form>
-				<h2>Choose which expressions are truthy and which are falsy</h2>
-				<ul>
-					<li>
-						<fieldset>
-							<legend><code>2 == "2"</code></legend>
-							<input type="radio" name="question1" id="truthy-question1" />
-							<label for="truthy-question1">truthy</label>
-							<input type="radio" name="question1" id="falsy-question1" />
-							<label for="falsy-question1">falsy</label>
-						</fieldset>
-					</li>
-					<li>
-						<fieldset>
-							<legend><code>2 === "2"</code></legend>
-							<input type="radio" name="question2" id="truthy-question2" />
-							<label for="truthy-question2">truthy</label>
-							<input type="radio" name="question2" id="falsy-question2" />
-							<label for="falsy-question2">falsy</label>
-						</fieldset>
-					</li>
-					<li>
-						<fieldset>
-							<legend><code>2 === 2</code></legend>
-							<input type="radio" name="question3" id="truthy-question3" />
-							<label for="truthy-question3">truthy</label>
-							<input type="radio" name="question3" id="falsy-question3" />
-							<label for="falsy-question3">falsy</label>
-						</fieldset>
-					</li>
-					<li>
-						<fieldset>
-							<legend><code>"hello world"</code></legend>
-							<input type="radio" name="question4" id="truthy-question4" />
-							<label for="truthy-question4">truthy</label>
-							<input type="radio" name="question4" id="falsy-question4" />
-							<label for="falsy-question4">falsy</label>
-						</fieldset>
-					</li>
-					<li>
-						<fieldset>
-							<legend><code>""</code></legend>
-							<input type="radio" name="question5" id="truthy-question5" />
-							<label for="truthy-question5">truthy</label>
-							<input type="radio" name="question5" id="falsy-question5" />
-							<label for="falsy-question5">falsy</label>
-						</fieldset>
-					</li>
-					<li>
-						<fieldset>
-							<legend><code>true</code></legend>
-							<input type="radio" name="question6" id="truthy-question6" />
-							<label for="truthy-question6">truthy</label>
-							<input type="radio" name="question6" id="falsy-question6" />
-							<label for="falsy-question6">falsy</label>
-						</fieldset>
-					</li>
-					<li>
-						<fieldset>
-							<legend><code>0</code></legend>
-							<input type="radio" name="question7" id="truthy-question7" />
-							<label for="truthy-question7">truthy</label>
-							<input type="radio" name="question7" id="falsy-question7" />
-							<label for="falsy-question7">falsy</label>
-						</fieldset>
-					</li>
-					<li>
-						<fieldset>
-							<legend><code>-50</code></legend>
-							<input type="radio" name="question8" id="truthy-question8" />
-							<label for="truthy-question8">truthy</label>
-							<input type="radio" name="question8" id="falsy-question8" />
-							<label for="falsy-question8">falsy</label>
-						</fieldset>
-					</li>
-					<li>
-						<fieldset>
-							<legend><code>50</code></legend>
-							<input type="radio" name="question9" id="truthy-question9" />
-							<label for="truthy-question9">truthy</label>
-							<input type="radio" name="question9" id="falsy-question9" />
-							<label for="falsy-question9">falsy</label>
-						</fieldset>
-					</li>
-					<li>
-						<fieldset>
-							<legend><code>5 > 1</code></legend>
-							<input type="radio" name="question10" id="truthy-question10" />
-							<label for="truthy-question10">truthy</label>
-							<input type="radio" name="question10" id="falsy-question10" />
-							<label for="falsy-question10">falsy</label>
-						</fieldset>
-					</li>
-					<li>
-						<fieldset>
-							<legend><code>"1 > 10"</code></legend>
-							<input type="radio" name="question11" id="truthy-question11" />
-							<label for="truthy-question11">truthy</label>
-							<input type="radio" name="question11" id="falsy-question11" />
-							<label for="falsy-question11">falsy</label>
-						</fieldset>
-					</li>
-					<li>
-						<fieldset>
-							<legend><code>"false"</code></legend>
-							<input type="radio" name="question12" id="truthy-question12" />
-							<label for="truthy-question12">truthy</label>
-							<input type="radio" name="question12" id="falsy-question12" />
-							<label for="falsy-question12">falsy</label>
-						</fieldset>
-					</li>
-				</ul>
-			</form>
-		</main>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Truthy and Falsy</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Truthy and Falsy</h1>
+    </header>
+    <main>
+      <h2>Challenge:</h2>
+      <ol>
+        <li>
+          Look at the following list of expressions and think about whether they
+          are truthy or falsy
+        </li>
+        <li>
+          Check the radio buttons "truthy" or "falsy" for every expression
+        </li>
+        <li>
+          Open the index.js and check whether you are right using the console
+        </li>
+      </ol>
+      <form>
+        <h2>Choose which expressions are truthy and which are falsy</h2>
+        <ul>
+          <li>
+            <fieldset>
+              <legend><code>2 == "2"</code></legend>
+              <input type="radio" name="question1" id="truthy-question1" />
+              <label for="truthy-question1">truthy</label>
+              <input type="radio" name="question1" id="falsy-question1" />
+              <label for="falsy-question1">falsy</label>
+            </fieldset>
+          </li>
+          <li>
+            <fieldset>
+              <legend><code>2 === "2"</code></legend>
+              <input type="radio" name="question2" id="truthy-question2" />
+              <label for="truthy-question2">truthy</label>
+              <input type="radio" name="question2" id="falsy-question2" />
+              <label for="falsy-question2">falsy</label>
+            </fieldset>
+          </li>
+          <li>
+            <fieldset>
+              <legend><code>2 === 2</code></legend>
+              <input type="radio" name="question3" id="truthy-question3" />
+              <label for="truthy-question3">truthy</label>
+              <input type="radio" name="question3" id="falsy-question3" />
+              <label for="falsy-question3">falsy</label>
+            </fieldset>
+          </li>
+          <li>
+            <fieldset>
+              <legend><code>"hello world"</code></legend>
+              <input type="radio" name="question4" id="truthy-question4" />
+              <label for="truthy-question4">truthy</label>
+              <input type="radio" name="question4" id="falsy-question4" />
+              <label for="falsy-question4">falsy</label>
+            </fieldset>
+          </li>
+          <li>
+            <fieldset>
+              <legend><code>""</code></legend>
+              <input type="radio" name="question5" id="truthy-question5" />
+              <label for="truthy-question5">truthy</label>
+              <input type="radio" name="question5" id="falsy-question5" />
+              <label for="falsy-question5">falsy</label>
+            </fieldset>
+          </li>
+          <li>
+            <fieldset>
+              <legend><code>true</code></legend>
+              <input type="radio" name="question6" id="truthy-question6" />
+              <label for="truthy-question6">truthy</label>
+              <input type="radio" name="question6" id="falsy-question6" />
+              <label for="falsy-question6">falsy</label>
+            </fieldset>
+          </li>
+          <li>
+            <fieldset>
+              <legend><code>0</code></legend>
+              <input type="radio" name="question7" id="truthy-question7" />
+              <label for="truthy-question7">truthy</label>
+              <input type="radio" name="question7" id="falsy-question7" />
+              <label for="falsy-question7">falsy</label>
+            </fieldset>
+          </li>
+          <li>
+            <fieldset>
+              <legend><code>-50</code></legend>
+              <input type="radio" name="question8" id="truthy-question8" />
+              <label for="truthy-question8">truthy</label>
+              <input type="radio" name="question8" id="falsy-question8" />
+              <label for="falsy-question8">falsy</label>
+            </fieldset>
+          </li>
+          <li>
+            <fieldset>
+              <legend><code>50</code></legend>
+              <input type="radio" name="question9" id="truthy-question9" />
+              <label for="truthy-question9">truthy</label>
+              <input type="radio" name="question9" id="falsy-question9" />
+              <label for="falsy-question9">falsy</label>
+            </fieldset>
+          </li>
+          <li>
+            <fieldset>
+              <legend><code>5 > 1</code></legend>
+              <input type="radio" name="question10" id="truthy-question10" />
+              <label for="truthy-question10">truthy</label>
+              <input type="radio" name="question10" id="falsy-question10" />
+              <label for="falsy-question10">falsy</label>
+            </fieldset>
+          </li>
+          <li>
+            <fieldset>
+              <legend><code>"1 > 10"</code></legend>
+              <input type="radio" name="question11" id="truthy-question11" />
+              <label for="truthy-question11">truthy</label>
+              <input type="radio" name="question11" id="falsy-question11" />
+              <label for="falsy-question11">falsy</label>
+            </fieldset>
+          </li>
+          <li>
+            <fieldset>
+              <legend><code>"false"</code></legend>
+              <input type="radio" name="question12" id="truthy-question12" />
+              <label for="truthy-question12">truthy</label>
+              <input type="radio" name="question12" id="falsy-question12" />
+              <label for="falsy-question12">falsy</label>
+            </fieldset>
+          </li>
+        </ul>
+      </form>
+    </main>
+  </body>
 </html>

@@ -1,6 +1,9 @@
 {
-  "name": "css-layout-with-grid-payment-plan",
-  "version": "1.0.0",
+  "name": "css-grid_payment-cards",
+  "version": "0.0.0-unreleased",
   "description": "CSS Layout with Grid - Exercise - Payment Plan",
-  "main": "index.html"
+  "main": "index.html",
+  "nf": {
+    "template": "html-css-static"
+  }
 }

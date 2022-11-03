@@ -1,24 +1,24 @@
 :root {
-	--primary: #ffffff;
-	--secondary: #ff4a11;
-	--secondary-light: #fddcd2;
-	--water: #f3f5f9;
-	--black: #252629;
-	
-	--ff-primary: sans-serif;
-	--ff-serif: serif;
+  --primary: #ffffff;
+  --secondary: #ff4a11;
+  --secondary-light: #fddcd2;
+  --water: #f3f5f9;
+  --black: #252629;
+
+  --ff-primary: sans-serif;
+  --ff-serif: serif;
 }
 
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h1,
 h2,
 h3 {
-	line-height: 1.2;
+  line-height: 1.2;
 }
 
 body,
@@ -26,34 +26,34 @@ h1,
 h2,
 h3,
 p {
-	margin: 0;
+  margin: 0;
 }
 
 body {
-	line-height: 1.5;
-	font-family: var(--ff-primary);
-	color: var(--black);
+  line-height: 1.5;
+  font-family: var(--ff-primary);
+  color: var(--black);
 }
 
 button {
-	font-family: var(--ff-primary);
-	color: var(--black);
+  font-family: var(--ff-primary);
+  color: var(--black);
 }
 
 ul,
 ol {
-	list-style: none;
-	padding: 0;
-	margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 ul li,
 ol li {
-	list-style: none;
-	padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 img {
-	height: auto;
-	display: block;
+  height: auto;
+  display: block;
 }

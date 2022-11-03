@@ -5,9 +5,9 @@ console.clear();
 // Make sure to export your variable as in the example below to make the tests work.
 
 const company = {
-	name: 'neuefische',
-	course: 'Web Development',
-	location: 'Hamburg',
+  name: "neuefische",
+  course: "Web Development",
+  location: "Hamburg",
 };
 
 // example: export const {value1} = myObject;
@@ -19,16 +19,16 @@ const company = {
 //  2.2: 'years' property into the variable 'age'.
 //  2.3: 'isAdmin' property into the variable 'isAdmin' (false, if no such property exists)
 
-const user = {name: 'John', years: 30};
+const user = { name: "John", years: 30 };
 
 // EXERCISE 3
 // Extract the variables from the dog object and
 // rename them like "dogName", "dogBreed", and "dogAge", respectively.
 
 const dog = {
-	name: 'Pluto',
-	breed: 'husky',
-	age: 5,
+  name: "Pluto",
+  breed: "husky",
+  age: 5,
 };
 
 // EXERCISE 4
@@ -36,7 +36,7 @@ const dog = {
 // Store all other properties in an object called "moreInformation".
 
 const person = {
-	lastName: 'Main',
-	age: 24,
-	firstName: 'Alex',
+  lastName: "Main",
+  age: 24,
+  firstName: "Alex",
 };

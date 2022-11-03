@@ -1,11 +1,11 @@
 .card {
-	display: flex;
-	flex-direction: column;
-	border: 1px solid var(--granite);
-	padding: 1rem;
-	border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--granite);
+  padding: 1rem;
+  border-radius: 8px;
 }
 
 .card--deciphered {
-	background-color: var(--water);
+  background-color: var(--water);
 }

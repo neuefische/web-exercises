@@ -6,11 +6,11 @@
 }
 
 body {
-	background-color: var(--foam);
+  background-color: var(--foam);
 }
 
 main {
-	display: grid;
-	gap: 20px;
-	padding: 20px;
+  display: grid;
+  gap: 20px;
+  padding: 20px;
 }

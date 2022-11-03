@@ -9,4 +9,6 @@ let count = 0;
 
 // --^-- write/change code here --^--
 
-console.log(`The number that ended the loop was ${number} and it took ${count} rounds to do this!`);
+console.log(
+  `The number that ended the loop was ${number} and it took ${count} rounds to do this!`
+);

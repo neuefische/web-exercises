@@ -6,7 +6,7 @@ We can use loops for creating HTML elements. In this Codesandbox, the website ne
 
 ### Part 1: Creating a Select Input
 
-Looking at the [index.js](./js/index.js), there is a `languages` object with some key-value pairs. Additionally, a `select` element with the name "languages" is created and appended to the main element.
+Looking at the [`js/index.js`](./js/index.js) , there is a `languages` object with some key-value pairs. Additionally, a `select` element with the name "languages" is created and appended to the main element.
 
 Iterate through the `languages` object using `for...in` and add the `option` elements for this dropdown menu.
 
@@ -18,7 +18,7 @@ The following hints may guide you:
 
 ### Part 2: Creating a Navigation Bar
 
-Before we create a navigation bar, let's have a look what's already there in [index.js](./js/index.js):
+Before we create a navigation bar, let's have a look what's already there in [`js/index.js`](./js/index.js) :
 
 - There is a `nav` object with the keys "home", "about", and "contact".
 - Each value is an object containing an "href" and "text" key and a string value.
@@ -34,4 +34,21 @@ Use the following hints as guideline:
   - set the anchor tag's `href` and `textContent` properties to the relevant values of the `nav` object; you want to use bracket notation with your iterator variable
   - append your created items accordingly.
 
-Please switch to the [index.js](./js/index.js) file and be a navigator!
+Please switch to the [`js/index.js`](./js/index.js) file and be a navigator!
+
+## Development
+
+### CodeSandbox
+
+Select the "Browser" tab to view this project.
+
+### Local development
+
+To run project commands locally, you need to install the dependencies using `npm i` first.
+
+You can then use the following command:
+
+- `npm run lint` to run the linter
+
+Use the Live Preview Extension for Visual Studio Code to view this project in the browser.  
+Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.

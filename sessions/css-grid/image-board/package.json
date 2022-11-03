@@ -1,7 +1,9 @@
 {
-  "name": "image-board",
-  "version": "1.0.0",
+  "name": "css-grid_image-board",
+  "version": "0.0.0-unreleased",
   "description": "",
   "main": "index.html",
-  "keywords": []
+  "nf": {
+    "template": "html-css-static"
+  }
 }

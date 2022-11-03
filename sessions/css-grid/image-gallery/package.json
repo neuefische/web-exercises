@@ -1,6 +1,9 @@
 {
-  "name": "css-layout-with-grid-pictures",
-  "version": "1.0.0",
+  "name": "css-grid_image-gallery",
+  "version": "0.0.0-unreleased",
   "description": "CSS Layout with Grid - Exercise - Pictures",
-  "main": "index.html"
+  "main": "index.html",
+  "nf": {
+    "template": "html-css-static"
+  }
 }

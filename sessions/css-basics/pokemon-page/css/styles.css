@@ -10,10 +10,10 @@
 
 /* add selector */
  {
-	font-family: monospace;
-	font-size: 1rem;
-	line-height: 1.5;
-	background-color: LemonChiffon;
+  font-family: monospace;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: LemonChiffon;
 }
 
 /* ------- Headings Part 1 ------- */
@@ -31,7 +31,7 @@
 */
 
 .title {
-	/* your solution */
+  /* your solution */
 }
 
 /* ------- Sections ------- */
@@ -45,7 +45,7 @@
 */
 
 section {
-	/* your solution */
+  /* your solution */
 }
 
 /* ------- Headings Part 2 ------- */
@@ -59,7 +59,7 @@ section {
 */
 
 .subtitle {
-	/* your solution */
+  /* your solution */
 }
 
 /* ------- List ------- */
@@ -68,20 +68,20 @@ section {
 
 /* add selector */
  {
-	list-style: '🧡';
-	padding-left: /* add value */ ;
+  list-style: "🧡";
+  padding-left: /* add value */ ;
 }
 
 /* add selector */
  {
-	padding-left: /* add value */ ;
+  padding-left: /* add value */ ;
 }
 
 /* ------- The End -------- */
 
 .image-fluid {
-	width: 100%;
-	height: auto;
+  width: 100%;
+  height: auto;
 }
 
 /* Note: After finishing all tasks this class should also work. This means that the image should flexibly adjust its size to the width of the viewport. */

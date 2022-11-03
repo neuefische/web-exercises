@@ -1,0 +1,13 @@
+{
+  "name": "js-array-methods_spa-3",
+  "version": "0.0.0-unreleased",
+  "description": "Single Page Application Quiz App: forEach within forEach",
+  "main": "index.html",
+  "scripts": {
+    "lint": "npx eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "nf": {
+    "template": "html-css-js-static"
+  }
+}

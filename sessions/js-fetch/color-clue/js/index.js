@@ -1,3 +1,3 @@
-import './game.js';
+import "./game.js";
 
 console.clear();

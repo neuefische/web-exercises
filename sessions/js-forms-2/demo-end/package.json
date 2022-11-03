@@ -1,6 +1,13 @@
 {
-  "name": "js-forms-2-demo-end",
-  "version": "1.0.0",
+  "name": "js-forms-2_demo-end",
+  "version": "0.0.0-unreleased",
   "description": "Password Manager",
-  "main": "index.html"
+  "main": "index.html",
+  "scripts": {
+    "lint": "npx eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "nf": {
+    "template": "html-css-js-static"
+  }
 }

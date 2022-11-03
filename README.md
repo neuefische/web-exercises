@@ -1,121 +1,172 @@
 # web exercises
 
-Exercises for the neuefische web bootcamps.
-
-These exercises are tailored as templates for codesandbox
+A monorepo containing exercises, challenges, demos and starters for the neue fische web bootcamps.
+All of the exercises are designed to work locally as well as on CodeSandbox.
 
 <!-- toc -->
 
-- [web exercises](#web-exercises)
-  - [Generate Codesandbox from GitHub](#generate-codesandbox-from-github)
-  - [Adding new exercises](#adding-new-exercises)
-  - [Review new or changed exercises](#review-new-or-changed-exercises)
-  - [Update exercises](#update-exercises)
-  - [OPTIONAL: Local development](#optional-local-development)
-  - [OPTIONAL: Import project to Codesandbox](#optional-import-project-to-codesandbox)
+- [Structure of this Repository](#structure-of-this-repository)
+- [Branch Naming Convention](#branch-naming-convention)
+- [Create a new exercise](#create-a-new-exercise)
+- [Templates](#templates)
+  - [Empty](#empty)
+  - [HTML, CSS and JS with jest support](#html-css-and-js-with-jest-support)
+  - [HTML, CSS and JS static](#html-css-and-js-static)
+  - [HTML and CSS static](#html-and-css-static)
+  - [JS with jest support](#js-with-jest-support)
+  - [React minimal](#react-minimal)
+  - [Create React App](#create-react-app)
+- [Exercise requirements](#exercise-requirements)
+- [Review new or changed exercises](#review-new-or-changed-exercises)
+- [Access the exercises](#access-the-exercises)
+  - [CodeSandbox](#codesandbox)
+  - [Locally](#locally)
+- [Local development](#local-development)
 
 <!-- tocstop -->
 
----
+## Structure of this Repository
 
-## Generate Codesandbox from GitHub
+A _exercise_ is any form of exercise, challenge, demo or starter that is used in the web bootcamps.
 
-1. Open the folder in GitHub
-2. change the URL from `github.com` to `githubbox.com`
-   - Before: https://github.com/neuefische/web-exercises/tree/feature/array-map/sessions/js-array-methods/map
-   - After: https://githubbox.com/neuefische/web-exercises/tree/feature/array-map/sessions/js-array-methods/map
+A _session_ is a collection of exercises that are used in a specific bootcamp session.
 
-![codesanbox create](docs/resources/generate-codesandbox-from-github.png)
+The folder structure of this repository is as follows:
 
-![import project to codesandbox](docs/resources/generate-githubbox.png)
+```
+sessions/<session-name>/<exercise-name>
+```
 
-![GithHub project url](docs/resources/generated-githubbox-done.png)
+> ❗️ Avoid nesting exercises in folders below this level. It makes it harder to discover exercises and to update them using tooling.
 
----
+## Branch Naming Convention
 
-## Adding new exercises
+The branches in this repository follow the following naming convention:
 
-In order to satisfy our review process, please follow these steps:
+```
+<session-name>_<exercise-name>
+```
 
-1. Open a new branch following our [Branch guidelines](./docs/BRANCHES.md)
-2. Add a new project in the desired session folder:  
-   Example: `sessions/js-array-methods/map`
-   - Option 1: Copy one of the [templates](./templates)
-   - Option 2: Download an existing codesandbox (see screenshot below)
-3. Commit the changes following [Commit guidelines](./docs/COMMITS.md)
-4. Open a new pull request
-5. Wait until the pull request has at least 1 approval (enforced by branch protection)
-6. Add the codesandbox link to the session exercise which was generated with `githubbox` (→ change `github.com` to `githubbox.com` in your browser bar). Don't forget to correct the branchname from your feature branch to `main`.
+> 💡 You can do multiple exercises in one branch (e.g. `demo-start` and `demo-end`) if it makes sense. Just pick a unique branch like `<session-name>_demo`. Note that the `create` script will not be able to automatically detect the correct exercise name in that case.
 
-Example: https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/example/exercise-01
+## Create a new exercise
 
-![Export Codesandbox](docs/resources/codesandbox-export.png)
+To create a new exercise run the following command:
 
----
+```
+npm run create
+```
+
+> 💡 Make sure to run this command from the root of the repository and to run `npm i` before.
+
+This will ask you for the session name, exercise name and exercise type.
+
+> 💡 If you follow the branch naming convention (`session-name_exercise-name`), the create script will automatically detect the session and exercise name from the branch name.
+
+This repository contains templates for most types of exercises.
+
+## Templates
+
+The following exercise types are available via the `create` script:
+
+### Empty
+
+`templates/empty`
+
+An exercise that does not contain any code.
+
+### HTML, CSS and JS with jest support
+
+`templates/html-css-js`
+
+An exercise that contains HTML, CSS and JavaScript files with jest support. CodeSandbox bundles the code and runs the tests automatically. Locally you can run the tests with `npm test`.
+
+### HTML, CSS and JS static
+
+`templates/html-css-js-static`
+
+An exercise that contains HTML, CSS and JavaScript files but has no bundler and therefore does not support tests.
+
+### HTML and CSS static
+
+`templates/html-css-static`
+
+An exercise that contains HTML and CSS files.
+
+### JS with jest support
+
+`templates/js`
+
+An exercise that contains only JavaScript files with jest support. CodeSandbox bundles the code and runs the tests automatically. Locally you can run the tests with `npm test`.
+
+### React minimal
+
+`templates/react-minimal`
+
+An exercise that contains a minimal React app. It uses `react-scripts` but only contains the bare minimum files from Create React App.
+
+### Create React App
+
+`npx create-react-app`
+
+An exercises from executing `create-react-app` to create a new React app.
+
+> 💡 This is different from running `create-react-app` directly. It will update the `README.md` and `package.json` to match our conventions.
+
+## Exercise requirements
+
+All exercises must at least contain:
+
+- A `README.md` file with title and a description how to solve the exercise
+- A `package.json` file with the `name` field that follows the naming convention (`session-name_exercise-name`)
 
 ## Review new or changed exercises
 
-1. Switch to the branch on GitHub
-2. Use the folder from that branch
-3. Follow step 2 from [Generate Codesandbox from GitHub](#generate-codesandbox-from-github)
-4. Solve the exercise and save the sandbox
-5. Add your solution as a comment on the pull request
+All exercises must be reviewed before they are merged into the `main` branch. Create a pull request on GitHub and add the `needs review` label.
 
----
+Exercises must be reviewed by at least one neue fische web coach.
 
-## Update exercises
+> 💡 Exercises deliberately do not have to have passing tests to be merged. It is also fine to merge exercises with linting errors. Failing tests and linting errors can be part of the exercise itself.
 
-Once a pull request has been approved and squashed onto the main branch, solutions can be added to
-our [Sessions on Codesandbox](https://codesandbox.io/dashboard/all/sessions).
+## Access the exercises
 
-Since we generate the exercises from the GitHub folder, we don't have to update the example starters
+There a two ways to access the exercises:
 
-1. Delete old solutions
-2. Add new solutions in designated folder in codesandbox
-3. Add solutions with suffix `(solution 01)`
+### CodeSandbox
 
-> Each exercise should have one independent solution.
+Open the the folder of the exercise on GitHub. Change the URL from `github.com` to `githubbox.com`. This will open the exercise in CodeSandbox. Select the README.md file and copy the URL directly to this file.
 
-Example: https://codesandbox.io/dashboard/all/sessions/example
+```diff
+- https://github.com/neuefische/web-exercises/tree/main/sessions/js-array-methods/map
++ https://githubbox.com/neuefische/web-exercises/tree/main/sessions/js-array-methods/map
+```
 
-![Codesandbox exercise and solutions](docs/resources/codesandbox-exercise-and-solutions.png)
+The shareable link you need to copy looks like this:
 
----
+```
+https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-array-methods/map?file=/README.md
+```
 
-## OPTIONAL: Local development
+> 💡 While reviewing an exercise, you can share the link pointing to the respective branch. This way exercises can be reviewed on CodeSandbox before they are merged into the main branch.
 
-To develop on your local machine, please follow these steps:
+### Locally
 
-1. Run `npm i` in the root of this repository
-2. Start the development server:
+We are using [`ghcd`](https://github.com/djfarly/ghcd#readme) (GitHub Clone Directory) which is a tool that "clones" (or rather downloads) a subdirectory of a GitHub repository. You can share the command containing the URL to the exercise folder on GitHub.
 
-- Option 1: Run script in root: `npm run start --workspace=example-exercise-01`  
-  This will run the start script of the session workspace.
-- Option 2: Run script in workspace: `cd sessions/example/exercise-01 && npm run start`
-  This will go to the directory and then run the script there.
-- Option 3:Run the script from the package.json (see screenshot below)
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/map -i
+```
 
-![Run script in VSC](docs/resources/run_script_vsc.png)
+> 💡 While reviewing an exercise, you can share the command pointing to the respective branch. This way exercises can be reviewed locally before they are merged into the main branch.
 
----
+> ❗️ `ghcd` does not support branch names containing slashes.
 
-## OPTIONAL: Import project to Codesandbox
+You can append the `-i` flag to the command to let `ghcd` initialize a new git repository in the "cloned" folder. This is recommended for all exercises in from the curriculum after git has been introduced.
 
-> This guide uses the ["javascript"](templates/javascript) template from [the template folder](./templates)
+## Local development
 
-1. Open https://codesandbox.io/
-2. Create a new sandbox
-3. Choose the "Import Project" tab
-4. Enter the URL to the folder that hosts the exercise
-5. Click the "Import and Fork" button
-6. Congratulation: You created a Sandbox from a GitHub folder
+To run commands in a workspace of the monorepo (an exercise folder) on your local machine:
 
-![codesanbox create](docs/resources/codesandbox-create.png)
-
-![import project to codesandbox](docs/resources/import-project-to-codesandbox.png)
-
-![GithHub project url](docs/resources/github-project-url.png)
-
-![import exercise to codesandbox](docs/resources/import-exercise-to-codesandbox.png)
-
-![codesandbox from GitHub](docs/resources/codesandbox-from-github.png)
+1. make sure you have run `npm i` in the root of this repository
+2. `cd` into the folder (`cd sessions/session-name/exercise-name`)
+3. run the script of you choice (`npm run test`)

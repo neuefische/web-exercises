@@ -1,7 +1,13 @@
 {
-  "name": "dark-mode",
-  "version": "1.0.0",
+  "name": "js-basics_dark-mode",
+  "version": "0.0.0-unreleased",
   "description": "",
   "main": "index.html",
-  "keywords": []
+  "scripts": {
+    "lint": "npx eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "nf": {
+    "template": "html-css-js-static"
+  }
 }

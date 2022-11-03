@@ -11,24 +11,24 @@ The tech-stack-list needs to be polished!
 */
 
 .profile__header {
-	padding: 10px;
-	background: lightcyan;
+  padding: 10px;
+  background: lightcyan;
 }
 
 .profile__image {
-	border-radius: 50%;
-	max-width: 50%;
-	height: auto;
+  border-radius: 50%;
+  max-width: 50%;
+  height: auto;
 }
 
 .tech-stack__list {
-	list-style: none;
-	padding-left: 0;
+  list-style: none;
+  padding-left: 0;
 }
 
 .tech-stack__list-item {
-	padding: 10px;
-	background-color: black;
-	color: white;
-	border-radius: 10px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
 }
