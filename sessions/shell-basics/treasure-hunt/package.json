@@ -1,0 +1,8 @@
+{
+  "name": "shell-basics_treasure-hunt",
+  "version": "0.0.0-unreleased",
+  "description": "Treasure Hunt Challenge",
+  "nf": {
+    "template": "empty"
+  }
+}

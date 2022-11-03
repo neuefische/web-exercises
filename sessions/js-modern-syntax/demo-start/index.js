@@ -3,15 +3,14 @@ console.clear();
 /* -------- Destructuring Assignment - Objects --------- */
 
 const tree = {
-	name: 'oak',
-	age: 1200,
-	scientificName: 'quercus',
+  name: "oak",
+  age: 1200,
+  scientificName: "quercus",
 };
 
 /* -------- Destructuring Assignment - Arrays --------- */
 
-const animals = ['Lion', 'Tiger', 'Penguin', 'Bear', 'Whale'];
-
+const animals = ["Lion", "Tiger", "Penguin", "Bear", "Whale"];
 
 /* ---------------- Rest Syntax ----------------- */
 
@@ -24,8 +23,8 @@ const animals = ['Lion', 'Tiger', 'Penguin', 'Bear', 'Whale'];
 
 // Add another value
 
-const animalFood = ['Meat', 'Apple', 'Banana', 'Carrot'];
+const animalFood = ["Meat", "Apple", "Banana", "Carrot"];
 
-const newAnimalFood = 'Fish';
+const newAnimalFood = "Fish";
 
 // Spread for concatenating two arrays

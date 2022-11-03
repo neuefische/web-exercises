@@ -10,8 +10,25 @@ Can you make the error message hidden initially (before the form is submitted)?
 
 ## Bonus: Success message!
 
-Add this HTML code to the `index.html` below the form. Write JavaScript code to only show the div if the submission was valid (`tos` checkbox was checked). Like the error message, it should also be hidden initially.
+Add this HTML code to the [`index.html`](./index.html) below the form. Write JavaScript code to only show the div if the submission was valid (`tos` checkbox was checked). Like the error message, it should also be hidden initially.
 
 ```html
 <div data-js="success" class="success">Complaint successfully submitted!</div>
 ```
+
+## Development
+
+### CodeSandbox
+
+Select the "Browser" tab to view this project.
+
+### Local development
+
+To run project commands locally, you need to install the dependencies using `npm i` first.
+
+You can then use the following command:
+
+- `npm run lint` to run the linter
+
+Use the Live Preview Extension for Visual Studio Code to view this project in the browser.  
+Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.

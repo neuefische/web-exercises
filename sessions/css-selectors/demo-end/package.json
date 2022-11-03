@@ -1,7 +1,9 @@
 {
-  "name": "css-selectors-demo-end",
-  "version": "1.0.0",
+  "name": "css-selectors_demo-end",
+  "version": "0.0.0-unreleased",
   "description": "",
   "main": "index.html",
-  "keywords": []
+  "nf": {
+    "template": "html-css-static"
+  }
 }

@@ -1,5 +1,5 @@
-import './Box.css';
+import "./Box.css";
 
 export default function Box() {
-	return <div></div>;
+  return <div></div>;
 }

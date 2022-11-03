@@ -1,61 +1,61 @@
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
-		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-	background-color: lightgray;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: lightgray;
 }
 
 main {
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-	margin: auto;
-	padding: 20px;
-	width: 90%;
-	min-height: 100vh;
-	background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: auto;
+  padding: 20px;
+  width: 90%;
+  min-height: 100vh;
+  background-color: white;
 }
 
 h1 {
-	padding: 5px;
-	color: orangered;
+  padding: 5px;
+  color: orangered;
 }
 
 form {
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 fieldset {
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-	padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
 }
 
 legend {
-	color: orangered;
+  color: orangered;
 }
 
 button {
-	margin: auto;
-	width: fit-content;
+  margin: auto;
+  width: fit-content;
 }
 
-input[type='submit'] {
-	margin: auto;
-	width: fit-content;
+input[type="submit"] {
+  margin: auto;
+  width: fit-content;
 }
 
 textarea {
-	width: 100%;
-	height: 5em;
+  width: 100%;
+  height: 5em;
 }

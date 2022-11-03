@@ -4,7 +4,7 @@ Fetching data is awesome, yet it can be frightening at the beginning. But don't 
 
 ## Task
 
-Have a look at the [index.js](js/index.js) file: There is an `EXAMPLE_DATA` object with information about Luke Skywalker. We use this object to create a DOM element with the `Card()` function and append this element to the DOM with the help of `renderElement`.
+Have a look at the [`js/index.js`](./js/index.js) file: There is an `EXAMPLE_DATA` object with information about Luke Skywalker. We use this object to create a DOM element with the `Card()` function and append this element to the DOM with the help of `renderElement`.
 
 This approach is very static and not very handy. Lets get more data and create new cards from them dynamically!
 
@@ -24,4 +24,21 @@ The following hints may guide you:
 - What was the array method again to perform an action **for each** element?
 - You can use the functions `Card()` and `renderElement()` to create those cards, see the explanation above!
 
-Please switch to the [index.js](js/index.js) file to start counting!
+Please switch to the [`js/index.js`](./js/index.js) file to start counting!
+
+## Development
+
+### CodeSandbox
+
+Select the "Browser" tab to view this project.
+
+### Local development
+
+To run project commands locally, you need to install the dependencies using `npm i` first.
+
+You can then use the following command:
+
+- `npm run lint` to run the linter
+
+Use the Live Preview Extension for Visual Studio Code to view this project in the browser.  
+Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.

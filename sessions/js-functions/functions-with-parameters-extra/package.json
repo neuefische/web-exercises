@@ -1,6 +1,13 @@
 {
-  "name": "javascript-function-with-parameters-extra-exercise",
-  "version": "1.0.0",
+  "name": "js-functions_functions-with-parameters-extra",
+  "version": "0.0.0-unreleased",
   "description": "JavaScript extra exercises for functions with parameters",
-  "main": "index.html"
+  "main": "index.html",
+  "scripts": {
+    "lint": "npx eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "nf": {
+    "template": "html-css-js-static"
+  }
 }

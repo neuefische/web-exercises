@@ -1,5 +1,5 @@
 .result {
-	display: grid;
-	gap: 1rem;
-	place-items: center;
+  display: grid;
+  gap: 1rem;
+  place-items: center;
 }

@@ -2,7 +2,7 @@
 
 Loops are great whenever we want to do something several times. Let's make use of this feature and reach for the stars!
 
-Looking at the [index.js](./js/index.js), there are two images saved as variables `STAR_EMPTY` and `STAR_FILLED`. We are going to create a clickable five star rating!
+Looking at the [`js/index.js`](./js/index.js) , there are two images saved as variables `STAR_EMPTY` and `STAR_FILLED`. We are going to create a clickable five star rating!
 
 ## Task
 
@@ -41,4 +41,21 @@ Now we can write the `fillStars` function:
   - if yes, set the `src` property of `stars[i]` equal to "STAR_FILLED"
   - if no, the same property should equal "STAR_EMPTY"
 
-Please switch to the [index.js](./js/index.js) file and start rating!
+Please switch to the [`js/index.js`](./js/index.js) file and start rating!
+
+## Development
+
+### CodeSandbox
+
+Select the "Browser" tab to view this project.
+
+### Local development
+
+To run project commands locally, you need to install the dependencies using `npm i` first.
+
+You can then use the following command:
+
+- `npm run lint` to run the linter
+
+Use the Live Preview Extension for Visual Studio Code to view this project in the browser.  
+Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.

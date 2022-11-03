@@ -1,6 +1,9 @@
 {
-  "name": "button-styles",
-  "version": "1.0.0",
+  "name": "css-basics_button-styles",
+  "version": "0.0.0-unreleased",
   "description": "Static HTML template with CSS",
-  "main": "index.html"
+  "main": "index.html",
+  "nf": {
+    "template": "html-css-static"
+  }
 }

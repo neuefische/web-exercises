@@ -1,5 +1,4 @@
 {
-  "infiniteLoopProtection": true,
-  "hardReloadOnChange": true,
+  "template": "parcel",
   "view": "tests"
 }
