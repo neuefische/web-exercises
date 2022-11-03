@@ -16,9 +16,9 @@ All of the exercises are designed to work locally as well as on CodeSandbox.
   - [JS with jest support](#js-with-jest-support)
   - [React minimal](#react-minimal)
   - [Create React App](#create-react-app)
-- [Challenge requirements](#challenge-requirements)
+- [Exercise requirements](#exercise-requirements)
 - [Review new or changed exercises](#review-new-or-changed-exercises)
-- [Accessing the exercises](#accessing-the-exercises)
+- [Access the exercises](#access-the-exercises)
   - [CodeSandbox](#codesandbox)
   - [Locally](#locally)
 - [Local development](#local-development)
@@ -113,7 +113,7 @@ An exercises from executing `create-react-app` to create a new React app.
 
 > 💡 This is different from running `create-react-app` directly. It will update the `README.md` and `package.json` to match our conventions.
 
-## Challenge requirements
+## Exercise requirements
 
 All exercises must at least contain:
 
@@ -124,9 +124,9 @@ All exercises must at least contain:
 
 All exercises must be reviewed before they are merged into the `main` branch. Create a pull request on GitHub and add the `needs review` label.
 
-Challenges must be reviewed by at least one neue fische web coach.
+Exercises must be reviewed by at least one neue fische web coach.
 
-> 💡 Challenges deliberately do not have to have passing tests to be merged. It is also fine to merge exercises with linting errors. Failing tests and linting errors can be part of the exercise itself.
+> 💡 Exercises deliberately do not have to have passing tests to be merged. It is also fine to merge exercises with linting errors. Failing tests and linting errors can be part of the exercise itself.
 
 ## Access the exercises
 
@@ -142,6 +142,7 @@ Open the the folder of the exercise on GitHub. Change the URL from `github.com` 
 ```
 
 The shareable link you need to copy looks like this:
+
 ```
 https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-array-methods/map?file=/README.md
 ```
