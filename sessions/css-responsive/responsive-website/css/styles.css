@@ -5,44 +5,45 @@ of how they work and how they can be useful. You don't need to adjust these
 to complete the challenge. Feel free to take a look, then scroll down to
 the start of the introduction. */
 
-@import 'fonts.css';
+@import "fonts.css";
 
 :root {
-	/* Color Variables */
+  /* Color Variables */
 
-	--inky-black: #0d070a;
-	--forest-green: #48594d;
-	--navy-blue: #253b40;
-	--dark-beige: #a69665;
-	--rust-orange: #bf754b;
-	--eggshell-white: #f0e2c4;
+  --inky-black: #0d070a;
+  --forest-green: #48594d;
+  --navy-blue: #253b40;
+  --dark-beige: #a69665;
+  --rust-orange: #bf754b;
+  --eggshell-white: #f0e2c4;
 
-	/* Unit Variables*/
+  /* Unit Variables*/
 
-	--gap: 20px;
+  --gap: 20px;
 
-	--header-brand: 4rem;
-	--header-brand-line-height: 7rem;
+  --header-brand: 4rem;
+  --header-brand-line-height: 7rem;
 
-	--header-text: 1.5rem;
-	--header-text-line-height: 2rem;
+  --header-text: 1.5rem;
+  --header-text-line-height: 2rem;
 
-	--regular-text: 1rem;
-	--regular-line-height: 1.5rem;
+  --regular-text: 1rem;
+  --regular-line-height: 1.5rem;
 
-	/* Calculations */
+  /* Calculations */
 
-	/* Calculating the header height */
-	--header-height: calc(
-		var(--header-brand-line-height) + var(--header-text-line-height) + (3 * var(--gap))
-	);
+  /* Calculating the header height */
+  --header-height: calc(
+    var(--header-brand-line-height) + var(--header-text-line-height) +
+      (3 * var(--gap))
+  );
 
-	/* Calculating the nav height */
-	--nav-height: calc(var(--regular-line-height) + (2 * var(--gap)));
+  /* Calculating the nav height */
+  --nav-height: calc(var(--regular-line-height) + (2 * var(--gap)));
 
-	/* Calculating the exact margin required to put the main content
+  /* Calculating the exact margin required to put the main content
     right under the header and nav*/
-	--main-content-margin-top: calc(var(--header-height) + var(--nav-height));
+  --main-content-margin-top: calc(var(--header-height) + var(--nav-height));
 }
 
 /* ==[ INTRODUCTION ]== */
@@ -69,64 +70,64 @@ if you're unsure. */
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
-		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-	background-color: var(--forest-green);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: var(--forest-green);
 }
 
 /* Header & Navigation */
 
 .main-header {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	background-color: var(--navy-blue);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--navy-blue);
 }
 
 .header-brand {
-	padding: var(--gap);
-	color: var(--dark-beige);
-	font-family: 'Pacifico';
-	font-size: var(--header-brand);
-	line-height: var(--header-brand-line-height);
-	text-shadow: 4px 4px var(--forest-green);
+  padding: var(--gap);
+  color: var(--dark-beige);
+  font-family: "Pacifico";
+  font-size: var(--header-brand);
+  line-height: var(--header-brand-line-height);
+  text-shadow: 4px 4px var(--forest-green);
 }
 
 .header-text {
-	padding: 0 0 var(--gap) var(--gap);
-	color: var(--dark-beige);
-	font-size: var(--header-text);
-	line-height: var(--header-text-line-height);
+  padding: 0 0 var(--gap) var(--gap);
+  color: var(--dark-beige);
+  font-size: var(--header-text);
+  line-height: var(--header-text-line-height);
 }
 
 .navbar {
-	display: flex;
-	justify-content: space-around;
-	position: fixed;
-	top: var(--header-height);
-	width: 100%;
-	background-color: var(--dark-beige);
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  top: var(--header-height);
+  width: 100%;
+  background-color: var(--dark-beige);
 }
 
 .navbar-link {
-	padding: var(--gap);
-	color: var(--navy-blue);
-	width: 100%;
-	text-decoration: none;
-	text-align: center;
-	font-size: var(--regular-text);
-	line-height: var(--regular-line-height);
+  padding: var(--gap);
+  color: var(--navy-blue);
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  font-size: var(--regular-text);
+  line-height: var(--regular-line-height);
 }
 
 .navbar-link:hover {
-	color: var(--inky-black);
-	background-color: var(--eggshell-white);
+  color: var(--inky-black);
+  background-color: var(--eggshell-white);
 }
 
 /* Page Content */
@@ -134,106 +135,106 @@ body {
 fairly essential to completing this challenge. */
 
 .main-content {
-	margin-top: var(--main-content-margin-top);
-	padding: var(--gap) 0 var(--gap) 0;
-	background: var(--navy-blue);
+  margin-top: var(--main-content-margin-top);
+  padding: var(--gap) 0 var(--gap) 0;
+  background: var(--navy-blue);
 }
 
 .intro-text {
-	color: var(--dark-beige);
-	font-size: var(--regular-text);
-	line-height: var(--regular-text-line-height);
-	width: 70%;
+  color: var(--dark-beige);
+  font-size: var(--regular-text);
+  line-height: var(--regular-text-line-height);
+  width: 70%;
 }
 
 .card-section {
-	width: 100%;
-	display: flex;
-	align-items: center;
-	gap: var(--gap);
-	flex-direction: column;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+  flex-direction: column;
 }
 
 /* Product Card + Backgrounds */
 
 .product-card {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 70%;
-	height: 250px;
-	font-size: 1.5rem;
-	box-shadow: 0px 0px 10px 0px var(--inky-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 250px;
+  font-size: 1.5rem;
+  box-shadow: 0px 0px 10px 0px var(--inky-black);
 }
 
 .--forest {
-	background-image: url('../img/forest.jpg');
-	background-size: cover;
+  background-image: url("../img/forest.jpg");
+  background-size: cover;
 }
 
 .--mountain {
-	background-image: url('../img/mountain.jpg');
-	background-size: cover;
+  background-image: url("../img/mountain.jpg");
+  background-size: cover;
 }
 
 .--river {
-	background-image: url('../img/river.jpg');
-	background-size: cover;
+  background-image: url("../img/river.jpg");
+  background-size: cover;
 }
 
 .--ocean {
-	background-image: url('../img/ocean.jpg');
-	background-size: cover;
+  background-image: url("../img/ocean.jpg");
+  background-size: cover;
 }
 
 .--desert {
-	background-image: url('../img/desert.jpg');
-	background-size: cover;
+  background-image: url("../img/desert.jpg");
+  background-size: cover;
 }
 
 .card-title {
-	padding: calc(var(--gap) / 4);
-	text-decoration: none;
-	color: var(--eggshell-white);
-	background-color: var(--inky-black);
+  padding: calc(var(--gap) / 4);
+  text-decoration: none;
+  color: var(--eggshell-white);
+  background-color: var(--inky-black);
 }
 
 .card-title:hover {
-	color: var(--inky-black);
-	background-color: var(--eggshell-white);
+  color: var(--inky-black);
+  background-color: var(--eggshell-white);
 }
 
 /* Footer */
 
 .main-footer {
-	display: flex;
-	gap: var(--gap);
-	background: var(--inky-black);
-	padding: var(--gap);
+  display: flex;
+  gap: var(--gap);
+  background: var(--inky-black);
+  padding: var(--gap);
 }
 
 .footer-nav {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-link {
-	text-decoration: none;
-	color: var(--dark-beige);
+  text-decoration: none;
+  color: var(--dark-beige);
 }
 
 .footer-nav p:first-child {
-	color: var(--eggshell-white);
+  color: var(--eggshell-white);
 }
 
 .contact-details {
-	display: flex;
-	flex-direction: column;
-	color: var(--dark-beige);
+  display: flex;
+  flex-direction: column;
+  color: var(--dark-beige);
 }
 
 .contact-details p:first-child {
-	color: var(--eggshell-white);
+  color: var(--eggshell-white);
 }
 
 /* ==[ MEDIA QUERIES & BREAKPOINTS ]== */

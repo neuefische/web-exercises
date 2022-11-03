@@ -22,11 +22,11 @@ Change the contents of this page depending on the current day and time.
 const display = document.querySelector('[data-js="display"]');
 
 function getGreeting() {
-	// Code here
+  // Code here
 }
 
 function getDayColor() {
-	// Code here
+  // Code here
 }
 
 display.textContent = getGreeting();

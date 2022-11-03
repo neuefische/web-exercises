@@ -9,34 +9,34 @@ Hint: you need only two lines of code in your grid container
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
-		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-	background-color: #252629;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: #252629;
 }
 
 .services {
-	max-width: 900px;
-	padding: 2rem;
-	margin: auto;
+  max-width: 900px;
+  padding: 2rem;
+  margin: auto;
 
-	/* Add styles to the container */
+  /* Add styles to the container */
 }
 
 .services__item {
-	padding: 1.4rem;
+  padding: 1.4rem;
 }
 
 .services__headline {
-	margin: 0 0 1rem 0;
-	color: #fa4b12;
+  margin: 0 0 1rem 0;
+  color: #fa4b12;
 }
 
 .services__text {
-	color: white;
+  color: white;
 }

@@ -7,10 +7,10 @@ console.clear();
 // c) Make sure to export your variable as in the example below to make the tests work.
 
 const person = {
-	name: 'Jane Doe',
-	age: 32,
-	email: 'jane@doe.com',
-	phone: '12345',
+  name: "Jane Doe",
+  age: 32,
+  email: "jane@doe.com",
+  phone: "12345",
 };
 
 // example: export const {value 1} = myObject;
@@ -19,7 +19,7 @@ const person = {
 // Use array destructuring to extract the variables "first" and "second";
 // all other items should go into a variable called "restOfList".
 
-const list = ['one', 'two', 'three', 'four', 'five'];
+const list = ["one", "two", "three", "four", "five"];
 
 // EXERCISE 3
 // a) The `add` function does not work because it needs an array as argument.
@@ -28,7 +28,7 @@ const list = ['one', 'two', 'three', 'four', 'five'];
 // d) Note that the optional chaining `?.` is used to prevent an error to happen.
 
 function add(allNumbers) {
-	return allNumbers.reduce?.((a, b) => a + b);
+  return allNumbers.reduce?.((a, b) => a + b);
 }
 
 export const sum = add(3, 2, 3, 2, 1, 2, 3, 4);
@@ -47,5 +47,5 @@ export const result = add(numbers);
 // b) Use the spread syntax to achieve this.
 // c) Remember to export `allFruits`.
 
-const fruits = ['apple', 'banana', 'orange', 'papaya'];
-const anotherFruit = 'cherry';
+const fruits = ["apple", "banana", "orange", "papaya"];
+const anotherFruit = "cherry";

@@ -1,6 +1,13 @@
 {
-  "name": "javascript-basic-functions-exercise",
-  "version": "1.0.0",
+  "name": "js-functions_basic-functions",
+  "version": "0.0.0-unreleased",
   "description": "JavaScript exercises for basic functions",
-  "main": "index.html"
+  "main": "index.html",
+  "scripts": {
+    "lint": "npx eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "nf": {
+    "template": "html-css-js-static"
+  }
 }

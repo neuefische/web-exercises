@@ -1,9 +1,0 @@
-{
-  "name": "@example/exercise-01",
-  "version": "1.0.0",
-  "description": "React template",
-  "main": "src/index.js",
-  "scripts": {
-    "start": "node index.js"
-  }
-}

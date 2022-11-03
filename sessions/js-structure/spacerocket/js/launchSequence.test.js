@@ -1,56 +1,56 @@
-import {getNewRocket, getRocket} from './core/rocket.js';
-import {FISHSAT, NFSAT} from './payload/satellites.js';
-import * as launchSequence from './launchSequence.js';
+import { getNewRocket, getRocket } from "./core/rocket.js";
+import { FISHSAT, NFSAT } from "./payload/satellites.js";
+import * as launchSequence from "./launchSequence.js";
 
 const launchSequenceFunction = launchSequence?.default;
 
 beforeEach(() => {
-	global.rocket = getNewRocket();
+  global.rocket = getNewRocket();
 });
 
 afterEach(() => {
-	delete global.rocket;
+  delete global.rocket;
 });
 
-test('The default export of launchSequence.js is a function', () => {
-	expect(typeof launchSequenceFunction).toBe('function');
+test("The default export of launchSequence.js is a function", () => {
+  expect(typeof launchSequenceFunction).toBe("function");
 });
 
-test('launchSequence function does not throw', () => {
-	expect(() => launchSequenceFunction()).not.toThrow();
+test("launchSequence function does not throw", () => {
+  expect(() => launchSequenceFunction()).not.toThrow();
 });
 
-test('rocket is fueled', () => {
-	launchSequenceFunction();
-	expect(getRocket().fuel).toBe(true);
+test("rocket is fueled", () => {
+  launchSequenceFunction();
+  expect(getRocket().fuel).toBe(true);
 });
 
-test('countdown is correct', () => {
-	launchSequenceFunction();
-	expect(getRocket().countdown).toBe(5);
+test("countdown is correct", () => {
+  launchSequenceFunction();
+  expect(getRocket().countdown).toBe(5);
 });
 
-test('rocket did lift off', () => {
-	launchSequenceFunction();
-	expect(getRocket().liftoff).toBe(true);
+test("rocket did lift off", () => {
+  launchSequenceFunction();
+  expect(getRocket().liftoff).toBe(true);
 });
 
-test('rocket contains NFSAT payload', () => {
-	launchSequenceFunction();
-	expect(getRocket().payload).toContain(NFSAT);
+test("rocket contains NFSAT payload", () => {
+  launchSequenceFunction();
+  expect(getRocket().payload).toContain(NFSAT);
 });
 
-test('rocket contains FISHSAT payload', () => {
-	launchSequenceFunction();
-	expect(getRocket().payload).toContain(FISHSAT);
+test("rocket contains FISHSAT payload", () => {
+  launchSequenceFunction();
+  expect(getRocket().payload).toContain(FISHSAT);
 });
 
-test('rocket has 2 payload items', () => {
-	launchSequenceFunction();
-	expect(getRocket().payload.length).toBe(2);
+test("rocket has 2 payload items", () => {
+  launchSequenceFunction();
+  expect(getRocket().payload.length).toBe(2);
 });
 
-test('rocket payload was deployed', () => {
-	launchSequenceFunction();
-	expect(getRocket().payloadDeployed).toBe(true);
+test("rocket payload was deployed", () => {
+  launchSequenceFunction();
+  expect(getRocket().payloadDeployed).toBe(true);
 });

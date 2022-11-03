@@ -1,72 +1,72 @@
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
-		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-	display: grid;
-	place-items: center;
-	align-content: center;
-	gap: 2rem;
-	min-height: 100vh;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 2rem;
+  min-height: 100vh;
 }
 
 button {
-	padding: 0.5rem 1rem;
-	font-size: 1rem;
-	border: 0;
-	border-radius: 0.25rem;
-	background: #007bff;
-	color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 0;
+  border-radius: 0.25rem;
+  background: #007bff;
+  color: #fff;
 }
 
 button:hover {
-	background: #0069d9;
+  background: #0069d9;
 }
 
 button:active {
-	background: #0062cc;
+  background: #0062cc;
 }
 
 button:disabled {
-	background: #6c757d;
+  background: #6c757d;
 }
 
 .field {
-	width: 600px;
-	position: relative;
-	aspect-ratio: 2/1;
-	background-color: #b2e068;
-	background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2362c23f' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-	isolation: isolate;
+  width: 600px;
+  position: relative;
+  aspect-ratio: 2/1;
+  background-color: #b2e068;
+  background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2362c23f' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  isolation: isolate;
 }
 
 .field::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	background-color: rgba(0, 0, 0, 0.8);
-	z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -1;
 }
 
 .ball {
-	width: 50px;
-	height: 50px;
-	font-size: 50px;
-	display: grid;
-	place-items: center;
-	line-height: 1;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	opacity: 0;
-	transform-origin: 50% 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  display: grid;
+  place-items: center;
+  line-height: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transform-origin: 50% 50%;
 }

@@ -18,4 +18,3 @@ const divideButton = document.querySelector('[data-js="divide-button"]');
 const randomButton = document.querySelector('[data-js="random-button"]');
 const firstInput = document.querySelector('[data-js="input1"]');
 const secondInput = document.querySelector('[data-js="input2"]');
-

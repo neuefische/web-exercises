@@ -2,16 +2,16 @@ console.clear();
 
 const form = document.querySelector('[data-js="form"]');
 
-form.addEventListener('submit', event => {
-	event.preventDefault();
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
 
-	const formElements = event.target.elements;
+  const formElements = event.target.elements;
 
-	console.log(formElements.firstName);
-	console.log(formElements.firstName.value);
+  console.log(formElements.firstName);
+  console.log(formElements.firstName.value);
 
-	// With .elements
-	/*
+  // With .elements
+  /*
 	const data = {
 		firstName: formElements.firstName.value,
 		lastName: formElements.lastName.value,
@@ -23,13 +23,13 @@ form.addEventListener('submit', event => {
 	};
 	*/
 
-	// With FormData
-	const formData = new FormData(event.target);
-	const data = Object.fromEntries(formData);
+  // With FormData
+  const formData = new FormData(event.target);
+  const data = Object.fromEntries(formData);
 
-	console.log(data);
+  console.log(data);
 
-	event.target.reset();
+  event.target.reset();
 
-	formElements.firstName.focus();
+  formElements.firstName.focus();
 });
