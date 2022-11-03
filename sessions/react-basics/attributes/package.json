@@ -1,17 +1,20 @@
 {
-  "name": "react-basics-attributes-challenge",
-  "version": "1.0.0",
+  "name": "react-basics_attributes",
+  "version": "0.0.0-unreleased",
   "description": "React Basics: Attributes Challenge",
   "main": "src/index.js",
   "dependencies": {
-    "react": "18.1.0",
-    "react-dom": "18.1.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "react-scripts": "5.0.1"
   },
   "devDependencies": {
-    "@babel/runtime": "7.17.9"
+    "@babel/runtime": "7.20.0"
   },
   "scripts": {
     "start": "react-scripts start"
+  },
+  "nf": {
+    "template": "react-minimal"
   }
 }
