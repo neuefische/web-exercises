@@ -4,7 +4,7 @@ This exercise offers first steps into the world of software testing. It's quite 
 
 ## Task
 
-Have a look at the [index.js](index.js): there are four functions, `add()`, `subtract()`, `multiply()`, and `divide()`.
+Have a look at the [`index.js`](index.js): there are four functions, `add()`, `subtract()`, `multiply()`, and `divide()`.
 
 Read them very carefully to understand what these functions are supposed to return.
 
