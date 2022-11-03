@@ -38,4 +38,4 @@ Your tests should cover the following criteria (write one test case for each of 
 
 - Make sure to run `npm install` first.
 - You can run the test watch mode via the command `npm run test:watch`
-- You only have to touch the [index.test.js](index.test.js) file.
+- You only have to touch the `index.test.js` file.
