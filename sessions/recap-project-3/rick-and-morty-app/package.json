@@ -1,8 +1,13 @@
 {
-  "name": "rick-and-morty-app",
-  "version": "1.0.0",
-  "type": "module",
+  "name": "recap-project-3_rick-and-morty-app",
+  "version": "0.0.0-unreleased",
   "description": "",
   "main": "index.html",
-  "keywords": []
+  "scripts": {
+    "lint": "npx eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "nf": {
+    "template": "html-css-js-static"
+  }
 }
