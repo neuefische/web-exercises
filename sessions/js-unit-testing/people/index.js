@@ -1,5 +1,5 @@
 export function getFirstNames(people) {
-	return people.map(person => person.firstName);
+  return people.map((person) => person.firstName);
 }
 
 export function getFullNames(people) {}
