@@ -25,7 +25,7 @@ Your tests should cover the following criteria (write one test case for each of 
 
 - `multiply()`
 
-  - returns 8 if called with add(2, 4)
+  - returns 8 if called with multiply(2, 4)
   - returns a negative value if only the first argument is negative
   - returns a negative value if only the second argument is negative
   - returns a positive value if called with two negative arguments
