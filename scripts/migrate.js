@@ -10,22 +10,42 @@ const challengeFolders = await globby("sessions/*/*", {
 
 // for every challenge folder
 for (const challengeFolder of challengeFolders) {
-  // if the folder name contains the word "react", skip it
-  if (challengeFolder.includes("react")) continue;
-
   let template;
 
+  let packageJson;
+  try {
+    packageJson = fs.readJsonSync(path.join(challengeFolder, "package.json"));
+  } catch (error) {
+    console.log("non project folder (no package.json)", challengeFolder);
+    continue;
+  }
+
   // if the folder does not contain any html, css or js files
-  const files = await globby("*.html|*.css|*.js", {
+  const files = await globby("*.html|*.css|*.js|**/*.html|**/*.css|**/*.js", {
     cwd: challengeFolder,
     onlyFiles: true,
     expandDirectories: false,
   });
   if (files.length === 0) {
+    console.log("no files", challengeFolder);
     template = "empty";
   } else {
-    // if the challenge folder includes any files matching "**/*.test.js"
-    if ((await globby("**/*.test.js", { cwd: challengeFolder })).length) {
+    // if the folder contains a package.json file and the package.json file contains a react dependency
+    if (packageJson.dependencies?.react) {
+      // if it has an eject script, it's a CRA project
+      if (packageJson.scripts?.eject) {
+        console.log(
+          "cra migration not implemented yet. skipping",
+          challengeFolder
+        );
+        continue;
+      } else {
+        template = "react-minimal";
+      }
+    } else if (
+      (await globby("**/*.test.js", { cwd: challengeFolder })).length
+    ) {
+      // if the challenge folder includes any files matching "**/*.test.js"
       // this will require a non static template, we still need to figure out if
       // we need the html-css-js template or the js template
 
@@ -78,6 +98,9 @@ function applyTemplate(challengeFolder, template) {
 
   // get session and challenge name from the folder name
   const [sessionName, challengeName] = challengeFolder.split("/").slice(1);
+
+  // delete .stylelintrc.json file from the challenge folder
+  fs.removeSync(path.join(challengeFolder, ".stylelintrc.json"));
 
   // copy the .eslintrc.json and sandbox.config.json file from the template folder to the challenge folder
   fs.copyFileSync(
@@ -183,7 +206,8 @@ function applyTemplate(challengeFolder, template) {
       const developmentSection =
         templateReadme.match(/(## Development.*$)/ms)[0];
 
-      const readmeDevelopmentSection = readme.match(/(## Development.*$)/ms)[0];
+      const readmeDevelopmentSection =
+        readme.match(/(## Development.*$)/ms)?.[0];
 
       if (
         readmeDevelopmentSection &&
