@@ -12,11 +12,3 @@ const root = createRoot(rootElement);
 // Call render on the root to render the elements into the DOM.
 // Notice that this is NOT a template literal, it is JSX.
 root.render(<h1>Hello World 👋</h1>);
-
-// JSX is a syntax extension to JavaScript that allows you to write HTML-like
-// code in JavaScript. JSX can be used in React to describe what the UI should look like in a declarative way.
-
-// JSX can be used like any other JavaScript expression, so you can for example write a function, that returns JSX:
-function Greeting() {
-  return <h1>Hello World 👋</h1>;
-}
