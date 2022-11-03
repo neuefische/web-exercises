@@ -8,7 +8,7 @@ Have a look at the [`index.test.js`](index.test.js): there are predefined tests 
 
 Read them very carefully to understand what the `getAnimal()` function is supposed to do. After doing so, your task is to implement the function so that all tests pass.
 
-Please switch to the [index.js](index.js) file to start working (and liking animals)!
+Please switch to the [`index.js`](index.js) file to start working (and liking animals)!
 
 ## Notes
 
