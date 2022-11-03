@@ -1,22 +1,22 @@
 .storage {
-	padding: 0;
-	list-style: none;
+  padding: 0;
+  list-style: none;
 }
 
 .storage__entry:not(:last-child) {
-	padding: 0 0 1rem 0;
-	margin: 0 0 1rem 0;
-	border-bottom: 1px solid var(--dark-grey);
+  padding: 0 0 1rem 0;
+  margin: 0 0 1rem 0;
+  border-bottom: 1px solid var(--dark-grey);
 }
 
 .storage__title {
-	font-size: 1rem;
-	font-weight: bold;
-	margin: 0 0 1rem 0;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0 0 1rem 0;
 }
 
 .storage__credentials {
-	display: grid;
-	grid-template-columns: 1fr 2fr;
-	gap: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 0.5rem;
 }

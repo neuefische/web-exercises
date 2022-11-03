@@ -10,107 +10,69 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <h1>Do you have questions?</h1>
-    </header>
-    <main>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. A sunt iste
-        fugiat debitis reprehenderit possimus reiciendis rem ex, et maiores
-        numquam modi repudiandae saepe. Reiciendis saepe mollitia fugiat
-        provident eum.<a href="/about">Go to about</a>
-      </p>
-      <form class="question-form">
-        <label
-          >E-mail:
-          <input type="email" placeholder="jane@doe.org" required />
-        </label>
-        <label>
-          First name:
-          <input type="text" placeholder="Jane" />
-        </label>
-        <label
-          >Your question:
-          <textarea placeholder="What is a selector?" required></textarea>
-        </label>
-        <button class="button button--submit">Submit</button>
-        <button class="button" type="reset">Reset</button>
-      </form>
-      <h2>Useful links</h2>
-      <ul role="list">
-        <li>
-          <a
-            href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors"
-            >MDN: CSS selectors list</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors"
-            >MDN: CSS selectors</a
-          >
-        </li>
-        <li>
-          <a href="https://css-tricks.com/almanac/selectors/"
-            >CSS Tricks: CSS selectors</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors"
-            >MDN: CSS selectors list</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors"
-            >MDN: CSS selectors</a
-          >
-        </li>
-        <li>
-          <a href="https://css-tricks.com/almanac/selectors/"
-            >CSS Tricks: CSS selectors</a
-          >
-        </li>
-      </ul>
+    <h1>CSS Selectors</h1>
+    <h2>Let's make this look a little more interesting.</h2>
+    <main class="main-content">
+      <section class="main-section">
+        <a href="#">I'm a link!</a>
+      </section>
 
-      <h2>Useful links</h2>
-      <ul role="list">
-        <li>
-          <a
-            href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors"
-            >MDN: CSS selectors list</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors"
-            >MDN: CSS selectors</a
-          >
-        </li>
-        <li>
-          <a href="https://css-tricks.com/almanac/selectors/"
-            >CSS Tricks: CSS selectors</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors"
-            >MDN: CSS selectors list</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors"
-            >MDN: CSS selectors</a
-          >
-        </li>
-        <li>
-          <a href="https://css-tricks.com/almanac/selectors/"
-            >CSS Tricks: CSS selectors</a
-          >
-        </li>
-      </ul>
+      <section class="main-section">
+        <div class="box box--pink">I'm a box!</div>
+      </section>
+
+      <section class="main-section">
+        <button type="button">I'm a button!</button>
+      </section>
+
+      <section class="main-section">
+        <ul class="cake-list" role="list">
+          <li class="cake-list__item">
+            <a href="https://en.wikipedia.org/wiki/Red_velvet_cake"
+              >Red Velvet Cake</a
+            >
+          </li>
+          <li class="cake-list__item">
+            <a href="https://en.wikipedia.org/wiki/Angel_food_cake"
+              >Angel Foood Cake</a
+            >
+          </li>
+          <li class="cake-list__item">
+            <a href="https://en.wikipedia.org/wiki/Cheesecake">Cheesecake</a>
+          </li>
+          <li class="cake-list__item">
+            <a href="https://en.wikipedia.org/wiki/Chocolate_cake"
+              >Chocolate Cake</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section class="main-section">
+        <label for="fav-cake">Your favorite cake: </label
+        ><input type="text" id="fav-cake" />
+      </section>
+
+      <section class="main-section">
+        <article>
+          <p class="text">
+            Cakes are desserts typically consisting of a baked mixture of flour,
+            eggs, and milk, and made tastier with chocolate, fruit, or whipped
+            cream.
+          </p>
+          <p class="text" id="very-important-text">Cake is delicious!</p>
+          <p class="text">There is a lot to say about cakes.</p>
+        </article>
+      </section>
+
+      <section class="main-section">
+        <div>
+          Yummy
+          <span>Yummy</span>
+        </div>
+        <span>Yummy</span>
+        <span>Yummy</span>
+      </section>
     </main>
   </body>
 </html>

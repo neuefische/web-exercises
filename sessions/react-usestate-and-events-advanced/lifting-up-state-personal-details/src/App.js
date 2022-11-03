@@ -28,20 +28,20 @@ a second time. Outsource the display of the personal details in a new component:
 Now we can use the values we get as inputs also in other components. Amazing!
  */
 
-import './styles.css';
-import Form from './Form';
+import "./styles.css";
+import Form from "./Form";
 
 export default function App() {
-	const name = '???';
-	const email = '???';
+  const name = "???";
+  const email = "???";
 
-	return (
-		<div className="App">
-			<h1>useState and Events</h1>
-			<Form />
-			<h2>Your details:</h2>
-			<p>Name: {name}</p>
-			<p>Email: {email}</p>
-		</div>
-	);
+  return (
+    <div className="App">
+      <h1>useState and Events</h1>
+      <Form />
+      <h2>Your details:</h2>
+      <p>Name: {name}</p>
+      <p>Email: {email}</p>
+    </div>
+  );
 }

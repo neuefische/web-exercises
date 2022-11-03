@@ -1,5 +1,5 @@
-import './styles.css';
+import "./styles.css";
 
 export default function App() {
-	return <div className="App"></div>;
+  return <div className="App"></div>;
 }

@@ -1,27 +1,27 @@
-@import './components/app.css';
-@import './components/form.css';
-@import './components/storage.css';
+@import "./components/app.css";
+@import "./components/form.css";
+@import "./components/storage.css";
 
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-	--primary: #082f77;
-	--error: #ff0000;
-	--success: #00ff00;
-	--light-grey: #eaecee;
-	--dark-grey: #535562;
-	--light: #ffffff;
+  --primary: #082f77;
+  --error: #ff0000;
+  --success: #00ff00;
+  --light-grey: #eaecee;
+  --dark-grey: #535562;
+  --light: #ffffff;
 }
 
 body {
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
-		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-	background-color: var(--primary);
-	margin: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: var(--primary);
+  margin: 1rem;
 }

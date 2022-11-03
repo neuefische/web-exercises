@@ -3,9 +3,9 @@ console.clear();
 /* -------- Destructuring Assignment - Objects --------- */
 
 const tree = {
-	name: 'oak',
-	age: 1200,
-	scientificName: 'quercus',
+  name: "oak",
+  age: 1200,
+  scientificName: "quercus",
 };
 
 /*
@@ -18,23 +18,23 @@ const scientificName = tree.scientificName;
 // const {name, age, scientificName} = tree;
 
 // Renaming
-const {name: colloquialName} = tree;
+const { name: colloquialName } = tree;
 // console.log(colloquialName);
 
 // Default value
-const {keepsLeavesInWinter = false} = tree;
+const { keepsLeavesInWinter = false } = tree;
 // console.log(keepsLeavesInWinter);
 // console.log(tree);
 
 // Rest syntax in object destructuring
-const {name, ...information} = tree;
+const { name, ...information } = tree;
 
 // console.log(name);
 // console.log(information);
 
 /* -------- Destructuring Assignment - Arrays --------- */
 
-const animals = ['Lion', 'Tiger', 'Penguin', 'Bear', 'Whale'];
+const animals = ["Lion", "Tiger", "Penguin", "Bear", "Whale"];
 
 // Destructuring an array
 // const [lion, tiger, penguin, bear, whale] = animals;
@@ -56,25 +56,25 @@ console.log(rest[1]);
 /* ---------------- Rest Syntax ----------------- */
 
 function showZooAnimals(...allAnimals) {
-	console.log(allAnimals);
-	return `My zoo consists of the following animals: ${allAnimals.join(', ')}.`;
+  console.log(allAnimals);
+  return `My zoo consists of the following animals: ${allAnimals.join(", ")}.`;
 }
 
-console.log(showZooAnimals('Monkey', 'Crocodil', 'Pig'));
+console.log(showZooAnimals("Monkey", "Crocodil", "Pig"));
 
 /* ---------------- Spread Syntax ----------------- */
 
 console.log(showZooAnimals(lion, tiger, ...rest));
 
-const newAnimals = ['Whale', 'Dolphin', 'Wolf'];
+const newAnimals = ["Whale", "Dolphin", "Wolf"];
 
 console.log(showZooAnimals(...newAnimals));
 
 // Add another value
 
-const animalFood = ['Meat', 'Apple', 'Banana', 'Carrot'];
+const animalFood = ["Meat", "Apple", "Banana", "Carrot"];
 
-const newAnimalFood = 'Fish';
+const newAnimalFood = "Fish";
 
 const allAnimalFood = [...animalFood, newAnimalFood];
 

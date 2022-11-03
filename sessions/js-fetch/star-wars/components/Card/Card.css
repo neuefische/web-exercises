@@ -1,13 +1,13 @@
 .card {
-	padding: 20px;
-	border-radius: 14px;
-	background-color: var(--water);
-	display: grid;
-	gap: 10px;
-	box-shadow: 0px 2px 2px var(--granite);
+  padding: 20px;
+  border-radius: 14px;
+  background-color: var(--water);
+  display: grid;
+  gap: 10px;
+  box-shadow: 0px 2px 2px var(--granite);
 }
 
 .card * {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
 }

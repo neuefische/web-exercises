@@ -7,30 +7,30 @@ For now the pokemon are only fetched when we click the button below. Lets change
 Hint: Don't forget the dependency array!
 */
 
-import './styles.css';
-import {useState} from 'react';
+import "./styles.css";
+import { useState } from "react";
 
 export default function App() {
-	const [pokemon, setPokemon] = useState([]);
+  const [pokemon, setPokemon] = useState([]);
 
-	async function loadPokemon() {
-		try {
-			const response = await fetch('https://pokeapi.co/api/v2/pokemon');
-			const data = await response.json();
-			setPokemon(data.results);
-		} catch (error) {
-			console.log(error);
-		}
-	}
+  async function loadPokemon() {
+    try {
+      const response = await fetch("https://pokeapi.co/api/v2/pokemon");
+      const data = await response.json();
+      setPokemon(data.results);
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
-	return (
-		<main className="App">
-			<button onClick={loadPokemon}>Load Pokémon</button>
-			<ul>
-				{pokemon.map(({name}) => (
-					<li key={name}>{name}</li>
-				))}
-			</ul>
-		</main>
-	);
+  return (
+    <main className="App">
+      <button onClick={loadPokemon}>Load Pokémon</button>
+      <ul>
+        {pokemon.map(({ name }) => (
+          <li key={name}>{name}</li>
+        ))}
+      </ul>
+    </main>
+  );
 }

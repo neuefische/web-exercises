@@ -1,7 +1,13 @@
 {
-  "name": "js-inputs-and-strings-change-box-appearance",
-  "version": "1.0.0",
+  "name": "js-inputs-and-strings_change-box-appearance",
+  "version": "0.0.0-unreleased",
   "description": "",
   "main": "index.html",
-  "keywords": []
+  "scripts": {
+    "lint": "npx eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "nf": {
+    "template": "html-css-js-static"
+  }
 }

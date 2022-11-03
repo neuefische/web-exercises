@@ -1,22 +1,22 @@
-import {handleList, handleSingleValue, handleObject} from './utils.js';
+import { handleList, handleSingleValue, handleObject } from "./utils.js";
 
-const studentNames = ['Lucille', 'Gilbert', 'Jennie', 'Lydia', 'Agnes'];
+const studentNames = ["Lucille", "Gilbert", "Jennie", "Lydia", "Agnes"];
 
 const students = [
-	{name: 'Lucille', age: 30, points: 26, happiness: 5},
-	{name: 'Gilbert', age: 45, points: 0, happiness: 1},
-	{name: 'Jennie', age: 47, points: 39, happiness: 5},
-	{name: 'Lydia', age: 29, points: 14, happiness: 2},
-	{name: 'Agnes', age: 34, points: 39, happiness: 4},
+  { name: "Lucille", age: 30, points: 26, happiness: 5 },
+  { name: "Gilbert", age: 45, points: 0, happiness: 1 },
+  { name: "Jennie", age: 47, points: 39, happiness: 5 },
+  { name: "Lydia", age: 29, points: 14, happiness: 2 },
+  { name: "Agnes", age: 34, points: 39, happiness: 4 },
 ];
 
-handleList(students, 'Original Students');
+handleList(students, "Original Students");
 
 /** includes */
 
 const studentNamesIncludesHarry = null;
 
-handleSingleValue(studentNamesIncludesHarry, 'studentNamesIncludesHarry');
+handleSingleValue(studentNamesIncludesHarry, "studentNamesIncludesHarry");
 
 /** find and findIndex */
 
