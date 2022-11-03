@@ -1,6 +1,6 @@
 import { getAnimal } from "./index.js";
 
-test("getAnimals() returns a string 'I really like cats!' if called with the argument 'cats'.", () => {
+test("getAnimals() returns a string 'I totally love cats!' if called with the argument 'cats'.", () => {
   const result = getAnimal("cats");
   expect(result).toBe("I totally love cats!");
 });
