@@ -150,6 +150,8 @@ You can then use the following commands:
     lower: true,
   }).replaceAll(".", "");
 
+  const title = `${input.sessionName}: ${input.exerciseName}`;
+
   const template = templates.find(
     (template) => template.name === input.template
   );
@@ -176,7 +178,7 @@ You can then use the following commands:
     // update the package.json
     const pkg = await fs.readJson(`${exerciseDir}/package.json`);
     pkg.name = `${sessionSlug}_${exerciseSlug}`;
-    pkg.description = input.exerciseName;
+    pkg.description = title;
     await fs.writeJson(`${exerciseDir}/package.json`, pkg, { spaces: 2 });
 
     // find all files in the exercise dir
@@ -190,7 +192,7 @@ You can then use the following commands:
     await Promise.all(
       files.map(async (file) => {
         const contents = await fs.readFile(file, "utf8");
-        const newContents = contents.replaceAll("TITLE", input.exerciseName);
+        const newContents = contents.replaceAll("TITLE", title);
         await fs.writeFile(file, newContents, "utf8");
       })
     );
@@ -237,7 +239,7 @@ You can then use the following commands:
     // update the package.json
     const pkg = await fs.readJson(`${exerciseDir}/package.json`);
     pkg.name = `${sessionSlug}_${exerciseSlug}`;
-    pkg.description = input.exerciseName;
+    pkg.description = title;
     pkg.version = "0.0.0-unreleased";
     pkg.nf = { template: template.name };
     await fs.writeJson(`${exerciseDir}/package.json`, pkg, { spaces: 2 });
@@ -245,7 +247,7 @@ You can then use the following commands:
     // update the README.md
     const newReadme = (template?.readme ?? "# TITLE\n").replaceAll(
       "TITLE",
-      input.exerciseName
+      title
     );
     await fs.writeFile(`${exerciseDir}/README.md`, newReadme, "utf8");
 
