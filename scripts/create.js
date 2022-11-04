@@ -258,6 +258,13 @@ You can then use the following commands:
       );
     }
 
+    // remove package-lock.json
+    try {
+      await fs.remove(`${exerciseDir}/package-lock.json`);
+    } catch {
+      // ignore
+    }
+
     try {
       await execa("code", [path.resolve(exerciseDir, "README.md")]);
     } catch {
