@@ -8,7 +8,7 @@ Let us use `props` to make components totally reusable!
 
 ### Create a Component with props
 
-Look at the [`src/App.js`](./src/App.js) file: the `App` component returns a heading which wants to be replaced by a component. Your task is to write a `Greeting` component which renders a greeting according to its prop.
+Look at the [`src/App.js`](./src/App.js) file: the `App` component returns a default heading element. Replace this element with a custom `Greeting` component, which renders a greeting according to its props.
 
 You can use the following hints as guideline:
 
