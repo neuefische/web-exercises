@@ -1,0 +1,39 @@
+.navigation {
+  background: var(--primary);
+  border-top: 1px solid var(--black);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navigation__list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navigation__list-item {
+  padding: 1.5rem 0.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation__list-item--active {
+  background-color: var(--secondary-light);
+}
+
+.navigation__list-item:not(:first-child) {
+  border-left: 1px solid var(--black);
+}
+
+.navigation__link {
+  color: var(--black);
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.navigation__link svg {
+  fill: currentcolor;
+}
