@@ -54,9 +54,9 @@ By now, you've defined the event handler inline in the JSX (which looks somethin
 As a last step, let's pass a function as a prop to a component.
 
 - Move the `handleClick` function from the `Button` component to the `App` component.
-- In the `App` component, pass the `handleClick` function as prop to the `Button` component; use the name `onClick` for this prop.
-- In the `Button` component, receive the `onClick` prop as parameter.
-- Pass the received `onClick` prop to the `<button>`s `onClick` prop.
+- In the `App` component, pass the `handleClick` function as a prop called `onClick` to the `Button` component (hint: `onEventName={handleEventName}`).
+- In the `Button` component, receive the `onClick` prop as a parameter.
+- Pass the received `onClick` prop to the `<button>`'s `onClick` prop.
 
 🎉 Congratulations, you've built a button component which can handle every function passed to it as prop!
 
