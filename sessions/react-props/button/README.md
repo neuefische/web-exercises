@@ -21,8 +21,10 @@ You can use the following hints as guideline:
   - renders its text according to the `text` prop,
   - has its disabled attribute set according to the `disabled` prop, and
   - uses the `color` prop to set the text color of the button
-    - Note: use inline styling with the help of the `style` attribute: `style={{height: "100px"}}`
-    - Additional hint: If you want to set the background color via a prop, you need to use camelCase `backgroundColor` instead of kebab-case `background-color`.
+
+>💡 Note: use inline styling with the help of the `style` attribute: `style={{height: "100px"}}`
+
+>💡 Additional hint: If you want to set the background color via a prop, you need to use camelCase `backgroundColor` instead of kebab-case `background-color`.
 
 - Inside of the return statement of your `App` component, replace the heading with your `Button` component and pass it the props as you wish.
 
