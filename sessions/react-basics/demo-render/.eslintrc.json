@@ -16,5 +16,9 @@
       "jsx": true
     }
   },
-  "plugins": ["jest", "react"]
+  "plugins": ["jest", "react"],
+  "rules": {
+    "react/prop-types": 0,
+    "react/react-in-jsx-scope": 0
+  }
 }
