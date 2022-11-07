@@ -1,6 +1,6 @@
 # A more Complex Component
 
-Welcome back to the React Universe! This exercise let's you build a React component containing more than one HTML tag.
+Welcome back to the React Universe! This exercise lets you build a React component containing more than one HTML tag.
 
 Have a look at the [App.js](./src/App.js) file: the default export function called `App` returns a `<div>` which wants to be replaced. Let us comply with its request!
 
@@ -16,7 +16,7 @@ Use the following hints as guideline:
   - at least one `p` tag
   - Note: Add whatever tags you like, but the predefined styles are limited ;)
 - In the return statement of your `App` function, replace the `div` with your `HelloWorldArticle` component.
-- Look in the browser and marvel!
+- Once again, look at the browser and be amazed!
 
 ## Notes
 
