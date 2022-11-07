@@ -1,0 +1,51 @@
+:root {
+  /* Color Variables */
+
+  --nemo: #ff4a11;
+  --granite: #252629;
+  --water: #f3f5f9;
+  --foam: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.article {
+  width: 50%;
+  margin: 2rem auto;
+  padding: 1rem 3rem;
+  background-color: var(--foam);
+  box-shadow: var(--granite) 0px 2px 8px;
+  border: 1px solid var(--granite);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.article__link {
+  width: fit-content;
+  background-color: var(--granite);
+  color: var(--foam);
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.article__link:hover {
+  background-color: var(--nemo);
+  color: var(--water);
+}
+
+.article__title {
+  color: var(--nemo);
+}
