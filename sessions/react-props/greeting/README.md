@@ -1,6 +1,6 @@
 # Greeting
 
-With React, you can build components and reuse them as often as you like. However, you sometimes want to slightly adjust the component according to its environment, e.g. to use a different text to be displayed.
+In React, you can build components and reuse them as often as you like. However, sometimes you want your components to be able to adapt to their environment, or other conditions, e.g. to have them display different types of content.
 
 Let us use `props` to make components totally reusable!
 
