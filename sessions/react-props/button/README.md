@@ -30,7 +30,7 @@ You can use the following hints as guideline:
 
 🎉 Congratulations, you have just created a very flexible button component!
 
-However, clicking a button without anything to happen is useless, right? Let's fix that!
+However, clicking a button without anything happening is pretty useless, right? Let's fix that!
 
 ### 2. Adding a Click Event
 
