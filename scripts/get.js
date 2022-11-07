@@ -12,7 +12,9 @@ function getPrMarkdown({ sessionName, exerciseName, branchName }) {
   const path = `${sessionName}/${exerciseName}`;
 
   const doThis = exerciseName.includes("demo")
-    ? "Use this demo"
+    ? exerciseName.includes("end")
+      ? "You can check out the final version of this demo"
+      : "Use this demo"
     : sessionName.includes("recap")
     ? "Use this starter"
     : "Solve this challenge";
