@@ -11,10 +11,17 @@ inquirer.registerPrompt("autocomplete", inquirerPrompt);
 function getPrMarkdown({ sessionName, exerciseName, branchName }) {
   const path = `${sessionName}/${exerciseName}`;
 
+  const doThis = exerciseName.includes("demo")
+    ? "Use this demo"
+    : sessionName.includes("recap")
+    ? "Use this starter"
+    : "Solve this challenge";
+
   // get the challenge template from ./get/challenge-template.md
   const challengeMd = fs
     .readFileSync("./scripts/get/challenge-template.md", "utf8")
-    .replace(/PATH/g, path);
+    .replace(/PATH/g, path)
+    .replace(/DO_THIS/g, doThis);
 
   // get the pr template from ./get/pr-template.md
   const prMd = fs
