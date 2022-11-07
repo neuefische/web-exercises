@@ -8,7 +8,7 @@ And here is the magic: we can only do this with one button component using props
 
 ### 1. A Simple Button Component
 
-Look at the [`src/App.js`](./src/App.js) file: the `App` component returns a heading which wants to be replaced by a component.
+Look at the [`src/App.js`](./src/App.js) file: the `App` component returns a default heading element that you need to replace with a custom component.
 
 Your task is to write a `Button` component which takes three props `color`, `disabled`, and `text` and renders a button a button with the given color, text and disabled state.
 
