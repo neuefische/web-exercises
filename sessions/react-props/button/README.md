@@ -14,7 +14,7 @@ Your task is to write a `Button` component which takes three props `color`, `dis
 
 You can use the following hints as guideline:
 
-- Write the `Button` component inside of the [`App.js`](src/App.js).
+- Write a `Button` component inside of the [`App.js`](src/App.js).
 
   - It accepts three props: `color`, `disabled`, and `text` (make sure to destructure them).
   - It returns an HTML button element which
