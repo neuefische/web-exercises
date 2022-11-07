@@ -18,6 +18,7 @@
   "scripts": {
     "create": "node ./scripts/create.js",
     "get": "node ./scripts/get.js",
+    "get-c": "node ./scripts/get.js -c",
     "markdown-toc": "npx markdown-toc -i README.md",
     "ncu": "npx npm-check-updates"
   },

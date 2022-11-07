@@ -8,11 +8,15 @@ import inquirerPrompt from "inquirer-autocomplete-prompt";
 
 inquirer.registerPrompt("autocomplete", inquirerPrompt);
 
+const onlyChallenge = process.argv[2] === "-c"; // this is hacky af
+
 function getPrMarkdown({ sessionName, exerciseName, branchName }) {
   const path = `${sessionName}/${exerciseName}`;
 
   const doThis = exerciseName.includes("demo")
-    ? "Use this demo"
+    ? exerciseName.includes("end")
+      ? "You can check out the final version of this demo"
+      : "Use this demo"
     : sessionName.includes("recap")
     ? "Use this starter"
     : "Solve this challenge";
@@ -22,6 +26,10 @@ function getPrMarkdown({ sessionName, exerciseName, branchName }) {
     .readFileSync("./scripts/get/challenge-template.md", "utf8")
     .replace(/PATH/g, path)
     .replace(/DO_THIS/g, doThis);
+
+  if (onlyChallenge) {
+    return challengeMd;
+  }
 
   // get the pr template from ./get/pr-template.md
   const prMd = fs
