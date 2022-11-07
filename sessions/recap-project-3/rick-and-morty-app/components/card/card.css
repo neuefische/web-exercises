@@ -1,0 +1,48 @@
+.card {
+  position: relative;
+  color: var(--granite);
+  width: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: var(--water);
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.card__image-container {
+  position: relative;
+}
+
+.card__image-gradient {
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgb(255 255 255 / 0) 0%,
+    var(--water) 100%
+  );
+}
+
+.card__content {
+  padding: 10px 20px 20px;
+  display: grid;
+  gap: 20px;
+}
+
+.card__image--dead {
+  filter: saturate(0);
+}
+
+.card__info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 0;
+}
+
+.card__info-description {
+  text-align: right;
+  background-color: var(--water);
+}
