@@ -25,7 +25,6 @@ body {
   padding: 1rem 3rem;
   background-color: var(--foam);
   box-shadow: var(--granite) 0px 2px 8px;
-  text-align: center;
   border: 1px solid var(--granite);
   border-radius: 1rem;
   display: flex;
@@ -34,12 +33,16 @@ body {
 }
 
 .article__link {
+  width: fit-content;
+  background-color: var(--granite);
+  color: var(--foam);
+  text-decoration: none;
   padding: 0.5rem;
   border-radius: 10px;
 }
 
 .article__link:hover {
-  background-color: var(--granite);
+  background-color: var(--nemo);
   color: var(--water);
 }
 
