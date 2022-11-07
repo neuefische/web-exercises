@@ -34,7 +34,7 @@ However, clicking a button without anything happening is pretty useless, right? 
 
 ### 2. Adding a Click Event
 
-In your `Button` component, use the `onClick` prop and pass it a `console.log()` with text of your choice.
+Inside of your `Button` component, use the `onClick` prop and pass it a `console.log()` with the text of your choice.
 
 Use an anonymous function like `onClick={() => alert('You clicked me!')}` to make sure the code is called when the button is clicked (and not with every render).
 
