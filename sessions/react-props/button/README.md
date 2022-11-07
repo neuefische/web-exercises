@@ -45,7 +45,7 @@ Use an anonymous function like `onClick={() => alert('You clicked me!')}` to mak
 By now, you've defined the event handler inline in the JSX (which looks something like `onClick={() => alert('You clicked me!')}`). Let's extract the logic to an event handler function and pass this function to the `<button> element`.
 
 - Inside the `Button` component, create a function `handleClick` which calls the same `console.log` you've passed to the `<button>`s `onClick` prop.
-- Replace the anonymous function of the `<button>`s `onClick` prop with the `handleClick` function. Make sure NOT to call `handleClick` here.
+- Replace the anonymous function of the `<button>`'s `onClick` prop with the `handleClick` function. Make sure NOT to call `handleClick` here.
 - Check whether the `console.log` is still working.
   - If not, check your brackets again.
 
