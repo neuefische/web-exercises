@@ -6,7 +6,7 @@ import "./styles.css";
 
 export default function App() {
   return (
-    <div>
+    <main>
       <Header />
       <AnimalCategory title="Fluffy Fur">
         <Animal emoji="🐕" name="Lucky" description={<p>Very cute dog</p>} />
@@ -30,6 +30,6 @@ export default function App() {
           description={<p>A nested chick</p>}
         />
       </AnimalCategory>
-    </div>
+    </main>
   );
 }
