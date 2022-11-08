@@ -20,7 +20,15 @@ export default function App() {
         <Animal
           emoji="🐢"
           name="Archibald"
-          description={<p>Super relaxed turtle</p>}
+          description={
+            <>
+              <p>Super relaxed turtle</p>
+              <ul>
+                <li>Eats lettuce all the time</li>
+                <li>Can sleep in your fridge</li>
+              </ul>
+            </>
+          }
         />
       </AnimalCategory>
       <AnimalCategory title="Wingman">
