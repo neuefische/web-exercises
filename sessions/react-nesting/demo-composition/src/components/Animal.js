@@ -1,4 +1,4 @@
-import AdoptButton from "./AdoptButton";
+import Button from "./Button";
 import AnimalEmoji from "./AnimalEmoji";
 
 export default function Animal({ emoji, name, description }) {
@@ -8,9 +8,9 @@ export default function Animal({ emoji, name, description }) {
         <AnimalEmoji>{emoji}</AnimalEmoji> {name}
       </h3>
       {description}
-      <AdoptButton>
-        <strong>{name}</strong>
-      </AdoptButton>
+      <Button>
+        Adopt <strong>{name}</strong>
+      </Button>
     </>
   );
 }

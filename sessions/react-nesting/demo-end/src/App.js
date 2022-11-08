@@ -8,17 +8,17 @@ function Animal({ emoji, name, description }) {
         {emoji} {name}
       </h2>
       {description}
-      <AdoptButton>
-        <strong>{name}</strong>
-      </AdoptButton>
+      <Button>
+        Adopt <strong>{name}</strong>
+      </Button>
     </>
   );
 }
 
-function AdoptButton({ children }) {
+function Button({ children }) {
   return (
-    <button type="button" className="adopt-button">
-      Adopt {children}
+    <button type="button" className="button">
+      {children}
     </button>
   );
 }
