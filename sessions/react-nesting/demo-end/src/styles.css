@@ -17,8 +17,9 @@ h2 {
 }
 
 .adopt-button {
-  background-color: blue;
+  background-color: #197b4d;
   border: none;
   color: #fff;
   padding: 1rem;
+  min-width: 10rem;
 }

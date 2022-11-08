@@ -17,6 +17,7 @@ export default function App() {
       <Animal emoji="🐕" name="Lucky" />
       <Animal emoji="🐈" name="Mittens" />
       <Animal emoji="🐢" name="Archibald" />
+      <Animal emoji="🐣" name="Chick Norris" />
     </div>
   );
 }

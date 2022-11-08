@@ -23,6 +23,13 @@ export default function App() {
           description={<p>Super relaxed turtle</p>}
         />
       </AnimalCategory>
+      <AnimalCategory title="Wingman">
+        <Animal
+          emoji="🐣"
+          name="Chick Norris"
+          description={<p>A nested chick</p>}
+        />
+      </AnimalCategory>
     </div>
   );
 }

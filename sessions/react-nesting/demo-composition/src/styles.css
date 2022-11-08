@@ -13,7 +13,7 @@ body {
 }
 
 header {
-  background-color: blue;
+  background-color: #197b4d;
   color: white;
   padding: 2rem;
   min-width: 40rem;
@@ -34,10 +34,11 @@ section {
 }
 
 .adopt-button {
-  background-color: blue;
+  background-color: #197b4d;
   border: none;
   color: #fff;
   padding: 1rem;
+  min-width: 10rem;
 }
 
 .animal-emoji {

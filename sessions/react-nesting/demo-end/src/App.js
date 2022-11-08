@@ -31,6 +31,11 @@ export default function App() {
         name="Archibald"
         description={<p>Super relaxed turtle</p>}
       />
+      <Animal
+        emoji="🐣"
+        name="Chick Norris"
+        description={<p>A nested chick</p>}
+      />
     </div>
   );
 }
