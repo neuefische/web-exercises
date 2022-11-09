@@ -1,0 +1,32 @@
+.entry-card {
+  width: 100%;
+  padding: 20px;
+  border-bottom: 1px solid var(--granite);
+}
+
+.entry-card__date-container {
+  display: flex;
+  justify-content: center;
+}
+
+.entry-card__button-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button--checked {
+  appearance: none;
+}
+
+.button--checked::before {
+  content: "🧡";
+}
+
+.button--unchecked {
+  appearance: none;
+}
+
+.button--unchecked::before {
+  content: "🤍";
+}

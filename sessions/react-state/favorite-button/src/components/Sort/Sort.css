@@ -1,0 +1,27 @@
+.container {
+  margin-block-start: 50px;
+  width: 100%;
+  display: flex;
+  gap: 30px;
+}
+
+.container__inner {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.container__number {
+  padding-inline: 15px;
+  padding-block: 3px;
+  border-radius: 10px;
+}
+
+.number--red {
+  background-color: var(--nemo);
+  color: var(--foam);
+}
+
+.number--grey {
+  background-color: var(--water);
+}

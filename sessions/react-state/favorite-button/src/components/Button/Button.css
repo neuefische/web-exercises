@@ -1,0 +1,8 @@
+.Button {
+  all: unset;
+  padding: 1rem 2rem;
+  background: var(--nemo);
+  font-weight: bold;
+  border-radius: 5px;
+  color: var(--foam);
+}
