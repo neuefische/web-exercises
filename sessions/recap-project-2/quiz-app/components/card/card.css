@@ -1,0 +1,54 @@
+.card {
+  border: 1px solid var(--black);
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.card__question {
+  margin: 0 0 2rem;
+}
+
+.card__button-answer {
+  background: var(--secondary);
+  color: var(--white);
+  border: none;
+  display: block;
+  margin: 0 auto 2rem auto;
+  padding: 1rem;
+}
+
+.card__button-answer:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.card__answer {
+  margin: 0 2rem;
+  font-style: italic;
+  display: none;
+}
+
+.card__answer--active {
+  display: block;
+}
+
+.card__button-bookmark {
+  position: absolute;
+  right: 1rem;
+  top: -1.5rem;
+}
+
+.card__tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.card__tag-list-item {
+  background-color: var(--secondary);
+  color: var(--white);
+  border-radius: 4px;
+  padding: 0 5px;
+}
