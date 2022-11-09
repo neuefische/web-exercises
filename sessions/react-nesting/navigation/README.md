@@ -39,10 +39,9 @@ Awesome! You are a true `children` prop professional now. Let's dive deeper!
 Task: Create a `Link` component to render `<a>` tags.
 
 - Create a file for the `Link` component.
-- The `Link` component should receive the props
+- The `Link` component returns an `<a>` element with `className="navigation__link"` and receives the props
   - `href` which is passed to the `href` attribute of the `<a>` tag and
   - `children` passed between the opening and closing `<a>` tags.
-- Don't forget the `className` attribute.
 - In the `App.js` file, import the `Link` component and replace the `<a></a>` tags with it.
   - Make sure to pass the correct prop(s?).
 
@@ -57,6 +56,7 @@ Task: Create an `Image` component to render `<img>` tags.
 - The `Image` component returns an `<img>` element with `className="round-image"` and
 - receives the props `src` and `alt` and passes them to the `src` and `alt` attributes.
 - as we don't need children here, this component should not have a `children` prop
+
 ### 5. Logo and Avatar component
 
 Task: Create a `Logo` and `Avatar` component, respectively.
