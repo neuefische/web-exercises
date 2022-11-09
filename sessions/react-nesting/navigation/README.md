@@ -67,7 +67,35 @@ Task: Create a `Logo` and `Avatar` component, respectively.
 - In the `App.js` file, import the `Logo` and `Avatar` component and replace the relevant JSX to use them.
 - Check that the UI still looks the same.
 
-You should now have an `App` component returning only your custom components! Nice work 🎉
+You should now have an `App` component returning only your custom components (besides `main`)! Nice work 🎉
+
+To check, you App.js file should look something like this now:
+
+```js
+import { Avatar } from "./components/Avatar";
+import { Header } from "./components/Header";
+import { Link } from "./components/Link";
+import { Logo } from "./components/Logo";
+import { Navigation } from "./components/Navigation";
+import "./styles.css";
+
+export default function App() {
+  return (
+    <>
+      <Header>
+        <Logo />
+        <Navigation>
+          <Link href="#home">Home</Link>
+          <Link href="#about">About</Link>
+          <Link href="#impressum">Impressum</Link>
+        </Navigation>
+        <Avatar />
+      </Header>
+      <main>content goes here…</main>
+    </>
+  );
+}
+```
 
 ## Notes
 
