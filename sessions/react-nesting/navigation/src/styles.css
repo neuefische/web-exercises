@@ -17,6 +17,14 @@ button {
   cursor: pointer;
 }
 
+main {
+  min-height: 85vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  color: rgb(62, 66, 78);
+}
+
 .header {
   padding: 0.5rem 2rem;
   display: flex;
