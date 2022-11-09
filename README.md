@@ -65,6 +65,14 @@ This will ask you for the session name, exercise name and exercise type.
 
 This repository contains templates for most types of exercises.
 
+### Creating a PR
+
+To make it less cumbersome to create a PR for a new exercise once you're done, you can use the following command that copies all the necessary information to your clipboard. (You just have to select the session and exercise folder.)
+
+```
+npm run get
+```
+
 ## Templates
 
 The following exercise types are available via the `create` script:
