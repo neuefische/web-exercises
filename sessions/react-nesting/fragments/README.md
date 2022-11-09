@@ -27,6 +27,8 @@ To fix this, replace the `<div>` with fragments `<></>`: they won't create an HT
 
 🎉 Congratulations, you have seen the basic reason why and how to use React fragments!
 
+> 💡 Layout with flexbox is not the only reason for using fragments, but it's an easy-to-understand example. In general, fragments are a great way to avoid unnecessary `<div>` clutter.
+
 ## Notes
 
 - You only have to touch the [`src/App.js`](./src/App.js) file.
