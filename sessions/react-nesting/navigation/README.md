@@ -61,7 +61,7 @@ Task: Create an `Image` component to render `<img>` tags.
 
 Task: Create a `Logo` and `Avatar` component, respectively.
 
-- Use the same JSX as in the `App.js` as basis (i.e. include the wrapping `<a>` or `<button>` tag), but
+- Use the same JSX as in the `App.js` as basis (copy the tags including `<a>` or `<button>` tag and their children)
   - import the `Image` component and use it.
   - make sure to import the correct `jpg` file.
 - In the `App.js` file, import the `Logo` and `Avatar` component and replace the relevant JSX to use them.
