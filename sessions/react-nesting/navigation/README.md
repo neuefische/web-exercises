@@ -32,7 +32,7 @@ Task: Outsource the `<nav>` into a `Navigation` component.
   - 💡 Note that the `nav` does not have a `className`, so there is no need to add this attribute.
 - In the `App.js` file, import the `Navigation` component and replace the `<nav></nav>` tags with it.
 
-Understood the `children` prop now? Let's dive deeper!
+Awesome! You are a true `children` prop professional now. Let's dive deeper!
 
 ### 3. Link component
 
