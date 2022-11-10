@@ -1,11 +1,10 @@
-import { useState } from "react";
-import starFilled from "./star-filled.svg";
-import star from "./star.svg";
+import { ReactComponent as StarFilled } from "./star-filled.svg";
+import { ReactComponent as Star } from "./star.svg";
 
 import "./Entry.css";
 
 function Entry({ motto, notes, date }) {
-  const [isFavorite, setIsFavorite] = useState(false);
+  const isFavorite = false;
 
   return (
     <article className="entry-card">
@@ -14,13 +13,13 @@ function Entry({ motto, notes, date }) {
       </div>
       <div className="entry-card__button-container">
         <h3>{motto}</h3>
-        <img
-          src={isFavorite ? starFilled : star}
+        <button
           onClick={() => {
-            setIsFavorite(!isFavorite);
+            console.log("favorite button clicked");
           }}
-          alt="favorite button"
-        />
+        >
+          {isFavorite ? <StarFilled /> : <Star />}
+        </button>
       </div>
 
       <p>{notes}</p>
