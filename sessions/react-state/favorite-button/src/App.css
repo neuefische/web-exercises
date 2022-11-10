@@ -1,7 +1,7 @@
 .App {
   display: grid;
   height: 100vh;
-  grid-template-rows: 5rem 1fr 8rem;
+  grid-template-rows: 4rem 1fr 8rem;
 }
 
 .App__main {
@@ -12,5 +12,5 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
 }

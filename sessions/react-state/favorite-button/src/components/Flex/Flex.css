@@ -1,0 +1,6 @@
+.flex {
+  margin-block: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}

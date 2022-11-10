@@ -1,7 +1,12 @@
 .entry-card {
   width: 100%;
   padding: 20px;
-  border-bottom: 1px solid var(--granite);
+  border-bottom: 1px solid var(--water);
+}
+.entry-card:last-child {
+  width: 100%;
+  padding: 20px;
+  border: none;
 }
 
 .entry-card__date-container {

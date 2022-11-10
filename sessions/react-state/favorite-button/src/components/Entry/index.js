@@ -19,6 +19,7 @@ function Entry({ motto, notes, date }) {
           onClick={() => {
             setIsFavorite(!isFavorite);
           }}
+          alt="favorite button"
         />
       </div>
 
