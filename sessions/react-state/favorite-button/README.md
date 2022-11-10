@@ -4,15 +4,14 @@ Now that you've setup your React Journal Project, it's time to include its most 
 
 ## Task
 
-What you need to do is add a `FavoriteButton` component to your `Entry` component and include some logic that will add functionality to your rendered button.
+If you have already written an `Entry` component, make sure to check whether you've added the markup for an image that potentially allows adding the functionality we want to implement. Strictly speaking, this doesn't need to be a button. It can be just an `<img />` element that behaves like a button. You'll need to have imported the provided `.svg` files into your project, as well.
 
 You can use the following hints as a guideline:
 
-- something
-
-## Notes
-
-- You only have to touch the [`src/App.js`](./src/App.js) file.
+- In your `Entry` component, you'll need to use a React Hook that allows you to declare and update a state variable.
+- This state variable needs to be updated when the user is clicking the favorite button.
+- You need to implement logic that handles switching out one `.svg` with the other.
+- Happy Hacking!
 
 ## Development
 
