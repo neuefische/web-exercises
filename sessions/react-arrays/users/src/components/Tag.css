@@ -1,0 +1,9 @@
+.Tag {
+  padding: 5px 14px;
+  border-radius: 999px;
+  background-color: lightslategray;
+}
+
+.Tag--highlight {
+  background-color: hotpink;
+}
