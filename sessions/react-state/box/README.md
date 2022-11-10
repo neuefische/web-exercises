@@ -2,7 +2,7 @@
 
 In the [`src/App.js`](./src/App.js) file, there is a button which toggles an `isActive` variable. You can check the console for its value after clicking the button.
 
-Depending on the `isActive`variable, a class called "box--active" is added to the `<div>` which should then change the `<div>`'s color.
+Depending on the `isActive` variable, a class called `box--active` is added to the `<div>` which should then change the `<div>`'s color.
 
 However, the color stays the same because React is not informed to rerender the App.
 
