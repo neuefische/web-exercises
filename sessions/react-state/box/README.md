@@ -14,7 +14,7 @@ You can use the following hints as guideline:
 
 - Instead of `let`, consider the `useState` function.
   - Don't forget to import the function.
-  - Its initial value should be `false`.
+  - The initial state value should be `false`.
 - Inside of the `handleClick` function, use the `set` function of the `useState` hook to set the new value of the `isActive` state.
 
 You should now be able to toggle the boxes color with the button! 🎉
