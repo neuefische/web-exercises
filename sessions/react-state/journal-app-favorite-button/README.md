@@ -8,7 +8,7 @@ Now that you've setup your Journal App Project, it's time to include our _favori
 
 Locate the component with the favorite button. Here it's called `FavoriteButton`.
 
-The component has a `isFavorite` boolean variable. This variable is used to determine if the star icon should be filled in or not.
+The component has an `isFavorite` boolean variable. This variable is used to determine if the star icon should be filled in or not.
 
 - Make `isFavorite` a state variable.
 - This state variable needs to be toggled when the user clicks the favorite button.
