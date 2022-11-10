@@ -23,6 +23,12 @@ You should now be able to toggle the boxes color with the button! 🎉
 
 Can you use your newly created state to toggle the text on the button itself between "Activate" and "Deactivate"?
 
+## Hacker Bonus
+
+Check the console and pay attention to the logged value of `isActive`. You will notice, that `console.log()` doesn't log the value you set with the `set` function one line before. If you set `true` it will log `false` and vice versa. This is not a bug, but the fundamental way how state in React works.
+
+Can you explain why this happens?
+
 ## Notes
 
 - There is no need to change anything in the return statement of the `App` component (except for the bonus task).
