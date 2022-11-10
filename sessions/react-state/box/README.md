@@ -8,7 +8,7 @@ However, the color stays the same because React is not informed to re-render the
 
 ## Task
 
-Refactor the code so that React rerenders the `App` component when `isActive` is changed.
+Refactor the code so that React re-renders the `App` component when `isActive` is changed.
 
 You can use the following hints as guideline:
 
