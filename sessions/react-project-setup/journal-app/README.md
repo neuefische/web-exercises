@@ -51,7 +51,7 @@ import "./EntryForm.css";
 
 ## Resources
 
-⬇️ You can [**download the design files and assets for the Journal App here**](./resources.zip).
+⬇️ You can [**download the design files and assets for the Journal App here**](./resources.zip?raw=true).
 
 - Unzip the file to get the `resources` folder.
 - You can use the `journal_app_design.png` file as a reference for the design.
