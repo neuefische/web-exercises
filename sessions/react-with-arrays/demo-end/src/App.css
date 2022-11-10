@@ -1,0 +1,19 @@
+.App {
+  margin: 0 auto;
+  max-width: 360px;
+  padding: 1rem;
+}
+
+.App__title {
+  margin: 0 0 1rem 0;
+  padding: 0.5rem;
+  background-color: var(--color-bright);
+  color: var(--color-dark);
+  text-align: center;
+}
+
+.App__pokemons {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
