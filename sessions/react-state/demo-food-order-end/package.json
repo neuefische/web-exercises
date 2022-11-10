@@ -1,7 +1,7 @@
 {
-  "name": "react-basics_demo-render",
+  "name": "react-state_demo-food-order-end",
   "version": "0.0.0-unreleased",
-  "description": "React Render Demo",
+  "description": "React State: Demo Food Order End",
   "main": "src/index.js",
   "dependencies": {
     "react": "18.2.0",
