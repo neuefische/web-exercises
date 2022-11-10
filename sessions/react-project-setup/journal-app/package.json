@@ -1,0 +1,9 @@
+{
+  "name": "react-project-setup_journal-app",
+  "version": "0.0.0-unreleased",
+  "description": "React Project Setup: Journal App",
+  "main": "n.a.",
+  "nf": {
+    "template": "empty"
+  }
+}
