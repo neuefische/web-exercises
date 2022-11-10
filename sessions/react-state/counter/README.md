@@ -13,8 +13,8 @@ Refactor the code so that it features React state and makes use of it. Declare a
 You can use the following hints as a guideline:
 
 - `let` doesn't seem to be the appropriate way to declare a variable in this instance.
-- Is there a React Hook you can use instead?
-  - Make sure to import said hook.
+- Is there a built-in React function you can use instead?
+  - Make sure to import said function.
 - At present, the `<button>`s' event handler is simply logging an emoji to the console.
   - Clearly, the event handler should be handling a different type of functionality.
 
