@@ -1,9 +1,20 @@
-.Button {
-  all: unset;
+.button {
+  appearance: none;
   width: fit-content;
-  padding: 1rem 2.5rem;
-  background: var(--nemo);
-  font-weight: bold;
+  padding: 12px 40px;
+  background: var(--color-nemo);
+  font-weight: 700;
+  font-size: 16px;
   border-radius: 5px;
-  color: var(--foam);
+  border: none;
+  color: var(--color-foam);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--color-nemo-dark);
+}
+
+.button:active {
+  background-color: var(--color-nemo-mid);
 }

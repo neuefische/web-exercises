@@ -1,6 +1,6 @@
-.flex {
-  margin-block: 20px;
+.tabs {
   width: 100%;
   display: flex;
   justify-content: flex-start;
+  gap: 32px;
 }

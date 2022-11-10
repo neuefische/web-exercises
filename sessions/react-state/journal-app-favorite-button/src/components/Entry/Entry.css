@@ -1,37 +1,45 @@
-.entry-card {
-  width: 100%;
-  padding: 20px;
-  border-bottom: 1px solid var(--water);
-}
-.entry-card:last-child {
-  width: 100%;
-  padding: 20px;
-  border: none;
+.entry {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
-.entry-card__date-container {
+.entry__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.entry__date {
   display: flex;
   justify-content: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
 }
 
-.entry-card__button-container {
-  width: 100%;
+.entry__motto-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.button--checked {
+.entry__motto {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.entry__notes {
+  margin: 0;
+  font-size: 14px;
+}
+
+.entry__favorite-button {
   appearance: none;
-}
-
-.button--checked::before {
-  content: "🧡";
-}
-
-.button--unchecked {
-  appearance: none;
-}
-
-.button--unchecked::before {
-  content: "🤍";
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
 }

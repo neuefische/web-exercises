@@ -1,28 +1,19 @@
-import { ReactComponent as StarFilled } from "./star-filled.svg";
-import { ReactComponent as Star } from "./star.svg";
-
+import FavoriteButton from "../FavoriteButton";
 import "./Entry.css";
 
 function Entry({ motto, notes, date }) {
-  const isFavorite = false;
-
   return (
-    <article className="entry-card">
-      <div className="entry-card__date-container">
-        <span>{date}</span>
+    <article className="entry">
+      <div className="entry__date">{date}</div>
+      <div className="entry__content">
+        <div className="entry__motto-container">
+          <h2 className="entry__motto">
+            <q>{motto}</q>
+          </h2>
+          <FavoriteButton />
+        </div>
+        <p className="entry__notes">{notes}</p>
       </div>
-      <div className="entry-card__button-container">
-        <h3>{motto}</h3>
-        <button
-          onClick={() => {
-            console.log("favorite button clicked");
-          }}
-        >
-          {isFavorite ? <StarFilled /> : <Star />}
-        </button>
-      </div>
-
-      <p>{notes}</p>
     </article>
   );
 }
