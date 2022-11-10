@@ -7,10 +7,10 @@ carefully. */
 :root {
   /* Color Variables */
 
-  --nemo: #ff4a11;
-  --granite: #252629;
-  --water: #f3f5f9;
-  --foam: #ffffff;
+  --color-nemo: #ff4a11;
+  --color-granite: #252629;
+  --color-water-10: #f3f5f9;
+  --color-foam: #ffffff;
 }
 
 *,
@@ -24,15 +24,15 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
-  background-color: var(--foam);
+  background-color: var(--color-foam);
 }
 
 h1 {
   font-size: 3rem;
   width: 80%;
   margin: 20px auto;
-  color: var(--nemo);
-  text-shadow: 4px 4px var(--granite);
+  color: var(--color-nemo);
+  text-shadow: 4px 4px var(--color-granite);
 }
 
 .playground {
@@ -49,7 +49,7 @@ h1 {
 
 .section {
   width: 100%;
-  background-color: var(--water);
+  background-color: var(--color-water-10);
   padding: 20px;
 }
 

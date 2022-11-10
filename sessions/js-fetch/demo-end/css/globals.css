@@ -1,8 +1,8 @@
 :root {
-  --nemo: #ff4a11;
-  --granite: #252629;
-  --water: #f3f5f9;
-  --foam: #ffffff;
+  --color-nemo: #ff4a11;
+  --color-granite: #252629;
+  --color-water-10: #f3f5f9;
+  --color-foam: #ffffff;
 
   --gap: 20px;
 }
@@ -21,7 +21,7 @@ body {
 }
 
 h1 {
-  color: var(--nemo);
-  text-shadow: 2px 2px var(--granite);
+  color: var(--color-nemo);
+  text-shadow: 2px 2px var(--color-granite);
   margin: 0.5rem 0 0 0.5rem;
 }
