@@ -1,0 +1,16 @@
+.App {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 8rem 1fr 8rem;
+}
+
+.App__main {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
