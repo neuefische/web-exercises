@@ -4,7 +4,7 @@ In this challenge you will begin building a journal app from scratch. We will co
 
 ## Create the Journal App
 
-Create a new React project using Create React App called `journal`.
+Create a new React project called `journal` using Create React App.
 
 > 📙 Read the [Create React App documentation](https://create-react-app.dev/docs/getting-started) to
 > learn how to create a new project using `npx`.
