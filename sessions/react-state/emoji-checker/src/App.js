@@ -15,7 +15,9 @@ export default function App() {
             console.log("Update Code!");
           }}
         >
-          🐡
+          <span role="img" aria-label="Pufferfish">
+            🐡
+          </span>
         </button>
         <button
           type="button"
@@ -23,7 +25,9 @@ export default function App() {
             console.log("Update Code!");
           }}
         >
-          🐋
+          <span role="img" aria-label="Whale">
+            🐋
+          </span>
         </button>
         <button
           type="button"
@@ -31,7 +35,9 @@ export default function App() {
             console.log("Update Code!");
           }}
         >
-          🐠
+          <span role="img" aria-label="Clownfish">
+            🐠
+          </span>
         </button>{" "}
       </div>
 
