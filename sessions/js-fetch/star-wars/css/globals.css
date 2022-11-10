@@ -1,12 +1,12 @@
 :root {
-  --nemo: #ff4a11;
-  --granite: #252629;
-  --water: #f3f5f9;
-  --foam: #ffffff;
+  --color-nemo: #ff4a11;
+  --color-granite: #252629;
+  --color-water-10: #f3f5f9;
+  --color-foam: #ffffff;
 }
 
 body {
-  background-color: var(--foam);
+  background-color: var(--color-foam);
 }
 
 main {

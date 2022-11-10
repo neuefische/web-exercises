@@ -1,0 +1,6 @@
+.Button {
+  all: unset;
+  padding: 1rem 2rem;
+  background: #61dafb;
+  font-weight: bold;
+}

@@ -1,5 +1,5 @@
 .status {
-  border: 1px solid var(--granite);
+  border: 1px solid var(--color-granite);
   border-radius: 5px;
   padding: 1rem;
   display: flex;
@@ -9,8 +9,8 @@
 
 .status__check-button {
   border: none;
-  background-color: var(--nemo);
-  color: var(--foam);
+  background-color: var(--color-nemo);
+  color: var(--color-foam);
   padding: 0.5rem;
 }
 

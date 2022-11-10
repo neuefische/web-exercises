@@ -10,8 +10,8 @@
 .search-bar {
   padding: 14px 20px 14px 30px;
   border-radius: 999px;
-  background-color: var(--granite);
-  color: var(--water);
+  background-color: var(--color-granite);
+  color: var(--color-water-10);
   display: grid;
   grid-template-columns: 1fr 24px;
   gap: 10px;
@@ -21,15 +21,15 @@
 .search-bar__input {
   background-color: transparent;
   border: none;
-  color: var(--water);
-  border-bottom: 2px solid var(--granite);
+  color: var(--color-water-10);
+  border-bottom: 2px solid var(--color-granite);
   font-size: 1rem;
   width: 100%;
   border-radius: 2px;
 }
 
 .search-bar__input:focus {
-  outline: var(--nemo) 2px solid;
+  outline: var(--color-nemo) 2px solid;
   outline-offset: 3px;
 }
 
