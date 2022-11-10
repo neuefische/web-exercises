@@ -1,0 +1,25 @@
+.Header {
+  background: #20232a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Header__inner {
+  width: 100%;
+  max-width: 60rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Header__logo {
+  width: 6rem;
+}
+
+.Header__navigation {
+  display: flex;
+  gap: 2rem;
+  padding: 0 2rem 0 0;
+}
