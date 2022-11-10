@@ -11,22 +11,20 @@ Create an array 'fruits'. It should contain at least 5 objects which all have th
 ```
 {
   id: 1337,
-  name: 'Banana',
+  name: '🍌 Banana',
   color: 'yellow',
 }
 ```
 
-  - Hint: the ids need to be unique.
-  
+- Hint: the ids need to be unique.
+
 Use the array method `map` to create a Card component for each fruit in your array. Use the name of each object as the text of the component and the id as the key prop.
 
 ## Bonus
 
-Change the `Card` component so that it receives a `color` prop and set the border color of the Card to this value. Use the color property of each fruit object for this prop.
+Change the `Card` component so that it receives a `color` prop and set the background-color of the Card to this value. Use the color property of each fruit object for this prop.
 
-## Notes
-
-- You only have to touch the [`src/App.js`](./src/App.js) file.
+- Hint: check the [`src/components/Card.css`](./src/components/Card.css) file for some cues as to how to handle having the colors change automatically
 
 ## Development
 

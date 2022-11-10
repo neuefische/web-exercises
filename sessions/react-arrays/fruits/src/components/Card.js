@@ -1,5 +1,5 @@
 import "./Card.css";
 
-export default function Card({ text }) {
-  return <p className="Card">{text}</p>;
+export default function Card({ name }) {
+  return <p className="Card">{name}</p>;
 }
