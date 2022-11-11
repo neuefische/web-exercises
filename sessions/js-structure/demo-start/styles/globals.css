@@ -1,8 +1,8 @@
 :root {
-  --nemo: #ff4a11;
-  --granite: #252629;
-  --water: #f3f5f9;
-  --foam: #ffffff;
+  --color-nemo: #ff4a11;
+  --color-granite: #252629;
+  --color-water-10: #f3f5f9;
+  --color-foam: #ffffff;
 }
 
 *,
@@ -19,14 +19,14 @@ body {
 
 button {
   border: none;
-  background-color: var(--nemo);
-  color: var(--foam);
+  background-color: var(--color-nemo);
+  color: var(--color-foam);
   padding: 0.5rem;
 }
 
 button:not(:disabled):hover {
-  background-color: var(--granite);
-  color: var(--water);
+  background-color: var(--color-granite);
+  color: var(--color-water-10);
 }
 
 button:disabled {

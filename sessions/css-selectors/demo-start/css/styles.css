@@ -5,10 +5,10 @@ higher. I'm frequently used to store global CSS variables. */
 :root {
   /* Color Variables */
 
-  --nemo: #ff4a11;
-  --granite: #252629;
-  --water: #f3f5f9;
-  --foam: #ffffff;
+  --color-nemo: #ff4a11;
+  --color-granite: #252629;
+  --color-water-10: #f3f5f9;
+  --color-foam: #ffffff;
 
   /* Unit Variables */
   --gap: 20px;
@@ -30,8 +30,8 @@ body {
 }
 
 h1 {
-  color: var(--nemo);
-  text-shadow: 3px 3px var(--granite);
+  color: var(--color-nemo);
+  text-shadow: 3px 3px var(--color-granite);
 }
 
 h1,
