@@ -9,8 +9,8 @@ function Card({ user }) {
         <Tag tag={user.roles[0]} />
       </ul>
       <p>{user.about}</p>
-      <Button>contact</Button>
-      <Button buttonType="danger">delete</Button>
+      <Button>edit</Button>
+      <Button buttonType="danger">invoice</Button>
     </article>
   );
 }
