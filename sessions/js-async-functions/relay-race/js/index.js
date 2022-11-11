@@ -1,9 +1,5 @@
 console.clear();
 
-const runnerKeyframes = [{ translate: "0 0" }, { translate: "180px 0" }];
-
-const runnerAnimation = { duration: 2000, fill: "forwards" };
-
 const runner1 = document.querySelector('[data-js="runner"]:nth-of-type(1)');
 const runner2 = document.querySelector('[data-js="runner"]:nth-of-type(2)');
 const runner3 = document.querySelector('[data-js="runner"]:nth-of-type(3)');
@@ -21,14 +17,10 @@ startRaceButton.addEventListener("click", () => {
    * `runner2` and `runner3`.
    *
    * Hint 2:
-   * Use `.animate(runnerKeyframes, runnerAnimation)` on the runner elements
-   * to animate the runners.
-   * You may need to store the result of this function call inside a variable
-   * to access its properties.
+   * Use `animateRunner(runnerX)` to animate the runners.
    *
    * Hint 3:
-   * The animate function returns an animation object that has a `finished`
-   * property that is a promise which resolves when the animation is done.
+   * The `animateRunner` function returns a promise which resolves when the animation is done.
    **/
 
   // --v-- write your code here --v--
@@ -37,3 +29,15 @@ startRaceButton.addEventListener("click", () => {
 
   startRaceButton.removeAttribute("disabled");
 });
+
+/**
+ * This is a wrapper around the Web Animations API
+ * that allows us to use async/await to animate a ball.
+ * It returns a promise that resolves when the animation is finished.
+ */
+function animateRunner(runnerElement) {
+  return runnerElement.animate(
+    [{ translate: "0 0" }, { translate: "180px 0" }],
+    { duration: 2000, fill: "forwards" }
+  ).finished;
+}

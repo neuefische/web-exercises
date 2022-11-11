@@ -2,7 +2,7 @@
 
 ## Task
 
-Animate the relay runners along the race track using the `animate()` function.
+Animate the relay runners along the race track using the `animateRunner()` function.
 
 The first runner can start immediately after the "🏁 Start race" button was clicked.
 
