@@ -1,7 +1,7 @@
 console.clear();
 
 function handleUserLogin(onSuccess) {
-  // Naming the callback function `onSuccess` will be clear by the fourth challenge!
+  // You might wonder why this function is called `onSuccess`. This will become clear by the fourth challenge! 🤞
   onSuccess();
 }
 
