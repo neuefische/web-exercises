@@ -14,9 +14,9 @@ describe("Mapping Challenge", () => {
   });
   test("questionsAndAnswersTogether", () => {
     expect(questionsAndAnswersTogether).toEqual([
-      '"How often can I use <header>?" - "As often as you like."',
-      '"How often can I use <aside>?" - "As often as you like."',
-      '"On which types can I use destructuring assignment?" - "On Objects and Arrays"',
+      "How often can I use <header>? - As often as you like.",
+      "How often can I use <aside>? - As often as you like.",
+      "On which types can I use destructuring assignment? - On Objects and Arrays",
     ]);
   });
   test("questionAndAnswer", () => {
