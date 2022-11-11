@@ -1,0 +1,19 @@
+.Card {
+  width: 70%;
+  padding: 20px;
+  margin-inline: auto;
+  margin-block: 20px;
+  background-color: var(--color-water);
+}
+
+.Card--green {
+  background-color: lightgreen;
+}
+
+.Card--red {
+  background-color: lightcoral;
+}
+
+.Card--yellow {
+  background-color: lightyellow;
+}

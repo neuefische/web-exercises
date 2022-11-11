@@ -1,0 +1,27 @@
+{
+  "name": "react-arrays-fruits-challenge",
+  "version": "0.0.0-unreleased",
+  "description": "",
+  "main": "src/index.js",
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-scripts": "5.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@babel/runtime": "7.20.0"
+  },
+  "nf": {
+    "template": "react-minimal"
+  },
+  "keywords": []
+}
