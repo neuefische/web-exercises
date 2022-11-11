@@ -1,4 +1,4 @@
-# React State: Journal App Favorite Button
+# React State: Journal App Entries Array
 
 Currently our journal entries are just static JSX. We now get a data array of journal entries. We want to render each entry in the `EntriesSection` component.
 
