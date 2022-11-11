@@ -19,7 +19,6 @@ In both cases your callback function should log the following text to the consol
    - as a regular function: ` function() {...}`
 
 3. Implement the logic from the previous from "showWelcomeMessage" inside this anonymous function.
-4. Can you spot a difference in the behavior of the two ways you passed the callback functions to "handleUserLogin"?
 
 Please switch to the [`js/index.js`](./js/index.js) file to start the challenge.
 
