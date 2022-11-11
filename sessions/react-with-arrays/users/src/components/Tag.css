@@ -1,0 +1,10 @@
+.Tag {
+  padding: 5px 14px;
+  border-radius: 999px;
+  background-color: var(--color-granite);
+  color: var(--color-foam);
+}
+
+.Tag--highlight {
+  color: var(--color-nemo);
+}
