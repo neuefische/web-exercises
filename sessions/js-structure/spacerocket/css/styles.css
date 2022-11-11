@@ -1,10 +1,10 @@
 :root {
   /* Color Variables */
-  --nemo: #ff4a11;
-  --nemo-dark: #e5430f;
-  --granite: #252629;
-  --water: #f3f5f9;
-  --foam: #ffffff;
+  --color-nemo: #ff4a11;
+  --color-nemo-dark: #e5430f;
+  --color-granite: #252629;
+  --color-water-10: #f3f5f9;
+  --color-foam: #ffffff;
 
   --error: #e7acacc6;
   --success: #9cebbcc6;
@@ -47,8 +47,8 @@ body {
   grid-area: intro;
   padding: 1rem;
   border-radius: 8px;
-  background-color: var(--granite);
-  color: var(--foam);
+  background-color: var(--color-granite);
+  color: var(--color-foam);
   text-align: left;
 }
 
@@ -56,14 +56,14 @@ body {
   grid-area: manual;
   padding: 1rem;
   border-radius: 8px;
-  background-color: var(--water);
+  background-color: var(--color-water-10);
 }
 
 .info__briefing {
   grid-area: briefing;
   padding: 1rem;
   border-radius: 8px;
-  background-color: var(--water);
+  background-color: var(--color-water-10);
 }
 
 .game {
@@ -148,15 +148,15 @@ body {
 .button {
   appearance: none;
   border: none;
-  background-color: var(--nemo);
-  color: var(--foam);
+  background-color: var(--color-nemo);
+  color: var(--color-foam);
   text-align: center;
   height: 100%;
   position: relative;
 }
 
 button:active {
-  background-color: var(--nemo-dark);
+  background-color: var(--color-nemo-dark);
 }
 
 .visual {
@@ -187,7 +187,7 @@ button:active {
   text-align: center;
   width: max-content;
   padding: 1rem;
-  color: var(--foam);
+  color: var(--color-foam);
   opacity: 0.9;
   max-width: 95vw;
   animation: fadeIn 0.75s;
@@ -198,8 +198,8 @@ button:active {
   position: absolute;
   top: 12px;
   right: 12px;
-  background-color: var(--granite);
-  color: var(--foam);
+  background-color: var(--color-granite);
+  color: var(--color-foam);
   text-align: center;
   padding: 1rem;
   border-radius: 8px;
@@ -213,7 +213,7 @@ button:active {
   width: 400px;
   height: 200px;
   border-radius: 8px;
-  color: var(--granite);
+  color: var(--color-granite);
   padding: 12px 18px;
   animation: bounceIn 1s;
   animation-fill-mode: both;
@@ -245,8 +245,8 @@ button:active {
   width: 100px;
   height: 50px;
   border-radius: 8px;
-  background-color: var(--nemo);
-  color: var(--foam);
+  background-color: var(--color-nemo);
+  color: var(--color-foam);
   animation: zoomOut 1s;
   animation-delay: calc((var(--rocket-countdown) * 1s) + 0.8s);
   animation-fill-mode: both;

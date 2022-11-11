@@ -1,11 +1,11 @@
 .button {
-  background-color: var(--water);
+  background-color: var(--color-water-10);
   border: none;
-  color: var(--granite);
+  color: var(--color-granite);
   font-size: 1.2rem;
   transition: 0.3s ease;
 }
 
 .button:hover {
-  background-color: var(--nemo);
+  background-color: var(--color-nemo);
 }
