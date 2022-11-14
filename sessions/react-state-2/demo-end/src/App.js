@@ -1,5 +1,7 @@
 import { useState } from "react";
 import SearchForm from "./components/SearchForm";
+// import SearchForm from "./components/SearchFormControlled";
+import SearchResults from "./components/SearchResults";
 import "./styles.css";
 
 export default function App() {
@@ -12,12 +14,8 @@ export default function App() {
   return (
     <main>
       <h1>Search</h1>
-      <SearchForm onSearch={handleSearch} />
-      <h2>
-        {searchTerm
-          ? `Your result for "${searchTerm}"`
-          : "Please enter a search term"}
-      </h2>
+      <SearchForm searchTerm={searchTerm} onSearch={handleSearch} />
+      <SearchResults searchTerm={searchTerm} />
     </main>
   );
 }

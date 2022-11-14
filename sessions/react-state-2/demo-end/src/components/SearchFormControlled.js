@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function SearchForm({ onSearch }) {
+export default function SearchForm({ searchTerm, onSearch }) {
   const [searchFieldValue, setSearchFieldValue] = useState("");
 
   function handleSubmit(event) {
@@ -10,17 +10,26 @@ export default function SearchForm({ onSearch }) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="searchTerm">Enter search term:</label>
-      <input
-        name="searchTerm"
-        id="searchTerm"
-        value={searchFieldValue}
-        onChange={(event) => {
-          setSearchFieldValue(event.target.value);
-        }}
-      />
-      <button>🔍 Search</button>
-    </form>
+    <>
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="searchTerm">Search term:</label>
+        <input
+          name="searchTerm"
+          id="searchTerm"
+          value={searchFieldValue}
+          onChange={(event) => {
+            setSearchFieldValue(event.target.value);
+          }}
+        />
+        <button>
+          <span role="img">🔍</span> Search
+        </button>
+      </form>
+      <h2>
+        {searchTerm
+          ? `You searched for "${searchTerm}"`
+          : "Please enter a search term"}
+      </h2>
+    </>
   );
 }

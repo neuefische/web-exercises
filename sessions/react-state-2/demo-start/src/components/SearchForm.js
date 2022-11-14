@@ -1,4 +1,6 @@
 export default function SearchForm() {
+  const searchTerm = "";
+
   function handleSubmit(event) {
     event.preventDefault();
 
@@ -6,10 +8,19 @@ export default function SearchForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="searchTerm">Enter search term:</label>
-      <input name="searchTerm" id="searchTerm" />
-      <button>🔍 Search</button>
-    </form>
+    <>
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="searchTerm">Search term:</label>
+        <input name="searchTerm" id="searchTerm" />
+        <button>
+          <span role="img">🔍</span> Search
+        </button>
+      </form>
+      <h2>
+        {searchTerm
+          ? `You searched for "${searchTerm}"`
+          : "Please enter a search term"}
+      </h2>
+    </>
   );
 }

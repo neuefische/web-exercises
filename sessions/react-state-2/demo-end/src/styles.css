@@ -15,19 +15,14 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: top;
   gap: 3rem;
-}
-
-button,
-input,
-label {
-  font-size: larger;
+  padding-top: 3rem;
 }
 
 button,
 input {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
 }
 
 form {
