@@ -10,7 +10,7 @@ Fortunately, there is another solution!
 
 ## Task
 
-Fix the `handleIncrement` function so that it increments the `count` state by 3. Make sure to use `setCount` three times.
+Fix the `handleIncrement` function so that it increments the `count` state by 3. For the sake of this challenge, make sure to still call `setCount` three times, incrementing by 1 each time.
 
 You can use the following hint as guideline:
 
