@@ -26,10 +26,10 @@ export default function App() {
       <button type="button" className="button" onClick={() => setShowMessage(false)}>
         Hide Message
       </button>
-      <h2>{message}</h2>
-      <button className="button" onClick={() => setMessage("Hello, world!")}>
-        Set Message to &quot;Hello, world!&quot;
+      <button type="button" className="button" onClick={() => setMessage("The secret of Monkey Island is ... wait, no spoilers!")}>
+        Now really show the message!
       </button>
+      <h2>{message}</h2>
     </div>
   );
 }
