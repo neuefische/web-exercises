@@ -8,7 +8,7 @@ export default function App() {
     return (
       <div className="container">
         <h1>Message is hidden 😱</h1>
-        <button className="button" onClick={() => setShowMessage(true)}>
+        <button type="button" className="button" onClick={() => setShowMessage(true)}>
           Show Message
         </button>
       </div>
