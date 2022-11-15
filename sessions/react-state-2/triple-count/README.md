@@ -4,7 +4,7 @@ The [`src/components/Counter.js`](./src/components/Counter.js) file offers a sim
 
 Clicking the button should increment the `count` by 3. Currently, however, it's incremented by 1, although the `handleIncrement` function calls `setCount(count + 1)` three times.
 
-Of course, you could replace the two `setCount` calls by one `setCount(count + 3)`, but there are situations where this is not useful or even possible.
+Of course, you could replace the two `setCount` calls by one `setCount(count + 3)`, but let's imagine that this is not possible.
 
 Fortunately, there is another solution!
 
