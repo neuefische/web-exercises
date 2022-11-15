@@ -2,7 +2,8 @@ export default function SearchForm({ searchTerm, onSearch }) {
   function handleSubmit(event) {
     event.preventDefault();
 
-    onSearch(event.target.searchTerm.value);
+    const formElements = event.target.elements;
+    onSearch(formElements.searchTerm.value);
   }
 
   return (
@@ -11,7 +12,10 @@ export default function SearchForm({ searchTerm, onSearch }) {
         <label htmlFor="searchTerm">Search term:</label>
         <input name="searchTerm" id="searchTerm" />
         <button>
-          <span role="img" aria-label="search icon">🔍</span> Search
+          <span role="img" aria-label="search icon">
+            🔍
+          </span>{" "}
+          Search
         </button>
       </form>
       <h2>
