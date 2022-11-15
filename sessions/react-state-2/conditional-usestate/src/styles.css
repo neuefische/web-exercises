@@ -30,6 +30,7 @@ body {
   border: none;
   padding-inline: 20px;
   padding-block: 10px;
+  margin-block: 1rem;
   background-color: var(--granite);
   color: var(--foam);
   font-size: 1.5rem;

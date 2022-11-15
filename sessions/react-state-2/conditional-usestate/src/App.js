@@ -13,20 +13,35 @@ export default function App() {
             😱
           </span>
         </h1>
-        <button type="button" className="button" onClick={() => setShowMessage(true)}>
+        <button
+          type="button"
+          className="button"
+          onClick={() => setShowMessage(true)}
+        >
           Show Message
         </button>
       </div>
     );
   }
+
   const [message, setMessage] = useState("Secret message incoming...");
 
   return (
     <div className="container">
-      <button type="button" className="button" onClick={() => setShowMessage(false)}>
+      <button
+        type="button"
+        className="button"
+        onClick={() => setShowMessage(false)}
+      >
         Hide Message
       </button>
-      <button type="button" className="button" onClick={() => setMessage("The secret of Monkey Island is ... wait, no spoilers!")}>
+      <button
+        type="button"
+        className="button"
+        onClick={() =>
+          setMessage("The secret of Monkey Island is ... wait, no spoilers!")
+        }
+      >
         Now really show the message!
       </button>
       <h2>{message}</h2>
