@@ -7,7 +7,12 @@ export default function App() {
   if (!showMessage) {
     return (
       <div className="container">
-        <h1>Message is hidden 😱</h1>
+        <h1>
+          Message is hidden{" "}
+          <span role="img" aria-label="scream">
+            😱
+          </span>
+        </h1>
         <button type="button" className="button" onClick={() => setShowMessage(true)}>
           Show Message
         </button>
