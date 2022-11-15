@@ -19,7 +19,7 @@ You can use the following hints as guideline:
 
 ## Bonus
 
-When submitting the form, the form fields should be reset and the `name` field should be focussed.
+When submitting the form, the form fields should be reset and the `holiday` field should be focussed.
 
 ## Notes
 
