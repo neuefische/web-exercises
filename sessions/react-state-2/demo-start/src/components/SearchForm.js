@@ -13,7 +13,10 @@ export default function SearchForm() {
         <label htmlFor="searchTerm">Search term:</label>
         <input name="searchTerm" id="searchTerm" />
         <button>
-          <span role="img" aria-label="search icon">🔍</span> Search
+          <span role="img" aria-label="search icon">
+            🔍
+          </span>{" "}
+          Search
         </button>
       </form>
       <h2>

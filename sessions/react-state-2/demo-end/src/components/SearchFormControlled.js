@@ -22,7 +22,10 @@ export default function SearchForm({ searchTerm, onSearch }) {
           }}
         />
         <button>
-          <span role="img">🔍</span> Search
+          <span role="img" aria-label="search icon">
+            🔍
+          </span>{" "}
+          Search
         </button>
       </form>
       <h2>
