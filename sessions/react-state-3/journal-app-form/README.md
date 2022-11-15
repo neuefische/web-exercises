@@ -1,52 +1,62 @@
 # React State: Journal App Form
 
-Currently our journal entries are just static JSX. We now get a data array of journal entries. We want to render each entry in the `EntriesSection` component.
+Currently our journal entries are just stored in an array. We want to store this array in state to add new entries to add.
 
 > 💡 You can use this template as a starting point. But if you are far enough along with your own Journal App, please use that instead.
 
 ## Task
 
-Locate the component that renders your journal entries. Here it's called `EntriesSection`.
+Locate the component with the array containing all journal entries. Here it is the variable `entries` in the `EntriesSection` component.
 
-Copy the `entries` array below into the component that renders your journal entries.
+- Rename the variable to `initialEntries` to reflect this is the initial value for the state.
+- Create a new state called `entries` with `initialEntries` as initial value.
+
+The component rendering the entries and the component with the form needs to share this state of entries. We need to lift the state up to the first common ancestor of these two components. In the template it is the `App` component.
+
+- Update the function declaration of the `EntriesSection` component to accept new a prop called `entries`.
+- Move the `initialEntries` and the state to the common ancestor, like `App`.
+- Pass the `entries` state via the `entries` prop down to the `EntriesSection`.
+
+No we can wire up the form to add entries to thr state.
+
+Locate the component with the form. Here it is called `EntryForm`.
+
+- Update this component's function declaration to accept new a prop, like `onAddEntry`. The prop should be used for an event that you trigger, when a new journal entry should be added.
+- Write a function `handleSubmit` and pass it to the `onSubmit` prop pf the `form` JSX tag.
+- In `handleSubmit` make read the value of all input fields. (Hint: you can use `new FormData()` for this)
+- Don't forget to prevent the default form behavior when submitting.
+- In `handleSubmit` create an object with the keys `motto` and `notes` containing the field's values.
+- Call `onAddEntry` and pass the object
+- Make sure to reset the form after submitting.
+
+Locate the component with the shared state (the `App` component in this template).
+
+- Create a function called `handleAddEntry`
+- The function should accept a parameter called `newEntry`, which should be an object describing the new entry.
+
+Your new journal entry needs a date.
+
+- Create a string containing the date in the desired format with the following snippet
+- Add the key `date` to the object describing the new entry.
 
 ```js
-const entries = [
-  {
-    id: 1000,
-    date: "Feb 5th, 2025",
-    motto: "We are in a state of chaos",
-    notes:
-      "Today I learned about React State. It was fun! I can't wait to learn more.",
-  },
-  {
-    id: 999,
-    date: "Feb 4th, 2025",
-    motto: "Props, Props, Props",
-    notes:
-      "Today I learned about React Props. Mad props to everyone who understands this!",
-  },
-  {
-    id: 998,
-    date: "Feb 3rd, 2025",
-    motto: "How to nest components online fast",
-    notes:
-      "Today I learned about React Components and how to nest them like a pro. Application design is so much fun!",
-  },
-  {
-    id: 997,
-    date: "Feb 2nd, 2025",
-    motto: "I'm a React Developer",
-    notes: "My React-ion when I learned about React: 😍",
-  },
-];
+const date = new Date().toLocaleDateString("en-us", { dateStyle: "medium" });
 ```
 
-- Map over the `entries` array and render each entry in the `EntriesSection` component.
-- Remember to use the `key` prop when mapping over the array.
-- If you are using this template: How can you render a `<Divider />` component between each entry?
-  - Don't break the flexbox layout (a `Fragment` might help)
-  - Avoid having a divider below the last or above the first entry
+Each entry in the `entries` array need an ID, a unique identifier.
+
+- Install the npm package `nanoid`.
+- Call the function `nanoid()` to generate a new ID.
+- Add the key `id` to the object describing the new entry.
+
+```sh
+npm install nanoid
+```
+
+- Call the `setEntries` function and insert the new entry at the beginning into the array
+- Pass the `handleAddEntry` function with the prop `onAddEntry` to the `EntryForm` component
+
+Done! You can add new entries to your journal now 📝
 
 ## Development
 
