@@ -13,7 +13,7 @@ Switch to the [`src/App.js`](./src/App.js) file and refactor the `handleSubmit` 
 
 You can use the following hints as guideline:
 
-- Create a separate state for `name` and `date`.
+- Create a separate state for `holiday` and `date`.
 - The `handleSubmit` function sets both states with its corresponding values. Do you remember how to access the values of the target fields?
 - Don't forget to dynamically render the state variables in the output area.
 
