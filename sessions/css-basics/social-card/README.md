@@ -6,7 +6,10 @@ Your task is to recreate the following social card.
 - [ ] Link to the [`css/styles.css`](./css/styles.css) style sheet in the head of the [`index.html`](./index.html) file.
 - [ ] Style all elements on the page to recreate these social card styles.
 - [ ] Use class selectors to target the correct elements.
-- [ ] Find a fitting font on fonts.google.com and [import it into your project](https://www.digitalocean.com/community/tutorials/css-using-google-fonts).
+
+## Notes
+
+- Due to legal issues when using Google Fonts, please don't worry about the font right now.
 
 ## Development
 
