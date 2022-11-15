@@ -1,6 +1,6 @@
 # React State 2: Conditional useState
 
-If you try to render this challenge in the browser, you won't see the app, but an eslint error regarding the `useState` hook being conditionally rendered.
+Click the button "Show Message" to render a hidden message to the UI. The App will crash because there is a bug in the code. You won't see the hidden message, but an eslint error regarding the `useState` hook being conditionally rendered.
 
 ## Task
 
