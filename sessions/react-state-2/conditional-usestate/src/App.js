@@ -23,7 +23,7 @@ export default function App() {
 
   return (
     <div className="container">
-      <button className="button" onClick={() => setShowMessage(false)}>
+      <button type="button" className="button" onClick={() => setShowMessage(false)}>
         Hide Message
       </button>
       <h2>{message}</h2>
