@@ -15,8 +15,8 @@ export default function App() {
         aria-labelledby="favourite-holiday"
         onSubmit={handleSubmit}
       >
-        <label htmlFor="name">My Favourite Holiday: </label>
-        <input id="name" type="text" name="name" placeholder="e.g. Christmas" />
+        <label htmlFor="holiday">My Favourite Holiday: </label>
+        <input id="holiday" type="text" name="holiday" placeholder="e.g. Christmas" />
         <label htmlFor="date">Date: </label>
         <input id="date" type="date" name="date" />
         <button type="submit" className="form__submit-button">
