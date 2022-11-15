@@ -4,7 +4,7 @@ import Button from "../Button";
 function EntryForm() {
   return (
     <form className="entry-form">
-      <div className="entry-form__title">New Entry - Today, Feb 28, 2028</div>
+      <div className="entry-form__title">New Entry</div>
       <div className="entry-form__fields">
         <div className="entry-form__field">
           <label id="motto">Motto</label>
