@@ -73,8 +73,8 @@ function App() {
         <EntriesSection
           entries={filter === 'favorites' ? favoriteEntries : entries}
           filter={filter}
-          amountAllEntries={entries.length}
-          amountFavoriteEntries={favoriteEntries.length}
+          allEntriesCount={entries.length}
+          favoriteEntriesCount={favoriteEntries.length}
           onToggleFavorite={handleToggleFavorite}
           onShowAllEntries={handleShowAllEntries}
           onShowFavoriteEntries={handleShowFavoriteEntries}
