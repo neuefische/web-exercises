@@ -1,0 +1,24 @@
+import "./List.css";
+
+export default function List({ tags, onDeleteTag }) {
+  return (
+    <>
+      <h2>Your Tags:</h2>
+      <ul className="tag-list" role="list">
+        {tags.map((tag) => (
+          <li key={tag} className="tag-list__item">
+            <h3>{tag}</h3>
+            <button
+              className="tag-list__item-button"
+              type="button"
+              aria-label="delete list item"
+              onClick={() => onDeleteTag(tag)}
+            >
+              X
+            </button>
+          </li>
+        ))}
+      </ul>
+    </>
+  );
+}
