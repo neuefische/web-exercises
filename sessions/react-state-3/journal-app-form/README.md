@@ -6,10 +6,16 @@ Currently our journal entries are just stored in an array. We want to store this
 
 ## Task
 
+### Store the entries in state
+
 Locate the component with the array containing all journal entries. Here it is the variable `entries` in the `EntriesSection` component.
 
 - Rename the variable to `initialEntries` to reflect this is the initial value for the state.
 - Create a new state called `entries` with `initialEntries` as initial value.
+
+Nice, the entries are stored in state now 🚀
+
+### Life the state up
 
 The component rendering the entries and the component with the form needs to share this state of entries. We need to lift the state up to the first common ancestor of these two components. In the template it is the `App` component.
 
@@ -17,9 +23,11 @@ The component rendering the entries and the component with the form needs to sha
 - Move the `initialEntries` and the state to the common ancestor, like `App`.
 - Pass the `entries` state via the `entries` prop down to the `EntriesSection`.
 
-No we can wire up the form to add entries to the state.
+Great, the state lives in the right component now 🚀
 
-Locate the component with the form. Here it is called `EntryForm`.
+### Let the form trigger an exposed event
+
+We can wire up the form to add entries to the state now. Locate the component with the form. Here it is called `EntryForm`.
 
 - Update this component's function declaration to accept a new prop, like `onAddEntry`. The prop should be used for an event that you trigger when a new journal entry should be added.
 - Write a function `handleSubmit` and pass it to the `onSubmit` prop pf the `form` JSX tag.
@@ -29,7 +37,11 @@ Locate the component with the form. Here it is called `EntryForm`.
 - Call `onAddEntry` and pass the object
 - Make sure to reset the form after submitting.
 
-Locate the component with the shared state (the `App` component in this template).
+Nice job! The component can now inform their parent when an entry should be added 🚀
+
+### Updating the state to add new entries
+
+Let's add new entries to the state now. Locate the component with the shared state (the `App` component in this template).
 
 - Create a function called `handleAddEntry`
 - The function should accept a parameter called `newEntry`, which should be an object describing the new entry.
@@ -56,7 +68,7 @@ npm install nanoid
 - Call the `setEntries` function and insert the new entry at the beginning of the array
 - Pass the `handleAddEntry` function with the prop `onAddEntry` to the `EntryForm` component
 
-Done! You can add new entries to your journal now 📝
+Done! You can add new entries to your journal now 🚀 🚀 🚀
 
 ## Development
 
