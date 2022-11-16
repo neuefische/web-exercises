@@ -50,8 +50,8 @@ export default function EntriesSection() {
       <div className="entries-section__entries">
         {entries.map((entry, index) => (
           <Fragment key={entry.id}>
+            {index > 0 ? <Divider /> : null}
             <Entry date={entry.date} motto={entry.motto} notes={entry.notes} />
-            {index < entries.length - 1 ? <Divider /> : null}
           </Fragment>
         ))}
       </div>

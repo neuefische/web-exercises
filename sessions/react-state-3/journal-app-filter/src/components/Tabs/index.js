@@ -1,7 +1,5 @@
 import "./Tabs.css";
 
-function Flex({ children }) {
+export default function Tabs({ children }) {
   return <div className="tabs">{children}</div>;
 }
-
-export default Flex;

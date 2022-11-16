@@ -2,7 +2,7 @@ import "./FavoriteButton.css";
 import { ReactComponent as StarFilled } from "./star-filled.svg";
 import { ReactComponent as Star } from "./star.svg";
 
-function FavoriteButton({ id, isFavorite, onToggleFavorite }) {
+export default function FavoriteButton({ id, isFavorite, onToggleFavorite }) {
   return (
     <button
       className="favorite-button"
@@ -13,5 +13,3 @@ function FavoriteButton({ id, isFavorite, onToggleFavorite }) {
     </button>
   );
 }
-
-export default FavoriteButton;
