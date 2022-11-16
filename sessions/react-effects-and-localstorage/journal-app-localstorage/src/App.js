@@ -56,7 +56,7 @@ function App() {
   }
 
   function handleShowFavoriteEntries() {
-    setShowFavorites(true);
+    setFilter('favorites');
   }
 
   function handleShowAllEntries() {
