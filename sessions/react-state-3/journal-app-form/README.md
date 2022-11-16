@@ -17,7 +17,7 @@ The component rendering the entries and the component with the form needs to sha
 - Move the `initialEntries` and the state to the common ancestor, like `App`.
 - Pass the `entries` state via the `entries` prop down to the `EntriesSection`.
 
-No we can wire up the form to add entries to thr state.
+No we can wire up the form to add entries to the state.
 
 Locate the component with the form. Here it is called `EntryForm`.
 
