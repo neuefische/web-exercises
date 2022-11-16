@@ -1,0 +1,17 @@
+.animal-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-inline: 1rem;
+}
+
+.animal-list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--water);
+  border: 1px solid var(--granite);
+  padding: 0.25rem;
+}
