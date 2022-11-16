@@ -60,7 +60,7 @@ function App() {
   }
 
   function handleShowAllEntries() {
-    setShowFavorites(false);
+    setFilter('all');
   }
 
   const favoriteEntries = entries.filter((entry) => entry.isFavorite);
