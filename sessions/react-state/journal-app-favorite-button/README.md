@@ -1,4 +1,4 @@
-# React State: Journal App Favorite Button
+# React State: Journal App with Favorite Button State
 
 Now that you've setup your Journal App Project, it's time to include our _favorite_ feature: a button that allows you to favorite an entry.
 

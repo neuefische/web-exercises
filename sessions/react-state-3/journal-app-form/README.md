@@ -1,4 +1,4 @@
-# React State: Journal App Form
+# React State: Journal App with Form Submit
 
 Currently our journal entries are just stored in an array. We want to store this array in state to add new entries to add.
 

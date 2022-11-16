@@ -35,7 +35,7 @@
       "last 1 safari version"
     ]
   },
-  "description": "React State: Journal App Entries Array",
+  "description": "React with Arrays: Journal App with Entries Array",
   "nf": {
     "template": "cra"
   }

@@ -1,4 +1,4 @@
-# React State: Journal App Favorite Button with shared state
+# React State: Journal App with Favorite Button and Shared State
 
 Currently our the favorite feature of your journal app is using a local state. We want to store this information in the shared state alongside the other entry data.
 
