@@ -9,7 +9,7 @@ Your task is to recreate the following social card.
 
 ## Notes
 
-- Due to legal issues when using Google Fonts, please don't worry about the font right now.
+- Don't worry about matching the font. If you really want to use a web font, please refer to the handout.
 
 ## Development
 
