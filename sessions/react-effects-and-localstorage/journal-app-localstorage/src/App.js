@@ -56,11 +56,11 @@ function App() {
   }
 
   function handleShowFavoriteEntries() {
-    setFilter('favorites');
+    setFilter("favorites");
   }
 
   function handleShowAllEntries() {
-    setFilter('all');
+    setFilter("all");
   }
 
   const favoriteEntries = entries.filter((entry) => entry.isFavorite);
@@ -71,7 +71,7 @@ function App() {
       <main className="app__main">
         <EntryForm onAddEntry={handleAddEntry} />
         <EntriesSection
-          entries={filter === 'favorites' ? favoriteEntries : entries}
+          entries={filter === "favorites" ? favoriteEntries : entries}
           filter={filter}
           allEntriesCount={entries.length}
           favoriteEntriesCount={favoriteEntries.length}
