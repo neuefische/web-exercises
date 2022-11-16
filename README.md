@@ -121,6 +121,8 @@ An exercises from executing `create-react-app` to create a new React app.
 
 > 💡 This is different from running `create-react-app` directly. It will update the `README.md` and `package.json` to match our conventions.
 
+> ❗️ An exercise based on `create-react-app` might not be able to build in Codesandbox. The `create-react-app` setup includes the package `web-vitals`. The adblocker browser extension [uBlock Origin might block](https://github.com/codesandbox/codesandbox-client/issues/6035) requests to load this package. Please make sure to add the domain `codesandbox.io` and the pattern `/.*csb.app.*/` to the trusted sites ("Ausnahmeregeln") in the uBlock Origin settings.
+
 ## Exercise requirements
 
 All exercises must at least contain:
