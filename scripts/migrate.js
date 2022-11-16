@@ -156,6 +156,7 @@ function applyTemplate(challengeFolder, template) {
     type: templatePackage?.type,
     dependencies: templatePackage?.dependencies,
     devDependencies: templatePackage?.devDependencies,
+    browserslist: templatePackage?.browserslist,
     nf: templatePackage?.nf,
     keywords: undefined,
     author: undefined,
