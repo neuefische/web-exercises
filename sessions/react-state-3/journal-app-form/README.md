@@ -21,7 +21,7 @@ No we can wire up the form to add entries to the state.
 
 Locate the component with the form. Here it is called `EntryForm`.
 
-- Update this component's function declaration to accept new a prop, like `onAddEntry`. The prop should be used for an event that you trigger, when a new journal entry should be added.
+- Update this component's function declaration to accept a new prop, like `onAddEntry`. The prop should be used for an event that you trigger when a new journal entry should be added.
 - Write a function `handleSubmit` and pass it to the `onSubmit` prop pf the `form` JSX tag.
 - In `handleSubmit` make read the value of all input fields. (Hint: you can use `new FormData()` for this)
 - Don't forget to prevent the default form behavior when submitting.
