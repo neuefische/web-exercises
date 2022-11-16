@@ -10,8 +10,8 @@ export default function EntriesSection({
   entries,
   onToggleFavorite,
   filter,
-  amountAllEntries,
-  amountFavoriteEntries,
+  allEntriesCount,
+  favoriteEntriesCount,
   onShowAllEntries,
   onShowFavoriteEntries,
 }) {
