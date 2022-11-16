@@ -13,7 +13,7 @@ Locate the component with the array containing all journal entries. Here it is t
 
 The component rendering the entries and the component with the form needs to share this state of entries. We need to lift the state up to the first common ancestor of these two components. In the template it is the `App` component.
 
-- Update the function declaration of the `EntriesSection` component to accept new a prop called `entries`.
+- Update the function declaration of the `EntriesSection` component to accept a new prop called `entries`.
 - Move the `initialEntries` and the state to the common ancestor, like `App`.
 - Pass the `entries` state via the `entries` prop down to the `EntriesSection`.
 
