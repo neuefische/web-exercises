@@ -71,8 +71,8 @@ function App() {
       <main className="app__main">
         <EntryForm onAddEntry={handleAddEntry} />
         <EntriesSection
-          entries={showFavorites ? favoriteEntries : entries}
-          showFavorites={showFavorites}
+          entries={filter === 'favorites' ? favoriteEntries : entries}
+          filter={filter}
           amountAllEntries={entries.length}
           amountFavoriteEntries={favoriteEntries.length}
           onToggleFavorite={handleToggleFavorite}
