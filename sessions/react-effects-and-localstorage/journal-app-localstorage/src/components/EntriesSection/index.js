@@ -9,7 +9,7 @@ import { Fragment } from "react";
 export default function EntriesSection({
   entries,
   onToggleFavorite,
-  showFavorites,
+  filter,
   amountAllEntries,
   amountFavoriteEntries,
   onShowAllEntries,
