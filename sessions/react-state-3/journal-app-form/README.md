@@ -48,7 +48,7 @@ Let's add new entries to the state now. Locate the component with the shared sta
 
 Your new journal entry needs a date.
 
-- Create a string containing the date in the desired format with the following snippet
+- Create a string containing the date in the desired format with the snippet below.
 - Add the key `date` to the object describing the new entry.
 
 ```js
