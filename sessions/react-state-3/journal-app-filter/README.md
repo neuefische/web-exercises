@@ -1,6 +1,6 @@
 # React State: Journal App with Entries Filter
 
-Your journal app includes filter button to show all entries or only favorites. Currently the button don't work yet. Let's implement this feature!
+Your journal app includes filter buttons to show all entries or only favorites. Currently the buttons don't work yet. Let's implement this feature!
 
 > 💡 You can use this template as a starting point. But if you are far enough along with your own Journal App, please use that instead.
 
