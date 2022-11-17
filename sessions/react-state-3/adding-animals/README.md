@@ -27,7 +27,7 @@ There is, however, a warning regarding the `key` prop in list items. This happen
 - A new animal is added inside of the `handleAddAnimal` function, which is where you need to add the id.
 - When `setAnimals` is called, replace the `newAnimal` part with a new object.
 - Spread `newAnimal` into this object and add the id key with `id: nanoid()`. It might look similar to this:
-  - `setTrees([...trees, {id: nanoid(), ...newTree}]);`
+  - `setXzys([...xyzs, {id: nanoid(), ...newXyz}]);`
 
 ## Notes
 

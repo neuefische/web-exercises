@@ -8,7 +8,9 @@ export default function List({ animals }) {
         {animals.map((animal) => (
           <li key={animal.id} className="animal-list__item">
             <h3>{animal.name}</h3>
-            <span aria-label="emoji">{animal.emoji}</span>
+            <span aria-label="emoji" className="animal-list__emoji">
+              {animal.emoji}
+            </span>
           </li>
         ))}
       </ul>

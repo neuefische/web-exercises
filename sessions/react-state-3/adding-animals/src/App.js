@@ -5,17 +5,17 @@ import List from "./components/List/index.js";
 
 const initialAnimals = [
   {
-    id: 1,
+    id: "mTBErig",
     name: "Octopus",
     emoji: "🐙",
   },
   {
-    id: 2,
+    id: "iMsbXQ1",
     name: "Crocodile",
     emoji: "🐊",
   },
   {
-    id: 3,
+    id: "Qjf_K7V",
     name: "Beaver",
     emoji: "🦫",
   },
