@@ -8,8 +8,7 @@ Currently our journal entries are just stored in an array. We want to store this
 
 ### Store the entries in state
 
-Locate the component with the array containing all journal entries. Here it is the variable `entries` in the `EntriesSection` component.
-
+- Locate the component with the array containing all journal entries. Here it is the variable `entries` in the `EntriesSection` component.
 - Rename the variable to `initialEntries` to reflect this is the initial value for the state.
 - Create a new state called `entries` with `initialEntries` as initial value.
 
