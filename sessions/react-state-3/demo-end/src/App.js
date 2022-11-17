@@ -8,17 +8,17 @@ const initialMovieData = [
   {
     id: "28djdh72",
     name: "The Incredible Hulk",
-    like: false,
+    isLiked: false,
   },
   {
     id: "dknseu2",
     name: "Spiderman 1-25",
-    like: false,
+    isLiked: false,
   },
   {
     id: "dkwi02ksk",
     name: "Lord of the Rings",
-    like: false,
+    isLiked: false,
   },
 ];
 
@@ -35,7 +35,7 @@ export default function App() {
   function handleToggleLike(id) {
     setMovies(
       movies.map((movie) =>
-        movie.id === id ? { ...movie, like: !movie.like } : movie
+        movie.id === id ? { ...movie, isLiked: !movie.isLiked } : movie
       )
     );
   }
@@ -49,7 +49,7 @@ export default function App() {
             <Movie
               id={movie.id}
               name={movie.name}
-              like={movie.like}
+              isLiked={movie.isLiked}
               onDeleteMovie={handleDeleteMovie}
               onToggleLike={handleToggleLike}
             />

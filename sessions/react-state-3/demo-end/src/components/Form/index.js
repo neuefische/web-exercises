@@ -20,7 +20,7 @@ export default function Form({ onAddMovie }) {
         </div>
         <div className="form__entry">
           <label htmlFor="like">Like:</label>
-          <input id="like" type="checkbox" name="like" />
+          <input id="like" type="checkbox" name="isLiked" />
         </div>
       </fieldset>
       <button type="submit" className="form__button">
