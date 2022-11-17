@@ -146,16 +146,20 @@ function applyTemplate(challengeFolder, template) {
       extends:
         challengeEslinrc.extends || templateEslinrc.extends
           ? [
-              ...(challengeEslinrc.extends || []),
-              ...(templateEslinrc.extends || []),
+              ...new Set([
+                ...(challengeEslinrc.extends || []),
+                ...(templateEslinrc.extends || []),
+              ]),
             ]
           : undefined,
       // merge the plugins array
       plugins:
         challengeEslinrc.plugins || templateEslinrc.plugins
           ? [
-              ...(challengeEslinrc.plugins || []),
-              ...(templateEslinrc.plugins || []),
+              ...new Set([
+                ...(challengeEslinrc.plugins || []),
+                ...(templateEslinrc.plugins || []),
+              ]),
             ]
           : undefined,
       // merge the rules
