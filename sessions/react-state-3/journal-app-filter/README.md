@@ -80,7 +80,7 @@ Stay in the component rendering the two buttons. Here it's the `EntriesSection` 
 Go up in the component hierarchy to the place where this component is rendered.
 
 - Add the props `allEntriesCount` and `favoriteEntriesCount` props and pass a value for each.
-- The value can be read from the `length` property of the two arrays `entries` and `favoriteEntries`.
+- The value can be read from the `length` property of the two arrays `entries` and `favoriteEntries`. You can access the `length` property by using the dot notion on the array variables.
 
 The UI should display the correct number of entries within the filter buttons now. 🚀
 
