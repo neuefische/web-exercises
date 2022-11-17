@@ -1,0 +1,33 @@
+.animal-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.animal-list__item {
+  background-color: var(--granite);
+  color: var(--foam);
+  border-radius: 8px;
+  padding: 2.5rem 1rem 0.75rem;
+  margin-top: 2.5rem;
+  position: relative;
+  min-width: 100px;
+}
+
+.animal-list__item > h3 {
+  margin: 0;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.animal-list__emoji {
+  user-select: none;
+  font-size: 4rem;
+  position: absolute;
+  width: calc(100% - 2rem);
+  text-align: center;
+  top: -2.5rem;
+  filter: drop-shadow(0px 1px 0px rgba(255, 255, 255, 1));
+}
