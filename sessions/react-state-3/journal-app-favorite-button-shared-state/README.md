@@ -2,7 +2,7 @@
 
 Currently our favorite feature of the journal app is using a local state. We want to store this information in the shared state alongside the other entry data.
 
-> 💡 You can use this template as a starting point. But if you are far enough along with your own Journal App, please use that instead.
+> 💡 You can use this template as a starting point, but if you are far enough along with your own Journal App please use yours instead.
 
 ## Task
 
