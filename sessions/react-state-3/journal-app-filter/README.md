@@ -71,7 +71,7 @@ Click on the filter buttons now. You will see that the visual highlight gets app
 
 ### Show count of all and favorite entries
 
-The last thing we need to adjust is the number inside the filter buttons. They indicate how many entries are in each of the two lists. You might notice they show a random hardcoded number now.
+The last thing we need to adjust is the number inside the filter buttons. They indicate how many entries are in each of the two lists. You might notice they show an arbitrary hardcoded number now.
 
 Stay in the component rendering the two buttons. (Here it's the `EntriesSection` component)
 
