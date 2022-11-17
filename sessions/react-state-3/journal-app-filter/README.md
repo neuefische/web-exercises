@@ -75,7 +75,7 @@ The last thing we need to adjust is the number inside the filter buttons. They i
 
 Stay in the component rendering the two buttons. Here it's the `EntriesSection` component.
 
-- Add two new props to the function declaration: `allEntriesCount` and `favoriteEntriesCount`
+- Add two new props to the function declaration: `allEntriesCount` and `favoriteEntriesCount`.
 
 Go up in the component hierarchy to the place where this component is rendered.
 
