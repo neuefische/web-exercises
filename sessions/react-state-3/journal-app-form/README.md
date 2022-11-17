@@ -65,8 +65,8 @@ Each entry in the `entries` array needs an ID – a unique identifier.
 npm install nanoid
 ```
 
-- Call the `setEntries` function and insert the new entry at the beginning of the array
-- Pass the `handleAddEntry` function with the prop `onAddEntry` to the `EntryForm` component
+- Call the `setEntries` function and insert the new entry at the beginning of the array.
+- Pass the `handleAddEntry` function with the prop `onAddEntry` to the `EntryForm` component.
 
 Done! You can add new entries to your journal now 🚀 🚀 🚀
 
