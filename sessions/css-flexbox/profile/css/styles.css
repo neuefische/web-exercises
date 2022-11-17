@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 /*
 Use flexbox to fulfill the following tasks:
 
@@ -13,6 +9,10 @@ The tech-stack-list needs to be polished!
 [ ] - There should be a gap of at least 10px between every tech-stack entry
 [ ] - Listitems should wrap to the next line, if there is not enough space horizontally
 */
+
+* {
+  box-sizing: border-box;
+}
 
 .main__title {
   padding: 10px;
