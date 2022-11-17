@@ -63,9 +63,9 @@ We are almost done. There are two minor things, that need to be fixed. First you
 - Alongside the `entries` prop also pass down the `filter` state as prop to the component rendering the two buttons. (Here it's the `EntriesSection` component)
 - Inside of the `EntriesSection` component add the `filter` prop to the function declaration.
 
-Locate the prop that enabled the visual highlight for the buttons. In the template it's the `active` prop of the `Tab` and `Badge` components.
+Locate the prop that enabled the visual highlight for the buttons. In the template it's the `isActive` prop of the `Tab` and `Badge` components.
 
-- Pass the value of the `active` prop conditionally depending on the value of `filter`, which could be `"all"` or `"favorites"`.
+- Pass the value of the `isActive` prop conditionally depending on the value of `filter`, which could be `"all"` or `"favorites"`.
 
 Click on the filter buttons now. You will see that the visual highlight gets applied to the button you clicked, while the other button looses the visual highlight 🚀
 
