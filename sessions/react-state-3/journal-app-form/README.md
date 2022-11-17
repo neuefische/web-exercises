@@ -22,7 +22,7 @@ The component rendering the entries and the component with the form needs to sha
 - Move the `initialEntries` and the state to their common ancestor, e.g. `App`.
 - Pass the `entries` state via the `entries` prop down to the `EntriesSection`.
 
-Great, the state lives in the right component now 🚀
+Great, the state lives in the right component now! 🚀
 
 ### Let the form trigger an exposed event
 
