@@ -17,7 +17,7 @@ Locate the component that renders the `button` JSX tag. In the template there is
 - Add the prop `onClick` to the function declaration of this component
 - Pass the prop to the `button` tag like this: `onClick={onClick}`
 
-Great, the buttons can be clicked now 🚀
+Great, the buttons can be clicked now! 🚀
 
 ### Expose events when the filter buttons are clicked
 
