@@ -30,7 +30,7 @@ We can wire up the form to add entries to the state now. Locate the component wi
 
 - Update this component's function declaration to accept a new prop, like `onAddEntry`. The prop should be used for an event that you trigger when a new journal entry should be added.
 - Write a function `handleSubmit` and pass it to the `onSubmit` prop of the `form` JSX tag.
-- In `handleSubmit` make read the value of all input fields. (Hint: you can use `new FormData()` for this)
+- In `handleSubmit` gather the values of all input fields. (Hint: you can use `new FormData()` for this.)
 - Don't forget to prevent the default form behavior when submitting.
 - In `handleSubmit` create an object with the keys `motto` and `notes` containing the field's values.
 - Call `onAddEntry` and pass the object
