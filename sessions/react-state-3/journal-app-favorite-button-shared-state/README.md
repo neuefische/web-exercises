@@ -40,7 +40,7 @@ Locate the component that renders a single entry including the favorite button. 
 
 Locate the component that renders the list of all entries. Here it's `EntrySection`.
 
-- Accept a new prop `onToggleFavorite`.
+- Accept the prop `onToggleFavorite`.
 - Adjust the integration of the `Entry` component to pass the `onToggleFavorite` prop.
 - In addition pass each entry's `id` and `isFavorite` information to the `Entry` component as prop.
 
