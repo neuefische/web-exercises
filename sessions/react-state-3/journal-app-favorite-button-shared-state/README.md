@@ -51,7 +51,7 @@ Everything is wired up! 🚀
 Now let's finally adjust the state handling. Go back to the `App` component.
 
 - Create a new function called `handleToggleFavorite` which accepts `id` as parameter.
-- Inside this function update the state by calling `setEntries`. To create a new state value iterate over the `entries` array and search for the entry matching the `id`. Flip the value of it's `isFavorite` key. (hint: you can use the array method `map` for this)
+- Inside this function update the state by calling `setEntries`. To create a new state value iterate over the `entries` array and search for the entry matching the `id`. If the `id` matches invert the value of `isFavorite`. (hint: you can use the array method `map` for this)
 - Adjust the integration of the `EntrySection` component to pass the function `handleToggleFavorite` to the `onToggleFavorite` prop.
 
 You have successfully refactored your app to have a more concise state handling 🚀 🚀 🚀
