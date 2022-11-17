@@ -50,7 +50,7 @@ You will notice the displayed entries aren't changing yet. This is what we need 
 
 You have two arrays containing entries now: a list of all entries and a list of the favorite entries. The code has to make a decision which of them should be displayed. The component that renders the entry list accepts a prop for the list of entries that should be display. Here it's the `entries` prop of the `EntriesSection` component.
 
-- Pass the value to this prop conditionally. Depending on the value of the state `filter` you pass the array `entries` or the array `favoriteEntries` (hint: you can use the ternary operator)
+- Pass the value to this prop conditionally. Depending on the value of the state `filter` you pass the array `entries` or the array `favoriteEntries` (hint: you can use the ternary operator).
 
 Now you will see different entries in the UI when clicking the filter buttons 🚀
 
