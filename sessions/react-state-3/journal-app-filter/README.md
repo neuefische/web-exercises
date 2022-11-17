@@ -10,7 +10,7 @@ Your journal app includes filter buttons to show all entries or only favorites. 
 
 > 💡 If you didn't write a wrapping component like `Tab` for the `button` tag in your own code, you might not need to do this extra step.
 
-Users should be able to click on the filter buttons to change the list of displayed entries. First we want to make sure the buttons are clickable.
+Users should be able to click on the filter buttons to change the list of entries being displayed. First, we want to make sure the buttons are clickable.
 
 Locate the component that renders the `button` JSX tag. In the template there is `Tab` used as a wrapping component around the `button` tag. To have the button clickable we need to pass the `onClick` prop to it.
 
