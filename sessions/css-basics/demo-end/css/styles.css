@@ -6,44 +6,44 @@
 
 /* alice-regular - latin */
 @font-face {
-  font-family: 'Alice';
+  font-family: "Alice";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/alice-v20-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local(''),
-    url('../fonts/alice-v20-latin-regular.eot?#iefix')
-      format('embedded-opentype'),
-    /* IE6-IE8 */ url('../fonts/alice-v20-latin-regular.woff2') format('woff2'),
-    /* Super Modern Browsers */ url('../fonts/alice-v20-latin-regular.woff')
-      format('woff'),
-    /* Modern Browsers */ url('../fonts/alice-v20-latin-regular.ttf')
-      format('truetype'),
-    /* Safari, Android, iOS */ url('../fonts/alice-v20-latin-regular.svg#Alice')
-      format('svg'); /* Legacy iOS */
+  src: url("../fonts/alice-v20-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/alice-v20-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/alice-v20-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/alice-v20-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/alice-v20-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/alice-v20-latin-regular.svg#Alice")
+      format("svg"); /* Legacy iOS */
 }
 
 /* roboto-regular - latin */
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/roboto-v30-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local(''),
-    url('../fonts/roboto-v30-latin-regular.eot?#iefix')
-      format('embedded-opentype'),
-    /* IE6-IE8 */ url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'),
-    /* Super Modern Browsers */ url('../fonts/roboto-v30-latin-regular.woff')
-      format('woff'),
-    /* Modern Browsers */ url('../fonts/roboto-v30-latin-regular.ttf')
-      format('truetype'),
+  src: url("../fonts/roboto-v30-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/roboto-v30-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/roboto-v30-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/roboto-v30-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/roboto-v30-latin-regular.ttf")
+      format("truetype"),
     /* Safari, Android, iOS */
-      url('../fonts/roboto-v30-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+      url("../fonts/roboto-v30-latin-regular.svg#Roboto") format("svg"); /* Legacy iOS */
 }
 
 body {
   padding: 20px;
   margin: 0;
-  font-family: 'Roboto';
+  font-family: "Roboto";
 }
 
 h1,
@@ -52,7 +52,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Alice';
+  font-family: "Alice";
 }
 
 section {
