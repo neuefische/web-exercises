@@ -40,9 +40,10 @@ Nice job! The component can now inform its parent when an entry should be added!
 
 ### Updating the state to add new entries
 
-Let's add new entries to the state now. Locate the component with the shared state (the `App` component in this template).
+Let's add new entries to the state now. 
 
-- Create a function called `handleAddEntry`
+- Locate the component with the shared state. (The `App` component in this template.)
+- Create a function called `handleAddEntry`.
 - The function should accept a parameter called `newEntry`, which should be an object describing the new entry.
 
 Your new journal entry needs a date.
