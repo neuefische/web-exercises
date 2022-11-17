@@ -20,7 +20,13 @@ export default function Form({ onAddTag }) {
           <label htmlFor="tag" className="form__label">
             Tag name
           </label>
-          <input id="tag" type="text" name="tag" className="form__input" />
+          <input
+            id="tag"
+            type="text"
+            name="tag"
+            className="form__input"
+            required
+          />
         </div>
         <button type="submit" className="form__button">
           Add
