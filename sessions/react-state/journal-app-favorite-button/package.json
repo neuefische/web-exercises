@@ -35,7 +35,7 @@
       "last 1 safari version"
     ]
   },
-  "description": "React State: Journal App Favorite Button",
+  "description": "React State: Journal App with Favorite Button State",
   "nf": {
     "template": "cra"
   }

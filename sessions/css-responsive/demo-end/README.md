@@ -5,7 +5,7 @@
 ## Notes
 
 - This is the final version of the demo
-- You find the starting point for this demo in `sessions/css-responsive/demo-start` 
+- You find the starting point for this demo in `sessions/css-responsive/demo-start`
 
 ## Development
 

@@ -1,0 +1,9 @@
+{
+  "name": "css-basics_demo-start",
+  "version": "0.0.0-unreleased",
+  "description": "CSS Basics: Demo Start",
+  "main": "index.html",
+  "nf": {
+    "template": "html-css-static"
+  }
+}

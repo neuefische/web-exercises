@@ -22,7 +22,7 @@ You can use the following hints as guideline:
   - the prop should have the same name as the `handle` function, but should start with `on` instead of `handle` (Hint: `onDelete={handleDelete}`).
 - In the `Counter` component
   - receive the two newly created props and
-  - pass them to the correct button's `onClick` prop. You do **not**  need to use an anonymous function here. Instead of writing `onClick={() => onSomeEvent()}` you can pass the function directly like this `onClick={onSomeEvent}`.
+  - pass them to the correct button's `onClick` prop. You do **not** need to use an anonymous function here. Instead of writing `onClick={() => onSomeEvent()}` you can pass the function directly like this `onClick={onSomeEvent}`.
 
 ## Notes
 

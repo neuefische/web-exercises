@@ -8,6 +8,10 @@ Hint: Look carefully which element should be the flexbox container.
 Do you need to write an extra class?
 */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
