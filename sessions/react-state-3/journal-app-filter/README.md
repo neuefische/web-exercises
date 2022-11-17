@@ -46,7 +46,7 @@ Now you can click on the two filter buttons and change the `filter` state! 🚀
 You will notice the displayed entries aren't changing yet. This is what we need to solve next.
 
 - Besides the `entries` array which is stored in state, create a new array called `favoriteEntries`, which **should not** be stored in state.
-- The value of `favoriteEntries` should be all element from the `entries` array where `isFavorite` is `true` (hint: you can use the array method `filter`)
+- The value of `favoriteEntries` should be all element from the `entries` array where `isFavorite` is `true` (hint: you can use the array method `filter`).
 
 You have two arrays containing entries now: a list of all entries and a list of the favorite entries. The code has to make a decision which of them should be displayed. The component that renders the entry list accepts a prop for the list of entries that should be display. Here it's the `entries` prop of the `EntriesSection` component.
 
