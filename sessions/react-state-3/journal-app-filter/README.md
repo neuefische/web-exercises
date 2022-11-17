@@ -39,7 +39,7 @@ Let's go a level up in the component hierarchy and write the logic to do the act
 - Create a function called `handleShowAllEntries` which sets the `showFavorites` state to `"all"`.
 - Pass the two functions down to the `EntriesSection` component via the props `onShowAllEntries` and `onShowFavoriteEntries` you introduced earlier
 
-Now you can click on the two filter buttons and change the `filter` state 🚀
+Now you can click on the two filter buttons and change the `filter` state! 🚀
 
 ### The filter logic
 
