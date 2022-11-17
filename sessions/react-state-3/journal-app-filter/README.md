@@ -84,7 +84,7 @@ Go up in the component hierarchy to the place where this component is rendered.
 
 The UI should display the correct number of entries within the filter buttons now. 🚀
 
-Awesome job! You've worked your way through a rather complex app and coded many cool features that deal with multiple states 🚀 🚀 🚀
+Awesome job! You've worked your way through a rather complex app and coded many cool features that deal with multiple states! 🚀 🚀 🚀
 
 ## Development
 
