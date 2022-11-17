@@ -55,7 +55,7 @@ Your new journal entry needs a date.
 const date = new Date().toLocaleDateString("en-us", { dateStyle: "medium" });
 ```
 
-Each entry in the `entries` array need an ID, a unique identifier.
+Each entry in the `entries` array needs an ID – a unique identifier.
 
 - Install the npm package `nanoid`.
 - Call the function `nanoid()` to generate a new ID.
