@@ -101,9 +101,13 @@ for (const challengeFolder of challengeFolders) {
   applyTemplate(challengeFolder, template);
 }
 
-await execa("npx", ["prettier", "--write", `sessions/${folder}`], {
-  stdio: "inherit",
-});
+await execa(
+  "npx",
+  ["prettier", "--write", `sessions${folder !== "*" ? `/${folder}` : ""}`],
+  {
+    stdio: "inherit",
+  }
+);
 
 function applyTemplate(challengeFolder, template) {
   if (template === "cra") {
