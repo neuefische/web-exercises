@@ -142,6 +142,22 @@ function applyTemplate(challengeFolder, template) {
     const newEslintrc = {
       ...challengeEslinrc,
       ...templateEslinrc,
+      // merge the extends array
+      extends:
+        challengeEslinrc.extends || templateEslinrc.extends
+          ? [
+              ...(challengeEslinrc.extends || []),
+              ...(templateEslinrc.extends || []),
+            ]
+          : undefined,
+      // merge the plugins array
+      plugins:
+        challengeEslinrc.plugins || templateEslinrc.plugins
+          ? [
+              ...(challengeEslinrc.plugins || []),
+              ...(templateEslinrc.plugins || []),
+            ]
+          : undefined,
       // merge the rules
       rules:
         challengeEslinrc.rules || templateEslinrc.rules
