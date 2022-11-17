@@ -32,7 +32,7 @@ We can wire up the form to add entries to the state now. Locate the component wi
 - Write a function `handleSubmit` and pass it to the `onSubmit` prop of the `form` JSX tag.
 - In `handleSubmit` gather the values of all input fields. (Hint: you can use `new FormData()` for this.)
 - Don't forget to prevent the default form behavior when submitting.
-- In `handleSubmit` create an object with the keys `motto` and `notes` containing the field's values.
+- In `handleSubmit` create an object with the keys `motto` and `notes` containing the fields' values.
 - Call `onAddEntry` and pass the object
 - Make sure to reset the form after submitting.
 
