@@ -13,7 +13,7 @@ Locate the component with the array containing all journal entries. Here it is t
 - Rename the variable to `initialEntries` to reflect this is the initial value for the state.
 - Create a new state called `entries` with `initialEntries` as initial value.
 
-Nice, the entries are stored in state now 🚀
+Nice, the entries are stored in state now! 🚀
 
 ### Life the state up
 
