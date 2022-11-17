@@ -19,7 +19,7 @@ Nice, the entries are stored in state now! 🚀
 The component rendering the entries and the component with the form needs to share this state of entries. We need to lift the state up to the first common ancestor of these two components. In the template it is the `App` component.
 
 - Update the function declaration of the `EntriesSection` component to accept a new prop called `entries`.
-- Move the `initialEntries` and the state to the common ancestor, like `App`.
+- Move the `initialEntries` and the state to their common ancestor, e.g. `App`.
 - Pass the `entries` state via the `entries` prop down to the `EntriesSection`.
 
 Great, the state lives in the right component now 🚀
