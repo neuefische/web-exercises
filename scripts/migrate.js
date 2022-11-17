@@ -1,9 +1,13 @@
 import fs from "fs-extra";
 import path from "node:path";
 import { globby } from "globby";
+import { execa } from "execa";
+
+// get <foldername> argument from cli
+const folder = process.argv[2] || "*";
 
 // find all challenge folders inside sessions/*/<challenge>
-const challengeFolders = await globby("sessions/*/*", {
+const challengeFolders = await globby(`sessions/${folder}/*`, {
   onlyDirectories: true,
   expandDirectories: false,
 });
@@ -20,72 +24,76 @@ for (const challengeFolder of challengeFolders) {
     continue;
   }
 
-  // if the folder does not contain any html, css or js files
-  const files = await globby("*.html|*.css|*.js|**/*.html|**/*.css|**/*.js", {
-    cwd: challengeFolder,
-    onlyFiles: true,
-    expandDirectories: false,
-  });
-  if (files.length === 0) {
-    console.log("no files", challengeFolder);
-    template = "empty";
+  // trust the package.json…
+  if (packageJson.nf?.template) {
+    template = packageJson.nf.template;
   } else {
-    // if the folder contains a package.json file and the package.json file contains a react dependency
-    if (packageJson.dependencies?.react) {
-      // if it has an eject script, it's a CRA project
-      if (packageJson.scripts?.eject) {
-        console.log(
-          "cra migration not implemented yet. skipping",
-          challengeFolder
-        );
-        continue;
-      } else {
-        template = "react-minimal";
-      }
-    } else if (
-      (await globby("**/*.test.js", { cwd: challengeFolder })).length
-    ) {
-      // if the challenge folder includes any files matching "**/*.test.js"
-      // this will require a non static template, we still need to figure out if
-      // we need the html-css-js template or the js template
-
-      // if the challenge folder includes any files matching "**/*.html" or "**/*.css"
-      if (
-        (await globby("**/*.html", { cwd: challengeFolder })).length ||
-        (await globby("**/*.css", { cwd: challengeFolder })).length
-      ) {
-        // use the html-css-js template
-        // console.log("html-css-js", challengeFolder);
-        template = "html-css-js";
-      } else {
-        // use the js template
-        // console.log("js", challengeFolder);
-        template = "js";
-      }
+    // if the folder does not contain any html, css or js files
+    const files = await globby("*.html|*.css|*.js|**/*.html|**/*.css|**/*.js", {
+      cwd: challengeFolder,
+      onlyFiles: true,
+      expandDirectories: false,
+    });
+    if (files.length === 0) {
+      console.log("no files", challengeFolder);
+      template = "empty";
     } else {
-      // this will require a static template
-      // we need to figure out if we need the html-css-js-static template or the html-css-static template
+      console.log("unknown template", challengeFolder);
+      console.log("trying to guess template");
+      // if the folder contains a package.json file and the package.json file contains a react dependency
+      if (packageJson.dependencies?.react) {
+        // if it has an eject script, it's a CRA project
+        if (packageJson.scripts?.eject) {
+          template = "cra";
+          continue;
+        } else {
+          template = "react-minimal";
+        }
+      } else if (
+        (await globby("**/*.test.js", { cwd: challengeFolder })).length
+      ) {
+        // if the challenge folder includes any files matching "**/*.test.js"
+        // this will require a non static template, we still need to figure out if
+        // we need the html-css-js template or the js template
 
-      // if the challenge folder includes any files matching "**/*.js"
-      if ((await globby("**/*.js", { cwd: challengeFolder })).length) {
-        // use the html-css-js-static template
-        // console.log("html-css-js-static", challengeFolder);
-
-        // if the challenge folder does not include any files matching "**/*.html" or "**/*.css"
+        // if the challenge folder includes any files matching "**/*.html" or "**/*.css"
         if (
-          !(await globby("**/*.html", { cwd: challengeFolder })).length &&
-          !(await globby("**/*.css", { cwd: challengeFolder })).length
+          (await globby("**/*.html", { cwd: challengeFolder })).length ||
+          (await globby("**/*.css", { cwd: challengeFolder })).length
         ) {
+          // use the html-css-js template
+          // console.log("html-css-js", challengeFolder);
+          template = "html-css-js";
+        } else {
           // use the js template
           // console.log("js", challengeFolder);
           template = "js";
-        } else {
-          template = "html-css-js-static";
         }
       } else {
-        // use the html-css-static template
-        // console.log("html-css-static", challengeFolder);
-        template = "html-css-static";
+        // this will require a static template
+        // we need to figure out if we need the html-css-js-static template or the html-css-static template
+
+        // if the challenge folder includes any files matching "**/*.js"
+        if ((await globby("**/*.js", { cwd: challengeFolder })).length) {
+          // use the html-css-js-static template
+          // console.log("html-css-js-static", challengeFolder);
+
+          // if the challenge folder does not include any files matching "**/*.html" or "**/*.css"
+          if (
+            !(await globby("**/*.html", { cwd: challengeFolder })).length &&
+            !(await globby("**/*.css", { cwd: challengeFolder })).length
+          ) {
+            // use the js template
+            // console.log("js", challengeFolder);
+            template = "js";
+          } else {
+            template = "html-css-js-static";
+          }
+        } else {
+          // use the html-css-static template
+          // console.log("html-css-static", challengeFolder);
+          template = "html-css-static";
+        }
       }
     }
   }
@@ -93,7 +101,16 @@ for (const challengeFolder of challengeFolders) {
   applyTemplate(challengeFolder, template);
 }
 
+await execa("npx", ["prettier", "--write", `sessions/${folder}`], {
+  stdio: "inherit",
+});
+
 function applyTemplate(challengeFolder, template) {
+  if (template === "cra") {
+    console.log("cra migration not implemented yet. skipping", challengeFolder);
+    return;
+  }
+
   const templateFolder = path.join("templates", template);
 
   // get session and challenge name from the folder name
@@ -108,13 +125,36 @@ function applyTemplate(challengeFolder, template) {
     path.join(challengeFolder, "sandbox.config.json")
   );
 
-  // delete the .eslintrc.json from the challenge folder if the template doesn't have it
   if (fs.existsSync(path.join(templateFolder, ".eslintrc.json"))) {
-    fs.copyFileSync(
-      path.join(templateFolder, ".eslintrc.json"),
-      path.join(challengeFolder, ".eslintrc.json")
+    const templateEslinrc = fs.readJsonSync(
+      path.join(templateFolder, ".eslintrc.json")
+    );
+
+    const challengeEslinrc =
+      fs.readJsonSync(path.join(challengeFolder, ".eslintrc.json"), {
+        throws: false,
+      }) || {};
+
+    const newEslintrc = {
+      ...challengeEslinrc,
+      ...templateEslinrc,
+      // merge the rules
+      rules:
+        challengeEslinrc.rules || templateEslinrc.rules
+          ? {
+              ...challengeEslinrc.rules,
+              ...templateEslinrc.rules,
+            }
+          : undefined,
+    };
+
+    fs.writeJsonSync(
+      path.join(challengeFolder, ".eslintrc.json"),
+      newEslintrc,
+      { spaces: 2 }
     );
   } else {
+    // delete the .eslintrc.json from the challenge folder if the template doesn't have it
     fs.removeSync(path.join(challengeFolder, ".eslintrc.json"));
   }
 
