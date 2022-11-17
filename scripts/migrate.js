@@ -216,10 +216,28 @@ function applyTemplate(challengeFolder, template) {
     ...challengePackage,
     name: `${sessionName}_${challengeName}`,
     version: templatePackage?.version,
-    scripts: templatePackage?.scripts,
+    scripts:
+      challengePackage?.scripts || templatePackage?.scripts
+        ? {
+            ...challengePackage?.scripts,
+            ...templatePackage?.scripts,
+          }
+        : undefined,
     type: templatePackage?.type,
-    dependencies: templatePackage?.dependencies,
-    devDependencies: templatePackage?.devDependencies,
+    dependencies:
+      challengePackage?.dependencies || templatePackage?.dependencies
+        ? {
+            ...challengePackage?.dependencies,
+            ...templatePackage?.dependencies,
+          }
+        : undefined,
+    devDependencies:
+      challengePackage?.devDependencies || templatePackage?.devDependencies
+        ? {
+            ...challengePackage?.devDependencies,
+            ...templatePackage?.devDependencies,
+          }
+        : undefined,
     browserslist: templatePackage?.browserslist,
     nf: templatePackage?.nf,
     keywords: undefined,
