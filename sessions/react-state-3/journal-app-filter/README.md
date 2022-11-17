@@ -32,7 +32,7 @@ Both buttons are no able to inform their parent component when they are clicked!
 
 ### Store the desired filter option in state
 
-Let's go a level up in the component hierarchy and write the logic to do the actual filtering. Locate the component having the `entries` state. Here it's the `App` component.
+Let's go a level up in the component hierarchy and write the logic to do the actual filtering. Locate the component that has the `entries` state. Here it's the `App` component.
 
 - Create a new state called `filter`, which stores a string with `"all"` as initial value.
 - Create a function called `handleShowFavoriteEntries` which sets the `filter` state to `"favorites"`.
