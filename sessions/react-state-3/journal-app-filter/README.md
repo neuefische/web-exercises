@@ -43,7 +43,7 @@ Now you can click on the two filter buttons and change the `filter` state! 🚀
 
 ### The filter logic
 
-You will notice the displayed entries will not change yet. This is what we solve next.
+You will notice the displayed entries aren't changing yet. This is what we need to solve next.
 
 - Besides the `entries` array which is stored in state, create a new array called `favoriteEntries`, which **should not** be stored in state.
 - The value of `favoriteEntries` should be all element from the `entries` array where `isFavorite` is `true` (hint: you can use the array method `filter`)
