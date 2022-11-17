@@ -60,7 +60,7 @@ Now you will see different entries in the UI when clicking the filter buttons! ð
 
 We are almost done. There are two minor things, that need to be fixed. First, you might notice that one of the two filter buttons is highlighted as active. Clicking the buttons does not change this visual indicator yet.
 
-- Alongside the `entries` prop also pass down the `filter` state as prop to the component rendering the two buttons. (Here it's the `EntriesSection` component)
+- Alongside the `entries` prop, also pass down the `filter` state as prop to the component rendering the two buttons. Here it's the `EntriesSection` component.
 - Inside of the `EntriesSection` component add the `filter` prop to the function declaration.
 
 Locate the prop that enabled the visual highlight for the buttons. In the template it's the `isActive` prop of the `Tab` and `Badge` components.
