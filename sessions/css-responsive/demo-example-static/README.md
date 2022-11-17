@@ -4,8 +4,8 @@
 
 ## Notes
 
-- This is an example of a cute puppies website *without* responsive behaviour
-- You find this website *with* responsive behaviour in `session/css-reponsive/example-responsive`
+- This is an example of a cute puppies website _without_ responsive behaviour
+- You find this website _with_ responsive behaviour in `session/css-reponsive/example-responsive`
 
 ## Development
 

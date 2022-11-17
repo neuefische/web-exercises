@@ -1,3 +1,3 @@
-import {greet} from './greet.js';
+import { greet } from "./greet.js";
 
-console.log(greet('world'));
+console.log(greet("world"));
