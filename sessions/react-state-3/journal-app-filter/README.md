@@ -65,7 +65,7 @@ We are almost done. There are two minor things, that need to be fixed. First, yo
 
 Locate the prop enabling the visual highlight for the buttons. In the template it's the `isActive` prop of the `Tab` and `Badge` components.
 
-- Pass the value of the `isActive` prop conditionally depending on the value of `filter`, which could be `"all"` or `"favorites"`.
+- Pass the value of the `isActive` prop conditionally, depending on the value of `filter`, which could be `"all"` or `"favorites"`.
 
 Click on the filter buttons now. You will see that the visual highlight gets applied to the button you clicked, while the other button looses the visual highlight. 🚀
 
