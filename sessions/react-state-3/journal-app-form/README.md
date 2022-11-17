@@ -1,6 +1,6 @@
 # React State: Journal App with Form Submit
 
-Currently our journal entries are just stored in an array. We want to store this array in state to add new entries to add.
+Currently our journal entries are just stored in an array. We want to store this array in state to be able to add new entries.
 
 > 💡 You can use this template as a starting point. But if you are far enough along with your own Journal App, please use that instead.
 
