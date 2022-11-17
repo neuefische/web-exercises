@@ -23,7 +23,7 @@ Great, the buttons can be clicked now! 🚀
 
 Let's make sure that the right event is triggered when clicking on the buttons.
 
-Find the component where both filter buttons are located beside each other. Here it's the `EntriesSection` component. This component needs to expose an event for each button.
+Find the component where both filter buttons are located beside each other. Here it's the `EntriesSection` component. The component having both buttons needs to expose two events - one event for each button.
 
 - Add two new props to the function declaration of this component: `onShowAllEntries` and `onShowFavoriteEntries`
 - Pass the respective prop to the `onClick` prop on the filter buttons
