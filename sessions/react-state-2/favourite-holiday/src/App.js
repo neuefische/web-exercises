@@ -16,7 +16,12 @@ export default function App() {
         onSubmit={handleSubmit}
       >
         <label htmlFor="holiday">My Favourite Holiday: </label>
-        <input id="holiday" type="text" name="holiday" placeholder="e.g. Christmas" />
+        <input
+          id="holiday"
+          type="text"
+          name="holiday"
+          placeholder="e.g. Christmas"
+        />
         <label htmlFor="date">Date: </label>
         <input id="date" type="date" name="date" />
         <button type="submit" className="form__submit-button">

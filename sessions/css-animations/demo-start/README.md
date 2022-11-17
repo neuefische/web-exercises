@@ -5,7 +5,7 @@
 ## Notes
 
 - You only have to touch the [`css/styles.css`](./css/styles.css) file.
-- You find the end point for this demo in `sessions/css-animations/demo-end` 
+- You find the end point for this demo in `sessions/css-animations/demo-end`
 
 ## Development
 
