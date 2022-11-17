@@ -1,7 +1,7 @@
 /*
 Use flexbox to fulfill the following tasks:
 
-The profile section contains an image and an about text.
+The profile section contains a level 2 heading, an image and an about text.
 [ ] - The image should be centered
 
 The tech-stack-list needs to be polished!
@@ -10,7 +10,11 @@ The tech-stack-list needs to be polished!
 [ ] - Listitems should wrap to the next line, if there is not enough space horizontally
 */
 
-.profile__header {
+* {
+  box-sizing: border-box;
+}
+
+.main__title {
   padding: 10px;
   background: lightcyan;
 }
