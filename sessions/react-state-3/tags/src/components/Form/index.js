@@ -9,7 +9,7 @@ export default function Form({ onAddTag }) {
     onAddTag?.(data.tag);
 
     event.target.reset();
-    event.target.tag.focus();
+    event.target.elements.tag.focus();
   }
 
   return (
