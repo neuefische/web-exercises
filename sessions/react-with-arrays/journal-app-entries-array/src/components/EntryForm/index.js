@@ -1,27 +1,23 @@
 import "./EntryForm.css";
 import Button from "../Button";
 
-function EntryForm() {
+export default function EntryForm() {
   return (
-    <>
-      <form className="entry-form">
-        <div className="entry-form__title">New Entry - Today, Feb 28, 2028</div>
-        <div className="entry-form__fields">
-          <div className="entry-form__field">
-            <label id="motto">Motto</label>
-            <input type="text" name="motto" htmlFor="motto" />
-          </div>
-          <div className="entry-form__field">
-            <label id="notes">Notes</label>
-            <textarea name="notes" htmlFor="notes" rows="4" />
-          </div>
-          <div className="entry-form__button">
-            <Button>Create</Button>
-          </div>
+    <form className="entry-form">
+      <h2 className="entry-form__title">New Entry</h2>
+      <div className="entry-form__fields">
+        <div className="entry-form__field">
+          <label htmlFor="motto">Motto</label>
+          <input type="text" name="motto" id="motto" />
         </div>
-      </form>
-    </>
+        <div className="entry-form__field">
+          <label htmlFor="notes">Notes</label>
+          <textarea name="notes" id="notes" rows="4" />
+        </div>
+        <div className="entry-form__button-wrapper">
+          <Button type="submit">Create</Button>
+        </div>
+      </div>
+    </form>
   );
 }
-
-export default EntryForm;

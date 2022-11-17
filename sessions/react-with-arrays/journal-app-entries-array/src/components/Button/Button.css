@@ -1,12 +1,12 @@
 .button {
   appearance: none;
+  border: none;
   width: fit-content;
   padding: 12px 40px;
   background: var(--color-nemo);
   font-weight: 700;
   font-size: 16px;
   border-radius: 5px;
-  border: none;
   color: var(--color-foam);
   transition: background-color 0.2s ease-in-out;
 }
