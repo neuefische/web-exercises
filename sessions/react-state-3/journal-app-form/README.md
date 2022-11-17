@@ -33,7 +33,7 @@ We can wire up the form to add entries to the state now. Locate the component wi
 - In `handleSubmit` gather the values of all input fields. (Hint: you can use `new FormData()` for this.)
 - Don't forget to prevent the default form behavior when submitting.
 - In `handleSubmit` create an object with the keys `motto` and `notes` containing the fields' values.
-- Call `onAddEntry` and pass the object
+- Call `onAddEntry` and pass the object.
 - Make sure to reset the form after submitting.
 
 Nice job! The component can now inform its parent when an entry should be added! 🚀
