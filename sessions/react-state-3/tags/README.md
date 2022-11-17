@@ -8,8 +8,12 @@ Currently, it's not possible to add or remove a tag from state.
 
 ## Task
 
-1. At first, make sure you understand the data flow; note that both `Form` and `List` components receives `onSomething` props which are not yet passed to them in the `App` component.
-2. As soon as you are ready, write state updates to add and delete a tag.
+1. At first, make sure you understand the data flow; note that
+
+- `Form` has a `onAddTag` prop and
+- `List` a `onDeleteTag` prop which are not yet passed to them in the `App` component.
+
+2. Write and wire up state updates to add and delete a tag.
 
 You can use the following hints as guideline:
 

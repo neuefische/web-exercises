@@ -5,8 +5,8 @@ export default function Form({ onAddTag }) {
     event.preventDefault();
     const formData = new FormData(event.target);
     const data = Object.fromEntries(formData);
-    console.log(data);
-    onAddTag(data.tag);
+
+    onAddTag?.(data.tag);
 
     event.target.reset();
     event.target.tag.focus();
@@ -15,11 +15,17 @@ export default function Form({ onAddTag }) {
   return (
     <form className="form" onSubmit={handleSubmit}>
       <h2>Add a new Tag</h2>
-      <label htmlFor="tag">Name of tag:</label>
-      <input id="tag" type="text" name="tag" />
-      <button type="submit" className="form__button">
-        Submit new tag
-      </button>
+      <div className="form__fields">
+        <div className="form__field">
+          <label htmlFor="tag" className="form__label">
+            Tag name
+          </label>
+          <input id="tag" type="text" name="tag" className="form__input" />
+        </div>
+        <button type="submit" className="form__button">
+          Add
+        </button>
+      </div>
     </form>
   );
 }
