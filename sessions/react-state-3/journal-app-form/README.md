@@ -36,7 +36,7 @@ We can wire up the form to add entries to the state now. Locate the component wi
 - Call `onAddEntry` and pass the object
 - Make sure to reset the form after submitting.
 
-Nice job! The component can now inform their parent when an entry should be added 🚀
+Nice job! The component can now inform its parent when an entry should be added! 🚀
 
 ### Updating the state to add new entries
 
