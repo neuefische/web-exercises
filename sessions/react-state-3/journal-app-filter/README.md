@@ -52,7 +52,7 @@ You have two arrays containing entries now: a list of all entries and a list of 
 
 - Pass the value to this prop conditionally. Depending on the value of the state `filter` you pass the array `entries` or the array `favoriteEntries` (hint: you can use the ternary operator).
 
-Now you will see different entries in the UI when clicking the filter buttons 🚀
+Now you will see different entries in the UI when clicking the filter buttons! 🚀
 
 > 💡 If there are no entries displayed after you clicked on the "Favorites" button, you might need to click the "star" button of some entries first.
 
