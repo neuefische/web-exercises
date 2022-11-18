@@ -25,6 +25,7 @@ export default function Form() {
             type="text"
             name="name"
             placeholder="Dr. Strange"
+            required
           />
         </div>
         <div className="form__field">
