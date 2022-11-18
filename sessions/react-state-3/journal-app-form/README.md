@@ -40,7 +40,7 @@ Nice job! The component can now inform its parent when an entry should be added!
 
 ### Updating the state to add new entries
 
-Let's add new entries to the state now. 
+Let's add new entries to the state now.
 
 - Locate the component with the shared state. (The `App` component in this template.)
 - Create a function called `handleAddEntry`.
