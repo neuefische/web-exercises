@@ -27,7 +27,7 @@ export default function App() {
   return (
     <div className="app">
       <h1>Favorite Movies</h1>
-      <ul className="list" role="list">
+      <ul className="list">
         {movies.map((movie) => (
           <li key={movie.id}>
             <Movie name={movie.name} isLiked={movie.isLiked} />
