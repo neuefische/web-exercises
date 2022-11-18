@@ -8,24 +8,40 @@ export default function Form({ onAddMovie }) {
 
     onAddMovie(data);
     event.target.reset();
+    event.target.elements.name.focus();
   }
 
   return (
     <form className="form" onSubmit={onSubmit}>
       <h2>Add a new movie</h2>
-      <fieldset className="form__entries">
-        <div className="form__entry">
-          <label htmlFor="name">Name: </label>
-          <input id="name" type="text" name="name" placeholder="Dr. Strange" />
+      <div className="form__fields">
+        <div className="form__field">
+          <label className="form__label" htmlFor="name">
+            Name
+          </label>
+          <input
+            className="form__input"
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Dr. Strange"
+          />
         </div>
-        <div className="form__entry">
-          <label htmlFor="like">Like:</label>
-          <input id="like" type="checkbox" name="isLiked" />
+        <div className="form__field">
+          <label className="form__label" htmlFor="isLiked">
+            Like
+          </label>
+          <input
+            className="form__checkbox"
+            id="isLiked"
+            type="checkbox"
+            name="isLiked"
+          />
         </div>
-      </fieldset>
-      <button type="submit" className="form__button">
-        Submit
-      </button>
+        <button type="submit" className="form__button">
+          Add
+        </button>
+      </div>
     </form>
   );
 }

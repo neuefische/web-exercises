@@ -1,42 +1,49 @@
 .movie {
-  padding: 10px;
-  border: 1px solid var(--granite);
-  background-color: var(--water);
-  margin-bottom: 8px;
-  min-width: 230px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  position: relative;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 8px 16px;
+  margin: -8px -16px;
+  border-radius: 4px;
 }
 
-.movie__delete-button {
+.movie:hover {
+  background-color: var(--water);
+}
+
+.movie__actions {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.movie__button {
   border: none;
   background-color: var(--granite);
   color: var(--foam);
-  border-radius: 50%;
-  position: absolute;
-  right: 3px;
-  top: 3px;
+  border-radius: 999px;
+  width: 2em;
+  height: 2em;
 }
 
-.movie__delete-button:hover {
+.movie__button:hover {
   background-color: var(--nemo);
 }
 
 .movie__title {
-  margin: 0.5rem;
+  text-decoration: underline;
+  font-size: 1.7rem;
+  text-decoration-color: transparent;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 2px;
+  margin: 0;
+  opacity: 0.5;
+  transition: all 200ms;
 }
 
-.movie__toggle-button {
-  border: none;
-  padding-inline: 10px;
-  padding-block: 5px;
-  background-color: var(--granite);
-  color: var(--foam);
-  font-size: 1.2rem;
-}
-
-.movie__toggle-button:hover {
-  background-color: var(--nemo);
+.movie__title--is-liked {
+  opacity: 1;
+  text-decoration-color: var(--nemo);
 }

@@ -17,7 +17,7 @@ const initialMovieData = [
   {
     id: "dkwi02ksk",
     name: "Lord of the Rings",
-    isLiked: false,
+    isLiked: true,
   },
 ];
 
