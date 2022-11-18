@@ -10,7 +10,8 @@
     "react-scripts": "5.0.1"
   },
   "devDependencies": {
-    "@babel/runtime": "7.20.0"
+    "@babel/runtime": "7.20.0",
+    "eslint-plugin-react-hooks": "4.6.0"
   },
   "scripts": {
     "start": "react-scripts start"

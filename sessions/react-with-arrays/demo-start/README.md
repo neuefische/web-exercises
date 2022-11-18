@@ -5,7 +5,6 @@ This is the end state of the demo Pokemon app.
 ## Notes
 
 - You only have to touch the [`src/App.js`](./src/App.js) file.
-- Some eslint rules are overwritten to `"warn"` in contrast to the default settings. This is for demonstration purposes in this demo only. (to stop building on error)
 
 ## Development
 
