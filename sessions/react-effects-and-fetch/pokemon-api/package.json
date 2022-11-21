@@ -1,7 +1,7 @@
 {
   "name": "react-effects-and-fetch_pokemon-api",
   "version": "0.0.0-unreleased",
-  "description": "React Effects and Fetch: Pokemon Api",
+  "description": "React Effects and Fetch: Pokémon API",
   "main": "src/index.js",
   "dependencies": {
     "react": "18.2.0",
