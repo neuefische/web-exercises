@@ -20,7 +20,7 @@ First, we want to calculate the difference of the two pizza areas for two given 
 Great! Now we know how much pizza we gain if we choose the second pizza. But we don't have any visual relations between these two numbers. So lets adapt the pizza displays.
 
 1. Write a function `updatePizzaDisplay` which has two parameters: `pizzaElement` - the queried DOM element of the respective pizza and `newSize` which is the new size of that pizza.
-2. Calculate the new display size of the pizza element (Hint: the formula is: newSize / 24 \* 100).
+2. Calculate the new display size of the pizza element (Hint: the formula is: `newSize / 24 \* 100`).
 3. Set the width of the `pizzaElement` to this new value (Hint: you can use `pizzaElement.style.width` for that).
 4. Call this function in both event listeners and pass in the correct pizza element and the correct pizza size.
 
