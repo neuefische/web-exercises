@@ -8,12 +8,22 @@ const outputSection = document.querySelector('[data-js="output-section"]');
 
 const output = document.querySelector('[data-js="output"]');
 
-pizzaInput1.addEventListener("input", () => {});
+pizzaInput1.addEventListener("input", () => {
+  // write your code here
+});
 
-pizzaInput2.addEventListener("input", () => {});
+pizzaInput2.addEventListener("input", () => {
+  // write your code here
+});
 
-function calculatePizzaGain(diameter1, diameter2) {}
+function calculatePizzaGain(diameter1, diameter2) {
+  // write your code here
+}
 
-function updatePizzaDisplay(pizzaElement, newSize) {}
+function updatePizzaDisplay(pizzaElement, newSize) {
+  // write your code here
+}
 
-function updateOutputColor(size1, size2) {}
+function updateOutputColor(size1, size2) {
+  // write your code here
+}
