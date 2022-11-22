@@ -28,7 +28,7 @@ Great! Now we know how much pizza we gain if we choose the second pizza. But we 
 
 Lets update the background of the output section to indicate whether we gain or loose pizza if we choose pizza 2.
 
-1. Write a function `updateOutputDisplay` with two parameters: `size1` and `size`.
+1. Write a function `updateOutputColor` with two parameters: `size1` and `size`.
 2. Set the background color of the `outputSection` to "var(--red)", if we loose pizza. Otherwise, the background color should be set to "var(--green)"
 3. Use this function in both event listeners with the correct sizes as arguments.
 
