@@ -31,21 +31,21 @@
 }
 
 .d6--2 {
-  --rotate-y: 90deg;
-  --rotate-x: 0deg;
+  --rotate-y: 450deg;
+  --rotate-x: 360deg;
   --rotate-z: 0deg;
   animation: none;
 }
 
 .d6--3 {
   --rotate-y: 0deg;
-  --rotate-x: 90deg;
-  --rotate-z: 0deg;
+  --rotate-x: -90deg;
+  --rotate-z: 180deg;
   animation: none;
 }
 
 .d6--4 {
-  --rotate-y: 0deg;
+  --rotate-y: -360deg;
   --rotate-x: 270deg;
   --rotate-z: 0deg;
   animation: none;
@@ -53,14 +53,14 @@
 
 .d6--5 {
   --rotate-y: 270deg;
-  --rotate-x: 0deg;
-  --rotate-z: 0deg;
+  --rotate-x: -360deg;
+  --rotate-z: 00deg;
   animation: none;
 }
 
 .d6--6 {
-  --rotate-y: 0deg;
-  --rotate-x: 180deg;
+  --rotate-y: 360deg;
+  --rotate-x: -180deg;
   --rotate-z: 0deg;
   animation: none;
 }
