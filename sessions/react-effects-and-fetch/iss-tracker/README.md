@@ -4,7 +4,7 @@ In this challenge we will build a small app which displays the current location 
 
 ## Task
 
-We already have a state called `coords` in the `App` component which will hold the longitude and latitude values of the ISS position.
+In the [`src/App.js`](./src/App.js) file, we already have a state called `coords` in the `App` component which will hold the longitude and latitude values of the ISS position.
 
 1. Write the function `getISSCoords`. Fetch from the given url saved in the constant `URL`. After fetching successfully update the `coords` state accordingly.
 
