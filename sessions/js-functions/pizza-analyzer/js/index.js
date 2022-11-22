@@ -16,13 +16,19 @@ pizzaInput2.addEventListener("input", () => {
   // write your code here
 });
 
+// Task 1
+
 function calculatePizzaGain(diameter1, diameter2) {
   // write your code here
 }
 
+// Task 2
+
 function updatePizzaDisplay(pizzaElement, newSize) {
   // write your code here
 }
+
+// Task 3
 
 function updateOutputColor(size1, size2) {
   // write your code here
