@@ -15,6 +15,8 @@ In the [`src/App.js`](./src/App.js) file, we already have a state called `coords
 
 4. The `setInterval` function returns an ID of the respective interval. You can clear the interval by calling `clearInterval` with this id. Inside the useEffect, return a cleanup function, which executes this `clearInterval` function with the correct ID.
 
+> 💡 Returning a cleanup function is important to not set multiple timers simultaneously. If you wouldn't define a cleanup function, each initial render of the component would start another timer that would never be stopped. This results in updating the coordinates way more often than desired.
+
 Go into the [`src/App.js`](./src/App.js) file and start coding!
 
 ## Notes
