@@ -18,7 +18,7 @@ There is a button to show the next page, but it has no functionality yet. Try to
 
 Can you adopt your solution for the button to show the previous page?
 
-Might might experience that the app crashes, when you are on the first page and click on the "Previous Page" button. Can you find a way to hide the button on the first page?
+You might experience that the app crashes when you are on the first page and click on the "Previous Page" button. Can you find a way to hide the button on the first page?
 
 > _Hint:_ There is also a `previous` value given in the API response.
 
