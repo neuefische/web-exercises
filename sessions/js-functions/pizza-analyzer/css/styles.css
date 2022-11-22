@@ -35,11 +35,6 @@ h2 {
   margin: 0;
 }
 
-fieldset {
-  border: none;
-  padding: 0;
-}
-
 .output-display {
   grid-area: output;
   display: grid;
