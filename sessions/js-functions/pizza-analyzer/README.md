@@ -1,6 +1,6 @@
-# js-functions: Pizza Analyzer
+# JS Functions: Pizza Analyzer
 
-Pizza is amazing. So we want the most pizza for our money. Lets build a tool to compare two pizza sizes and gives us the net plus in pizza area.
+Pizza is amazing. So we want the most pizza for our money. Let's build a tool that compares two pizza sizes and gives us the net plus in pizza area.
 
 ## Task
 
@@ -24,16 +24,16 @@ Great! Now we know how much pizza we gain if we choose the second pizza. But we 
 
 1. Write a function `updatePizzaDisplay` which has two parameters: `pizzaElement` - the queried DOM element of the respective pizza and `newSize` which is the new size of that pizza.
 2. Calculate the new display size of the pizza element
-   > 💡 The formula is: `newSize / 24 \* 100`.
+   > 💡 The formula is: `newSize / 24 * 100`.
 3. Set the width of the `pizzaElement` to this new value.
    > 💡 you can use `pizzaElement.style.width` for that.
 4. Call this function in both event listeners and pass in the correct pizza element and the correct pizza size.
 
 ### 3 Extra: Change the Output Background
 
-Lets update the background of the output section to indicate whether we gain or loose pizza if we choose pizza 2.
+Let's update the background of the output section to indicate whether we gain or loose pizza if we choose pizza 2.
 
-1. Write a function `updateOutputColor` with two parameters: `size1` and `size`.
+1. Write a function `updateOutputColor` with two parameters: `size1` and `size2`.
 2. Set the background color of the `outputSection` to "var(--red)", if we loose pizza. Otherwise, the background color should be set to "var(--green)"
 3. Use this function in both event listeners with the correct sizes as arguments.
 
