@@ -8,37 +8,12 @@ const outputSection = document.querySelector('[data-js="output-section"]');
 
 const output = document.querySelector('[data-js="output"]');
 
-pizzaInput1.addEventListener("input", () => {
-  const pizzaSize1 = pizzaInput1.value;
-  const pizzaSize2 = pizzaInput2.value;
-  calculatePizzaGain(pizzaSize1, pizzaSize2);
-  updatePizzaDisplay(pizza1, pizzaSize1);
-  updateOutputColor(pizzaSize1, pizzaSize2);
-});
+pizzaInput1.addEventListener("input", () => {});
 
-pizzaInput2.addEventListener("input", () => {
-  const pizzaSize1 = pizzaInput1.value;
-  const pizzaSize2 = pizzaInput2.value;
-  calculatePizzaGain(pizzaSize1, pizzaSize2);
-  updatePizzaDisplay(pizza2, pizzaSize2);
-  updateOutputColor(pizzaSize1, pizzaSize2);
-});
+pizzaInput2.addEventListener("input", () => {});
 
-function calculatePizzaGain(diameter1, diameter2) {
-  const area1 = Math.PI * (diameter1 / 2) ** 2;
-  const area2 = Math.PI * (diameter2 / 2) ** 2;
-  const gain = ((area2 - area1) / area1) * 100;
-  output.textContent = gain.toFixed(0);
-}
+function calculatePizzaGain(diameter1, diameter2) {}
 
-function updatePizzaDisplay(pizzaElement, newSize) {
-  pizzaElement.style.width = (newSize / 24) * 100 + "px";
-}
+function updatePizzaDisplay(pizzaElement, newSize) {}
 
-function updateOutputColor(size1, size2) {
-  if (size1 > size2) {
-    outputSection.style.background = "var(--red)";
-  } else {
-    outputSection.style.background = "var(--green)";
-  }
-}
+function updateOutputColor(size1, size2) {}
