@@ -79,9 +79,10 @@ fieldset {
 }
 
 .pizza {
-  border: dashed black 3px;
+  border: solid rgb(246, 230, 161) 10px;
   width: 100px;
   aspect-ratio: 1;
   border-radius: 999px;
   place-self: center;
+  background-color: rgb(244, 69, 46);
 }
