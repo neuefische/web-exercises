@@ -12,7 +12,7 @@ There is a button to show the next page, but it has no functionality yet. Try to
 
 > _Hint 1:_ You need a way to store which page you are displaying right now and be able to update this value to the next page.
 
-> _Hint 2:_ Have a look at the URL parameter `?offset=` used for `fetch`. The API starts by giving you the first `20` Pokémon. In the end the URL needs to change. You can either keep track of the offset yourself, or use the value given und `next` in the API response.
+> _Hint 2:_ Have a look at the URL parameter `?offset=` used for `fetch`. The API starts by giving you the first `20` Pokémon. In the end the URL needs to change. You can either keep track of the offset yourself, or use the value given and `next` in the API response.
 
 ### The "Previous Page" button
 
