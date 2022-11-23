@@ -2,7 +2,7 @@
 
 ## Notes
 
-- This is the start version of the demo
+- This is the end version of the demo
 - You only have to touch the [`src/App.js`](./src/App.js) file.
 
 ## Development
