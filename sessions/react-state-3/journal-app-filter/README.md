@@ -28,7 +28,7 @@ Find the component where both filter buttons are located beside each other. Here
 - Add two new props to the function declaration of this component: `onShowAllEntries` and `onShowFavoriteEntries`
 - Pass the respective prop to the `onClick` prop on the filter buttons
 
-Both buttons are no able to inform their parent component when they are clicked! 🚀
+Both buttons are now able to inform their parent component when they are clicked! 🚀
 
 ### Store the desired filter option in state
 

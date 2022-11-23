@@ -1,7 +1,7 @@
 import "./Form.css";
 
 export default function Form({ onAddMovie }) {
-  function onSubmit(event) {
+  function handleSubmit(event) {
     event.preventDefault();
     const formData = new FormData(event.target);
     const data = Object.fromEntries(formData);
@@ -12,7 +12,7 @@ export default function Form({ onAddMovie }) {
   }
 
   return (
-    <form className="form" onSubmit={onSubmit}>
+    <form className="form" onSubmit={handleSubmit}>
       <h2>Add a new movie</h2>
       <div className="form__fields">
         <div className="form__field">
