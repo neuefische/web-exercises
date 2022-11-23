@@ -8,7 +8,25 @@ This dice rolling app rolls a die (d6 = six sided die). Now you want to show rec
 
 Look at the [`src/App.js`](./src/App.js) and [`src/components/D6Button/index.js`](./src/components/D6Button/index.js) files.
 
-Lift up the `rolls` state into the `App` component. Pass the derived `currentRollValue` variable down to the `D6Button` and wire up a `onClick` handler to call the `handleRoll` function via props. Make sure everything still works as expected.
+Lift up the `rolls` state into the `App` component.
+
+#### Change the `D6Button` component
+
+The `D6Button` component should have the following props:
+
+- `value` which represents the current roll value (because the button only needs to know the most recent value)
+- `onRoll` which is a function that get called on roll (when the button is clicked)
+
+> 💡 When designing the interface of you component (which props it has) like this, think about what does the component need to know to function properly. In this case the component only needs to know the current value it should show, and a function that gets called when the button is clicked. Hence you should not pass the whole `rolls` array to the component.
+
+#### Change the `App` component
+
+The `App` component should now hold the state, define the `handleRoll` function and derive the `currentRollvalue` from the `rolls` state.
+
+- `handleRoll` should be passed to `onRoll` of the `<D6Button />`
+- `currentRollValue` should be passed to `value` of the `<D6Button />`
+
+Make sure everything still works as expected.
 
 Now pass the `rolls` down to the `History` component as well (replace `rolls={[]}`).
 
