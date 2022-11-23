@@ -31,7 +31,8 @@ The API giving you the status might not be reachable at all, so that the network
 
 Do you have an idea how to catch this kind of error? Can you implement the error handling and show the status icon 🚨 if it happens.
 
-> _Hint:_ This type of error will most probably not happen by chance. To test this case you can simulate the situation with your browser. In Firefox go to `File > Work Offline` before clicking the button. Don't forget to turn this setting off again after your test.
+> _Hint:_ This type of error will most probably not happen by chance. To test this case you can simulate the situation with your browser's dev tools.
+> Follow this [Firefox Docs guide](https://firefox-source-docs.mozilla.org/devtools-user/network_monitor/request_list/index.html#blocking-specific-urls) to block the request. You can use the the wildcard `*` as URL to block all requests. Don't forget to turn this setting off again after your test.
 
 ## Notes
 
