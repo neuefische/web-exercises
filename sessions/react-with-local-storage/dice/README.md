@@ -21,7 +21,7 @@ The `D6Button` component should have the following props:
 
 #### Change the `App` component
 
-The `App` component should now hold the state, define the `handleRoll` function and derive the `currentRollvalue` from the `rolls` state.
+The `App` component should now hold the state, define the `handleRoll` function and derive the `currentRollValue` from the `rolls` state.
 
 - `handleRoll` should be passed to `onRoll` of the `<D6Button />`
 - `currentRollValue` should be passed to `value` of the `<D6Button />`
