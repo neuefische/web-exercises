@@ -24,7 +24,7 @@ export default function Joke() {
   return (
     <>
       <h1>{joke.joke}</h1>
-      <button type="button" onClick={() => setId(id + 1)}>
+      <button type="button" onClick={() => setId(joke.nextId)}>
         Next Joke
       </button>
     </>
