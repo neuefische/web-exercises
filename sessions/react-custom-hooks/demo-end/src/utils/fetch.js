@@ -17,8 +17,8 @@ export function useFetch(url) {
   return data;
 }
 
-export function useJoke(initialId = 0) {
-  const [id, setId] = useState(initialId);
+export function useJoke() {
+  const [id, setId] = useState(0);
 
   const joke = useFetch(`https://example-apis.vercel.app/api/bad-jokes/${id}`);
 
