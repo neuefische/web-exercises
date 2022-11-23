@@ -9,8 +9,20 @@
   padding: 0.5rem;
   color: #eee;
   background-color: #676363;
+  display: flex;
+  justify-content: space-between;
 }
 
 .list__item + .list__item {
   margin-block: 0.25rem;
+}
+
+.list__item-delete-button {
+  border-radius: 50%;
+  border-color: #111;
+  background-color: #dc143c;
+}
+
+.list__item-delete-button:hover {
+  background-color: #a20e2b;
 }

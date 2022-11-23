@@ -10,7 +10,7 @@ function App() {
     defaultValue: [],
   });
 
-  const isGoodWeather = false;
+  const isGoodWeather = true;
 
   const filteredActivities = activities.filter(
     (activity) => activity.isGoodWeather === isGoodWeather
@@ -20,9 +20,17 @@ function App() {
     setActivities([...activities, { id: nanoid(), ...newActivity }]);
   }
 
+  function handleDeleteActivity(id) {
+    setActivities(activities.filter((activity) => activity.id !== id));
+  }
+
   return (
     <div className="App">
-      <List activities={filteredActivities} isGoodWeather={isGoodWeather} />
+      <List
+        activities={filteredActivities}
+        isGoodWeather={isGoodWeather}
+        onDeleteActivity={handleDeleteActivity}
+      />
       <Form onAddActivity={handleAddActivity} />
     </div>
   );
