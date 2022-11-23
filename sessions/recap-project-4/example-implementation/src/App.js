@@ -3,12 +3,18 @@ import "./App.css";
 import Form from "./components/Form/index.js";
 import List from "./components/List/index.js";
 import { nanoid } from "nanoid";
+import { filter } from "fuzzy";
 
 function App() {
   const [activities, setActivities] = useLocalStorageState("activities", {
     defaultValue: [],
   });
-  console.log(activities);
+
+  const isGoodWeather = false;
+
+  const filteredActivities = activities.filter(
+    (activity) => activity.isGoodWeather === isGoodWeather
+  );
 
   function handleAddActivity(newActivity) {
     setActivities([...activities, { id: nanoid(), ...newActivity }]);
@@ -16,7 +22,7 @@ function App() {
 
   return (
     <div className="App">
-      <List activities={activities} />
+      <List activities={filteredActivities} isGoodWeather={isGoodWeather} />
       <Form onAddActivity={handleAddActivity} />
     </div>
   );
