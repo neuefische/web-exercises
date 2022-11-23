@@ -1,3 +1,8 @@
 .App {
   margin: 2rem;
 }
+
+.App__heading {
+  display: flex;
+  justify-content: space-around;
+}
