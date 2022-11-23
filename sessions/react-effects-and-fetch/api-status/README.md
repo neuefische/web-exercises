@@ -8,7 +8,7 @@ Look at the [`src/components/StatusCheck/index.js`](./src/components/StatusCheck
 
 There is a function named `handleCheckApiStatus`. The function is called when you click the button.
 
-Inside of this function use `fetch()` to load status information from API URL given in the variable ` apiStatusUrl`. You will receive a different random result everytime you call the API.
+Inside of this function use `fetch()` to load status information from the API URL given in the variable `apiStatusUrl`. You will receive a different random result every time you call the API.
 
 Your task is to write the logic for `handleCheckApiStatus` so that - depending on `response.ok` - the icon displays either ✅ or ❌.
 
