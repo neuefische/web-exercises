@@ -17,7 +17,7 @@ The `D6Button` component should have the following props:
 - `value` which represents the current roll value (because the button only needs to know the most recent value)
 - `onRoll` which is a function that get called on roll (when the button is clicked)
 
-> 💡 When designing the interface of you component (which props it has), think about what does the component need to know to function properly. In this case the component only needs to know the current value it should show, and a function that gets called when the button is clicked. Hence you should not pass the whole `rolls` array to the component.
+> 💡 When designing the interface of you component (which props it has), think about what the component needs to know to function properly. In this case the component only needs to know the current value it should show, and a function that gets called when the button is clicked. Hence you should not pass the whole `rolls` array to the component.
 
 #### Change the `App` component
 
