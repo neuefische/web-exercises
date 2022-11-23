@@ -26,7 +26,8 @@ Great! Now we know how much pizza we gain if we choose the second pizza. But we 
 2. Calculate the new display size of the pizza element
    > 💡 The formula is: `newSize / 24 * 100`.
 3. Set the width of the `pizzaElement` to this new value.
-   > 💡 you can use `pizzaElement.style.width` for that.
+   > 💡 You can use `pizzaElement.style.width` for that.
+   > 💡 The width needs a unit, a simple number is not enough. Don't forget to concat "px" to your calculated number.
 4. Call this function in both event listeners and pass in the correct pizza element and the correct pizza size.
 
 ### 3 Extra: Change the Output Background
