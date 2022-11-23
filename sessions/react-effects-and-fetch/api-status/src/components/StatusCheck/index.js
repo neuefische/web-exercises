@@ -29,7 +29,7 @@ export default function StatusCheck() {
         <h2 className="StatusCheck__heading">Status:</h2>
         <span className="StatusCheck__icon">{statusIcon}</span>
       </div>
-      <button className="StatusCheck__button" onClick={handleCheckApiStatus}>
+      <button type="button" className="StatusCheck__button" onClick={handleCheckApiStatus}>
         Check API Status
       </button>
     </article>
