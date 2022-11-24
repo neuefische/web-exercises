@@ -1,0 +1,10 @@
+{
+  "name": "starter-html-css-static",
+  "version": "0.0.0-unreleased",
+  "description": "Starter for Static HTML and CSS",
+  "main": "index.html",
+  "nf": {
+    "starter": "html-css-static"
+  },
+  "private": true
+}
