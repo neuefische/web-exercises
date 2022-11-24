@@ -35,7 +35,13 @@ function App() {
         console.log(error);
       }
     }
-    fetchWeather();
+    const timer = setInterval(() => {
+      fetchWeather();
+    }, 5000);
+
+    return () => {
+      clearInterval(timer);
+    };
   }, [setWeather]);
 
   const filteredActivities = activities.filter(
