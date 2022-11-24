@@ -4,11 +4,13 @@ export default function List({ activities, isGoodWeather, onDeleteActivity }) {
   return (
     <>
       <h2>
-        {isGoodWeather
+        {isGoodWeather === null
+          ? null
+          : isGoodWeather
           ? "The weather is awesome! Go outside and:"
           : "Bad weather outside! Here's what you can do now:"}
       </h2>
-      <ul className="list" role="list">
+      <ul className="list">
         {activities.map((activity) => (
           <li key={activity.id} className="list__item">
             {activity.name}

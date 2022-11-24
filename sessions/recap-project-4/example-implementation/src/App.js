@@ -17,19 +17,26 @@ function App() {
   useEffect(() => {
     async function fetchWeather() {
       try {
-        const response = await fetch("api to implement");
+        const response = await fetch(
+          "https://example-apis.vercel.app/api/weather"
+        );
         if (response.ok) {
-          setWeather({ temperatur: 13, condition: "🌞", isGoodWeather: true });
+          const data = await response.json();
+          setWeather(data);
         } else {
           console.log("Something went wrong!");
-          setWeather({ temperatur: 13, condition: "🌧️", isGoodWeather: false });
+          setWeather({
+            temperature: "⁉️",
+            condition: "⁉️",
+            isGoodWeather: null,
+          });
         }
       } catch (error) {
         console.log(error);
       }
     }
     fetchWeather();
-  }, []);
+  }, [setWeather]);
 
   const filteredActivities = activities.filter(
     (activity) => activity.isGoodWeather === weather.isGoodWeather
@@ -46,8 +53,14 @@ function App() {
   return (
     <div className="App">
       <h1 className="App__heading">
-        <span>{weather.condition}</span>
-        <span>{weather.temperatur}</span>
+        {weather.isGoodWeather === null ? (
+          "Ooops, looks like there is no weather at all!"
+        ) : (
+          <>
+            <span>{weather.condition}</span>
+            <span>{weather.temperature} °C</span>
+          </>
+        )}
       </h1>
       <List
         activities={filteredActivities}
