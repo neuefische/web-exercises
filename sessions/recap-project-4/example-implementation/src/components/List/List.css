@@ -5,12 +5,12 @@
 }
 
 .list__item {
-  border: 1px solid #111;
   padding: 0.5rem;
   color: #eee;
-  background-color: #676363;
+  background-color: #494949;
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 .list__item + .list__item {
@@ -18,11 +18,12 @@
 }
 
 .list__item-delete-button {
-  border-radius: 50%;
-  border-color: #111;
-  background-color: #dc143c;
+  appearance: none;
+  background: unset;
+  border: none;
+  color: #fff;
 }
 
 .list__item-delete-button:hover {
-  background-color: #a20e2b;
+  color: #e71c45;
 }
