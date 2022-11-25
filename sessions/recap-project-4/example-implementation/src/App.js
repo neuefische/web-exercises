@@ -7,12 +7,14 @@ import { nanoid } from "nanoid";
 
 function App() {
   const [activities, setActivities] = useLocalStorageState("activities", {
-    defaultValue: [],
+    defaultValue: [
+      { id: "hdz72hdne", name: "Cleanup kitchen", isGoodWeather: false },
+      { id: "kdei928ndhe", name: "Go for a walk", isGoodWeather: true },
+    ],
   });
   const [weather, setWeather] = useLocalStorageState("weather", {
     defaultValue: null,
   });
-  console.log(weather);
 
   useEffect(() => {
     async function fetchWeather() {
@@ -45,7 +47,7 @@ function App() {
   }, [setWeather]);
 
   const filteredActivities = activities.filter(
-    (activity) => activity.isGoodWeather === weather.isGoodWeather
+    (activity) => activity.isGoodWeather === weather?.isGoodWeather
   );
 
   function handleAddActivity(newActivity) {
@@ -59,7 +61,7 @@ function App() {
   return (
     <div className="App">
       <h1 className="App__heading">
-        {weather.isGoodWeather === null ? (
+        {weather === null ? (
           "Ooops, looks like there is no weather at all!"
         ) : (
           <>
@@ -70,7 +72,7 @@ function App() {
       </h1>
       <List
         activities={filteredActivities}
-        isGoodWeather={weather.isGoodWeather}
+        isGoodWeather={weather?.isGoodWeather}
         onDeleteActivity={handleDeleteActivity}
       />
       <Form onAddActivity={handleAddActivity} />
