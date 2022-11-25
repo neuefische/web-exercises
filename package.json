@@ -17,10 +17,11 @@
   ],
   "scripts": {
     "create": "node ./scripts/create.js",
-    "get": "node ./scripts/get.js",
-    "get-c": "node ./scripts/get.js -c",
+    "get-pr": "node ./scripts/get.js",
+    "get": "node ./scripts/get.js -c",
     "markdown-toc": "npx markdown-toc -i README.md",
-    "ncu": "npx npm-check-updates"
+    "ncu": "npx npm-check-updates",
+    "cook": "node ./scripts/cook.js"
   },
   "dependencies": {
     "branch-name": "^1.0.0",

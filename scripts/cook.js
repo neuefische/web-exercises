@@ -14,13 +14,13 @@ if (!recipeName) {
   process.exit(1);
 }
 
-if (!fs.existsSync(join("recipe", recipeName, "recipe.js"))) {
+if (!fs.existsSync(join("recipes", recipeName, "recipe.js"))) {
   console.error(`Recipe ${recipeName} does not exist`);
   process.exit(1);
 }
 
 // load recipe
-const recipe = (await import(join("..", "recipe", recipeName, "recipe.js")))
+const recipe = (await import(join("..", "recipes", recipeName, "recipe.js")))
   .default;
 
 if (!recipe) {
@@ -64,13 +64,13 @@ async function cookRecipe(recipe, spinner) {
   }
 
   // post process
-  if (recipe.postProcess) {
+  if (recipe.beforeFiles) {
     spinner.text = `Post processing…`;
-    await recipe.postProcess({ cwd: tempDirStarter, spinner });
+    await recipe.beforeFiles({ cwd: tempDirStarter, spinner });
   }
   // copy files
   spinner.text = `Copying files…`;
-  await fs.copy(join("recipe", recipeName, "files"), tempDirStarter, {
+  await fs.copy(join("recipes", recipeName, "files"), tempDirStarter, {
     overwrite: true,
   });
 
@@ -81,9 +81,13 @@ async function cookRecipe(recipe, spinner) {
 
   // copy template template files
   spinner.text = `Copying template files…`;
-  await fs.copy(join("recipe", recipeName, "template-files"), tempDirTemplate, {
-    overwrite: true,
-  });
+  await fs.copy(
+    join("recipes", recipeName, "template-overrides"),
+    tempDirTemplate,
+    {
+      overwrite: true,
+    }
+  );
 
   spinner.text = `Updating package.json…`;
 

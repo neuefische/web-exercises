@@ -5,7 +5,7 @@ export default {
     "npx",
     ["create-next-app@latest", "--js", "--eslint", "--use-npm", "."],
   ],
-  async postProcess({ cwd, spinner }) {
+  async beforeFiles({ cwd, spinner }) {
     spinner.text = "Installing Styled Components…";
     await installStyledComponents({ cwd });
 
