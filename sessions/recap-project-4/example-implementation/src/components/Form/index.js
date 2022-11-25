@@ -8,7 +8,7 @@ export default function Form({ onAddActivity }) {
 
     const data = {
       name: formElements.name.value,
-      isGoodWeather: formElements.isGoodWeather.checked,
+      isForGoodWeather: formElements.isForGoodWeather.checked,
     };
     onAddActivity(data);
     form.reset();
@@ -23,8 +23,8 @@ export default function Form({ onAddActivity }) {
         <input id="name" type="text" name="name" />
       </div>
       <div className="form__input-container">
-        <label htmlFor="isGoodWeather">Good-weather Activity:</label>
-        <input id="isGoodWeather" type="checkbox" name="isGoodWeather" />
+        <label htmlFor="isForGoodWeather">Good-weather Activity:</label>
+        <input id="isForGoodWeather" type="checkbox" name="isForGoodWeather" />
       </div>
       <button type="submit">Submit</button>
     </form>

@@ -8,8 +8,8 @@ import { nanoid } from "nanoid";
 function App() {
   const [activities, setActivities] = useLocalStorageState("activities", {
     defaultValue: [
-      { id: "hdz72hdne", name: "Cleanup kitchen", isGoodWeather: false },
-      { id: "kdei928ndhe", name: "Go for a walk", isGoodWeather: true },
+      { id: "hdz72hdne", name: "Cleanup kitchen", isForGoodWeather: false },
+      { id: "kdei928ndhe", name: "Go for a walk", isForGoodWeather: true },
     ],
   });
   const [weather, setWeather] = useLocalStorageState("weather", {
@@ -47,7 +47,7 @@ function App() {
   }, [setWeather]);
 
   const filteredActivities = activities.filter(
-    (activity) => activity.isGoodWeather === weather?.isGoodWeather
+    (activity) => activity.isForGoodWeather === weather?.isGoodWeather
   );
 
   function handleAddActivity(newActivity) {
