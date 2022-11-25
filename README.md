@@ -129,7 +129,9 @@ The following types of templates and starters are available.
 
 A project that does not contain any code.
 
-> 📝 Create a new exercise: `npm run create` → Select type `Empty`
+> 📝 Create a new exercise inside this repository:
+>
+> `npm run create` → Select type `Empty`
 
 > ✨ Use as a starter:
 >
@@ -143,7 +145,9 @@ A project that does not contain any code.
 
 A project that contains HTML, CSS and JavaScript files with jest support. CodeSandbox bundles the code and runs the tests automatically. Locally you can run the tests with `npm test`.
 
-> 📝 Create a new exercise: `npm run create` → Select type `HTML, CSS and JavaScript (with Jest support)`
+> 📝 Create a new exercise inside this repository:
+>
+> `npm run create` → Select type `HTML, CSS and JavaScript (with Jest support)`
 
 > ✨ Use as a starter:
 >
@@ -157,7 +161,9 @@ A project that contains HTML, CSS and JavaScript files with jest support. CodeSa
 
 A project that contains HTML, CSS and JavaScript files but has no bundler and therefore does not support tests.
 
-> 📝 Create a new exercise: `npm run create` → Select type `Static HTML, CSS and JavaScript`
+> 📝 Create a new exercise inside this repository:
+>
+> `npm run create` → Select type `Static HTML, CSS and JavaScript`
 
 > ✨ Use as a starter:
 >
@@ -171,7 +177,9 @@ A project that contains HTML, CSS and JavaScript files but has no bundler and th
 
 A project that contains HTML and CSS files.
 
-> 📝 Create a new exercise: `npm run create` → Select type `Static HTML and CSS`
+> 📝 Create a new exercise inside this repository:
+>
+> `npm run create` → Select type `Static HTML and CSS`
 
 > ✨ Use as a starter:
 >
@@ -185,7 +193,9 @@ A project that contains HTML and CSS files.
 
 A project that contains only JavaScript files with jest support. CodeSandbox bundles the code and runs the tests automatically. Locally you can run the tests with `npm test`.
 
-> 📝 Create a new exercise: `npm run create` → Select type `JavaScript (with Jest support)`
+> 📝 Create a new exercise inside this repository:
+>
+> `npm run create` → Select type `JavaScript (with Jest support)`
 
 > ✨ Use as a starter:
 >
@@ -199,7 +209,9 @@ A project that contains only JavaScript files with jest support. CodeSandbox bun
 
 A project that contains a minimal React app. It uses `react-scripts` but only contains the bare minimum files from Create React App.
 
-> 📝 Create a new exercise: `npm run create` → Select type `Minimal React`
+> 📝 Create a new exercise inside this repository:
+>
+> `npm run create` → Select type `Minimal React`
 
 > ✨ Use as a starter:
 >
@@ -213,7 +225,9 @@ A project that contains a minimal React app. It uses `react-scripts` but only co
 
 A project from executing `create-react-app` to create a new React app.
 
-> 📝 Create a new exercise: `npm run create` → Select type `Create React App`
+> 📝 Create a new exercise inside this repository:
+>
+> `npm run create` → Select type `Create React App`
 
 > ✨ Use as a starter:
 >
@@ -229,13 +243,17 @@ A project from executing `create-react-app` to create a new React app.
 
 A project from executing `npx create-next-app` to create a new Next.js app. Our variant also includes Styled Components, Jest and Storybook.
 
-> 📝 Create a new exercise: `npm run create` → Select type `Next.js (incl. Styled Components, Jest, Storybook)`
+> 📝 Create a new exercise inside this repository:
+>
+> `npm run create` → Select type `Next.js (incl. Styled Components, Jest, Storybook)`
 
 > ✨ Use as a starter:
 >
 > ```
 > npx ghcd@latest neuefische/web-exercises/tree/main/starters/next my-app -i
 > ```
+
+> ❗️ Next.js only works "moderately" well on CodeSandbox. We recommend using it locally.
 
 ## Exercise requirements
 
