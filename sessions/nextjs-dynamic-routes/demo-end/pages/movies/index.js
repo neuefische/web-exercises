@@ -10,27 +10,22 @@ export default function Movies() {
       <Head>
         <title>List of Movies</title>
       </Head>
-      <h2>List of Movies</h2>
+      <h1>List of Movies</h1>
       <ul>
         {movies.map((movie) => (
           <li key={movie.id}>
-            <Link
-              href={{
-                pathname: "/movies/[movie]",
-                query: { movie: movie.slug },
-              }}
-            >
-              {movie.title}
-            </Link>
+            <Link href={`/movies/${movie.slug}`}>{movie.title}</Link>
           </li>
         ))}
       </ul>
       <button
         onClick={() => {
-          if (confirm("Go to Hulk?")) router.push("/movies/hulk");
+          if (confirm("Are you Aquaman?")) {
+            router.push("/movies/aquaman");
+          }
         }}
       >
-        Wanna Hulk?
+        Are you Aquaman?
       </button>
     </>
   );
