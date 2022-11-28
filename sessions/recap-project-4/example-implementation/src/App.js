@@ -26,12 +26,7 @@ function App() {
           const data = await response.json();
           setWeather(data);
         } else {
-          console.log("Something went wrong!");
-          setWeather({
-            temperature: "⁉️",
-            condition: "⁉️",
-            isGoodWeather: null,
-          });
+          console.error("Bad server response");
         }
       } catch (error) {
         console.error(error);
