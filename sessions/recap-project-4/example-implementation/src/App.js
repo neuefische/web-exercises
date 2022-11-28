@@ -34,7 +34,7 @@ function App() {
           });
         }
       } catch (error) {
-        console.log(error);
+        console.error(error);
       }
     }
     const timer = setInterval(() => {
