@@ -60,22 +60,22 @@ function App() {
 
   return (
     <div className="app">
-      <h1 className="App__heading">
-        {weather === null ? (
-          "Ooops, looks like there is no weather at all!"
-        ) : (
-          <>
+      {weather === null ? (
+        <h1 className="app__heading">Loading weather ...</h1>
+      ) : (
+        <>
+          <h1 className="app__heading">
             <span>{weather.condition}</span>
             <span>{weather.temperature} °C</span>
-          </>
-        )}
-      </h1>
-      <List
-        activities={filteredActivities}
-        isGoodWeather={weather?.isGoodWeather}
-        onDeleteActivity={handleDeleteActivity}
-      />
-      <Form onAddActivity={handleAddActivity} />
+          </h1>
+          <List
+            activities={filteredActivities}
+            isGoodWeather={weather?.isGoodWeather}
+            onDeleteActivity={handleDeleteActivity}
+          />
+          <Form onAddActivity={handleAddActivity} />
+        </>
+      )}
     </div>
   );
 }
