@@ -1,4 +1,4 @@
-const movies = [
+export const movies = [
   {
     id: 24428,
     title: "The Avengers",
@@ -72,5 +72,3 @@ const movies = [
     year: 2019,
   },
 ];
-
-export default movies;

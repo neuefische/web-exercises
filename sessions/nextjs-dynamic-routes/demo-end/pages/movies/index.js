@@ -1,7 +1,7 @@
-import Link from "next/link";
 import Head from "next/head";
-import movies from "../../lib/movies.js";
+import Link from "next/link";
 import { useRouter } from "next/router";
+import { movies } from "../../lib/data";
 
 export default function Movies() {
   const router = useRouter();
