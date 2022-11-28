@@ -59,7 +59,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="app">
       <h1 className="App__heading">
         {weather === null ? (
           "Ooops, looks like there is no weather at all!"
