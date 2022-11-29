@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>js-functions: Pizza Analyzer</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/index.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>Pizza Analyzer 🍕</h1>
+      <section class="pizza-section">
+        <h2>Pizza 1</h2>
+        <div class="pizza" data-js="pizza-1"></div>
+        <p>
+          <input
+            type="number"
+            class="pizza-input"
+            data-js="pizza-input-1"
+            value="24"
+            aria-label="Input for first pizza diameter"
+            min="0"
+            max="55"
+          /><span> cm</span>
+        </p>
+      </section>
+      <section class="pizza-section">
+        <h2>Pizza 2</h2>
+        <div class="pizza" data-js="pizza-2"></div>
+        <p>
+          <input
+            type="number"
+            class="pizza-input"
+            value="24"
+            data-js="pizza-input-2"
+            aria-label="Input for second pizza diameter"
+            min="0"
+            max="55"
+          /><span> cm</span>
+        </p>
+      </section>
+      <section class="output-display" data-js="output-section">
+        <h2>Gain in Pizza</h2>
+        <p><output data-js="output">0</output><span> %</span></p>
+      </section>
+    </main>
+  </body>
+</html>

@@ -6,11 +6,11 @@ import {
   animaltypeOfLisasPet,
 } from "./index";
 
-test('Exersice 1: nameOfFirstPerson is "Homer"', () => {
+test('Exercise 1: nameOfFirstPerson is "Homer"', () => {
   expect(nameOfFirstPerson).toBe("Homer");
 });
 
-test('Exersice 2: homersOtherFriends are "Barney Gumble", "Carl Carlson" and "Lenny Leonard"', () => {
+test('Exercise 2: homersOtherFriends are "Barney Gumble", "Carl Carlson" and "Lenny Leonard"', () => {
   expect(homersOtherFriends).toEqual([
     "Barney Gumble",
     "Carl Carlson",
@@ -18,14 +18,14 @@ test('Exersice 2: homersOtherFriends are "Barney Gumble", "Carl Carlson" and "Le
   ]);
 });
 
-test("Exersice 3: ageOfThirdPerson is 10", () => {
+test("Exercise 3: ageOfThirdPerson is 10", () => {
   expect(ageOfThirdPerson).toEqual(10);
 });
 
-test('Exersice 4: mothersNameOfSecondPerson is "Jacqueline Bouvier"', () => {
+test('Exercise 4: mothersNameOfSecondPerson is "Jacqueline Bouvier"', () => {
   expect(mothersNameOfSecondPerson).toEqual("Jacqueline Bouvier");
 });
 
-test("Exersice 5: animaltypeOfLisasPet is dog", () => {
+test("Exercise 5: animaltypeOfLisasPet is dog", () => {
   expect(animaltypeOfLisasPet).toEqual("dog");
 });

@@ -6,9 +6,9 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Header />
-      <main className="App__main">
+      <main className="app__main">
         <h1>React app example structure</h1>
         <p>Learn how to structure your React app.</p>
         <Button href="https://reactjs.org">Learn React</Button>

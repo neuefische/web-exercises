@@ -6,9 +6,9 @@ import { USERS } from "./db";
 
 export default function App() {
   return (
-    <main className="App__container">
+    <main className="app">
       <Title text="ClientBoard" />
-      <div className="App__card-grid">
+      <div className="app__card-grid">
         <Card user={USERS[0]} />
       </div>
     </main>

@@ -1,0 +1,8 @@
+.app {
+  margin: 2rem;
+}
+
+.app__heading {
+  display: flex;
+  justify-content: space-around;
+}

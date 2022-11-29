@@ -1,4 +1,4 @@
-.StatusCheck {
+.status-check {
   border: 1px solid var(--color-granite);
   border-radius: 5px;
   padding: 1rem;
@@ -7,22 +7,22 @@
   gap: 1rem;
 }
 
-.StatusCheck__button {
+.status-check__button {
   border: none;
   background-color: var(--color-nemo);
   color: var(--color-foam);
   padding: 0.5rem;
 }
 
-.StatusCheck__heading {
+.status-check__heading {
   margin: 0;
 }
 
-.StatusCheck__icon {
+.status-check__icon {
   align-self: center;
 }
 
-.StatusCheck__wrapper {
+.status-check__wrapper {
   display: flex;
   justify-content: space-evenly;
   margin: 0.25rem;

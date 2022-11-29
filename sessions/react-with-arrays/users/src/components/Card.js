@@ -3,9 +3,9 @@ import Tag from "./Tag";
 import Button from "./Button";
 function Card({ user }) {
   return (
-    <article className="Card-container">
+    <article className="card">
       <h2>{user.name}</h2>
-      <ul className="Card__taglist">
+      <ul className="card__taglist">
         <Tag tag={user.roles[0]} />
       </ul>
       <p>{user.about}</p>

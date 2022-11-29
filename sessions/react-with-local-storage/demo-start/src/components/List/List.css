@@ -1,10 +1,10 @@
-.List {
+.list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.List__item {
+.list__item {
   background: #fff;
   padding: 0.75rem;
   margin: 0 0 1rem 0;
