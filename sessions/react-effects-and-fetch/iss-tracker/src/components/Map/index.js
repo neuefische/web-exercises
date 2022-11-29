@@ -11,7 +11,7 @@ export default function Map({ longitude, latitude }) {
         alt="a map of the world"
       />
       <div
-        className="map__ISS"
+        className="map__iss"
         style={{
           top: y,
           left: x,
