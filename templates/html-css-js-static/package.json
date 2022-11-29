@@ -1,7 +1,7 @@
 {
   "name": "template-html-css-js-static",
   "version": "0.0.0-unreleased",
-  "description": "HTML, CSS and JS static",
+  "description": "Static HTML, CSS and JavaScript",
   "main": "index.html",
   "scripts": {
     "lint": "npx eslint .",
@@ -9,5 +9,6 @@
   },
   "nf": {
     "template": "html-css-js-static"
-  }
+  },
+  "private": true
 }

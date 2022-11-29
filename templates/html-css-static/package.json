@@ -1,9 +1,10 @@
 {
   "name": "template-html-css-static",
   "version": "0.0.0-unreleased",
-  "description": "HTML and CSS static",
+  "description": "Static HTML and CSS",
   "main": "index.html",
   "nf": {
     "template": "html-css-static"
-  }
+  },
+  "private": true
 }

@@ -1,7 +1,7 @@
 {
   "name": "template-html-css-js",
   "version": "0.0.0-unreleased",
-  "description": "HTML, CSS and JS with jest support",
+  "description": "HTML, CSS and JavaScript (with Jest support)",
   "main": "index.html",
   "type": "module",
   "scripts": {
@@ -18,5 +18,6 @@
   },
   "nf": {
     "template": "html-css-js"
-  }
+  },
+  "private": true
 }
