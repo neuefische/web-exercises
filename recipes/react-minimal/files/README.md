@@ -1,6 +1,6 @@
 # This is a new minimal React project.
 
-This project was created from the neue fische react-minimal starter.
+This project was created from the neue fische react-minimal template.
 
 ## Development
 

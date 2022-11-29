@@ -1,6 +1,6 @@
 # This is a new JavaScript project.
 
-This project was created from the neue fische js starter.
+This project was created from the neue fische js template.
 
 ## Development
 

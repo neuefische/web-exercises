@@ -1,6 +1,6 @@
 # This is a new static HTML, CSS and JavaScript project.
 
-This project was created from the neue fische html-css-js-static starter.
+This project was created from the neue fische html-css-js-static template.
 
 ## Development
 
