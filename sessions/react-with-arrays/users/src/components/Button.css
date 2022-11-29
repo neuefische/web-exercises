@@ -1,4 +1,4 @@
-.Button {
+.button {
   border: none;
   padding: 8px 20px;
   background-color: var(--color-water);
@@ -9,7 +9,7 @@
   align-self: center;
 }
 
-.Button--danger {
+.button--danger {
   color: var(--color-foam);
   background-color: var(--color-nemo);
   filter: unset;

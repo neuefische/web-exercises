@@ -4,7 +4,7 @@ export default function App() {
   const fruits = [];
 
   return (
-    <div className="App">
+    <div className="app">
       <Card name="🍌 banana" />
     </div>
   );

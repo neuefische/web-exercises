@@ -36,7 +36,7 @@ export default function App() {
   const email = "???";
 
   return (
-    <div className="App">
+    <div className="app">
       <h1>useState and Events</h1>
       <Form />
       <h2>Your details:</h2>

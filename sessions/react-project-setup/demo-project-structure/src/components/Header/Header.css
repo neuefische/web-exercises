@@ -1,11 +1,11 @@
-.Header {
+.header {
   background: #20232a;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.Header__inner {
+.header__inner {
   width: 100%;
   max-width: 60rem;
   margin: 0 auto;
@@ -14,11 +14,11 @@
   align-items: center;
 }
 
-.Header__logo {
+.header__logo {
   width: 6rem;
 }
 
-.Header__navigation {
+.header__navigation {
   display: flex;
   gap: 2rem;
   padding: 0 2rem 0 0;

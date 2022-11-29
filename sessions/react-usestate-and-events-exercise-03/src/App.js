@@ -13,7 +13,7 @@ export default function App() {
   }
 
   return (
-    <div className="App">
+    <div className="app">
       <h1>useState and Events</h1>
       <form aria-labelledby="user" onSubmit={handleSubmit}>
         <h2 id="user">Form with useState</h2>
