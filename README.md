@@ -101,7 +101,7 @@ This will ask you for the session name, exercise name and exercise type.
 > **Note**  
 > If you follow the branch naming convention (`session-name_exercise-name`), the create script will automatically detect the session and exercise name from the branch name.
 
-This repository contains [templates for most types of exercises](#templates--starters--recipes).
+This repository contains [templates for most types of exercises](#templates).
 
 ### Creating a PR
 
@@ -124,7 +124,7 @@ npm run get
 
 ## Templates
 
-The following types of templates and starters are available.
+The following types of templates are available.
 
 ### Empty
 
