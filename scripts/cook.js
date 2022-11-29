@@ -46,6 +46,8 @@ async function cookRecipe(recipe, spinner) {
   const tempDirStarter = join(".temp", recipeName);
   const tempDirTemplate = tempDirStarter + "-template";
 
+  await fs.ensureDir(".temp");
+
   // delete temp folder if it exists
   if (fs.existsSync(tempDirStarter)) {
     await fs.rm(tempDirStarter, { recursive: true, force: true });

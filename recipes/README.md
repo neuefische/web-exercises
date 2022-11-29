@@ -7,7 +7,7 @@ This directory contains recipes that can be used to create templates and starter
 - **Templates** are used to create **new exercises, challenges, etc. directly in this repository** using the `npm run create` command.
 - **Starters** are used to create **new projects outside of this repository** using the `npx ghcd neuefische/web-exercises/starters/<starter> my-app -i` command.
 
-The main difference content-wise is that templates `README.md` file contains an instructions template for the exercise, while starters `README.md` file is very bare-bones. See [How?](#how) for more details.
+The main difference content-wise is in regards to the `README.md` file: in templates, it contains an instructions template for the exercise, while in starters, it is very bare-bones. See [How?](#how) for more details.
 
 > **Warning**  
 > Never edit the files in the `starters` and `templates` directories directly. Instead, edit the recipe in this folder and then [cook it using the `npm run cook <recipe>` command](#cooking-a-recipe).

@@ -37,7 +37,7 @@ All of the exercises are designed to work locally as well as on CodeSandbox.
 
 A _session_ is a collection of exercises that are used in a specific bootcamp session.
 
-A _exercise_ is any form of exercise, challenge, demo or starter that is used in the web bootcamps.
+An _exercise_ is any form of exercise, challenge, demo or starter that is used in the web bootcamps.
 
 The folder structure is as follows:
 

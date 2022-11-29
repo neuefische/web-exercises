@@ -1,4 +1,4 @@
-# This is a new HTML, CSS and JavaSscript project.
+# This is a new HTML, CSS and JavaScript project.
 
 This project was created from the neue fische html-css-js starter.
 
