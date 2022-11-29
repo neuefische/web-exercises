@@ -1,31 +1,6 @@
-# TITLE
+# This is a new JavaScript project.
 
-<!--
-
-Describe the exercise in a few sentences. E.g.:
-
-Objects are everywhere. Let's become confident handling them!
-
--->
-
-## Task
-
-<!--
-
-Explaining the task in detail. E.g.:
-
-In this exercise, you will encounter the following tasks:
-
-- assign or add a variable to a value of an object,
-- the variable itself is an object and you need to adjust it.
-
-Please switch to the [`index.js`](./index.js) file to start the exercises. You will find the exact tasks there.
-
--->
-
-## Notes
-
-- You only have to touch the [`index.js`](./index.js) file.
+This project was created from the neue fische js starter.
 
 ## Development
 

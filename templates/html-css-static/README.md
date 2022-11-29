@@ -1,32 +1,6 @@
-# TITLE
+# This is a new static HTML and CSS project.
 
-<!--
-
-Describe the exercise in a few sentences. E.g.:
-
-This challenge offers a simple static website. Let's make it more gorgeous with HTML and CSS!
-
--->
-
-## Task
-
-<!--
-
-Explaining the task in detail. E.g.:
-
-Build a personal website according to the ![wireframe](). Use the following hints as guidelines:
-
-- Hint 1
-- Hint 2
-- ...
-
-Switch to the [`index.html`](./index.html) file and make something great happen!
-
--->
-
-## Notes
-
-- You only have to touch the [`css/styles.css`](./css/styles.css) file.
+This project was created from the neue fische html-css-static starter.
 
 ## Development
 

@@ -6,7 +6,7 @@ import { titleCase } from "title-case";
 import { globby } from "globby";
 import ora from "ora";
 import { execa } from "execa";
-import path from "node:path";
+import path, { join } from "node:path";
 
 function titleCaseName(name) {
   return name === "main" || !name
@@ -27,10 +27,6 @@ function titleCaseName(name) {
 const spinner = ora("Creating exercise…");
 
 try {
-  if (fs.existsSync(".create-temp")) {
-    fs.rmdirSync(".create-temp", { recursive: true, force: true });
-  }
-
   const templates = (
     await globby("./templates/*", {
       onlyDirectories: true,
@@ -103,7 +99,6 @@ try {
     // copy the sessions/_template dir to the exercise dir
     await fs.copy(template.dir, exerciseDir, {
       overwrite: false,
-      errorOnExist: true,
       filter: (src) => {
         // don't copy any node_modules
         return !src.includes("node_modules");
@@ -120,14 +115,26 @@ try {
   pkg.description = title;
   await fs.writeJson(`${exerciseDir}/package.json`, pkg, { spaces: 2 });
 
-  // find all files in the exercise dir
-  // replace all instances of "TITLE" with the exercise name
+  // try to copy exercise overrides from recipe for this template
+  const recipeDir = join("recipes", template.name);
+  const exerciseOverrides = join(recipeDir, "exercise-overrides");
+  if (await fs.pathExists(exerciseOverrides)) {
+    await fs.copy(exerciseOverrides, exerciseDir, {
+      overwrite: true,
+      filter: (src) => {
+        // don't copy any node_modules
+        return !src.includes("node_modules");
+      },
+    });
+  }
 
+  // find all files in the exercise dir
   const files = await globby(`${exerciseDir}/**/*`, {
     onlyFiles: true,
     expandDirectories: false,
   });
 
+  // replace all instances of "TITLE" with the exercise name
   await Promise.all(
     files.map(async (file) => {
       const contents = await fs.readFile(file, "utf8");
@@ -154,16 +161,9 @@ try {
 
   spinner.succeed("Exercise created at " + exerciseDir);
 } catch (error) {
-  if (fs.existsSync(".create-temp")) {
-    fs.rmdirSync(".create-temp", { recursive: true, force: true });
-  }
   spinner.fail("Exercise creation failed");
   console.error(error);
   process.exit(1);
-} finally {
-  if (fs.existsSync(".create-temp")) {
-    fs.rmdirSync(".create-temp", { recursive: true, force: true });
-  }
 }
 
 process.exit(0);

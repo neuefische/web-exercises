@@ -1,34 +1,6 @@
-# TITLE
+# This is a new minimal React project.
 
-<!--
-
-Describe the exercise in a few sentences. E.g.:
-
-For now, the pokemon are only fetched when we click the button below. Let's change the code in such a way that our app does this automatically.
-
--->
-
-## Task
-
-<!--
-
-Explaining the task in detail. E.g.:
-
-Switch to the [`src/App.js`](./src/App.js) file and
-
-1. remove the 'Load Pokemon' button.
-2. fetch pokemon when the app is rendered.
-
-You can use the following hints as guideline:
-
-- The `loadPokemon` function should only be executed when the app is rendered.
-- Don't forget the dependency array!
-
--->
-
-## Notes
-
-- You only have to touch the [`src/App.js`](./src/App.js) file.
+This project was created from the neue fische react-minimal starter.
 
 ## Development
 

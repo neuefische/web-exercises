@@ -1,36 +1,6 @@
-# TITLE
+# This is a new static HTML, CSS and JavaScript project.
 
-<!--
-
-Describe the exercise in a few sentences. E.g.:
-
-This challenge offers a simple form with three input fields. Let's make it interactive with JS!
-
--->
-
-## Task
-
-<!--
-
-Explaining the task in detail. E.g.:
-
-Use JavaScript to react to the form submission.
-
-Log all form data (in object form) into the console in the submit event handler.
-
-You can use the following hints as guideline:
-
-- Hint 1
-- Hint 2
-- ...
-
-Switch to the  [`js/index.js`](./js/index.js)  file and make something great happen!
-
--->
-
-## Notes
-
-- You only have to touch the [`js/index.js`](./js/index.js) file.
+This project was created from the neue fische html-css-js-static starter.
 
 ## Development
 

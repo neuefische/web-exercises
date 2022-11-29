@@ -1,3 +1,3 @@
-# TITLE
+# New Empty Project
 
-This is the description.
+This project was created from the neue fische empty starter.
