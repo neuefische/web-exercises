@@ -6,7 +6,7 @@ Currently, the overview about the Lord of the Rings books is done with static ro
 
 ### Refactor: Dynamic Routes
 
-Refactor the static routes to book details to dynamic routes.
+Refactor the static routes to book details so that you use dynamic routes instead.
 
 You can use the following hints as guideline:
 
@@ -26,11 +26,7 @@ On the books overview page, create a button to navigate to a random book.
 
 - To create a random integer between `0` and `maximum`, you can use `Math.floor(Math.random() * maximum)`.
 - Use the random number to access a random index in the `books` array.
-- How can you interpolate the `slug` of your random book to `router.push`?
-
-## Notes
-
-- You only have to touch the [`pages/index.js`](./pages/index.js) file.
+- How can you interpolate the `slug` of your random book when calling `router.push`?
 
 ## Development
 
