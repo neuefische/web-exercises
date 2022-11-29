@@ -10,6 +10,10 @@ This challenge offers a simple form with three input fields. Let's make it inter
 
 ## Task
 
+### Styling the Book Component
+
+### Layout and more
+
 <!--
 
 Explaining the task in detail. E.g.:
