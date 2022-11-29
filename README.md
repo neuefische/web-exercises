@@ -82,7 +82,7 @@ The branches in this repository follow the following naming convention:
 <session-name>_<exercise-name>
 ```
 
-> **Info**  
+> **Note**  
 > You can do multiple exercises in one branch (e.g. `demo-start` and `demo-end`) if it makes sense. Just pick a unique branch like `<session-name>_demo`. Note that the `create` script will not be able to automatically detect the correct exercise name in that case.
 
 ## Create a new exercise
@@ -93,12 +93,12 @@ To create a new exercise run the following command:
 npm run create
 ```
 
-> **Info**  
+> **Note**  
 > Make sure to run this command from the root of the repository and to run `npm i` before.
 
 This will ask you for the session name, exercise name and exercise type.
 
-> **Info**  
+> **Note**  
 > If you follow the branch naming convention (`session-name_exercise-name`), the create script will automatically detect the session and exercise name from the branch name.
 
 This repository contains [templates for most types of exercises](#templates--starters--recipes).
@@ -119,7 +119,7 @@ You can obtain a copyable markdown snippet for an exercise by running the follow
 npm run get
 ```
 
-> **Info**  
+> **Note**  
 > You usally don't need this command as the markdown for the curriculum is already included in the PR markdown.
 
 ## Templates
@@ -273,7 +273,7 @@ All exercises must be reviewed before they are merged into the `main` branch. Cr
 
 Exercises must be reviewed by at least one neue fische web coach.
 
-> **Info**  
+> **Note**  
 > Exercises deliberately do not have to have passing tests to be merged. It is also fine to merge exercises with linting errors. Failing tests and linting errors can be part of the exercise itself.
 
 ## Access exercises or templates
@@ -295,7 +295,7 @@ The shareable link you need to copy looks like this:
 https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-array-methods/map?file=/README.md
 ```
 
-> **Info**  
+> **Note**  
 > While reviewing an exercise, you can share the link pointing to the respective branch. This way exercises can be reviewed on CodeSandbox before they are merged into the main branch.
 
 ### Locally
@@ -306,7 +306,7 @@ We are using [`ghcd`](https://github.com/djfarly/ghcd#readme) (GitHub Clone Dire
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/map -i
 ```
 
-> **Info**  
+> **Note**  
 > While reviewing an exercise, you can share the command pointing to the respective branch. This way exercises can be reviewed locally before they are merged into the main branch.
 
 > **Warning**  
