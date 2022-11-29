@@ -74,7 +74,6 @@ async function deleteUnnecessaryFiles({ cwd }) {
   const { join } = await import("node:path");
 
   await fs.rm(join(cwd, "public", "vercel.svg"), { force: true });
-  await fs.rm(join(cwd, "public", "favicon.ico"), { force: true });
   await fs.rm(join(cwd, "styles"), { force: true, recursive: true });
   await fs.rm(join(cwd, "pages", "api"), { force: true, recursive: true });
 }
