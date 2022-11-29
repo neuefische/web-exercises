@@ -4,14 +4,14 @@ export default function Map({ longitude, latitude }) {
   const [x, y] = positionToMapCoordinates(longitude, latitude);
 
   return (
-    <div className="Map">
+    <div className="map">
       <img
-        className="Map__image"
+        className="map__image"
         src=" https://upload.wikimedia.org/wikipedia/commons/8/83/Equirectangular_projection_SW.jpg"
         alt="a map of the world"
       />
       <div
-        className="Map__ISS"
+        className="map__ISS"
         style={{
           top: y,
           left: x,

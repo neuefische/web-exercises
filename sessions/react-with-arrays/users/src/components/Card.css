@@ -1,4 +1,4 @@
-.Card-container {
+.card {
   display: flex;
   flex-direction: column;
   background-color: var(--color-foam);
@@ -7,15 +7,15 @@
   border-left: 10px solid var(--color-nemo);
 }
 
-.Card-container h2 {
+.card h2 {
   margin: 0;
 }
 
-.Card-container p {
+.card p {
   margin: 0;
 }
 
-.Card__taglist {
+.card__taglist {
   list-style: none;
   padding: 0;
   display: flex;

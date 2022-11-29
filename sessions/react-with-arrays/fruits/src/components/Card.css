@@ -1,4 +1,4 @@
-.Card {
+.card {
   width: 70%;
   padding: 20px;
   margin-inline: auto;
@@ -6,14 +6,14 @@
   background-color: var(--color-water);
 }
 
-.Card--green {
+.card--green {
   background-color: lightgreen;
 }
 
-.Card--red {
+.card--red {
   background-color: lightcoral;
 }
 
-.Card--yellow {
+.card--yellow {
   background-color: lightyellow;
 }
