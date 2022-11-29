@@ -52,4 +52,4 @@ You'll want to run `npm run cook` after you've made changes to a recipe.
 
 ## Available recipes / templates
 
-See the [main README](../README.md#templates) for a list of all available templates created from these recipes.
+See the [main README](../README.md#available-templates) for a list of all available templates created from these recipes.

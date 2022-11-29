@@ -14,7 +14,7 @@ All of the exercises are designed to work locally as well as on CodeSandbox.
   - [Create a new exercise](#create-a-new-exercise)
     - [Creating a PR](#creating-a-pr)
     - [Getting Markdown for Curriculum](#getting-markdown-for-curriculum)
-  - [Templates](#templates-1)
+  - [Available Templates](#available-templates)
     - [Empty](#empty)
     - [HTML, CSS and JavaScript (with Jest support)](#html-css-and-javascript-with-jest-support)
     - [Static HTML, CSS and JavaScript](#static-html-css-and-javascript)
@@ -101,7 +101,7 @@ This will ask you for the session name, exercise name and exercise type.
 > **Note**  
 > If you follow the branch naming convention (`session-name_exercise-name`), the create script will automatically detect the session and exercise name from the branch name.
 
-This repository contains [templates for most types of exercises](#templates).
+This repository contains [templates for most types of exercises](#available-templates).
 
 ### Creating a PR
 
@@ -122,7 +122,7 @@ npm run get
 > **Note**  
 > You usally don't need this command as the markdown for the curriculum is already included in the PR markdown.
 
-## Templates
+## Available Templates
 
 The following types of templates are available.
 
