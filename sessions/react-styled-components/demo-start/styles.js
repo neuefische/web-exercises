@@ -1,6 +1,10 @@
 import { createGlobalStyle } from "styled-components";
 
+<<<<<<< HEAD
 export default createGlobalStyle`
+=======
+export const GlobalStyle = createGlobalStyle`
+>>>>>>> b678b29 (add styled components demo)
   *,
   *::before,
   *::after {
