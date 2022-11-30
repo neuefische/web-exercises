@@ -1,6 +1,6 @@
 # Accessibility: Demo End
 
-This is the conclusion of the Accessibility demo.
+This is the conclusion of the accessibility demo.
 
 ## Development
 

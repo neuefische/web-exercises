@@ -1,7 +1,7 @@
 {
   "name": "accessibility_demo-start",
   "version": "0.0.0-unreleased",
-  "description": "accessibility: demo-start",
+  "description": "Accessibility: Demo Start",
   "main": "index.html",
   "nf": {
     "template": "html-css-static"
