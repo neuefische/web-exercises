@@ -6,7 +6,7 @@ import { titleCase } from "title-case";
 import { globby } from "globby";
 import ora from "ora";
 import { execa } from "execa";
-import path from "node:path";
+import path, { join } from "node:path";
 
 function titleCaseName(name) {
   return name === "main" || !name
@@ -27,84 +27,19 @@ function titleCaseName(name) {
 const spinner = ora("Creating exercise…");
 
 try {
-  if (fs.existsSync(".create-temp")) {
-    fs.rmdirSync(".create-temp", { recursive: true, force: true });
-  }
-
   const templates = (
     await globby("./templates/*", {
       onlyDirectories: true,
       expandDirectories: false,
     })
-  )
-    .map((template) => ({
-      type: "dir",
-      dir: template,
-      name: template.replace("./templates/", ""),
-      pkg: fs.readJsonSync(`${template}/package.json`, { throws: false }),
-      get description() {
-        return this.pkg?.description;
-      },
-    }))
-    .concat({
-      type: "cmd",
-      name: "cra",
-      cmd: ["npx", ["create-react-app@latest", "."]],
-      description: "Create React App (via npx create-react-app)",
-      sandboxConfig: { template: "create-react-app" },
-      readme: `# TITLE
-
-<!--
-
-Describe the exercise in a few sentences. E.g.:
-
-This challenge offers a simple form with three input fields. Let's make it interactive using React!
-
--->
-
-## Task
-
-<!--
-
-Explaining the task in detail. E.g.:
-
-Use an event handler to react to the form submission.
-
-Log all form data (in object form) into the console in the submit event handler.
-
-You can use the following hints as guideline:
-
-- Hint 1
-- Hint 2
-- ...
-
-Switch to the [\`src/App.js\`](./src/App.js) file and make something great happen!
-
--->
-
-## Notes
-
-- You only have to touch the [\`src/App.js\`](./src/App.js) file.
-
-## Development
-
-### CodeSandbox
-
-Select the "Browser" tab to view this project. If this project contains tests, select the "Tests" tab to check your progress.
-
-### Local development
-
-To run project commands locally, you need to install the dependencies using \`npm i\` first.
-
-You can then use the following commands:
-
-- \`npm run start\` to start the development server
-- \`npm run build\` to create a production build
-- \`npm run test\` to run the tests in watch mode (if available)
-
-> 💡 This project requires a bundler. You can use \`npm run start\` to start the development server. You can then view the project in the browser at \`http://localhost:3000\`. The Live Preview Extension for Visual Studio Code will **not** work for this project.
-`,
-    });
+  ).map((template) => ({
+    dir: template,
+    name: template.replace("./templates/", ""),
+    pkg: fs.readJsonSync(`${template}/package.json`, { throws: false }),
+    get description() {
+      return this.pkg?.description;
+    },
+  }));
 
   const currentBranch = await branchName.get();
 
@@ -134,7 +69,9 @@ You can then use the following commands:
       message: "Which template do you want to use?",
       choices: templates.map((template) => ({
         value: template.name,
-        name: template.description ?? template.name,
+        name: template.description
+          ? `${template.description} (${template.name})`
+          : template.name,
       })),
     },
   ]);
@@ -157,135 +94,76 @@ You can then use the following commands:
   );
 
   const exerciseDir = `./sessions/${sessionSlug}/${exerciseSlug}`;
-  const tempExerciseDir = `.create-temp/${sessionSlug}_${exerciseSlug}`;
 
-  if (template.type === "dir") {
-    try {
-      // copy the sessions/_template dir to the exercise dir
-      await fs.copy(template.dir, exerciseDir, {
-        overwrite: false,
-        errorOnExist: true,
-        filter: (src) => {
-          // don't copy any node_modules
-          return !src.includes("node_modules");
-        },
-      });
-    } catch {
-      spinner.fail("Exercise already exists");
-      process.exit(1);
-    }
-
-    // update the package.json
-    const pkg = await fs.readJson(`${exerciseDir}/package.json`);
-    pkg.name = `${sessionSlug}_${exerciseSlug}`;
-    pkg.description = title;
-    await fs.writeJson(`${exerciseDir}/package.json`, pkg, { spaces: 2 });
-
-    // find all files in the exercise dir
-    // replace all instances of "TITLE" with the exercise name
-
-    const files = await globby(`${exerciseDir}/**/*`, {
-      onlyFiles: true,
-      expandDirectories: false,
+  try {
+    // copy the sessions/_template dir to the exercise dir
+    await fs.copy(template.dir, exerciseDir, {
+      overwrite: false,
+      filter: (src) => {
+        // don't copy any node_modules
+        return !src.includes("node_modules");
+      },
     });
+  } catch {
+    spinner.fail("Exercise already exists");
+    process.exit(1);
+  }
 
-    await Promise.all(
-      files.map(async (file) => {
-        const contents = await fs.readFile(file, "utf8");
-        const newContents = contents.replaceAll("TITLE", title);
-        await fs.writeFile(file, newContents, "utf8");
-      })
-    );
+  // update the package.json
+  const pkg = await fs.readJson(`${exerciseDir}/package.json`);
+  pkg.name = `${sessionSlug}_${exerciseSlug}`;
+  pkg.description = title;
+  await fs.writeJson(`${exerciseDir}/package.json`, pkg, { spaces: 2 });
 
-    // make sure dependencies are installed
-    if (pkg.dependencies || pkg.devDependencies) {
-      spinner.text = "Installing dependencies…";
-      try {
-        await execa("npm", ["i"], { stdout: undefined });
-      } catch {
-        // ignore
-      }
-    }
-
-    try {
-      await execa("code", [path.resolve(exerciseDir, "README.md")]);
-    } catch {
-      // ignore
-    }
-  } else if (template.type === "cmd") {
-    spinner.text = `Creating exercise via \`${
-      template.cmd[0]
-    } ${template.cmd[1].join(" ")}\`… (this may take a minute)`;
-
-    try {
-      if (fs.existsSync(exerciseDir)) {
-        throw new Error("Exercise already exists");
-      }
-      await fs.mkdir(tempExerciseDir, { recursive: true });
-    } catch (e) {
-      spinner.fail("Exercise already exists");
-      process.exit(1);
-    }
-
-    await execa(template.cmd[0], template.cmd[1], {
-      cwd: tempExerciseDir,
-      stdout: undefined,
-    });
-
-    await fs.move(path.resolve(tempExerciseDir), path.resolve(exerciseDir), {
+  // try to copy exercise overrides from recipe for this template
+  const recipeDir = join("recipes", template.name);
+  const exerciseOverrides = join(recipeDir, "exercise-overrides");
+  if (await fs.pathExists(exerciseOverrides)) {
+    await fs.copy(exerciseOverrides, exerciseDir, {
       overwrite: true,
+      filter: (src) => {
+        // don't copy any node_modules
+        return !src.includes("node_modules");
+      },
     });
+  }
 
-    // update the package.json
-    const pkg = await fs.readJson(`${exerciseDir}/package.json`);
-    pkg.name = `${sessionSlug}_${exerciseSlug}`;
-    pkg.description = title;
-    pkg.version = "0.0.0-unreleased";
-    pkg.nf = { template: template.name };
-    await fs.writeJson(`${exerciseDir}/package.json`, pkg, { spaces: 2 });
+  // find all files in the exercise dir
+  const files = await globby(`${exerciseDir}/**/*`, {
+    onlyFiles: true,
+    expandDirectories: false,
+  });
 
-    // update the README.md
-    const newReadme = (template?.readme ?? "# TITLE\n").replaceAll(
-      "TITLE",
-      title
-    );
-    await fs.writeFile(`${exerciseDir}/README.md`, newReadme, "utf8");
+  // replace all instances of "TITLE" with the exercise name
+  await Promise.all(
+    files.map(async (file) => {
+      const contents = await fs.readFile(file, "utf8");
+      const newContents = contents.replaceAll("TITLE", title);
+      await fs.writeFile(file, newContents, "utf8");
+    })
+  );
 
-    // create sandbox config
-    if (template.sandboxConfig) {
-      await fs.writeJson(
-        `${exerciseDir}/sandbox.config.json`,
-        template.sandboxConfig,
-        { spaces: 2 }
-      );
-    }
-
-    // remove package-lock.json
+  // make sure dependencies are installed
+  if (pkg.dependencies || pkg.devDependencies) {
+    spinner.text = "Installing dependencies…";
     try {
-      await fs.remove(`${exerciseDir}/package-lock.json`);
+      await execa("npm", ["i"], { stdout: undefined });
     } catch {
       // ignore
     }
+  }
 
-    try {
-      await execa("code", [path.resolve(exerciseDir, "README.md")]);
-    } catch {
-      // ignore
-    }
+  try {
+    await execa("code", [path.resolve(exerciseDir, "README.md")]);
+  } catch {
+    // ignore
   }
 
   spinner.succeed("Exercise created at " + exerciseDir);
 } catch (error) {
-  if (fs.existsSync(".create-temp")) {
-    fs.rmdirSync(".create-temp", { recursive: true, force: true });
-  }
   spinner.fail("Exercise creation failed");
   console.error(error);
   process.exit(1);
-} finally {
-  if (fs.existsSync(".create-temp")) {
-    fs.rmdirSync(".create-temp", { recursive: true, force: true });
-  }
 }
 
 process.exit(0);

@@ -2,10 +2,10 @@ import "./List.css";
 
 export default function List({ todos, onToggleCheckTodo }) {
   return (
-    <ul className="List">
+    <ul className="list">
       {todos.map((todo) => {
         return (
-          <li className="List__item" key={todo.id}>
+          <li className="list__item" key={todo.id}>
             <input
               type="checkbox"
               checked={todo.isChecked}

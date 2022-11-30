@@ -17,7 +17,7 @@ body {
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-.App__container {
+.app {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,7 +27,7 @@ body {
   color: var(--color-granite);
 }
 
-.App__card-grid {
+.app__card-grid {
   display: grid;
   gap: 30px;
   padding: 20px;
