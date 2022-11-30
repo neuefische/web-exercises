@@ -83,7 +83,7 @@ The branches in this repository follow the following naming convention:
 ```
 
 > **Note**  
-> You can do multiple exercises in one branch (e.g. `demo-start` and `demo-end`) if it makes sense. Just pick a unique branch like `<session-name>_demo`. Note that the `create` script will not be able to automatically detect the correct exercise name in that case.
+> You can do multiple exercises in one branch (e.g. `demo-start` and `demo-end`) if it makes sense. Pick a unique branch like `<session-name>_demo`. Note that the `create` script will not be able to automatically detect the correct exercise name in that case.
 
 ## Create a new exercise
 
@@ -105,7 +105,7 @@ This repository contains [templates for most types of exercises](#available-temp
 
 ### Creating a PR
 
-To make it less cumbersome to create a PR for a new exercise once you're done, you can use the following command that copies all the necessary information to your clipboard. (You just have to select the session and exercise folder.)
+To make it less cumbersome to create a PR for a new exercise once you're done, you can use the following command that copies all the necessary information to your clipboard. (You have to select the session and exercise folder.)
 
 ```
 npm run get-pr

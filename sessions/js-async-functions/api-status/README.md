@@ -1,6 +1,6 @@
 # API Status
 
-This codesandbox offers a simple interface to check the status of an API. Just do it!
+This codesandbox offers a simple interface to check the status of an API.
 
 ## Task
 

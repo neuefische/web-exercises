@@ -1,6 +1,6 @@
 # `while` loop
 
-In contrast to for loops, a `while` loop does not need to know how many times it will run in advance. It will just run if a condition is met, and will stop otherwise.
+In contrast to for loops, a `while` loop does not need to know how many times it will run in advance. It will run if a condition is met, and will stop otherwise.
 
 Let's create a couple of random numbers and stop if they grow too big!
 

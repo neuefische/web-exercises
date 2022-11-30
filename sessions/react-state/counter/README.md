@@ -15,7 +15,7 @@ You can use the following hints as a guideline:
 - `let` doesn't seem to be the appropriate way to declare a variable in this instance.
 - Is there a built-in React function you can use instead?
   - Make sure to import said function.
-- At present, the `<button>`s' event handler is simply logging an emoji to the console.
+- At present, the `<button>`s' event handler is logging an emoji to the console.
   - Clearly, the event handler should be handling a different type of functionality.
 
 ## Notes
