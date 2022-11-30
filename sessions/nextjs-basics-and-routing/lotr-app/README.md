@@ -37,7 +37,7 @@ The overview page should contain the following:
 - A heading with the title "Lord of the Rings" (`h1`)
 - The introduction text imported from `lib/data.js` (`p`)
   ```js
-  import { introduction } from "../lib/data";
+  import { introduction } from "../../lib/data";
   ```
 - A heading with the title "All Volumes" (`h2`)
 - An unordered list with links to all volumes (`ul`, `li` and `Link`)
