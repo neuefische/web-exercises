@@ -1,19 +1,21 @@
 import Link from "next/link";
-import books from "../../lib/books";
+import { volumes, introduction } from "../../lib/data";
 import Image from "next/image";
 import styled from "styled-components";
 
 export default function Books() {
   return (
     <Main>
-      <h2>Overview about all Books</h2>
+      <h1>Lord of the Rings</h1>
+      <p>{introduction}</p>
       <List>
-        {books.map((book) => (
-          <li key={book.slug}>
-            <Link href={`/books/${book.slug}`}>
+        <h2>All Volumes</h2>
+        {volumes.map((volume) => (
+          <li key={volume.slug}>
+            <Link href={`/volumes/${volume.slug}`}>
               <Image
-                src={book.cover}
-                alt={`cover image of ${book.title}`}
+                src={volume.cover}
+                alt={`cover image of ${volume.title}`}
                 width={125}
                 height={200}
               />

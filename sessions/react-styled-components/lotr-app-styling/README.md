@@ -10,6 +10,18 @@ This challenge offers a simple form with three input fields. Let's make it inter
 
 ## Task
 
+Check the [design files for the LotR fanpage](./README.md#resources).
+
+- all volumes page:
+  - flex container for headline + list
+  - box-shadow
+- details page: container for list of books + image; background-color based on volume
+-
+- general:
+  - import and use icon svg files
+  - Google Fonts: Lora
+  - media query: darkmode theme
+
 ### Styling the Book Component
 
 ### Layout and more
@@ -32,9 +44,15 @@ Switch to the [`pages/index.js`](./pages/index.js) file and make something great
 
 -->
 
-## Notes
+## Resources
 
-- You only have to touch the [`pages/index.js`](./pages/index.js) file.
+⬇️ You can [download the design files and assets for the Journal App here](../../nextjs-basics-and-routing/lotr-app/design-resources.zip?raw=true).
+
+- Unzip the file to get the resources folder.
+- You can use the `[abc] Page [xyz].png` files as a reference for the design.
+- If you like you can reference the original Figma design file: `lotr_app_design.fig`.
+- The `variables.css` file contains the colors, fonts, and box shadows used in the design as CSS variables.
+- Use the `arrow-left.svg`, `arrow-right.svg`, and `chevron-left.svg` files for the respective icon buttons. Import them in your components directly. See the documentation for adding svgs.
 
 ## Development
 
