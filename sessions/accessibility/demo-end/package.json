@@ -1,0 +1,10 @@
+{
+  "name": "accessibility_demo-end",
+  "version": "0.0.0-unreleased",
+  "description": "Accessibility: Demo End",
+  "main": "index.html",
+  "nf": {
+    "template": "html-css-static"
+  },
+  "private": true
+}

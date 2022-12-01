@@ -46,7 +46,7 @@ Now we can fetch the character data from the API and generate our cards with it.
 
 ### Pagination
 
-Great Job! But we want to see not just 20 characters, we want all of them! So lets implement the
+Great Job! But we want to see not only 20 characters, we want all of them! So lets implement the
 pagination.
 
 - By adding the string `?page=<pageIndex>` to the end of the fetch URL, you can receive the

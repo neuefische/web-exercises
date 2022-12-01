@@ -24,12 +24,16 @@ export default function StatusCheck() {
   }
 
   return (
-    <article className="StatusCheck">
-      <div className="StatusCheck__wrapper">
-        <h2 className="StatusCheck__heading">Status:</h2>
-        <span className="StatusCheck__icon">{statusIcon}</span>
+    <article className="status-check">
+      <div className="status-check__wrapper">
+        <h2 className="status-check__heading">Status:</h2>
+        <span className="status-check__icon">{statusIcon}</span>
       </div>
-      <button type="button" className="StatusCheck__button" onClick={handleCheckApiStatus}>
+      <button
+        type="button"
+        className="status-check__button"
+        onClick={handleCheckApiStatus}
+      >
         Check API Status
       </button>
     </article>

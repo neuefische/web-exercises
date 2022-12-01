@@ -36,9 +36,9 @@ export default function App() {
   ];
 
   return (
-    <main className="App">
-      <h1 className="App__title">Pokédex</h1>
-      <ul className="App__pokemons">
+    <main className="app">
+      <h1 className="app__title">Pokédex</h1>
+      <ul className="app__pokemons">
         {pokemons.map((pokemon) => (
           <li key={pokemon.id}>
             <PokemonCard

@@ -1,10 +1,10 @@
-.App {
+.app {
   margin: 0 auto;
   max-width: 360px;
   padding: 1rem;
 }
 
-.App__title {
+.app__title {
   margin: 0 0 1rem 0;
   padding: 0.5rem;
   background-color: var(--color-bright);
@@ -12,7 +12,7 @@
   text-align: center;
 }
 
-.App__pokemons {
+.app__pokemons {
   margin: 0;
   padding: 0;
   list-style: none;

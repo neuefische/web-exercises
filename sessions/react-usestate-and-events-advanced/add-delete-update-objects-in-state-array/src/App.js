@@ -58,7 +58,7 @@ export default function App() {
   function toggleLike() {}
 
   return (
-    <div className="App">
+    <div className="app">
       <h1>React useState and Events - Advanced</h1>
       <h2>Updating State Exercise</h2>
       {movies.map((movie) => (

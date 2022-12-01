@@ -1,6 +1,6 @@
 # React State 2: Triple Count
 
-The [`src/components/Counter.js`](./src/components/Counter.js) file offers a simple `count` state, a button to increment this state and a `handleIncrement` function.
+The [`src/components/Counter.js`](./src/components/Counter.js) file offers a `count` state, a button to increment this state and a `handleIncrement` function.
 
 Clicking the button should increment the `count` by 3. Currently, however, it's incremented by 1, although the `handleIncrement` function calls `setCount(count + 1)` three times.
 

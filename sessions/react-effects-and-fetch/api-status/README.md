@@ -1,6 +1,6 @@
 # React Effects and Fetch: API Status
 
-This App offers a simple interface to check the status of an API. Just do it!
+This App offers an interface to check the status of an API.
 
 ## Task
 

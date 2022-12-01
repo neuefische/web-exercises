@@ -1,10 +1,10 @@
-.App {
+.app {
   display: grid;
   height: 100vh;
   grid-template-rows: 8rem 1fr 8rem;
 }
 
-.App__main {
+.app__main {
   max-width: 60rem;
   margin: 0 auto;
   padding: 0 2rem;

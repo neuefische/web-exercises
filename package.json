@@ -17,10 +17,11 @@
   ],
   "scripts": {
     "create": "node ./scripts/create.js",
-    "get": "node ./scripts/get.js",
-    "get-c": "node ./scripts/get.js -c",
+    "get-pr": "node ./scripts/get.js",
+    "get": "node ./scripts/get.js -c",
     "markdown-toc": "npx markdown-toc -i README.md",
-    "ncu": "npx npm-check-updates"
+    "ncu": "npx npm-check-updates",
+    "cook": "node ./scripts/cook.js"
   },
   "dependencies": {
     "branch-name": "^1.0.0",
@@ -34,6 +35,13 @@
     "ora": "^6.1.2",
     "prettier": "^2.7.1",
     "slugify": "^1.6.5",
+    "styled-components": "^5.3.6",
     "title-case": "^3.0.3"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "jest": "^29.3.1",
+    "jest-environment-jsdom": "^29.3.1"
   }
 }

@@ -28,7 +28,7 @@ You can use the following hints as guideline:
 
 - Inside of the return statement of your `App` component, replace the heading with your `Button` component and pass it the props as you wish.
 
-🎉 Congratulations, you have just created a very flexible button component!
+🎉 Congratulations, you have created a very flexible button component!
 
 However, clicking a button without anything happening is pretty useless, right? Let's fix that!
 

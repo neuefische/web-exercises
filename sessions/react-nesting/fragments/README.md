@@ -19,7 +19,7 @@ Task: Outsource the three `Box` components to a `Boxes` component.
 
 Check the browser: the boxes are now vertically aligned! 😱
 
-The reason is as simple as this: a flexbox refers only to its direct child elements; however, using a `<div>` element in `Boxes` creates a new layer so that the three `Box` elements are no longer flex items!
+The reason is this: a flexbox refers only to its direct child elements; however, using a `<div>` element in `Boxes` creates a new layer so that the three `Box` elements are no longer flex items!
 
 Use the developer tools of your browser to check this fact.
 

@@ -11,12 +11,12 @@ export default function Form({ onAddTodo }) {
   }
 
   return (
-    <form className="Form" onSubmit={handleSubmit}>
-      <label className="Form__label" htmlFor="todo">
+    <form className="form" onSubmit={handleSubmit}>
+      <label className="form__label" htmlFor="todo">
         Next Todo:
       </label>
-      <input className="Form__input" id="todo" name="todo" type="text" />
-      <button className="Form__button">Add</button>
+      <input className="form__input" id="todo" name="todo" type="text" />
+      <button className="form__button">Add</button>
     </form>
   );
 }

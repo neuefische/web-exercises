@@ -1,7 +1,7 @@
 {
   "name": "template-js",
   "version": "0.0.0-unreleased",
-  "description": "JS with jest support",
+  "description": "JavaScript (with Jest support)",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -19,5 +19,6 @@
   },
   "nf": {
     "template": "js"
-  }
+  },
+  "private": true
 }
