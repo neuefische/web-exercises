@@ -19,7 +19,7 @@ You can use the following hints as guideline:
 - Inside of the same file, create a styled component called `StyledBox` which features a `div`.
   - Inside of the return statement of your function, replace the `div` with `StyledBox`.
   - `StyledBox` should have the same styling as the `BoxWithClassName` component.
-  - Check whether `props.isBlack` is true to set the correct background-color.
+  - Check whether the `isBlack` prop is true and set the correct `background-color` accordingly.
   - How could you set the styling for the hover effect again?
 - Switch to [`pages/index.js`](./pages/index.js):
   - import `BoxWithStyledComponents` and
