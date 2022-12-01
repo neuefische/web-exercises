@@ -1,58 +1,87 @@
 # Styled Components: Lord of the Rings
 
-<!--
+In this challenge you will finally style the LotR-Fanpage with the help of `styled-components`!
 
-Describe the exercise in a few sentences. E.g.:
-
-This challenge offers a simple form with three input fields. Let's make it interactive using React!
-
--->
+> 💡 You can use this template as a starting point. But if you are far enough along with your own LotR-Fanpage App, please use that instead.
 
 ## Task
 
-Check the [design files for the LotR fanpage](./README.md#resources).
+Use `styled-components` to create the design you can find in the [design files for the LotR-Fanpage](./README.md#resources).
 
-- all volumes page:
-  - flex container for headline + list
-  - box-shadow
-- details page: container for list of books + image; background-color based on volume
--
-- general:
-  - import and use icon svg files
-  - Google Fonts: Lora
-  - media query: darkmode theme
+Before you start, follow the instructions to add all necessary files to your project.
 
-### Styling the Book Component
+### Details Page
 
-### Layout and more
+You might start with the details page. Note that the background colors for each volume are given in the [`data.js`](./lib/data.js) file.
 
-<!--
+How could one style a component depending on a prop again?
 
-Explaining the task in detail. E.g.:
+#### Google Font
 
-Use an event handler to react to the form submission.
+There are font variables already prepared in the [styles.css file](./README.md#resources), but the design suggest to use the Lora font.
 
-Log all form data (in object form) into the console in the submit event handler.
+> 💡 `@next/font` is already preinstalled in this template.
 
-You can use the following hints as guideline:
+- Import the Lora font into your `styles.js`.
+- Create a variable to define the `subsets` and `style` key from Lora, like so:
 
-- Hint 1
-- Hint 2
-- ...
+```js
+const lora = Lora({
+  subsets: ["latin"],
+  style: ["normal", "italic"],
+});
+```
 
-Switch to the [`pages/index.js`](./pages/index.js) file and make something great happen!
+- Finally, expand the `--font-family` variable to `${lora.style.fontFamily}, serif;`
 
--->
+You should now be able to use all font variables! 🎉
+
+> 💡 If you get an error message, read it carefully: you might need to run `npm run dev` again and **save the styles file again** (without actually changing anything).
+
+#### SVG
+
+The [design files](./README.md#resources) also provide three svg files with arrows which you should have placed in an `icons` folder by now.
+
+In order to use the SVGs as React components, you need to install the [npm package SVGR](https://react-svgr.com/docs/next/) first. Follow the instructions given in the docs.
+
+To be sure how to adapt the `next.config.js` file, simply add the `webpack` function without a key:
+
+```js
+const nextConfig = {
+  // {...}
+  images: {
+    domains: ["upload.wikimedia.org"],
+  },
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.svg$/i,
+      issuer: /\.[jt]sx?$/,
+      use: ["@svgr/webpack"],
+    });
+    return config;
+  },
+};
+```
+
+### All Volumes Page
+
+To create the box shadow of the books, you can use the predefined variables.
+
+### Dark Mode
+
+Implement the light and dark mode theme. Use the predefined color variables.
+
+- To make the `Link` component inherit the current theme color, use `color: unset`.
 
 ## Resources
 
-⬇️ You can [download the design files and assets for the Journal App here](../../nextjs-basics-and-routing/lotr-app/design-resources.zip?raw=true).
+⬇️ You can [download the design files and assets for the LotR-Fanpage App here](../../nextjs-basics-and-routing/lotr-app/design-resources.zip?raw=true).
 
 - Unzip the file to get the resources folder.
 - You can use the `[abc] Page [xyz].png` files as a reference for the design.
 - If you like you can reference the original Figma design file: `lotr_app_design.fig`.
 - The `variables.css` file contains the colors, fonts, and box shadows used in the design as CSS variables.
-- Use the `arrow-left.svg`, `arrow-right.svg`, and `chevron-left.svg` files for the respective icon buttons. Import them in your components directly. See the documentation for adding svgs.
+- Use the `arrow-left.svg`, `arrow-right.svg`, and `chevron-left.svg` files for the respective icon buttons. Place them in an `icons` folder at the root of your project and import them in your components directly. You can use the [npm package SVGR](https://react-svgr.com/docs/next/) for that.
 
 ## Development
 
