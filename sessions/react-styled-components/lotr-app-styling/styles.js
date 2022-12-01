@@ -14,7 +14,7 @@ export const GlobalStyle = createGlobalStyle`
     --color-smoke: #d4d1cd;
 
     /* Font styles */
-    --font-family: ${lora.style.fontFamily};
+    --font-family: ${lora.style.fontFamily}, serif;
     /*
       use like:
       font: var(--font-body);
