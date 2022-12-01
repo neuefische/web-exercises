@@ -25,11 +25,17 @@ You can use the following hints as guideline:
   - import `BoxWithStyledComponents` and
   - below the two `BoxWithClassName` components, render two `BoxWithStyledComponents`, one green and one black.
 
-### Bonus: Aligning Boxes Horizontically
+### Bonus: Aligning Boxes Horizontally
 
-Using styled components, can you align the four boxes horizontically by only changing [`pages/index.js`](./pages/index.js)?
+Using styled components, can you align the four boxes horizontally by only changing [`pages/index.js`](./pages/index.js)?
 
 - Hint: Use `display: flex` to achieve this goal.
+
+### Bonus: Refactoring
+
+Did you notice you wrote a component `BoxWithStyledComponents` that has only the purpose to return an instance of `StyledBox` and passes props? This is not necessary! Such a wrapping component around a styled component would be required if you would return multiple child elements or would add logic to the component.
+
+Try to refactor the code, so that `BoxWithStyledComponents.js` includes only one component, which is created with `styled-components` and is the default export.
 
 ## Notes
 
