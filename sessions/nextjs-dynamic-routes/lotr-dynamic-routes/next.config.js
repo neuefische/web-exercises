@@ -4,9 +4,6 @@ const nextConfig = {
     styledComponents: true,
   },
   reactStrictMode: true,
-  images: {
-    domains: ["upload.wikimedia.org"],
-  },
 };
 
 module.exports = nextConfig;

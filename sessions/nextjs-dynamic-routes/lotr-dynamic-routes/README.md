@@ -1,32 +1,37 @@
 # Next.js Dynamic Routes: LOTR
 
-Currently, the overview about the Lord of the Rings books is done with static routing. You are going to refactor the code with dynamic routes as well as links. Finally, you will create a button to navigate to a random book.
+Currently, the overview about the Lord of the Rings volumes is done with static routing. You are going to refactor the code with dynamic routes as well as links. Finally, you will create a button to navigate to a random volume.
 
 ## Task
 
 ### Refactor: Dynamic Routes
 
-Refactor the static routes to book details so that you use dynamic routes instead.
+Refactor the static routes of the volume details so that they use dynamic routes instead.
 
 You can use the following hints as guideline:
 
-- Create a `[slug].js` file in the `books` folder.
+- Create a `[slug].js` file in the `volumes` folder.
 - Inside of `[slug].js`,
-  - create a `Book` component which returns the HTML elements as the static book routes, but their content is now based on the `slug`;
-  - use the `slug` parameter from `router.query` to find the current book;
-  - if the current book is `undefined`, return null to avoid the app to crash.
+  - create a `VolumePage` component which returns the same elements as the static volume did, but change the content to be now based on the `slug` from the `router.query` object;
+  - if the current volume is `undefined`, return null from the component to avoid the app to crash.
 
-### Refactor: Dynamic Links
+### Refactor: Link to the Dynamic Routes
 
-Refactor the books overview and create the links dynamically.
+Refactor the volumes overview and create the links dynamically from the `volumes` array.
 
-### Random Book
+### Random Volume
 
-On the books overview page, create a button to navigate to a random book.
+On the volume overview page, create a button to navigate to a random volume.
 
-- To create a random integer between `0` and `maximum`, you can use `Math.floor(Math.random() * maximum)`.
-- Use the random number to access a random index in the `books` array.
-- How can you interpolate the `slug` of your random book when calling `router.push`?
+This function will help you to get a random element from an array:
+
+```js
+function getRandomElement(array) {
+    return array[Math.floor(Math.random() * array.length)];
+}
+```
+
+> 💡 You will need to use `router.push()` in the event handler function.
 
 ## Development
 

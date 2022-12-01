@@ -1,20 +1,20 @@
 import Link from "next/link";
 
-export default function Books() {
+export default function Volumes() {
   return (
     <>
-      <h2>Overview about all Books</h2>
+      <h2>Overview about all Volumes</h2>
       <ul>
         <li>
-          <Link href="/books/the-fellowship-of-the-ring">
+          <Link href="/volumes/the-fellowship-of-the-ring">
             The Fellowship of the Ring
           </Link>
         </li>
         <li>
-          <Link href="/books/the-two-towers">The Two Towers</Link>
+          <Link href="/volumes/the-two-towers">The Two Towers</Link>
         </li>
         <li>
-          <Link href="/books/the-return-of-the-king">
+          <Link href="/volumes/the-return-of-the-king">
             The Return of the King
           </Link>
         </li>
