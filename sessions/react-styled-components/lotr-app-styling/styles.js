@@ -4,7 +4,6 @@ import { Lora } from "@next/font/google";
 const lora = Lora({
   subsets: ["latin"],
   style: ["normal", "italic"],
-  variable: "--font-family",
 });
 
 export const GlobalStyle = createGlobalStyle`
@@ -15,16 +14,17 @@ export const GlobalStyle = createGlobalStyle`
     --color-smoke: #d4d1cd;
 
     /* Font styles */
+    --font-family: ${lora.style.fontFamily};
     /*
       use like:
       font: var(--font-body);
     */
-    --font-headline-1: normal 700 44px/48px ${lora.style.fontFamily};
-    --font-headline-2: normal 700 32px/41px ${lora.style.fontFamily};
-    --font-title: normal 700 16px/20px ${lora.style.fontFamily};
-    --font-caption: normal 500 12px/15px ${lora.style.fontFamily};
-    --font-caption--italic: italic 400 12px/15px ${lora.style.fontFamily};
-    --font-body: normal 400 16px/20px ${lora.style.fontFamily};
+    --font-headline-1: normal 700 44px/48px var(--font-family);
+    --font-headline-2: normal 700 32px/41px var(--font-family);
+    --font-title: normal 700 16px/20px var(--font-family);
+    --font-caption: normal 500 12px/15px var(--font-family);
+    --font-caption--italic: italic 400 12px/15px var(--font-family);
+    --font-body: normal 400 16px/20px var(--font-family);
 
     /* Effect styles */
     /*

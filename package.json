@@ -24,7 +24,6 @@
     "cook": "node ./scripts/cook.js"
   },
   "dependencies": {
-    "@next/font": "^13.0.5",
     "branch-name": "^1.0.0",
     "clipboardy": "^3.0.0",
     "execa": "^6.1.0",
