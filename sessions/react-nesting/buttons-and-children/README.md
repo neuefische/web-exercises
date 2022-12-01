@@ -1,6 +1,6 @@
 # React Nesting: Buttons and Children
 
-For now, there is a simple `Button` component in the [`src/App.js`](./src/App.js) which is rendered several times.
+For now, there is a `Button` component in the [`src/App.js`](./src/App.js) which is rendered several times.
 
 Unfortunately, all buttons show the same text; supposing that different buttons do different things in an application, this is not really a reuseable component.
 

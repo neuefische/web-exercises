@@ -1,6 +1,6 @@
 # React Nesting: Navigation
 
-For now, there is a simple navigation in the [`src/App.js`](./src/App.js) file which only uses built-in React components.
+For now, there is a navigation in the [`src/App.js`](./src/App.js) file which only uses built-in React components.
 
 Let's refactor to use custom components instead; you will encounter the `children` prop and recap props in general.
 
@@ -19,7 +19,7 @@ Task: Outsource the `<header>` into a `Header` component.
   - The function should receive a `children` prop and render it between the opening and closing `<header>` tags.
 - In the `App.js` file, import the `Header` component and replace the `<header></header>` tags with it.
 
-🎉 Congratulations, you've just created a wrapping `Header` component using the `children` prop!
+🎉 Congratulations, you've created a wrapping `Header` component using the `children` prop!
 
 ### 2. Navigation component
 
