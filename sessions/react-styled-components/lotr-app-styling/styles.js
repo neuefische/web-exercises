@@ -6,7 +6,7 @@ const lora = Lora({
   style: ["normal", "italic"],
 });
 
-export const GlobalStyle = createGlobalStyle`
+export default createGlobalStyle`
   :root {
     /* Color styles */
     --color-earth: #282828;
@@ -38,6 +38,8 @@ export const GlobalStyle = createGlobalStyle`
     --box-shadow-book--hover: 0 6px 11px -2px rgba(0, 0, 0, 0.12),
       0 8px 7px -4px rgba(0, 0, 0, 0.09), 0 17px 11px -8px rgba(0, 0, 0, 0.09),
       0 24px 15px -12px rgba(0, 0, 0, 0.09), 0 4px 15px 0 rgba(0, 0, 0, 0.05);
+
+    --width-wrapper: min(100% - 64px, 395px - 64px);
   }
 
   *,
@@ -59,15 +61,22 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 
-  ul {
+  ul, ol {
     padding: 0;
+    margin: 0;
   }
 
   h1 {
     font: var(--font-headline-1);
+    margin: 0;
   }
 
-  h1 {
+  h2 {
     font: var(--font-headline-2);
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
   }
 `;
