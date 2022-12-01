@@ -24,7 +24,7 @@ export default function HomePage() {
       </StyledContainer>
 
       <StyledContainer direction="column">
-        <InfoBox title="This is a info" message="Read it carefully!" />
+        <InfoBox title="This is an info" message="Read it carefully!" />
         <InfoBox
           title="It worked"
           message="You have done it!"
