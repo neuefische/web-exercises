@@ -1,4 +1,4 @@
-# Styled Components: Box with Hover
+# Styled Components: Box
 
 Currently, there is a component called [`BoxWithClassName`](./components/BoxWithClassName/index.js). This component is rendered twice in [`_app.js`](./pages/_app.js).
 
