@@ -2,16 +2,20 @@ import Image from "next/image";
 import Link from "next/link";
 import { volumes } from "../../lib/data.js";
 
-export default function Fellowship() {
-  const currentVolume = volumes.find(
+export default function VolumeDetail() {
+  const volumeIndex = volumes.findIndex(
     ({ slug }) => slug === "the-fellowship-of-the-ring"
   );
 
-  if (!currentVolume) {
+  const volume = volumes[volumeIndex];
+  const nextVolume = volumes[volumeIndex + 1];
+  const previousVolume = volumes[volumeIndex - 1];
+
+  if (!volume) {
     return null;
   }
 
-  const { title, description, cover, books } = currentVolume;
+  const { title, description, cover, books } = volume;
 
   return (
     <>
@@ -31,6 +35,20 @@ export default function Fellowship() {
         width={140}
         height={230}
       />
+      {previousVolume ? (
+        <div>
+          <Link href={`/volumes/${previousVolume.slug}`}>
+            ← Previous Volume: {previousVolume.title}
+          </Link>
+        </div>
+      ) : null}
+      {nextVolume ? (
+        <div>
+          <Link href={`/volumes/${nextVolume.slug}`}>
+            Next Volume: {nextVolume.title} →
+          </Link>
+        </div>
+      ) : null}
     </>
   );
 }

@@ -1,9 +1,11 @@
 import Link from "next/link";
+import { introduction } from "../../lib/data";
 
 export default function Volumes() {
   return (
     <>
-      <h2>Overview about all Volumes</h2>
+      <h1>The Lord of the Rings</h1>
+      <p>{introduction}</p>
       <ul>
         <li>
           <Link href="/volumes/the-fellowship-of-the-ring">
