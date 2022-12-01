@@ -1,4 +1,4 @@
-# Next.js Dynamic Routes: LOTR
+# Next.js Dynamic Routes: Lord of the Rings App Dynamic Routes
 
 Currently, the overview about the Lord of the Rings volumes is done with static routing. You are going to refactor the code with dynamic routes as well as links. Finally, you will create a button to navigate to a random volume.
 
@@ -27,7 +27,7 @@ This function will help you to get a random element from an array:
 
 ```js
 function getRandomElement(array) {
-    return array[Math.floor(Math.random() * array.length)];
+  return array[Math.floor(Math.random() * array.length)];
 }
 ```
 
