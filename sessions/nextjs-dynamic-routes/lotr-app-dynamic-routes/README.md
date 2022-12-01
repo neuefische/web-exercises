@@ -11,9 +11,7 @@ Refactor the static routes of the volume details so that they use dynamic routes
 You can use the following hints as guideline:
 
 - Create a `[slug].js` file in the `volumes` folder.
-- Inside of `[slug].js`,
-  - create a `VolumePage` component which returns the same elements as the static volume did, but change the content to be now based on the `slug` from the `router.query` object;
-  - if the current volume is `undefined`, return null from the component to avoid the app to crash.
+- Inside of `[slug].js` create a `VolumeDetail` component which returns the same elements as the static volume did, but change the content to be now based on the `slug` from the `router.query` object.
 
 ### Refactor: Link to the Dynamic Routes
 
