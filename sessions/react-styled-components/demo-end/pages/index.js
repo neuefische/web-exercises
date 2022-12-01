@@ -1,7 +1,7 @@
 import InfoBox from "../components/InfoBox";
-import { StyledButton } from "../components/StyledButton";
-import { StyledContainer } from "../components/StyledContainer";
-import { StyledDangerButton } from "../components/StyledDangerButton";
+import StyledButton from "../components/StyledButton";
+import StyledContainer from "../components/StyledContainer";
+import StyledDangerButton from "../components/StyledDangerButton";
 import StyledLink from "../components/StyledLink";
 
 export default function HomePage() {

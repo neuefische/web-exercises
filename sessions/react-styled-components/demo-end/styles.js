@@ -3,7 +3,7 @@ import { Open_Sans } from "@next/font/google";
 
 const openSans = Open_Sans({ subsets: ["latin"] });
 
-export const GlobalStyle = createGlobalStyle`
+export default createGlobalStyle`
   *,
   *::before,
   *::after {

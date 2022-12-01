@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { StyledButton } from "./StyledButton";
+import StyledButton from "./StyledButton";
 
-export const StyledDangerButton = styled(StyledButton)`
+export default styled(StyledButton)`
   background-color: var(--secondary-color);
 
   &:hover {
