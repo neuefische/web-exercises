@@ -11,30 +11,28 @@ export default function Book() {
   const router = useRouter();
   const { slug } = router.query;
 
-  const currentVolume = volumes.find((volume) => volume.slug === slug);
-
-  // navigating with index not working yet, to be done later
   const currentVolumeIndex = volumes.findIndex(
     (volume) => volume.slug === slug
   );
-  console.log("currentVolumeIndex", currentVolumeIndex);
-  console.log("volumes.length", volumes.length);
-  console.log(volumes[currentVolumeIndex]);
+  const previousVolume = volumes[currentVolumeIndex - 1];
+  const nextVolume = volumes[currentVolumeIndex + 1];
 
-  if (!currentVolume) {
+  if (!volumes[currentVolumeIndex]) {
     return null;
   }
 
   return (
     <Article>
-      <StyledLink href="/volumes">
-        <Image src={ChevronLeft} alt="chevron left" /> All Volumes
-      </StyledLink>
-      <h1>{currentVolume.title}</h1>
-      <Description>{currentVolume.description}</Description>
-      <BooksContainer color={currentVolume.color}>
+      <InfoContainer>
+        <StyledLink href="/volumes">
+          <LinkImage src={ChevronLeft} alt="chevron left" /> All Volumes
+        </StyledLink>
+        <h1>{volumes[currentVolumeIndex].title}</h1>
+        <Description>{volumes[currentVolumeIndex].description}</Description>
+      </InfoContainer>
+      <BooksContainer color={volumes[currentVolumeIndex].color}>
         <BooksList>
-          {currentVolume.books.map((book) => (
+          {volumes[currentVolumeIndex].books.map((book) => (
             <BookListItem key={book.ordinal}>
               <BookNumber>{book.ordinal}</BookNumber>
               <BookTitle>{book.title}</BookTitle>
@@ -42,42 +40,32 @@ export default function Book() {
           ))}
         </BooksList>
         <Image
-          src={currentVolume.cover}
-          alt={`cover image of ${currentVolume.title}`}
+          src={volumes[currentVolumeIndex].cover}
+          alt={`cover image of ${volumes[currentVolumeIndex].title}`}
           width={140}
           height={230}
         />
       </BooksContainer>
-      {/* {currentVolumeIndex > 0 && (
-        <Link href={`/volumes/`}>
-          <Image src={ArrowLeft} alt="arrow left" /> Previous Volume
-        </Link>
-      )}
-      {currentVolumeIndex < volumes.length - 1 && (
-        <Link href={`/volumes`}>
-          Next Volume <Image src={ArrowRight} alt="arrow right" />
-        </Link>
-      )} */}
-      {slug === "the-fellowship-of-the-ring" && (
-        <Link href="/volumes/the-two-towers">
-          Next Volume <Image src={ArrowRight} alt="arrow right" />
-        </Link>
-      )}
-      {slug === "the-two-towers" && (
-        <>
-          <Link href="/volumes/the-fellowship-of-the-ring">
-            <Image src={ArrowLeft} alt="arrow left" /> Previous Volume
-          </Link>
-          <Link href="/volumes/the-return-of-the-king">
-            Next Volume <Image src={ArrowRight} alt="arrow right" />
-          </Link>
-        </>
-      )}
-      {slug === "the-return-of-the-king" && (
-        <Link href="/volumes/the-two-towers">
-          <Image src={ArrowLeft} alt="arrow left" /> Previous Volume
-        </Link>
-      )}
+      <LinkContainer>
+        {previousVolume ? (
+          <PreviousLink href={`/volumes/${previousVolume.slug}`}>
+            <Image src={ArrowLeft} alt="arrow right" />
+            <LinkContentContainer>
+              <LinkCaption>Previous Volume</LinkCaption>
+              <LinkTitle>{previousVolume.title}</LinkTitle>
+            </LinkContentContainer>
+          </PreviousLink>
+        ) : null}
+        {nextVolume ? (
+          <NextLink href={`/volumes/${nextVolume.slug}`}>
+            <LinkContentContainer>
+              <LinkCaption>Next Volume</LinkCaption>
+              <LinkTitle>{nextVolume.title}</LinkTitle>
+            </LinkContentContainer>
+            <Image src={ArrowRight} alt="arrow right" />
+          </NextLink>
+        ) : null}
+      </LinkContainer>
     </Article>
   );
 }
@@ -129,10 +117,47 @@ const Description = styled.p`
   text-align: justify;
 `;
 
+const InfoContainer = styled.div`
+  margin: 2rem 1rem;
+`;
+
+const LinkCaption = styled.span`
+  font: var(--font-caption--italic);
+`;
+
+const LinkImage = styled(Image)`
+  color: red;
+`;
+
+const LinkTitle = styled.span`
+  font: var(--font-caption);
+`;
+
+const LinkContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 2rem;
+  align-items: center;
+`;
+
+const LinkContentContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
 const StyledLink = styled(Link)`
   text-decoration: none;
-  padding: 0 2rem;
   display: flex;
   align-items: center;
   font-family: var(--font-body);
+  color: unset;
+`;
+
+const NextLink = styled(StyledLink)`
+  align-self: flex-end;
+  display: hidden;
+`;
+const PreviousLink = styled(StyledLink)`
+  align-self: flex-start;
 `;

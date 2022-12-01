@@ -49,6 +49,14 @@ export const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     font: var(--font-body);
+    @media (prefers-color-scheme: light) {
+      color: var(--color-earth);
+      background-color: var(--color-clouds);
+    }
+    @media (prefers-color-scheme: dark) {
+      color: var(--color-smoke);
+      background-color: var(--color-earth);
+    }
   }
 
   ul {
