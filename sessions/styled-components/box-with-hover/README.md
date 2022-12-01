@@ -29,7 +29,7 @@ You can use the following hints as guideline:
 
 Using styled components, can you align the four boxes horizontically by only changing [`pages/index.js`](./pages/index.js)?
 
-- Hint: Just use `display: flex` to achieve this goal.
+- Hint: Use `display: flex` to achieve this goal.
 
 ## Notes
 
