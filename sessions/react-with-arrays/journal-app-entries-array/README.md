@@ -1,6 +1,6 @@
 # React with Arrays: Journal App with Entries Array
 
-Currently our journal entries are just static JSX. We now get a data array of journal entries. We want to render each entry in the `EntriesSection` component.
+Currently our journal entries are static JSX. We now get a data array of journal entries. We want to render each entry in the `EntriesSection` component.
 
 > 💡 You can use this template as a starting point. But if you are far enough along with your own Journal App, please use that instead.
 

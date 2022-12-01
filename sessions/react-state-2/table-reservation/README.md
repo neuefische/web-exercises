@@ -1,6 +1,6 @@
 # React State 2: Table Reservation
 
-In this challenge, there is a simple app to reserve a table at a restaurant.
+In this challenge, there is an app to reserve a table at a restaurant.
 
 Have a look at the [`Counter Component`](./src/components/Counter.js): there is a state which gets updated when the buttons are clicked.
 
