@@ -25,7 +25,7 @@ export default function Book() {
     <Article>
       <InfoContainer>
         <StyledLink href="/volumes">
-          <LinkImage src={ChevronLeft} alt="chevron left" /> All Volumes
+          <ChevronLeft /> All Volumes
         </StyledLink>
         <h1>{volumes[currentVolumeIndex].title}</h1>
         <Description>{volumes[currentVolumeIndex].description}</Description>
@@ -49,7 +49,7 @@ export default function Book() {
       <LinkContainer>
         {previousVolume ? (
           <PreviousLink href={`/volumes/${previousVolume.slug}`}>
-            <Image src={ArrowLeft} alt="arrow right" />
+            <ArrowLeft />
             <LinkContentContainer>
               <LinkCaption>Previous Volume</LinkCaption>
               <LinkTitle>{previousVolume.title}</LinkTitle>
@@ -62,7 +62,7 @@ export default function Book() {
               <LinkCaption>Next Volume</LinkCaption>
               <LinkTitle>{nextVolume.title}</LinkTitle>
             </LinkContentContainer>
-            <Image src={ArrowRight} alt="arrow right" />
+            <ArrowRight />
           </NextLink>
         ) : null}
       </LinkContainer>
@@ -123,10 +123,6 @@ const InfoContainer = styled.div`
 
 const LinkCaption = styled.span`
   font: var(--font-caption--italic);
-`;
-
-const LinkImage = styled(Image)`
-  color: red;
 `;
 
 const LinkTitle = styled.span`
