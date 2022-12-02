@@ -1,0 +1,14 @@
+{
+  "name": "js-loops_stars",
+  "version": "0.0.0-unreleased",
+  "description": "JS Loops: stars",
+  "main": "index.html",
+  "scripts": {
+    "lint": "npx eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "nf": {
+    "template": "html-css-js-static"
+  },
+  "private": true
+}
