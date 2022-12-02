@@ -67,6 +67,8 @@ const nextConfig = {
 
 To create the box shadow of the books, you can use the predefined variables.
 
+> 💡 If you are working in your own app, note that the random book button (bonus challenge of the last session) is not part of the design anymore. You can safely delete it.
+
 ### Dark Mode
 
 Implement the light and dark mode theme. Use the predefined color variables.
