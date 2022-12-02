@@ -27,6 +27,17 @@ You can use the following hints as guideline:
 
 Start Storybook with `npm run storybook` and check your first stories!
 
+### Card
+
+There is a [`Card component`](./components/Card/index.js) which receives some props.
+Write at least two stories for the Card component. Use the `args` object to pass the props; change some props for the second, third etc. story using the `args` object.
+
+You can use the following hints as guideline:
+
+- For each story, create a copy of the given Template with `Template.bind({})`.
+- Set the `args` object for the default story.
+- Set the `args` object for every following story by spreading the default `args` object and change the desired values.
+
 <!--
 
 Explaining the task in detail. E.g.:
