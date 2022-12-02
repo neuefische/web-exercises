@@ -10,6 +10,23 @@ This challenge offers a simple form with three input fields. Let's make it inter
 
 ## Task
 
+### Alert
+
+There is a simple [`Alert component`](./components/Alert/index.js). Write stories for different alerts:
+
+- a default story without any passed props
+- some variants with different `text` and `color` props
+
+You can use the following hints as guideline:
+
+- Create a file `components/Alert/Alert.stories.js`.
+- Import the `Alert` component.
+- Create a default export which contains an object with a title and the component.
+- Write the story functions and return the `Alert` component with different props.
+  - Make sure to export the functions.
+
+Start Storybook with `npm run storybook` and check your first stories!
+
 <!--
 
 Explaining the task in detail. E.g.:

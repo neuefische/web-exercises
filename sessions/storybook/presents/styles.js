@@ -18,9 +18,8 @@ export default createGlobalStyle`
   }
 
   body {
-    margin: 0;
+    margin: 2rem;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
       Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    background-color: var(--color-dark);
   }
 `;
