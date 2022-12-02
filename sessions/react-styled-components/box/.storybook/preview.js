@@ -19,7 +19,7 @@ Object.defineProperty(NextImage, "default", {
 });
 
 // add global styles
-import GlobalStyle from "../styles";
+import { GlobalStyle } from "../styles";
 export const decorators = [
   (Story) => (
     <>

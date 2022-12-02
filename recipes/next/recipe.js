@@ -6,6 +6,9 @@ export default {
     ["create-next-app@latest", "--js", "--eslint", "--use-npm", "."],
   ],
   async beforeFiles({ cwd, spinner }) {
+    spinner.text = "Installing Next.js Font…";
+    await installNextjsFont({ cwd });
+
     spinner.text = "Installing Styled Components…";
     await installStyledComponents({ cwd });
 
@@ -19,6 +22,12 @@ export default {
     await deleteUnnecessaryFiles({ cwd });
   },
 };
+
+async function installNextjsFont({ cwd }) {
+  const { execa } = await import("execa");
+
+  await execa("npm", ["install", "@next/font"], { cwd });
+}
 
 async function installStyledComponents({ cwd }) {
   const { execa } = await import("execa");
