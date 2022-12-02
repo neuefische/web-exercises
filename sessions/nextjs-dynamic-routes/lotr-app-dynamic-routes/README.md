@@ -11,7 +11,7 @@ Refactor the static routes of the volume detail pages so that they use dynamic r
 You can use the following hints as guideline:
 
 - Create a `[slug].js` file in the `volumes` folder. This file will eventually replace the static volume detail pages.
-- Inside of `[slug].js` create a `VolumeDetail` component which returns the same elements as the static volume did, but change the content to be now based on the `slug` from the `router.query` object.
+- Inside of `[slug].js` recreate the `VolumeDetail` component which returns the same elements as the static version of the component. Adjust the code so that the content is now based around the `slug` from the `router.query` object.
 
 ### Refactor: Link to the Dynamic Routes
 
