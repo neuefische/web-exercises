@@ -1,6 +1,5 @@
 import GlobalStyle from "../styles";
 import { useState } from "react";
-import PAGES from "../assets/pages";
 import { nanoid } from "nanoid";
 import { useRouter } from "next/router";
 
