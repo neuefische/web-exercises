@@ -1,12 +1,14 @@
 # React Component Testing: Scorekeeper
 
-<!--
+This Scorekeeper app offers opportunities for game freaks: keep track of your game stats and watch a history as well!
 
-Describe the exercise in a few sentences. E.g.:
+To give you a short overview:
 
-This challenge offers a simple form with three input fields. Let's make it interactive using React!
+On the home page `localhost:3000/`, you can create a new game with entering a name of the game and the names of the participating players.
 
--->
+After starting a game, you are redirected to `/game`, where you can increase, decrease or reset all scores. When you are finished, you can end the tracking of scores.
+
+Every finished game is also visible in the `/history` overview.
 
 ## Task
 
