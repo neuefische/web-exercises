@@ -47,8 +47,10 @@ async function installJest({ cwd }) {
       "--save-dev",
       "jest",
       "jest-environment-jsdom",
+      "eslint-plugin-jest",
       "@testing-library/react",
       "@testing-library/jest-dom",
+      "@testing-library/user-event",
     ],
     { cwd }
   );
