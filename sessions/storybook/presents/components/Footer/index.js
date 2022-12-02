@@ -1,3 +1,9 @@
+import styled from "styled-components";
+
 export default function Footer({ children }) {
-  return <footer>{children}</footer>;
+  return <StyledFooter>{children}</StyledFooter>;
 }
+
+const StyledFooter = styled.footer`
+  color: var(--color-grey);
+`;
