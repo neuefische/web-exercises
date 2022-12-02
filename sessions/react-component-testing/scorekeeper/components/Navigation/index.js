@@ -1,12 +1,27 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
-export default function Navigation() {
+export default function Navigation({ players }) {
+  const router = useRouter();
+  console.log(router.pathname);
   return (
     <Nav>
-      <StyledLink href="/game">Play</StyledLink>
-      <StyledLink href="/history">History</StyledLink>
+      <StyledLink
+        href={`${players.length > 0 ? "/game" : "/"}`}
+        path={
+          router.pathname === "/" || router.pathname === "/game" ? "active" : ""
+        }
+      >
+        Play
+      </StyledLink>
+      <StyledLink
+        href="/history"
+        path={router.pathname === "/history" ? "active" : ""}
+      >
+        History
+      </StyledLink>
     </Nav>
   );
 }
@@ -16,8 +31,20 @@ const Nav = styled.nav`
 `;
 
 const StyledLink = styled(Link)`
-  background-color: ${(props) => (props.isActive ? "#333" : "lightgray")};
-  ${(props) => props.isActive && "color: white;"}
   border: 1px solid black;
-  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 8px;
+  color: #333;
+  background-color: lightgrey;
+
+  ${({ path }) =>
+    path === "active" &&
+    css`
+      background-color: black;
+      color: white;
+    `}
 `;

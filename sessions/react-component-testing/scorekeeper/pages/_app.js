@@ -2,8 +2,11 @@ import GlobalStyle from "../styles";
 import { useState } from "react";
 import PAGES from "../assets/pages";
 import { nanoid } from "nanoid";
+import { useRouter } from "next/router";
 
 export default function App({ Component, pageProps }) {
+  const router = useRouter();
+
   const [players, setPlayers] = useState([]);
   const [nameOfGame, setNameOfGame] = useState("");
   const [currentPage, setCurrentPage] = useState(PAGES.PLAY);
@@ -38,6 +41,7 @@ export default function App({ Component, pageProps }) {
     setPlayers([]);
     setNameOfGame("");
     setCurrentPage(PAGES.PLAY);
+    router.push("/");
   }
 
   function resetScores() {

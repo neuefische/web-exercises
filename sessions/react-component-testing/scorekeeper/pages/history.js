@@ -1,18 +1,16 @@
 import styled from "styled-components";
 import HistoryEntry from "../components/HistoryEntry";
+import Navigation from "../components/Navigation";
+import { Wrapper } from "../components/Layout/Layout.styled";
 
-export default function HistoryPage({ history }) {
+export default function HistoryPage({ history, players }) {
   return (
-    <HistoryWrapper>
+    <Wrapper>
       <h2>Previous Games</h2>
       {history.map(({ nameOfGame, players, id }) => (
         <HistoryEntry key={id} nameOfGame={nameOfGame} players={players} />
       ))}
-    </HistoryWrapper>
+      <Navigation players={players} />
+    </Wrapper>
   );
 }
-
-const HistoryWrapper = styled.div`
-  display: grid;
-  gap: 28px;
-`;
