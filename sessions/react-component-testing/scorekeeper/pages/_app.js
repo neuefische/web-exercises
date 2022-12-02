@@ -9,7 +9,6 @@ export default function App({ Component, pageProps }) {
 
   const [players, setPlayers] = useState([]);
   const [nameOfGame, setNameOfGame] = useState("");
-  const [currentPage, setCurrentPage] = useState(PAGES.PLAY);
   const [history, setHistory] = useState([]);
 
   return (
@@ -19,7 +18,6 @@ export default function App({ Component, pageProps }) {
         {...pageProps}
         players={players}
         nameOfGame={nameOfGame}
-        currentPage={currentPage}
         history={history}
         onCreateGame={createGame}
         onEndGame={endGame}
@@ -33,14 +31,13 @@ export default function App({ Component, pageProps }) {
   function createGame({ nameOfGame, playerNames }) {
     setNameOfGame(nameOfGame);
     setPlayers(playerNames.map((name) => ({ name, score: 0, id: nanoid() })));
-    setCurrentPage(PAGES.GAME);
   }
 
   function endGame() {
     setHistory([{ players, nameOfGame, id: nanoid() }, ...history]);
     setPlayers([]);
     setNameOfGame("");
-    setCurrentPage(PAGES.PLAY);
+
     router.push("/");
   }
 
