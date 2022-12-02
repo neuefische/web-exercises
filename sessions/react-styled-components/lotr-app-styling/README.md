@@ -80,7 +80,7 @@ Implement the light and dark mode theme. Use the predefined color variables.
 - Unzip the file to get the resources folder.
 - You can use the `[abc] Page [xyz].png` files as a reference for the design.
 - If you like you can reference the original Figma design file: `lotr_app_design.fig`.
-- The `variables.css` file contains the colors, fonts, and box shadows used in the design as CSS variables.
+- The `variables.css` file contains the colors, fonts, and box shadows used in the design as CSS variables. Copy them into the `styles.js` of your project.
 - Use the `arrow-left.svg`, `arrow-right.svg`, and `chevron-left.svg` files for the respective icon buttons. Place them in an `icons` folder at the root of your project and import them in your components directly. You can use the [npm package SVGR](https://react-svgr.com/docs/next/) for that.
 
 ## Development

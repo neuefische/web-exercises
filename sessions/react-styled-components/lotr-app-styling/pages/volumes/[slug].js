@@ -1,10 +1,6 @@
+import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/router";
-import AllVolumesNavigation from "../../components/AllVolumesNavigation";
-import Books from "../../components/Books";
-import ColoredBox from "../../components/ColoredBox";
-import Introduction from "../../components/Introduction";
-import Main from "../../components/Main";
-import VolumeNavigation from "../../components/VolumeNavigation";
 import { volumes } from "../../lib/data";
 
 export default function VolumeDetail() {
@@ -21,19 +17,40 @@ export default function VolumeDetail() {
     return null;
   }
 
-  const { title, description, cover, books, color } = volume;
+  const { title, description, cover, books } = volume;
 
   return (
-    <Main>
-      <AllVolumesNavigation />
-      <Introduction title={title} text={description} />
-      <ColoredBox color={color}>
-        <Books books={books} cover={cover} title={title} />
-      </ColoredBox>
-      <VolumeNavigation
-        previousVolume={previousVolume}
-        nextVolume={nextVolume}
+    <>
+      <Link href="/volumes">← All Volumes</Link>
+      <h1>{title}</h1>
+      <p>{description}</p>
+      <ul>
+        {books.map(({ ordinal, title }) => (
+          <li key={title}>
+            {ordinal}: <strong>{title}</strong>
+          </li>
+        ))}
+      </ul>
+      <Image
+        src={cover}
+        alt={`Cover image of ${title}`}
+        width={140}
+        height={230}
       />
-    </Main>
+      {previousVolume ? (
+        <div>
+          <Link href={`/volumes/${previousVolume.slug}`}>
+            ← Previous Volume: {previousVolume.title}
+          </Link>
+        </div>
+      ) : null}
+      {nextVolume ? (
+        <div>
+          <Link href={`/volumes/${nextVolume.slug}`}>
+            Next Volume: {nextVolume.title} →
+          </Link>
+        </div>
+      ) : null}
+    </>
   );
 }

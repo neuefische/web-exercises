@@ -1,26 +1,28 @@
-import Introduction from "../../components/Introduction";
-import Main from "../../components/Main";
-import Section from "../../components/Section";
-import VolumeList from "../../components/VolumeList";
+import Link from "next/link";
+import { useRouter } from "next/router";
 import { introduction, volumes } from "../../lib/data";
 
 export default function Volumes() {
+  const router = useRouter();
+
+  function handleRandomBook() {
+    const randomBook = volumes[Math.floor(Math.random() * volumes.length)];
+    router.push(`/volumes/${randomBook.slug}`);
+  }
   return (
-    <Main gap={48}>
-      <Introduction
-        title={
-          <>
-            The Lord of
-            <br />
-            the Rings
-          </>
-        }
-        text={introduction}
-      />
-      <Section>
-        <h2>All Volumes</h2>
-        <VolumeList volumes={volumes} />
-      </Section>
-    </Main>
+    <>
+      <h1>The Lord of the Rings</h1>
+      <p>{introduction}</p>
+      <ul>
+        {volumes.map((volume) => (
+          <li key={volume.id}>
+            <Link href={`/volumes/${volume.slug}`}>{volume.title}</Link>
+          </li>
+        ))}
+      </ul>
+      <button type="button" onClick={handleRandomBook}>
+        Go to random book
+      </button>
+    </>
   );
 }
