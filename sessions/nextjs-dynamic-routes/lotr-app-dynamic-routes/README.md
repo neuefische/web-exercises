@@ -6,7 +6,7 @@ Currently, the overview about the Lord of the Rings volumes is done with static 
 
 ### Refactor: Dynamic Routes
 
-Refactor the static routes of the volume details so that they use dynamic routes instead.
+Refactor the static routes of the volume detail pages so that they use dynamic routes instead.
 
 You can use the following hints as guideline:
 
