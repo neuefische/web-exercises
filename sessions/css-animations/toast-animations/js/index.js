@@ -8,7 +8,7 @@ const countdown = document.querySelector('[data-js="countdown"]');
 let timeoutId;
 
 submitButton.addEventListener("click", () => {
-  // We do not allow setTimeout to be re-declared
+  // We do not allow setTimeout to be called again
   // before it has called hideToast.
   // When hideToast is called, timeoutId is set to undefined
   if (timeoutId === undefined) {
