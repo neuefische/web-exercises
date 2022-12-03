@@ -33,7 +33,7 @@ for (const challengeFolder of challengeFolders) {
     template = await detectTemplate({ challengeFolder, packageJson });
   }
 
-  await applyTemplate(challengeFolder, template);
+  await applyTemplate(challengeFolder, template, packageJson);
 }
 
 spinner.text = "Formatting files";
@@ -48,7 +48,7 @@ spinner.succeed("Migrated challenges");
 
 // =================================================================================================
 
-async function applyTemplate(challengeFolder, template) {
+async function applyTemplate(challengeFolder, template, packageJson) {
   spinner.text = `Migrating ${challengeFolder} to ${template}`;
 
   const templateFolder = path.join("templates", template);
@@ -106,7 +106,6 @@ async function applyTemplate(challengeFolder, template) {
     ".prettierrc.json",
     "jest.config.js",
     "jest.setup.js",
-    "next.config.js",
     "sandbox.config.json",
     "stylelint.config.js",
   ]);
@@ -149,15 +148,11 @@ async function applyTemplate(challengeFolder, template) {
   copyFileIfExistsElseRemove("README.md", async (current, template) => {
     let readme = current;
 
-    const challengePackage = await fs.readJSON(
-      path.join(challengeFolder, "package.json")
-    );
-
     readme = readme.replace(
       /TITLE/g,
-      challengePackage.description.includes("template")
+      packageJson.description.includes("template")
         ? challengeName
-        : challengePackage.description || challengeName
+        : packageJson.description || challengeName
     );
     // remove comments from the README.md file
     readme = readme.replace(/<!--[\s\S]*?-->/g, "");
