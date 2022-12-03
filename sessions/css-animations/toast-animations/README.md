@@ -1,27 +1,45 @@
 # Toast Animation
 
-In this CodeSandbox you are going to practice animating properties in CSS!
+In this Project you are going to practice animating properties in CSS!
 
-## Task
+## Task 1
 
-### Part 1
+The hover effect on the submit button can still be improved. Let's do that.
 
-The hover effect on the submit button looks quite ugly. Let's change that.
+Find some rules you like and animate them with transitions.
 
-- Add a `transition` property to the submit button and animate the transition to the hover state for all properties. Find some values that you personally like.
+- Use at least one timing-function
+- Assign different durations
+- Think of using delays
 
-### Part 2
+> Also check out the handout. It holds some answers to the questions that may come to you.
 
-When you click on the button, a toast appears on the bottom right corner. Lets animate it as well, but this time we want a different animation when the toast leaves the screen!
+## Task 2
 
-- first define a transition in the `.toast.enter` ruleset. This will be describing the enter animation.
-- then define the exit animation in the `.toast.exit` ruleset. This time use the bezier tool in the developer tools to find an animation that bounces a little to the left before the toast leaves to the right.
+When you click the submit button, a toast appears in the upper left corner. Currently this toast is animated with transitions.
 
-Switch to the [`css/styles.css`](./css/styles.css) file and make something great happen!
+You have 2 options to solve this task.
+
+You can now:
+
+### Option 1 - Keep Transitions:
+
+- Keep animating the toast with transitions
+- Make the animation your own by changing it
+
+  > Can be achieved without the use of JavaScript
+
+### Option 2 - Change Transitions to keyframes: ( advanced )
+
+- Change the way to animate the toast and use keyframes
+
+  > Is much more versatile to customize, but holds far more pitfalls.
+
+  > Probably needs adjustments of CSS and JavaScript.
 
 ## Notes
 
-- You only have to touch the [`css/styles.css`](./css/styles.css) file.
+- You only have to touch the [`css/styles.css`](./css/styles.css) file to solve this tasks, but taking a look at the [`js/index.js`](./js/index.js) and making adjustments won't set you back in any case. Go for it!
 
 ## Development
 

@@ -6,15 +6,15 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>HTML & CSS & JS</title>
+    <title>Toast Animations</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <script src="./js/index.js" defer></script>
   </head>
   <body>
-    <button class="submit-button" data-js="submit">Submit</button>
-    <button class="toast" data-js="toast">
+    <button type="button" class="submit-button" data-js="submit">Submit</button>
+    <button type="button" class="toast toast--hidden" data-js="toast">
       Submit successful.
-      <div class="countdown"></div>
+      <div class="countdown" data-js="countdown"></div>
     </button>
   </body>
 </html>
