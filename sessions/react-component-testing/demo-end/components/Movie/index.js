@@ -64,14 +64,16 @@ export default function Movie({
       <Actions>
         <Button
           type="button"
-          title={isLiked ? "unlike movie" : "like movie"}
+          title={isLiked ? `unlike ${name}` : `like ${name}`}
+          aria-label={isLiked ? `unlike ${name}` : `like ${name}`}
           onClick={() => onToggleLike(id)}
         >
           {isLiked ? "👍" : "👎"}
         </Button>
         <Button
           type="button"
-          title="delete movie"
+          title={`delete ${name}`}
+          aria-label={`delete ${name}`}
           onClick={() => onDeleteMovie(id)}
         >
           ✕
