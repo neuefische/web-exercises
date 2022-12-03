@@ -13,7 +13,7 @@ body {
 
 /* Submit Button */
 
-.submit-button {
+.toast-button {
   padding: 1rem 2rem;
   background: #e5430f;
   color: #e4e8f0;
@@ -23,7 +23,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-.submit-button:hover {
+.toast-button:hover {
   background-color: #f5521c;
   color: white;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
@@ -65,11 +65,11 @@ body {
 
   opacity: 0;
   width: 100%;
-  transition: opacity 0.1s;
+  transition: opacity 0.25s;
 }
 
 .countdown--start {
-  opacity: 1;
+  opacity: 0.8;
   width: 0%;
-  transition: width linear 2s;
+  transition: width linear 2000ms;
 }
