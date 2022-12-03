@@ -6,7 +6,7 @@ This project was created from the neue fische next template.
 
 ### CodeSandbox
 
-Select the "Browser" tab to view this project.
+Select the "Browser" tab to view this project. If this project contains tests, select the "Tests" tab to check your progress.
 
 > 💡 Please note that Next.js support on CodeSandbox is not great.
 
