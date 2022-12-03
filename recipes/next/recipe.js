@@ -58,7 +58,7 @@ async function installJest({ cwd }) {
   // add test script to package.json
   const packageJsonPath = join(cwd, "package.json");
   const packageJson = await fs.readJSON(packageJsonPath);
-  packageJson.scripts.test = "jest --watch";
+  packageJson.scripts.test = "jest --watchAll";
   await fs.writeJSON(packageJsonPath, packageJson);
 }
 

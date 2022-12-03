@@ -7,13 +7,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest --watch",
+    "test": "jest --watchAll",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@next/font": "^13.0.6",
-    "eslint": "8.28.0",
+    "eslint": "8.29.0",
     "eslint-config-next": "13.0.6",
     "next": "13.0.6",
     "react": "18.2.0",
