@@ -11,9 +11,9 @@ body {
   background-color: #e4e8f0;
 }
 
-/* Submit Button */
+/* Start Button */
 
-.toast-button {
+.start-button {
   padding: 1rem 2rem;
   background: #e5430f;
   color: #e4e8f0;
@@ -23,14 +23,14 @@ body {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-.toast-button:hover {
+.start-button:hover {
   background-color: #f5521c;
   color: white;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
-/* Toast Button */
+/* Toast */
 
 .toast {
   position: absolute;
@@ -50,10 +50,6 @@ body {
   transform: translate3d(-150%, 0, 0);
 }
 
-.toast--visible {
-  transform: translate3d(0, 0, 0);
-}
-
 /* Countdown */
 
 .countdown {
@@ -68,7 +64,7 @@ body {
   transition: opacity 0.25s;
 }
 
-.countdown--start {
+.countdown--visible {
   opacity: 0.8;
   width: 0%;
   transition: width linear 2000ms;
