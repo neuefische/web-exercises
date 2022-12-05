@@ -4,9 +4,10 @@ export default styled.button`
   all: unset;
   border: none;
   cursor: pointer;
+  padding: 1rem;
   color: white;
-  background-color: var(--primary-color);
-  padding: ${({ size }) => (size === "large" ? "2rem" : "1rem")};
+  background-color: ${({ color }) =>
+    color === "danger" ? "var(--secondary-color)" : "var(--primary-color)"};
 
   &:hover {
     color: black;
