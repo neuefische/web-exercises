@@ -11,7 +11,7 @@ startButton.addEventListener("click", () => {
   // We do not allow setTimeout to be called again
   // before it has called hideToast.
   // When hideToast is called, timeoutId is set to undefined
-  if (timeoutId === undefined) {
+  if (!timeoutId) {
     timeoutId = setTimeout(hideToast, 2000);
     toast.classList.remove("toast--hidden");
     countdown.classList.add("countdown--visible");

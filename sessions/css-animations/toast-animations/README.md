@@ -10,7 +10,7 @@ Find some rules you like and animate them with transitions.
 
 - Use at least one timing-function
 - Assign different durations
-- Think of using delays
+- Consider using delays
 
 > Also check out the handout if you have questions!
 
@@ -33,13 +33,11 @@ Change the way to animate the toast and use keyframes instead.
 
 ### Option 3 - Add your own logic and css:
 
-Do whatever you want.
-
-> Can you animate the bodies background-color while holding your mouse down on the start-button?
+Do whatever you want. Can you animate the body's background-color while holding your mouse down on the start-button?
 
 ## Notes
 
-- You only have to touch the [`css/styles.css`](./css/styles.css) file to solve this tasks, but taking a look at the [`js/index.js`](./js/index.js) and making adjustments won't set you back in any case. Go for it!
+- You only have to touch the [`css/styles.css`](./css/styles.css) file.
 
 ## Development
 
