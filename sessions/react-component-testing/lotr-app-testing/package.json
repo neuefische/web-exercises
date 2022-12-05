@@ -34,7 +34,7 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "babel-loader": "^8.3.0",
-    "eslint-plugin-storybook": "^0.6.7",
+    "eslint-plugin-storybook": "^0.6.8",
     "jest": "^29.3.1",
     "jest-environment-jsdom": "^29.3.1",
     "@testing-library/user-event": "^14.4.3",
