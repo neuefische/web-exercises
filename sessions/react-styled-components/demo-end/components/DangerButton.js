@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import StyledButton from "./StyledButton";
+import Button from "./Button";
 
-export default styled(StyledButton)`
+export default styled(Button)`
   background-color: var(--secondary-color);
 
   &:hover {

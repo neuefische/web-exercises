@@ -1,29 +1,29 @@
 import InfoBox from "../components/InfoBox";
-import StyledButton from "../components/StyledButton";
-import StyledContainer from "../components/StyledContainer";
-import StyledDangerButton from "../components/StyledDangerButton";
-import StyledLink from "../components/StyledLink";
+import Button from "../components/Button";
+import Container from "../components/Container";
+import DangerButton from "../components/DangerButton";
+import Link from "../components/Link";
 
 export default function HomePage() {
   return (
     <>
-      <StyledContainer>
-        <StyledButton>Click me</StyledButton>
-        <StyledDangerButton>Delete something</StyledDangerButton>
-      </StyledContainer>
+      <Container>
+        <Button>Click me</Button>
+        <DangerButton>Delete something</DangerButton>
+      </Container>
 
-      <StyledContainer>
+      <Container>
         <p>
-          This is a <StyledLink href="/">styled link</StyledLink>.
+          This is a <Link href="/"> link</Link>.
         </p>
-      </StyledContainer>
+      </Container>
 
-      <StyledContainer>
-        <StyledButton size="large">Click me</StyledButton>
-        <StyledDangerButton size="large">Delete something</StyledDangerButton>
-      </StyledContainer>
+      <Container>
+        <Button size="large">Click me</Button>
+        <DangerButton size="large">Delete something</DangerButton>
+      </Container>
 
-      <StyledContainer direction="column">
+      <Container direction="column">
         <InfoBox title="This is an info" message="Read it carefully!" />
         <InfoBox
           title="It worked"
@@ -35,7 +35,7 @@ export default function HomePage() {
           message="Something went wrong!"
           variant="error"
         />
-      </StyledContainer>
+      </Container>
     </>
   );
 }
