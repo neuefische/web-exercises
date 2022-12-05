@@ -6,7 +6,7 @@ Let's build an awesome interactive 5-star rating scale! The goal is to display f
 
 ### Part 1: Render Stars
 
-Start by render 5 empty stars in the starContainer. For that, wirte the function 'renderStars':
+Start by render 5 empty stars in the starContainer. For that, switch to [`index.js`](./js/index.js) write the function 'renderStars':
 
 - Use a for loop inside the function to repeat the following code five times.
   💡 Start the loop with the value 1, not with 0
@@ -25,7 +25,8 @@ Now we want to render a certain number of filled stars, depending on the input o
 
 ### Part 3: Implement user input
 
-But we want the user to decide how many stars should be filled. Let's add an "click" event Listener to every Star to rerender the stars inside the container!
+By now, the number of filled stars is set when calling the `renderStars` functions with a number argument.
+However, we want the user to decide how many stars should be filled. Let's add a "click" event listener to every star to rerender the stars inside of the container!
 
 - Before appending the star element to the starContainer, add a "click" event listener to it.
 - Inside the event listener, rerender the stars by calling "renderStars". Pass the correct number to that function in order to render the correct number of filled stars.
@@ -33,23 +34,6 @@ But we want the user to decide how many stars should be filled. Let's add an "cl
 
 You are done! 🎉 Five stars to you! ⭐️⭐️⭐️⭐️⭐️
 
-<!--
-
-Explaining the task in detail. E.g.:
-
-Use JavaScript to react to the form submission.
-
-Log all form data (in object form) into the console in the submit event handler.
-
-You can use the following hints as guideline:
-
-- Hint 1
-- Hint 2
-- ...
-
-Switch to the [`js/index.js`](./js/index.js) file and make something great happen!
-
--->
 
 ## Notes
 
