@@ -5,36 +5,15 @@
 }
 
 body {
-  background-color: #e4e8f0;
-  margin: 0;
-  font-family: system-ui;
-  position: relative;
   min-height: 100vh;
   display: grid;
   place-items: center;
-  overflow: hidden;
+  background-color: #e4e8f0;
 }
 
-.toast > .countdown {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 5px;
-  background-color: rgb(0 0 0 / 0.8);
-  width: 100%;
-  opacity: 0;
-  transition: opacity 0.4s ease, width linear 0s 0s;
-}
+/* Start Button */
 
-.toast.enter > .countdown {
-  opacity: 1;
-  width: 0%;
-  transition: width linear 5s 0s;
-}
-
-/* Start Styling here */
-
-.submit-button {
+.start-button {
   padding: 1rem 2rem;
   background: #e5430f;
   color: #e4e8f0;
@@ -44,34 +23,49 @@ body {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-.submit-button:hover {
+.start-button:hover {
   background-color: #f5521c;
   color: white;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  /* add your styles here */
 }
+
+/* Toast */
+
 .toast {
   position: absolute;
-  bottom: 50px;
-  right: 20px;
+  top: 20px;
+  left: 20px;
+  overflow: hidden;
   padding: 1rem 2rem;
   border: none;
-  font-size: 1rem;
   background: rgb(71, 212, 94);
-  color: rgb(0 0 0 / 0.8);
   border-radius: 7px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-  transform: translateX(150%);
-  overflow: hidden;
+
+  transition: transform 0.5s;
 }
 
-.toast.enter {
-  transform: translateX(0);
-  /* add your styles here */
+.toast--hidden {
+  transform: translate3d(-150%, 0, 0);
 }
 
-.toast.exit {
-  transform: translateX(150%);
-  /* add your styles here */
+/* Countdown */
+
+.countdown {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5px;
+  background-color: black;
+
+  opacity: 0;
+  width: 100%;
+  transition: opacity 0.25s;
+}
+
+.countdown--visible {
+  opacity: 0.8;
+  width: 0%;
+  transition: width linear 2000ms;
 }
