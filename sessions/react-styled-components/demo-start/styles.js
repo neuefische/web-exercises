@@ -1,11 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
-<<<<<<< HEAD
 export default createGlobalStyle`
-=======
-export const GlobalStyle = createGlobalStyle`
->>>>>>> b678b29 (add styled components demo)
-  *,
+  *, 
   *::before,
   *::after {
     box-sizing: border-box;
@@ -19,8 +15,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-      Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: system-ui;
     padding: 2rem;
   }
 `;
