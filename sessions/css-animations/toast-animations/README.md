@@ -12,7 +12,7 @@ Find some rules you like and animate them with transitions.
 - Assign different durations
 - Think of using delays
 
-> Also check out the handout. It holds some answers to the questions that may come to you.
+> Also check out the handout if you have questions!
 
 ## Task 2
 
@@ -27,7 +27,7 @@ Keep animating the toast with transitions.
 
 ### Option 2 - Change Transitions to keyframes:
 
-Change the way to animate the toast and use keyframes.
+Change the way to animate the toast and use keyframes instead.
 
 > Is much more versatile to customize, but holds far more pitfalls.
 
