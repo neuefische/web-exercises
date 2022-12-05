@@ -23,24 +23,6 @@ Every finished game is also visible in the `/history` overview.
 - 4 AC (renders, renders a11y name, submits successfully, does not submit without input)
 - provide mock for `router.push`
 
-<!--
-
-Explaining the task in detail. E.g.:
-
-Use an event handler to react to the form submission.
-
-Log all form data (in object form) into the console in the submit event handler.
-
-You can use the following hints as guideline:
-
-- Hint 1
-- Hint 2
-- ...
-
-Switch to the [`pages/index.js`](./pages/index.js) file and make something great happen!
-
--->
-
 ## Notes
 
 - You only have to touch the [`pages/index.js`](./pages/index.js) file.
@@ -50,6 +32,8 @@ Switch to the [`pages/index.js`](./pages/index.js) file and make something great
 ### CodeSandbox
 
 Select the "Browser" tab to view this project. If this project contains tests, select the "Tests" tab to check your progress.
+
+> 💡 Please note that Next.js support on CodeSandbox is not great.
 
 ### Local development
 
