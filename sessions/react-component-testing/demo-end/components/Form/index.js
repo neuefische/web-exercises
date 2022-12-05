@@ -61,12 +61,16 @@ const Button = styled.button`
 export default function Form({ onAddMovie }) {
   function handleSubmit(event) {
     event.preventDefault();
-    const formData = new FormData(event.target);
-    const data = Object.fromEntries(formData);
+    const form = event.target;
+    const name = form.elements.name.value;
+    const isLiked = form.elements.isLiked.checked;
 
-    onAddMovie(data);
-    event.target.reset();
-    event.target.elements.name.focus();
+    onAddMovie({
+      name,
+      isLiked,
+    });
+    form.reset();
+    form.elements.name.focus();
   }
 
   return (
