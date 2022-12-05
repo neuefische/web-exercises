@@ -12,6 +12,17 @@ Every finished game is also visible in the `/history` overview.
 
 ## Task
 
+### HistoryEntry
+
+- TDD: provide tests for `HistoryEntry` component
+- add bug to [`HistoryEntry/index.js`](components/HistoryEntry/index.js): button "get more" or similar, but tests expects "show score"
+- students have to fix the component to make the test pass
+
+### GameForm
+
+- 4 AC (renders, renders a11y name, submits successfully, does not submit without input)
+- provide mock for `router.push`
+
 <!--
 
 Explaining the task in detail. E.g.:

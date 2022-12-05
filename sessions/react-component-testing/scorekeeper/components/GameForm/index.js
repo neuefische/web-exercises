@@ -2,7 +2,7 @@ import Button from "../Button";
 import Input from "../Input";
 import styled from "styled-components";
 import { useState } from "react";
-import { router } from "next/router";
+import { useRouter } from "next/router";
 
 const initialFormData = {
   nameOfGame: "",
@@ -10,6 +10,8 @@ const initialFormData = {
 };
 
 export default function GameForm({ onCreateGame }) {
+  const router = useRouter();
+
   const [formData, setFormData] = useState(initialFormData);
 
   const disabled = formData.nameOfGame === "" || formData.playerNames === "";
@@ -48,7 +50,6 @@ export default function GameForm({ onCreateGame }) {
 
   function handleSubmit(event) {
     event.preventDefault();
-
     onCreateGame({
       nameOfGame: formData.nameOfGame,
       playerNames: formData.playerNames.split(",").map((name) => name.trim()),

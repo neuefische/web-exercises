@@ -1,35 +1,44 @@
+/* eslint-disable no-undef */
+
 import { render, screen } from "@testing-library/react";
-import expect from "@testing-library/jest-dom";
+import userEvent from "@testing-library/user-event";
 import Player from ".";
 
-describe("Player", () => {
-  test("displays the player name, the score, and two buttons to increase and decrease score", () => {
-    render(
-      <Player
-        name="John"
-        score="5"
-        onDecreasePlayerScore={handleDecrease}
-        onIncreasePlayerScore={handleIncrease}
-      />
-    );
-    const nameOfPlayer = screen.getByText("John");
-    const score = screen.getByText("5");
-    const increaseButton = screen.getByRole("button", {
-      name: /increase score/i,
-    });
-    const decreaseButton = screen.getByRole("button", {
-      name: /decrease score/i,
-    });
+test("Player renders player information and two buttons", () => {
+  render(<Player name="John" score="2" />);
 
-    screen.debug();
+  const buttons = screen.getAllByRole("button");
+  const name = screen.getByText(/john/i);
+  const score = screen.getByText(/2/i);
 
-    expect(nameOfPlayer).toBeInTheDocument();
-    expect(score).toBeInTheDocument();
-    expect(increaseButton).toBeInTheDocument();
-    expect(decreaseButton).toBeInTheDocument();
+  expect(buttons).toHaveLength(2);
+  expect(name).toBeInTheDocument();
+  expect(score).toBeInTheDocument();
+});
+
+test("Player calls callbacks when increasing or decreasing score", async () => {
+  const decreaseCallback = jest.fn();
+  const increaseCallback = jest.fn();
+  render(
+    <Player
+      name="John"
+      score="2"
+      onDecreasePlayerScore={decreaseCallback}
+      onIncreasePlayerScore={increaseCallback}
+    />
+  );
+
+  const increaseButton = screen.getByRole("button", {
+    name: /increase score/i,
+  });
+  const decreaseButton = screen.getByRole("button", {
+    name: /decrease score/i,
   });
 
-  test.skip(
-    "calls an increase and decrease function when the buttons are clicked."
-  );
+  await userEvent.click(increaseButton);
+  await userEvent.click(increaseButton);
+  await userEvent.click(decreaseButton);
+
+  expect(decreaseCallback).toHaveBeenCalledTimes(1);
+  expect(increaseCallback).toHaveBeenCalledTimes(2);
 });
