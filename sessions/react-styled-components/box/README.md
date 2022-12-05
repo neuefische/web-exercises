@@ -47,6 +47,8 @@ Try to refactor the code, so that `BoxWithStyledComponents.js` includes only one
 
 Select the "Browser" tab to view this project. If this project contains tests, select the "Tests" tab to check your progress.
 
+> 💡 Please note that Next.js support on CodeSandbox is not great.
+
 ### Local development
 
 To run project commands locally, you need to install the dependencies using `npm i` first.
