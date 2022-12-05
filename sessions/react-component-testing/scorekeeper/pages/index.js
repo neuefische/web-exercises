@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import GameForm from "../components/GameForm";
 import Navigation from "../components/Navigation";
 import { Wrapper } from "../components/Layout/Layout.styled";

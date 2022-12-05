@@ -1,15 +1,7 @@
-/* eslint-disable no-undef */
-
 import { render, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 import Input from ".";
 
-test("Input renders a label and an input", () => {
-  render(<Input labelText="Email" placeholder="Write here" name="email" />);
+test("renders a label and an input with the correct attributes", () => {});
 
-  const input = screen.getByLabelText("Email");
-
-  expect(input).toHaveAttribute("placeholder", "Write here");
-  expect(input).toHaveAttribute("name", "email");
-});
-
-test.skip("Input calls callback", () => {});
+test("calls callback on every user input", async () => {});
