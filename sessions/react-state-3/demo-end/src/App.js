@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./styles.css";
 import Movie from "./components/Movie/index.js";
 import Form from "./components/Form";
-import { nanoid } from "nanoid";
+import { uid } from "uid";
 
 const initialMovieData = [
   {
@@ -26,7 +26,7 @@ export default function App() {
   const [movies, setMovies] = useState(initialMovieData);
 
   function handleAddMovie(newMovie) {
-    setMovies([...movies, { id: nanoid(), ...newMovie }]);
+    setMovies([...movies, { id: uid(), ...newMovie }]);
   }
   function handleDeleteMovie(id) {
     setMovies(movies.filter((movie) => movie.id !== id));

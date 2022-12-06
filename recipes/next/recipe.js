@@ -47,8 +47,10 @@ async function installJest({ cwd }) {
       "--save-dev",
       "jest",
       "jest-environment-jsdom",
+      "eslint-plugin-jest",
       "@testing-library/react",
       "@testing-library/jest-dom",
+      "@testing-library/user-event",
     ],
     { cwd }
   );
@@ -56,7 +58,7 @@ async function installJest({ cwd }) {
   // add test script to package.json
   const packageJsonPath = join(cwd, "package.json");
   const packageJson = await fs.readJSON(packageJsonPath);
-  packageJson.scripts.test = "jest --watch";
+  packageJson.scripts.test = "jest --watchAll";
   await fs.writeJSON(packageJsonPath, packageJson);
 }
 

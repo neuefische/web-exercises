@@ -4,7 +4,7 @@ export default function List({ activities, isGoodWeather, onDeleteActivity }) {
   return (
     <>
       <h2>
-       {isGoodWeather
+        {isGoodWeather
           ? "The weather is awesome! Go outside and:"
           : "Bad weather outside! Here's what you can do now:"}
       </h2>

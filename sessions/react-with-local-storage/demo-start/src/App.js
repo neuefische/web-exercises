@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { nanoid } from "nanoid";
+import { uid } from "uid";
 import List from "./components/List";
 import Form from "./components/Form";
 import "./styles.css";
@@ -10,7 +10,7 @@ export default function App() {
   function handleAddTodo(title) {
     setTodos([
       {
-        id: nanoid(),
+        id: uid(),
         title,
         isChecked: false,
       },

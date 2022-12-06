@@ -6,7 +6,7 @@ This is an example implementation of the recap project 4.
 
 ### CodeSandbox
 
-Select the "Browser" tab to view this project. If this project contains tests, select the "Tests" tab to check your progress.
+Select the "Browser" tab to view this project.
 
 ### Local development
 
