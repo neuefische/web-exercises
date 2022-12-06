@@ -3,28 +3,6 @@ import styled, { css } from "styled-components";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-export default function Navigation({ players }) {
-  const router = useRouter();
-  return (
-    <Nav>
-      <StyledLink
-        href={`${players.length > 0 ? "/game" : "/"}`}
-        path={
-          router.pathname === "/" || router.pathname === "/game" ? "active" : ""
-        }
-      >
-        Play
-      </StyledLink>
-      <StyledLink
-        href="/history"
-        path={router.pathname === "/history" ? "active" : ""}
-      >
-        History
-      </StyledLink>
-    </Nav>
-  );
-}
-
 const Nav = styled.nav`
   display: flex;
 `;
@@ -47,3 +25,25 @@ const StyledLink = styled(Link)`
       color: white;
     `}
 `;
+
+export default function Navigation({ players }) {
+  const router = useRouter();
+  return (
+    <Nav>
+      <StyledLink
+        href={`${players.length > 0 ? "/game" : "/"}`}
+        path={
+          router.pathname === "/" || router.pathname === "/game" ? "active" : ""
+        }
+      >
+        Play
+      </StyledLink>
+      <StyledLink
+        href="/history"
+        path={router.pathname === "/history" ? "active" : ""}
+      >
+        History
+      </StyledLink>
+    </Nav>
+  );
+}

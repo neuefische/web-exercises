@@ -1,6 +1,5 @@
 import Button from "../components/Button";
 import Player from "../components/Player";
-import { Wrapper } from "../components/Layout/Layout.styled";
 
 export default function GamePage({
   nameOfGame,
@@ -11,7 +10,7 @@ export default function GamePage({
   onIncreasePlayerScore,
 }) {
   return (
-    <Wrapper>
+    <>
       <header>
         <h2>{nameOfGame}</h2>
         <p>Successfully created a new game!</p>
@@ -27,6 +26,6 @@ export default function GamePage({
       ))}
       <Button onClick={onResetScores}>Reset scores</Button>
       <Button onClick={onEndGame}>End game</Button>
-    </Wrapper>
+    </>
   );
 }

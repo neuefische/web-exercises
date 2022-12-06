@@ -2,6 +2,7 @@ import GlobalStyle from "../styles";
 import { useState } from "react";
 import { nanoid } from "nanoid";
 import { useRouter } from "next/router";
+import Layout from "../components/Layout";
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
@@ -9,23 +10,6 @@ export default function App({ Component, pageProps }) {
   const [players, setPlayers] = useState([]);
   const [nameOfGame, setNameOfGame] = useState("");
   const [history, setHistory] = useState([]);
-
-  return (
-    <>
-      <GlobalStyle />
-      <Component
-        {...pageProps}
-        players={players}
-        nameOfGame={nameOfGame}
-        history={history}
-        onCreateGame={createGame}
-        onEndGame={endGame}
-        onResetScores={resetScores}
-        onIncreasePlayerScore={increasePlayerScore}
-        onDecreasePlayerScore={decreasePlayerScore}
-      />
-    </>
-  );
 
   function createGame({ nameOfGame, playerNames }) {
     setNameOfGame(nameOfGame);
@@ -61,4 +45,23 @@ export default function App({ Component, pageProps }) {
       ...players.slice(index + 1),
     ]);
   }
+
+  return (
+    <>
+      <GlobalStyle />
+      <Layout>
+        <Component
+          {...pageProps}
+          players={players}
+          nameOfGame={nameOfGame}
+          history={history}
+          onCreateGame={createGame}
+          onEndGame={endGame}
+          onResetScores={resetScores}
+          onIncreasePlayerScore={increasePlayerScore}
+          onDecreasePlayerScore={decreasePlayerScore}
+        />
+      </Layout>
+    </>
+  );
 }
