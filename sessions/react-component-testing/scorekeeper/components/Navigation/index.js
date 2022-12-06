@@ -31,7 +31,7 @@ export default function Navigation({ players }) {
   return (
     <Nav>
       <StyledLink
-        href={`${players.length > 0 ? "/game" : "/"}`}
+        href={`${players?.length > 0 ? "/game" : "/"}`}
         path={
           router.pathname === "/" || router.pathname === "/game" ? "active" : ""
         }

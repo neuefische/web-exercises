@@ -1,4 +1,5 @@
 import Button from "../components/Button";
+import Navigation from "../components/Navigation";
 import Player from "../components/Player";
 
 export default function GamePage({
@@ -11,21 +12,26 @@ export default function GamePage({
 }) {
   return (
     <>
-      <header>
-        <h2>{nameOfGame}</h2>
-        <p>Successfully created a new game!</p>
-      </header>
-      {players?.map(({ name, score, id }, index) => (
-        <Player
-          key={id}
-          name={name}
-          score={score}
-          onIncreasePlayerScore={() => onIncreasePlayerScore(index)}
-          onDecreasePlayerScore={() => onDecreasePlayerScore(index)}
-        />
-      ))}
-      <Button onClick={onResetScores}>Reset scores</Button>
-      <Button onClick={onEndGame}>End game</Button>
+      {nameOfGame && players?.length ? (
+        <>
+          <header>
+            <h2>{nameOfGame}</h2>
+            <p>Successfully created a new game!</p>
+          </header>
+          {players.map(({ name, score, id }, index) => (
+            <Player
+              key={id}
+              name={name}
+              score={score}
+              onIncreasePlayerScore={() => onIncreasePlayerScore(index)}
+              onDecreasePlayerScore={() => onDecreasePlayerScore(index)}
+            />
+          ))}
+          <Button onClick={onResetScores}>Reset scores</Button>
+          <Button onClick={onEndGame}>End game</Button>
+        </>
+      ) : null}
+      <Navigation />
     </>
   );
 }
