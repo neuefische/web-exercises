@@ -37,7 +37,7 @@ describe("Array with Animal Objects", () => {
       },
       {
         name: "dog",
-        weight: 15,
+        weight: 10,
         continents: [
           "Europe",
           "Asia",
@@ -63,7 +63,7 @@ describe("Array with Animal Objects", () => {
         ],
       },
       { name: "kangaroo", weight: 70, continents: ["Australia"] },
-      { name: "koala", weight: 10, continents: ["Australia"] },
+      { name: "koala", weight: 13, continents: ["Australia"] },
       { name: "lion", weight: 200, continents: ["Africa"] },
       {
         name: "monkey",
@@ -74,7 +74,7 @@ describe("Array with Animal Objects", () => {
       { name: "panda", weight: 120, continents: ["Asia"] },
       {
         name: "penguin",
-        weight: 10,
+        weight: 12,
         continents: ["Africa", "Australia", "Antarctica", "South-America"],
       },
       {
@@ -131,7 +131,7 @@ describe("Array with Animal Objects", () => {
       { name: "sloth", weight: 8, continents: ["South-America"] },
       {
         name: "dog",
-        weight: 15,
+        weight: 10,
         continents: [
           "Europe",
           "Asia",
@@ -143,10 +143,10 @@ describe("Array with Animal Objects", () => {
       },
       {
         name: "penguin",
-        weight: 10,
+        weight: 12,
         continents: ["Africa", "Australia", "Antarctica", "South-America"],
       },
-      { name: "koala", weight: 10, continents: ["Australia"] },
+      { name: "koala", weight: 13, continents: ["Australia"] },
       {
         name: "monkey",
         weight: 20,
@@ -217,15 +217,15 @@ describe("Array with Animal Objects", () => {
         continents: ["South-America", "Asia", "Africa"],
       },
 
-      { name: "koala", weight: 10, continents: ["Australia"] },
+      { name: "koala", weight: 13, continents: ["Australia"] },
       {
         name: "penguin",
-        weight: 10,
+        weight: 12,
         continents: ["Africa", "Australia", "Antarctica", "South-America"],
       },
       {
         name: "dog",
-        weight: 15,
+        weight: 10,
         continents: [
           "Europe",
           "Asia",
@@ -269,9 +269,9 @@ describe("Array with Animal Objects", () => {
     expect(allAnimalsInEuropeWeighLessThanOnehundred).toBe(false);
   });
   test("weightOfAllAnimalsInAfrica", () => {
-    expect(weightOfAllAnimalsInAfrica).toBe(9151);
+    expect(weightOfAllAnimalsInAfrica).toBe(9148);
   });
   test("averageWeightOfAllAnimalsInAfrica", () => {
-    expect(averageWeightOfAllAnimalsInAfrica).toBeCloseTo(762.58);
+    expect(averageWeightOfAllAnimalsInAfrica).toBeCloseTo(762.33);
   });
 });

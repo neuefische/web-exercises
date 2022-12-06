@@ -15,7 +15,7 @@ const animals = [
   },
   {
     name: "dog",
-    weight: 15,
+    weight: 10,
     continents: [
       "Europe",
       "Asia",
@@ -56,7 +56,7 @@ const animals = [
   { name: "zebra", weight: 300, continents: ["Africa"] },
   {
     name: "penguin",
-    weight: 10,
+    weight: 12,
     continents: ["Africa", "Australia", "Antarctica", "South-America"],
   },
   {
@@ -65,7 +65,7 @@ const animals = [
     continents: ["North-America", "Asia", "Arctic"],
   },
   { name: "panda", weight: 120, continents: ["Asia"] },
-  { name: "koala", weight: 10, continents: ["Australia"] },
+  { name: "koala", weight: 13, continents: ["Australia"] },
   { name: "kangaroo", weight: 70, continents: ["Australia"] },
   {
     name: "monkey",
