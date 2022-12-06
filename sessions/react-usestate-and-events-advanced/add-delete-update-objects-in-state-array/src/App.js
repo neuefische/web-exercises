@@ -8,7 +8,7 @@
  * Implement a delete button inside the movie component.
  *
  * 2. Write a function addMovie(). Use the name you get from the Form component
- *  and the nanoid() function to create a unique id.
+ *  and the uid() function to create a unique id.
  *
  * 3. Write a function toggleLike(). Pass it to your Movie component.
  * Make sure to use the correct prop name.
@@ -24,7 +24,7 @@
 import Movie from "./Movie.js";
 import Form from "./Form.js";
 import { useState } from "react";
-import { nanoid } from "nanoid";
+import { uid } from "uid";
 import { useImmer } from "use-immer";
 import "./styles.css";
 
@@ -52,7 +52,7 @@ export default function App() {
   function deleteMovie() {}
 
   function addMovie(name) {
-    // Hint: to set a unique id, use "id: nanoid()"
+    // Hint: to set a unique id, use "id: uid()"
   }
 
   function toggleLike() {}
