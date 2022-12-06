@@ -5,7 +5,6 @@ import { useRouter } from "next/router";
 
 export default function Navigation({ players }) {
   const router = useRouter();
-  console.log(router);
   return (
     <Nav>
       <StyledLink
