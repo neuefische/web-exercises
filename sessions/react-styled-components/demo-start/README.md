@@ -2,7 +2,7 @@
 
 ## Notes
 
-- This is the start version of the demo
+- This is the starter version of the demo
 - You have to touch the [`pages/index.js`](./pages/index.js) file and create a few new components according to the session guide
 
 ## Development
