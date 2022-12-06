@@ -34,7 +34,6 @@ However, we want the user to decide how many stars should be filled. Let's add a
 
 You are done! 🎉 Five stars to you! ⭐️⭐️⭐️⭐️⭐️
 
-
 ## Notes
 
 - You only have to touch the [`js/index.js`](./js/index.js) file.
