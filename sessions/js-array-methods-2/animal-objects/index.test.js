@@ -37,7 +37,7 @@ describe("Array with Animal Objects", () => {
       },
       {
         name: "dog",
-        weight: 10,
+        weight: 15,
         continents: [
           "Europe",
           "Asia",
@@ -131,7 +131,7 @@ describe("Array with Animal Objects", () => {
       { name: "sloth", weight: 8, continents: ["South-America"] },
       {
         name: "dog",
-        weight: 10,
+        weight: 15,
         continents: [
           "Europe",
           "Asia",
@@ -225,7 +225,7 @@ describe("Array with Animal Objects", () => {
       },
       {
         name: "dog",
-        weight: 10,
+        weight: 15,
         continents: [
           "Europe",
           "Asia",
@@ -269,9 +269,9 @@ describe("Array with Animal Objects", () => {
     expect(allAnimalsInEuropeWeighLessThanOnehundred).toBe(false);
   });
   test("weightOfAllAnimalsInAfrica", () => {
-    expect(weightOfAllAnimalsInAfrica).toBe(9146);
+    expect(weightOfAllAnimalsInAfrica).toBe(9151);
   });
   test("averageWeightOfAllAnimalsInAfrica", () => {
-    expect(averageWeightOfAllAnimalsInAfrica).toBeCloseTo(762.17);
+    expect(averageWeightOfAllAnimalsInAfrica).toBeCloseTo(762.58);
   });
 });

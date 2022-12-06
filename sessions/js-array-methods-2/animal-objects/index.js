@@ -15,7 +15,7 @@ const animals = [
   },
   {
     name: "dog",
-    weight: 10,
+    weight: 15,
     continents: [
       "Europe",
       "Asia",
