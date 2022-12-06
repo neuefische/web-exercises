@@ -269,9 +269,9 @@ describe("Array with Animal Objects", () => {
     expect(allAnimalsInEuropeWeighLessThanOnehundred).toBe(false);
   });
   test("weightOfAllAnimalsInAfrica", () => {
-    expect(weightOfAllAnimalsInAfrica).toBe(9046);
+    expect(weightOfAllAnimalsInAfrica).toBe(9146);
   });
   test("averageWeightOfAllAnimalsInAfrica", () => {
-    expect(averageWeightOfAllAnimalsInAfrica).toBeCloseTo(753.83);
+    expect(averageWeightOfAllAnimalsInAfrica).toBeCloseTo(762.17);
   });
 });
