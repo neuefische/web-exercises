@@ -57,12 +57,12 @@ const date = new Date().toLocaleDateString("en-us", { dateStyle: "medium" });
 
 Each entry in the `entries` array needs an ID – a unique identifier.
 
-- Install the npm package `nanoid` via the terminal. You can use the command below.
-- Call the function `nanoid()` to generate a new ID.
+- Install the npm package `uid` via the terminal. You can use the command below.
+- Call the function `uid()` to generate a new ID.
 - Add the key `id` to the object describing the new entry.
 
 ```sh
-npm install nanoid
+npm install uid
 ```
 
 - Call the `setEntries` function and insert the new entry at the beginning of the array.

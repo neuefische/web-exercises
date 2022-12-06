@@ -1,7 +1,7 @@
 {
-  "name": "js-loops_for-stars",
+  "name": "js-loops_stars",
   "version": "0.0.0-unreleased",
-  "description": "For loop and stars challenge",
+  "description": "JS Loops: stars",
   "main": "index.html",
   "scripts": {
     "lint": "npx eslint .",
@@ -9,5 +9,6 @@
   },
   "nf": {
     "template": "html-css-js-static"
-  }
+  },
+  "private": true
 }

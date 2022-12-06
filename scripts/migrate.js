@@ -108,6 +108,7 @@ async function applyTemplate(challengeFolder, template, packageJson) {
     "jest.setup.js",
     "sandbox.config.json",
     "stylelint.config.js",
+    path.join("pages", "_document.js"),
   ]);
 
   copyFileIfExistsElseRemove(".eslintrc.json", async (current, template) => {

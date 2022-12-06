@@ -1,28 +1,32 @@
 console.clear();
 
-const submitButton = document.querySelector('[data-js="submit"]');
+const startButton = document.querySelector('[data-js="start-button"]');
 const toast = document.querySelector('[data-js="toast"]');
-let timeoutId = null;
+const countdown = document.querySelector('[data-js="countdown"]');
 
-toast.addEventListener("click", () => {
-  clearTimeout(timeoutId);
-  exitToast();
-});
+// Sets timeoutId initially to undefined.
+let timeoutId;
 
-submitButton.addEventListener("click", () => {
-  enterToast();
-  if (timeoutId === null) {
-    timeoutId = setTimeout(exitToast, 5000);
+startButton.addEventListener("click", () => {
+  // We do not allow setTimeout to be called again
+  // before it has called hideToast.
+  // When hideToast is called, timeoutId is set to undefined
+  if (!timeoutId) {
+    timeoutId = setTimeout(hideToast, 2000);
+    toast.classList.remove("toast--hidden");
+    countdown.classList.add("countdown--visible");
   }
 });
 
-function enterToast() {
-  toast.classList.remove("exit");
-  toast.classList.add("enter");
-}
+toast.addEventListener("click", () => {
+  clearTimeout(timeoutId);
+  hideToast();
+});
 
-function exitToast() {
-  toast.classList.remove("enter");
-  toast.classList.add("exit");
-  timeoutId = null;
+// These actions are in a separate function
+// because we need them in two places in our code.
+function hideToast() {
+  timeoutId = undefined;
+  toast.classList.add("toast--hidden");
+  countdown.classList.remove("countdown--visible");
 }

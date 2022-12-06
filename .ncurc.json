@@ -1,5 +1,4 @@
 {
   "upgrade": true,
-  "deep": true,
-  "reject": ["nanoid"]
+  "deep": true
 }

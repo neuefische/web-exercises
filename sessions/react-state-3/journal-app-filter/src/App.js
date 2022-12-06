@@ -4,7 +4,7 @@ import EntriesSection from "./components/EntriesSection";
 import EntryForm from "./components/EntryForm";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import { nanoid } from "nanoid";
+import { uid } from "uid";
 
 const initialEntries = [
   {
@@ -43,7 +43,7 @@ function App() {
     const date = new Date().toLocaleDateString("en-us", {
       dateStyle: "medium",
     });
-    setEntries([{ id: nanoid(), date, ...newEntry }, ...entries]);
+    setEntries([{ id: uid(), date, ...newEntry }, ...entries]);
   }
 
   function handleToggleFavorite(id) {

@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui;
+}
+
+main {
+  display: grid;
+  height: 100vh;
+  place-content: center;
+  background-color: darkslateblue;
+}
+
+ul {
+  list-style: none;
+}
+
+.star-container {
+  display: flex;
+  gap: 5px;
+  background-color: rgb(252, 252, 252);
+  padding: 14px 20px;
+  min-width: 68px;
+  min-height: 56px;
+  border-radius: 14px;
+  box-shadow: 0 1px 8px rgb(0 0 0/ 0.2);
+}
+
+img {
+  display: block;
+  width: 24px;
+}
