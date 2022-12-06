@@ -18,7 +18,7 @@ Your task is to write the test first and implement the function afterwards. Let'
 ## Notes
 
 - Make sure to run `npm install` first.
-- You can run the test watch mode via the command `npm run test:watch`.
+- You can run the test watch mode via the command `npm run test`.
   - Note that all tests are green at the beginning; as soon as you have defined an expectation, the test turns red and you can start implementing the function to make the test pass correctly.
 - In most cases, you will want to use `toEqual`as a matcher.
 
@@ -36,7 +36,6 @@ You can then use the following commands:
 
 - `npm run start` to run the main JavaScript file using `node`
 - `npm run test` to run the tests once
-- `npm run test:watch` to run the tests in watch mode
 - `npm run lint` to run the linter
 
-> 💡 Since this project is JavaScript only there is nothing to preview in the browser. Use `npm run test:watch` to check your progress or `npm run start` to run the code.
+> 💡 Since this project is JavaScript only there is nothing to preview in the browser. Use `npm run test` to check your progress or `npm run start` to run the code.
