@@ -52,7 +52,7 @@ const animals = [
       "South-America",
     ],
   },
-  { name: "giraffe", weight: 500, continents: ["Africa"] },
+  { name: "giraffe", weight: 600, continents: ["Africa"] },
   { name: "zebra", weight: 300, continents: ["Africa"] },
   {
     name: "penguin",

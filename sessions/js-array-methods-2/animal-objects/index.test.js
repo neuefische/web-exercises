@@ -14,7 +14,7 @@ describe("Array with Animal Objects", () => {
   test("firstAnimalStartingWithLetterG", () => {
     expect(firstAnimalStartingWithLetterG).toEqual({
       name: "giraffe",
-      weight: 500,
+      weight: 600,
       continents: ["Africa"],
     });
   });
@@ -48,7 +48,7 @@ describe("Array with Animal Objects", () => {
         ],
       },
       { name: "elephant", weight: 4000, continents: ["Africa", "Asia"] },
-      { name: "giraffe", weight: 500, continents: ["Africa"] },
+      { name: "giraffe", weight: 600, continents: ["Africa"] },
       { name: "hippo", weight: 1500, continents: ["Africa"] },
       {
         name: "horse",
@@ -176,7 +176,7 @@ describe("Array with Animal Objects", () => {
           "South-America",
         ],
       },
-      { name: "giraffe", weight: 500, continents: ["Africa"] },
+      { name: "giraffe", weight: 600, continents: ["Africa"] },
       { name: "hippo", weight: 1500, continents: ["Africa"] },
 
       { name: "rhino", weight: 2000, continents: ["Asia", "Africa"] },
@@ -188,7 +188,7 @@ describe("Array with Animal Objects", () => {
       { name: "elephant", weight: 4000, continents: ["Africa", "Asia"] },
       { name: "rhino", weight: 2000, continents: ["Asia", "Africa"] },
       { name: "hippo", weight: 1500, continents: ["Africa"] },
-      { name: "giraffe", weight: 500, continents: ["Africa"] },
+      { name: "giraffe", weight: 600, continents: ["Africa"] },
       {
         name: "horse",
         weight: 500,
