@@ -20,11 +20,17 @@ const initialMovies = [
   },
 ];
 
-test("renders the initialMovies in a list", async () => {
+test("renders the initialMovies", async () => {
   render(<Movies initialMovies={initialMovies} />);
-  expect(screen.getByText("The Incredible Hulk")).toBeInTheDocument();
-  expect(screen.getByText("Spiderman 1-25")).toBeInTheDocument();
-  expect(screen.getByText("Lord of the Rings")).toBeInTheDocument();
+  expect(
+    screen.getByRole("heading", { name: "The Incredible Hulk" })
+  ).toBeInTheDocument();
+  expect(
+    screen.getByRole("heading", { name: "Spiderman 1-25" })
+  ).toBeInTheDocument();
+  expect(
+    screen.getByRole("heading", { name: "Lord of the Rings" })
+  ).toBeInTheDocument();
 });
 
 test("renders a new movie when the form is submitted with a new movie name", async () => {
@@ -34,7 +40,9 @@ test("renders a new movie when the form is submitted with a new movie name", asy
   const submitButton = screen.getByRole("button", { name: "Add" });
   await user.type(input, "The Matrix");
   await user.click(submitButton);
-  expect(screen.getByText("The Matrix")).toBeInTheDocument();
+  expect(
+    screen.getByRole("heading", { name: "The Matrix" })
+  ).toBeInTheDocument();
 });
 
 test("deletes a movie when the delete button is clicked", async () => {

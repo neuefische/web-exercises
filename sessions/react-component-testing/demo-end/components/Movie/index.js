@@ -52,11 +52,11 @@ const StyledMovie = styled.section`
 `;
 
 export default function Movie({
-  name,
-  isLiked,
   id,
-  onDeleteMovie,
-  onToggleLike,
+  name,
+  isLiked = false,
+  onDeleteMovie = () => {},
+  onToggleLike = () => {},
 }) {
   return (
     <StyledMovie>
