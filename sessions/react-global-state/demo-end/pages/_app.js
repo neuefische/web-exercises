@@ -1,5 +1,6 @@
 import { useState } from "react";
 import GlobalStyle from "../styles";
+import Layout from "./components/AppLayout";
 
 const initialAnimalArray = [
   { id: 1, name: "Cats", count: 0 },
@@ -37,15 +38,17 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <GlobalStyle />
-      <Component
-        {...pageProps}
-        animals={animals}
-        countSum={countSum}
-        countAverage={countAverage}
-        dragonCount={dragonCount}
-        handleAdd={handleAdd}
-        handleSubtract={handleSubtract}
-      />
+      <Layout dragonCount={dragonCount} countSum={countSum}>
+        <Component
+          {...pageProps}
+          animals={animals}
+          countSum={countSum}
+          countAverage={countAverage}
+          dragonCount={dragonCount}
+          handleAdd={handleAdd}
+          handleSubtract={handleSubtract}
+        />
+      </Layout>
     </>
   );
 }

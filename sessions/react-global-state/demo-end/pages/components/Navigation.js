@@ -11,52 +11,53 @@ const List = styled.ul`
   padding: 0;
   list-style: none;
   gap: 1ch;
+`;
 
-  a:any-link {
-    color: var(--accent-color);
-  }
+const StyledLink = styled.a`
+  color: var(--accent-color);
+  text-decoration: none;
 `;
 
 export default function Navigation() {
   return (
     <Container>
-      <span>Learn more</span>
+      <span>Learn more about</span>
       <List>
         <li>
-          <a
+          <StyledLink
             href="https://google.com/search?q=Cats"
             target="_blank"
             rel="noreferrer"
           >
             Cats
-          </a>
+          </StyledLink>
         </li>
         <li>
-          <a
+          <StyledLink
             href="https://google.com/search?q=Dogs"
             target="_blank"
             rel="noreferrer"
           >
             Dogs
-          </a>
+          </StyledLink>
         </li>
         <li>
-          <a
+          <StyledLink
             href="https://google.com/search?q=Sheep"
             target="_blank"
             rel="noreferrer"
           >
             Sheep
-          </a>
+          </StyledLink>
         </li>
         <li>
-          <a
+          <StyledLink
             href="https://google.com/search?q=Dragons"
             target="_blank"
             rel="noreferrer"
           >
             Dragons
-          </a>
+          </StyledLink>
         </li>
       </List>
     </Container>

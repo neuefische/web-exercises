@@ -1,21 +1,29 @@
-import AppLayout from "./components/AppLayout";
+import styled from "styled-components";
+import MainContent from "./components/MainContent";
+import Navigation from "./components/Navigation";
 
-export default function OverviewPage({
-  animals,
-  countSum,
-  countAverage,
-  dragonCount,
-  handleAdd,
-  handleSubtract,
-}) {
+const StyledNav = styled.nav`
+  padding: 1rem;
+`;
+
+const StyledMain = styled.main`
+  padding: 1rem;
+`;
+
+export default function OverviewPage({ animals, handleAdd, handleSubtract }) {
   return (
-    <AppLayout
-      animals={animals}
-      countSum={countSum}
-      countAverage={countAverage}
-      dragonCount={dragonCount}
-      handleAdd={handleAdd}
-      handleSubtract={handleSubtract}
-    />
+    <>
+      <StyledMain>
+        <MainContent
+          animals={animals}
+          handleAdd={handleAdd}
+          handleSubtract={handleSubtract}
+        />
+      </StyledMain>
+
+      <StyledNav>
+        <Navigation />
+      </StyledNav>
+    </>
   );
 }

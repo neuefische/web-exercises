@@ -2,23 +2,18 @@ import styled from "styled-components";
 
 const Container = styled.div`
   display: flex;
-  gap: 1ch;
   align-items: center;
+  gap: 0.5rem;
+`;
 
-  > :first-child {
-    min-width: 8ch;
-  }
-
-  > span {
-    min-width: 2ch;
-    text-align: center;
-  }
+const AnimalName = styled.strong`
+  width: 5rem;
 `;
 
 export default function Counter({ animal, handleAdd, handleSubtract }) {
   return (
     <Container>
-      <strong>{animal.name}:</strong>
+      <AnimalName>{animal.name}:</AnimalName>
       <button
         type="button"
         onClick={() => {

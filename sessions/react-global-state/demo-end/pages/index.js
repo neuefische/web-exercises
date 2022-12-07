@@ -1,57 +1,36 @@
 import styled from "styled-components";
 import Link from "next/link";
 
-const Container = styled.div`
-  display: grid;
-  gap: 4rem;
-  padding-inline-start: 2rem;
-`;
-
-const Title = styled.h1`
-  font-size: 3rem;
-  padding: 1rem;
-`;
-
 const Flex = styled.div`
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  gap: 2rem;
 `;
 
 const StyledLink = styled(Link)`
-  font-size: 2rem;
   text-decoration: none;
-  color: #fff;
-  background: var(--primary-color);
-  width: 50%;
-  padding-inline-start: 0.5rem;
+  color: var(--accent-color);
 `;
 
-export default function HomePage({ countSum, dragonCount }) {
+export default function HomePage({ countSum, dragonCount, countAverage }) {
   return (
-    <>
-      <Container>
-        <div>
-          <Title>
-            CounterApp
-            <span role="img" aria-label="trademark">
-              ™
-            </span>
-          </Title>
-          <h2>
-            — currently counting <strong>{countSum}</strong> things ...
-          </h2>
-          <p>
-            ... of which{" "}
-            {dragonCount === 1
-              ? "one is a dragon"
-              : `${dragonCount} are dragons`}
-            .
-          </p>
-        </div>
-        <Flex>
-          <StyledLink href="/overview">➡︎</StyledLink>
-        </Flex>
-      </Container>
-    </>
+    <Flex>
+      <div>
+        <h2>Counter Stats</h2>
+        <p>
+          Our counters currently have an average count of{" "}
+          <strong>{countAverage}</strong>, counting <strong>{countSum}</strong>{" "}
+          things ... of which <strong>{dragonCount}</strong> are dragons.
+        </p>
+        <h2>Definitions</h2>
+        <dl>
+          <dt>Counter</dt>
+          <dd>A counter is a thing that can count up or down.</dd>
+          <dd>A counter is also a piece of furniture.</dd>
+        </dl>
+      </div>
+
+      <StyledLink href="/overview">To the counters ➡︎</StyledLink>
+    </Flex>
   );
 }

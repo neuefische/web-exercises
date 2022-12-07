@@ -1,18 +1,37 @@
 import styled from "styled-components";
-import CounterList from "./CounterList";
+import Counter from "./Counter";
+import Link from "next/link";
 
-const Container = styled.section`
-  max-width: 75ch;
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: var(--accent-color);
+`;
+
+const List = styled.ul`
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
 `;
 
 export default function MainContent({ animals, handleAdd, handleSubtract }) {
   return (
-    <Container>
-      <CounterList
-        animals={animals}
-        handleAdd={handleAdd}
-        handleSubtract={handleSubtract}
-      />
+    <>
+      <StyledLink href="/">⬅︎ Back</StyledLink>
+      <h2>Counters</h2>
+      <List>
+        {animals.map((animal) => (
+          <li key={animal.id}>
+            <Counter
+              animal={animal}
+              handleAdd={handleAdd}
+              handleSubtract={handleSubtract}
+            />
+          </li>
+        ))}
+      </List>
 
       <article>
         <h2>About Counters</h2>
@@ -36,6 +55,6 @@ export default function MainContent({ animals, handleAdd, handleSubtract }) {
           </figcaption>
         </figure>
       </article>
-    </Container>
+    </>
   );
 }
