@@ -14,8 +14,7 @@ To run project commands locally, you need to install the dependencies using `npm
 
 You can then use the following commands:
 
-- `npm run test` to run the tests once
-- `npm run test:watch` to run the tests in watch mode
+- `npm run test` to run the tests
 - `npm run lint` to run the linter
 
 Use the Live Preview Extension for Visual Studio Code to view this project in the browser.  
