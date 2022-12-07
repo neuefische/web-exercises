@@ -14,12 +14,14 @@ In this challenge you will automate the lights in your house… well, at least i
 - In doing so, you will need to find a new way to represent the state of the lights. You can use an array of objects with a `name`, `isOn` and `id` property.
 - Change `Light` component to receive at least `isOn`, `name`, `onToggle` as a props and remove the internal state from the component.
 - Change the `Lights` component to render the lights dynamically based on the array in state (`.map`). You'll need to pass the array down through props.
-  - In the `Lights` component pass down the `onToggle` prop to the `Light` component using an inline function to pass in the `id` of the light:
+- Create a function to toggle the `isOn` property of a light based on its `id` and pass the handler function down to the `Light` components.
+- In the `Lights` component pass down the `onToggle` prop to the `Light` component using an inline function to pass in the `id` of the light:
+
   ```js
   onToggle={() => handleToggle(light.id)}
   ```
+
   This of course depends on the name of the handle function you choose.
-- Create a function to toggle the `isOn` property of a light based on its `id` and pass the handler function down to the `Light` components.
 
 > 💡 Just pick any `id`s you want for the lights. `"1"`, `"2"`, `"3"`,… is probably the easiest.
 
@@ -35,6 +37,9 @@ In this challenge you will automate the lights in your house… well, at least i
 - The buttons on the `/actions` page are also not yet functional.
 - Create two handler functions to toggle all lights on and off.
 - Pass them down to the `QuickActions` component and use them to toggle all lights on and off.
+- Bonus: Make the `Button`s `disabled` if their action would not do anything:
+  - "Turn all lights off" should be disabled if all lights are off
+  - "Turn all lights on" should be disabled if all lights are on
 
 ### Bonus: Dimming the Background
 
@@ -43,7 +48,7 @@ In this challenge you will automate the lights in your house… well, at least i
 
 ## Notes
 
-- You'll have to touch most files inside `components` and `pages`. All the styles are already done, so you can focus on the functional parts.
+- You'll have to touch the files inside `components` and `pages`. All the styles are already done, so you can focus on the functional parts.
 
 ## Development
 
