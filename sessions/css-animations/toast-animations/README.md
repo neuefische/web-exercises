@@ -1,23 +1,39 @@
 # Toast Animation
 
-In this CodeSandbox you are going to practice animating properties in CSS!
+In this Project you are going to practice animating properties in CSS!
 
-## Task
+## Task 1
 
-### Part 1
+The hover effect on the start button can still be improved. Let's do that.
 
-The hover effect on the submit button looks quite ugly. Let's change that.
+Find some rules you like and animate them with transitions.
 
-- Add a `transition` property to the submit button and animate the transition to the hover state for all properties. Find some values that you personally like.
+- Use at least one timing-function
+- Assign different durations
+- Consider using delays
 
-### Part 2
+> Also check out the handout if you have questions!
 
-When you click on the button, a toast appears on the bottom right corner. Lets animate it as well, but this time we want a different animation when the toast leaves the screen!
+## Task 2
 
-- first define a transition in the `.toast.enter` ruleset. This will be describing the enter animation.
-- then define the exit animation in the `.toast.exit` ruleset. This time use the bezier tool in the developer tools to find an animation that bounces a little to the left before the toast leaves to the right.
+When you click the start button, a toast appears in the upper left corner. Currently this toast is animated with transitions.
 
-Switch to the [`css/styles.css`](./css/styles.css) file and make something great happen!
+Make it your own!  
+Here are 3 options to start with:
+
+### Option 1 - Keep Transitions:
+
+Keep animating the toast with transitions.
+
+### Option 2 - Change Transitions to keyframes:
+
+Change the way to animate the toast and use keyframes instead.
+
+> Is much more versatile to customize, but holds far more pitfalls.
+
+### Option 3 - Add your own logic and css:
+
+Do whatever you want. Can you animate the body's background-color while holding your mouse down on the start-button?
 
 ## Notes
 

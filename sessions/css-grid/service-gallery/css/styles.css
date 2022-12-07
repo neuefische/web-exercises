@@ -15,8 +15,7 @@ Hint: you need only two lines of code in your grid container
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: system-ui;
   background-color: #252629;
 }
 

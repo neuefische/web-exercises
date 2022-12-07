@@ -146,7 +146,7 @@ A template that does not contain any code.
 
 created via [`recipes/html-css-js`](./recipes/html-css-js)
 
-A template that contains HTML, CSS and JavaScript files with jest support. CodeSandbox bundles the code and runs the tests automatically. Locally you can run the tests with `npm test`.
+A template that contains HTML, CSS and JavaScript files with jest support. CodeSandbox bundles the code and runs the tests automatically. Locally you can run the tests with `npm run test`.
 
 > 📝 Create a new exercise inside this repository:
 >
@@ -194,7 +194,7 @@ A template that contains HTML and CSS files.
 
 created via [`recipes/js`](./recipes/js)
 
-A template that contains only JavaScript files with jest support. CodeSandbox bundles the code and runs the tests automatically. Locally you can run the tests with `npm test`.
+A template that contains only JavaScript files with jest support. CodeSandbox bundles the code and runs the tests automatically. Locally you can run the tests with `npm run test`.
 
 > 📝 Create a new exercise inside this repository:
 >

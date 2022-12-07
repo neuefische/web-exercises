@@ -14,7 +14,7 @@ describe("Array with Animal Objects", () => {
   test("firstAnimalStartingWithLetterG", () => {
     expect(firstAnimalStartingWithLetterG).toEqual({
       name: "giraffe",
-      weight: 500,
+      weight: 600,
       continents: ["Africa"],
     });
   });
@@ -48,7 +48,7 @@ describe("Array with Animal Objects", () => {
         ],
       },
       { name: "elephant", weight: 4000, continents: ["Africa", "Asia"] },
-      { name: "giraffe", weight: 500, continents: ["Africa"] },
+      { name: "giraffe", weight: 600, continents: ["Africa"] },
       { name: "hippo", weight: 1500, continents: ["Africa"] },
       {
         name: "horse",
@@ -63,7 +63,7 @@ describe("Array with Animal Objects", () => {
         ],
       },
       { name: "kangaroo", weight: 70, continents: ["Australia"] },
-      { name: "koala", weight: 10, continents: ["Australia"] },
+      { name: "koala", weight: 13, continents: ["Australia"] },
       { name: "lion", weight: 200, continents: ["Africa"] },
       {
         name: "monkey",
@@ -74,7 +74,7 @@ describe("Array with Animal Objects", () => {
       { name: "panda", weight: 120, continents: ["Asia"] },
       {
         name: "penguin",
-        weight: 10,
+        weight: 12,
         continents: ["Africa", "Australia", "Antarctica", "South-America"],
       },
       {
@@ -143,10 +143,10 @@ describe("Array with Animal Objects", () => {
       },
       {
         name: "penguin",
-        weight: 10,
+        weight: 12,
         continents: ["Africa", "Australia", "Antarctica", "South-America"],
       },
-      { name: "koala", weight: 10, continents: ["Australia"] },
+      { name: "koala", weight: 13, continents: ["Australia"] },
       {
         name: "monkey",
         weight: 20,
@@ -176,7 +176,7 @@ describe("Array with Animal Objects", () => {
           "South-America",
         ],
       },
-      { name: "giraffe", weight: 500, continents: ["Africa"] },
+      { name: "giraffe", weight: 600, continents: ["Africa"] },
       { name: "hippo", weight: 1500, continents: ["Africa"] },
 
       { name: "rhino", weight: 2000, continents: ["Asia", "Africa"] },
@@ -188,7 +188,7 @@ describe("Array with Animal Objects", () => {
       { name: "elephant", weight: 4000, continents: ["Africa", "Asia"] },
       { name: "rhino", weight: 2000, continents: ["Asia", "Africa"] },
       { name: "hippo", weight: 1500, continents: ["Africa"] },
-      { name: "giraffe", weight: 500, continents: ["Africa"] },
+      { name: "giraffe", weight: 600, continents: ["Africa"] },
       {
         name: "horse",
         weight: 500,
@@ -217,10 +217,10 @@ describe("Array with Animal Objects", () => {
         continents: ["South-America", "Asia", "Africa"],
       },
 
-      { name: "koala", weight: 10, continents: ["Australia"] },
+      { name: "koala", weight: 13, continents: ["Australia"] },
       {
         name: "penguin",
-        weight: 10,
+        weight: 12,
         continents: ["Africa", "Australia", "Antarctica", "South-America"],
       },
       {
@@ -269,9 +269,9 @@ describe("Array with Animal Objects", () => {
     expect(allAnimalsInEuropeWeighLessThanOnehundred).toBe(false);
   });
   test("weightOfAllAnimalsInAfrica", () => {
-    expect(weightOfAllAnimalsInAfrica).toBe(9046);
+    expect(weightOfAllAnimalsInAfrica).toBe(9148);
   });
   test("averageWeightOfAllAnimalsInAfrica", () => {
-    expect(averageWeightOfAllAnimalsInAfrica).toBeCloseTo(753.83);
+    expect(averageWeightOfAllAnimalsInAfrica).toBeCloseTo(762.33);
   });
 });
