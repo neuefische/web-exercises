@@ -32,6 +32,8 @@ In this challenge you will automate the lights in your house… well, at least i
 - The count of turned on lights on the home page (`/`) is still not working.
 - Create a value derived from the state and use it to display the count of turned on lights on the home page (`/`).
 
+> 💡 To derive a value from state you do **not** need state or effects.
+
 ### Creating the Quick Actions
 
 - The buttons on the `/actions` page are also not yet functional.
