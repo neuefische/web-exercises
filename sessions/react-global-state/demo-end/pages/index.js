@@ -1,35 +1,16 @@
-import styled from "styled-components";
-import Link from "next/link";
-
-import CounterStats from "./components/CounterStats";
-
-const NavWrapper = styled.nav`
-  padding-inline: 1rem;
-`;
-
-const MainWrapper = styled.main`
-  padding-inline: 1rem;
-`;
-
-const StyledLink = styled(Link)`
-  text-decoration: none;
-  color: var(--accent-color);
-`;
+import CounterStats from "../components/CounterStats";
+import Link from "../components/Link";
 
 export default function HomePage({ countSum, dragonCount, countAverage }) {
   return (
     <>
-      <MainWrapper>
-        <CounterStats
-          countSum={countSum}
-          dragonCount={dragonCount}
-          countAverage={countAverage}
-        />
-      </MainWrapper>
+      <CounterStats
+        countSum={countSum}
+        dragonCount={dragonCount}
+        countAverage={countAverage}
+      />
 
-      <NavWrapper>
-        <StyledLink href="/counters">To the counters →</StyledLink>
-      </NavWrapper>
+      <Link href="/counters">To the counters →</Link>
     </>
   );
 }

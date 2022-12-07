@@ -30,7 +30,7 @@ const StyledFooter = styled.footer`
 const Container = styled.div`
   display: flex;
   margin: auto;
-  max-width: 80%;
+  max-width: 60rem;
   flex-direction: column;
   padding: 5rem 1rem;
   gap: 1rem;
