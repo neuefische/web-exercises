@@ -1,38 +1,6 @@
-import styled from "styled-components";
-import Counter from "./Counter";
-import Link from "next/link";
-
-const StyledLink = styled(Link)`
-  text-decoration: none;
-  color: var(--accent-color);
-`;
-
-const List = styled.ul`
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 1rem;
-`;
-
-export default function MainContent({ animals, handleAdd, handleSubtract }) {
+export default function InfoBox() {
   return (
     <>
-      <StyledLink href="/">⬅︎ Back</StyledLink>
-      <h2>Counters</h2>
-      <List>
-        {animals.map((animal) => (
-          <li key={animal.id}>
-            <Counter
-              animal={animal}
-              handleAdd={handleAdd}
-              handleSubtract={handleSubtract}
-            />
-          </li>
-        ))}
-      </List>
-
       <article>
         <h2>About Counters</h2>
         <p>

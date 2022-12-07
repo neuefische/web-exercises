@@ -1,6 +1,6 @@
 import { useState } from "react";
 import GlobalStyle from "../styles";
-import Layout from "./components/AppLayout";
+import Layout from "./components/Layout";
 
 const initialAnimalArray = [
   { id: 1, name: "Cats", count: 0 },
