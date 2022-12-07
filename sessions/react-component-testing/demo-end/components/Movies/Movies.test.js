@@ -20,29 +20,33 @@ const initialMovies = [
   },
 ];
 
-test("renders the initialMovies", async () => {
+test("renders the initialMovies", () => {
   render(<Movies initialMovies={initialMovies} />);
-  expect(
-    screen.getByRole("heading", { name: "The Incredible Hulk" })
-  ).toBeInTheDocument();
-  expect(
-    screen.getByRole("heading", { name: "Spiderman 1-25" })
-  ).toBeInTheDocument();
-  expect(
-    screen.getByRole("heading", { name: "Lord of the Rings" })
-  ).toBeInTheDocument();
+  const hulkHeading = screen.getByRole("heading", {
+    name: "The Incredible Hulk",
+  });
+  expect(hulkHeading).toBeInTheDocument();
+
+  const spidermanHeading = screen.getByRole("heading", {
+    name: "Spiderman 1-25",
+  });
+  expect(spidermanHeading).toBeInTheDocument();
+
+  const lordOfTheRingsHeading = screen.getByRole("heading", {
+    name: "Lord of the Rings",
+  });
+  expect(lordOfTheRingsHeading).toBeInTheDocument();
 });
 
 test("renders a new movie when the form is submitted with a new movie name", async () => {
   const user = userEvent.setup();
   render(<Movies initialMovies={initialMovies} />);
   const input = screen.getByLabelText("Name");
-  const submitButton = screen.getByRole("button", { name: "Add" });
   await user.type(input, "The Matrix");
-  await user.click(submitButton);
-  expect(
-    screen.getByRole("heading", { name: "The Matrix" })
-  ).toBeInTheDocument();
+  const button = screen.getByRole("button", { name: "Add" });
+  await user.click(button);
+  const matrixHeading = screen.getByRole("heading", { name: "The Matrix" });
+  expect(matrixHeading).toBeInTheDocument();
 });
 
 test("deletes a movie when the delete button is clicked", async () => {
@@ -52,7 +56,10 @@ test("deletes a movie when the delete button is clicked", async () => {
     name: "delete The Incredible Hulk",
   });
   await user.click(deleteButton);
-  expect(screen.queryByText("The Incredible Hulk")).not.toBeInTheDocument();
+  const hulkHeadline = screen.queryByRole("heading", {
+    name: "The Incredible Hulk",
+  });
+  expect(hulkHeadline).not.toBeInTheDocument();
 });
 
 test("likes a movie when the like button is clicked", async () => {

@@ -12,7 +12,10 @@ test("calls the onAddMovie handler with inputs on submit", async () => {
   await user.type(nameInput, "The Matrix");
   await user.click(isLikedInput);
   await user.click(submitButton);
-  expect(handleAddMovie).toBeCalledWith({ name: "The Matrix", isLiked: true });
+  expect(handleAddMovie).toHaveBeenCalledWith({
+    name: "The Matrix",
+    isLiked: true,
+  });
 });
 
 test("does not call the onAddMovie handler when the form is submitted without a name", async () => {
@@ -21,7 +24,7 @@ test("does not call the onAddMovie handler when the form is submitted without a 
   render(<Form onAddMovie={handleAddMovie} />);
   const submitButton = screen.getByRole("button", { name: "Add" });
   await user.click(submitButton);
-  expect(handleAddMovie).not.toBeCalled();
+  expect(handleAddMovie).not.toHaveBeenCalled();
 });
 
 test("clears the name input when the form is submitted", async () => {
