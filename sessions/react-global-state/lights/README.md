@@ -10,7 +10,7 @@ In this challenge you will automate the lights in your house… well, at least i
 ### Lifting State Up
 
 - The count of turned on lights on the home page (`/`) is not working because the state is not shared between the components.
-- To make the state of the `Light` components available to the Home component, you need to lift the state up to the `App` component.
+- To make the state of the `Light` components available to the `HomePage` component (`pages/index.js`), you need to lift the state up to the `App` component (`pages/_app.js`).
 - In doing so, you will need to find a new way to represent the state of the lights. You can use an array of objects with a `name`, `isOn` and `id` property.
 - Change `Light` component to receive at least `isOn`, `name`, `onToggle` as props and remove the internal state from the component.
 - Change the `Lights` component to render the lights dynamically based on the array in state (`.map`). You'll need to pass the array down through props.
