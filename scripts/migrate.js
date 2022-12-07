@@ -109,6 +109,9 @@ async function applyTemplate(challengeFolder, template, packageJson) {
     "sandbox.config.json",
     "stylelint.config.js",
     path.join("pages", "_document.js"),
+    path.join(".storybook", "main.js"),
+    path.join(".storybook", "preview.js"),
+    ".npmrc",
   ]);
 
   copyFileIfExistsElseRemove(".eslintrc.json", async (current, template) => {
