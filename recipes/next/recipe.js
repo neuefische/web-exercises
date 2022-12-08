@@ -9,6 +9,9 @@ export default {
     spinner.text = "Installing Next.js Font…";
     await installNextjsFont({ cwd });
 
+    spinner.text = "Installing SVGR…";
+    await installSvgr({ cwd });
+
     spinner.text = "Installing Styled Components…";
     await installStyledComponents({ cwd });
 
@@ -24,6 +27,12 @@ async function installNextjsFont({ cwd }) {
   const { execa } = await import("execa");
 
   await execa("npm", ["install", "@next/font"], { cwd });
+}
+
+async function installSvgr({ cwd }) {
+  const { execa } = await import("execa");
+
+  await execa("npm", ["install", "--save-dev", "@svgr/webpack"], { cwd });
 }
 
 async function installStyledComponents({ cwd }) {
