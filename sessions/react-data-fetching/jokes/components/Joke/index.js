@@ -1,32 +1,20 @@
-import styled from "styled-components";
+import { JokeSection, StyledJoke } from "./Joke.styled";
+import useSWR from "swr";
+
+const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
 export default function Joke() {
+  const { data, error } = useSWR(
+    "https://example-apis.vercel.app/api/bad-jokes/random",
+    fetcher
+  );
+  console.log(data);
+
+  if (error) return <div>Failed to load {data.status}</div>;
+  if (!data) return <div>Loading...</div>;
   return (
     <JokeSection>
-      <StyledJoke>hello</StyledJoke>
+      <StyledJoke>{data.joke}</StyledJoke>
     </JokeSection>
   );
 }
-
-const JokeSection = styled.section`
-  position: relative;
-  width: 80%;
-  margin: 10rem auto;
-  border: 1px solid orange;
-  border-radius: 10px;
-  &::before {
-    position: absolute;
-    content: "😂";
-    font-size: 2rem;
-    top: -1.5rem;
-    left: -1rem;
-  }
-`;
-
-const StyledJoke = styled.p`
-  margin: 1rem;
-  padding: 0.5rem;
-  background-color: var(--color-water-10);
-  border-radius: 10px;
-  box-shadow: 0px 2px 0px 1px var(--color-granite);
-`;
