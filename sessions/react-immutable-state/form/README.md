@@ -11,7 +11,7 @@ In this challenge you will move mountains - well, at least figuratively.
 
 > 💡 The `Form` component uses "controlled components" for the inputs. It has a state to constantly store the input values. It re-renders on every change of an input to refresh the value displayed in the UI.
 >
-> This is contrast to the approach using "uncontrolled components", that we have seen mostly. Here the input values get stored in state when the form is submitted.
+> This is in contrast to the approach using "uncontrolled components", that we have seen mostly. Here the input values get stored in state when the form is submitted.
 
 ### Updating with Spread Syntax
 
