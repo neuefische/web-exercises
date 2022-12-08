@@ -27,8 +27,6 @@ export default function CarRace() {
     },
   ]);
 
-  console.log("cars", cars);
-
   function moveCar(clickedCar) {
     const coveredDistance = getRandomDistance();
 
@@ -70,25 +68,34 @@ export default function CarRace() {
           </button>
         </div>
       ) : (
-        <div>
-          <FinishHeadline finishLine={finishLine}>Finish</FinishHeadline>
-          {cars.map((car) => (
-            <React.Fragment key={car.emoji}>
-              <Track finishLine={finishLine}>
-                <CarButton
-                  onClick={() => moveCar(car)}
-                  positionX={car.position.x}
-                >
-                  <span aria-label={`Move ${car.name} forward`}>
-                    {car.emoji}
-                  </span>
-                </CarButton>
-                <FinishLine finishLine={finishLine} />
-              </Track>
-              <span>{car.position.lastDistance}</span>
-            </React.Fragment>
-          ))}
-        </div>
+        <RacesContainer>
+          <AllCarRoutes role="list">
+            <FinishHeadline finishLine={finishLine}>🏁 Finish</FinishHeadline>
+            {cars.map((car) => (
+              <SingleCarRoute key={car.emoji}>
+                <Track finishLine={finishLine}>
+                  <CarButton
+                    onClick={() => moveCar(car)}
+                    positionX={car.position.x}
+                  >
+                    <span aria-label={`Move ${car.name} forward`}>
+                      {car.emoji}
+                    </span>
+                  </CarButton>
+                  <FinishLine finishLine={finishLine} />
+                </Track>
+              </SingleCarRoute>
+            ))}
+          </AllCarRoutes>
+          <DistancesList>
+            <DistanceHeadline>Last Distance</DistanceHeadline>
+            {cars.map((car) => (
+              <SingleDistanceItem key={car.emoji}>
+                <DistanceDisplay>{car.position.lastDistance}</DistanceDisplay>
+              </SingleDistanceItem>
+            ))}
+          </DistancesList>
+        </RacesContainer>
       )}
     </div>
   );
@@ -97,6 +104,28 @@ export default function CarRace() {
 const CarButton = styled.button`
   font-size: 2rem;
   transform: ${({ positionX }) => `translateX(${positionX}px)`} rotateY(180deg);
+`;
+
+const AllCarRoutes = styled.ul`
+  display: flex;
+  flex-direction: column;
+`;
+
+const DistancesList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: fit-content;
+`;
+
+const DistanceDisplay = styled.span`
+  font-size: 1.5rem;
+  align-self: center;
+`;
+
+const DistanceHeadline = styled.h2`
+  /* align-self: end; */
 `;
 
 const FinishHeadline = styled.h2`
@@ -110,10 +139,25 @@ const FinishLine = styled.div`
   transform: ${({ finishLine }) => `translateX(${finishLine}px)`};
 `;
 
+const RacesContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+const SingleCarRoute = styled.li`
+  display: flex;
+  justify-content: space-between;
+`;
+
+const SingleDistanceItem = styled.li`
+  display: flex;
+  flex-direction: column;
+  height: 2rem;
+`;
+
 const Track = styled.div`
   background: grey;
-  max-width: ${({ finishLine }) => `${finishLine + 50}px`};
+  width: ${({ finishLine }) => `${finishLine + 50}px`};
   margin-block: 0.25rem;
-  border: 1px solid green;
   display: flex;
 `;

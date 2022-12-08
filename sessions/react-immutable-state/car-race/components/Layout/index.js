@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledLayout = styled.div`
-  width: min(100% - 32px, 352px);
+  width: min(100% - 32px, 500px);
   margin: 0 auto;
   padding: 32px 0;
   display: flex;
