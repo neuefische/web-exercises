@@ -24,7 +24,7 @@ Write the logic for `handleNameChange`, `handleAltitudeChange`, and `handleMount
 
 ### Bonus: Updating with the `useImmer` hook
 
-Updating complex states can easily become difficult. This is where the `useImmer` hook comes in handy.
+Updating complex states can quickly become difficult. This is where the `useImmer` hook comes in handy.
 
 Refactor the `handle` functions with the help of the `useImmer` hook.
 
