@@ -1,8 +1,8 @@
-# React Global State: Demo-End
+# React Global State: Demo-Start
 
 ## Notes
 
-- This is the final version of the demo
+- This is the starter version of the demo
 
 ## Development
 
