@@ -109,6 +109,9 @@ async function applyTemplate(challengeFolder, template, packageJson) {
     "sandbox.config.json",
     "stylelint.config.js",
     path.join("pages", "_document.js"),
+    path.join(".storybook", "main.js"),
+    path.join(".storybook", "preview.js"),
+    ".npmrc",
   ]);
 
   copyFileIfExistsElseRemove(".eslintrc.json", async (current, template) => {
@@ -128,12 +131,13 @@ async function applyTemplate(challengeFolder, template, packageJson) {
       ...current,
       name: `${sessionName}_${challengeName}`,
       version: template?.version,
-      scripts: mergeObject(current.scripts, template.scripts),
+      scripts: removeStorybookScripts(
+        mergeObject(current.scripts, template.scripts)
+      ),
       type: template?.type,
       dependencies: mergeObject(current.dependencies, template.dependencies),
-      devDependencies: mergeObject(
-        current.devDependencies,
-        template.devDependencies
+      devDependencies: removeStorybookDeps(
+        mergeObject(current.devDependencies, template.devDependencies)
       ),
       browserslist: template.browserslist,
       nf: template.nf,
@@ -266,4 +270,45 @@ function mergeObject(object1, object2) {
     ...object1,
     ...object2,
   };
+}
+
+function removeStorybookDeps(dependencies) {
+  if (!dependencies) return undefined;
+  if (!dependencies["@storybook/react"]) return dependencies;
+
+  const storybookDeps = [
+    "@babel/core",
+    "@storybook/addon-actions",
+    "@storybook/addon-essentials",
+    "@storybook/addon-interactions",
+    "@storybook/addon-links",
+    "@storybook/builder-webpack5",
+    "@storybook/manager-webpack5",
+    "@storybook/react",
+    "@storybook/testing-library",
+    "babel-loader",
+    "eslint-plugin-storybook",
+  ];
+
+  const newDependencies = { ...dependencies };
+
+  storybookDeps.forEach((dep) => {
+    delete newDependencies[dep];
+  });
+
+  return newDependencies;
+}
+
+function removeStorybookScripts(scripts) {
+  if (!scripts) return undefined;
+
+  const storybookScripts = ["storybook", "build-storybook"];
+
+  const newScripts = { ...scripts };
+
+  storybookScripts.forEach((script) => {
+    delete newScripts[script];
+  });
+
+  return newScripts;
 }
