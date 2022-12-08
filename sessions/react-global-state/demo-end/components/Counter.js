@@ -10,7 +10,7 @@ const AnimalName = styled.strong`
   width: 5rem;
 `;
 
-export default function Counter({ animal, handleAdd, handleSubtract }) {
+export default function Counter({ animal, onAdd, onSubtract }) {
   return (
     <Container>
       <AnimalName>{animal.name}:</AnimalName>
