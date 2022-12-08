@@ -1,6 +1,6 @@
 export default {
   name: "next",
-  description: "Next.js (incl. Styled Components, Jest, Storybook)",
+  description: "Next.js (incl. Styled Components and Jest)",
   cmd: [
     "npx",
     ["create-next-app@latest", "--js", "--eslint", "--use-npm", "."],

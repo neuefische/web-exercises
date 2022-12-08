@@ -27,7 +27,7 @@
     "jest": "^29.3.1",
     "jest-environment-jsdom": "^29.3.1"
   },
-  "description": "Next.js (incl. Styled Components, Jest, Storybook)",
+  "description": "Next.js (incl. Styled Components and Jest)",
   "nf": {
     "template": "next"
   }
