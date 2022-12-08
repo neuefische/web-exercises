@@ -1,4 +1,5 @@
 import { Fragment, useState } from "react";
+import Winner from "../Winner";
 import {
   CarButton,
   AllCarRoutes,
@@ -22,25 +23,9 @@ export default function CarRace() {
   const winner = cars.find((car) => car.position.x >= finishLine);
 
   return (
-    <div>
+    <>
       {winner ? (
-        <div>
-          <h1>
-            <span>{winner.emoji}</span> won!
-          </h1>
-          <button
-            onClick={() =>
-              setCars(
-                cars.map((car) => ({
-                  ...car,
-                  position: { x: 0, lastDistance: 0 },
-                }))
-              )
-            }
-          >
-            Restart
-          </button>
-        </div>
+        <Winner winner={winner} onRestart={() => setCars(initialCars)} />
       ) : (
         <AllCarRoutes finishLine={finishLine}>
           <DistanceHeadline>Last Distance</DistanceHeadline>
@@ -60,6 +45,6 @@ export default function CarRace() {
           ))}
         </AllCarRoutes>
       )}
-    </div>
+    </>
   );
 }
