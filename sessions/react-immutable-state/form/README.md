@@ -8,7 +8,9 @@ In this challenge you will move mountains - well, at least figuratively.
 - There are three input fields with predefined values, but you cannot change them yet.
 - Your task is to write the logic for the `handle` functions in order to update the state accordingly.
 
-> 💡 The `Form` component has its own state in order to re-render on every user input; it is thus called a "controlled component". In contrast, we have mostly seen "uncontrolled components", i.e. the state and its updater functions are passed to the form via props.
+> 💡 The `Form` component uses "controlled components" for the inputs. It has a state to constantly store the input values. It re-renders on every change of an input to refresh the value displayed in the UI.
+>
+> This is contrast to the approach using "uncontrolled components", that we have seen mostly. Here the input values get stored in state when the form is submitted.
 
 ### Updating with Spread Syntax
 
