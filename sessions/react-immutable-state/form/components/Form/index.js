@@ -2,7 +2,7 @@ import { useState } from "react";
 import { StyledForm, StyledInputContainer } from "./Form.styled";
 
 export default function Form() {
-  const [mountain, updateMountain] = useImmer({
+  const [mountain, setMountain] = useState({
     name: "Mount Everest",
     values: {
       altitude: 8848,
