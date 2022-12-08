@@ -15,9 +15,6 @@ export default {
     spinner.text = "Installing Jest…";
     await installJest({ cwd });
 
-    spinner.text = "Installing Storybook…";
-    await installAndConfigureStorybook({ cwd });
-
     spinner.text = "Deleting unnecessary files…";
     await deleteUnnecessaryFiles({ cwd });
   },
@@ -60,24 +57,6 @@ async function installJest({ cwd }) {
   const packageJson = await fs.readJSON(packageJsonPath);
   packageJson.scripts.test = "jest --watchAll";
   await fs.writeJSON(packageJsonPath, packageJson);
-}
-
-async function installAndConfigureStorybook({ cwd }) {
-  const { execa } = await import("execa");
-  const fs = (await import("fs-extra")).default;
-  const { join } = await import("node:path");
-
-  await execa(
-    "npx",
-    ["storybook@latest", "init", "--yes", "--use-npm", "--skip-install"],
-    {
-      cwd,
-      env: { CI: "true" },
-    }
-  );
-
-  // remove the default stories
-  await fs.rm(join(cwd, "stories"), { recursive: true, force: true });
 }
 
 async function deleteUnnecessaryFiles({ cwd }) {
