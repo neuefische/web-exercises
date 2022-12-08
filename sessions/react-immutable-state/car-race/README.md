@@ -1,36 +1,49 @@
 # React Immutable State: Car Race
 
-<!--
-
-Describe the exercise in a few sentences. E.g.:
-
-This challenge offers a simple form with three input fields. Let's make it interactive using React!
-
--->
+Everyone loves (electric) car racing, right? Let's become the champion!
 
 ## Task
 
-<!--
+- Start the development server and make yourself familiar with the application.
+- Open the browser: there are five cars, each has its own track with a finish line and a number how long the last distance driven was.
+- Try to click a car: it's not yet moving.
+- Check the [`CarRace component`](components/CarRace/index.js): the `moveCar` function is not working.
+- Check the [`initialCars variable in the utils.js`](utils/utils.js): it#s an array with five car objects; each car contains two keys: the `emoji` as string and the `position` object. This object determines the exact position of the car on its track (`x` key) and the distance covered with the last button click.
 
-Explaining the task in detail. E.g.:
+Switch to the [`CarRace component`](components/CarRace/index.js) again:
 
-Use an event handler to react to the form submission.
+Your task is to implement the `moveCar` function so that the `position` object of the clicked car is updated.
 
-Log all form data (in object form) into the console in the submit event handler.
+Use spread syntax first, refactor with `immer` afterwards.
+
+### Updating with Spread Syntax
+
+Inside of the `moveCar` function, call `setCars` and update the `cars` state.
+
+- Find the object in `cars` which is equivalent to `clickedCar` (Hint: `.map` + and some unique identifier).
+- When processing the `clickedCar`, make sure to copy all relevant objects before updating them.
+- After the update, the updated car should have
+  - `position.x` with a value of the previous `x` value + the `coveredDistance`;
+  - `lastDistance` with the value of the `coveredDistance`.
+
+> ✨ You should no be able to click a car and it moves forward! Can you win the race?
+
+### Updating with `immer`
+
+Refactor the `moveCar` function so that it uses `immer` instead of the spread syntax.
 
 You can use the following hints as guideline:
 
-- Hint 1
-- Hint 2
-- ...
+- `immer` and `useImmer` are already installed, so you just have to import what you need.
+- Update the state declaration: change `setCars` to `updateCars` and `useState()` to `useImmer()`.
+- Use the `draft` array to find the index of the car you want to update. Can you imagine which array method with a speaking name could be useful here?
+- Combine the `draft` array with the found `index` to assign the same values to `position.x` and `position.lastDistance` as before.
 
-Switch to the [`pages/index.js`](./pages/index.js) file and make something great happen!
-
--->
+> ✨ Congratulations, your app works as before, but uses the `useImmer` hook now! Do you see any advantages of this hook as soon as the state becomes more complex?
 
 ## Notes
 
-- You only have to touch the [`pages/index.js`](./pages/index.js) file.
+- You only have to touch the [`components/CarRace/index.js`](./components/CarRace/index.js) file.
 
 ## Development
 
