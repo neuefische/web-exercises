@@ -30,7 +30,7 @@ Refactor the `handle` functions with the help of the `useImmer` hook.
 
 You can use the following hints as guideline:
 
-- `immer` and `useImmer` are already preinstalled, so you just have to import the `useImmer` hook into the [`Form component`](components/Form/index.js).
+- `immer` and `useImmer` are already installed, so you just have to import the `useImmer` hook into the [`Form`](components/Form/index.js) component.
 - Update the state declaration: change `setMountain` to `updateMountain` and `useState({...})` to `useImmer({...})`.
 - Rewrite the `handle` functions: use the `draft` object and dot-notation to reach the keys to which you want to assign a new value.
 
