@@ -1,4 +1,3 @@
-import { useState } from "react";
 import GlobalStyle from "../styles";
 import Layout from "../components/Layout";
 
