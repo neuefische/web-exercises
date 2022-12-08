@@ -16,9 +16,9 @@ In this challenge you will move mountains - well, at least figuratively.
 
 Write the logic for `handleNameChange`, `handleAltitudeChange`, and `handleMountainRangeChange`.
 
-- Check the structure of the `mountain` state: it contains two keys, `name` and `values`; the ladder is an object.
-- Use `setMountain` to assign `event.target.value` to its corresponding state key. Make sure to make a copy of the `mountain` state first before you change a value.
-- Note that the `altitude` and `mountainRange` keys are not at the top level of the `mountain` state; looks like you need to make a copy of this second level as well before you assign any new value.
+- Check the structure of the `mountain` object in state. It contains two keys: the `name` as string and the `values` object.
+- Use `setMountain` to assign `event.target.value` to its corresponding key in the state. Make sure to create a copy of the `mountain` object when setting a new state.
+- Note that the `altitude` and `mountainRange` keys are not at the top level of the `mountain` object; looks like you need to make a copy of this second level as well before you assign any new value.
 
 > ✨ You should now be able to change the values of the input fields and see these changes in the output area at the bottom.
 
