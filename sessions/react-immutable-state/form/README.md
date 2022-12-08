@@ -4,8 +4,9 @@ In this challenge you will move mountains - well, at least figuratively.
 
 ## Task
 
-- Start the development server and make yourself familiar with the application. Check the [`Form component`](components/Form/index.js) as well.
-- There are three input fields with predefined values, but you cannot change them yet.
+- Start the development server and make yourself familiar with the application.
+- Open your browser and try to edit the text in the input fields. It won't work.
+- Check the [`Form component`](components/Form/index.js): The three input fields have predefined values, but you cannot change them yet.
 - Your task is to write the logic for the `handle` functions in order to update the state accordingly.
 
 > 💡 The `Form` component uses "controlled components" for the inputs. It has a state to constantly store the input values. It re-renders on every change of an input to refresh the value displayed in the UI.
