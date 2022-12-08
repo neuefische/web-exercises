@@ -1,8 +1,8 @@
-const countAverage = "???";
-const countSum = "???";
-const dragonCount = "???";
-
 export default function CounterStats() {
+  const countAverage = "???";
+  const countSum = "???";
+  const dragonCount = "???";
+
   return (
     <div>
       <h2>Counter Stats</h2>
