@@ -11,48 +11,35 @@ const AnimalName = styled.strong`
   width: 5rem;
 `;
 
-const initialAnimalArray = [
-  { id: 1, name: "Cats", count: 0 },
-  { id: 2, name: "Dogs", count: 0 },
-  { id: 3, name: "Sheep", count: 0 },
-  { id: 4, name: "Dragons", count: 0 },
-];
-
 export default function Counter({ animalName }) {
-  const currentAnimal = initialAnimalArray.find(
-    (animal) => animal.name === animalName
-  );
-  const [animal, setAnimal] = useState(currentAnimal);
+  const [count, setCount] = useState(0);
 
-  function addAnimal() {
-    setAnimal({ ...animal, count: animal.count + 1 });
+  function handleAdd() {
+    setCount(count + 1);
   }
 
-  function subtractAnimal() {
-    setAnimal({
-      ...animal,
-      count: Math.max(0, animal.count - 1),
-    });
+  function handleSubtract() {
+    setCount(Math.max(0, count - 1));
   }
 
   return (
     <Container>
-      <AnimalName>{animal.name}:</AnimalName>
+      <AnimalName>{animalName}:</AnimalName>
       <button
         type="button"
         onClick={() => {
-          subtractAnimal();
+          handleSubtract();
         }}
       >
         <span role="img" aria-label="Subtract one from count">
           ➖
         </span>
       </button>
-      <span>{animal.count}</span>
+      <span>{count}</span>
       <button
         type="button"
         onClick={() => {
-          addAnimal();
+          handleAdd();
         }}
       >
         <span role="img" aria-label="Add one to count">
