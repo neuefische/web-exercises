@@ -19,8 +19,8 @@ export default function CounterList({ animals, handleAdd, handleSubtract }) {
           <li key={animal.id}>
             <Counter
               animal={animal}
-              handleAdd={handleAdd}
-              handleSubtract={handleSubtract}
+              onAdd={handleAdd}
+              onSubtract={handleSubtract}
             />
           </li>
         ))}
