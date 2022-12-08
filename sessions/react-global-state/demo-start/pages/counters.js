@@ -8,11 +8,7 @@ export default function CountersPage() {
     <>
       <Link href="/">← Back</Link>
 
-      <CounterList
-        animals={animals}
-        handleAdd={handleAdd}
-        handleSubtract={handleSubtract}
-      />
+      <CounterList />
 
       <InfoBox />
 
