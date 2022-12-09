@@ -16,9 +16,7 @@ export default function Counter({ animal, onAdd, onSubtract }) {
       <AnimalName>{animal.name}:</AnimalName>
       <button
         type="button"
-        onClick={() => {
-          onSubtract(animal.id);
-        }}
+        onClick={() => onSubtract(animal.id)}
       >
         <span role="img" aria-label="Subtract one from count">
           ➖
