@@ -5,6 +5,30 @@ export const CarButton = styled.button`
   transform: ${({ positionX }) => `translateX(${positionX}px)`} rotateY(180deg);
   position: relative;
   z-index: 2;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+
+  &:hover {
+    transform: ${({ positionX }) => `translateX(${positionX}px)`}
+      rotateY(180deg) scale(1.04);
+    filter: drop-shadow(0 0 0.5rem rgb(0 0 0 / 50%));
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: -1;
+    height: 42%;
+    top: 40%;
+    right: ${({ lastDistance }) => `calc(-${lastDistance}px + 0.25em)`};
+    width: ${({ lastDistance }) => `${lastDistance}px`};
+    background-color: transparent;
+    background-image: linear-gradient(90deg, white 25%, transparent 100%);
+    background-position: 0 0;
+  }
 `;
 
 export const AllCarRoutes = styled.div`
