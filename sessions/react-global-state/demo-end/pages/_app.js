@@ -20,7 +20,7 @@ export default function App({ Component, pageProps }) {
   function handleAdd(animalId) {
     setAnimals(
       animals.map((animal) =>
-        animal.id === animalID ? { ...animal, count: animal.count + 1 } : animal
+        animal.id === animalId ? { ...animal, count: animal.count + 1 } : animal
       )
     );
   }
