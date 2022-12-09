@@ -2,7 +2,7 @@ import { useState } from "react";
 import GlobalStyle from "../styles";
 import Layout from "../components/Layout";
 
-const initialAnimalArray = [
+const initialAnimals = [
   { id: 1, name: "Cats", count: 0 },
   { id: 2, name: "Dogs", count: 0 },
   { id: 3, name: "Sheep", count: 0 },
