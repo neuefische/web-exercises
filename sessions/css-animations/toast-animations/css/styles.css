@@ -30,6 +30,13 @@ body {
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
+.start-button:disabled {
+  background-color: lightgrey;
+  color: grey;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
 /* Toast */
 
 .toast {

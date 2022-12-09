@@ -22,7 +22,7 @@ All of the exercises are designed to work locally as well as on CodeSandbox.
     - [JavaScript (with Jest support)](#javascript-with-jest-support)
     - [Minimal React](#minimal-react)
     - [Create React App](#create-react-app)
-    - [Next.js (incl. Styled Components, Jest, Storybook)](#nextjs-incl-styled-components-jest-storybook)
+    - [Next.js (incl. Styled Components and Jest)](#nextjs-incl-styled-components-and-jest)
   - [Exercise requirements](#exercise-requirements)
   - [Review new or changed exercises](#review-new-or-changed-exercises)
   - [Access exercises or templates](#access-exercises-or-templates)
@@ -241,15 +241,15 @@ A template from executing `create-react-app` to create a new React app.
 > **Warning**  
 > An exercise based on `create-react-app` might not be able to build in CodeSandbox. The `create-react-app` setup includes the package `web-vitals`. The adblocker browser extension [uBlock Origin might block](https://github.com/codesandbox/codesandbox-client/issues/6035) requests to load this package. Please make sure to add the domain `codesandbox.io` and the pattern `/.*csb.app.*/` to the trusted sites ("Ausnahmeregeln") in the uBlock Origin settings.
 
-### Next.js (incl. Styled Components, Jest, Storybook)
+### Next.js (incl. Styled Components and Jest)
 
 created via [`recipes/next`](./recipes/next)
 
-A template from executing `npx create-next-app` to create a new Next.js app. Our variant also includes Styled Components, Jest and Storybook.
+A template from executing `npx create-next-app` to create a new Next.js app. Our variant also includes Styled Components, Jest, SVGR and @next/font.
 
 > 📝 Create a new exercise inside this repository:
 >
-> `npm run create` → Select type `Next.js (incl. Styled Components, Jest, Storybook)`
+> `npm run create` → Select type `Next.js (incl. Styled Components and Jest)`
 
 > ✨ Use template as a starter:
 >
