@@ -37,9 +37,7 @@ export default function Counter({ animalName }) {
       <span>{count}</span>
       <button
         type="button"
-        onClick={() => {
-          handleAdd();
-        }}
+        onClick={() => handleAdd()}
       >
         <span role="img" aria-label="Add one to count">
           ➕
