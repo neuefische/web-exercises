@@ -28,7 +28,7 @@ export default function App({ Component, pageProps }) {
   function handleSubtract(animalId) {
     setAnimals(
       animals.map((animal) =>
-        animal.id === animalID
+        animal.id === animalId
           ? { ...animal, count: Math.max(0, animal.count - 1) }
           : animal
       )
