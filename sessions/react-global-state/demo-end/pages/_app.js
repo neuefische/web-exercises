@@ -10,7 +10,7 @@ const initialAnimals = [
 ];
 
 export default function App({ Component, pageProps }) {
-  const [animals, setAnimals] = useState(initialAnimalArray);
+  const [animals, setAnimals] = useState(initialAnimals);
 
   const animalCounts = animals.map((animal) => animal.count);
   const countSum = animalCounts.reduce((a, b) => a + b);
