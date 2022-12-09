@@ -16,8 +16,8 @@ export default function CarRace() {
 
   function moveCar(clickedCar) {
     const coveredDistance = getRandomDistance();
-    console.log("clickedCar:", clickedCar);
-    console.log("coveredDistance: ", coveredDistance);
+    console.log("clickedCar", clickedCar);
+    console.log("coveredDistance", coveredDistance);
   }
 
   const winner = cars.find((car) => car.position.x >= finishLine);
