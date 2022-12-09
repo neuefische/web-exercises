@@ -25,7 +25,7 @@ export default function App({ Component, pageProps }) {
     );
   }
 
-  function handleSubtract(animalID) {
+  function handleSubtract(animalId) {
     setAnimals(
       animals.map((animal) =>
         animal.id === animalID
