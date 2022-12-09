@@ -35,6 +35,7 @@ export default function CarRace() {
                 <CarButton
                   onClick={() => moveCar(car)}
                   positionX={car.position.x}
+                  lastDistance={car.position.lastDistance}
                   aria-label={`Move clicked car forward`}
                 >
                   {car.emoji}
