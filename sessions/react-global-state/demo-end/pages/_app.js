@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }) {
   const countAverage = countSum / animals.length;
   const dragonCount = animals.find((animal) => animal.name === "Dragons").count;
 
-  function handleAdd(animalID) {
+  function handleAdd(animalId) {
     setAnimals(
       animals.map((animal) =>
         animal.id === animalID ? { ...animal, count: animal.count + 1 } : animal
