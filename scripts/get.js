@@ -10,8 +10,18 @@ inquirer.registerPrompt("autocomplete", inquirerPrompt);
 
 const onlyChallenge = process.argv[2] === "-c"; // this is hacky af
 
-function getPrMarkdown({ sessionName, exerciseName, branchName }) {
+async function getMarkdown({ sessionName, exerciseName, branchName }) {
   const path = `${sessionName}/${exerciseName}`;
+
+  // get the package.json from the exercise
+  const packageJson = await fs.readJSON(
+    `./sessions/${sessionName}/${exerciseName}/package.json`
+  );
+
+  // get the template type from the package.json (nf.template)
+  const templateType = packageJson.nf?.template;
+
+  const isLocalChallenge = ["next"].includes(templateType);
 
   const doThis = exerciseName.includes("demo")
     ? exerciseName.includes("end")
@@ -22,8 +32,14 @@ function getPrMarkdown({ sessionName, exerciseName, branchName }) {
     : "Solve this challenge";
 
   // get the challenge template from ./get/challenge-template.md
-  const challengeMd = fs
-    .readFileSync("./scripts/get/challenge-template.md", "utf8")
+  const challengeMd = (
+    await fs.readFile(
+      isLocalChallenge
+        ? "./scripts/get/challenge-local-template.md"
+        : "./scripts/get/challenge-template.md",
+      "utf8"
+    )
+  )
     .replace(/PATH/g, path)
     .replace(/DO_THIS/g, doThis);
 
@@ -32,8 +48,14 @@ function getPrMarkdown({ sessionName, exerciseName, branchName }) {
   }
 
   // get the pr template from ./get/pr-template.md
-  const prMd = fs
-    .readFileSync("./scripts/get/pr-template.md", "utf8")
+  const prMd = (
+    await fs.readFile(
+      isLocalChallenge
+        ? "./scripts/get/pr-local-template.md"
+        : "./scripts/get/pr-template.md",
+      "utf8"
+    )
+  )
     .replace(/PATH/g, path)
     .replace(/BRANCH_NAME/g, branchName)
     .replace(/CHALLENGE_MARKDOWN/g, "````md\n" + challengeMd + "````");
@@ -85,7 +107,7 @@ try {
   const sessionName = input.sessionName;
   const exerciseName = input.exerciseName || sessionsObj[sessionName][0];
 
-  const md = getPrMarkdown({
+  const md = await getMarkdown({
     sessionName,
     exerciseName,
     branchName: currentBranch,
