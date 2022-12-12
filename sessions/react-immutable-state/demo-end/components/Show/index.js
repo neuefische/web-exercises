@@ -11,7 +11,6 @@ const Title = styled.h1`
   text-underline-offset: 2px;
   text-decoration-thickness: 2px;
   margin: 0;
-  opacity: 1;
 `;
 
 const StyledShow = styled.div`
