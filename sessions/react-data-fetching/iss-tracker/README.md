@@ -6,7 +6,7 @@ You will need to fetch on interval and refetch on click of a button.
 ## Task
 
 - Start the development server and make yourself familiar with the application.
-- Switch to the [`App component`](./pages/index.js): it features a `coords` state, a `getISSCoords` function and a `useEffect` to fetch data on interval.
+- Switch to the [`App`](./pages/index.js) component: it features a `coords` state, a `getISSCoords` function and a `useEffect` to fetch data on interval.
 
 ### Fetching on load
 
@@ -20,7 +20,8 @@ You will need to fetch on interval and refetch on click of a button.
 - Implement `SWR` to fetch the same data.
 
   - `SWR` is already installed, so you just have to import it.
-  - Create a loading and an error state as well.
+  - Handle the `isLoading` and `error` states provided by `SWR` as well.
+  - Make sure `data` is defined before working with it.
   - Remember to adapt the `fetcher` function to create a proper `error` state [as explained in the SWR docs](https://swr.vercel.app/docs/error-handling#status-code-and-error-object).
   - Note: `SWR` needs you to destructure a `data` object, but the `Map` and `Controls` component need a `coords` object passed to their props; how can you simply fix this naming issue without touching the props?
 

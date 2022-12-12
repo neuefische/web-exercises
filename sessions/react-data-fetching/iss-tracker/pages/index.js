@@ -36,7 +36,7 @@ export default function App() {
 
   return (
     <main>
-      <Map {...coords} />
+      <Map longitude={coords.longitude} latitude={coords.latitude} />
       <Controls
         longitude={coords.longitude}
         latitude={coords.latitude}
