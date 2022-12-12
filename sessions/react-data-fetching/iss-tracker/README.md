@@ -1,32 +1,43 @@
 # React Data Fetching: ISS Tracker
 
-<!--
-
-Describe the exercise in a few sentences. E.g.:
-
-This challenge offers a simple form with three input fields. Let's make it interactive using React!
-
--->
+This challenge asks you to refactor the existing code of the ISS Tracker to use `SWR`.
+You will need to fetch on interval and refetch on click of a button.
 
 ## Task
 
-<!--
+- Start the development server and make yourself familiar with the application.
+- Switch to the [`App component`](./pages/index.js): it features a `coords` state, a `getISSCoords` function and a `useEffect` to fetch data on interval.
 
-Explaining the task in detail. E.g.:
+### Fetching on load
 
-Use an event handler to react to the form submission.
+- Comment out all unnecessary code:
 
-Log all form data (in object form) into the console in the submit event handler.
+  - the `coords` state,
+  - the `getISSCoords` function,
+  - the `useEffect`,
+  - for now: the `onRefresh` prop passed to the `Controls` component (you will adapt this in a minute).
 
-You can use the following hints as guideline:
+- Implement `SWR` to fetch the same data.
 
-- Hint 1
-- Hint 2
-- ...
+  - `SWR` is already installed, so you just have to import it.
+  - Create a loading and an error state as well.
+  - Remember to adapt the `fetcher` function to create a proper `error` state [as explained in the SWR docs](https://swr.vercel.app/docs/error-handling#status-code-and-error-object).
+  - Note: `SWR` needs you to destructure a `data` object, but the `Map` and `Controls` component need a `coords` object passed to their props; how can you simply fix this naming issue without touching the props?
 
-Switch to the [`pages/index.js`](./pages/index.js) file and make something great happen!
+✨ You should now see the exact position of the ISS again when refreshing the page!
 
--->
+### Implement interval
+
+- Refetch the data of the ISS on an interval of 5 seconds. [See the SWR docs](https://swr.vercel.app/docs/revalidation#revalidate-on-interval) to find help how to do it.
+
+### Refetch on button click
+
+The only thing not working yet is the "Refresh" button because the `getISSCords` function does not exist anymore.
+
+- Destructure the `mutate` function provided by the `useSWR` hook.
+- Pass it to the `onRefresh` prop of the `Controls` component. You can use an inline function as in `onReload={() => handleReload()}`.
+
+✨ Congratulations, you can now see the exact position of the ISS whenever you want with the help of `SWR`!
 
 ## Notes
 
