@@ -6,7 +6,7 @@ You will need to fetch on interval and refetch on click of a button.
 ## Task
 
 - Start the development server and make yourself familiar with the application.
-- Switch to the [`App`](./pages/index.js) component: it features a `coords` state, a `getISSCoords` function and a `useEffect` to fetch data on interval.
+- Switch to the [`ISSTracker`](./components/ISSTracker/index.js) component: it features a `coords` state, a `getISSCoords` function and a `useEffect` to fetch data on interval.
 
 ### Fetching on load
 
@@ -42,7 +42,7 @@ The only thing not working yet is the "Refresh" button because the `getISSCords`
 
 ## Notes
 
-- You only have to touch the [`pages/index.js`](./pages/index.js) file.
+- You only have to touch the [`/components/ISSTracker/index.js`](./components/ISSTracker/index.js) file.
 
 ## Development
 
