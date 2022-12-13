@@ -18,4 +18,8 @@ export default createGlobalStyle`
     background-color: var(--color-dark);
     color: var(--color-light);
   }
+
+  ul {
+    padding: 0;
+  }
 `;

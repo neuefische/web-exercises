@@ -5,8 +5,9 @@ In this challenge, you will fetch a character from the [Star Wars API](https://s
 ## Task
 
 - Start the development server and make yourself familiar with the application.
-- Open the browser under [localhost:3000/characters/luke-skywalker](localhost:3000/characters/luke-skywalker): there is a character displayed together with some information.
-- Switch to [`pages/characters/luke-skywalker.js`](pages/characters/luke-skywalker.js): it renders the `Card` component, but uses hard coded data.
+- Open the browser: there are links to four characters, but only the first one (Luke Skywalker) currently works.
+- Click the link to Luke ([localhost:3000/characters/1](localhost:3000/characters/1)): there is a character displayed together with some information.
+- In your Code editor, switch to [`pages/characters/1.js`](pages/characters/1.js): it renders the `Card` component, but uses hard coded data.
 
 ### Fetching with `SWR`
 
@@ -15,29 +16,31 @@ Your task is to fetch a character from the [Star Wars API](https://swapi.dev/). 
 You can use the following hints as guideline:
 
 - `SWR` is already installed, so you just have to import it.
-- Fetch only the first character by its `id` using https://swapi.dev/api/people/1.
-- Adapt the return statement of [`pages/characters/luke-skywalker.js](./pages/characters/index.js) so that you pass the correct fetched data to the `Card` component.
-- To implement a proper error state based on an error object, you need to adapt the fetcher function [as explained in the SWR docs](https://swr.vercel.app/docs/error-handling#status-code-and-error-object).
-- When you are done, check some random characters by changing the `id` in the browser url to another number.
+- Switch to [`pages/characters/1.js](./pages/characters/1.js);
+  - fetch only the first character using https://swapi.dev/api/people/1;
+  - instead of the hard coded `/1`, interpolate the `id` variable.
+  - implement a loading state;
+  - to implement a proper error state based on an error object, you need to adapt the fetcher function [as explained in the SWR docs](https://swr.vercel.app/docs/error-handling#status-code-and-error-object).
+- Adapt the return statement so that you pass the correct fetched data to the `Card` component.
+- When you are done, reload the browser with `characters/1`: it should now return the fetched data of Luke Skywalker.
+  - Note: Because we declared the `id` variable with `1`, it's currently not possible to fetch another character by changing the url to, e.g., `characters/2`. We will fix this when implementing dynamic routes in the next step.
 
 ✨ Congratulations, you have fetched an API with the help of `SWR`!
 
-### Bonus: Dynamic Route for Fetched Character
+### Dynamic Route for Fetched Character
 
-By now, there is only one static route `/luke-skywalker` for every individual character fetched. Let's use the fetched data to create a dynamic route!
+By now, there is only one static route `/1` fetching one static character. Let's use a dynamic route to fetch different characters based on the query parameter!
 
-- Rename the `/pages/characters/luke-skywalker.js` file into `/pages/characters/[id].js`.
-- Use the `useRouter` hook to access the `id` from `router.query`.
-- Adapt the url passed as argument to `useSWR` so that it uses the query parameter `id` instead of `/people/1`.
-- Check the browser again: `localhost:3000/characters/1` should now return Luke Skywalker and changing the `id` parameter should return a different character.
-- To be completely done, fix the broken links on the starting pages: change the `href` attributes of the `Link` components used in [`pages/index.js](./pages/index.js) and [`pages/characters/index.js`](pages/characters/index.js) so that it links to (the fetched) Luke again.
+- Rename the `/pages/characters/1.js` file into `/pages/characters/[id].js`.
+- Replace the variable `const id = 1`: use the `useRouter` hook to access the `id` from `router.query`.
+- Check the browser again: `localhost:3000/characters/1` should now return Luke Skywalker as well, while changing the `id` parameter should return a different character.
+- Go back to the overview page [`pages/index.js](./pages/index.js): now, all links should fetch and display the correct character.
 
 ## Notes
 
 - You only have to touch the following files:
   - [`pages/index.js`](./pages/index.js),
-  - [`pages/characters/index.js`](./pages/characters/index.js),
-  - [`pages/characters/luke-skywalker.js`](./pages/characters/luke-skywalker.js).
+  - [`pages/characters/1.js`](./pages/characters/1.js).
 
 ## Development
 
