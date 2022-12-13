@@ -16,7 +16,6 @@ export default function ISSTracker() {
       if (response.ok) {
         const data = await response.json();
         setCoords({ longitude: data.longitude, latitude: data.latitude });
-        console.log(data);
       }
     } catch (error) {
       console.error(error);
