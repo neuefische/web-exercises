@@ -13,11 +13,11 @@ const StyledNavigation = styled.nav`
   width: 100%;
   max-width: 600px;
   height: 5vh;
-  background-color: #000;
   color: #fff;
+  background-color: #000;
 `;
 
-function Navigation() {
+function Navigation({ images }) {
   const router = useRouter();
 
   return (

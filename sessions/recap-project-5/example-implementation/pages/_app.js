@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <GlobalStyle />
-      <Layout>
+      <Layout images={data}>
         <Component {...pageProps} images={data} />
       </Layout>
     </>

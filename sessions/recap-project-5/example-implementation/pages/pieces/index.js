@@ -21,7 +21,7 @@ const ImageCaption = styled.figcaption`
 const ImageGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(1fr);
   grid-gap: 5px;
   width: 600px;
   height: 100%;
@@ -35,14 +35,30 @@ const ImageWrapper = styled.div`
   position: relative;
 `;
 
+//Component -> Reuse in Pieces
+const FavoriteIcon = styled.input.attrs({ type: "checkbox" })`
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  appearance: none;
+  &::before {
+    content: "🤍";
+    text-shadow: 0 0 4px #000;
+  }
+`;
+
 export default function PiecesPage({ images, onClick }) {
+  console.log(images);
+
   return (
     <>
       <ImageGrid>
         {images.map(({ imageSource, slug, name }) => (
           <ImageWrapper>
+            <FavoriteIcon />
             <ImageContainer>
-              <StyledImage src={imageSource} fill alt={"an image"} />
+              <StyledImage src={imageSource} fill alt={name} />
             </ImageContainer>
             <Link href={`pieces/${slug}`} onClick={onClick}>
               <ImageCaption>{name}</ImageCaption>

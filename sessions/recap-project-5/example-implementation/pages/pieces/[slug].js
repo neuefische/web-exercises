@@ -31,6 +31,7 @@ export default function DetailsPage({ images }) {
   const router = useRouter();
   const { slug } = router.query;
   const selectedImg = images.find((image) => image.slug === slug);
+  console.log(selectedImg);
 
   if (!selectedImg) {
     return null;
@@ -39,7 +40,11 @@ export default function DetailsPage({ images }) {
   return (
     <DetailWrapper>
       <ImageContainer>
-        <StyledImage src={selectedImg.imageSource} fill alt={"an image"} />
+        <StyledImage
+          src={selectedImg.imageSource}
+          fill
+          alt={selectedImg.name}
+        />
       </ImageContainer>
       <DetailList>
         <h2>{selectedImg.name}</h2>

@@ -15,14 +15,13 @@ const StyledImage = styled(Image)`
 
 export default function HomePage({ images }) {
   const randomImage = images[Math.floor(Math.random() * images.length)];
-  console.log(images);
 
   return (
     <>
       <ImageContainer>
         <StyledImage src={randomImage.imageSource} fill alt={"an imag"} />
       </ImageContainer>
-      <Header />
+      <Header randomImage={randomImage} />
     </>
   );
 }

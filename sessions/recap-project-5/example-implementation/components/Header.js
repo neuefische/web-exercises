@@ -17,11 +17,11 @@ const Title = styled.h1`
   font-size: 4rem;
   color: #fff;
   margin: 0;
-  border-bottom: 5px solid yellow;
+  border-bottom: 5px solid ${(props) => props.colorSet[0]};
 
   &::before {
     content: "!";
-    color: yellow;
+    color: ${(props) => props.colorSet[0]};
   }
 `;
 
@@ -34,13 +34,15 @@ const Spotlight = styled.p`
   align-self: flex-start;
 `;
 
-function Header() {
+function Header({ randomImage }) {
+  const colorSet = randomImage.colors;
+
   return (
     <StyledHeader>
       <Spotlight>
         Spotlight: <small>©</small>ARTIST
       </Spotlight>
-      <Title>ART</Title>
+      <Title colorSet={colorSet}>ART</Title>
       <HeaderText>Contemporary Art Gallery</HeaderText>
     </StyledHeader>
   );
