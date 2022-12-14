@@ -65,10 +65,6 @@ The details page works quite similar to the All Listings Page, but there are som
 
 Switch to the browser and open `/products/[someId]`: you should now see the product with the id you've passed in the url.
 
-## Notes
-
-- You only have to touch the [`pages/index.js`](./pages/index.js) file.
-
 ## Development
 
 ### CodeSandbox
