@@ -17,7 +17,7 @@ const StyledNavigation = styled.nav`
   background-color: #000;
 `;
 
-function Navigation({ images }) {
+function Navigation() {
   const router = useRouter();
 
   return (
@@ -33,10 +33,10 @@ function Navigation({ images }) {
         </NavigationItem>
         <NavigationItem>
           <NavigationLink
-            href="/pieces"
-            active={router.pathname.startsWith("/pieces") ? "active" : ""}
+            href="/art-pieces"
+            active={router.pathname.startsWith("/art-pieces") ? "active" : ""}
           >
-            Pieces
+            Art Pieces
           </NavigationLink>
         </NavigationItem>
         <NavigationItem>

@@ -13,15 +13,23 @@ const StyledImage = styled(Image)`
   object-fit: cover;
 `;
 
-export default function HomePage({ images }) {
-  const randomImage = images[Math.floor(Math.random() * images.length)];
+export default function HomePage({ pieces }) {
+  const randomPiece = pieces[Math.floor(Math.random() * pieces.length)];
 
   return (
     <>
       <ImageContainer>
-        <StyledImage src={randomImage.imageSource} fill alt={"an imag"} />
+        <StyledImage
+          src={randomPiece.imageSource}
+          fill
+          priority
+          alt={"an imag"}
+          sizes="(max-width: 600px) 100vw,
+          (max-width: 1200px) 50vw,
+          33vw"
+        />
       </ImageContainer>
-      <Header randomImage={randomImage} />
+      <Header randomImage={randomPiece} />
     </>
   );
 }

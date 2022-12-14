@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ArtPiecesPreview from "../components/ArtPiecesPreview";
+import ArtPiecesPreview from "../../components/ArtPiecesPreview";
 
 const ImageGrid = styled.div`
   display: grid;
@@ -10,7 +10,7 @@ const ImageGrid = styled.div`
   height: 100%;
 `;
 
-export default function FavoritePieces({
+export default function ArtPieces({
   pieces,
   handleClickToggleFavorite,
   artPiecesInfo,
@@ -23,16 +23,14 @@ export default function FavoritePieces({
             (infoItem) => infoItem.slug === piece.slug
           ) ?? { isFavorite: false };
 
-          if (isFavorite) {
-            return (
-              <ArtPiecesPreview
-                key={piece.slug}
-                piece={piece}
-                handleClickToggleFavorite={handleClickToggleFavorite}
-                isFavorite={isFavorite}
-              />
-            );
-          }
+          return (
+            <ArtPiecesPreview
+              key={piece.slug}
+              piece={piece}
+              handleClickToggleFavorite={handleClickToggleFavorite}
+              isFavorite={isFavorite}
+            />
+          );
         })}
       </ImageGrid>
     </>
