@@ -19,7 +19,15 @@ export default function Movie({
           title={isLiked ? "unlike movie" : "like movie"}
           onClick={() => onToggleLike(id)}
         >
-          {isLiked ? "👍" : "👎"}
+          {isLiked ? (
+            <span role="img" aria-label="Thumbs up">
+              👍
+            </span>
+          ) : (
+            <span role="img" aria-label="Thumbs down">
+              👎
+            </span>
+          )}
         </button>
         <button
           className="movie__button"

@@ -9,4 +9,11 @@ const root = createRoot(rootElement);
 
 // Call render on the root to render the elements into the DOM.
 // Notice that this is NOT a template literal, it is JSX.
-root.render(<h1>Hello World 👋</h1>);
+root.render(
+  <h1>
+    Hello World{" "}
+    <span role="img" aria-label="Waving hand">
+      👋
+    </span>
+  </h1>
+);
