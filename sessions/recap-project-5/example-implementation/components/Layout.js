@@ -4,6 +4,7 @@ const AppWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
 `;
 
 const Main = styled.main`
@@ -11,8 +12,7 @@ const Main = styled.main`
   flex-direction: column;
   align-items: center;
   padding-block-end: 5vh;
-  width: 100vw;
-  height: 100vh;
+  height: 100%;
 `;
 
 import Navigation from "./Navigation";

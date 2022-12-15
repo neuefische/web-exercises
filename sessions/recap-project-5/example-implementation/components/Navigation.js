@@ -12,7 +12,7 @@ const StyledNavigation = styled.nav`
   align-items: center;
   width: 100%;
   max-width: 600px;
-  height: 5vh;
+  height: 3rem;
   color: #fff;
   background: #000;
 `;

@@ -5,10 +5,9 @@ const StyledHeader = styled.header`
   position: fixed;
   flex-direction: column;
   align-items: flex-end;
-  bottom: 0;
+  bottom: 3rem;
   width: 100%;
   max-width: 600px;
-  height: 20vh;
   background: #000;
   padding: 0 1rem;
 `;
