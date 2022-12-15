@@ -9,7 +9,7 @@ const StyledHeader = styled.header`
   width: 100%;
   max-width: 600px;
   height: 20vh;
-  background-color: #000;
+  background: #000;
   padding: 0 1rem;
 `;
 

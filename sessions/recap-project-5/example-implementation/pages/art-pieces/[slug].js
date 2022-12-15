@@ -3,7 +3,8 @@ import styled from "styled-components";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Palette from "../../components/Palette";
-import { useState } from "react";
+import CommentForm from "../../components/CommentForm";
+import DetailItem from "../../components/DetailItem";
 
 const DetailWrapper = styled.div`
   display: flex;
@@ -25,11 +26,11 @@ const StyledImage = styled(Image)`
 const DetailList = styled.dl`
   display: flex;
   flex-direction: column;
-  background-color: #000;
+  background: #000;
   color: #fff;
   margin: 0;
-  padding: 1rem;
-  gap: 0.5rem;
+  padding: 1rem 1rem 2rem 1rem;
+  gap: 1rem;
 `;
 
 const CommentSection = styled.div`
@@ -51,7 +52,7 @@ const Comment = styled.p`
   color: #fff;
   margin: 0;
   padding: 1rem;
-  border-radius: 20px 20px 20px 0;
+  border-radius: 20px 20px 0 20px;
 
   & span:last-child {
     font-size: 0.7rem;
@@ -64,10 +65,8 @@ const PaletteWrapper = styled.div`
 `;
 
 const StyledLink = styled(Link)`
-  background: #000;
   width: fit-content;
   text-decoration: none;
-  padding: 0.5rem 1rem 0.5rem 1rem;
   color: #fff;
 
   &:hover {
@@ -75,39 +74,16 @@ const StyledLink = styled(Link)`
   }
 `;
 
-const Form = styled.form`
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-`;
-
-const Button = styled.button`
-  width: fit-content;
-  align-self: flex-end;
-`;
-
 export default function ArtPieceDetails({
   pieces,
-  handleSubmit,
+  handleSubmitComment,
   artPiecesInfo,
 }) {
-  const [comment, setComment] = useState("");
   const router = useRouter();
   const { slug } = router.query;
+
   const selectedImg = pieces.find((piece) => piece.slug === slug);
   const imageInfo = artPiecesInfo.find((infoItem) => infoItem.slug === slug);
-
-  function onChange(value) {
-    setComment(value);
-  }
-
-  function onSubmit(event) {
-    event.preventDefault();
-    const newComment = { commentText: comment, date: new Date() };
-    const slug = selectedImg.slug;
-
-    handleSubmit(newComment, slug);
-  }
 
   if (!selectedImg) {
     return null;
@@ -124,29 +100,21 @@ export default function ArtPieceDetails({
         />
       </ImageContainer>
       <DetailList>
+        <StyledLink href="/art-pieces">⬅︎ Back</StyledLink>
         <h2>{selectedImg.name}</h2>
-        <dt>
-          <strong>Artist</strong>
-        </dt>
-        <dd>{selectedImg.artist}</dd>
-        <dt>
-          <strong>Year</strong>
-        </dt>
-        <dd>{selectedImg.year}</dd>
-        <dt>
-          <strong>Genre</strong>
-        </dt>
-        <dd>{selectedImg.genre}</dd>
-        <dt>
-          <strong>Color Palette</strong>
-        </dt>
-        <dd>
-          <PaletteWrapper>
-            {selectedImg.colors.map((color) => (
-              <Palette paletteColor={color} />
-            ))}
-          </PaletteWrapper>
-        </dd>
+        <DetailItem detailType={"Artist"} detailValue={selectedImg.artist} />
+        <DetailItem detailType={"Year"} detailValue={selectedImg.year} />
+        <DetailItem detailType={"Genre"} detailValue={selectedImg.genre} />
+        <DetailItem
+          detailType={"Color Palette"}
+          detailValue={
+            <PaletteWrapper>
+              {selectedImg.colors.map((color) => (
+                <Palette paletteColor={color} />
+              ))}
+            </PaletteWrapper>
+          }
+        />
       </DetailList>
 
       <CommentSection>
@@ -157,22 +125,11 @@ export default function ArtPieceDetails({
             <span>{comment.date.toString()}</span>
           </Comment>
         ))}
-        <Form
-          onSubmit={(event) => {
-            onSubmit(event);
-          }}
-        >
-          <label htmlFor="comment">Write a comment</label>
-          <textarea
-            id="comment"
-            onChange={(event) => {
-              onChange(event.target.value);
-            }}
-          />
-          <Button type="submit">Send</Button>
-        </Form>
+        <CommentForm
+          handleSubmitComment={handleSubmitComment}
+          selectedImg={selectedImg}
+        />
       </CommentSection>
-      <StyledLink href="/art-pieces">Back</StyledLink>
     </DetailWrapper>
   );
 }

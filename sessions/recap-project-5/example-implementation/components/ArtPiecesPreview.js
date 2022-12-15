@@ -11,12 +11,18 @@ const ImageContainer = styled.figure`
 `;
 
 const ImageCaption = styled.figcaption`
+  display: flex;
+  flex-direction: column;
   position: absolute;
   width: 100%;
   padding: 0.3rem;
-  background-color: #000;
+  background: #000;
   color: #fff;
   bottom: 1rem;
+
+  & span:last-child {
+    color: grey;
+  }
 `;
 
 const StyledImage = styled(Image)`
@@ -47,7 +53,10 @@ function ArtPiecesPreview({ piece, handleClickToggleFavorite, isFavorite }) {
         />
       </ImageContainer>
       <Link href={`art-pieces/${piece.slug}`}>
-        <ImageCaption>{piece.name}</ImageCaption>
+        <ImageCaption>
+          <span>{piece.name}</span>
+          <span>{piece.artist}</span>
+        </ImageCaption>
       </Link>
     </ImageWrapper>
   );

@@ -14,7 +14,7 @@ const StyledNavigation = styled.nav`
   max-width: 600px;
   height: 5vh;
   color: #fff;
-  background-color: #000;
+  background: #000;
 `;
 
 function Navigation() {

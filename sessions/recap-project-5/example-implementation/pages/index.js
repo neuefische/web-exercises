@@ -13,7 +13,7 @@ const StyledImage = styled(Image)`
   object-fit: cover;
 `;
 
-export default function HomePage({ pieces }) {
+export default function Spotlight({ pieces }) {
   const randomPiece = pieces[Math.floor(Math.random() * pieces.length)];
 
   return (

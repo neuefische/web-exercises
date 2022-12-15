@@ -6,7 +6,7 @@ const Svg = styled(SvgComponent)`
   height: 25px;
   fill: ${({ isFavorite }) => (isFavorite ? "yellow" : "white")};
   padding: 2px;
-  background-color: black;
+  background: black;
 
   &:hover {
     fill: lightblue;

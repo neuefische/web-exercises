@@ -4,7 +4,7 @@ const ColorCube = styled.span`
   display: block;
   width: 1rem;
   height: 1rem;
-  background-color: ${({ paletteColor }) => paletteColor};
+  background: ${({ paletteColor }) => paletteColor};
 `;
 
 function Palette({ paletteColor }) {

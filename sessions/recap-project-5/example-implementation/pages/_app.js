@@ -1,12 +1,15 @@
 import GlobalStyle from "../styles";
 import useSWR from "swr";
-import { useState } from "react";
 import Layout from "../components/Layout.js";
+import useLocalStorageState from "use-local-storage-state";
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
 export default function App({ Component, pageProps }) {
-  const [artPiecesInfo, setArtPiecesInfo] = useState([]);
+  const [artPiecesInfo, setArtPiecesInfo] = useLocalStorageState(
+    "artPiecesInfo",
+    { defaultValue: [] }
+  );
   const { data, error } = useSWR(
     `https://example-apis.vercel.app/api/art`,
     fetcher
@@ -32,7 +35,7 @@ export default function App({ Component, pageProps }) {
     });
   }
 
-  function handleSubmit(newComment, slug) {
+  function handleSubmitComment(newComment, slug) {
     setArtPiecesInfo((artPiecesInfo) => {
       const artPieceInfo = artPiecesInfo.find(
         (infoItem) => infoItem.slug === slug
@@ -55,7 +58,7 @@ export default function App({ Component, pageProps }) {
       <Layout pieces={data}>
         <Component
           {...pageProps}
-          handleSubmit={handleSubmit}
+          handleSubmitComment={handleSubmitComment}
           pieces={data}
           artPiecesInfo={artPiecesInfo}
           handleClickToggleFavorite={handleClickToggleFavorite}
