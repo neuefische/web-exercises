@@ -1,5 +1,4 @@
-import { useEffect } from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function useFetch(url) {
   const [data, setData] = useState();
@@ -41,10 +40,10 @@ export default function Joke() {
       <h1>{data.joke}</h1>
       <div>
         <button type="button" onClick={handlePrevJoke}>
-          Prev Joke
+          ← Prev Joke
         </button>
         <button type="button" onClick={handleNextJoke}>
-          Next Joke
+          Next Joke →
         </button>
       </div>
     </>
