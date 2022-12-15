@@ -10,7 +10,7 @@ And here is the magic: we can only do this with one button component using props
 
 Look at the [`src/App.js`](./src/App.js) file: the `App` component returns a default heading element that you need to replace with a custom component.
 
-Your task is to write a `Button` component which takes three props `color`, `disabled`, and `text` and renders a button a button with the given color, text and disabled state.
+Your task is to write a `Button` component which takes three props `color`, `disabled`, and `text` and renders a button with the given color, text and disabled state.
 
 You can use the following hints as guideline:
 
@@ -18,9 +18,9 @@ You can use the following hints as guideline:
 
   - It accepts three props: `color`, `disabled`, and `text` (make sure to destructure them).
   - It returns an HTML button element which
-  - renders its text according to the `text` prop,
-  - has its disabled attribute set according to the `disabled` prop, and
-  - uses the `color` prop to set the text color of the button
+    - renders its text according to the `text` prop,
+    - has its disabled attribute set according to the `disabled` prop, and
+    - uses the `color` prop to set the text color of the button
 
 > 💡 Note: use inline styling with the help of the `style` attribute: `style={{height: "100px"}}`
 
