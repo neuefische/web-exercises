@@ -119,7 +119,7 @@ export default function ArtPieceDetails({
 
       <CommentSection>
         <CommentSectionTitle>Comments</CommentSectionTitle>
-        {imageInfo?.comments.map((comment) => (
+        {imageInfo?.comments?.map((comment) => (
           <Comment>
             <span>{comment.commentText}</span>
             <span>{comment.date.toString()}</span>
