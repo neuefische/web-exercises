@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node index.js",
     "lint": "npx eslint .",
-    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest --watchAll"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "@babel/core": "^7.19.6",
