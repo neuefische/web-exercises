@@ -20,9 +20,9 @@ export default function App({ Component, pageProps }) {
 
   function handleClickToggleFavorite(slug) {
     updateArtPiecesInfo((draft) => {
-      const index = draft.findIndex((infoItem) => infoItem.slug === slug);
-      if (index > -1) {
-        draft[index].isFavorite = !draft[index].isFavorite;
+      const info = draft.find((info) => info.slug === slug);
+      if (info) {
+        info.isFavorite = !info.isFavorite;
       } else {
         draft.push({ slug, isFavorite: true });
       }
@@ -31,12 +31,12 @@ export default function App({ Component, pageProps }) {
 
   function handleSubmitComment(newComment, slug) {
     updateArtPiecesInfo((draft) => {
-      const index = draft.findIndex((infoItem) => infoItem.slug === slug);
-      if (index > -1) {
-        if (!draft[index].comments) {
-          draft[index].comments = [];
+      const info = draft.find((info) => info.slug === slug);
+      if (info) {
+        if (!info.comments) {
+          info.comments = [];
         }
-        draft[index].comments.push(newComment);
+        info.comments.push(newComment);
       } else {
         draft.push({ slug, comments: [newComment] });
       }
