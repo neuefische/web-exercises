@@ -4,7 +4,7 @@ import ArtPiecesPreview from "../../components/ArtPiecesPreview";
 const ImageGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1fr);
+  grid-auto-rows: 200px;
   grid-gap: 5px;
   width: 600px;
   height: 100%;
