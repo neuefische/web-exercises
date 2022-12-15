@@ -1,14 +1,14 @@
 import GlobalStyle from "../styles";
 import useSWR from "swr";
 import Layout from "../components/Layout.js";
-import useLocalStorageState from "use-local-storage-state";
+import { useImmerWithLocalStorage } from "../lib/hook/useImmerWithLocalStorage";
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
 export default function App({ Component, pageProps }) {
-  const [artPiecesInfo, setArtPiecesInfo] = useLocalStorageState(
+  const [artPiecesInfo, updateArtPiecesInfo] = useImmerWithLocalStorage(
     "artPiecesInfo",
-    { defaultValue: [] }
+    []
   );
   const { data, error } = useSWR(
     `https://example-apis.vercel.app/api/art`,
@@ -19,36 +19,29 @@ export default function App({ Component, pageProps }) {
   if (!data) return "Loading...";
 
   function handleClickToggleFavorite(slug) {
-    setArtPiecesInfo((artPiecesInfo) => {
-      const artPieceInfo = artPiecesInfo.find(
-        (infoItem) => infoItem.slug === slug
-      );
-
-      if (artPieceInfo) {
-        return artPiecesInfo.map((infoItem) =>
-          infoItem.slug === slug
-            ? { ...infoItem, isFavorite: !infoItem.isFavorite }
-            : infoItem
-        );
+    updateArtPiecesInfo((draft) => {
+      const index = draft.findIndex((infoItem) => infoItem.slug === slug);
+      if (index > -1) {
+        draft[index].isFavorite = !draft[index].isFavorite;
+      } else {
+        draft.push({ slug, isFavorite: true });
       }
-      return [...artPiecesInfo, { slug, isFavorite: true }];
+      return draft;
     });
   }
 
   function handleSubmitComment(newComment, slug) {
-    setArtPiecesInfo((artPiecesInfo) => {
-      const artPieceInfo = artPiecesInfo.find(
-        (infoItem) => infoItem.slug === slug
-      );
-
-      if (artPieceInfo) {
-        return artPiecesInfo.map((infoItem) =>
-          infoItem.slug === slug
-            ? { ...infoItem, comments: [...infoItem.comments, newComment] }
-            : infoItem
-        );
+    updateArtPiecesInfo((draft) => {
+      const index = draft.findIndex((infoItem) => infoItem.slug === slug);
+      if (index > -1) {
+        if (!draft[index].comments) {
+          draft[index].comments = [];
+        }
+        draft[index].comments.push(newComment);
+      } else {
+        draft.push({ slug, comments: [newComment] });
       }
-      return [...artPiecesInfo, { slug, comments: [newComment] }];
+      return draft;
     });
   }
 
