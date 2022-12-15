@@ -20,6 +20,7 @@ const TextArea = styled.textarea`
   width: 70%;
   padding: 1rem;
   border-radius: 20px 20px 20px 0;
+  resize: vertical;
 `;
 
 function CommentForm({ handleSubmitComment, selectedImg }) {
