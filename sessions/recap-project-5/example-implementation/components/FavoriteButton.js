@@ -2,14 +2,14 @@ import SvgComponent from "./SvgComponent";
 import styled from "styled-components";
 
 const Svg = styled(SvgComponent)`
-  width: 25px;
-  height: 25px;
+  width: 28px;
+  height: 28px;
   fill: ${({ isFavorite }) => (isFavorite ? "yellow" : "white")};
-  padding: 2px;
+  padding: 4px;
   background: black;
 
   &:hover {
-    fill: lightblue;
+    fill: greenyellow;
   }
 `;
 

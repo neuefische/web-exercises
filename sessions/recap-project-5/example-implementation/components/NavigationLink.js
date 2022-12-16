@@ -6,7 +6,7 @@ const StyledLink = styled(Link)`
   color: ${({ active }) => (active ? "yellow" : "white")};
 
   &:hover {
-    color: lightblue;
+    color: greenyellow;
   }
 `;
 

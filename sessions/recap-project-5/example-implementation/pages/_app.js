@@ -18,7 +18,7 @@ export default function App({ Component, pageProps }) {
   if (error) return "An error has occurred.";
   if (!data) return "Loading...";
 
-  function handleClickToggleFavorite(slug) {
+  function handleToggleFavorite(slug) {
     setArtPiecesInfo((artPiecesInfo) => {
       const artPieceInfo = artPiecesInfo.find(
         (infoItem) => infoItem.slug === slug
@@ -44,7 +44,10 @@ export default function App({ Component, pageProps }) {
       if (artPieceInfo) {
         return artPiecesInfo.map((infoItem) =>
           infoItem.slug === slug
-            ? { ...infoItem, comments: [...infoItem.comments, newComment] }
+            ? {
+                ...infoItem,
+                comments: [...(infoItem.comments ?? []), newComment],
+              }
             : infoItem
         );
       }
@@ -55,13 +58,13 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <GlobalStyle />
-      <Layout pieces={data}>
+      <Layout>
         <Component
           {...pageProps}
           handleSubmitComment={handleSubmitComment}
           pieces={data}
           artPiecesInfo={artPiecesInfo}
-          handleClickToggleFavorite={handleClickToggleFavorite}
+          handleToggleFavorite={handleToggleFavorite}
         />
       </Layout>
     </>

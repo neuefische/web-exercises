@@ -39,7 +39,8 @@ function Header({ randomImage }) {
   return (
     <StyledHeader>
       <Spotlight>
-        Spotlight: <small>©</small>ARTIST
+        Spotlight: <small>©</small>
+        {randomImage.artist}
       </Spotlight>
       <Title colorSet={colorSet}>ART</Title>
       <HeaderText>Contemporary Art Gallery</HeaderText>

@@ -14,8 +14,9 @@ const ImageCaption = styled.figcaption`
   display: flex;
   flex-direction: column;
   position: absolute;
-  width: 100%;
-  padding: 0.3rem;
+  width: 50%;
+  padding: 0.5rem;
+  font-size: 0.8rem;
   background: #000;
   color: #fff;
   bottom: 1rem;
@@ -33,13 +34,13 @@ const ImageWrapper = styled.div`
   position: relative;
 `;
 
-function ArtPiecesPreview({ piece, handleClickToggleFavorite, isFavorite }) {
+function ArtPiecePreview({ piece, handleToggleFavorite, isFavorite }) {
   return (
     <ImageWrapper key={piece.slug}>
       <ImageContainer>
         <FavoriteButton
           isFavorite={isFavorite}
-          onClickToggleFavorite={handleClickToggleFavorite}
+          onClickToggleFavorite={handleToggleFavorite}
           piece={piece}
         />
         <StyledImage
@@ -62,4 +63,4 @@ function ArtPiecesPreview({ piece, handleClickToggleFavorite, isFavorite }) {
   );
 }
 
-export default ArtPiecesPreview;
+export default ArtPiecePreview;

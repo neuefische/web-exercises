@@ -14,6 +14,10 @@ const Button = styled.button`
   color: #fff;
   padding: 0.5rem 1rem 0.5rem 1rem;
   width: fit-content;
+
+  &:hover {
+    color: greenyellow;
+  }
 `;
 
 const TextArea = styled.textarea`
@@ -23,7 +27,7 @@ const TextArea = styled.textarea`
   resize: vertical;
 `;
 
-function CommentForm({ handleSubmitComment, selectedImg }) {
+function CommentForm({ handleSubmitComment, selectedImage }) {
   const [comment, setComment] = useState("");
 
   function onChange(value) {
@@ -33,7 +37,7 @@ function CommentForm({ handleSubmitComment, selectedImg }) {
   function onSubmitComment(event) {
     event.preventDefault();
     const newComment = { commentText: comment, date: new Date() };
-    const slug = selectedImg.slug;
+    const slug = selectedImage.slug;
 
     handleSubmitComment(newComment, slug);
   }

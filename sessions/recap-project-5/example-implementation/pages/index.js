@@ -1,35 +1,9 @@
-import Image from "next/image";
-import styled from "styled-components";
+import Spotlight from "../components/Spotlight";
 
-import Header from "../components/Header";
-
-const ImageContainer = styled.div`
-  position: relative;
-  width: 600px;
-  height: 100%;
-`;
-
-const StyledImage = styled(Image)`
-  object-fit: cover;
-`;
-
-export default function Spotlight({ pieces }) {
-  const randomPiece = pieces[Math.floor(Math.random() * pieces.length)];
-
+export default function SpotlightPage({ pieces }) {
   return (
     <>
-      <ImageContainer>
-        <StyledImage
-          src={randomPiece.imageSource}
-          fill
-          priority
-          alt={"an imag"}
-          sizes="(max-width: 600px) 100vw,
-          (max-width: 1200px) 50vw,
-          33vw"
-        />
-      </ImageContainer>
-      <Header randomImage={randomPiece} />
+      <Spotlight pieces={pieces} />
     </>
   );
 }
