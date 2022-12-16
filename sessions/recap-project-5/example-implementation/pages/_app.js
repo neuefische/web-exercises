@@ -1,12 +1,12 @@
 import GlobalStyle from "../styles";
 import useSWR from "swr";
 import Layout from "../components/Layout.js";
-import useLocalStorageState from "use-local-storage-state";
+import { useImmerLocalStorageState } from "../lib/hook/useImmerLocalStorageState";
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
 export default function App({ Component, pageProps }) {
-  const [artPiecesInfo, setArtPiecesInfo] = useLocalStorageState(
+  const [artPiecesInfo, updateArtPiecesInfo] = useImmerLocalStorageState(
     "artPiecesInfo",
     { defaultValue: [] }
   );
@@ -19,39 +19,27 @@ export default function App({ Component, pageProps }) {
   if (!data) return "Loading...";
 
   function handleToggleFavorite(slug) {
-    setArtPiecesInfo((artPiecesInfo) => {
-      const artPieceInfo = artPiecesInfo.find(
-        (infoItem) => infoItem.slug === slug
-      );
-
-      if (artPieceInfo) {
-        return artPiecesInfo.map((infoItem) =>
-          infoItem.slug === slug
-            ? { ...infoItem, isFavorite: !infoItem.isFavorite }
-            : infoItem
-        );
+    updateArtPiecesInfo((draft) => {
+      const info = draft.find((info) => info.slug === slug);
+      if (info) {
+        info.isFavorite = !info.isFavorite;
+      } else {
+        draft.push({ slug, isFavorite: true });
       }
-      return [...artPiecesInfo, { slug, isFavorite: true }];
     });
   }
 
   function handleSubmitComment(newComment, slug) {
-    setArtPiecesInfo((artPiecesInfo) => {
-      const artPieceInfo = artPiecesInfo.find(
-        (infoItem) => infoItem.slug === slug
-      );
-
-      if (artPieceInfo) {
-        return artPiecesInfo.map((infoItem) =>
-          infoItem.slug === slug
-            ? {
-                ...infoItem,
-                comments: [...(infoItem.comments ?? []), newComment],
-              }
-            : infoItem
-        );
+    updateArtPiecesInfo((draft) => {
+      const info = draft.find((info) => info.slug === slug);
+      if (info) {
+        if (!info.comments) {
+          info.comments = [];
+        }
+        info.comments.push(newComment);
+      } else {
+        draft.push({ slug, comments: [newComment] });
       }
-      return [...artPiecesInfo, { slug, comments: [newComment] }];
     });
   }
 
