@@ -6,19 +6,19 @@ In this challenge, you will build a server which responds depending on the url r
 
 Build a server that sends a different response depending on the url route:
 
-- if the requested url is `/hello`, the response should be `Hello World!`;
-- if the requested url is `/bye`, the response should be `Bye World!`;
+- if the requested url is `/api/products/1`, the response should be `Shrimp`;
+- if the requested url is `/api/products/2`, the response should be `Anemonefish`;
 
 Use the following hints as guideline:
 
 - Switch to the [`index.js`](./index.js); use the methods `createServer()` and `listen()` provided by the `http` module to create a server.
 - Inside of the function body of `createServer`, you can access the requested url with the help of the `request` object; it provides a `url` key which holds the url value.
-  - Check the value of this `url` key to equal `/hello` or `/bye` and pass the respective value to `response.end()` as argument.
+  - Check the value of this `url` key to equal `/api/products/1` or `/api/products/2` and pass the respective value to `response.end()` as argument.
 
 ✨ Your server now reacts differently depending on the requested url! Let's check that it works:
 
 - Run `npm run start` to run the `index.js` file using `node`.
-- Switch to your browser and open `localhost:[portNumber]/hello` as well as `localhost:[portNumber]/bye`.
+- Switch to your browser and open `localhost:[portNumber]/api/products/1` as well as `localhost:[portNumber]/api/products/2`.
 - You should see the output you've declared as `response.end`.
 
 ## Notes
