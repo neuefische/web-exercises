@@ -1,7 +1,7 @@
 {
-  "name": "backend-basics_routes",
+  "name": "template-node",
   "version": "0.0.0-unreleased",
-  "description": "Backend Basics: Routes",
+  "description": "Node.js Server (with Jest support)",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -12,8 +12,8 @@
   "devDependencies": {
     "@babel/core": "^7.19.6",
     "@types/jest": "^29.2.0",
-    "eslint": "^8.26.0",
     "eslint-plugin-jest": "^27.1.3",
+    "eslint": "^8.26.0",
     "jest": "^29.2.2",
     "supertest": "^6.3.3"
   },

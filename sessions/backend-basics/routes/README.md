@@ -35,7 +35,7 @@ Use the following hints as guideline:
 
 ### CodeSandbox
 
-This project is Node.js application so there is nothing to view in the "Browser" tab. Please select the "Tests" tab to check your progress.
+This project is Node.js application. If it listens to any port (alá `server.listen()`) CodeSandbox will open it in the "Browser" tab. Tests only seem to work locally.
 
 ### Local development
 
@@ -47,4 +47,4 @@ You can then use the following commands:
 - `npm run test` to run the tests
 - `npm run lint` to run the linter
 
-> 💡 Since this project is Node.js application there is nothing to preview in the browser. Use `npm run test` to check your progress or `npm run start` to run the code.
+> 💡 Since this project is Node.js application you have to run it using `npm run start` and then check your browser on the port the app is listening to. Use `npm run test` to check your progress.
