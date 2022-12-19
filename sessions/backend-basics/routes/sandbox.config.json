@@ -1,4 +1,3 @@
 {
-  "template": "node",
-  "view": "tests"
+  "template": "node"
 }
