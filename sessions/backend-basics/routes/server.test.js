@@ -9,21 +9,21 @@ test("A server instance is exported", () => {
 });
 
 test("The server responds to /api/fish/1 with Shrimp", async () => {
-  const response = server ? await request(server).get("/api/fish/1") : {};
-  expect(response.text).toBe("Shrimp");
+  const response = server && (await request(server).get("/api/fish/1"));
+  expect(response?.text).toBe("Shrimp");
 });
 
 test("The server responds to /api/fish/2 with Anemonefish", async () => {
-  const response = server ? await request(server).get("/api/fish/2") : {};
-  expect(response.text).toBe("Anemonefish");
+  const response = server && (await request(server).get("/api/fish/2"));
+  expect(response?.text).toBe("Anemonefish");
 });
 
 test("The server responds to /api/fish/3 with Not found", async () => {
-  const response = server ? await request(server).get("/api/fish/3") : {};
-  expect(response.text).toBe("Not found");
+  const response = server && (await request(server).get("/api/fish/3"));
+  expect(response?.text).toBe("Not found");
 });
 
 test("The server responds to all other routes with Not found", async () => {
-  const response = server ? await request(server).get("/api/elephant") : {};
-  expect(response.text).toBe("Not found");
+  const response = server && (await request(server).get("/api/elephant"));
+  expect(response?.text).toBe("Not found");
 });
