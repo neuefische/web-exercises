@@ -7,15 +7,9 @@ export default function Joke() {
   const { id } = router.query;
   console.log("id", id);
 
-  // const [currentId, setCurrentId] = useState(id);
-
-  const { data } = useSWR(`/api/jokes/${id}`, {
-    isPaused: () => !router.isReady,
-  });
-  console.log("data", data);
+  const { data } = useSWR(id ? `/api/jokes/${id}` : null);
 
   function handlePrevJoke() {
-    // setCurrentId(data.prevId);
     router.push(`/jokes/${data.prevId}`);
   }
 
