@@ -1,5 +1,5 @@
 import Joke from "../components/Joke";
 
-export default function HomePage() {
+export default function JokeDetailsPage() {
   return <Joke />;
 }
