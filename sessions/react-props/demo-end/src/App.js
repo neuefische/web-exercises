@@ -15,10 +15,13 @@ export default function App() {
   );
 }
 
-function Pet({ sound, emoji, onPet, isHungry }) {
+function Pet({ sound, emoji, name, onPet, isHungry }) {
   return (
     <div onClick={onPet}>
-      {isHungry ? "Feed me!" : sound} {emoji}
+      {isHungry ? "Feed me!" : sound}{" "}
+      <span role="img" aria-label={name}>
+        {emoji}
+      </span>
     </div>
   );
 }
