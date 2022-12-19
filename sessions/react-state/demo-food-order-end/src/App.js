@@ -17,41 +17,17 @@ function FoodOrder() {
   return (
     <>
       <div>
-        <button
-          onClick={() =>
-            setFood(
-              <span role="img" aria-label="A hamburger">
-                🍔
-              </span>
-            )
-          }
-        >
+        <button onClick={() => setFood("🍔")}>
           <span role="img" aria-label="A hamburger">
             🍔
           </span>
         </button>
-        <button
-          onClick={() =>
-            setFood(
-              <span role="img" aria-label="A pizza">
-                🍕
-              </span>
-            )
-          }
-        >
+        <button onClick={() => setFood("🍕")}>
           <span role="img" aria-label="A pizza">
             🍕
           </span>
         </button>
-        <button
-          onClick={() =>
-            setFood(
-              <span role="img" aria-label="A taco">
-                🌮
-              </span>
-            )
-          }
-        >
+        <button onClick={() => setFood("🌮")}>
           <span role="img" aria-label="A taco">
             🌮
           </span>
