@@ -32,7 +32,7 @@ const initialEntries = [
     id: 997,
     date: "Feb 2, 2025",
     motto: "I'm a React Developer",
-    notes: "My React-ion when I learned about React: 😍",
+    notes: "My React-ion when I learned about React: Yay!",
   },
 ];
 
