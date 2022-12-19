@@ -1,37 +1,37 @@
 # Backend Basics: Routes
 
-In this challenge, you will build a server which responds depending on the url route opened on the browser.
+In this challenge, you will build a node server which responds depending on the url route opened on the browser.
 
 ## Task
 
+> 💡 This challenge includes tests. You can run them with `npm run test` and check your progress while working on the challenge.
+
 Build a server that sends a different response depending on the url route:
 
-- if the requested url is `/api/products/1`, the response should be `Shrimp`;
-- if the requested url is `/api/products/2`, the response should be `Anemonefish`;
+- if the requested url is `/api/fish/1`, the response should be `"Shrimp"`;
+- if the requested url is `/api/fish/2`, the response should be `"Anemonefish"`;
+- for all other urls, the response should be `"Not found"`.
 
 Use the following hints as guideline:
 
-- Switch to the [`index.js`](./index.js); use the methods `createServer()` and `listen()` provided by the `http` module to create a server.
+- Switch to the [`server.js`](./server.js); use the `createServer` method provided by the `node:http` module to create a server.
 - Inside of the function body of `createServer`, you can access the requested url with the help of the `request` object; it provides a `url` key which holds the url value.
-  - Check the value of this `url` key to equal `/api/products/1` or `/api/products/2` and pass the respective value to `response.end()` as argument.
+  - Check the value of this `url` key to equal `/api/fish/1` or `/api/fish/2` and pass the respective value to `response.end()` as argument.
+- Export the server as a named export from the [`server.js`](./server.js) file.
+- Open the [`index.js`](./index.js) file and import the server from the [`server.js`](./server.js) file.
+- Call the `listen(8000)` method on the server to start listening on port 8000.
 
 ✨ Your server now reacts differently depending on the requested url! Let's check that it works:
 
 - Run `npm run start` to run the `index.js` file using `node`.
-- Switch to your browser and open `localhost:[portNumber]/api/products/1` as well as `localhost:[portNumber]/api/products/2`.
+- Switch to your browser and open `localhost:8000/api/fish/1` as well as `localhost:8000/api/fish/2`.
 - You should see the output you've declared as `response.end`.
 
 ## Notes
 
-- You only have to touch the [`index.js`](./index.js) file.
+- You only have to touch the [`index.js`](./index.js) and [`server.js`](./server.js) file.
 
 ## Development
-
-### CodeSandbox
-
-This project is JavaScript only so there is nothing to view in the "Browser" tab. Please select the "Tests" tab to check your progress.
-
-### Local development
 
 To run project commands locally, you need to install the dependencies using `npm i` first.
 
