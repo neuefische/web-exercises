@@ -39,8 +39,9 @@ To run project commands locally, you need to install the dependencies using `npm
 
 You can then use the following commands:
 
+- `npm run dev` to run the main JavaScript file using `node` in watch mode (restarts on file changes)
 - `npm run start` to run the main JavaScript file using `node`
 - `npm run test` to run the tests
 - `npm run lint` to run the linter
 
-> 💡 Since this project is Node.js application you have to run it using `npm run start` and then check your browser on the port the app is listening to. Use `npm run test` to check your progress.
+> 💡 Since this project is Node.js application you have to run it using `npm run start` or `npm run dev` and then check your browser on the port the app is listening to. Use `npm run test` to check your progress.
