@@ -52,7 +52,7 @@ export default function Joke() {
         {data.joke}{" "}
         <span
           role="img"
-          aria-label={isFunny ? "A Funny joke" : "Not a funny joke"}
+          aria-label={isFunny ? "A laughing face" : "An unamused face"}
         >
           {isFunny ? "🤣" : "😒"}
         </span>
