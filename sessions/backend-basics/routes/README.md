@@ -33,6 +33,12 @@ Use the following hints as guideline:
 
 ## Development
 
+### CodeSandbox
+
+This project is Node.js application so there is nothing to view in the "Browser" tab. Please select the "Tests" tab to check your progress.
+
+### Local development
+
 To run project commands locally, you need to install the dependencies using `npm i` first.
 
 You can then use the following commands:
@@ -41,4 +47,4 @@ You can then use the following commands:
 - `npm run test` to run the tests
 - `npm run lint` to run the linter
 
-> 💡 Since this project is JavaScript only there is nothing to preview in the browser. Use `npm run test` to check your progress or `npm run start` to run the code.
+> 💡 Since this project is Node.js application there is nothing to preview in the browser. Use `npm run test` to check your progress or `npm run start` to run the code.
