@@ -8,34 +8,9 @@ export default function App() {
 
   return (
     <div>
-      <Pet
-        sound="Meow"
-        emoji={
-          <span role="img" aria-label="A cat">
-            🐈
-          </span>
-        }
-        onPet={handlePet}
-        isHungry
-      />
-      <Pet
-        sound="Woof"
-        emoji={
-          <span role="img" aria-label="A dog">
-            🐕
-          </span>
-        }
-        onPet={handlePet}
-      />
-      <Pet
-        sound="Squeak"
-        emoji={
-          <span role="img" aria-label="A mouse">
-            🐁
-          </span>
-        }
-        onPet={handlePet}
-      />
+      <Pet sound="Meow" emoji="🐈" name="cat" onPet={handlePet} isHungry />
+      <Pet sound="Woof" emoji="🐕" name="dog" onPet={handlePet} />
+      <Pet sound="Squeak" emoji="🐁" name="mouse" onPet={handlePet} />
     </div>
   );
 }
