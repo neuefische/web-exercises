@@ -1,5 +1,5 @@
-import Joke from "../components/Joke";
+import JokeList from "../components/JokeList";
 
 export default function HomePage() {
-  return <Joke />;
+  return <JokeList />;
 }

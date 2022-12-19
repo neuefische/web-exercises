@@ -38,4 +38,16 @@ export default createGlobalStyle`
     font-size: larger;
     padding: 0.5rem 1rem;
   }
+
+  ul {
+    list-style-type: none;
+  }
+
+  li + li {
+    margin-block: 0.25rem;
+  }
+
+  li > button {
+    width: 100%;
+  }
 `;
