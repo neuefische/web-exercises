@@ -1,19 +1,26 @@
-import { useState } from "react";
+// import { useState } from "react";
 import useSWR from "swr";
+import { useRouter } from "next/router";
 
 export default function Joke() {
-  const [id, setId] = useState(0);
+  const router = useRouter();
+  const { id } = router.query;
+  console.log("id", id);
 
-  const { data } = useSWR(
-    `https://example-apis.vercel.app/api/bad-jokes/${id}`
-  );
+  // const [currentId, setCurrentId] = useState(id);
+
+  const { data } = useSWR(`/api/jokes/${id}`, {
+    isPaused: () => !router.isReady,
+  });
+  console.log("data", data);
 
   function handlePrevJoke() {
-    setId(data.prevId);
+    // setCurrentId(data.prevId);
+    router.push(`/jokes/${data.prevId}`);
   }
 
   function handleNextJoke() {
-    setId(data.nextId);
+    router.push(`/jokes/${data.nextId}`);
   }
 
   if (!data) {
@@ -24,7 +31,6 @@ export default function Joke() {
     <>
       <small>ID: {id}</small>
       <h1>{data.joke} </h1>
-      <div></div>
       <div>
         <button type="button" onClick={handlePrevJoke}>
           ← Prev Joke
