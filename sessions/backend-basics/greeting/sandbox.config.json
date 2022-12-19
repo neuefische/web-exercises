@@ -1,4 +1,3 @@
 {
-  "template": "parcel",
-  "view": "tests"
+  "template": "node"
 }
