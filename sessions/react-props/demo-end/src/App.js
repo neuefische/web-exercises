@@ -8,17 +8,20 @@ export default function App() {
 
   return (
     <div>
-      <Pet sound="Meow" emoji="🐈" onPet={handlePet} isHungry />
-      <Pet sound="Woof" emoji="🐕" onPet={handlePet} />
-      <Pet sound="Squeak" emoji="🐁" onPet={handlePet} />
+      <Pet sound="Meow" emoji="🐈" name="cat" onPet={handlePet} isHungry />
+      <Pet sound="Woof" emoji="🐕" name="dog" onPet={handlePet} />
+      <Pet sound="Squeak" emoji="🐁" name="mouse" onPet={handlePet} />
     </div>
   );
 }
 
-function Pet({ sound, emoji, onPet, isHungry }) {
+function Pet({ sound, emoji, name, onPet, isHungry }) {
   return (
     <div onClick={onPet}>
-      {isHungry ? "Feed me!" : sound} {emoji}
+      {isHungry ? "Feed me!" : sound}{" "}
+      <span role="img" aria-label={name}>
+        {emoji}
+      </span>
     </div>
   );
 }
