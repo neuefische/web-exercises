@@ -1,7 +1,7 @@
 {
-  "name": "template-node",
+  "name": "backend-basics_demo-end",
   "version": "0.0.0-unreleased",
-  "description": "Node.js Server (with Jest support)",
+  "description": "Backend Basics: Demo End",
   "main": "index.js",
   "type": "module",
   "scripts": {

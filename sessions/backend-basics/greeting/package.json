@@ -1,14 +1,14 @@
 {
-  "name": "template-node",
+  "name": "backend-basics_greeting",
   "version": "0.0.0-unreleased",
-  "description": "Node.js Server (with Jest support)",
+  "description": "Backend Basics: Greeting",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "node --watch index.js || npm run start",
     "start": "node index.js",
     "lint": "npx eslint .",
-    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest --watchAll"
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest --watchAll",
+    "dev": "node --watch index.js || npm run start"
   },
   "devDependencies": {
     "@babel/core": "^7.19.6",
