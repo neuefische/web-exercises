@@ -1,1 +1,3 @@
-{ "template": "next" }
+{
+  "template": "static"
+}

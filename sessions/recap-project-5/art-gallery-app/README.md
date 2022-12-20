@@ -22,6 +22,18 @@ The goal of this recap project is not necessarily to finish all features, but to
 
 ---
 
+## Create the App
+
+First create a new Next.js based on our template using this command:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/templates/next art-gallery-app -i
+```
+
+Download and extract the [Resources](#resources) into your project folder.
+
+---
+
 ## User Stories
 
 ### User Story 1: List of all art pieces
@@ -324,7 +336,10 @@ You can then use the following commands:
 
 ## Resources
 
-⬇️ This starter will provide you with the following resources:
+⬇️ You can [**download the data and assets for the Art Gallery App here**](./resources.zip?raw=true).
 
-- Use the `heart.svg` file for the favorite icon button. Import it in your components directly.
-- Use the custom hook `useImmerLocalStorageState` to implement `Immer` together with local storage.
+- Unzip the file to get the `resources` folder.
+- The files are already in the correct structure for the app.
+  - `assets/heart.svg` contains the svg for the favorite button.
+  - `lib/hooks/useImmerLocalStorageState` contains a custom hook to implement `Immer` together with local storage.
+- Copy them into your app's main directory.
