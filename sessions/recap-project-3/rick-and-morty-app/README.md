@@ -135,11 +135,3 @@ You can then use the following command:
 
 Use the Live Preview Extension for Visual Studio Code to view this project in the browser.  
 Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
-
----
-
-## Resources
-
-⬇️ This starter will provide you with the following resources:
-
-- You can use the `magnifying-glass.png` found in the `assets` folder when building the search bar.

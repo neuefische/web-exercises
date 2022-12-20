@@ -1,6 +1,6 @@
 export default function createCard(character) {
-  const card = document.createElement('li');
-  card.classList.add('card');
+  const card = document.createElement("li");
+  card.classList.add("card");
   card.innerHTML = `
           <div class='card__image-container'>
             <img
