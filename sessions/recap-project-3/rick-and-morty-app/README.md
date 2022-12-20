@@ -5,7 +5,7 @@ the characters of the famous tv show "Rick and Morty".
 
 ## API
 
-We are going to fetch all necessary information about the characters from a REST Api specifically
+We are going to fetch all necessary information about the characters from a REST API specifically
 designed for Rick and Morty. Check out the [API](https://rickandmortyapi.com/). You find all the
 information you need in the docs.
 
@@ -95,6 +95,8 @@ However, we want to tidy up our code so that not everything is written in a sing
 - Append the created components at the right places in your HTML. All container elements are already
   available in the `index.js`.
 
+---
+
 ## Development
 
 ### CodeSandbox
@@ -111,3 +113,11 @@ You can then use the following command:
 
 Use the Live Preview Extension for Visual Studio Code to view this project in the browser.  
 Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
+
+---
+
+## Resources
+
+⬇️ This starter will provide you with the following resources:
+
+- You can use the `magnifying-glass.png` found in the `assets` folder when building the search bar.
