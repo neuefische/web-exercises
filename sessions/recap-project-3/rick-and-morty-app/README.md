@@ -16,7 +16,7 @@ information you need in the docs.
 
 ---
 
-## Create the project (with starter code)
+## Template
 
 - Open your terminal and navigate to the folder where all your projects are located.
 - Execute the following command to create a new project based on a template:
