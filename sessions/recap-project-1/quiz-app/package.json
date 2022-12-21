@@ -1,0 +1,10 @@
+{
+  "name": "recap-project-1_quiz-app",
+  "version": "0.0.0-unreleased",
+  "description": "Recap Project 1: Quiz App",
+  "main": "n.a.",
+  "nf": {
+    "template": "empty"
+  },
+  "private": true
+}
