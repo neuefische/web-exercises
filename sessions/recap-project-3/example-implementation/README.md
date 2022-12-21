@@ -1,6 +1,6 @@
-# This is a new static HTML, CSS and JavaScript project.
+# Recap Project 3: Example Implementation
 
-This project was created from the neue fische html-css-js-static template.
+This is an example implementation for Recap Project 3: Rick and Morty App.
 
 ## Development
 
