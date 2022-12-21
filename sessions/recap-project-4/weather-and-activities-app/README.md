@@ -27,9 +27,9 @@ We are going to fetch all necessary information about the weather from a REST AP
 designed for this project. Check out the [Weather API](https://example-apis.vercel.app/). You find
 all the information you need in the docs.
 
-## Starter Code
+## Template
 
-There is no starter code, so you can start completely fresh! Please use
+There is no template or starter code, so you can start completely fresh! Please use
 [`create-react-app`](https://create-react-app.dev/docs/getting-started) to create a new project.
 
 The sequence of the tasks described below is a good example for how to _start_ writing an app.
