@@ -36,17 +36,17 @@ Download and extract the [Resources](#resources) into your project folder.
 
 ## User Stories
 
-### User Story 1: List of all art pieces
+### User Story 1: List of all Art Pieces
 
-#### Value proposition
+#### Value Proposition
 
 **As an** art enthusiast
 
 **I want to** see a list of all art pieces
 
-**So that** I can get an overview of all presented art pieces
+**so that** I can get an overview of all art pieces.
 
-#### Acceptance criteria
+#### Acceptance Criteria
 
 - [ ] All art pieces are displayed as a list 🖼️
 - [ ] Each art piece's image is displayed 🖼️
@@ -55,84 +55,83 @@ Download and extract the [Resources](#resources) into your project folder.
 
 #### Tasks
 
-- [ ] Fetch all art pieces with `SWR`
+- [ ] Fetch all art pieces with `SWR` in `pages/index.js`
 - [ ] Create the component `ArtPieces` to render a list
 - [ ] `ArtPieces` props: `pieces`
 - [ ] Create the component `ArtPiecePreview`
 - [ ] `ArtPiecePreview` props: `image`, `title`, `artist`
-- [ ] All acceptance criteria marked with 🖼️ are covered with component testing
+- [ ] All acceptance criteria marked with 🖼️ are covered by component testing
 
 ---
 
-### User Story 2: Spotlight piece
+### User Story 2: Spotlight Piece
 
-#### Value proposition
+#### Value Proposition
 
 **As an** art enthusiast
 
 **I want to** see a spotlight piece
 
-**So that** I can get inspirational highlights
+**so that** I can get inspirational highlights.
 
-#### Acceptance criteria
+#### Acceptance Criteria
 
-- [ ] One art piece is picked by random to show as spotlight piece
+- [ ] One art piece is picked at random to show as a spotlight piece
 - [ ] The art piece image is displayed 🖼️
 - [ ] The art piece artist is displayed 🖼️
 
 #### Tasks
 
-- [ ] Write function to pick one art piece [by random](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random#examples)
+- [ ] Write function to pick one art piece [at random](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random#examples)
 - [ ] Create the component `Spotlight`
 - [ ] `Spotlight` props: `image`, `artist`
-- [ ] All acceptance criteria marked with 🖼️ are covered with component testing
+- [ ] All acceptance criteria marked with 🖼️ are covered by component testing
 
 ---
 
-### User Story 3: Separate pages an navigation bar
+### User Story 3: Separate Pages and Navigation Bar
 
-#### Value proposition
+#### Value Proposition
 
 **As an** art enthusiast
 
 **I want to** be able to switch between the spotlight and list view
 
-**So that** I can navigate the app easier
+**so that** I can navigate the app easier.
 
-#### Acceptance criteria
+#### Acceptance Criteria
 
-- [ ] A navigation button labeled "Spotlight" is displayed 🖼️
-- [ ] A navigation button labeled "Pieces" is displayed 🖼️
-- [ ] Clicking "Spotlight" shows the spotlight art piece and hides the list
-- [ ] Clicking "Pieces" shows the list of art pieces and hides the spotlight
+- [ ] A navigation link labeled "Spotlight" is displayed 🖼️
+- [ ] A navigation link labeled "Pieces" is displayed 🖼️
+- [ ] Clicking "Spotlight" shows the SpotlightPage
+- [ ] Clicking "Pieces" shows the ArtPiecesPage
 
 #### Tasks
 
 - [ ] Move the data fetching logic to `pages/_app`
 - [ ] Find a solution for global state handling to have the art pieces available on all pages
-- [ ] Create the page `pages/index` that renders the `Spotlight` component
+- [ ] Adapt the page `pages/index`: rename the function to `SpotlightPage` and have it render only the `Spotlight` component
 - [ ] Create the page `pages/art-pieces/index` that renders the `ArtPieces` component
-- [ ] Create the component `Navigation` that renders all navigation buttons
+- [ ] Create the component `Navigation` that renders all navigation links
 - [ ] Create the component `Layout` that renders the `Navigation` component
 - [ ] Apply the `Layout` component in `pages/_app`
-- [ ] All acceptance criteria marked with 🖼️ are covered with component testing
+- [ ] All acceptance criteria marked with 🖼️ are covered by component testing
 
 ---
 
-### User Story 4: Art piece details page
+### User Story 4: Art Piece Details Page
 
-#### Value proposition
+#### Value Proposition
 
 **As an** art enthusiast
 
 **I want to** be able to see the full art piece with detail information
 
-**So that** I can learn everything about the piece
+**so that** I can learn everything about the piece.
 
-#### Acceptance criteria
+#### Acceptance Criteria
 
 - [ ] Clicking an art piece from the list shows the detail page
-- [ ] Clicking the spotlight art piece shows the detail page
 - [ ] The art piece image is displayed 🖼️
 - [ ] The art piece title is displayed 🖼️
 - [ ] The art piece artist is displayed 🖼️
@@ -148,26 +147,26 @@ Download and extract the [Resources](#resources) into your project folder.
 - [ ] Create the page `pages/art-pieces/[slug]` that renders `ArtPieceDetails`
 - [ ] Read the query parameter `slug` from `next/router`
 - [ ] Use the `slug` to find the art piece to display
-- [ ] All acceptance criteria marked with 🖼️ are covered with component testing
+- [ ] All acceptance criteria marked with 🖼️ are covered by component testing
 
 ---
 
 ### User Story 5: Favorites
 
-#### Value proposition
+#### Value Proposition
 
 **As an** art enthusiast
 
 **I want to** mark art piece pieces as favorites
 
-**So that** I can find them easier
+**so that** I can find them easier.
 
-#### Acceptance criteria
+#### Acceptance Criteria
 
 - [ ] The favorite-button is displayed in the spotlight view 🖼️
 - [ ] The favorite-button is displayed in each entry in the list view 🖼️
 - [ ] The favorite-button is displayed in the details view 🖼️
-- [ ] Clicking the favorite-button on a non-favorite piece save it as favorite 🖼️
+- [ ] Clicking the favorite-button on a non-favorite piece saves it as a favorite 🖼️
 - [ ] Clicking the favorite-button on a favorite piece removes it from favorites 🖼️
 
 #### Tasks
@@ -179,24 +178,24 @@ Download and extract the [Resources](#resources) into your project folder.
 - [ ] Create the component `FavoriteButton`
 - [ ] `FavoriteButton` props: `isFavorite`, `onToggleFavorite`
 - [ ] Render the `FavoriteButton` component in the `Spotlight`, `ArtPiecePreview` and `ArtPieceDetails` component
-- [ ] All acceptance criteria marked with 🖼️ are covered with component testing
+- [ ] All acceptance criteria marked with 🖼️ are covered by component testing
 
 ---
 
-### User Story 6: Favorite listing page
+### User Story 6: Favorite Listing Page
 
-#### Value proposition
+#### Value Proposition
 
 **As an** art enthusiast
 
-**I want to** see a comprehensive of all my favorite art pieces
+**I want to** see a comprehensive list of all my favorite art pieces
 
-**So that** I can have an overview of all favorites
+**so that** I can have an overview of all of my favorites.
 
-#### Acceptance criteria
+#### Acceptance Criteria
 
-- [ ] A navigation button labeled "Favorites" is displayed 🖼️
-- [ ] Clicking the "Favorites" shows the favorites and hides other views
+- [ ] A navigation link labeled "Favorites" is displayed 🖼️
+- [ ] Clicking the "Favorites" shows the FavoritesPage
 - [ ] All favorite art pieces are displayed as a list 🖼️
 - [ ] Each art piece's image is displayed 🖼️
 - [ ] Each art piece's title is displayed 🖼️
@@ -208,21 +207,21 @@ Download and extract the [Resources](#resources) into your project folder.
 - [ ] Create the page `pages/favorites` that renders the `ArtPieces` component
 - [ ] Use data from the `artPiecesInfo` state to filter for all favorite art pieces
 - [ ] Pass the list of all favorite art pieces via prop `pieces` to the `ArtPieces` component
-- [ ] All acceptance criteria marked with 🖼️ are covered with component testing
+- [ ] All acceptance criteria marked with 🖼️ are covered by component testing
 
 ---
 
-### User Story 7: Comments for art pieces
+### User Story 7: Comments for Art Pieces
 
-#### Value proposition
+#### Value Proposition
 
 **As an** art enthusiast
 
 **I want to** write comments for art pieces
 
-**So that** I can note my ideas regarding the work
+**so that** I can note my ideas regarding the work.
 
-#### Acceptance criteria
+#### Acceptance Criteria
 
 - [ ] The detail view has a list of comments for this art piece with the headline "Comments" 🖼️
 - [ ] Each comment's text is displayed 🖼️
@@ -238,21 +237,21 @@ Download and extract the [Resources](#resources) into your project folder.
 - [ ] `CommentForm` props: `onSubmitComment`
 - [ ] Create a `Comments` components
 - [ ] `Comments` props: `comments`
-- [ ] All acceptance criteria marked with 🖼️ are covered with component testing
+- [ ] All acceptance criteria marked with 🖼️ are covered by component testing
 
 ---
 
-### User Story 8: Persist favorites and comments in the browser
+### User Story 8: Persist Favorites and Comments in the Browser
 
-#### Value proposition
+#### Value Proposition
 
 **As an** art enthusiast
 
 **I want to** persist my favorites and comments
 
-**So that** I data will not be lost when I close the app
+**so that** the data will not be lost when I close the app.
 
-#### Acceptance criteria
+#### Acceptance Criteria
 
 - [ ] All favorite flags and comments added to art pieces are persisted across browser reloads
 
@@ -261,59 +260,72 @@ Download and extract the [Resources](#resources) into your project folder.
 - [ ] Install the package `use-local-storage-state`
 - [ ] Use the `useLocalStorageState` hook to store the `artPiecesInfo` state
 
-If the `useImmer` is used to mutate the `artPiecesInfo` state, this example might help you to combine both.
+To use the `useImmer` hook to mutate the `artPiecesInfo` state, implement this example to combine both.
 
 Hook:
 
 ```js
-import { useMemo } from "react";
-import { produce } from "immer";
+import produce, { freeze } from "immer";
+import { useCallback } from "react";
 import useLocalStorageState from "use-local-storage-state";
 
-export function useImmerWithLocalStorage(key, defaultValue) {
-  const [data, setData] = useLocalStorageState(key, {
-    defaultValue,
+export function useImmerLocalStorageState(key, options) {
+  const [value, setValue] = useLocalStorageState(key, {
+    ...options,
+    defaultValue: freeze(options.defaultValue),
   });
-  const updateData = useMemo(() => produce(setData), [setData]);
-  return [data, updateData];
+
+  return [
+    value,
+    useCallback(
+      (updater) => {
+        if (typeof updater === "function") setValue(produce(updater));
+        else setValue(freeze(updater));
+      },
+      [setValue]
+    ),
+  ];
 }
 ```
 
 Usage in `App` component:
 
 ```jsx
-import { useImmerWithLocalStorage } from "./useImmerWithLocalStorage";
+import { useImmerLocalStorageState } from "./useImmerLocalStorageState";
 
 export default function App({ Component, pageProps }) {
-  const [artPiecesInfo, updateArtPiecesInfo] = useImmerWithLocalStorage(
+  const [artPiecesInfo, updateArtPiecesInfo] = useImmerLocalStorageState(
     "art-pieces-info",
-    []
+    { defaultValue: [] }
   );
   // ...
 }
 ```
 
+> 💡 For now, it's not necessary to understand how the `useImmerLocalStorageState` hook works.
+
 ---
 
 ### User Story 9: Show Color Palette
 
-#### Value proposition
+#### Value Proposition
 
 **As an** art enthusiast
 
 **I want to** see the color palette of an art piece
 
-**So that** to find color inspiration
+**so that** I can find color inspiration.
 
-#### Acceptance criteria
+#### Acceptance Criteria
 
-- [ ] The art piece detail page shows a graphical list of all colors used in the image
+- [ ] The art piece detail page shows a list of all colors used in the image
+- [ ] The colors may be displayed as circles, squares, ...
 
 #### Tasks
 
 - [ ] Pass the `colors` given by the API to the `ArtPieceDetails` component 🖼️
 - [ ] Use the color hex-code in a styled component to render an element with this color as background
-- [ ] All acceptance criteria marked with 🖼️ are covered with component testing
+- [ ] All acceptance criteria marked with 🖼️ are covered by component testing
 
 ---
 
