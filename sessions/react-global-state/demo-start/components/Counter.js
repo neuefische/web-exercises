@@ -25,20 +25,13 @@ export default function Counter({ animalName }) {
   return (
     <Container>
       <AnimalName>{animalName}:</AnimalName>
-      <button
-        type="button"
-        onClick={() => handleSubtract()}
-``
-      >
+      <button type="button" onClick={() => handleSubtract()}>
         <span role="img" aria-label="Subtract one from count">
           ➖
         </span>
       </button>
       <span>{count}</span>
-      <button
-        type="button"
-        onClick={() => handleAdd()}
-      >
+      <button type="button" onClick={() => handleAdd()}>
         <span role="img" aria-label="Add one to count">
           ➕
         </span>
