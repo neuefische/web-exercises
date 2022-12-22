@@ -1,15 +1,37 @@
-# Recap 3: Rick and Morty App
+# Recap Project 3: Rick and Morty App
 
-In this recap project you are going to work in a group to create a single page app for browsing all
-the characters of the famous tv show "Rick and Morty".
+In this recap project, you are going to create a single page app for browsing all the characters of the famous tv show "Rick and Morty".
+
+You are going to work in a group. Create **only one project per group** using the ["Create the Project" guide](./README.md#create-the-project-with-starter-code) below!
+
+---
 
 ## API
 
-We are going to fetch all necessary information about the characters from a REST Api specifically
+We are going to fetch all necessary information about the characters from a REST API specifically
 designed for Rick and Morty. Check out the [API](https://rickandmortyapi.com/). You find all the
 information you need in the docs.
 
 > ❗️ This API has pagination, that means that you can fetch only 20 characters at a time.
+
+---
+
+## Template
+
+- Open your terminal and navigate to the folder where all your projects are located.
+- Execute the following command to create a new project based on a template:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/recap-project-3/rick-and-morty-app -i
+```
+
+- Create a new empty repository on GitHub, link it to the created repository on your computer and push the code.
+- Each member of the group clones the repository to their local machine.
+- Follow the instructions given in the `README.md` file.
+
+> 💡 Don't forget to work on feature branches, otherwise you might run into merge conflicts!
+
+---
 
 ## Tasks
 
@@ -94,6 +116,8 @@ However, we want to tidy up our code so that not everything is written in a sing
   functions. Use them as the argument for `onClick` or `onSubmit`, respectively.
 - Append the created components at the right places in your HTML. All container elements are already
   available in the `index.js`.
+
+---
 
 ## Development
 

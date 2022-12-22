@@ -1,0 +1,10 @@
+{
+  "name": "recap-project-4_weather-and-activities-app",
+  "version": "0.0.0-unreleased",
+  "description": "Recap Project 4: Weather and Activities App",
+  "main": "n.a.",
+  "nf": {
+    "template": "empty"
+  },
+  "private": true
+}

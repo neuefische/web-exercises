@@ -12,5 +12,12 @@ export default function App() {
 }
 
 function Pet() {
-  return <div>Meow 🐈</div>;
+  return (
+    <div>
+      Meow{" "}
+      <span role="img" aria-label="A cat">
+        🐈
+      </span>
+    </div>
+  );
 }
