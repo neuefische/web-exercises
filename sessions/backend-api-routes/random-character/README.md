@@ -40,7 +40,7 @@ Check your api route:
 
 ### Create the Frontend
 
-You have now prepared an api route responding with a random character: let's use it to display the data for the user!
+You have now prepared an api route responding with a random character – let's use it to display the data for the user!
 
 - Switch to `pages/index.js`;
 - Import the `useSWR` hook, write a fetcher for it and fetch the route `/api/random-character`.
