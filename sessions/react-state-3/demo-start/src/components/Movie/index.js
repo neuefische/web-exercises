@@ -12,7 +12,15 @@ export default function Movie({ name, isLiked }) {
           type="button"
           title={isLiked ? "unlike movie" : "like movie"}
         >
-          {isLiked ? "👍" : "👎"}
+          {isLiked ? (
+            <span role="img" aria-label="Thumbs up">
+              👍
+            </span>
+          ) : (
+            <span role="img" aria-label="Thumbs down">
+              👎
+            </span>
+          )}
         </button>
         <button className="movie__button" type="button" title="delete movie">
           ✕
