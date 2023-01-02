@@ -1,4 +1,4 @@
-import dbConnect from "../../../db/connect-db";
+import dbConnect from "../../../db/connect";
 import Joke from "../../../db/models/Joke";
 
 export default async function handler(request, response) {
