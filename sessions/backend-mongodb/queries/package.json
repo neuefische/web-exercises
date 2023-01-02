@@ -1,0 +1,10 @@
+{
+  "name": "backend-mongodb_queries",
+  "version": "0.0.0-unreleased",
+  "description": "Backend MongoDB: Queries",
+  "main": "n.a.",
+  "nf": {
+    "template": "empty"
+  },
+  "private": true
+}
