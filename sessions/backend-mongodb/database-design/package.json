@@ -1,0 +1,10 @@
+{
+  "name": "backend-mongodb_database-design",
+  "version": "0.0.0-unreleased",
+  "description": "Backend MongoDB: Database Design",
+  "main": "n.a.",
+  "nf": {
+    "template": "empty"
+  },
+  "private": true
+}
