@@ -17,11 +17,12 @@ export default createGlobalStyle`
   }
 
   body {
-    margin: 0;
-    font-family: system-ui;
     display: grid;
+    margin: auto;
+    font-family: system-ui;
     place-items: center;
     min-height: 100vh;
+    max-width: 50rem;
   }
 
   button {
@@ -35,10 +36,28 @@ export default createGlobalStyle`
 
   ul {
     list-style-type: none;
+    display: grid;
+    gap: 1rem;
+    justify-items: center;
+    padding: 0;
   }
 
-  ul li {
-    margin-block: 1rem;
-    box-shadow: 0px 1px 5px -2px var(--color-granite);
+  li {
+    width: 100%;
   }
- `;
+
+  li button {
+    width: 100%;
+  }
+
+  div:has(h1) {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  div:has(h1) button {
+    width: fit-content;
+    align-self: center;
+  }
+`;
