@@ -24,30 +24,21 @@ export default createGlobalStyle`
     min-height: 100vh;
   }
 
-  #__next {
-    min-height: 100vh;
-    max-width: 50rem;
-    padding: 2rem;
-    display: grid;
-    place-items: center;
-    gap: 2rem;
-    align-content: center;
-  }
-
   button {
+    appearance: none;
+    border: none;
+    background: var(--color-water-10);
     font-size: larger;
     padding: 0.5rem 1rem;
-  }
+    box-shadow: 0px 1px 5px -2px var(--color-granite);
+  } 
 
   ul {
     list-style-type: none;
   }
 
-  li + li {
-    margin-block: 0.25rem;
+  ul li {
+    margin-block: 1rem;
+    box-shadow: 0px 1px 5px -2px var(--color-granite);
   }
-
-  li > button {
-    width: 100%;
-  }
-`;
+ `;
