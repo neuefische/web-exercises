@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Shrimp",
+    "description": "Prefers to live in pairs",
+    "price": 19,
+    "currency": "€"
+  },
+  {
+    "name": "Anemonefish",
+    "description": "Nemo",
+    "price": 65,
+    "currency": "€"
+  },
+  {
+    "name": "Splendid anemone",
+    "description": "Is splendid",
+    "price": 90,
+    "currency": "€"
+  },
+  {
+    "name": "Killer mussel",
+    "description": "Is prettier than her name",
+    "price": 12,
+    "currency": "€"
+  },
+  {
+    "name": "Angelfish",
+    "description": "A diurnal loner",
+    "price": 90,
+    "currency": "€"
+  },
+  {
+    "name": "Guppy",
+    "description": "Small but nice",
+    "price": 5,
+    "currency": "€"
+  },
+  {
+    "name": "Rainbow fish",
+    "description": "In all colors",
+    "price": 12,
+    "currency": "€"
+  }
+]
