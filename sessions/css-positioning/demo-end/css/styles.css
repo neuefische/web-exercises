@@ -10,8 +10,8 @@ body {
   padding: 0;
   margin: 0;
   background: papayawhip;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .header {
@@ -32,6 +32,7 @@ body {
 }
 
 .disclaimer {
+  position: relative;
   margin: 20px 5%;
   margin-top: 150px;
   border: 2px solid black;
@@ -39,10 +40,12 @@ body {
 }
 
 .disclaimer__title {
+  position: relative;
   left: 55px;
 }
 
 .disclaimer__icon {
+  position: absolute;
   top: 25px;
   width: 1em;
   height: 1em;
@@ -55,6 +58,7 @@ body {
 }
 
 .to-top {
+  position: fixed;
   right: 15px;
   top: 15px;
   z-index: 1;
@@ -66,7 +70,7 @@ body {
 }
 
 .to-top::before {
-  content: '😋 ';
+  content: "😋 ";
 }
 
 .sticky {
