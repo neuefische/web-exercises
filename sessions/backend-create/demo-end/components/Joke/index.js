@@ -5,9 +5,9 @@ export default function Joke() {
   const router = useRouter();
   const { id } = router.query;
 
-  const { data } = useSWR(id ? `/api/jokes/${id}` : null);
+  const { data, isLoading } = useSWR(id ? `/api/jokes/${id}` : null);
 
-  if (!data) {
+  if (isLoading) {
     return <h1>Loading...</h1>;
   }
 
