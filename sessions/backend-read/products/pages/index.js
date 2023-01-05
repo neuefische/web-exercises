@@ -17,4 +17,5 @@ export default function HomePage() {
 
 const Heading = styled.h1`
   text-align: center;
+  color: var(--color-nemo);
 `;
