@@ -6,12 +6,14 @@ In this challenge (and the upcoming ones), you'll create a fish shop. For now, y
 
 ### Introduction
 
-TBD:
+Run `npm run dev` and open `localhost:3000` on your browser.
 
-- Run `npm run dev` and open `localhost:3000`.
-  Look around: overview and details page; data comes from `lib/products.js`.
+Have a look around:
 
-You task is to refactor the app so that it fetches the data from a local MongoDB.
+- there is an overview page with all products and a details page for each of them;
+- the data is taken from `lib/products.js`.
+
+Your task is to refactor the app so that it fetches the data from a local MongoDB.
 
 ### Read Products from Database
 
@@ -46,6 +48,10 @@ Switch to `pages/api/products/index.js`:
   - use the `Product` model to find all products and
   - return them as response.
 
+Switch to `pages/index.js` and adapt the frontend:
+
+- replace all instances of `product.id` with `product._id`.
+
 Check that it works:
 
 - Reload `localhost:3000`; you should still see the all fishes.
@@ -53,6 +59,7 @@ Check that it works:
 Switch to `pages/api/products/[id].js` and adapt it as explained above:
 
 - To find a single product by its id, you can use the `Product` model and the `.findById()` method: `Product.findById(id)`.
+- Delete `lib/products.js` because it is not used anymore.
 
 Open the browser and check the details pages: they should work now as well!
 
@@ -98,8 +105,6 @@ Finally, update the frontend to display the reviews:
   - `products.json` contains the data for the first task
   - `bonus-products.json` and `bonus-reviews.json` contain the data for the bonus task
 - Import them into the correct collection of your local MongoDB when you are asked to.
-
-## Notes
 
 ## Development
 
