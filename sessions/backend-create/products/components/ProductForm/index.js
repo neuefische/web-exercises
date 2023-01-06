@@ -1,10 +1,7 @@
-import useSWR from "swr";
 import { StyledForm, StyledHeading, StyledLabel } from "./ProductForm.styled";
 import { StyledButton } from "../Button/Button.styled";
 
 export default function ProductForm() {
-  const products = useSWR("/api/products");
-
   async function onSubmit(event) {
     event.preventDefault();
 
@@ -13,22 +10,6 @@ export default function ProductForm() {
     formData.forEach((value, key) => {
       productData[key] = value;
     });
-
-    const response = await fetch("/api/products", {
-      method: "POST",
-      body: JSON.stringify(productData),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
-
-    if (response.ok) {
-      await response.json();
-      products.mutate();
-      event.target.reset();
-    } else {
-      console.error(`Error: ${response.status}`);
-    }
   }
 
   return (
