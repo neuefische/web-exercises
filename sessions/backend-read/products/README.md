@@ -54,7 +54,7 @@ Switch to `pages/index.js` and adapt the frontend:
 
 Check that it works:
 
-- Reload `localhost:3000`; you should still see the all fishes.
+- Reload `localhost:3000`; you should still see all fishes.
 
 Switch to `pages/api/products/[id].js` and adapt it as explained above:
 
