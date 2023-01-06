@@ -35,7 +35,7 @@ The schema should have the following fields:
 
 At the root of the project, create a `.env.local` file which uses the `MONGODB_URI` environment variable and your MongoDB connection string.
 
-- Its content should look like this: `MONGODB_URI=mongodb://localhost:27017/fish-shop`.
+- Copy and paste the following into the `.env.local` file: `MONGODB_URI=mongodb://localhost:27017/fish-shop`.
 
 Switch to `pages/api/products/index.js`:
 
