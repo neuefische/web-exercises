@@ -102,8 +102,8 @@ Finally, update the frontend to display the reviews:
 
 - Unzip the file to get the `resources` folder.
 - The files are already in the correct structure for the app.
-  - `products.json` contains the data for the first task
-  - `bonus-products.json` and `bonus-reviews.json` contain the data for the bonus task
+  - `products.json` contains the data for the first task, and
+  - `bonus-products.json` and `bonus-reviews.json` contain the data for the bonus task.
 - Import them into the correct collection of your local MongoDB when you are asked to.
 
 ## Development
