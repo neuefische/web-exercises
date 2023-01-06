@@ -1,6 +1,6 @@
 import useSWR from "swr";
 import { useRouter } from "next/router";
-import styled from "styled-components";
+import { StyledList } from "./ProductList.styled";
 import { StyledButton } from "../Button/Button.styled";
 
 export default function ProductList() {
@@ -26,11 +26,3 @@ export default function ProductList() {
     </StyledList>
   );
 }
-
-const StyledList = styled.ul`
-  list-style-type: none;
-  display: grid;
-  gap: 1rem;
-  justify-items: center;
-  padding: 0;
-`;
