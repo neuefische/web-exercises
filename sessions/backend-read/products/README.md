@@ -21,7 +21,7 @@ Use MongoDB Compass to create a database:
 
 - the database should be called `fish-shop`,
 - there should be one collection called `products`,
-- download and extract the [Resources](README.md#resources) and
+- download and extract the [resources](README.md#resources) and
 - use the `products.json` file to import the data into your `products` collection.
 
 Create a schema for the `Product` model in a `db/models` folder.
