@@ -33,7 +33,7 @@ The schema should have the following fields:
 - `price` (Number)
 - `currency` (String)
 
-On the root of the project, create a `.env.local` file which uses the `MONGODB_URI` environment variable and your MongoDB connection string.
+At the root of the project, create a `.env.local` file which uses the `MONGODB_URI` environment variable and your MongoDB connection string.
 
 - Its content should look like this: `MONGODB_URI=mongodb://localhost:27017/fish-shop`.
 
