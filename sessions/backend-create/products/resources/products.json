@@ -6,7 +6,8 @@
     "name": "Shrimp",
     "description": "Prefers to live in pairs",
     "price": 19,
-    "currency": "€"
+    "currency": "EUR",
+    "reviews": ["63b598370e7740872e8c10c1"]
   },
   {
     "_id": {
@@ -15,7 +16,8 @@
     "name": "Anemonefish",
     "description": "Nemo",
     "price": 65,
-    "currency": "€"
+    "currency": "EUR",
+    "reviews": ["63b598370e7740872e8c10c2"]
   },
   {
     "_id": {
@@ -24,7 +26,8 @@
     "name": "Splendid anemone",
     "description": "Is splendid",
     "price": 90,
-    "currency": "€"
+    "currency": "EUR",
+    "reviews": ["63b598370e7740872e8c10c3", "63b598370e7740872e8c10c4"]
   },
   {
     "_id": {
@@ -33,7 +36,7 @@
     "name": "Killer mussel",
     "description": "Is prettier than her name",
     "price": 12,
-    "currency": "€"
+    "currency": "EUR"
   },
   {
     "_id": {
@@ -42,7 +45,8 @@
     "name": "Angelfish",
     "description": "A diurnal loner",
     "price": 90,
-    "currency": "€"
+    "currency": "EUR",
+    "reviews": ["63b598370e7740872e8c10c5", "63b598370e7740872e8c10c2"]
   },
   {
     "_id": {
@@ -51,7 +55,8 @@
     "name": "Guppy",
     "description": "Small but nice",
     "price": 5,
-    "currency": "€"
+    "currency": "EUR",
+    "reviews": ["63b598370e7740872e8c10c4", "63b598370e7740872e8c10c1"]
   },
   {
     "_id": {
@@ -60,6 +65,6 @@
     "name": "Rainbow fish",
     "description": "In all colors",
     "price": 12,
-    "currency": "€"
+    "currency": "EUR"
   }
 ]
