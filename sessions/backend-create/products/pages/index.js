@@ -1,5 +1,6 @@
 import ProductList from "../components/ProductList";
 import styled from "styled-components";
+import ProductForm from "../components/ProductForm";
 
 const Heading = styled.h1`
   text-align: center;
@@ -15,6 +16,8 @@ export default function HomePage() {
         </span>
         Fish Shop
       </Heading>
+      <ProductForm />
+      <hr></hr>
       <ProductList />
     </>
   );
