@@ -1,6 +1,6 @@
 # Backend Read: Products
 
-In this challenge (and the upcoming ones), you'll create a fish shop. For now, you'll use `mongoose` to read data from a local MongoDB and display it in the frontend.
+In this challenge (and the upcoming ones), you'll create a fish shop. For now, you'll read data from a local MongoDB using `mongoose` and display it in the frontend.
 
 ## Task
 
