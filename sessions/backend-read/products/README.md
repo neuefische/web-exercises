@@ -46,7 +46,7 @@ Switch to `pages/api/products/index.js`:
 - If the `request.method` is `GET`,
 
   - use the `Product` model to find all products and
-  - return them as response.
+  - return them as a response.
 
 Switch to `pages/index.js` and adapt the frontend:
 
