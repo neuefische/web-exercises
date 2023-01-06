@@ -1,6 +1,11 @@
 import ProductList from "../components/ProductList";
 import styled from "styled-components";
 
+const Heading = styled.h1`
+  text-align: center;
+  color: var(--color-nemo);
+`;
+
 export default function HomePage() {
   return (
     <>
@@ -14,8 +19,3 @@ export default function HomePage() {
     </>
   );
 }
-
-const Heading = styled.h1`
-  text-align: center;
-  color: var(--color-nemo);
-`;
