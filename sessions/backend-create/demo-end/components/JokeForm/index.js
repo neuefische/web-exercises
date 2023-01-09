@@ -3,14 +3,11 @@ import useSWR from "swr";
 export default function JokeForm() {
   const jokes = useSWR("/api/jokes");
 
-  async function handleSubmit(event) {
+  async function onSubmit(event) {
     event.preventDefault();
 
     const formData = new FormData(event.target);
-    const jokeData = {};
-    formData.forEach((value, key) => {
-      jokeData[key] = value;
-    });
+    const jokeData = Object.fromEntries(formData);
 
     const response = await fetch("/api/jokes", {
       method: "POST",
