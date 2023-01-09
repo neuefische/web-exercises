@@ -3,7 +3,7 @@ import useSWR from "swr";
 export default function JokeForm() {
   const jokes = useSWR("/api/jokes");
 
-  async function onSubmit(event) {
+  async function handleSubmit(event) {
     event.preventDefault();
 
     const formData = new FormData(event.target);
