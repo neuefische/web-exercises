@@ -9,9 +9,29 @@ export default function JokeDetailsPage() {
   const [isEditMode, setIsEditMode] = useState(false);
 
   const router = useRouter();
-  const { id } = router.query;
+  const {
+    query: { id },
+    push,
+  } = router;
 
-  const { trigger } = useSWRMutation("/api/jokes");
+  const { trigger, isMutating } = useSWRMutation(
+    `/api/jokes/${id}`,
+    async (url, { arg }) => {
+      const response = await fetch(url, {
+        method: "PUT",
+        body: JSON.stringify(arg),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      if (response.ok) {
+        await response.json();
+      } else {
+        console.error(`Error: ${response.status}`);
+      }
+    }
+  );
 
   async function handleEditJoke(event) {
     event.preventDefault();
@@ -20,24 +40,14 @@ export default function JokeDetailsPage() {
     const jokeData = Object.fromEntries(formData);
 
     console.log(jokeData);
+
     await trigger(jokeData);
 
-    const response = await fetch(`/api/jokes/${id}`, {
-      method: "PUT",
-      body: JSON.stringify(jokeData),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    push("/");
+  }
 
-    if (response.ok) {
-      await response.json();
-      event.target.reset();
-
-      //router.push("/");
-    } else {
-      console.error(`Error: ${response.status}`);
-    }
+  if (isMutating) {
+    return <h1>Submitting your changes.</h1>;
   }
 
   return (
