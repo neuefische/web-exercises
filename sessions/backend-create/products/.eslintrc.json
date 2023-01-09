@@ -9,7 +9,8 @@
       {
         "allowObject": true
       }
-    ]
+    ],
+    "no-unused-vars": 0
   },
   "plugins": ["jest"]
 }

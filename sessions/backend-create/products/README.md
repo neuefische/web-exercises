@@ -50,7 +50,7 @@ Submitting the form will not yet work because the form does not know that you've
 
 Switch to [`components/ProductForm/index.js`](./components/ProductForm/index.js):
 
-- There already is an `onSubmit` function which creates a `productData` object with all relevant data.
+- There already is a `handleSubmit` function which creates a `productData` object with all relevant data.
 
 Your task is to write a fetch for you newly created `POST` route and send the data to your database.
 
@@ -64,10 +64,10 @@ Your task is to write a fetch for you newly created `POST` route and send the da
 ```js
 {
 method: "POST",
-body: JSON.stringify(productData),
 headers: {
-    "Content-Type": "application/json",
+  "Content-Type": "application/json",
 }
+body: JSON.stringify(productData),
 ```
 
 Before handling the `response`,

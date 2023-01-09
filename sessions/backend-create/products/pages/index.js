@@ -17,7 +17,7 @@ export default function HomePage() {
         Fish Shop
       </Heading>
       <ProductForm />
-      <hr></hr>
+      <hr />
       <ProductList />
     </>
   );
