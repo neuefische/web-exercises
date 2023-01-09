@@ -1,5 +1,5 @@
 {
-  "name": "react-data-fetching_iss-tracker",
+  "name": "backend-create_demo-end",
   "version": "0.0.0-unreleased",
   "private": true,
   "scripts": {
@@ -13,6 +13,7 @@
     "@next/font": "^13.0.6",
     "eslint": "8.29.0",
     "eslint-config-next": "13.0.6",
+    "mongoose": "^6.8.2",
     "next": "13.0.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -28,7 +29,7 @@
     "jest": "^29.3.1",
     "jest-environment-jsdom": "^29.3.1"
   },
-  "description": "React Data Fetching: ISS Tracker",
+  "description": "Backend Create: Demo End",
   "nf": {
     "template": "next"
   }
