@@ -1,7 +1,10 @@
 import useSWR from "swr";
+import { useState } from "react";
 import { useRouter } from "next/router";
+import JokeForm from "../JokeForm";
 
-export default function Joke() {
+export default function Joke({ onSubmit }) {
+  const [isEditMode, setIsEditMode] = useState(false);
   const router = useRouter();
   const { id } = router.query;
 
@@ -21,6 +24,17 @@ export default function Joke() {
       <button type="button" onClick={() => router.push("/")}>
         Back to all
       </button>
+      <button
+        onClick={() => {
+          setIsEditMode(!isEditMode);
+        }}
+        disabled={isEditMode}
+      >
+        Edit Joke
+      </button>
+      {isEditMode && (
+        <JokeForm onSubmit={onSubmit} value={data.joke} label="Edit Joke" />
+      )}
     </>
   );
 }

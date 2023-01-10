@@ -30,7 +30,7 @@ export default function HomePage() {
 
   return (
     <>
-      <JokeForm onSubmit={handleCreateJoke} label="Enter new joke" />
+      <JokeForm onSubmit={handleCreateJoke} label="Enter new joke" value="" />
       <JokeList />
     </>
   );
