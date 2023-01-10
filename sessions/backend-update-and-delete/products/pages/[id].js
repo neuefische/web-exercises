@@ -13,7 +13,7 @@ export default function ProductDetailsPage() {
     push,
   } = router;
 
-  async function sendRequest(url, { arg }) {
+  async function updateProduct(url, { arg }) {
     const response = await fetch(url, {
       method: "PUT",
       body: JSON.stringify(arg),
@@ -31,7 +31,7 @@ export default function ProductDetailsPage() {
 
   const { trigger, isMutating } = useSWRMutation(
     `/api/products/${id}`,
-    sendRequest
+    updateProduct
   );
 
   async function handleEditProduct(productData) {
@@ -43,17 +43,38 @@ export default function ProductDetailsPage() {
     return <h1>Submitting your changes.</h1>;
   }
 
+  async function handleDeleteProduct() {
+    const response = await fetch(`/api/products/${id}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(id),
+    });
+
+    if (response.ok) {
+      await response.json();
+      push("/");
+    } else {
+      console.error(response.status);
+    }
+  }
+
   return (
     <>
       {isEditMode && (
         <ProductForm onSubmit={handleEditProduct} heading="Update this Fish" />
       )}
       <button
+        type="button"
         onClick={() => {
           setIsEditMode(!isEditMode);
         }}
       >
-        Edit Joke
+        Edit Product
+      </button>
+      <button type="button" onClick={handleDeleteProduct}>
+        Delete Product
       </button>
       <Product />
     </>

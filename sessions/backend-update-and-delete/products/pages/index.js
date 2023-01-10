@@ -11,10 +11,7 @@ const Heading = styled.h1`
 export default function HomePage() {
   const products = useSWR("/api/products");
 
-  async function handleAddProduct() {
-    const formData = new FormData(event.target);
-    const productData = Object.fromEntries(formData);
-
+  async function handleAddProduct(productData) {
     const response = await fetch("/api/products", {
       method: "POST",
       headers: {
