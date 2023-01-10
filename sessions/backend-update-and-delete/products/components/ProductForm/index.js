@@ -4,9 +4,7 @@ import { StyledButton } from "../Button/Button.styled";
 export default function ProductForm({ onSubmit, heading }) {
   async function handleSubmit(event) {
     event.preventDefault();
-    const formData = new FormData(event.target);
-    const productData = Object.fromEntries(formData);
-    onSubmit(productData);
+    onSubmit(event);
 
     event.target.reset();
   }
