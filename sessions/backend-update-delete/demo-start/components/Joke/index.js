@@ -7,9 +7,6 @@ export default function Joke() {
 
   const { data, isLoading } = useSWR(id ? `/api/jokes/${id}` : null);
 
-  // new!!
-  if (!data) return;
-
   if (isLoading) {
     return <h1>Loading...</h1>;
   }

@@ -1,4 +1,3 @@
-//import useSWR from "swr";
 import useSWRMutation from "swr/mutation";
 import { useState } from "react";
 import { useRouter } from "next/router";
@@ -49,7 +48,7 @@ export default function JokeDetailsPage() {
 
   return (
     <>
-      {isEditMode && <JokeForm onSubmit={handleEditJoke} label="Edit Joke" />}
+      <Joke />
       <button
         onClick={() => {
           setIsEditMode(!isEditMode);
@@ -57,7 +56,7 @@ export default function JokeDetailsPage() {
       >
         Edit Joke
       </button>
-      <Joke />
+      {isEditMode && <JokeForm onSubmit={handleEditJoke} label="Edit Joke" />}
     </>
   );
 }
