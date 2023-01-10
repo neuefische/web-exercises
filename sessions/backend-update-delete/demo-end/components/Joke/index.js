@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import JokeForm from "../JokeForm";
 
-export default function Joke({ onSubmit }) {
+export default function Joke({ onSubmit, onDelete }) {
   const [isEditMode, setIsEditMode] = useState(false);
   const router = useRouter();
   const { id } = router.query;
@@ -32,6 +32,7 @@ export default function Joke({ onSubmit }) {
       >
         Edit Joke
       </button>
+      <button onClick={() => onDelete(id)}>Delete</button>
       {isEditMode && (
         <JokeForm onSubmit={onSubmit} value={data.joke} label="Edit Joke" />
       )}

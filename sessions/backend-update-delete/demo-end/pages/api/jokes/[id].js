@@ -15,8 +15,6 @@ export default async function handler(request, response) {
     response.status(200).json(joke);
   }
 
-  // building PATCH API Route
-
   if (request.method === "PUT") {
     const jokeToUpdate = await Joke.findByIdAndUpdate(id, {
       $set: request.body,
@@ -24,5 +22,8 @@ export default async function handler(request, response) {
     return response.status(200).json(jokeToUpdate);
   }
 
-  // building DELTE API Route
+  if (request.method === "DELETE") {
+    const jokeToDelete = await Joke.findByIdAndDelete(id);
+    return response.status(200).json(jokeToDelete);
+  }
 }

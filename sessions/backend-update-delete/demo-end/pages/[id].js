@@ -39,9 +39,22 @@ export default function JokeDetailsPage() {
     push("/");
   }
 
+  async function handleDeleteJoke(id) {
+    const response = await fetch(`/api/jokes/${id}`, {
+      method: "DELETE",
+    });
+
+    if (response.ok) {
+      await response.json();
+    } else {
+      console.error(`Error: ${response.status}`);
+    }
+    push("/");
+  }
+
   if (isMutating) {
     return <h1>Submitting your changes.</h1>;
   }
 
-  return <Joke onSubmit={handleEditJoke} />;
+  return <Joke onSubmit={handleEditJoke} onDelete={handleDeleteJoke} />;
 }
