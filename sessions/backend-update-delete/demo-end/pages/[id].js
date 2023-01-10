@@ -38,7 +38,7 @@ export default function JokeDetailsPage() {
     push("/");
   }
 
-  async function handleDeleteJoke(id) {
+  async function handleDeleteJoke() {
     const response = await fetch(`/api/jokes/${id}`, {
       method: "DELETE",
     });

@@ -32,7 +32,7 @@ export default function Joke({ onSubmit, onDelete }) {
             ✏️
           </span>
         </Button>
-        <Button onClick={() => onDelete(id)} disabled={isEditMode}>
+        <Button onClick={onDelete} disabled={isEditMode}>
           <span role="img" alt="A cross indicating deletion">
             ❌
           </span>
