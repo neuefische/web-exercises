@@ -1,3 +1,6 @@
+import Button from "../Button";
+import List from "../List";
+import ListItem from "../ListItem";
 import useSWR from "swr";
 import { useRouter } from "next/router";
 
@@ -9,18 +12,19 @@ export default function JokeList() {
     return <h1>Loading...</h1>;
   }
 
-  // function handleClick() {}
-
   return (
-    <ul>
+    <List>
       {data.map((joke) => (
-        <li key={joke._id}>
-          <button type="button" onClick={() => router.push(`/${joke._id}`)}>
+        <ListItem key={joke._id}>
+          <Button
+            type="button"
+            width="100%"
+            onClick={() => router.push(`/${joke._id}`)}
+          >
             {joke.joke}
-          </button>
-          {/* <button onClick={handleClick}>Edit</button> */}
-        </li>
+          </Button>
+        </ListItem>
       ))}
-    </ul>
+    </List>
   );
 }

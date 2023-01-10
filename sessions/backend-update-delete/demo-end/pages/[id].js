@@ -1,5 +1,4 @@
 import useSWRMutation from "swr/mutation";
-
 import { useRouter } from "next/router";
 import Joke from "../components/Joke";
 
