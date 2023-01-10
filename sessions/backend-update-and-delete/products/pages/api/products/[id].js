@@ -16,16 +16,9 @@ export default async function handler(request, response) {
   }
 
   if (request.method === "PUT") {
-    try {
-      const productToUpdate = await Product.findByIdAndUpdate(
-        id,
-        request.body,
-        { new: true }
-      );
-      return response.status(200).json("Product successfully updated.");
-    } catch (error) {
-      console.error(error);
-      return response.status(400).json({ error: error.message });
-    }
+    const productToUpdate = await Product.findByIdAndUpdate(id, {
+      $set: request.body,
+    });
+    return response.status(200).json(productToUpdate);
   }
 }
