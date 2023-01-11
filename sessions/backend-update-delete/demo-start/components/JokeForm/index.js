@@ -1,4 +1,13 @@
+import styled from "styled-components";
 import useSWR from "swr";
+import Button from "../Button";
+
+const StyledForm = styled.form`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-block-start: 2rem;
+`;
 
 export default function JokeForm() {
   const jokes = useSWR("/api/jokes");
@@ -27,10 +36,12 @@ export default function JokeForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="joke-input">Enter a new joke</label>
+    <StyledForm onSubmit={handleSubmit}>
+      <label htmlFor="joke-input">Submit Joke</label>
       <input type="text" id="joke-input" name="joke" />
-      <button type="submit">Submit</button>
-    </form>
+      <Button width="fit-content" type="submit">
+        Submit
+      </Button>
+    </StyledForm>
   );
 }

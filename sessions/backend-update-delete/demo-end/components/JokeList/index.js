@@ -1,6 +1,6 @@
 import Button from "../Button";
-import List from "../List";
-import ListItem from "../ListItem";
+import { StyledList } from "../StyledList";
+import { StyledListItem } from "../StyledListItem";
 import useSWR from "swr";
 import { useRouter } from "next/router";
 
@@ -13,9 +13,9 @@ export default function JokeList() {
   }
 
   return (
-    <List>
+    <StyledList>
       {data.map((joke) => (
-        <ListItem key={joke._id}>
+        <StyledListItem key={joke._id}>
           <Button
             type="button"
             width="100%"
@@ -23,8 +23,8 @@ export default function JokeList() {
           >
             {joke.joke}
           </Button>
-        </ListItem>
+        </StyledListItem>
       ))}
-    </List>
+    </StyledList>
   );
 }
