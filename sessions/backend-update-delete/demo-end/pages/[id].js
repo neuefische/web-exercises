@@ -13,9 +13,9 @@ export default function JokeDetailsPage() {
     const response = await fetch(url, {
       method: "PUT",
       body: JSON.stringify(arg),
-      headers: {
-        "Content-Type": "application/json",
-      },
+      // headers: {
+      //   "Content-Type": "application/json",
+      // },
     });
 
     if (response.ok) {
@@ -39,15 +39,9 @@ export default function JokeDetailsPage() {
   }
 
   async function handleDeleteJoke() {
-    const response = await fetch(`/api/jokes/${id}`, {
+    await fetch(`/api/jokes/${id}`, {
       method: "DELETE",
     });
-
-    if (response.ok) {
-      await response.json();
-    } else {
-      console.error(`Error: ${response.status}`);
-    }
     push("/");
   }
 

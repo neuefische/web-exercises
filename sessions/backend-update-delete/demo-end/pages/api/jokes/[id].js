@@ -19,6 +19,7 @@ export default async function handler(request, response) {
     const jokeToUpdate = await Joke.findByIdAndUpdate(id, {
       $set: request.body,
     });
+
     return response.status(200).json(jokeToUpdate);
   }
 
