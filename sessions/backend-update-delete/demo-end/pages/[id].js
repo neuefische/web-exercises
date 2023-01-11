@@ -9,13 +9,18 @@ export default function JokeDetailsPage() {
     push,
   } = router;
 
+  const { trigger, isMutating } = useSWRMutation(
+    `/api/jokes/${id}`,
+    sendRequest
+  );
+
   async function sendRequest(url, { arg }) {
     const response = await fetch(url, {
       method: "PUT",
       body: JSON.stringify(arg),
-      // headers: {
-      //   "Content-Type": "application/json",
-      // },
+      headers: {
+        "Content-Type": "application/json",
+      },
     });
 
     if (response.ok) {
@@ -24,11 +29,6 @@ export default function JokeDetailsPage() {
       console.error(`Error: ${response.status}`);
     }
   }
-
-  const { trigger, isMutating } = useSWRMutation(
-    `/api/jokes/${id}`,
-    sendRequest
-  );
 
   async function handleEditJoke(event) {
     event.preventDefault();
