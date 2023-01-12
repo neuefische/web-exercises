@@ -11,11 +11,11 @@ export default function Product({ onSubmit, onDelete }) {
   const router = useRouter();
   const { id } = router.query;
 
-  const { data } = useSWR(id ? `/api/products/${id}` : null);
+  const { data, isLoading } = useSWR(id ? `/api/products/${id}` : null);
 
   if (!data) return;
 
-  if (!data) {
+  if (isLoading) {
     return <h1>Loading...</h1>;
   }
 
@@ -39,7 +39,7 @@ export default function Product({ onSubmit, onDelete }) {
           setIsEditMode(!isEditMode);
         }}
       >
-        Edit Product
+        {isEditMode ? "Dismiss Editing" : "Edit Product"}
       </button>
       <button onClick={() => onDelete(id)}>Delete</button>
     </ProductCard>
