@@ -146,7 +146,7 @@ Switch to [`components/Product/index.js`](./components/Product/index.js) and imp
 
 Switch to [`pages/[id].js`](./pages/%5Bid%5D.js) and write a `handleDeleteProduct` function:
 
-- _Wait_ for a `fetch()` with two argument:
+- _Wait_ for a `fetch()` with two arguments:
   - the url `/api/products/${id}` and
   - an options object `{ method: "DELETE" }`
 - Save the result in a variable called `response`.
@@ -154,7 +154,7 @@ Switch to [`pages/[id].js`](./pages/%5Bid%5D.js) and write a `handleDeleteProduc
   - _wait_ for `response.json()` and use `push("/")`.
 - If the `response` is not `ok`, log the `response.status` as an error to the console.
 
-<!-- Open [`localhost:3000/`](http://localhost:3000/) in your browser, switch to a details page, delete a fish and be happy about your shop being expanded! -->
+Open [`localhost:3000/`](http://localhost:3000/) in your browser, switch to a details page, delete a fish and be happy about your shop being expanded!
 
 ### Resources
 

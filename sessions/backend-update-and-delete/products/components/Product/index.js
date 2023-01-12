@@ -3,11 +3,9 @@ import { useRouter } from "next/router";
 import { StyledButton } from "../Button/Button.styled";
 import { ProductCard } from "./Product.styled";
 import Comments from "../Comments";
-import { useState } from "react";
 import ProductForm from "../ProductForm/index";
 
 export default function Product({ onSubmit, onDelete }) {
-  const [isEditMode, setIsEditMode] = useState(false);
   const router = useRouter();
   const { id } = router.query;
 
@@ -30,18 +28,6 @@ export default function Product({ onSubmit, onDelete }) {
       <StyledButton type="button" onClick={() => router.push("/")}>
         Back to all
       </StyledButton>
-      {isEditMode && (
-        <ProductForm onSubmit={onSubmit} heading="Update this Fish" />
-      )}
-      <button
-        type="button"
-        onClick={() => {
-          setIsEditMode(!isEditMode);
-        }}
-      >
-        {isEditMode ? "Dismiss Editing" : "Edit Product"}
-      </button>
-      <button onClick={() => onDelete(id)}>Delete</button>
     </ProductCard>
   );
 }
