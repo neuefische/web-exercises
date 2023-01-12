@@ -28,12 +28,12 @@ export default function Joke({ onSubmit, onDelete }) {
           }}
           disabled={isEditMode}
         >
-          <span role="img" alt="A pencil">
+          <span role="img" aria-label="A pencil">
             ✏️
           </span>
         </Button>
         <Button onClick={onDelete} disabled={isEditMode}>
-          <span role="img" alt="A cross indicating deletion">
+          <span role="img" aria-label="A cross indicating deletion">
             ❌
           </span>
         </Button>
@@ -47,6 +47,7 @@ export default function Joke({ onSubmit, onDelete }) {
       )}
       <Button
         type="button"
+        width="fit-content"
         margin="2rem 0 0 0"
         onClick={() => router.push("/")}
       >
