@@ -158,6 +158,8 @@ Switch to [`pages/[id].js`](./pages/%5Bid%5D.js) and write a `handleDeleteProduc
   - _wait_ for `response.json()` and use `push("/")`.
 - If the `response` is not `ok`, log the `response.status` as an error to the console.
 
+- In the return statement of the `ProductDetailsPage`, pass `handleDeleteProduct` to the `Product` component as a prop called `onDelete`.
+
 Open [`localhost:3000/`](http://localhost:3000/) in your browser, switch to a details page, delete a fish and be happy about your shop being expanded!
 
 ### Resources

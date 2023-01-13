@@ -3,9 +3,8 @@ import { useRouter } from "next/router";
 import { StyledButton } from "../Button/Button.styled";
 import { ProductCard } from "./Product.styled";
 import Comments from "../Comments";
-import ProductForm from "../ProductForm/index";
 
-export default function Product({ onSubmit, onDelete }) {
+export default function Product() {
   const router = useRouter();
   const { id } = router.query;
 
