@@ -167,7 +167,7 @@ Open [`localhost:3000/`](http://localhost:3000/) in your browser, switch to a de
 - Unzip the file to get the `resources` folder.
 - The files are already in the correct structure for the app.
   - `products.json` contains the data for the all fish,
-  - `reviews.json` contain the data for all reviews.
+  - `reviews.json` contains the data for all reviews.
 - Import them into the correct collection of your local MongoDB when you are asked to.
 
 ## Development
