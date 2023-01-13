@@ -16,7 +16,7 @@ Your task is to fetch a character from the [Star Wars API](https://swapi.dev/). 
 You can use the following hints as guideline:
 
 - `SWR` is already installed, so you just have to import it.
-- Switch to [`pages/characters/1.js](./pages/characters/1.js);
+- Switch to [`pages/characters/1.js`](./pages/characters/1.js):
   - fetch only the first character using https://swapi.dev/api/people/1;
   - instead of the hard coded `/1`, interpolate the `id` variable.
   - implement a loading state;
