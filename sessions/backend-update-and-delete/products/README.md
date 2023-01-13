@@ -33,7 +33,7 @@ Your task is to add the functionality for updating and deleting a product. The b
 
 #### Add a `PUT` route
 
-Switch to [`pages/api/products/index.js`](./pages/api/products/index.js) and write the code for the `request.method` `PUT` :
+Switch to [`pages/api/products/[id].js`](./pages/api/products/[id].js) and write the code for the `request.method` `PUT` :
 
 - Declare a variable `productToUpdate`.
 - Initialize `productToUpdate` with `await Product.findByIdAndUpdate(id, { $set: request.body, })`.
