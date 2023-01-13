@@ -131,7 +131,7 @@ Open [`localhost:3000/`](http://localhost:3000/) in your browser, switch to a de
 
 #### Add a `DELETE` route
 
-Switch to [`pages/api/products/index.js`](./pages/api/products/index.js) and write the code for the `request.method` `DELETE` :
+Switch to [`pages/api/products/[id].js`](./pages/api/products/[id].js) and write the code for the `request.method` `DELETE` :
 
 - _Wait_ for `Product.findByIdAndDelete(id)`.
 - Respond with a status `200` and the message `{ status: "Product successfully deleted." }`.
