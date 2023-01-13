@@ -36,7 +36,7 @@ Your task is to add the functionality for updating and deleting a product. The b
 Switch to [`pages/api/products/[id].js`](./pages/api/products/[id].js) and write the code for the `request.method` `PUT` :
 
 - Declare a variable `productToUpdate`.
-- Initialize `productToUpdate` with `await Product.findByIdAndUpdate(id, { $set: request.body, })`.
+- _Wait_ for `Product.findByIdAndUpdate(id, { $set: request.body, })`.
 - Respond with a status `200` and the message `{ status: "Product successfully updated." }`.
 
 #### Refactor the `ProductForm` component
@@ -45,9 +45,13 @@ For now, the `ProductForm` component sends a `POST` request to your database. We
 
 Switch to [`components/ProductForm/index.js`](./components/ProductForm/index.js).
 
-Lift up all logic regarding the creating of the `productData` and the `fetch("/api/products")` to the [`pages/index.js`](./pages/index.js) file and
+Lift up all logic regarding the creating of the `productData` and the `fetch("/api/products")` to the [`pages/index.js`](./pages/index.js) file.
 
-- wrap it into an `async` function called `handleAddProduct()`,
+> 💡 This includes the initialization of `const products = useSWR("/api/products");` and the import of `useSWR`.
+
+After doing so,
+
+- wrap the logic into an `async` function called `handleAddProduct()`,
 - pass `handleAddProduct()` the parameter `event`,
 - in the return statement, pass `handleAddProduct` to the `ProductForm` component as a prop called `onSubmit`.
 
@@ -74,7 +78,7 @@ You will need the current product `id` and the `push` method from `next/router`:
 Implement `useSWRMutation` to update a database entry and refetch the data automatically:
 
 - Add `import useSWRMutation from "swr/mutation";` at the top of the file.
-- Paste the following code into the `Product` component to set up `useSWRMutation`:
+- Paste the following code into the `ProductDetailsPage` component to set up `useSWRMutation`:
 
 ```js
 async function updateProduct(url, { arg }) {
