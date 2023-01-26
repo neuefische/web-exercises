@@ -11,7 +11,7 @@ work.
 Open your terminal and navigate to the folder where all your projects are located. Execute the following
 command to create a new project based on a template:
 
-`npx ghcd@latest neuefische/web-exercises/tree/main/sessions/recap-project-2/quiz-app -i`
+`npx ghcd@latest neuefische/web-exercises/tree/main/sessions/recap-project-2/quiz-app`
 
 - There are three pages:
   - an `index.html` with a list of all question cards
@@ -19,7 +19,7 @@ command to create a new project based on a template:
   - a `profile.html` with personal information and settings
 - The structure of styling follows [BEM](http://getbem.com/introduction/); this is why the CSS files
   are organized according to their corresponding component.
-  
+
 Alternatively you can keep working with the Quiz App you built in Recap Project 1.
 
 ## Tasks

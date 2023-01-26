@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Character Count Example</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/index.js" defer></script>
+  </head>
+  <body>
+    <form class="form">
+      <h1>Write and Wonder</h1>
+      <label class="form__label" for="personal-message"
+        >Personal Message:</label
+      >
+      <textarea
+        maxlength="200"
+        data-js="personalMessage"
+        name="personalMessage"
+        id="personal-message"
+        cols="24"
+        rows="3"
+      ></textarea>
+      <small class="form__character-count"
+        >(<span data-js="amountLeft"></span> characters left)</small
+      >
+      <button>Submit message</button>
+    </form>
+  </body>
+</html>

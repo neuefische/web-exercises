@@ -1,0 +1,34 @@
+.question-card__icon {
+  position: absolute;
+  height: 50px;
+  right: 0;
+  top: -15px;
+}
+
+.question-card__title {
+  text-align: center;
+}
+
+.question-card__button {
+  border-radius: 20px;
+  padding: 5px 20px;
+  border: 1px solid black;
+  box-shadow: 0px 1px 5px 0px black;
+  font-size: var(--fs-500);
+}
+
+.question-card__tags {
+  display: flex;
+  margin-top: 20px;
+}
+
+.question-card__tag {
+  background-color: var(--accent-color);
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+.question-card__tag:not(:last-child) {
+  margin-right: 10px;
+}
