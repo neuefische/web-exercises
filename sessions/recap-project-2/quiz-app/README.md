@@ -11,7 +11,7 @@ work.
 Open your terminal and navigate to the folder where all your projects are located. Execute the following
 command to create a new project based on a template:
 
-`npx ghcd@latest neuefische/web-exercises/tree/main/sessions/recap-project-2/quiz-app`
+`npx ghcd@latest spicedacademy/fs-web-exercises/tree/main/sessions/recap-project-2/quiz-app`
 
 - There are three pages:
   - an `index.html` with a list of all question cards
