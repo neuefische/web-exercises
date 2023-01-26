@@ -1,4 +1,4 @@
-# div-salad
+# HTML and the web: div-salad
 
 ## Task
 
