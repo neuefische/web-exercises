@@ -104,6 +104,18 @@ users should be informed about the amount of characters left.
   result
 - Think of ways to use the same logic for both form fields and to not repeat your code
 
+## 5. Bonus
+
+1. When adding a new question card in your newly created form.html; add aswell event listeners to the new button and icon which will have the same functionality as described in Task 1.
+
+   > ❗️ You DON'T need any loops or querySelectorAll. Just try to grab the individual button and icon directly after adding them to the DOM by giving them unique attributes.
+
+2. Add an eventlistener to the darkmode toggle button in your profile page which should toggle on a dark or light version of the profile page
+
+   > ❗️ You'll need to set some CSS variables as attributes to the <body> element for example
+
+   > ❗️ This functionality should only work for the profile page. We will have a look later how to implement dark/lightmode on the whole application later in the course.
+
 You can have a look at
 [this counter example](https://codesandbox.io/s/github/spicedacademy/fs-web-exercises/tree/main/sessions/recap-project-2/character-count-example)
 for inspiration.
