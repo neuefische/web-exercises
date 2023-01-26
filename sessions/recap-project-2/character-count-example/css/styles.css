@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui;
+}
+
+.form {
+  margin: 20px auto;
+  max-width: 320px;
+  display: grid;
+  justify-items: start;
+  gap: 12px;
+}
+
+.form__label {
+  display: block;
+}
+
+.form__character-count {
+  font-size: inherit;
+  color: #666;
+}
