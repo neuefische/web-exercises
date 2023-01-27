@@ -3,7 +3,7 @@ const mainElement = document.querySelector('[data-js="main"]');
 
 console.log(mainElement);
 
-// change styling via classList
+// Change styling via classList
 mainElement.classList.add("dark");
 mainElement.classList.remove("dark");
 
