@@ -24,7 +24,7 @@ Use MongoDB Compass to create a database:
 - download and extract the [resources](README.md#resources) and
 - use the `products.json` file to import the data into your `products` collection.
 
-Create a schema for the `Product` model in a `db/models` folder.
+Create a schema for the `Product` model in the `db/models` folder.
 
 The schema should have the following fields:
 
@@ -65,7 +65,7 @@ Open the browser and check the details pages: they should now work as well!
 
 ### Bonus: Populate Reviews
 
-Some of the products already have reviews which are stored in a second collection. Your task is to read from that collection and display the reviews at the right details page.
+Some of the products already have reviews which are stored in a second collection. Your task is to read from that collection and display the reviews on the right details page.
 
 Open MongoDB Compass and adapt your `fish-shop` database:
 
@@ -94,7 +94,7 @@ Finally, update the frontend to display the reviews:
 
 - Switch to `components/Product/index.js`.
 - Inside of the return statement, check whether the fetched `data` contain any reviews and if so, display them.
-- Feel free which part of the review data you want to display.
+- Feel free to decide which part of the review data you want to display.
 
 ### Resources
 
@@ -107,10 +107,6 @@ Finally, update the frontend to display the reviews:
 - Import them into the correct collection of your local MongoDB when you are asked to.
 
 ## Development
-
-### CodeSandbox
-
-Select the "Browser" tab to view this project. If this project contains tests, select the "Tests" tab to check your progress.
 
 ### Local development
 
