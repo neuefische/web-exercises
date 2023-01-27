@@ -1,6 +1,6 @@
-# demo-start
+# CSS Flexbox: Demo Start
 
-## Task
+This is the starter version of the CSS Flexbox demo.
 
 ## Notes
 
