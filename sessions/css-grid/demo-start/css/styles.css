@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui;
+  background-color: white;
+  line-height: 1.4;
+}
+
+.bootcamp-grid {
+  max-width: 1000px;
+  padding: 2rem;
+  margin: auto;
+  color: white;
+}
+
+.bootcamp {
+  padding: 1.4rem;
+  background-color: #252629;
+  border-radius: 8px;
+}
+
+.bootcamp--1 {
+  background-color: #e5430f;
+}
+
+.bootcamp--1 .bootcamp__headline {
+  color: white;
+}
+
+.bootcamp--3,
+.bootcamp--5 {
+  background-color: #e4e8f0;
+  color: #252629;
+}
+
+.bootcamp__headline {
+  margin: 0 0 1rem 0;
+  color: #fa4b12;
+}
+
+/* Start here: */
+
+.bootcamp-grid {
+  display: grid;
+}
