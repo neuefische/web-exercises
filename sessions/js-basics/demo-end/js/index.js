@@ -7,7 +7,7 @@ console.log(mainElement);
 mainElement.classList.add("dark");
 mainElement.classList.remove("dark");
 
-// addEventListener
+// React to events with addEventListener
 const myLoggingButton = document.querySelector('[data-js="logging-button"]');
 
 myLoggingButton.addEventListener("click", () => {
