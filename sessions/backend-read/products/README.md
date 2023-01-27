@@ -108,6 +108,10 @@ Finally, update the frontend to display the reviews:
 
 ## Development
 
+### CodeSandbox
+
+Select the "Browser" tab to view this project. If this project contains tests, select the "Tests" tab to check your progress.
+
 ### Local development
 
 To run project commands locally, you need to install the dependencies using `npm i` first.
