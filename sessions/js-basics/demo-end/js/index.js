@@ -14,7 +14,7 @@ myLoggingButton.addEventListener("click", () => {
   console.log("You clicked a button");
 });
 
-// change color on button click
+// Change color on button click
 
 const addColorButton = document.querySelector('[data-js="add-button"]');
 const removeColorButton = document.querySelector('[data-js="remove-button"]');
