@@ -1,0 +1,14 @@
+{
+  "name": "js-basics_demo-end",
+  "version": "0.0.0-unreleased",
+  "description": "JS Basics: Demo End",
+  "main": "index.html",
+  "scripts": {
+    "lint": "npx eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "nf": {
+    "template": "html-css-js-static"
+  },
+  "private": true
+}
