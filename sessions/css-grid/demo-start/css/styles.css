@@ -11,6 +11,11 @@ body {
   line-height: 1.4;
 }
 
+h1 {
+  color: #252629;
+  padding: 0 2rem;
+}
+
 .bootcamp-grid {
   max-width: 1000px;
   padding: 2rem;
@@ -46,5 +51,4 @@ body {
 /* Start here: */
 
 .bootcamp-grid {
-  display: grid;
 }
