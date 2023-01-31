@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui;
+  background-color: white;
+  line-height: 1.4;
+}
+
+h1 {
+  color: #252629;
+  padding: 0 2rem;
+}
+
+.bootcamp-grid {
+  max-width: 1000px;
+  padding: 2rem;
+  margin: auto;
+  color: white;
+}
+
+.bootcamp {
+  padding: 1.4rem;
+  background-color: #252629;
+  border-radius: 8px;
+}
+
+.bootcamp--1 {
+  background-color: #e5430f;
+}
+
+.bootcamp--1 .bootcamp__headline {
+  color: white;
+}
+
+.bootcamp--3,
+.bootcamp--5 {
+  background-color: #e4e8f0;
+  color: #252629;
+}
+
+.bootcamp__headline {
+  margin: 0 0 1rem 0;
+  color: #fa4b12;
+}
+
+/* Start here: */
+
+.bootcamp-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.bootcamp--1 {
+  grid-column: span 2;
+}
+
+.bootcamp--4 {
+  grid-column: span 2;
+}
+
+.bootcamp--5 {
+  grid-column: 4;
+  grid-row: 1 / span 2;
+}
