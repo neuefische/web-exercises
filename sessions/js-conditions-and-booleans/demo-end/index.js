@@ -1,6 +1,6 @@
 let carrots = 2;
 const dishesCleaned = 4;
-const kidDidHelpCleaningTheKitchen = dishesCleaned > 3;
+//const kidDidHelpCleaningTheKitchen = dishesCleaned > 3;
 
 // without ternary operator
 //
@@ -18,9 +18,7 @@ const kidDidHelpCleaningTheKitchen = dishesCleaned > 3;
 
 // with ternary operator
 
-let extraCarrots = kidDidHelpCleaningTheKitchen ? 2 : -1;
-
-carrots = carrots + extraCarrots;
+carrots = carrots + (dishesCleaned > 3 ? 2 : -1);
 
 console.log(carrots);
 
