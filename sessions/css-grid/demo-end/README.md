@@ -1,10 +1,6 @@
-# CSS Flexbox: Demo End
+# CSS Grid: Demo End
 
-This is the final version of the CSS Flexbox demo.
-
-## Notes
-
-- You find the starting point for this demo in `sessions/css-flexbox/demo-start`
+This is the end state of the CSS Grid demo.
 
 ## Development
 
