@@ -35,7 +35,7 @@ of an HTML tag. Like <section class="main-section">. */
 
 .main-section {
   padding: 20px;
-  background-color: mintcream;
+  background-color: lavenderblush;
   margin-bottom: 20px;
 }
 
@@ -63,7 +63,6 @@ ul[role="list"] {
 a[href^="https"] {
   color: hotpink;
   padding: 8px;
-  margin: 0 0 8px 0;
 }
 
 /* PART 4: I'm a pseudo-class. I'm  a keyword added to a selector that 
