@@ -46,7 +46,9 @@ Select the "Browser" tab to view this project.
 
 ### Local development
 
-You can check your code for problems with the following command:
+To run project commands locally, you need to install the dependencies using `npm i` first.
+
+You can then use the following command:
 
 - `npm run lint` to run the linter
 
