@@ -13,8 +13,8 @@ body {
 }
 
 h1 {
-  color: orangered;
-  text-shadow: 3px 3px darkslategray;
+  color: #ff4a11;
+  text-shadow: 3px 3px #252629;
 }
 
 h1,
@@ -35,7 +35,7 @@ of an HTML tag. Like <section class="main-section">. */
 
 .main-section {
   padding: 20px;
-  background-color: lavenderblush;
+  background-color: #fff0f5;
   margin-bottom: 20px;
 }
 
@@ -46,7 +46,7 @@ of an HTML tag. Like <section class="main-section">. */
 }
 
 .box--pink {
-  background-color: lightpink;
+  background-color: #ffb6c1;
 }
 
 /* PART 3: I'm an attribute selector. I correspond with the attributes declared 
@@ -61,7 +61,7 @@ ul[role="list"] {
 }
 
 a[href^="https"] {
-  color: hotpink;
+  color: #ff69b4;
   padding: 8px;
 }
 
@@ -69,12 +69,12 @@ a[href^="https"] {
 specifies a special state of the selected element. */
 
 a[href^="https"]:hover {
-  background-color: hotpink;
+  background-color: #ff69b4;
   color: #fff;
 }
 
 input[type="text"]:focus {
-  outline: 2px solid hotpink;
+  outline: 2px solid #ff69b4;
   border: none;
   border-radius: 3px;
 }
@@ -101,7 +101,7 @@ a[href^="https"]:before {
 of the parent element, but only those descendants that match my type. */
 
 .main-section .text {
-  color: darkslategray;
+  color: #252629;
   /* This should overwrite the color rule of the ID selector, but because 
   of its very high specificity, the ID selector rule remains. The only way to
   overwrite rules declares inside of an ID selector is to use !important, which
@@ -113,7 +113,7 @@ of the parent element, but only those children that match my type. */
 
 .main-section > article {
   padding: 20px;
-  background-color: lightpink;
+  background-color: #ffb6c1;
   border: 4px dotted #fff;
 }
 
@@ -121,5 +121,5 @@ of the parent element, but only those children that match my type. */
 only count for my adjacent sibling. */
 
 section div + span {
-  color: hotpink;
+  color: #ff69b4;
 }
