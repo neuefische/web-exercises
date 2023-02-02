@@ -13,8 +13,8 @@ body {
 }
 
 h1 {
-  color: var(--color-nemo);
-  text-shadow: 3px 3px var(--color-granite);
+  color: orangered;
+  text-shadow: 3px 3px darkslategray;
 }
 
 h1,
