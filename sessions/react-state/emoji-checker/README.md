@@ -10,7 +10,7 @@ You can use the following hints as a guideline:
 
 - Most importantly, you need to import a built-in React function you'll be using during this challenge.
 - You need to make sure to declare a state variable.
-- Use the existing `handleClick` functions to update the state variable.
+- Write a `handleClick` function that updates the state variable according to which emoji button was clicked. The `handleClick` function will be called in every onClick of the buttons.
 
 ## Notes
 
