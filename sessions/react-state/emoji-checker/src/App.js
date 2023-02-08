@@ -49,6 +49,7 @@ export default function App() {
       >
         Reset
       </button>
+      <h2>{code}</h2>
 
       {code === validCode && <p>Valid code!</p>}
     </div>
