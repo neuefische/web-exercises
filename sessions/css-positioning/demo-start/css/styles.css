@@ -5,66 +5,96 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
   padding: 0;
-  margin: 0;
-  background: papayawhip;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  background: #f2eddf;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .header {
-  background: deeppink;
-  color: #ffffff;
-  height: 80px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
-  padding: 10px;
   width: 100%;
-}
-
-.header__text {
-  color: white;
+  max-width: 600px;
+  margin: 0 auto;
+  background: #ff7dcb;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0px 0px 20px 30px #f2eddf;
 }
 
 .header__heading {
   margin: 0;
+  padding-inline-start: 100px;
+  color: #fff;
+  font-family: Brush Script Mt;
+  font-size: 4rem;
+  text-shadow: 3px 3px 0px #c394f2;
 }
 
-.disclaimer {
-  margin: 20px 5%;
-  margin-top: 150px;
-  border: 2px solid black;
-  padding: 1em;
+.plate {
+  text-shadow: 3px 3px 0px #ff7dcb;
 }
 
+.main {
+  padding: 100px 20px 20px 20px;
+}
 
-.disclaimer__icon {
-  width: 1em;
-  height: 1em;
-  line-height: 0.9em;
+.main__text {
+  line-height: 1.8rem;
+}
+
+.main__text:nth-child(1) {
+  margin-inline-start: 200px;
+  background: #ff7dcb;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.donut {
+  padding-inline-start: 8px;
+  font-size: 3rem;
+}
+
+.donut-text {
+  font-family: Brush Script Mt;
+  font-size: 2rem;
+  color: #c394f2;
+}
+
+.separator {
+  display: block;
+  width: 100%;
+  font-size: 3rem;
   text-align: center;
-  border: 1px solid black;
-  font-size: 3em;
-  border-radius: 0.5em;
-  background-color: red;
 }
 
-.to-top {
-  z-index: 1;
-  color: white;
-  padding: 12px 14px;
-  background: olive;
+.button {
+  appearance: none;
   border: none;
-  border-radius: 50px;
+  background: #ff7dcb;
+  padding: 10px;
+  border-radius: 10px;
 }
 
-.to-top::before {
-  content: '😋 ';
+.button__link {
+  color: #fff;
+  text-decoration: none;
 }
 
-.sticky {
-  background: deeppink;
-  color: white;
-  padding: 4px 12px;
+.footer {
+  padding: 20px;
+  color: #c394f2;
+}
+
+.info {
+  background: #c394f2;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.info__accent {
+  font-size: 2rem;
 }

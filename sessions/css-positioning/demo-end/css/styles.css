@@ -5,78 +5,113 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
   padding: 0;
-  margin: 0;
-  background: papayawhip;
+  background: #f2eddf;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .header {
-  background: deeppink;
-  color: #ffffff;
-  height: 80px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
-  padding: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
   width: 100%;
-}
-
-.header__text {
-  color: white;
+  max-width: 600px;
+  margin: 0 auto;
+  background: #ff7dcb;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0px 0px 20px 30px #f2eddf;
 }
 
 .header__heading {
+  position: relative;
   margin: 0;
+  padding-inline-start: 100px;
+  color: #fff;
+  font-family: Brush Script Mt;
+  font-size: 4rem;
+  text-shadow: 3px 3px 0px #c394f2;
 }
 
-.disclaimer {
-  position: relative;
-  margin: 20px 5%;
-  margin-top: 150px;
-  border: 2px solid black;
-  padding: 1em;
-}
-
-.disclaimer__title {
-  position: relative;
-  left: 55px;
-}
-
-.disclaimer__icon {
+.plate {
   position: absolute;
-  top: 25px;
-  width: 1em;
-  height: 1em;
-  line-height: 0.9em;
-  text-align: center;
-  border: 1px solid black;
-  font-size: 3em;
-  border-radius: 0.5em;
-  background-color: red;
+  top: 20px;
+  left: 20px;
+  text-shadow: 3px 3px 0px #ff7dcb;
 }
 
-.to-top {
-  position: fixed;
-  right: 15px;
-  top: 15px;
-  z-index: 1;
-  color: white;
-  padding: 12px 14px;
-  background: olive;
-  border: none;
-  border-radius: 50px;
+.main {
+  padding: 100px 20px 20px 20px;
 }
 
-.to-top::before {
-  content: "😋 ";
+.main__text {
+  line-height: 1.8rem;
 }
 
-.sticky {
+.main__text:nth-child(1) {
+  margin-inline-start: 200px;
+  background: #ff7dcb;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.donut {
   position: sticky;
-  top: 0;
-  background: deeppink;
-  color: white;
-  padding: 4px 12px;
+  top: 30px;
+  z-index: 1;
+  padding-inline-start: 8px;
+  font-size: 3rem;
+}
+
+.donut-text {
+  font-family: Brush Script Mt;
+  font-size: 2rem;
+  color: #c394f2;
+}
+
+.separator {
+  display: block;
+  width: 100%;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.button {
+  position: fixed;
+  left: 20px;
+  bottom: 40px;
+  appearance: none;
+  border: none;
+  background: #ff7dcb;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.button__link {
+  color: #f2eddf;
+  text-decoration: none;
+}
+
+.footer {
+  padding: 20px;
+  color: #c394f2;
+}
+
+.info {
+  position: relative;
+  background: #c394f2;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.info__accent {
+  position: absolute;
+  font-size: 2rem;
+  top: -15px;
+  left: -10px;
 }
