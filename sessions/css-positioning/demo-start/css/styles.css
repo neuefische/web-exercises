@@ -23,7 +23,7 @@ body {
   box-shadow: 0px 0px 20px 30px #f2eddf;
 }
 
-.header__heading {
+.header__headline {
   margin: 0;
   padding-inline-start: 100px;
   color: #fff;
@@ -36,15 +36,15 @@ body {
   text-shadow: 3px 3px 0px #ff7dcb;
 }
 
-.main {
+.content {
   padding: 100px 20px 20px 20px;
 }
 
-.main__text {
+.content__text {
   line-height: 1.8rem;
 }
 
-.main__text:nth-child(1) {
+.content__text:nth-child(1) {
   margin-inline-start: 200px;
   background: #ff7dcb;
   color: #fff;
@@ -88,13 +88,13 @@ body {
   color: #c394f2;
 }
 
-.info {
+.content__text--info {
   background: #c394f2;
   padding: 20px;
   border-radius: 10px;
   color: #fff;
 }
 
-.info__accent {
+.content__accent {
   font-size: 2rem;
 }
