@@ -27,7 +27,7 @@ The goal of this recap project is not necessarily to finish all features, but to
 First create a new Next.js based on our template using this command:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/templates/next art-gallery-app -i
+npx ghcd@latest spicedacademy/fs-web-exercises/tree/main/templates/next art-gallery-app
 ```
 
 Download and extract the [Resources](#resources) into your project folder.
