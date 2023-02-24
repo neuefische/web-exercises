@@ -2,7 +2,7 @@
 
 In this recap project, you are going to create a single page app for browsing all the characters of the famous tv show "Rick and Morty".
 
-You are going to work in a group. Create **only one project per group** using the ["Create the Project" guide](./README.md#create-the-project-with-starter-code) below!
+You are going to work in a group. Create **only one project per group** using the [guide in the template section](./README.md#template) below!
 
 ---
 
