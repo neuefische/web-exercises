@@ -1,0 +1,59 @@
+:root {
+  --color-nemo: #ff4a11;
+  --color-granite: #252629;
+  --color-water-10: #f3f5f9;
+  --color-foam: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: 0 auto;
+  font-family: system-ui;
+  display: grid;
+  place-items: center;
+  place-content: center;
+  gap: 50px;
+  min-height: 100vh;
+  transition: 0.4s linear;
+  background-color: transparent;
+  overflow: hidden;
+  background-color: var(--color-water-10);
+}
+
+.bg {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200vw;
+  height: 200vh;
+  background-color: var(--color-granite);
+  transform-origin: 100%;
+  /* transform: rotate(45deg); */
+}
+
+.moon {
+  z-index: -1;
+  position: absolute;
+}
+
+body.dark {
+}
+
+.icon-display {
+  font-size: 3rem;
+}
+
+.button-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
