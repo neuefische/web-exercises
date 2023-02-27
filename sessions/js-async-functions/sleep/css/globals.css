@@ -26,24 +26,9 @@ body {
   background-color: var(--color-water-10);
 }
 
-.bg {
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 200vw;
-  height: 200vh;
-  background-color: var(--color-granite);
-  transform-origin: 100%;
-  /* transform: rotate(45deg); */
-}
-
-.moon {
-  z-index: -1;
-  position: absolute;
-}
-
 body.dark {
+  background-color: var(--color-granite);
+  color: var(--color-water-10);
 }
 
 .icon-display {
@@ -56,4 +41,13 @@ body.dark {
   justify-content: center;
   align-items: center;
   gap: 30px;
+}
+
+.button-container > button {
+  padding: 14px 20px;
+  border: solid 2px hsl(0 0% 20% / 0.7);
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: hsl(0 0% 50% / 0.7);
+  color: inherit;
 }

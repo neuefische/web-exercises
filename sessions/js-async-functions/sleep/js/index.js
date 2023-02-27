@@ -6,9 +6,8 @@ const body = document.body;
 
 // --v-- code here --v--
 
-button3.addEventListener("click", () => {
+button3.addEventListener("click", async () => {
   icon.textContent = "💤";
-  body.classList.add("dark");
   sleep(3);
   icon.textContent = "⏰";
 });
