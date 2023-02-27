@@ -6,7 +6,7 @@ In this challenge you will practice to use the JS modules syntax with `export` a
 
 ### Apply random colors
 
-Open the [index.js](./index.js). You find 3 elements that are generated: A circle, a square and a pentagon. If one of the elements is clicked the color changes to gray. Let's use the `getRandomColor` function to make the elements mor colorful!
+Open the [index.js](./index.js). You find 3 elements that are generated: A circle, a square and a pentagon. If one of the elements is clicked the color changes to gray. Let's use the `getRandomColor` function to make the elements more colorful!
 
 - import the function `getRandomColor` from the [utils/randomColor.js](./utils/randomColor.js) file.
 - use the function inside all three event listeners and apply the returned color to the backgroundColor.
