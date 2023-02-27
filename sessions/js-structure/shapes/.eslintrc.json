@@ -4,20 +4,8 @@
     "es2022": true,
     "node": true
   },
-  "extends": ["plugin:react/recommended", "xo", "eslint:recommended"],
-  "parser": "@typescript-eslint/parser",
+  "extends": ["eslint:recommended"],
   "parserOptions": {
     "sourceType": "module"
-  },
-  "plugins": ["react", "@typescript-eslint", "prettier"],
-  "rules": {
-    "no-unused-vars": 0,
-    "react/prop-types": 0,
-    "react/react-in-jsx-scope": 0
-  },
-  "settings": {
-    "react": {
-      "version": "detect"
-    }
   }
 }
