@@ -15,7 +15,7 @@
         "ignoreTypes": ["/^\\$\\w+/"]
       }
     ],
-    "value-keyword-case": ["lower", {"ignoreKeywords": ["dummyValue"]}],
+    "value-keyword-case": ["lower", { "ignoreKeywords": ["dummyValue"] }],
     "selector-type-no-unknown": [
       true,
       {
