@@ -4,7 +4,7 @@ In this task we want to handle a sleep function, which can delay certain actions
 
 ## Task
 
-We have 3 buttons which should display a sleep emoji for 3, 5 and 10 seconds. After the time has passed, the Emoji should be replaced by the alarm clock. But all buttons display the alarm clock immediately.
+We have 3 buttons which should display a sleep emoji for 3, 5 and 10 seconds. After the time has passed, the emoji should be replaced by the alarm clock. But all buttons display the alarm clock immediately.
 
 ### Button 1
 
@@ -22,7 +22,7 @@ We have 3 buttons which should display a sleep emoji for 3, 5 and 10 seconds. Af
 
 Nobody can sleep with this bright display. Each button should also add the class "dark" to the `body` for the respective amount of time - and remove it afterwards.
 
-- Hint: You don't need to add any css, the dark class is already written.
+> 💡 Hint: You don't need to add any css, the dark class is already written.
 
 ## Notes
 
