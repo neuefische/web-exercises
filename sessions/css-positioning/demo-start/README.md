@@ -1,11 +1,13 @@
-# demo-start
+# CSS Positioning: Demo Start
+
+This is the starter version of the CSS Positioning demo.
 
 ## Task
 
 ## Notes
 
 - You only have to touch the [`css/styles.css`](./css/styles.css) file.
-- You find the end point for this demo in `sessions/css-positioning/demo-end`.
+- You can find the finalized version of this demo in `sessions/css-positioning/demo-end`.
 
 ## Development
 

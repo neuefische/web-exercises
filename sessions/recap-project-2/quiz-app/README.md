@@ -67,7 +67,7 @@ Users should be able to add new cards to your Quiz App. The first step is to add
 
 - Create a new HTML document called `form.html`
 - Add the page to the navigation of your Quiz App
-- Within `from.html` create a form with the following fields
+- Within `form.html` create a form with the following fields
   - "Your question" as `<textarea />`
   - "Your answer" as `<textarea />`
   - "Tag" as `<input type="text" />`

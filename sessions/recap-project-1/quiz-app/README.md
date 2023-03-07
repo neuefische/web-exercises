@@ -10,7 +10,7 @@ able to:
 
 ❗️ You don't have to worry about how to toggle answers or bookmarks, we will work on that in a
 later project. But make sure you include the answer texts and bookmark buttons in your app. (You
-might want to look up the "hidden" attribute)
+might want to look up the "hidden" attribute.)
 
 ## 1. Setup
 
@@ -18,8 +18,9 @@ Start by:
 
 - Creating a new folder for your project.
 - Initialize a local git repository.
+- Create a `.gitignore` file and add `.DS_Store` to the file.
 - Create a remote repository and connect it to the local repository.
-- Create the index.html and styles.css files.
+- Create the `index.html` and `styles.css` files.
 - Make sure the CSS file is loaded in the HTML document.
 
 ## 2. Home Page
@@ -50,14 +51,14 @@ why the first step to success is to start with the homepage.
 The second page is the bookmarks page.
 
 - Create a new file called 'bookmarks.html'.
-- Add content to the page. You can copy content of the index.html to save time.
+- Add content to the page. You can copy content of the `index.html` to save time.
 - Make sure that only bookmarked questions are on this page.
-- Update the Navbar so that the bookmark icon is highlighted.
-- Link the two pages via the anchor elements. (Also on the home page).
+- Update the navbar so that the bookmark icon is highlighted.
+- Link the two pages via the anchor elements. (Also on the homepage).
 
 ## Extra: Profile Page
 
-Create the Profile Page in the same way you created the other two pages.
+Create the profile page in the same way you created the other two pages.
 
 - Create a new file `profile.html`.
 - Add content to the page.

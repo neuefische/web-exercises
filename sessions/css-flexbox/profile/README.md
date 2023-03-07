@@ -1,8 +1,18 @@
-# profile
+# CSS Flexbox: Profile
 
 ## Task
 
-- Open the [`css/styles.css`](./css/styles.css) file and follow the instructions given there.
+Utilize what you've learned about flexbox to complete the following tasks:
+
+1. The profile section contains a level 2 heading, an image and an about text.
+
+- [ ] The image should be centered.
+
+2. The "Tech Stack" list needs to be polished.
+
+- [ ] The list items are currently following the normal flow of the document, but they should be packed horizontally rather than stacked vertically.
+- [ ] There should be a gap of at least 10px between every "Tech Stack" entry.
+- [ ] The list items should wrap to the next line, if there is not enough horizontal space.
 
 ## Notes
 

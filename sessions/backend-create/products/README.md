@@ -52,7 +52,7 @@ Switch to [`components/ProductForm/index.js`](./components/ProductForm/index.js)
 
 - There already is a `handleSubmit` function which creates a `productData` object with all relevant data.
 
-Your task is to write a fetch for you newly created `POST` route and send the data to your database.
+Your task is to write a fetch for your newly created `POST` route and send the data to your database.
 
 - Fetch the route `"/api/products"`; `await` the return value and save it in a variable called `response`.
 - As a second argument, pass an object to the `fetch()` method which contains
@@ -66,16 +66,17 @@ Your task is to write a fetch for you newly created `POST` route and send the da
 method: "POST",
 headers: {
   "Content-Type": "application/json",
-}
+  },
 body: JSON.stringify(productData),
+}
 ```
 
 Before handling the `response`,
 
 - go to the top of the file and import `useSWR` from `swr`;
-- within the function body of the `ProductForm` (but not inside of the `onSubmit` function), add `const products = useSWR("/api/products");` to get access to `/api/products`.
+- within the function body of the `ProductForm` (but not inside of the `handleSubmit` function), add `const products = useSWR("/api/products");` to get access to `/api/products`.
 
-Now, expand the `onSubmit` function:
+Now, expand the `handleSubmit` function:
 
 - If the `response` is `ok`,
   - _wait_ for the `response` and use its `.json()` method to produce a JavaScript object;
