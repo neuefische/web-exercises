@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import useSWR from "swr";
 import Button from "../Button";
+import { useState } from "react";
 
 const StyledForm = styled.form`
   display: flex;
@@ -9,38 +9,28 @@ const StyledForm = styled.form`
   margin-block-start: 2rem;
 `;
 
-export default function JokeForm() {
-  const jokes = useSWR("/api/jokes");
-
-  async function handleSubmit(event) {
-    event.preventDefault();
-
-    const formData = new FormData(event.target);
-    const jokeData = Object.fromEntries(formData);
-
-    const response = await fetch("/api/jokes", {
-      method: "POST",
-      body: JSON.stringify(jokeData),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
-
-    if (response.ok) {
-      await response.json();
-      jokes.mutate();
-      event.target.reset();
-    } else {
-      console.error(`Error: ${response.status}`);
-    }
-  }
+export default function JokeForm({ onSubmit, value, isEditMode }) {
+  const [joke, setJoke] = useState(value);
 
   return (
-    <StyledForm onSubmit={handleSubmit}>
-      <label htmlFor="joke-input">Submit Joke</label>
-      <input type="text" id="joke-input" name="joke" />
-      <Button width="fit-content" type="submit">
-        Submit
+    <StyledForm
+      onSubmit={(event) => {
+        onSubmit(event);
+        setJoke("");
+      }}
+    >
+      <label htmlFor="joke-input">
+        {isEditMode ? "Edit Joke" : "Submit Joke"}
+      </label>
+      <input
+        type="text"
+        id="joke-input"
+        name="joke"
+        value={joke}
+        onChange={(event) => setJoke(event.target.value)}
+      />
+      <Button type="submit" width="fit-content">
+        {isEditMode ? "Edit" : "Submit"}
       </Button>
     </StyledForm>
   );

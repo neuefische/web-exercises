@@ -1,7 +1,7 @@
-import useSWR from "swr";
 import Button from "../Button";
 import { StyledList } from "../StyledList";
 import { StyledListItem } from "../StyledListItem";
+import useSWR from "swr";
 import { useRouter } from "next/router";
 
 export default function JokeList() {
@@ -17,8 +17,8 @@ export default function JokeList() {
       {data.map((joke) => (
         <StyledListItem key={joke._id}>
           <Button
-            width="100%"
             type="button"
+            width="100%"
             onClick={() => router.push(`/${joke._id}`)}
           >
             {joke.joke}
