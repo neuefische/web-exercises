@@ -37,6 +37,8 @@ section {
   flex-wrap: wrap;
   gap: 32px;
   padding: 16px;
+  width: min(1000px, 100%);
+  margin: 0 auto;
 }
 
 article {
