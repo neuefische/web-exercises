@@ -1,0 +1,83 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui;
+}
+
+header {
+  background: rgb(37 38 41 / 100%);
+  height: 100px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  line-height: 100px;
+  margin: 0;
+}
+
+strong {
+  color: #ff4a11;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+}
+
+article {
+  flex: 1 200px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+figure {
+  max-width: min(100%, 400px);
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 10px;
+  background-color: #ff4a11;
+  border-radius: 4px;
+}
+
+figcaption {
+  color: rgb(255 255 255);
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+}
+
+a {
+  display: inline-block;
+  font-size: smaller;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: hsl(14 100% 53%);
+  color: white;
+}
+
+mark {
+  background-color: rgb(255 74 17);
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+::selection {
+  background-color: #252629;
+  color: #ff4a11;
+}
