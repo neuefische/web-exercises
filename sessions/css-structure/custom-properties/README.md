@@ -1,6 +1,6 @@
 # CSS Structure: Custom Properties
 
-The CSS Code in this challenge has multiple references to three different colors. Make use of custom properties (variables) to extract them.
+The CSS code in this challenge has multiple references to three different colors. Make use of custom properties (variables) to extract them.
 
 ## Task
 
@@ -12,7 +12,7 @@ Create a new `:root` selector and define three custom properties (variables) for
 - "nemo" for the orange
 - "foam" for the white
 
-> 💡 Use a consistent `--color-<name>` naming for you properties and make sure that all colors use the same syntax (e.g. hex `#ffffff`).
+> 💡 Use a consistent `--color-<name>` naming for your properties and make sure that all colors use the same syntax (e.g. hex `#ffffff`).
 
 Replace all references to the colors with the custom properties (variables).
 
