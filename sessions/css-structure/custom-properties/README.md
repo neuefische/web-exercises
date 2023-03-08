@@ -14,7 +14,9 @@ Create a new `:root` selector and define three custom properties (variables) for
 
 > 💡 Use a consistent `--color-<name>` naming for your properties and make sure that all colors use the same syntax (e.g. hex `#ffffff`).
 
-Replace all references to the colors with the custom properties (variables).
+Replace all references to the colors with the custom properties (variables) you have created.
+
+Make sure that everything still looks the same as before.
 
 > 💡 Use the [CSS Variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) (`var()`) syntax.
 
@@ -22,7 +24,7 @@ Switch to the [`css/styles.css`](./css/styles.css) file create some custom prope
 
 ## Bonus
 
-Check the stylesheet for other values that might warrant extraction. Some prime examples may include the border radius of `4px` but you might find other things, too.
+Check the stylesheet for other values that might warrant extraction. Some prime examples may include the border radius of `4px` but you might find other things, too (maybe letter spacing, spaces [8px, 16px, …], …).
 
 > 💡 Not everything should be a custom property. Only extract values that are used multiple times and that might change together.
 
