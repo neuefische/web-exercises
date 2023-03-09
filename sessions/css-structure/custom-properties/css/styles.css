@@ -51,8 +51,8 @@ img {
 }
 
 figure {
-  max-width: min(100%, 400px);
-  display: inline-flex;
+  width: min(100%, 400px);
+  display: flex;
   flex-direction: column;
   gap: 10px;
   margin: 0;

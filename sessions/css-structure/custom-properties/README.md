@@ -6,13 +6,14 @@ The CSS code in this challenge has multiple references to three different colors
 
 Check the [`css/styles.css`](./css/styles.css) file and find the three colors that are used multiple times. Unfortunately not all references to the same color use the same syntax.
 
-Create a new `:root` selector and define three custom properties (variables) for the three colors. Use the following names:
+Create a new `:root` selector and define three custom properties (variables) for the three colors. Use the following property names:
 
-- "granite" for the dark gray
-- "nemo" for the orange
-- "foam" for the white
+- "--color-granite" for the dark gray
+- "--color-nemo" for the orange
+- "--color-foam" for the white
 
-> 💡 Use a consistent `--color-<name>` naming for your properties and make sure that all colors use the same syntax (e.g. hex `#ffffff`).
+> 💡 Use a consistent `--color-<name>` naming for your properties.  
+> Make sure that all colors use the same syntax (e.g. hex `#ffffff` or `rgb()`).
 
 Replace all references to the colors with the custom properties (variables) you have created.
 
