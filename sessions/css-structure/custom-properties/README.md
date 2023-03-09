@@ -25,9 +25,9 @@ Switch to the [`css/styles.css`](./css/styles.css) file create some custom prope
 
 ## Bonus
 
-Check the stylesheet for other values that might warrant extraction. Some prime examples may include the border radius of `4px` but you might find other things, too (maybe letter spacing, spaces [8px, 16px, …], …).
+Check the stylesheet for other values that might warrant extraction. One example may be the border radius of `4px`. But you might find other things, too like letter spacing, spaces (8px, 16px, 32px), etc..
 
-> 💡 Not everything should be a custom property. Only extract values that are used multiple times and that might change together.
+> 💡 Not everything should be a custom property. Only extract values that are **used multiple times** and that might **change together**.
 
 > 💡 It's good practice to name your custom properties (variables) in a way that makes it clear what they are used for. For example, if you have a custom property for the border radius, you might call it `--border-radius-small`, etc..
 
