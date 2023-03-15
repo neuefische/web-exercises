@@ -7,9 +7,12 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
+  :root {
+    --primary-color: #933d3d
+  }
+
   body {
     margin: 0;
     font-family: system-ui;
-    background: #fff;
   }
 `;

@@ -1,29 +1,39 @@
+import Navigation from "./Navigation/index.js";
 import styled from "styled-components";
+import { useEffect, useRef } from "react";
+import { useRouter } from "next/router.js";
+import Head from "next/head.js";
 
-const AppWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+const Wrapper = styled.div`
   height: 100vh;
+  display: grid;
+  grid-template-rows: 5rem auto 4rem;
 `;
 
 const Main = styled.main`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-block-end: 5vh;
-  height: 100%;
+  overflow-y: scroll;
 `;
 
-import Navigation from "./Navigation";
+const Headline = styled.h1`
+  text-align: center;
+`;
 
-function Layout({ children }) {
+export default function Layout({ children }) {
+  const { pathname } = useRouter();
+  const scrollRef = useRef();
+
+  useEffect(() => {
+    scrollRef.current.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
-    <AppWrapper>
-      <Main>{children}</Main>
+    <Wrapper>
+      <Head>
+        <title>Art Gallery</title>
+      </Head>
+      <Headline>Art Gallery</Headline>
+      <Main ref={scrollRef}>{children}</Main>
       <Navigation />
-    </AppWrapper>
+    </Wrapper>
   );
 }
-
-export default Layout;

@@ -1,60 +1,73 @@
 import GlobalStyle from "../styles";
 import useSWR from "swr";
 import Layout from "../components/Layout.js";
-import { useImmerLocalStorageState } from "../lib/hook/useImmerLocalStorageState";
+import { useImmerLocalStorageState } from "../lib/hook/useImmerLocalStorageState.js";
 
-const fetcher = (url) => fetch(url).then((res) => res.json());
+const fetcher = async (...args) => {
+  const response = await fetch(...args);
+  if (!response.ok) {
+    throw new Error(`Request with ${JSON.stringify(args)} failed.`);
+  }
+  return await response.json();
+};
 
 export default function App({ Component, pageProps }) {
-  const [artPiecesInfo, updateArtPiecesInfo] = useImmerLocalStorageState(
-    "artPiecesInfo",
-    { defaultValue: [] }
-  );
-  const { data, error } = useSWR(
-    `https://example-apis.vercel.app/api/art`,
+  const { data, isLoading, error } = useSWR(
+    "https://example-apis.vercel.app/api/art",
     fetcher
   );
-
-  if (error) return "An error has occurred.";
-  if (!data) return "Loading...";
+  const [artPiecesInfo, setArtPiecesInfo] = useImmerLocalStorageState(
+    "art-pieces-info",
+    { defaultValue: [] }
+  );
 
   function handleToggleFavorite(slug) {
-    updateArtPiecesInfo((draft) => {
-      const info = draft.find((info) => info.slug === slug);
-      if (info) {
-        info.isFavorite = !info.isFavorite;
-      } else {
-        draft.push({ slug, isFavorite: true });
-      }
-    });
+    const artPiece = artPiecesInfo.find((piece) => piece.slug === slug);
+    if (artPiece) {
+      setArtPiecesInfo(
+        artPiecesInfo.map((pieceInfo) =>
+          pieceInfo.slug === slug
+            ? { slug, isFavorite: !pieceInfo.isFavorite }
+            : pieceInfo
+        )
+      );
+    } else {
+      setArtPiecesInfo([...artPiecesInfo, { slug, isFavorite: true }]);
+    }
   }
 
-  function handleSubmitComment(newComment, slug) {
-    updateArtPiecesInfo((draft) => {
-      const info = draft.find((info) => info.slug === slug);
-      if (info) {
-        if (!info.comments) {
-          info.comments = [];
-        }
-        info.comments.push(newComment);
-      } else {
-        draft.push({ slug, comments: [newComment] });
-      }
-    });
+  function addComment(slug, newComment) {
+    const artPiece = artPiecesInfo.find((piece) => piece.slug === slug);
+    if (artPiece) {
+      setArtPiecesInfo(
+        artPiecesInfo.map((pieceInfo) => {
+          if (pieceInfo.slug === slug) {
+            return pieceInfo.comments
+              ? { ...pieceInfo, comments: [...pieceInfo.comments, newComment] }
+              : { ...pieceInfo, comments: [newComment] };
+          } else {
+            return pieceInfo;
+          }
+        })
+      );
+    } else {
+      setArtPiecesInfo([
+        ...artPiecesInfo,
+        { slug, isFavorite: false, comments: [newComment] },
+      ]);
+    }
   }
 
   return (
-    <>
+    <Layout>
       <GlobalStyle />
-      <Layout>
-        <Component
-          {...pageProps}
-          handleSubmitComment={handleSubmitComment}
-          pieces={data}
-          artPiecesInfo={artPiecesInfo}
-          handleToggleFavorite={handleToggleFavorite}
-        />
-      </Layout>
-    </>
+      <Component
+        {...pageProps}
+        pieces={isLoading || error ? [] : data}
+        artPiecesInfo={artPiecesInfo}
+        onToggleFavorite={handleToggleFavorite}
+        addComment={addComment}
+      />
+    </Layout>
   );
 }
