@@ -3,7 +3,7 @@ export function Country(props) {
   countryElement.className = "country";
 
   const img = document.createElement("img");
-  img.src = `https://countryflagsapi.com/png/${props.code}`;
+  img.src = `https://flagcdn.com/160x120/${props.code.toLowerCase()}.png`;
   img.alt = `Flag of ${props.name}`;
 
   const name = document.createElement("p");
