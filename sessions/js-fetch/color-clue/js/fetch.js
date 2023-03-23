@@ -14,7 +14,7 @@ export async function fetchNewColor() {
    * Call the `setColorToGuess` function to set the color to guess.
    * The function takes two arguments:
    *  - the hex code of the closest named color
-   *  - and the name of random color
+   *  - and the name of the random color
    */
 
   // --v-- your code here --v--
