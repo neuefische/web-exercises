@@ -59,7 +59,7 @@ test('getPeopleNamesOlderThan() returns an array of people full names older than
 test("getPeopleByLastName() returns an array of people of a certain lastName", () => {});
 
 // Hint: use Array.prototype.find for the implementation
-test("getPersonById() returns the full object of a person", () => {});
+test("findPersonById() returns the full object of a person", () => {});
 
 // Hint: implementation should use Array.prototype.some
 test("isAnyoneOlderThan() returns true if any person is older than the given age", () => {});
