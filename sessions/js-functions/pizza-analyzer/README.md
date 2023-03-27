@@ -18,7 +18,7 @@ First, we want to calculate the difference of the two pizza areas for two given 
    > 💡 You can use the queried elements and get their value like this: `pizzaInput.value`
 6. Now call the function and pass in the two pizza sizes as the arguments.
 
-### 2 Change pizza dipslay sizes
+### 2 Change the Pizza Display Sizes
 
 Great! Now we know how much pizza we gain if we choose the second pizza. But we don't have any visual relations between these two numbers. So lets adapt the pizza displays.
 
