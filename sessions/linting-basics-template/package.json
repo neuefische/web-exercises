@@ -1,0 +1,30 @@
+{
+  "name": "web-linting-basics-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run htmlhint && npm run prettier:check && npm run eslint",
+    "fix": "npm run htmlhint && npm run prettier:write && npm run eslint",
+    "htmlhint": "npx htmlhint \"**/*.html\"",
+    "prettier:check": "npx prettier --check .",
+    "prettier:write": "npx prettier --write .",
+    "eslint": "npx eslint \"**/*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spiced-academy/fs-linting-basics-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spiced-academy/fs-linting-basics-template/issues"
+  },
+  "homepage": "https://github.com/spiced-academy/fs-linting-basics-template#readme",
+  "devDependencies": {
+    "eslint": "^8.16.0",
+    "htmlhint": "^1.1.4",
+    "prettier": "^2.6.2"
+  }
+}

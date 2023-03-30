@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: transform .2s ease-in-out;
+}
