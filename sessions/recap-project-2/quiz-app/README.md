@@ -91,7 +91,7 @@ displayed as a **card** like the other questions.
 > ❗️ For now the new **card** should be displayed directly below the form. Adding the **card** to
 > the list of the other cards is a topic for later.
 
-> **Note:** We recommend to create a new JavaScript file and use this for your form page. Otherwise you might get error messages because some HTML elements do not exist on the form page for which you have added event listeners for your other pages.
+> **Note:** To avoid error messages, we recommend creating a new JavaScript file specifically for your form page. This ensures that any event listeners you've added for other pages won't cause problems with HTML elements that aren't present on the form page.
 
 ### 4. Form field text counter
 
