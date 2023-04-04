@@ -33,7 +33,7 @@ main {
  *
  * @example
  * .box--top-left -> This element should be be placed in the top, left corner.
- */
+*/
 
 .box--top-left {
   background-color: #aed6f1;
