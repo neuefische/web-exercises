@@ -1,0 +1,10 @@
+{
+  "name": "css-structure_custom-properties",
+  "version": "0.0.0-unreleased",
+  "description": "CSS Structure: Custom Properties",
+  "main": "index.html",
+  "nf": {
+    "template": "html-css-static"
+  },
+  "private": true
+}

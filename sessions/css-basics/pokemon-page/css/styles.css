@@ -52,10 +52,10 @@ section {
 
 /* Task 6: The headings of our sections somehow look boring. Therefore, we want to change this:
 
-- We want an underlined title. The underline should be 3px solid with the color "gold".
-- There should be some space between the characters and the underline.
-- The underline should end with the last character of the title. Hint: If you don't know how to do this, think about the display property.
-- Bonus: The color of the underline of "Favourite Pokémon" should be "orange". Hint: You may need another CSS rule.
+- We want a border to the left and the right of the title only. The border should be 3px solid with the color "gold".)
+- There should be some space between the characters and the border.
+- The right border should end with the last character of the title. Hint: If you don't know how to do this, think about the display property.
+- Bonus: The color of the border of "Favourite Pokémon" should be "orange". Hint: You may need another CSS rule.
 */
 
 .subtitle {

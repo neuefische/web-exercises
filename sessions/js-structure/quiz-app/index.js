@@ -168,7 +168,7 @@ function Card(props) {
     cards.find((card) => card.question === props.question).isBookmarked =
       !props.isBookmarked;
     // To prevent the need to rerender, we can just toggle the class here
-    event.target.classList.toggle("bookmark--active");
+    event.currentTarget.classList.toggle("bookmark--active");
   }
 
   const bookmarkButton = Bookmark({
