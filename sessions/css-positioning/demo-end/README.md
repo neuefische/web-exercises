@@ -1,10 +1,6 @@
-# demo-end
+# CSS Positioning: Demo End
 
-## Task
-
-## Notes
-
-- You only have to touch the [`index.html`](./index.html) file.
+This is the finalized version of the CSS Positioning demo.
 
 ## Local development
 

@@ -32,7 +32,6 @@ body {
   padding: 1rem;
   margin: 0 0 2rem 0;
   background-color: rgb(186, 234, 246);
-  border-radius: 6px;
 }
 
 .fish__headline {
@@ -45,5 +44,4 @@ body {
   padding: 1rem;
   margin: 0 0 2rem 0;
   background-color: rgb(186, 234, 246);
-  border-radius: 6px;
 }
