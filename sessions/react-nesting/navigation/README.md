@@ -72,11 +72,11 @@ You should now have an `App` component returning only your custom components (be
 To check, you App.js file should look something like this now:
 
 ```js
-import { Avatar } from "./components/Avatar";
-import { Header } from "./components/Header";
-import { Link } from "./components/Link";
-import { Logo } from "./components/Logo";
-import { Navigation } from "./components/Navigation";
+import Header from "./components/Header";
+import Avatar from "./components/Avatar";
+import Logo from "./components/Logo";
+import Navigation from "./components/Navigation";
+import Link from "./components/Link";
 import "./styles.css";
 
 export default function App() {
