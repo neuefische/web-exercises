@@ -5,11 +5,11 @@ import * as launchSequence from "./launchSequence.js";
 const launchSequenceFunction = launchSequence?.default;
 
 beforeEach(() => {
-  global.rocket = getNewRocket();
+  window.rocket = getNewRocket();
 });
 
 afterEach(() => {
-  delete global.rocket;
+  delete window.rocket;
 });
 
 test("The default export of launchSequence.js is a function", () => {
