@@ -29,7 +29,7 @@
     "jest": "^29.3.1",
     "jest-environment-jsdom": "^29.3.1"
   },
-  "description": "Backend Create: Demo Start",
+  "description": "Backend Update and Delete: Demo End",
   "nf": {
     "template": "next"
   }
