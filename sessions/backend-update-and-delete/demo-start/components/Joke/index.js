@@ -7,7 +7,6 @@ export default function Joke() {
   const [isEditMode, setIsEditMode] = useState(false);
   const router = useRouter();
   const { id } = router.query;
-  const { push } = router;
 
   const { data, isLoading } = useSWR(id ? `/api/jokes/${id}` : null);
 
@@ -17,11 +16,11 @@ export default function Joke() {
 
   async function handleDelete() {}
 
-  if (!data) return;
-
   if (isLoading) {
     return <h1>Loading...</h1>;
   }
+
+  if (!data) return;
 
   return (
     <>
@@ -50,7 +49,7 @@ export default function Joke() {
           isEditMode={isEditMode}
         />
       )}
-      <button type="button" onClick={() => push("/")}>
+      <button type="button" onClick={() => router.push("/")}>
         Back to all
       </button>
     </>

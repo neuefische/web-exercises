@@ -22,9 +22,9 @@ export default function Joke() {
   const [isEditMode, setIsEditMode] = useState(false);
   const router = useRouter();
   const { id } = router.query;
-  const { push } = router;
 
   const { data, isLoading } = useSWR(id ? `/api/jokes/${id}` : null);
+
   const { trigger, isMutating } = useSWRMutation(
     `/api/jokes/${id}`,
     sendRequest
@@ -47,7 +47,7 @@ export default function Joke() {
       return;
     }
 
-    push("/");
+    router.push("/");
   }
 
   if (!data) return;
@@ -83,7 +83,7 @@ export default function Joke() {
           isEditMode={isEditMode}
         />
       )}
-      <button type="button" onClick={() => push("/")}>
+      <button type="button" onClick={() => router.push("/")}>
         Back to all
       </button>
     </>
