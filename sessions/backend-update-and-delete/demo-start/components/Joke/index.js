@@ -50,12 +50,7 @@ export default function Joke() {
           isEditMode={isEditMode}
         />
       )}
-      <button
-        type="button"
-        width="fit-content"
-        margin="2rem 0 0 0"
-        onClick={() => push("/")}
-      >
+      <button type="button" onClick={() => push("/")}>
         Back to all
       </button>
     </>

@@ -1,5 +1,3 @@
-import useSWRMutation from "swr/mutation";
-
 export default function JokeForm({ value, onSubmit, isEditMode }) {
   return (
     <form action="" onSubmit={onSubmit}>
