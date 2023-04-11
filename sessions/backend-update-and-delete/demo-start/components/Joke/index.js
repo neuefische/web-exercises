@@ -1,15 +1,21 @@
 import useSWR from "swr";
-import Button from "../Button";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import JokeForm from "../JokeForm";
 
-export default function Joke({ onSubmit, onDelete }) {
+export default function Joke() {
   const [isEditMode, setIsEditMode] = useState(false);
   const router = useRouter();
   const { id } = router.query;
+  const { push } = router;
 
   const { data, isLoading } = useSWR(id ? `/api/jokes/${id}` : null);
+
+  function handleEdit(event) {
+    event.preventDefault();
+  }
+
+  async function handleDelete() {}
 
   if (!data) return;
 
@@ -22,37 +28,36 @@ export default function Joke({ onSubmit, onDelete }) {
       <small>ID: {id}</small>
       <h1>{data.joke} </h1>
       <div>
-        <Button
+        <button
           onClick={() => {
             setIsEditMode(!isEditMode);
           }}
-          disabled={isEditMode}
         >
           <span role="img" aria-label="A pencil">
             ✏️
           </span>
-        </Button>
-        <Button onClick={onDelete} disabled={isEditMode}>
+        </button>
+        <button onClick={handleDelete} disabled={isEditMode}>
           <span role="img" aria-label="A cross indicating deletion">
             ❌
           </span>
-        </Button>
+        </button>
       </div>
       {isEditMode && (
         <JokeForm
-          onSubmit={onSubmit}
+          onSubmit={handleEdit}
           value={data.joke}
           isEditMode={isEditMode}
         />
       )}
-      <Button
+      <button
         type="button"
         width="fit-content"
         margin="2rem 0 0 0"
-        onClick={() => router.push("/")}
+        onClick={() => push("/")}
       >
         Back to all
-      </Button>
+      </button>
     </>
   );
 }
