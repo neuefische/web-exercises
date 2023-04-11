@@ -77,11 +77,7 @@ export default function Joke() {
         </button>
       </div>
       {isEditMode && (
-        <JokeForm
-          onSubmit={handleEdit}
-          value={data.joke}
-          isEditMode={isEditMode}
-        />
+        <JokeForm onSubmit={handleEdit} value={data.joke} isEditMode={true} />
       )}
       <button type="button" onClick={() => router.push("/")}>
         Back to all

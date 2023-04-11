@@ -28,6 +28,7 @@ export default function HomePage() {
 
     trigger(jokeData);
   }
+
   return (
     <>
       <JokeForm onSubmit={handleSubmit} value="" />
