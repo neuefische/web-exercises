@@ -37,8 +37,8 @@ Switch to [`pages/api/products/index.js`](./pages/api/products/index.js) and wri
 - Use a `try...catch` block.
 - Try to:
   - Save the product data submitted by the form - accessible in `request.body` - to a variable called `productData`.
-  - Pass the `productData` a `new Product(data_goes_here)` and save it in a variable called `product`.
-  - _Wait_ until the new product was saved in the database with `product.save()`.
+  - use `Product.create` with the `productData` to create a new document in our collection.
+  - _Wait_ until the new product was saved.
   - Respond with a status `201` and the message `{ status: "Product created." }`.
 - If an error occurs:
   - Log the error to the console.
@@ -52,9 +52,11 @@ Switch to [`components/ProductForm/index.js`](./components/ProductForm/index.js)
 
 - There already is a `handleSubmit` function which creates a `productData` object with all relevant data.
 
-Your task is to write a fetch for your newly created `POST` route and send the data to your database.
+Your task is to use `useSWRMutation` with your newly created `POST` route and send the data to your database.
 
-- Fetch the route `"/api/products"`; `await` the return value and save it in a variable called `response`.
+- call `useSWRMutation` in your `JokeForm` component with the API endpoint and `sendRequest` as the arguments.
+- write the function `sendRequest` which calls `fetch`
+  > 💡 Hint: have a look at the handout if you get stuck here.
 - As a second argument, pass an object to the `fetch()` method which contains
   - the `method` set to `POST`,
   - the `body` set the `JSON.stringify()` of `productData`, and
@@ -67,21 +69,14 @@ method: "POST",
 headers: {
   "Content-Type": "application/json",
   },
-body: JSON.stringify(productData),
+body: JSON.stringify(arg),
 }
 ```
 
-Before handling the `response`,
-
-- go to the top of the file and import `useSWR` from `swr`;
-- within the function body of the `ProductForm` (but not inside of the `handleSubmit` function), add `const products = useSWR("/api/products");` to get access to `/api/products`.
-
 Now, expand the `handleSubmit` function:
 
-- If the `response` is `ok`,
-  - _wait_ for the `response` and use its `.json()` method to produce a JavaScript object;
-  - use `products.mutate()` to trigger a new `GET` request for all products (otherwise, the newly added product will not be displayed until you reload manually),
-  - reset the form with the `event.target` interface.
+- use the `trigger` function received from the `useSWRMutation` hook and pass the received data to it.
+- If the `response` is `ok`, reset the form with the `event.target` interface.
 - If the `response` is not `ok`, log the `response.status` as an error to the console.
 
 Open [`localhost:3000/`](http://localhost:3000/) in your browser, submit a new fish and be happy about your shop being expanded!
