@@ -50,11 +50,11 @@ export default function Joke() {
     router.push("/");
   }
 
-  if (!data) return;
-
   if (isLoading || isMutating) {
     return <h1>Loading...</h1>;
   }
+
+  if (!data) return;
 
   return (
     <>
