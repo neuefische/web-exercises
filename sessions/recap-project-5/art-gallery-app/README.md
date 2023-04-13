@@ -325,7 +325,7 @@ export default function App({ Component, pageProps }) {
 
 - [ ] Pass the `colors` given by the API to the `ArtPieceDetails` component 🖼️
 - [ ] Use the color hex-code in a styled component to render an element with this color as background
-- [ ] All acceptance criteria marked with 🖼️ are covered by component testing
+- [ ] ~~All acceptance criteria marked with 🖼️ are covered by component testing
 
 ---
 
