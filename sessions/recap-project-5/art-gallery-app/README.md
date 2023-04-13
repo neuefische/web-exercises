@@ -60,7 +60,7 @@ Download and extract the [Resources](#resources) into your project folder.
 - [ ] `ArtPieces` props: `pieces`
 - [ ] Create the component `ArtPiecePreview`
 - [ ] `ArtPiecePreview` props: `image`, `title`, `artist`
-- [ ] ~~All acceptance criteria marked with 🖼️ are covered by component testing~~
+- [ ] All acceptance criteria marked with 🖼️ are covered by component testing
 
 ---
 
@@ -85,7 +85,7 @@ Download and extract the [Resources](#resources) into your project folder.
 - [ ] Write function to pick one art piece [at random](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random#examples)
 - [ ] Create the component `Spotlight`
 - [ ] `Spotlight` props: `image`, `artist`
-- [ ] ~~All acceptance criteria marked with 🖼️ are covered by component testing~~
+- [ ] All acceptance criteria marked with 🖼️ are covered by component testing
 
 ---
 
@@ -115,7 +115,7 @@ Download and extract the [Resources](#resources) into your project folder.
 - [ ] Create the component `Navigation` that renders all navigation links
 - [ ] Create the component `Layout` that renders the `Navigation` component
 - [ ] Apply the `Layout` component in `pages/_app`
-- [ ] ~~All acceptance criteria marked with 🖼️ are covered by component testing~~
+- [ ] All acceptance criteria marked with 🖼️ are covered by component testing
 
 ---
 
@@ -147,11 +147,11 @@ Download and extract the [Resources](#resources) into your project folder.
 - [ ] Create the page `pages/art-pieces/[slug]` that renders `ArtPieceDetails`
 - [ ] Read the query parameter `slug` from `next/router`
 - [ ] Use the `slug` to find the art piece to display
-- [ ] ~~All acceptance criteria marked with 🖼️ are covered by component testing
+- [ ] All acceptance criteria marked with 🖼️ are covered by component testing
 
 ---
 
-### Bonus: User Story 5: Favorites
+### User Story 5: Favorites
 
 #### Value Proposition
 
@@ -178,11 +178,11 @@ Download and extract the [Resources](#resources) into your project folder.
 - [ ] Create the component `FavoriteButton`
 - [ ] `FavoriteButton` props: `isFavorite`, `onToggleFavorite`
 - [ ] Render the `FavoriteButton` component in the `Spotlight`, `ArtPiecePreview` and `ArtPieceDetails` component
-- [ ] ~~All acceptance criteria marked with 🖼️ are covered by component testing~~
+- [ ] All acceptance criteria marked with 🖼️ are covered by component testing
 
 ---
 
-### Bonus: User Story 6: Favorite Listing Page
+### User Story 6: Favorite Listing Page
 
 #### Value Proposition
 
@@ -211,7 +211,7 @@ Download and extract the [Resources](#resources) into your project folder.
 
 ---
 
-### Extra Bonus: User Story 7: Comments for Art Pieces
+### User Story 7: Comments for Art Pieces
 
 #### Value Proposition
 
@@ -237,11 +237,11 @@ Download and extract the [Resources](#resources) into your project folder.
 - [ ] `CommentForm` props: `onSubmitComment`
 - [ ] Create a `Comments` components
 - [ ] `Comments` props: `comments`
-- [ ] ~~All acceptance criteria marked with 🖼️ are covered by component testing~~
+- [ ] All acceptance criteria marked with 🖼️ are covered by component testing
 
 ---
 
-### Hyper Bonus: User Story 8: Persist Favorites and Comments in the Browser
+### User Story 8: Persist Favorites and Comments in the Browser
 
 #### Value Proposition
 
@@ -306,7 +306,7 @@ export default function App({ Component, pageProps }) {
 
 ---
 
-### Extra Bonus: User Story 9: Show Color Palette
+### User Story 9: Show Color Palette
 
 #### Value Proposition
 
@@ -325,7 +325,7 @@ export default function App({ Component, pageProps }) {
 
 - [ ] Pass the `colors` given by the API to the `ArtPieceDetails` component 🖼️
 - [ ] Use the color hex-code in a styled component to render an element with this color as background
-- [ ] ~~All acceptance criteria marked with 🖼️ are covered by component testing
+- [ ] All acceptance criteria marked with 🖼️ are covered by component testing
 
 ---
 
