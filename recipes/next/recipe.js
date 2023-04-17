@@ -3,7 +3,20 @@ export default {
   description: "Next.js (incl. Styled Components and Jest)",
   cmd: [
     "npx",
-    ["create-next-app@latest", "--js", "--eslint", "--use-npm", "."],
+    [
+      "-y",
+      "create-next-app@latest",
+      "--js",
+      "--eslint",
+      "--use-npm",
+      "--no-tailwind",
+      "--no-src-dir",
+      "--no-experimental-app",
+      "--import-alias",
+      "@/*",
+      ".",
+      "my-app",
+    ],
   ],
   async beforeFiles({ cwd, spinner }) {
     spinner.text = "Installing Next.js Font…";
@@ -73,6 +86,7 @@ async function deleteUnnecessaryFiles({ cwd }) {
   const { join } = await import("node:path");
 
   await fs.rm(join(cwd, "public", "vercel.svg"), { force: true });
+  await fs.rm(join(cwd, "public", "next.svg"), { force: true });
   await fs.rm(join(cwd, "styles"), { force: true, recursive: true });
   await fs.rm(join(cwd, "pages", "api"), { force: true, recursive: true });
 }
