@@ -1,36 +1,36 @@
-import useSWR from "swr";
-import JokeList from "../components/JokeList";
+import useSWRMutation from "swr/mutation";
+
 import JokeForm from "../components/JokeForm";
+import JokeList from "../components/JokeList";
+
+async function sendRequest(url, { arg }) {
+  const response = await fetch(url, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(arg),
+  });
+
+  if (!response.ok) {
+    console.log(`Error: ${response.status}`);
+  }
+}
 
 export default function HomePage() {
-  const jokes = useSWR("/api/jokes");
+  const { trigger } = useSWRMutation("/api/jokes", sendRequest);
 
-  async function handleCreateJoke(event) {
+  function handleSubmit(event) {
     event.preventDefault();
 
     const formData = new FormData(event.target);
     const jokeData = Object.fromEntries(formData);
 
-    const response = await fetch("/api/jokes", {
-      method: "POST",
-      body: JSON.stringify(jokeData),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
-
-    if (response.ok) {
-      await response.json();
-      jokes.mutate();
-      event.target.reset();
-    } else {
-      console.error(`Error: ${response.status}`);
-    }
+    trigger(jokeData);
   }
-
   return (
     <>
-      <JokeForm onSubmit={handleCreateJoke} value="" />
+      <JokeForm onSubmit={handleSubmit} value="" />
       <JokeList />
     </>
   );

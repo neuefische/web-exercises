@@ -44,9 +44,9 @@ For now, the `ProductForm` component sends a `POST` request to your database. We
 
 Switch to [`components/ProductForm/index.js`](./components/ProductForm/index.js).
 
-Lift up all logic regarding the creating of the `productData` and the `fetch("/api/products")` to the [`pages/index.js`](./pages/index.js) file.
+Lift up all logic regarding the creating of the `productData` to the [`pages/index.js`](./pages/index.js) file.
 
-> 💡 This includes the initialization of `const products = useSWR("/api/products");` and the import of `useSWR`.
+> 💡 This includes the initialization of `const { trigger } = useSWRMutation("/api/products", sendRequest);`, the `sendRequest function` and the import of `useSWRMutation`.
 
 After doing so,
 

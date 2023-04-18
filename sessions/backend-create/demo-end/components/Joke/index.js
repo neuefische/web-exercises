@@ -11,6 +11,10 @@ export default function Joke() {
     return <h1>Loading...</h1>;
   }
 
+  if (!data) {
+    return;
+  }
+
   return (
     <>
       <small>ID: {id}</small>
