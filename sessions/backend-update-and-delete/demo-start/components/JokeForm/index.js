@@ -1,6 +1,6 @@
 export default function JokeForm({ value, onSubmit, isEditMode }) {
   return (
-    <form action="" onSubmit={onSubmit}>
+    <form onSubmit={onSubmit}>
       <label htmlFor="joke-input">
         {isEditMode ? "Edit the joke" : "Enter a new joke"}
       </label>
