@@ -1,21 +1,22 @@
 import useSWR from "swr";
-import { useRouter } from "next/router";
+import Link from "next/link";
 
 export default function JokeList() {
-  const router = useRouter();
-  const { data } = useSWR("/api/jokes");
+  const { data, isLoading } = useSWR("/api/jokes");
+
+  if (isLoading) {
+    return <h1>Loading...</h1>;
+  }
 
   if (!data) {
-    return <h1>Loading...</h1>;
+    return;
   }
 
   return (
     <ul>
       {data.map((joke) => (
-        <li key={joke._id}>
-          <button type="button" onClick={() => router.push(`/${joke._id}`)}>
-            {joke.joke}
-          </button>
+        <li key={joke.id}>
+          <Link href={`/${joke.id}`}>{joke.joke}</Link>
         </li>
       ))}
     </ul>

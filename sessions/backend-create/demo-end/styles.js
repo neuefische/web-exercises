@@ -34,6 +34,21 @@ export default createGlobalStyle`
     box-shadow: 0px 1px 5px -2px var(--color-granite);
   } 
 
+  a {
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+    border: none;
+    background: var(--color-water-10);
+    font-size: larger;
+    padding: 0.5rem 1rem;
+    box-shadow: 0px 1px 5px -2px var(--color-granite);
+  } 
+
+  a:visited {
+    color: inherit;
+  }
+
   ul {
     list-style-type: none;
     display: grid;
@@ -46,7 +61,7 @@ export default createGlobalStyle`
     width: 100%;
   }
 
-  li button {
+  li a {
     width: 100%;
   }
 
@@ -59,16 +74,5 @@ export default createGlobalStyle`
   div:has(h1) button {
     width: fit-content;
     align-self: center;
-  }
-
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-block-end: 2rem;
-  }
-
-  form button {
-    width: fit-content;
   }
 `;
