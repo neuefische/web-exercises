@@ -14,7 +14,7 @@ Every finished game is also visible in the `/history` overview.
 
 ### Discussion
 
-Start the app an have a look at it in the browser: `npm run dev`
+Start the app and have a look at it in the browser: `npm run dev`
 
 Discuss in the group:
 

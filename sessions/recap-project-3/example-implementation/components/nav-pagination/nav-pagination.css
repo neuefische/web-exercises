@@ -1,0 +1,6 @@
+.navigation__pagination {
+  display: grid;
+  place-items: center;
+  background-color: var(--water);
+  font-size: 1.2rem;
+}

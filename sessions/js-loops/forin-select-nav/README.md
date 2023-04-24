@@ -24,9 +24,9 @@ Before we create a navigation bar, let's have a look what's already there in [`j
 - Each value is an object containing an "href" and "text" key and a string value.
 - A `nav` and `ul` element is created and appended to the `main` element.
 
-Your taks is to fill this list with list items and anchor tags; as content, use the `nav` object which you can access with a `for...in` loop.
+Your task is to fill this list with list items and anchor tags; as content, use the `nav` object which you can access with a `for...in` loop.
 
-Use the following hints as guideline:
+Use the following hints as a guideline:
 
 - Write a `for...in` loop for the `nav` object.
 - In each iteration,

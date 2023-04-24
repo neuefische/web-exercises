@@ -1,0 +1,10 @@
+{
+  "name": "css-grid_demo-start",
+  "version": "0.0.0-unreleased",
+  "description": "CSS Grid: Demo Start",
+  "main": "index.html",
+  "nf": {
+    "template": "html-css-static"
+  },
+  "private": true
+}

@@ -1,7 +1,26 @@
-# Quiz App
+# Recap Project 2: Quiz App - Interactivity
 
-In a previous project you create the layout for a Quiz App with HTML and CSS. The focus of this
+In a previous project, you've created the layout for a Quiz App with HTML and CSS. The focus of this
 project is to add interactivity with JavaScript.
+
+## Template
+
+If you are not yet finished or not satisfied with your code from Recap Project 1, you can use this template to start your
+work.
+
+Open your terminal and navigate to the folder where all your projects are located. Execute the following
+command to create a new project based on a template:
+
+`npx ghcd@latest neuefische/web-exercises/tree/main/sessions/recap-project-2/quiz-app -i`
+
+- There are three pages:
+  - an `index.html` with a list of all question cards
+  - a `bookmark.html` with bookmarked cards only
+  - a `profile.html` with personal information and settings
+- The structure of styling follows [BEM](http://getbem.com/introduction/); this is why the CSS files
+  are organized according to their corresponding component.
+
+Alternatively you can keep working with the Quiz App you built in Recap Project 1.
 
 ## Tasks
 
@@ -48,7 +67,7 @@ Users should be able to add new cards to your Quiz App. The first step is to add
 
 - Create a new HTML document called `form.html`
 - Add the page to the navigation of your Quiz App
-- Within `from.html` create a form with the following fields
+- Within `form.html` create a form with the following fields
   - "Your question" as `<textarea />`
   - "Your answer" as `<textarea />`
   - "Tag" as `<input type="text" />`
@@ -71,6 +90,8 @@ displayed as a **card** like the other questions.
 
 > ❗️ For now the new **card** should be displayed directly below the form. Adding the **card** to
 > the list of the other cards is a topic for later.
+
+> **Note:** To avoid error messages, we recommend creating a new JavaScript file specifically for your form page. This ensures that any event listeners you've added for other pages won't cause problems with HTML elements that aren't present on the form page.
 
 ### 4. Form field text counter
 

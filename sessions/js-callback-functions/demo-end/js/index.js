@@ -4,6 +4,9 @@ const saveButton = document.querySelector('[data-js="save-button"]');
 const cancelButton = document.querySelector('[data-js="cancel-button"]');
 const restoreButton = document.querySelector('[data-js="restore-button"]');
 const skipButton = document.querySelector('[data-js="skip-button"]');
+const buttonContainer = document.querySelector(
+  '[data-js="custom-button-container"]'
+);
 
 // -- 1 -- Callbacks with buttons
 
@@ -37,22 +40,22 @@ skipButton.addEventListener("click", handleSkip);
 
 // -- 3 -- Callbacks without buttons
 
-// Higher order function
-function showText(transformation) {
-  transformation("Changed By The Callback Function");
+//Button Component
+function Button(text, onClick) {
+  const buttonElement = document.createElement("button");
+  buttonElement.textContent = text;
+  buttonElement.addEventListener("click", onClick);
+  return buttonElement;
 }
 
-// Two functions used as callbacks
-function lowercase(text) {
-  const result = text.toLowerCase();
-  console.log(result);
+const alertButton = Button("show alert message", () => {
+  alert("Hello world!");
+});
+buttonContainer.append(alertButton);
+
+function handleSubmit() {
+  console.log("Form was submitted!");
 }
 
-function uppercase(text) {
-  const result = text.toUpperCase();
-  console.log(result);
-}
-
-// Call function and pass callback
-showText(lowercase);
-showText(uppercase);
+const submitButton = Button("submit", handleSubmit);
+buttonContainer.append(submitButton);
