@@ -3,6 +3,7 @@ import useSWRMutation from "swr/mutation";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import JokeForm from "../JokeForm";
+import Link from "next/link";
 
 async function sendRequest(url, { arg }) {
   const response = await fetch(url, {
@@ -79,9 +80,7 @@ export default function Joke() {
       {isEditMode && (
         <JokeForm onSubmit={handleEdit} value={data.joke} isEditMode={true} />
       )}
-      <button type="button" onClick={() => router.push("/")}>
-        Back to all
-      </button>
+      <Link href="/">Back to all</Link>
     </>
   );
 }
