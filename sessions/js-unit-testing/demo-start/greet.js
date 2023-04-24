@@ -1,7 +1,3 @@
-export function greet(name = "stranger") {
-  if (name === "<YOUR-NAME>") {
-    return "Hello coach!";
-  }
-
+export function greet(name) {
   return `Hello ${name}!`;
 }
