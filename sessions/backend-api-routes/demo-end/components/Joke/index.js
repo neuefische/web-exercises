@@ -6,9 +6,7 @@ export default function Joke() {
   const router = useRouter();
   const { id } = router.query;
 
-  const { data, isLoading } = useSWR(
-    id ? `https://example-apis.vercel.app/api/bad-jokes/${id}` : null
-  );
+  const { data, isLoading } = useSWR(id ? `/api/jokes/${id}` : null);
 
   if (isLoading) {
     return <h1>Loading...</h1>;
