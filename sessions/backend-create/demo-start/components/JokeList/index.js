@@ -15,8 +15,8 @@ export default function JokeList() {
   return (
     <ul>
       {data.map((joke) => (
-        <li key={joke.id}>
-          <Link href={`/${joke.id}`}>{joke.joke}</Link>
+        <li key={joke._id}>
+          <Link href={`/${joke._id}`}>{joke.joke}</Link>
         </li>
       ))}
     </ul>
