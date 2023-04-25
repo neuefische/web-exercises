@@ -1,10 +1,6 @@
 /* I'm the universal selector. I target EVERYTHING. */
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 /* PART 1: I'm a type selector. I target a specific type of element. */
@@ -115,11 +111,4 @@ of the parent element, but only those children that match my type. */
   padding: 20px;
   background-color: #ffb6c1;
   border: 4px dotted #fff;
-}
-
-/* PART 9: I'm an adjacent sibling selector. The rules I declare 
-only count for my adjacent sibling. */
-
-section div + span {
-  color: #ff69b4;
 }
