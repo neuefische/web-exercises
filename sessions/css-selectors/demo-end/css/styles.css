@@ -64,12 +64,12 @@ a[href^="https"] {
 /* PART 4: I'm a pseudo-class. I'm  a keyword added to a selector that 
 specifies a special state of the selected element. */
 
-a[href^="https"]:hover {
+a:hover {
   background-color: #ff69b4;
   color: #fff;
 }
 
-input[type="text"]:focus {
+input:focus {
   outline: 2px solid #ff69b4;
   border: none;
   border-radius: 3px;
@@ -89,7 +89,7 @@ a[href^="https"]:before {
 
 /* PART 6: I'm the ID selector. I shouldn't be used. */
 
-#very-important-text {
+#do-not-use-this {
   color: #fff;
 }
 

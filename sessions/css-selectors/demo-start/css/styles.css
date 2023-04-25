@@ -49,10 +49,10 @@ a[href^="https"] {
 /* PART 4: I'm a pseudo-class. I'm  a keyword added to a selector that 
 specifies a special state of the selected element. */
 
-a[href^="https"]:hover {
+a:hover {
 }
 
-input[type="text"]:focus {
+input:focus {
 }
 
 /* PART 5: I'm a pseudo-element. I'm a keyword added to a selector that lets
@@ -66,7 +66,7 @@ a[href^="https"]:before {
 
 /* PART 6: I'm the ID selector. I shouldn't be used. */
 
-#very-important-text {
+#do-not-use-this {
 }
 
 /* PART 7: I'm a descendant combinator. I will select all descendants
