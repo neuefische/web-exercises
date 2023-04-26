@@ -76,8 +76,6 @@ body: JSON.stringify(arg),
 Now, expand the `handleSubmit` function:
 
 - use the `trigger` function received from the `useSWRMutation` hook and pass the received data to it.
-- If the `response` is `ok`, reset the form with the `event.target` interface.
-- If the `response` is not `ok`, log the `response.status` as an error to the console.
 
 Open [`localhost:3000/`](http://localhost:3000/) in your browser, submit a new fish and be happy about your shop being expanded!
 
