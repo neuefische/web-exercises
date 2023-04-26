@@ -10,7 +10,7 @@ export default function Product() {
 
   const { data, isLoading } = useSWR(id ? `/api/products/${id}` : null);
 
-  if (!isLoading) {
+  if (isLoading) {
     return <h1>Loading...</h1>;
   }
 
