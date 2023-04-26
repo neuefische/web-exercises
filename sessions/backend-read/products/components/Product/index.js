@@ -7,7 +7,7 @@ export default function Product() {
   const router = useRouter();
   const { id } = router.query;
 
-  const { data } = useSWR(id ? `/api/products/${id}` : null);
+  const { data } = useSWR(`/api/products/${id}`);
 
   if (!data) {
     return <h1>Loading...</h1>;
