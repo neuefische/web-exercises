@@ -7,7 +7,7 @@ export default function Joke() {
   const { id } = router.query;
 
   const { data, isLoading } = useSWR(
-    id ? `https://example-apis.vercel.app/api/bad-jokes/${id}` : null
+    `https://example-apis.vercel.app/api/bad-jokes/${id}`
   );
 
   if (isLoading) {

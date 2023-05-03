@@ -2,7 +2,9 @@ import useSWR from "swr";
 import Link from "next/link";
 
 export default function JokeList() {
-  const { data, isLoading } = useSWR("/api/jokes");
+  const { data, isLoading } = useSWR(
+    "https://example-apis.vercel.app/api/bad-jokes/"
+  );
 
   if (isLoading) {
     return <h1>Loading...</h1>;
