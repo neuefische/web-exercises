@@ -27,20 +27,7 @@ The app offers a test file for every component. Each of these files contain acce
 
 Your task is to run `npm run test`, write the test implementations and make the tests pass.
 
-> 💡 Note that, at the beginning, all tests passes (except the two in `HistoryEntry`) because the testing blocks are empty. This will change while you are implementing the test.
-
-#### HistoryEntry
-
-Before writing your first component test, your task is to read and understand existing tests. Afterwards you should be able to fix the bug in the tested component.
-
-Check the [`HistoryEntry.test.js`](components/HistoryEntry/HistoryEntry.test.js), it offers two test cases with their acceptance criteria:
-
-- "renders name of game and 'show score' button only"
-- "renders player names and scores after button click"
-
-Run `npm run test`; you will notice that both tests fail. Read the error message carefully and fix the bug in [`HistoryEntry/index.js`](components/HistoryEntry/index.js) so that the test passes again. (The tests are correct, but there is something wrong with the component)
-
-Congratulations, you have fixed your first bug according to a failing test! 🎉
+> 💡 Note that, at the beginning, all tests passes (except the two in `HistoryEntry` which are currently skipped) because the testing blocks are empty. This will change while you are implementing the test.
 
 #### Navigation
 
@@ -85,6 +72,23 @@ Switch to [`GameForm.test.js`](components/GameForm/GameForm.test.js) and write t
   - `await` all `userEvent`s
   - expect the mocked submit function `toHaveBeenCalledWith(submittedDataObject)`.
 - To find the correct form of the submitted data you are expecting, you might have to check the call of `onCreateGame` in the [`GameForm.js`](components/GameForm/index.js) file.
+
+#### HistoryEntry
+
+After writing your first component tests, your task now is to read and understand existing tests. Afterwards you should be able to fix the bug in the tested component.
+
+Check the [`HistoryEntry.test.js`](components/HistoryEntry/HistoryEntry.test.js), it offers two test cases with their acceptance criteria:
+
+- "renders name of game and 'show score' button only"
+- "renders player names and scores after button click"
+
+Note that both tests are currently skipped with the help of `test.skip(...)`.
+
+Remove the `.skip` method and run `npm run test`.
+
+You will notice that both tests fail. Read the error message carefully and fix the bug in [`HistoryEntry/index.js`](components/HistoryEntry/index.js) so that the test passes again. (The tests are correct, but there is something wrong with the component).
+
+Congratulations, you have fixed your first bug according to a failing test! 🎉
 
 ## Development
 
