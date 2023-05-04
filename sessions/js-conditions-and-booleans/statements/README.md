@@ -8,7 +8,7 @@ In this exercise you train to write if / else and ternary statements in various 
 
 - check if the received password matches our `SUPER_SECRET_PASSWORD`
 - if the password is wrong, console.log "Access denied!"
-- if the password matches, console.log "Welcome to fsociety."
+- if the password matches, console.log "Welcome! You are logged in as Brunhilde1984."
 - try our different values for `receivedPassword`
 
 ### Part 2: Even / Odd
