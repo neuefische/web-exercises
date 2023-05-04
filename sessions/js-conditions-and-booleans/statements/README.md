@@ -46,12 +46,6 @@ In this exercise you train to write if / else and ternary statements in various 
 
 - You only have to touch the [`index.js`](./index.js) file.
 
-## Development
-
-### CodeSandbox
-
-This project is JavaScript only so there is nothing to view in the "Browser" tab. Please select the "Tests" tab to check your progress.
-
 ### Local development
 
 To run project commands locally, you need to install the dependencies using `npm i` first.
