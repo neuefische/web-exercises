@@ -1,23 +1,9 @@
 import { StyledForm, StyledHeading, StyledLabel } from "./ProductForm.styled";
 import { StyledButton } from "../Button/Button.styled";
-import useSWRMutation from "swr/mutation";
-
-async function sendRequest(url, { arg }) {
-  const response = await fetch(url, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(arg),
-  });
-
-  if (!response.ok) {
-    console.error(response.status);
-  }
-}
+import useSWR from "swr";
 
 export default function ProductForm() {
-  const { trigger } = useSWRMutation("/api/products", sendRequest);
+  const { mutate } = useSWR("/api/products");
 
   async function handleSubmit(event) {
     event.preventDefault();
@@ -25,7 +11,20 @@ export default function ProductForm() {
     const formData = new FormData(event.target);
     const productData = Object.fromEntries(formData);
 
-    await trigger(productData);
+    const response = await fetch("/api/products", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(productData),
+    });
+
+    if (!response.ok) {
+      console.error(response.status);
+      return;
+    }
+
+    mutate();
     event.target.reset();
   }
 
