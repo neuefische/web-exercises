@@ -1,29 +1,25 @@
-import useSWRMutation from "swr/mutation";
-
-async function sendRequest(url, { arg }) {
-  const response = await fetch(url, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(arg),
-  });
-
-  if (!response.ok) {
-    console.log(`Error: ${response.status}`);
-  }
-}
+import useSWR from "swr";
 
 export default function JokeForm() {
-  const { trigger } = useSWRMutation("/api/jokes", sendRequest);
+  const { mutate } = useSWR("/api/jokes");
 
-  function handleSubmit(event) {
+  async function handleSubmit(event) {
     event.preventDefault();
 
     const formData = new FormData(event.target);
     const jokeData = Object.fromEntries(formData);
 
-    trigger(jokeData);
+    const response = await fetch("/api/jokes", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(jokeData),
+    });
+
+    if (response.ok) {
+      mutate();
+    }
   }
 
   return (

@@ -52,30 +52,25 @@ Switch to [`components/ProductForm/index.js`](./components/ProductForm/index.js)
 
 - There already is a `handleSubmit` function which creates a `productData` object with all relevant data.
 
-Your task is to use `useSWRMutation` with your newly created `POST` route and send the data to your database.
+Your task is to fetch your new `POST` route and send the data to your database. After that use `mutate` from `useSWR` to refetch the data from the database.
 
-- call `useSWRMutation` in your `JokeForm` component with the API endpoint and `sendRequest` as the arguments.
-- write the function `sendRequest` which calls `fetch`
+- call `useSWR` in your `JokeForm` component with the API endpoint and destructure the `mutate` method.
+- inside the handleSubmit function:
   > 💡 Hint: have a look at the handout if you get stuck here.
-- As a second argument, pass an object to the `fetch()` method which contains
-  - the `method` set to `POST`,
-  - the `body` set the `JSON.stringify()` of `productData`, and
-  - an `headers` object with `"Content-Type": "application/json"`.
-  - The object should look like the following:
+- send a "POST" request with `fetch` using the following options as the second argument
 
 ```js
 {
-method: "POST",
+  method: "POST",
 headers: {
   "Content-Type": "application/json",
   },
-body: JSON.stringify(arg),
+body: JSON.stringify(???),
 }
 ```
 
-Now, expand the `handleSubmit` function:
-
-- use the `trigger` function received from the `useSWRMutation` hook and pass the received data to it.
+- use the jokeData from the form input as the body of the request
+- await the response of the fetch, if the fetch was successful, call the `mutate` method to trigger a data revalidation of the useSWR hooks
 
 Open [`localhost:3000/`](http://localhost:3000/) in your browser, submit a new fish and be happy about your shop being expanded!
 
