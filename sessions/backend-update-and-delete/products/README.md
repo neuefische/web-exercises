@@ -46,76 +46,36 @@ Switch to [`components/ProductForm/index.js`](./components/ProductForm/index.js)
 
 Lift up all logic regarding the creating of the `productData` to the [`pages/index.js`](./pages/index.js) file.
 
-> 💡 This includes the initialization of `const { trigger } = useSWRMutation("/api/products", sendRequest);`, the `sendRequest function` and the import of `useSWRMutation`.
+> 💡 This includes the destructuring of `const { mutate } = useSWR("/api/products");`, the `handleSubmit` function and the import of `useSWR`.
 
 After doing so,
 
-- wrap the logic into an `async` function called `handleAddProduct()`,
-- pass `handleAddProduct()` the parameter `event`,
+- rename the `handleSubmit` function to `handleAddProduct`
 - in the return statement, pass `handleAddProduct` to the `ProductForm` component as a prop called `onSubmit`.
 
 Switch back to [`components/ProductForm/index.js`](./components/ProductForm/index.js) and
 
-- receive the `onSubmit` prop,
-- call it inside of the `handleSubmit` and
-- pass it the `event` as argument.
+- receive the `onSubmit` prop.
+- use `onSubmit` instead of `handleSubmit` in the form
 
 > 💡 Bonus: Pass another new prop to the `ProductForm` component to set the heading of the form dynamically ("Add a new Fish" is not a proper headline when updating the product, right?).
 
 #### Send a `PUT` request
 
-Updating a product should be possible from the details page, so [`pages/[id].js`](./pages/%5Bid%5D.js) is where all the frontend magic will happen.
+Switch to `components/Product/index.js.js`.
 
-Switch to [`pages/[id].js`](./pages/%5Bid%5D.js).
+You will need the `mutate` method to revalidate the product data after a successful update:
 
-You will need the current product `id` and the `push` method from `next/router`:
+- destructure mutate from the object received from the `useSWR` hook.
 
-- Add `import { useRouter } from "next/router";` at the top of the file.
-- Create an instance with `const router = useRouter();`.
-- Destructure `query: { id }` and `push` from `router`.
+Below this code, create a `handleEditProduct()` function:
 
-Implement `useSWRMutation` to update a database entry and refetch the data automatically:
+- it receives `event` as parameter,
+- it stores the submitted data in a variable called `productData` (Hint: `new FormData` and `Object.fromEntries` as already used)
+- it starts a "PUT" request with `fetch` (hint: this fetch is similar to the "POST" fetch we perform to create products)
+- uses `mutate` after a successful fetch to update the product detail page.
 
-- Add `import useSWRMutation from "swr/mutation";` at the top of the file.
-- Paste the following code into the `ProductDetailsPage` component to set up `useSWRMutation`:
-
-```js
-async function updateProduct(url, { arg }) {
-  const response = await fetch(url, {
-    method: "PUT",
-    body: JSON.stringify(arg),
-    headers: {
-      "Content-Type": "application/json",
-    },
-  });
-
-  if (response.ok) {
-    await response.json();
-  } else {
-    console.error(`Error: ${response.status}`);
-  }
-}
-
-const { trigger, isMutating } = useSWRMutation(
-  `/api/products/${id}`,
-  updateProduct
-);
-```
-
-- Below this code, create a `handleEditProduct()` function:
-
-  - it receives `event` as parameter,
-  - it stores the submitted data in a variable called `productData` (Hint: `new FormData` and `Object.fromEntries` as already used)
-  - it _waits_ for `trigger(productData)` and
-  - uses `push("/")` to redirect to the overview page.
-
-- Below `handleEditProduct()` (but above the return statement),
-  - check whether `isMutating` is truthy and if so,
-  - return a proper HTML element with the text "Submitting your changes."
-
-Go to the return statement at the bottom of the file and pass `handleEditProduct` to the `Product` component as the `onSubmit` prop.
-
-Switch to [`components/Product/index.js`](./components/Product/index.js) and implement an edit mode to show the `ProductForm` on button click:
+We need to update the content of our Product component to display the edit form:
 
 - Create a state called `isEditMode` and initialize it with `false`.
 - In the return statement, add a `<button>` with
@@ -123,6 +83,7 @@ Switch to [`components/Product/index.js`](./components/Product/index.js) and imp
   - `onClick={() => { setIsEditMode(!isEditMode); }}`,
   - and a proper text.
 - In the return statement, display the `ProductForm` component depending on the `isEditMode` state (Hint: `isEditMode && ...`).
+- pass our `handleEditProduct` function to the `ProductForm` as the `onSubmit` prop.
 
 Open [`localhost:3000/`](http://localhost:3000/) in your browser, switch to a details page, edit a fish and be happy about your shop being expanded!
 
@@ -141,13 +102,12 @@ Deleting a product should be possible from the details page.
 
 Switch to [`components/Product/index.js`](./components/Product/index.js) and implement a delete button:
 
-- The `Product` receives a new prop called `onDelete`.
 - In the return statement, add a `<button>` with
   - `type="button"`,
-  - `onClick={() => onDelete(id)}`,
+  - `onClick={() => handleDeleteProduct(id)}`,
   - and a proper text.
 
-Switch to [`pages/[id].js`](./pages/%5Bid%5D.js) and write a `handleDeleteProduct` function:
+Write the `handleDeleteProduct` function:
 
 - _Wait_ for a `fetch()` with two arguments:
   - the url `/api/products/${id}` and
@@ -156,8 +116,6 @@ Switch to [`pages/[id].js`](./pages/%5Bid%5D.js) and write a `handleDeleteProduc
 - If the `response` is `ok`,
   - _wait_ for `response.json()` and use `push("/")`.
 - If the `response` is not `ok`, log the `response.status` as an error to the console.
-
-- In the return statement of the `ProductDetailsPage`, pass `handleDeleteProduct` to the `Product` component as a prop called `onDelete`.
 
 Open [`localhost:3000/`](http://localhost:3000/) in your browser, switch to a details page, delete a fish and be happy about your shop being expanded!
 
