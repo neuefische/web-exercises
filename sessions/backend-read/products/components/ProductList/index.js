@@ -1,5 +1,5 @@
 import useSWR from "swr";
-import { StyledList } from "./ProductList.styled";
+import { StyledHeading, StyledList } from "./ProductList.styled";
 import { StyledLink } from "../Link/Link.styled";
 
 export default function ProductList() {
@@ -15,7 +15,7 @@ export default function ProductList() {
 
   return (
     <>
-      <h1>Available Fishes</h1>
+      <StyledHeading>Available Fishes</StyledHeading>
       <StyledList>
         {data.map((product) => (
           <li key={product._id}>
