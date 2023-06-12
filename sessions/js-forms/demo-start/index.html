@@ -63,12 +63,17 @@
 
           <label for="personalMessage">Personal Message</label>
           <textarea
+            data-js="personal-message"
             name="personalMessage"
             id="personalMessage"
             rows="10"
             cols="50"
+            maxlength="150"
             placeholder="Enter your personal message"
           ></textarea>
+          <p class="remaining-characters">
+            <span data-js="remaining-characters">150</span> characters left
+          </p>
         </fieldset>
 
         <button type="submit">Submit</button>
