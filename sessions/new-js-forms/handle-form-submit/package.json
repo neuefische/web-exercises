@@ -1,0 +1,13 @@
+{
+  "name": "js-forms_handle-form-submit",
+  "version": "0.0.0-unreleased",
+  "description": "Static HTML template with CSS and JS",
+  "main": "index.html",
+  "scripts": {
+    "lint": "npx eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "nf": {
+    "template": "html-css-js-static"
+  }
+}

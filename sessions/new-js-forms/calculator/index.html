@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/index.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>Calculator</h1>
+      <p>Add, subtract, multiply, or divide two numbers.</p>
+      <p>
+        <strong>Note:</strong> This calculator is not intended to be used for
+        any other purpose
+      </p>
+      <form data-js="form">
+        <fieldset>
+          <legend>Numbers (A & B)</legend>
+
+          <label for="number-a">Number A</label>
+          <input type="number" name="numberA" id="number-a" />
+
+          <label for="number-b">Number B</label>
+          <input type="number" name="numberB" id="number-b" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Operator</legend>
+
+          <label for="addition">
+            <input
+              type="radio"
+              name="operator"
+              id="addition"
+              value="addition"
+              checked
+            />
+            addition (➕)
+          </label>
+
+          <label for="subtraction">
+            <input
+              type="radio"
+              name="operator"
+              id="subtraction"
+              value="subtraction"
+            />
+            subtraction (➖)
+          </label>
+
+          <label for="multiplication">
+            <input
+              type="radio"
+              name="operator"
+              id="multiplication"
+              value="multiplication"
+            />
+            multiplication (✖️)
+          </label>
+
+          <label for="division">
+            <input
+              type="radio"
+              name="operator"
+              id="division"
+              value="division"
+            />
+            division (➗)
+          </label>
+        </fieldset>
+
+        <button type="submit">Calculate</button>
+      </form>
+      <section>
+        <h2>Result</h2>
+        <p>🟰 <span data-js="result">Click Calculate to get a result!</span></p>
+      </section>
+    </main>
+  </body>
+</html>
