@@ -2,6 +2,8 @@
 
 ## Task
 
+Go into the [`js/index.js`](./js/index.js) file and fix the described errors. You find there 4 tasks and 4 bugs.
+
 ## Notes
 
 - You only have to touch the [`js/index.js`](./js/index.js) file.
