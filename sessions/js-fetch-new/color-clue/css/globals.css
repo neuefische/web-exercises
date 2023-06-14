@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui;
+  background-color: #c3c3c3;
+  margin: 0;
+  height: 100vh;
+  padding: 30px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  transition: background ease-out 0.5s;
+  transition-delay: background 0.3s;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 14px;
+  font-weight: bold;
+  background-color: #ddd;
+  cursor: pointer;
+  place-self: start center;
+}
+
+.fast-transition {
+  transition: background ease-in 2s;
+  transition-delay: background 0.3s;
+}
+
+.score-text {
+  font-weight: bold;
+  font-size: 1.2rem;
+}

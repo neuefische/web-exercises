@@ -1,0 +1,13 @@
+{
+  "name": "js-fetch_demo-end",
+  "version": "0.0.0-unreleased",
+  "description": "Start of Demo for JS Fetch",
+  "main": "index.html",
+  "scripts": {
+    "lint": "npx eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "nf": {
+    "template": "html-css-js-static"
+  }
+}
