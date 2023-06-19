@@ -1,98 +1,29 @@
-/* cascading style sheets */
-
+/* CSS reset that makes working with width and height easier
+   and should always be in your stylesheet. */
 * {
   box-sizing: border-box;
 }
 
-/* alice-regular - latin */
-@font-face {
-  font-family: "Alice";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/alice-v20-latin-regular.eot"); /* IE9 Compat Modes */
-  src: local(""),
-    url("../fonts/alice-v20-latin-regular.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/alice-v20-latin-regular.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/alice-v20-latin-regular.woff")
-      format("woff"),
-    /* Modern Browsers */ url("../fonts/alice-v20-latin-regular.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */ url("../fonts/alice-v20-latin-regular.svg#Alice")
-      format("svg"); /* Legacy iOS */
-}
-
-/* roboto-regular - latin */
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/roboto-v30-latin-regular.eot"); /* IE9 Compat Modes */
-  src: local(""),
-    url("../fonts/roboto-v30-latin-regular.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/roboto-v30-latin-regular.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/roboto-v30-latin-regular.woff")
-      format("woff"),
-    /* Modern Browsers */ url("../fonts/roboto-v30-latin-regular.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */
-      url("../fonts/roboto-v30-latin-regular.svg#Roboto") format("svg"); /* Legacy iOS */
-}
-
+/* The font-family property is inherited to all child elements by default */
 body {
-  padding: 20px;
-  margin: 0;
-  font-family: "Roboto";
+  font-family: system-ui;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Alice";
+/* All links (anchors) are hotpink when the user hovers over them */
+a:hover {
+  color: hotpink;
 }
 
-section {
-  background-color: rgb(216, 229, 235);
-  padding: 20px;
-  margin: 20px 0;
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 3px 4px rgb(0 0 0 / 0.2);
+/* make all h1 elements text be blue and 2rem big */
+h1 {
+  color: blue;
+  font-size: 2rem;
 }
 
-h2 {
-  color: rgb(252, 95, 38);
-  margin: 0;
-}
-
-p {
-  margin-bottom: 0;
-}
-
-.highlight-section {
-  border: 3px solid rgb(252, 95, 38);
-  background-color: #333;
-  color: #ddd;
-}
-
-a:visited {
-  color: rgb(252, 95, 38);
-}
-
-a {
-  text-decoration: none;
-  font-weight: bold;
-  border: 1px solid rgb(252, 95, 38);
-  padding: 2px 5px;
-  border-radius: 4px;
-}
-
-.highlight-text {
-  background-color: rgb(22, 168, 119);
-  padding: 2px 5px;
-  border-radius: 4px;
+/* All elements with the class introduction are italic (and fancy) */
+.introduction {
+  font-style: italic;
+  background-color: lightblue;
+  padding: 16px;
+  border-radius: 8px;
 }
