@@ -17,11 +17,10 @@ All of the exercises are designed to work locally as well as on CodeSandbox.
   - [Available Templates](#available-templates)
     - [Empty](#empty)
     - [HTML, CSS and JavaScript (with Jest support)](#html-css-and-javascript-with-jest-support)
-    - [Static HTML, CSS and JavaScript](#static-html-css-and-javascript)
-    - [Static HTML and CSS](#static-html-and-css)
+    - [HTML and CSS](#html-and-css)
     - [JavaScript (with Jest support)](#javascript-with-jest-support)
     - [Minimal React](#minimal-react)
-    - [Create React App](#create-react-app)
+    - [React](#react)
     - [Next.js (incl. Styled Components and Jest)](#nextjs-incl-styled-components-and-jest)
   - [Exercise requirements](#exercise-requirements)
   - [Review new or changed exercises](#review-new-or-changed-exercises)
@@ -158,36 +157,20 @@ A template that contains HTML, CSS and JavaScript files with jest support. CodeS
 > npx ghcd@latest neuefische/web-exercises/tree/main/templates/html-css-js my-app -i
 > ```
 
-### Static HTML, CSS and JavaScript
+### HTML and CSS
 
-created via [`recipes/html-css-js-static`](./recipes/html-css-js-static)
-
-A template that contains HTML, CSS and JavaScript files but has no bundler and therefore does not support tests.
-
-> 📝 Create a new exercise inside this repository:
->
-> `npm run create` → Select type `Static HTML, CSS and JavaScript`
-
-> ✨ Use template as a starter:
->
-> ```
-> npx ghcd@latest neuefische/web-exercises/tree/main/templates/html-css-js-static my-app -i
-> ```
-
-### Static HTML and CSS
-
-created via [`recipes/html-css-static`](./recipes/html-css-static)
+created via [`recipes/html-css`](./recipes/html-css)
 
 A template that contains HTML and CSS files.
 
 > 📝 Create a new exercise inside this repository:
 >
-> `npm run create` → Select type `Static HTML and CSS`
+> `npm run create` → Select type `HTML and CSS`
 
 > ✨ Use template as a starter:
 >
 > ```
-> npx ghcd@latest neuefische/web-exercises/tree/main/templates/html-css-static my-app -i
+> npx ghcd@latest neuefische/web-exercises/tree/main/templates/html-css my-app -i
 > ```
 
 ### JavaScript (with Jest support)
@@ -222,9 +205,9 @@ A template that contains a minimal React app. It uses `react-scripts` but only c
 > npx ghcd@latest neuefische/web-exercises/tree/main/templates/react-minimal my-app -i
 > ```
 
-### Create React App
+### React
 
-created via [`recipes/cra`](./recipes/cra)
+created via [`recipes/react`](./recipes/react)
 
 A template from executing `create-react-app` to create a new React app.
 
@@ -235,7 +218,7 @@ A template from executing `create-react-app` to create a new React app.
 > ✨ Use template as a starter:
 >
 > ```
-> npx ghcd@latest neuefische/web-exercises/tree/main/templates/cra my-app -i
+> npx ghcd@latest neuefische/web-exercises/tree/main/templates/react my-app -i
 > ```
 
 > **Warning**  
