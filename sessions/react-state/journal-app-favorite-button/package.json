@@ -37,6 +37,6 @@
   },
   "description": "React State: Journal App with Favorite Button State",
   "nf": {
-    "template": "cra"
+    "template": "react"
   }
 }

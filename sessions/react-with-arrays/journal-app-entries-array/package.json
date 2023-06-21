@@ -37,6 +37,6 @@
   },
   "description": "React with Arrays: Journal App with Entries Array",
   "nf": {
-    "template": "cra"
+    "template": "react"
   }
 }

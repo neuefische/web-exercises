@@ -1,5 +1,5 @@
 export default {
-  name: "cra",
+  name: "react",
   description: "Create React App",
   cmd: ["npx", ["create-react-app@latest", "."]],
 };

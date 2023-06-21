@@ -38,6 +38,6 @@
   },
   "description": "React State: Journal App with Entries Filter",
   "nf": {
-    "template": "cra"
+    "template": "react"
   }
 }

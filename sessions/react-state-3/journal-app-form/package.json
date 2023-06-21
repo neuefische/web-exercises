@@ -37,6 +37,6 @@
   },
   "description": "React State: Journal App with Form Submit",
   "nf": {
-    "template": "cra"
+    "template": "react"
   }
 }

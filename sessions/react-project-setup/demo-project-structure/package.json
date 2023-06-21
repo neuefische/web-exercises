@@ -37,6 +37,6 @@
   },
   "description": "React Project Setup: Demo Project Structure",
   "nf": {
-    "template": "cra"
+    "template": "react"
   }
 }

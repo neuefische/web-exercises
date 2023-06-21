@@ -39,6 +39,6 @@
   },
   "description": "Recap Project 4: Example Implementation",
   "nf": {
-    "template": "cra"
+    "template": "react"
   }
 }

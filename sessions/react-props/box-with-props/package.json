@@ -35,6 +35,6 @@
     ]
   },
   "nf": {
-    "template": "cra"
+    "template": "react"
   }
 }

@@ -42,7 +42,7 @@ try {
 
 async function cookRecipe(recipe, spinner) {
   const recipeName = recipe.name;
-  const cwd = join(".temp", recipeName);
+  const cwd = join(".temp", recipeName + "-template");
 
   await fs.ensureDir(".temp");
 

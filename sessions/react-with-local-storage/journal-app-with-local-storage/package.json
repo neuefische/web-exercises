@@ -38,6 +38,6 @@
   },
   "description": "React State: Journal App with localStorage",
   "nf": {
-    "template": "cra"
+    "template": "react"
   }
 }
