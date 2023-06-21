@@ -4,7 +4,7 @@
   "description": "CSS Structure: Custom Properties",
   "main": "index.html",
   "nf": {
-    "template": "html-css-static"
+    "template": "html-css"
   },
   "private": true
 }

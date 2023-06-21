@@ -4,6 +4,6 @@
   "description": "Static HTML template with CSS",
   "main": "index.html",
   "nf": {
-    "template": "html-css-static"
+    "template": "html-css"
   }
 }

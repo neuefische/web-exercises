@@ -1,12 +1,13 @@
 {
-  "name": "template-html-css-static",
+  "name": "template-html-css",
   "version": "0.0.0-unreleased",
-  "description": "HTML and CSS static",
+  "description": "HTML and CSS",
   "main": "index.html",
   "scripts": {
     "start": "npx -y serve@latest"
   },
   "nf": {
-    "template": "html-css-static"
-  }
+    "template": "html-css"
+  },
+  "private": true
 }

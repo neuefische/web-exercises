@@ -4,6 +4,6 @@
   "description": "Exercise for css positioning absolute",
   "main": "index.html",
   "nf": {
-    "template": "html-css-static"
+    "template": "html-css"
   }
 }

@@ -4,6 +4,6 @@
   "description": "HTML Forms - Additional Input Fields And Form Elements",
   "main": "index.html",
   "nf": {
-    "template": "html-css-static"
+    "template": "html-css"
   }
 }
