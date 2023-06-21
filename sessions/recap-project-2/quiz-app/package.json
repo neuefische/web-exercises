@@ -4,7 +4,7 @@
   "description": "Recap Project 2 Quiz-App",
   "main": "index.html",
   "nf": {
-    "template": "html-css-js-static"
+    "template": "html-css-js"
   },
   "scripts": {
     "lint": "npx eslint .",

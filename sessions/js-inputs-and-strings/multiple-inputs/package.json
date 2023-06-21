@@ -8,6 +8,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "nf": {
-    "template": "html-css-js-static"
+    "template": "html-css-js"
   }
 }
