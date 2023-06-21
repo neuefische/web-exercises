@@ -30,21 +30,26 @@ Switch to the  [`js/index.js`](./js/index.js)  file and make something great hap
 
 ## Notes
 
-- You only have to touch the [`js/index.js`](./js/index.js) file.
+- You only have to touch the `js/index.js` file.
 
 ## Development
 
-### CodeSandbox
+### Local Development
 
-Select the "Browser" tab to view this project.
+Run `npm run start` to start a development server and open the URL from your clipboard (<kbd>⌘</kbd><kbd>V</kbd>) in a browser.
 
-### Local development
+> Alternatively you can use the Live Preview Extension for Visual Studio Code to view this project.  
+> Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
 
-To run project commands locally, you need to install the dependencies using `npm i` first.
+### CodeSandbox Cloud
 
-You can then use the following command:
+Select the "Preview: 3000" tab to view this project.
 
+> The `npm run start` script runs automatically.
+
+### Scripts
+
+You can use the following commands:
+
+- `npm run start` to start a development server
 - `npm run lint` to run the linter
-
-Use the Live Preview Extension for Visual Studio Code to view this project in the browser.  
-Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
