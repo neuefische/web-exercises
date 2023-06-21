@@ -1,0 +1,10 @@
+{
+  "name": "css-basics_pink-box",
+  "version": "0.0.0-unreleased",
+  "description": "CSS Basics: Pink Box",
+  "main": "index.html",
+  "nf": {
+    "template": "html-css-static"
+  },
+  "private": true
+}
