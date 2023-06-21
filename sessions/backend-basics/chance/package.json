@@ -19,7 +19,7 @@
     "supertest": "^6.3.3"
   },
   "nf": {
-    "template": "node"
+    "template": "node-server"
   },
   "private": true,
   "dependencies": {

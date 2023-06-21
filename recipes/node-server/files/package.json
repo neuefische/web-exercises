@@ -1,5 +1,5 @@
 {
-  "name": "template-node",
+  "name": "template-node-server",
   "version": "0.0.0-unreleased",
   "description": "Node.js Server with jest support",
   "main": "index.js",
@@ -16,6 +16,6 @@
     "supertest": "^6.3.3"
   },
   "nf": {
-    "template": "node"
+    "template": "node-server"
   }
 }

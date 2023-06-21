@@ -1,6 +1,6 @@
-# This is a new Node project.
+# This is a new Node Server project.
 
-This project was created from the neue fische node template.
+This project was created from the neue fische node-server template.
 
 ## Development
 

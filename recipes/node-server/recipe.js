@@ -1,4 +1,4 @@
 export default {
-  name: "node",
+  name: "node-server",
   description: "Node.js Server (with Jest support)",
 };
