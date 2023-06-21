@@ -57,6 +57,11 @@ async function applyTemplate(challengeFolder, template, packageJson) {
     // copy the .prettierrc.json file from the template folder to the challenge folder
     if (fs.existsSync(path.join(templateFolder, file))) {
       if (!patch || !fs.existsSync(path.join(challengeFolder, file))) {
+        const fileFolder = path.dirname(path.join(challengeFolder, file));
+        // create folder if it does not exist
+        if (!fs.existsSync(fileFolder)) {
+          await fs.mkdirp(fileFolder);
+        }
         await fs.copyFile(
           path.join(templateFolder, file),
           path.join(challengeFolder, file)
@@ -108,6 +113,7 @@ async function applyTemplate(challengeFolder, template, packageJson) {
     "jest.setup.js",
     "sandbox.config.json",
     "stylelint.config.js",
+    path.join(".codesandbox", "tasks.json"),
     path.join("pages", "_document.js"),
     path.join(".storybook", "main.js"),
     path.join(".storybook", "preview.js"),
