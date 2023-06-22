@@ -31,7 +31,7 @@ Please switch to the [`index.js`](./index.js) file to start the exercises. You w
 
 ### CodeSandbox
 
-This project is JavaScript only so there is nothing to view in the "Browser" tab. Please select the "Tests" tab to check your progress.
+This project is JavaScript only so there is nothing to view in the "Browser" tab. Please Select the "Tests: logs" tab to check your progress.
 
 ### Local development
 

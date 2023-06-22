@@ -46,7 +46,7 @@ Use `npm run test` to run the tests.
 
 Select the "Preview: 3000" tab to view this project.
 
-Select the "Tests" tab to view the tests.
+Select the "Tests: logs" tab to view the tests.
 
 > The `npm run start` and `npm run test` scripts run automatically.
 
