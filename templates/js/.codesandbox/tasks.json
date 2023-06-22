@@ -1,0 +1,22 @@
+{
+  "$schema": "https://codesandbox.io/schemas/tasks.json",
+  "tasks": {
+    "start": {
+      "name": "Preview",
+      "command": "npm run start",
+      "runAtStart": true,
+      "preview": {
+        "port": 3000
+      }
+    },
+    "test": {
+      "name": "Tests",
+      "command": "npm run test",
+      "runAtStart": true
+    },
+    "lint": {
+      "name": "Lint",
+      "command": "npm run lint"
+    }
+  }
+}
