@@ -4,7 +4,7 @@
   "description": "HTML and CSS",
   "main": "index.html",
   "scripts": {
-    "start": "npx -y serve@latest"
+    "start": "npx -y live-server@latest --port=3000"
   },
   "nf": {
     "template": "html-css"
