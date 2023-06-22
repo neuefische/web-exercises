@@ -1,7 +1,7 @@
 import React from "react";
-import Joke from "./components/Joke";
+import Planet from "./components/Planet";
 import "./styles.css";
 
 export default function App() {
-  return <Joke />;
+  return <Planet />;
 }
