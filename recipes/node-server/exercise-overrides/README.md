@@ -35,7 +35,7 @@ Please switch to the [`index.js`](./index.js) file to start the exercises. You w
 
 To work locally, please install the dependencies using `npm i` first.
 
-Run `npm run start` to start the node server and open `localhost:3000` in a browser.
+Run `npm run start` to start the node server and open [localhost:3000](http://localhost:3000) in a browser.
 
 Use `npm run test` to run the tests.
 

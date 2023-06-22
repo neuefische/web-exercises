@@ -6,7 +6,7 @@ In this challenge (and the upcoming ones), you'll create a fish shop. For now, y
 
 ### Introduction
 
-Run `npm run dev` and open `localhost:3000` on your browser.
+Run `npm run dev` and open [localhost:3000](http://localhost:3000) on your browser.
 
 Have a look around:
 

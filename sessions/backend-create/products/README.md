@@ -20,7 +20,7 @@ Create a `.env.local` file based on the [`.env.local.example`](./.env.local.exam
 
 ### Introduction
 
-Run `npm run dev` and open `localhost:3000` in your browser.
+Run `npm run dev` and open [localhost:3000](http://localhost:3000) in your browser.
 
 Have a look around:
 
