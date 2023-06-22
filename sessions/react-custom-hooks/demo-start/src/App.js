@@ -1,7 +1,7 @@
 import React from "react";
-import Planet from "./components/Planet";
+import NatureScene from "./components/NatureScene";
 import "./styles.css";
 
 export default function App() {
-  return <Planet />;
+  return <NatureScene />;
 }
