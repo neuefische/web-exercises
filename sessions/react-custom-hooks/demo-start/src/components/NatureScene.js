@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export default function Planet() {
-  const BASE_URL = 'http://localhost:5000/api/data/'
+  const BASE_URL = 'https://spiced-nature-scenes-ade32f635b18.herokuapp.com/api/v1/scenes/'
   const [natureScene, setNatureScene] = useState();
   const [id, setId] = useState(1);
 
