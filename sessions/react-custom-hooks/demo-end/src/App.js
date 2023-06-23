@@ -1,7 +1,7 @@
 import React from "react";
-import Joke from "./components/Joke";
+import NatureScene from "./components/NatureScene";
 import "./styles.css";
 
 export default function App() {
-  return <Joke />;
+  return <NatureScene />;
 }
