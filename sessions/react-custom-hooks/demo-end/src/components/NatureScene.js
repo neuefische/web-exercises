@@ -1,6 +1,6 @@
 import { useNatureScene } from "../utils/fetch";
 
-export default function Planet() {
+export default function NatureScene() {
   const { natureScene, handleNextNatureScene } = useNatureScene();
 
   if (!natureScene) {
