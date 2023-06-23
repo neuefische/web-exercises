@@ -17,14 +17,15 @@ export function useFetch(url) {
   return data;
 }
 
-export function useJoke() {
+export function useNatureScene() {
   const [id, setId] = useState(0);
+  const BASE_URL = 'https://spiced-nature-scenes-ade32f635b18.herokuapp.com/api/v1/scenes/'
 
-  const joke = useFetch(`https://example-apis.vercel.app/api/bad-jokes/${id}`);
+  const natureScene = useFetch(`${BASE_URL}${id}`);
 
-  function handleNextJoke() {
-    setId(joke.nextId);
+  function handleNextNatureScene() {
+    setId(natureScene.nextId);
   }
 
-  return { joke, handleNextJoke };
+  return { natureScene, handleNextNatureScene };
 }
