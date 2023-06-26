@@ -120,6 +120,11 @@ async function applyTemplate(challengeFolder, template, packageJson) {
     ".npmrc",
   ]);
 
+  copyFileIfExistsElseRemove("index.html", async (current, template) => {
+    if (current) return current;
+    return template;
+  });
+
   copyFileIfExistsElseRemove(".eslintrc.json", async (current, template) => {
     return {
       ...current,
