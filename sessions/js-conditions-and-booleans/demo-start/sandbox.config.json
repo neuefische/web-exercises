@@ -1,4 +1,1 @@
-{
-  "template": "parcel",
-  "view": "console"
-}
+{ "template": "parcel", "view": "tests" }

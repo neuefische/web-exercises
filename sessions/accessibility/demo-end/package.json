@@ -6,5 +6,8 @@
   "nf": {
     "template": "html-css"
   },
-  "private": true
+  "private": true,
+  "scripts": {
+    "start": "npx -y live-server@latest --port=3000"
+  }
 }

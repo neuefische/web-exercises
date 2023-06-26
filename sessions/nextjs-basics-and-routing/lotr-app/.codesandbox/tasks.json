@@ -1,0 +1,4 @@
+{
+  "$schema": "https://codesandbox.io/schemas/tasks.json",
+  "setupTasks": ["npm i"]
+}

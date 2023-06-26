@@ -329,7 +329,6 @@ export default function App({ Component, pageProps }) {
 
 ---
 
-
 ## Resources
 
 ⬇️ You can [**download the data and assets for the Art Gallery App here**](./resources.zip?raw=true).
