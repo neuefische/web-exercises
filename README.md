@@ -22,6 +22,7 @@ All of the exercises are designed to work locally as well as on CodeSandbox.
     - [Minimal React](#minimal-react)
     - [React](#react)
     - [Next.js (incl. Styled Components and Jest)](#nextjs-incl-styled-components-and-jest)
+    - [Node.js Server (with Jest support)](#nodejs-server-with-jest-support)
   - [Exercise requirements](#exercise-requirements)
   - [Review new or changed exercises](#review-new-or-changed-exercises)
   - [Access exercises or templates](#access-exercises-or-templates)
@@ -131,15 +132,11 @@ created via [`recipes/empty`](./recipes/empty)
 
 A template that does not contain any code.
 
-> 📝 Create a new exercise inside this repository:
->
-> `npm run create` → Select type `Empty`
+**📝 Create a new exercise inside this repository**
 
-> ✨ Use template as a starter:
->
-> ```
-> npx ghcd@latest neuefische/web-exercises/tree/main/templates/empty my-app -i
-> ```
+`npm run create` → Select type `Empty`
+
+**→ [Use this template as a starter](./templates/empty/README.md)**
 
 ### HTML, CSS and JavaScript (with Jest support)
 
@@ -147,15 +144,11 @@ created via [`recipes/html-css-js`](./recipes/html-css-js)
 
 A template that contains HTML, CSS and JavaScript files with jest support. CodeSandbox bundles the code and runs the tests automatically. Locally you can run the tests with `npm run test`.
 
-> 📝 Create a new exercise inside this repository:
->
-> `npm run create` → Select type `HTML, CSS and JavaScript (with Jest support)`
+**📝 Create a new exercise inside this repository**
 
-> ✨ Use template as a starter:
->
-> ```
-> npx ghcd@latest neuefische/web-exercises/tree/main/templates/html-css-js my-app -i
-> ```
+`npm run create` → Select type `HTML, CSS and JavaScript (with Jest support)`
+
+**→ [Use this template as a starter](./templates/html-css-js/README.md)**
 
 ### HTML and CSS
 
@@ -163,15 +156,11 @@ created via [`recipes/html-css`](./recipes/html-css)
 
 A template that contains HTML and CSS files.
 
-> 📝 Create a new exercise inside this repository:
->
-> `npm run create` → Select type `HTML and CSS`
+**📝 Create a new exercise inside this repository**
 
-> ✨ Use template as a starter:
->
-> ```
-> npx ghcd@latest neuefische/web-exercises/tree/main/templates/html-css my-app -i
-> ```
+`npm run create` → Select type `HTML and CSS`
+
+**→ [Use this template as a starter](./templates/html-css/README.md)**
 
 ### JavaScript (with Jest support)
 
@@ -179,15 +168,11 @@ created via [`recipes/js`](./recipes/js)
 
 A template that contains only JavaScript files with jest support. CodeSandbox bundles the code and runs the tests automatically. Locally you can run the tests with `npm run test`.
 
-> 📝 Create a new exercise inside this repository:
->
-> `npm run create` → Select type `JavaScript (with Jest support)`
+**📝 Create a new exercise inside this repository**
 
-> ✨ Use template as a starter:
->
-> ```
-> npx ghcd@latest neuefische/web-exercises/tree/main/templates/js my-app -i
-> ```
+`npm run create` → Select type `JavaScript (with Jest support)`
+
+**→ [Use this template as a starter](./templates/js/README.md)**
 
 ### Minimal React
 
@@ -195,53 +180,47 @@ created via [`recipes/react-minimal`](./recipes/react-minimal)
 
 A template that contains a minimal React app. It uses `react-scripts` but only contains the bare minimum files from Create React App.
 
-> 📝 Create a new exercise inside this repository:
->
-> `npm run create` → Select type `Minimal React`
+**📝 Create a new exercise inside this repository**
 
-> ✨ Use template as a starter:
->
-> ```
-> npx ghcd@latest neuefische/web-exercises/tree/main/templates/react-minimal my-app -i
-> ```
+`npm run create` → Select type `Minimal React`
+
+**→ [Use this template as a starter](./templates/react-minimal/README.md)**
 
 ### React
 
 created via [`recipes/react`](./recipes/react)
 
-A template from executing `create-react-app` to create a new React app.
+A template from executing `create-react-app` to create a new React app.[^1]
 
-> 📝 Create a new exercise inside this repository:
->
-> `npm run create` → Select type `Create React App`
+**📝 Create a new exercise inside this repository**
 
-> ✨ Use template as a starter:
->
-> ```
-> npx ghcd@latest neuefische/web-exercises/tree/main/templates/react my-app -i
-> ```
+`npm run create` → Select type `Create React App`
 
-> **Warning**  
-> An exercise based on `create-react-app` might not be able to build in CodeSandbox. The `create-react-app` setup includes the package `web-vitals`. The adblocker browser extension [uBlock Origin might block](https://github.com/codesandbox/codesandbox-client/issues/6035) requests to load this package. Please make sure to add the domain `codesandbox.io` and the pattern `/.*csb.app.*/` to the trusted sites ("Ausnahmeregeln") in the uBlock Origin settings.
+**→ [Use this template as a starter](./templates/react/README.md)**
 
 ### Next.js (incl. Styled Components and Jest)
 
 created via [`recipes/next`](./recipes/next)
 
-A template from executing `npx create-next-app` to create a new Next.js app. Our variant also includes Styled Components, Jest, SVGR and @next/font.
+A template from executing `npx create-next-app` to create a new Next.js app. Our variant also includes Styled Components, Jest and SVGR.
 
-> 📝 Create a new exercise inside this repository:
->
-> `npm run create` → Select type `Next.js (incl. Styled Components and Jest)`
+**📝 Create a new exercise inside this repository**
 
-> ✨ Use template as a starter:
->
-> ```
-> npx ghcd@latest neuefische/web-exercises/tree/main/templates/next my-app -i
-> ```
+`npm run create` → Select type `Next.js (incl. Styled Components and Jest)`
 
-> **Warning**  
-> Next.js only works "moderately" well on CodeSandbox. We recommend using it locally.
+**→ [Use this template as a starter](./templates/next/README.md)**
+
+### Node.js Server (with Jest support)
+
+created via [`recipes/node-server`](./recipes/node-server)
+
+A template that contains a Node.js server with Jest support. CodeSandbox runs the tests automatically. Locally you can run the tests with `npm run test`.
+
+**📝 Create a new exercise inside this repository**
+
+`npm run create` → Select type `Node.js Server (with Jest support)`
+
+**→ [Use this template as a starter](./templates/node-server/README.md)**
 
 ## Exercise requirements
 
@@ -265,17 +244,17 @@ There a two ways to access the exercises or templates:
 
 ### CodeSandbox
 
-Open the the folder of the exercise on GitHub. Change the URL from `github.com` to `githubbox.com`. This will open the exercise in CodeSandbox. Select the README.md file and copy the URL directly to this file.
+Open the the folder of the exercise on GitHub. Change the URL from `github.com` to `codesandbox.io/p/sandbox/github`. This will open the exercise in CodeSandbox. Select the README.md file and copy the URL directly to this file.
 
 ```diff
 - https://github.com/neuefische/web-exercises/tree/main/sessions/js-array-methods/map
-+ https://githubbox.com/neuefische/web-exercises/tree/main/sessions/js-array-methods/map
++ https://codesandbox.io/p/sandbox/github/neuefische/web-exercises/tree/main/sessions/js-array-methods/map
 ```
 
 The shareable link you need to copy looks like this:
 
 ```
-https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-array-methods/map?file=/README.md
+https://codesandbox.io/p/sandbox/github/neuefische/web-exercises/tree/main/sessions/js-array-methods/map?file=/README.md
 ```
 
 > **Note**  
@@ -304,3 +283,5 @@ To run commands in a workspace of the monorepo (an exercise folder) on your loca
 1. make sure you have run `npm i` in the root of this repository
 2. `cd` into the folder (`cd sessions/session-name/exercise-name`)
 3. run the script of you choice (`npm run test`)
+
+[^1]: An exercise based on `create-react-app` might not be able to build in CodeSandbox. The `create-react-app` setup includes the package `web-vitals`. The adblocker browser extension [uBlock Origin might block](https://github.com/codesandbox/codesandbox-client/issues/6035) requests to load this package. Please make sure to add the domain `codesandbox.io` and the pattern `/.*csb.app.*/` to the trusted sites ("Ausnahmeregeln") in the uBlock Origin settings.
