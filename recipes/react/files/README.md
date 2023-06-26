@@ -1,6 +1,12 @@
 # New React Project
 
-This project was created from the neue fische react template.
+This project was created from the neue fische `react` template.
+
+You can [🔗 **use this template on CodeSandbox**](https://codesandbox.io/p/sandbox/github/neuefische/web-exercises/tree/main/templates/react?file=/README.md) or locally by running this command in your Terminal:
+
+```bash
+npx -y ghcd@latest neuefische/web-exercises/tree/main/templates/react my-app -i
+```
 
 ## Development
 

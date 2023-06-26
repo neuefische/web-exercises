@@ -1,6 +1,12 @@
-# This is a new HTML, CSS and JavaScript project.
+# New HTML, CSS and JavaScript project
 
-This project was created from the neue fische html-css-js template.
+This project was created from the neue fische `html-css-js` template.
+
+You can [🔗 **use this template on CodeSandbox**](https://codesandbox.io/p/sandbox/github/neuefische/web-exercises/tree/main/templates/html-css-js?file=/README.md) or locally by running this command in your Terminal:
+
+```bash
+npx -y ghcd@latest neuefische/web-exercises/tree/main/templates/html-css-js my-app -i
+```
 
 ## Development
 

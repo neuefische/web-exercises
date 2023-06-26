@@ -1,6 +1,12 @@
-# New Project
+# New Next Project
 
-This project was created from the neue fische next template.
+This project was created from the neue fische `next` template.
+
+You can [🔗 **use this template on CodeSandbox**](https://codesandbox.io/p/sandbox/github/neuefische/web-exercises/tree/main/templates/next?file=/README.md) or locally by running this command in your Terminal:
+
+```bash
+npx -y ghcd@latest neuefische/web-exercises/tree/main/templates/next my-app -i
+```
 
 ## Development
 

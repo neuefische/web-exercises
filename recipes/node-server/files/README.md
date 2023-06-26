@@ -1,6 +1,12 @@
-# This is a new Node Server project.
+# New Node Server project
 
-This project was created from the neue fische node-server template.
+This project was created from the neue fische `node-server` template.
+
+You can [🔗 **use this template on CodeSandbox**](https://codesandbox.io/p/sandbox/github/neuefische/web-exercises/tree/main/templates/node-server?file=/README.md) or locally by running this command in your Terminal:
+
+```bash
+npx -y ghcd@latest neuefische/web-exercises/tree/main/templates/node-server my-app -i
+```
 
 ## Development
 
