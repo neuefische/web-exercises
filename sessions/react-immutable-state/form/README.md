@@ -37,7 +37,7 @@ You can use the following hints as guideline:
 
 ## Notes
 
-- You only have to touch the [`components/Form/index.js`](./components/Form/index.js) file.
+- You only have to touch the `./components/Form/index.js` file.
 
 ## Development
 

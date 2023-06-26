@@ -19,7 +19,7 @@ Use the following hints as guideline:
 
 ## Notes
 
-- You only have to touch the [`server.js`](./server.js) and [`index.js`](./index.js) files.
+- You only have to touch the `./server.js` and `./index.js` files.
 
 ## Development
 

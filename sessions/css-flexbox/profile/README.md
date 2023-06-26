@@ -16,7 +16,7 @@ Utilize what you've learned about flexbox to complete the following tasks:
 
 ## Notes
 
-- You only have to touch the [`css/styles.css`](./css/styles.css) file.
+- You only have to touch the `./css/styles.css` file.
 
 ## Development
 

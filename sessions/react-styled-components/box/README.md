@@ -1,6 +1,6 @@
 # Styled Components: Box
 
-Currently, there is a component called [`BoxWithClassName`](./components/BoxWithClassName/index.js). This component is rendered twice in [`_app.js`](./pages/_app.js).
+Currently, there is a component called [`BoxWithClassName`](./components/BoxWithClassName/index.js). This component is rendered twice in `./pages/_app.js`.
 
 This is why there are two boxes displayed, a green and a black one. They become red when you hover over them. Their styling is done via BEM and the `className` attribute.
 
@@ -21,13 +21,13 @@ You can use the following hints as guideline:
   - `StyledBox` should have the same styling as the `BoxWithClassName` component.
   - Check whether the `isBlack` prop is true and set the correct `background-color` accordingly.
   - How could you set the styling for the hover effect again?
-- Switch to [`pages/index.js`](./pages/index.js):
+- Switch to `./pages/index.js`:
   - import `BoxWithStyledComponents` and
   - below the two `BoxWithClassName` components, render two `BoxWithStyledComponents`, one green and one black.
 
 ### Bonus: Aligning Boxes Horizontally
 
-Using styled components, can you align the four boxes horizontally by only changing [`pages/index.js`](./pages/index.js)?
+Using styled components, can you align the four boxes horizontally by only changing `./pages/index.js`?
 
 - Hint: Use `display: flex` to achieve this goal.
 
@@ -39,7 +39,7 @@ Try to refactor the code, so that `BoxWithStyledComponents.js` includes only one
 
 ## Notes
 
-- You have to touch the [`pages/index.js`](./pages/index.js) file and add a file in the [`components`](./components/) folder.
+- You have to touch the `./pages/index.js` file and add a file in the [`components`](./components/) folder.
 
 ## Development
 

@@ -24,13 +24,13 @@ You can use the following hints as guideline:
 - Hint 2
 - ...
 
-Switch to the [`pages/index.js`](./pages/index.js) file and make something great happen!
+Switch to the `./pages/index.js` file and make something great happen!
 
 -->
 
 ## Notes
 
-- You only have to touch the [`pages/index.js`](./pages/index.js) file.
+- You only have to touch the `./pages/index.js` file.
 
 ## Development
 

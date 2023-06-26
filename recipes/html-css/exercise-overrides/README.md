@@ -20,13 +20,13 @@ Build a personal website according to the ![wireframe](). Use the following hint
 - Hint 2
 - ...
 
-Switch to the [`index.html`](./index.html) file and make something great happen!
+Switch to the `./index.html` file and make something great happen!
 
 -->
 
 ## Notes
 
-- You only have to touch the [`css/styles.css`](./css/styles.css) file.
+- You only have to touch the `./css/styles.css` file.
 
 ## Development
 

@@ -10,7 +10,7 @@ Unfortunately, the game does not work because the fetch function to get data fro
 
 ## Task
 
-Check out the [`js/fetch.js`](./js/fetch.js) file: There is a `fetchNewColor()` function which creates a random hex code and creates the correct url to fetch data from the Color API.
+Check out the `./js/fetch.js` file: There is a `fetchNewColor()` function which creates a random hex code and creates the correct url to fetch data from the Color API.
 
 Your task is to implement the fetch functionality:
 
@@ -20,7 +20,7 @@ Your task is to implement the fetch functionality:
 4. Call the `setColorToGuess()` function with the hex value and name of the closest named color.
 5. Guess colors! 🎉
 
-Switch to the [`js/fetch.js`](./js/fetch.js) file and start coding!
+Switch to the `./js/fetch.js` file and start coding!
 
 ## Development
 

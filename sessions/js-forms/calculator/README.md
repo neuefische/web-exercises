@@ -9,7 +9,7 @@ Add the following functionality to the submit event handler:
 
 > 💡 Make sure to thoroughly test the addition operation, as it can have unexpected results.
 
-> 💡 You only have to touch the [`js/index.js`](./js/index.js) file.
+> 💡 You only have to touch the `./js/index.js` file.
 
 ## Development
 

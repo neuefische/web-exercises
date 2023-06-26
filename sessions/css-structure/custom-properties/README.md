@@ -4,7 +4,7 @@ The CSS code in this challenge has multiple references to three different colors
 
 ## Task
 
-Check the [`css/styles.css`](./css/styles.css) file and find the three colors that are used multiple times. Unfortunately not all references to the same color use the same syntax.
+Check the `./css/styles.css` file and find the three colors that are used multiple times. Unfortunately not all references to the same color use the same syntax.
 
 Create a new `:root` selector and define three custom properties (variables) for the three colors. Use the following property names:
 
@@ -21,7 +21,7 @@ Make sure that everything still looks the same as before.
 
 > 💡 Use the [CSS Variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) (`var()`) syntax.
 
-Switch to the [`css/styles.css`](./css/styles.css) file create some custom properties!
+Switch to the `./css/styles.css` file create some custom properties!
 
 ## Bonus
 
@@ -33,7 +33,7 @@ Check the stylesheet for other values that might warrant extraction. One example
 
 ## Notes
 
-- You only have to touch the [`css/styles.css`](./css/styles.css) file.
+- You only have to touch the `./css/styles.css` file.
 
 ## Development
 

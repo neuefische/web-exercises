@@ -37,7 +37,7 @@ Do whatever you want. Can you animate the body's background-color while holding 
 
 ## Notes
 
-- You only have to touch the [`css/styles.css`](./css/styles.css) file.
+- You only have to touch the `./css/styles.css` file.
 
 ## Development
 

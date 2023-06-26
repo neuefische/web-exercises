@@ -32,7 +32,7 @@ Your task is to refactor the app so that submitting the form creates a new entry
 
 ### Add a `POST` route
 
-Switch to [`pages/api/products/index.js`](./pages/api/products/index.js) and write the code for the `request.method` `POST` :
+Switch to `./pages/api/products/index.js` and write the code for the `request.method` `POST` :
 
 - Use a `try...catch` block.
 - Try to:
@@ -48,7 +48,7 @@ Submitting the form will not yet work because the form does not know that you've
 
 ### Send a `POST` request
 
-Switch to [`components/ProductForm/index.js`](./components/ProductForm/index.js):
+Switch to `./components/ProductForm/index.js`:
 
 - There already is a `handleSubmit` function which creates a `productData` object with all relevant data.
 

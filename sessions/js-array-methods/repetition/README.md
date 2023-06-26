@@ -4,7 +4,7 @@ This codesandbox offers a some exercises to recap the array methods `map` and `f
 
 ## Task
 
-In the [`index.js`](./index.js) file, there is a `recipes` array with four objects.
+In the `./index.js` file, there is a `recipes` array with four objects.
 
 Below this array, you will find a couple of variables (e.g. `onlyTitles`, `titlesWithDuration`, etc.). They are all initialized with `null`.
 
@@ -12,7 +12,7 @@ And now it's your turn: delete the value `null` and write code so that the varia
 
 You will find some hints as comments.
 
-Switch to the [`index.js`](./index.js) file and map / filtersome recipes!
+Switch to the `./index.js` file and map / filtersome recipes!
 
 ## Notes
 

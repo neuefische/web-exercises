@@ -4,7 +4,7 @@ Fetching data is awesome, yet it can be frightening in the beginning. But don't 
 
 ## Task
 
-Have a look at the [`js/index.js`](./js/index.js) file: There is an `url` variable and an empty `fetchData()` function.
+Have a look at the `./js/index.js` file: There is an `url` variable and an empty `fetchData()` function.
 
 Inside of the `fetchData()` function, use the `url` variable to fetch data from the Star Wars API.
 
@@ -21,7 +21,7 @@ The following hints may guide you:
 - make sure to handle bad responses from the API as well
 - you can test bad responses via adding a random string of characters to the end of the URL stored in the url variable
 
-Please switch to the [`js/index.js`](./js/index.js) file: May the force be with you!
+Please switch to the `./js/index.js` file: May the force be with you!
 
 ## Development
 

@@ -6,7 +6,7 @@ Let's build an awesome interactive 5-star rating scale! The goal is to display f
 
 ### Part 1: Render Stars
 
-Start by rendering 5 empty stars in the `starContainer`. For that, switch to [`index.js`](./js/index.js) and write the function `renderStars`:
+Start by rendering 5 empty stars in the `starContainer`. For that, switch to `./js/index.js` and write the function `renderStars`:
 
 - Use a for loop inside the function to repeat the following code five times.
   💡 Start the loop with the value 1, not with 0
@@ -36,7 +36,7 @@ You are done! 🎉 Five stars to you! ⭐️⭐️⭐️⭐️⭐️
 
 ## Notes
 
-- You only have to touch the [`js/index.js`](./js/index.js) file.
+- You only have to touch the `./js/index.js` file.
 
 ## Development
 

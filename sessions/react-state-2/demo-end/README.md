@@ -5,8 +5,8 @@ This is the end state of the demo app.
 ## Notes
 
 - You only have to touch this files:
-  - [`src/App.js`](./src/App.js)
-  - [`src/components/SearchForm.js`](./src/components/SearchForm.js)
+  - `./src/App.js`
+  - `./src/components/SearchForm.js`
 
 ## Development
 

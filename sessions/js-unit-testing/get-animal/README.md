@@ -4,15 +4,15 @@ This exercise offers first steps into the world of software testing. It's quite 
 
 ## Task
 
-Have a look at the [`index.test.js`](index.test.js): there are predefined tests for the `getAnimal()` function.
+Have a look at the `index.test.js`: there are predefined tests for the `getAnimal()` function.
 
 Read them very carefully to understand what the `getAnimal()` function is supposed to do. After doing so, your task is to implement the function so that all tests pass.
 
-Please switch to the [`index.js`](index.js) file to start working (and liking animals)!
+Please switch to the `index.js` file to start working (and liking animals)!
 
 ## Notes
 
-- You only have to touch the [`index.js`](index.js) file.
+- You only have to touch the `index.js` file.
 
 ## Development
 

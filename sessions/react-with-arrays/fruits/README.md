@@ -1,6 +1,6 @@
 # React Arrays: Fruits
 
-For now, the [`src/App.js`](./src/App.js) file uses a `Card` component to render the text "banana". This is easy to handle if you only have a single use case.
+For now, the `./src/App.js` file uses a `Card` component to render the text "banana". This is easy to handle if you only have a single use case.
 
 Most often, however, you have an array of objects and want to dynamically render a component (like `Card`) for each of these objects.
 
@@ -24,7 +24,7 @@ Use the array method `map` to create a Card component for each fruit in your arr
 
 Change the `Card` component so that it receives a `color` prop and set the background-color of the Card to this value. Use the color property of each fruit object for this prop.
 
-- Hint: check the [`src/components/Card.css`](./src/components/Card.css) file for some cues as to how to handle having the colors change automatically
+- Hint: check the `./src/components/Card.css` file for some cues as to how to handle having the colors change automatically
 
 ## Development
 

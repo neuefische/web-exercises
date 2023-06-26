@@ -12,7 +12,7 @@ Before you start, follow the instructions to add all necessary files to your pro
 
 ### Details Page
 
-You might start with the details page. Note that the background colors for each volume are given in the [`data.js`](./lib/data.js) file.
+You might start with the details page. Note that the background colors for each volume are given in the `./lib/data.js` file.
 
 How could one style a component depending on a prop again?
 

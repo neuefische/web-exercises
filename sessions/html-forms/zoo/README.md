@@ -4,7 +4,7 @@ In this Codesandbox you will find a contact form for zoo visitors.
 
 The contact form is not yet implemented. It is up to you to add the missing pieces.
 
-Switch to the [`index.html`](./index.html) file and add all missing inputs and form elements!
+Switch to the `./index.html` file and add all missing inputs and form elements!
 
 ---
 

@@ -4,14 +4,14 @@ Click the button "Show Message" to render a hidden message to the UI. The App wi
 
 ## Task
 
-Switch to the [`src/App.js`](./src/App.js) file and make yourself familiar with the App.
+Switch to the `./src/App.js` file and make yourself familiar with the App.
 
-After that, fix the error in the [`src/App.js`](./src/App.js) file. If you need a clue, search the internet for the eslint rule or the error message.
+After that, fix the error in the `./src/App.js` file. If you need a clue, search the internet for the eslint rule or the error message.
 
 ## Notes
 
 - If you are wondering about your solution: yes, it is that easy!
-- You only have to touch the [`src/App.js`](./src/App.js) file.
+- You only have to touch the `./src/App.js` file.
 
 ## Development
 

@@ -4,11 +4,11 @@ This exercise offers first steps into the world of software testing. It's quite 
 
 ## Task
 
-Have a look at the [`index.js`](index.js): there are four functions, `add()`, `subtract()`, `multiply()`, and `divide()`.
+Have a look at the `index.js`: there are four functions, `add()`, `subtract()`, `multiply()`, and `divide()`.
 
 Read them very carefully to understand what these functions are supposed to return.
 
-Create an `index.test.js` file and import the functions from the [`index.js`](./index.js). Implement tests to make sure that the functions work properly.
+Create an `index.test.js` file and import the functions from the `./index.js`. Implement tests to make sure that the functions work properly.
 
 Your tests should cover the following criteria (write one test case for each of them):
 

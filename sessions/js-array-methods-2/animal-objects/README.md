@@ -4,7 +4,7 @@ This CodeSandbox offers some more exercises to recap some advanced array methods
 
 ## Task
 
-In the [`index.js`](./index.js) file, there is an `animals` array with - guess what? - animals. Each animal is an object with some key-value-pairs.
+In the `./index.js` file, there is an `animals` array with - guess what? - animals. Each animal is an object with some key-value-pairs.
 
 Below this array, you will find a couple of variables (e.g. `firstAnimalStartingWithLetterG`). They all are initialized with `null`.
 
@@ -27,7 +27,7 @@ Additionally, at some point you will need:
 
 You will find some hints as comments.
 
-Switch to the [`index.js`](./index.js) file and work with animals!
+Switch to the `./index.js` file and work with animals!
 
 ## Notes
 

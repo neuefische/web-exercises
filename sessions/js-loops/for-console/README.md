@@ -12,7 +12,7 @@ Make sure your for loop has
 - a criterion to be met by the counter variable
 - a rule how the counter variable is increased
 
-Please switch to the [`index.js`](./index.js) file to start counting!
+Please switch to the `./index.js` file to start counting!
 
 ## Development
 

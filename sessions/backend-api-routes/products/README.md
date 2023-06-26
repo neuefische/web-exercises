@@ -7,7 +7,7 @@ In this challenge, you will
 
 ## Task
 
-- Check [`services/productServices.js`](./services/productServices.js): there is an array of products and two functions which return either all or a single product.
+- Check `./services/productServices.js`: there is an array of products and two functions which return either all or a single product.
 
 ### Create the API
 

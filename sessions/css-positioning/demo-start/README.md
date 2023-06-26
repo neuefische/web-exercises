@@ -6,7 +6,7 @@ This is the starter version of the CSS Positioning demo.
 
 ## Notes
 
-- You only have to touch the [`css/styles.css`](./css/styles.css) file.
+- You only have to touch the `./css/styles.css` file.
 - You can find the finalized version of this demo in `sessions/css-positioning/demo-end`.
 
 ## Development

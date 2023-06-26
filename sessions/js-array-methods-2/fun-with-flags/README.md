@@ -20,7 +20,7 @@ Adapt the rendering of the found countries. You'll need to loop over the array o
 
 ---
 
-Go to [`index.js`](./index.js) and start coding!
+Go to `./index.js` and start coding!
 
 ## Development
 

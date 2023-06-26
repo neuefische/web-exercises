@@ -4,7 +4,7 @@ This is the starter version of the CSS Flexbox demo.
 
 ## Notes
 
-- You only have to touch the [`css/styles.css`](./css/styles.css) file.
+- You only have to touch the `./css/styles.css` file.
 - You find the end point for this demo in `sessions/css-flexbox/demo-end`.
 
 ## Development

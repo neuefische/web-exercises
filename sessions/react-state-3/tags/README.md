@@ -1,6 +1,6 @@
 # React State 3: Tags
 
-In the [`src/App.js`](./src/App.js) file, there is a `tags` state passed to the [`List`](./src/components/List/index.js) component. Each tag has a delete button.
+In the `./src/App.js` file, there is a `tags` state passed to the [`List`](./src/components/List/index.js) component. Each tag has a delete button.
 
 There is also a [`Form`](./src/components/Form/index.js) component which already handles the submit event and the data.
 
@@ -33,7 +33,7 @@ You can use the following hints as guideline:
 
 ## Notes
 
-- You only have to touch the [`src/App.js`](./src/App.js) file.
+- You only have to touch the `./src/App.js` file.
 
 ## Development
 

@@ -14,7 +14,7 @@ For now, the pokemon are only fetched when we click the button below. Let's chan
 
 Explaining the task in detail. E.g.:
 
-Switch to the [`src/App.js`](./src/App.js) file and
+Switch to the `./src/App.js` file and
 
 1. remove the 'Load Pokemon' button.
 2. fetch pokemon when the app is rendered.
@@ -28,7 +28,7 @@ You can use the following hints as guideline:
 
 ## Notes
 
-- You only have to touch the [`src/App.js`](./src/App.js) file.
+- You only have to touch the `./src/App.js` file.
 
 ## Development
 

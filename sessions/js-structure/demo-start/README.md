@@ -4,7 +4,7 @@
 
 ## Notes
 
-- You only have to touch the [`index.js`](./index.js) file, the `<script>` tag in the [`index.html`](./index.html) file and create new JS files.
+- You only have to touch the `./index.js` file, the `<script>` tag in the `./index.html` file and create new JS files.
 - You find the end point for this demo in `sessions/js-structure/demo-end`.
 
 ## Development

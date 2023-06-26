@@ -24,13 +24,13 @@ You can use the following hints as guideline:
 - Hint 2
 - ...
 
-Switch to the [`src/App.js`](./src/App.js) file and make something great happen!
+Switch to the `./src/App.js` file and make something great happen!
 
 -->
 
 ## Notes
 
-- You only have to touch the [`src/App.js`](./src/App.js) file.
+- You only have to touch the `./src/App.js` file.
 
 ## Development
 

@@ -2,7 +2,7 @@
 
 ## Notes
 
-- Open the [`index.js`](./src/index.js) file to present this demo.
+- Open the `./src/index.js` file to present this demo.
 
 ## Development
 

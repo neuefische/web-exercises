@@ -12,7 +12,7 @@
 
 ## Notes
 
-- You only have to touch the [`index.html`](index.html) and [`css/styles.css`](./css/styles.css) file.
+- You only have to touch the `index.html` and `./css/styles.css` file.
 
 ## Development
 

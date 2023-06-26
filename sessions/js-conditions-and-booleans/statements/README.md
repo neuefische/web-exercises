@@ -44,7 +44,7 @@ In this exercise you train to write if / else and ternary statements in various 
 
 ## Notes
 
-- You only have to touch the [`index.js`](./index.js) file.
+- You only have to touch the `./index.js` file.
 
 ### Local development
 

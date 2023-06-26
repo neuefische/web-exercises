@@ -15,7 +15,7 @@ Use the following guidelines:
 - We need a correct email adress (i.e. including an `@` symbol) for contacting the user.
 - It's necessary that the user has read the terms of service and agrees to them.
 
-Switch to the [`index.html`](./index.html) file and validate the form in the mentioned way!
+Switch to the `./index.html` file and validate the form in the mentioned way!
 
 ## Development
 

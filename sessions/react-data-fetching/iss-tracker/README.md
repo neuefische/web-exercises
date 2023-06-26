@@ -42,7 +42,7 @@ The only thing not working yet is the "Refresh" button because the `getISSCords`
 
 ## Notes
 
-- You only have to touch the [`/components/ISSTracker/index.js`](./components/ISSTracker/index.js) file.
+- You only have to touch the `./components/ISSTracker/index.js` file.
 
 ## Development
 

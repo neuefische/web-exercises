@@ -10,7 +10,7 @@ Add an event listener to the "buy" button of the second product teaser. When cli
 
 ## Notes
 
-- You only have to touch the [`js/index.js`](./js/index.js) file.
+- You only have to touch the `./js/index.js` file.
 
 ## Development
 

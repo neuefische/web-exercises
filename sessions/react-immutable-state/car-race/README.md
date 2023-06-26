@@ -8,7 +8,7 @@ Everyone loves (electric) car racing, right? Let's become the champion!
 - Open the browser: there are five cars, each has its own track with a finish line and a number how long the last distance driven was.
 - Try to click a car: it's not yet moving.
 - Check the [`CarRace component`](components/CarRace/index.js): the `moveCar` function is not working.
-- Check the [`initialCars variable in the utils.js`](utils/utils.js): it#s an array with five car objects; each car contains two keys: the `emoji` as string and the `position` object. This object determines the exact position of the car on its track (`x` key) and the distance covered with the last button click.
+- Check the `utils/utils.js`: it#s an array with five car objects; each car contains two keys: the `emoji` as string and the `position` object. This object determines the exact position of the car on its track (`x` key) and the distance covered with the last button click.
 
 Switch to the [`CarRace component`](components/CarRace/index.js) again:
 
@@ -43,7 +43,7 @@ You can use the following hints as guideline:
 
 ## Notes
 
-- You only have to touch the [`components/CarRace/index.js`](./components/CarRace/index.js) file.
+- You only have to touch the `./components/CarRace/index.js` file.
 
 ## Development
 

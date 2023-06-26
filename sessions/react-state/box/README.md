@@ -1,6 +1,6 @@
 # React State: Box
 
-In the [`src/App.js`](./src/App.js) file, there is a button which toggles an `isActive` variable. You can check the console for its value after clicking the button.
+In the `./src/App.js` file, there is a button which toggles an `isActive` variable. You can check the console for its value after clicking the button.
 
 Depending on the `isActive` variable, a class called `box--active` is added to the `<div>` which should then change the `<div>`'s color.
 
@@ -32,7 +32,7 @@ Can you explain why this happens?
 ## Notes
 
 - There is no need to change anything in the return statement of the `App` component (except for the bonus task).
-- You only have to touch the [`src/App.js`](./src/App.js) file.
+- You only have to touch the `./src/App.js` file.
 
 ## Development
 

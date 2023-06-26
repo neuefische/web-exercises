@@ -20,7 +20,7 @@ In both cases your callback function should log the following text to the consol
 
 3. Implement the logic from the previous from "showWelcomeMessage" inside this anonymous function.
 
-Please switch to the [`js/index.js`](./js/index.js) file to start the challenge.
+Please switch to the `./js/index.js` file to start the challenge.
 
 ## Development
 

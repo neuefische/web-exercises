@@ -2,11 +2,11 @@
 
 ## Task
 
-- Open the [`index.html`](./index.html) file and follow the instructions given there.
+- Open the `./index.html` file and follow the instructions given there.
 
 ## Notes
 
-- You only have to touch the [`index.html`](./index.html) file.
+- You only have to touch the `./index.html` file.
 
 ## Development
 

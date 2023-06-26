@@ -18,7 +18,7 @@ The following message should be logged to the console:
 2.  Call "handleUserLogin" again but this time write the callback function as an anonymous function **inside** the function call (i.e. between the round brackets).
     (You should see the log from your callback message)
 
-Please switch to the [`js/index.js`](./js/index.js) file to start the challenge.
+Please switch to the `./js/index.js` file to start the challenge.
 
 ## Development
 

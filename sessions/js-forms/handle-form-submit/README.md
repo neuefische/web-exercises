@@ -4,7 +4,7 @@ Use JavaScript to react to the form submission.
 
 Log all form data (in object form) into the console in the submit event handler.
 
-> 💡 You only have to touch the [`js/index.js`](./js/index.js) file.
+> 💡 You only have to touch the `./js/index.js` file.
 
 <br>
 

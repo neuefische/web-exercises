@@ -4,7 +4,7 @@
 
 ## Notes
 
-- You only have to touch the [`js/index.js`](./js/index.js) file.
+- You only have to touch the `./js/index.js` file.
 
 ## Development
 

@@ -4,7 +4,7 @@ This is the final version of the backend basics demo.
 
 ## Notes
 
-- You only have to touch the [`index.js`](./index.js) and [`server.js`](./server.js) files.
+- You only have to touch the `./index.js` and `./server.js` files.
 
 ## Development
 

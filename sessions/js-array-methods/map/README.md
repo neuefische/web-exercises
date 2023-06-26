@@ -4,7 +4,7 @@ This codesandbox offers a some exercises to recap the array method `map`. Let's 
 
 ## Task
 
-In the [`index.js`](./index.js) file, there is a `cards` array with three objects.
+In the `./index.js` file, there is a `cards` array with three objects.
 
 Below this array, you will find a couple of variables (e.g. `lowerCaseAnswers`). They all are initialized with `null`.
 
@@ -12,7 +12,7 @@ And now it's your turn: delete the value `null` and write code such that the var
 
 You will find some hints as comments.
 
-Switch to the [`index.js`](./index.js) file and map / filtersome recipes!
+Switch to the `./index.js` file and map / filtersome recipes!
 
 ## Notes
 

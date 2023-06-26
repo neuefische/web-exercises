@@ -6,7 +6,7 @@ This is the start state of the demo app.
 
 TO DO:
 
-- You only have to touch the [`src/App.js`](./src/App.js) file.
+- You only have to touch the `./src/App.js` file.
 
 ## Development
 

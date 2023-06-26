@@ -42,7 +42,7 @@ Let's update the background of the output display to indicate whether we gain or
 
 ## Notes
 
-- You only have to touch the [`js/index.js`](./js/index.js) file.
+- You only have to touch the `./js/index.js` file.
 
 ## Development
 

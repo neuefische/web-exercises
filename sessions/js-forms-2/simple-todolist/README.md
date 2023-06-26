@@ -12,7 +12,7 @@ Everyone has something to do. Let's make sure that no one forgets anything.
 
 ### 2. Create list entries
 
-Look at the [`index.html`](./index.html) file: there already is an `ul` for our submitted todos. We only need to write a function which creates list items and appends them to this list.
+Look at the `./index.html` file: there already is an `ul` for our submitted todos. We only need to write a function which creates list items and appends them to this list.
 
 Here are some hints to guide you:
 
@@ -25,7 +25,7 @@ Here are some hints to guide you:
   - append the headline and text element to the list item as well as the list item to the todoList
   - call the function when the submit event is fired and pass the data object as an argument.
 
-Switch to the [`js/index.js`](./js/index.js) file and make things happen!
+Switch to the `./js/index.js` file and make things happen!
 
 ## Development
 

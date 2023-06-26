@@ -6,7 +6,7 @@ Unfortunately, the form is not accessible because there are some issues in the H
 
 ## Task:
 
-Switch to the [`index.html`](./index.html) file and make the form accessible!
+Switch to the `./index.html` file and make the form accessible!
 
 ## Questions to guide you:
 

@@ -1,10 +1,10 @@
 # 🚀 SpaceRocket™️ Launch
 
-Follow the instructions in the [`index.html`](./index.html) file to launch the rocket.
+Follow the instructions in the `./index.html` file to launch the rocket.
 
 ## Notes
 
-- You only have to edit the [`js/launchSequence.js`](./js/launchSequence.js) file.
+- You only have to edit the `./js/launchSequence.js` file.
 
 ## Development
 

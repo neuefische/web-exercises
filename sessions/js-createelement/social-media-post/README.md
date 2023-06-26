@@ -12,7 +12,7 @@ Append the second social media post to the body. Don't forget to add the event l
 
 ## Notes
 
-- You only have to touch the [`js/index.js`](./js/index.js) file.
+- You only have to touch the `./js/index.js` file.
 
 ## Development
 

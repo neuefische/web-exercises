@@ -24,13 +24,13 @@ You can use the following hints as guideline:
 - Hint 2
 - ...
 
-Switch to the  [`js/index.js`](./js/index.js)  file and make something great happen!
+Switch to the  `./js/index.js`  file and make something great happen!
 
 -->
 
 ## Notes
 
-- You only have to touch the [`js/index.js`](./js/index.js) file.
+- You only have to touch the `./js/index.js` file.
 
 ## Development
 

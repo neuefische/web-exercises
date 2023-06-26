@@ -6,7 +6,7 @@ Let's dive into it and see how React fragments can help here!
 
 ## Task
 
-Look at the [`src/App.js`](./src/App.js) file: there is a `<main>` element containing three `Box` components with different colors.
+Look at the `./src/App.js` file: there is a `<main>` element containing three `Box` components with different colors.
 
 Note that the `<main>` wrapper is a flex container which is why the `Box` components are aligned horizontically.
 
@@ -31,7 +31,7 @@ To fix this, replace the `<div>` with fragments `<></>`: they won't create an HT
 
 ## Notes
 
-- You only have to touch the [`src/App.js`](./src/App.js) file.
+- You only have to touch the `./src/App.js` file.
 
 ## Development
 

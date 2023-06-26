@@ -10,7 +10,7 @@ When clicking the "Clear all toast messages" button, the list of toast messages 
 
 ## Notes
 
-- You only have to touch the [`js/index.js`](./js/index.js) file.
+- You only have to touch the `./js/index.js` file.
 
 ## Development
 
