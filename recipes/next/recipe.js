@@ -19,16 +19,16 @@ export default {
     ],
   ],
   async beforeFiles({ cwd, spinner }) {
-    spinner.text = "Installing SVGR…";
+    spinner.text = "Cooking next — Installing SVGR…";
     await installSvgr({ cwd });
 
-    spinner.text = "Installing Styled Components…";
+    spinner.text = "Cooking next — Installing Styled Components…";
     await installStyledComponents({ cwd });
 
-    spinner.text = "Installing Jest…";
+    spinner.text = "Cooking next — Installing Jest…";
     await installJest({ cwd });
 
-    spinner.text = "Deleting unnecessary files…";
+    spinner.text = "Cooking next — Deleting unnecessary files…";
     await deleteUnnecessaryFiles({ cwd });
   },
 };
