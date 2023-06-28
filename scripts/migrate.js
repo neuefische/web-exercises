@@ -118,6 +118,7 @@ async function applyTemplate(challengeFolder, template, packageJson) {
     path.join(".storybook", "main.js"),
     path.join(".storybook", "preview.js"),
     ".npmrc",
+    "jsconfig.json",
   ]);
 
   copyFileIfExistsElseRemove("index.html", async (current, template) => {
