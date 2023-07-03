@@ -7,9 +7,9 @@ export default function Light({ isOn, name, onToggle }) {
       onClick={() => {
         onToggle();
       }}
-      isOn={isOn}
+      $isOn={isOn}
     >
-      <Icon isOn={isOn}>💡</Icon>
+      <Icon $isOn={isOn}>💡</Icon>
       <Text>
         <Name>{name}</Name>
         <State>{isOn ? "On" : "Off"}</State>
