@@ -5,10 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node --watch index.js || node index.js",
+    "start": "node --watch index.js || npm run start:nowatch",
     "lint": "npx -y eslint@latest .",
     "test": "NODE_OPTIONS=--experimental-vm-modules npx -y jest@latest --watchAll",
-    "dev": "node --watch index.js || npm run start"
+    "start:nowatch": "node index.js"
   },
   "devDependencies": {
     "@babel/core": "^7.19.6",

@@ -4,8 +4,12 @@
   "tasks": {
     "start": {
       "name": "Preview",
-      "command": "npm run start",
+      "command": "npm run start:nowatch",
       "runAtStart": true,
+      "restartOn": {
+        "files": ["package-lock.json", "*.js"],
+        "branch": true
+      },
       "preview": {
         "port": 3000
       }
