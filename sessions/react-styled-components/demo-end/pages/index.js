@@ -8,7 +8,7 @@ export default function HomePage() {
     <>
       <Container>
         <Button>Click me</Button>
-        <Button color="danger">Click me not</Button>
+        <Button $color="danger">Click me not</Button>
       </Container>
 
       <Container>
@@ -17,7 +17,7 @@ export default function HomePage() {
         </p>
       </Container>
 
-      <Container direction="column">
+      <Container $direction="column">
         <InfoBox title="This is an info" message="Read it carefully!" />
         <InfoBox
           title="It worked"
