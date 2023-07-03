@@ -39,12 +39,13 @@ Select the "Preview: 3000" tab to view this project.
 
 Select the "Tests: logs" tab to view the tests.
 
-> The `npm run start` and `npm run test` scripts run automatically.
+> The `npm run start:nowatch` and `npm run test` scripts run automatically. CodeSandbox will restart the server on file changes.
 
 ### Scripts
 
 You can use the following commands:
 
-- `npm run start` to starts the node server
+- `npm run start` to starts the node server (and watches for changes)
+- `npm run start:nowatch` to start the node server (without watching for changes)
 - `npm run test` to run the tests
 - `npm run lint` to run the linter
