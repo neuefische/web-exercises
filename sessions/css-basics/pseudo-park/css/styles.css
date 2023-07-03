@@ -12,10 +12,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: system-ui;
-}
-
 .park {
   margin: 16px;
   border: 2px dashed silver;
