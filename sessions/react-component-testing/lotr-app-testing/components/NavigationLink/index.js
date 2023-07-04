@@ -4,7 +4,7 @@ import styled from "styled-components";
 const StyledNavigationLink = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: ${({ align }) => "flex-" + align};
+  align-items: ${({ $align }) => "flex-" + $align};
   width: var(--width-wrapper);
 `;
 
@@ -23,7 +23,7 @@ const StyledLink = styled(Link)`
 
 export default function NavigationLink({ href, children, align = "start" }) {
   return (
-    <StyledNavigationLink align={align}>
+    <StyledNavigationLink $align={align}>
       <StyledLink href={href}>{children}</StyledLink>
     </StyledNavigationLink>
   );

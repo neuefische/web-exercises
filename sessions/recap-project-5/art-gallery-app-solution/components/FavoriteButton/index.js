@@ -2,8 +2,8 @@ import Image from "next/image.js";
 import styled from "styled-components";
 
 const Button = styled.button`
-  position: ${({ positionAbsolute }) =>
-    positionAbsolute ? "absolute" : "static"};
+  position: ${({ $positionAbsolute }) =>
+    $positionAbsolute ? "absolute" : "static"};
   right: 1rem;
   top: 1.5rem;
   z-index: 1;
@@ -28,7 +28,7 @@ export default function FavoriteButton({
       onClick={onToggleFavorite}
       isFavorite={isFavorite}
       aria-label={isFavorite ? "unlike" : "like"}
-      positionAbsolute={positionAbsolute}
+      $positionAbsolute={positionAbsolute}
     >
       <Image src="/assets/heart.svg" width={40} height={40} alt="" />
     </Button>

@@ -9,8 +9,8 @@ const Title = styled.h2`
   margin: 0;
   opacity: 0.5;
   transition: all 200ms;
-  ${({ isLiked }) =>
-    isLiked &&
+  ${({ $isLiked }) =>
+    $isLiked &&
     css`
       opacity: 1;
       text-decoration-color: var(--nemo);
@@ -60,7 +60,7 @@ export default function Movie({
 }) {
   return (
     <StyledMovie>
-      <Title isLiked={isLiked}>{name}</Title>
+      <Title $isLiked={isLiked}>{name}</Title>
       <Actions>
         <Button
           type="button"

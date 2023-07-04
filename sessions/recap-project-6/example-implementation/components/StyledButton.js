@@ -10,8 +10,8 @@ export const StyledButton = styled.button`
   border: none;
   font-size: inherit;
 
-  ${({ variant }) =>
-    variant === "delete" &&
+  ${({ $variant }) =>
+    $variant === "delete" &&
     css`
       background-color: firebrick;
       color: white;

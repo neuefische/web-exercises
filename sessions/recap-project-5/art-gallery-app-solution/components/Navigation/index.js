@@ -16,7 +16,7 @@ const List = styled.ul`
 const NavLink = styled(Link)`
   text-decoration: none;
   padding: 0 0.3rem;
-  color: ${({ active }) => (active ? "var(--primary-color)" : "black")};
+  color: ${({ $isActive }) => ($isActive ? "var(--primary-color)" : "black")};
   font-weight: bold;
   &:hover {
     border-bottom: 5px dotted var(--primary-color);
@@ -30,14 +30,14 @@ export default function Navigation() {
     <nav>
       <List role="list">
         <li>
-          <NavLink href="/" active={router.pathname === "/" ? "active" : ""}>
+          <NavLink href="/" $isActive={router.pathname === "/"}>
             Spotlight
           </NavLink>
         </li>
         <li>
           <NavLink
             href="/art-pieces"
-            active={router.pathname === "/art-pieces" ? "active" : ""}
+            $isActive={router.pathname === "/art-pieces"}
           >
             Art Pieces
           </NavLink>
@@ -45,7 +45,7 @@ export default function Navigation() {
         <li>
           <NavLink
             href="/favorites"
-            active={router.pathname === "/favorites" ? "active" : ""}
+            $isActive={router.pathname === "/favorites"}
           >
             Favorites
           </NavLink>
