@@ -19,4 +19,4 @@ function renderJoke(joke) {
   jokeSection.append(newJoke);
 }
 
-// setJoke("Thanks for explaining the word “many” to me, it means a lot.");
+// renderJoke("Thanks for explaining the word “many” to me, it means a lot.");
