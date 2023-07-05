@@ -44,7 +44,7 @@ export default function DetailsPage() {
   return (
     <>
       <Link href={"/"} passHref legacyBehavior>
-        <StyledLink justifySelf="start">back</StyledLink>
+        <StyledLink $justifySelf="start">back</StyledLink>
       </Link>
       <ImageContainer>
         <StyledImage
@@ -68,7 +68,7 @@ export default function DetailsPage() {
         <Link href={`/places/${id}/edit`} passHref legacyBehavior>
           <StyledLink>Edit</StyledLink>
         </Link>
-        <StyledButton onClick={deletePlace} type="button" variant="delete">
+        <StyledButton onClick={deletePlace} type="button" $variant="delete">
           Delete
         </StyledButton>
       </ButtonContainer>

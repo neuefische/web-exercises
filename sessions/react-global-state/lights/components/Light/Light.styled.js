@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const LightButton = styled.button`
   border: none;
-  background-color: ${({ isOn }) =>
-    isOn ? "rgb(255 255 255 / 0.5)" : "rgb(175 175 175 / 0.5)"};
+  background-color: ${({ $isOn }) =>
+    $isOn ? "rgb(255 255 255 / 0.5)" : "rgb(175 175 175 / 0.5)"};
   backdrop-filter: blur(10px) brightness(1.2);
   border-radius: 8px;
   padding: 8px;
@@ -17,19 +17,19 @@ export const LightButton = styled.button`
   transition: background-color 0.2s;
 
   &:hover {
-    background-color: ${({ isOn }) =>
-      isOn ? "rgb(255 255 255 / 0.55)" : "rgb(175 175 175 / 0.55)"};
+    background-color: ${({ $isOn }) =>
+      $isOn ? "rgb(255 255 255 / 0.55)" : "rgb(175 175 175 / 0.55)"};
   }
 
   &:active {
-    background-color: ${({ isOn }) =>
-      isOn ? "rgb(255 255 255 / 0.6)" : "rgb(175 175 175 / 0.6)"};
+    background-color: ${({ $isOn }) =>
+      $isOn ? "rgb(255 255 255 / 0.6)" : "rgb(175 175 175 / 0.6)"};
   }
 `;
 
 export const Icon = styled.div`
   font-size: 32px;
-  filter: ${({ isOn }) => (isOn ? "none" : "grayscale(100%)")};
+  filter: ${({ $isOn }) => ($isOn ? "none" : "grayscale(100%)")};
   transition: filter 0.2s;
 `;
 

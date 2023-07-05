@@ -1,7 +1,7 @@
 {
   "name": "css-basics_shapes",
   "version": "0.0.0-unreleased",
-  "description": "",
+  "description": "CSS Basics: Shapes",
   "main": "index.html",
   "nf": {
     "template": "html-css"

@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const CarButton = styled.button`
   font-size: 2rem;
-  transform: ${({ positionX }) => `translateX(${positionX}px)`} rotateY(180deg);
+  transform: ${({ $positionX }) => `translateX(${$positionX}px)`}
+    rotateY(180deg);
   position: relative;
   z-index: 2;
   background-color: transparent;
@@ -11,7 +12,7 @@ export const CarButton = styled.button`
   user-select: none;
 
   &:hover {
-    transform: ${({ positionX }) => `translateX(${positionX}px)`}
+    transform: ${({ $positionX }) => `translateX(${$positionX}px)`}
       rotateY(180deg) scale(1.04);
     filter: drop-shadow(0 0 0.5rem rgb(0 0 0 / 50%));
   }
@@ -23,8 +24,8 @@ export const CarButton = styled.button`
     z-index: -1;
     height: 42%;
     top: 40%;
-    right: ${({ lastDistance }) => `calc(-${lastDistance}px + 0.25em)`};
-    width: ${({ lastDistance }) => `${lastDistance}px`};
+    right: ${({ $lastDistance }) => `calc(-${$lastDistance}px + 0.25em)`};
+    width: ${({ $lastDistance }) => `${$lastDistance}px`};
     background-color: transparent;
     background-image: linear-gradient(90deg, white 25%, transparent 100%);
     background-position: 0 0;
@@ -33,7 +34,7 @@ export const CarButton = styled.button`
 
 export const AllCarRoutes = styled.div`
   display: grid;
-  grid-template-columns: ${({ finishLine }) => `${finishLine + 50}px`} 100px;
+  grid-template-columns: ${({ $finishLine }) => `${$finishLine + 50}px`} 100px;
   align-items: center;
   gap: 0.25rem;
 `;

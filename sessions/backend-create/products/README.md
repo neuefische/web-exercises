@@ -54,7 +54,7 @@ Switch to `./components/ProductForm/index.js`:
 
 Your task is to fetch your new `POST` route and send the data to your database. After that use `mutate` from `useSWR` to refetch the data from the database.
 
-- call `useSWR` in your `JokeForm` component with the API endpoint and destructure the `mutate` method.
+- call `useSWR` in your `ProductForm` component with the API endpoint and destructure the `mutate` method.
 - inside the handleSubmit function:
   > 💡 Hint: have a look at the handout if you get stuck here.
 - send a "POST" request with `fetch` using the following options as the second argument
@@ -69,7 +69,7 @@ body: JSON.stringify(???),
 }
 ```
 
-- use the jokeData from the form input as the body of the request
+- use the productData from the form input as the body of the request
 - await the response of the fetch, if the fetch was successful, call the `mutate` method to trigger a data revalidation of the useSWR hooks
 
 Open [`localhost:3000/`](http://localhost:3000/) in your browser, submit a new fish and be happy about your shop being expanded!

@@ -20,7 +20,7 @@ export default function EditPage() {
     <>
       <h2 id="edit-place">Edit Place</h2>
       <Link href={`/places/${id}`} passHref legacyBehavior>
-        <StyledLink justifySelf="start">back</StyledLink>
+        <StyledLink $justifySelf="start">back</StyledLink>
       </Link>
       <Form onSubmit={editPlace} formName={"edit-place"} defaultData={place} />
     </>
