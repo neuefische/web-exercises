@@ -1,6 +1,6 @@
 # React Nesting: Navigation
 
-For now, there is a navigation in the [`src/App.js`](./src/App.js) file which only uses built-in React components.
+For now, there is a navigation in the `./src/App.js` file which only uses built-in React components.
 
 Let's refactor to use custom components instead; you will encounter the `children` prop and recap props in general.
 
@@ -99,20 +99,24 @@ export default function App() {
 
 ## Notes
 
-- You only have to touch the [`src/App.js`](./src/App.js) file and the files you are going to create during this exercise.
+- You only have to touch the `./src/App.js` file and the files you are going to create during this exercise.
 
 ## Development
 
-### CodeSandbox
+### Local Development
 
-Select the "Browser" tab to view this project.
+To work locally, please install the dependencies using `npm i` first.
 
-### Local development
+Run `npm run start` to start a development server and open the displayed URL in a browser.
 
-To run project commands locally, you need to install the dependencies using `npm i` first.
+### CodeSandbox Cloud
 
-You can then use the following commands:
+Select the "Preview: 3000" tab to view this project.
 
-- `npm run start` to start the development server
+> The `npm run start` script runs automatically.
 
-> 💡 This project requires a bundler. You can use `npm run start` to start the development server. You can then view the project in the browser at `http://localhost:3000`. The Live Preview Extension for Visual Studio Code will **not** work for this project.
+### Scripts
+
+You can use the following commands:
+
+- `npm run start` to start a development server

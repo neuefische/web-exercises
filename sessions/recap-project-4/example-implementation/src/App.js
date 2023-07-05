@@ -32,7 +32,7 @@ function App() {
         console.error(error);
       }
     }
-    
+
     fetchWeather();
     const timer = setInterval(() => {
       fetchWeather();

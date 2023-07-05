@@ -5,13 +5,13 @@ export default {
     "npx",
     [
       "-y",
-      "create-next-app@latest",
+      "create-next-app@13.4",
       "--js",
       "--eslint",
       "--use-npm",
       "--no-tailwind",
       "--no-src-dir",
-      "--no-experimental-app",
+      "--no-app",
       "--import-alias",
       "@/*",
       ".",
@@ -19,28 +19,19 @@ export default {
     ],
   ],
   async beforeFiles({ cwd, spinner }) {
-    spinner.text = "Installing Next.js Font…";
-    await installNextjsFont({ cwd });
-
-    spinner.text = "Installing SVGR…";
+    spinner.text = "Cooking next — Installing SVGR…";
     await installSvgr({ cwd });
 
-    spinner.text = "Installing Styled Components…";
+    spinner.text = "Cooking next — Installing Styled Components…";
     await installStyledComponents({ cwd });
 
-    spinner.text = "Installing Jest…";
+    spinner.text = "Cooking next — Installing Jest…";
     await installJest({ cwd });
 
-    spinner.text = "Deleting unnecessary files…";
+    spinner.text = "Cooking next — Deleting unnecessary files…";
     await deleteUnnecessaryFiles({ cwd });
   },
 };
-
-async function installNextjsFont({ cwd }) {
-  const { execa } = await import("execa");
-
-  await execa("npm", ["install", "@next/font"], { cwd });
-}
 
 async function installSvgr({ cwd }) {
   const { execa } = await import("execa");

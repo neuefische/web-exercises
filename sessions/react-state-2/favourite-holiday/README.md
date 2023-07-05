@@ -1,12 +1,12 @@
 # React State 2: Favourite Holiday
 
-In the [`src/App.js`](./src/App.js) file, there is a form in which you can enter your favourite holiday and its respective date. Below the form, the submitted data should be displayed.
+In the `./src/App.js` file, there is a form in which you can enter your favourite holiday and its respective date. Below the form, the submitted data should be displayed.
 
 Unfortunately, the form is not working correctly. Let's fix that!
 
 ## Task
 
-Switch to the [`src/App.js`](./src/App.js) file and refactor the `handleSubmit` function so that
+Switch to the `./src/App.js` file and refactor the `handleSubmit` function so that
 
 1. the `App` component has access to the submitted data,
 2. the submitted data is dynamically rendered in the respective output fields below the form.
@@ -23,20 +23,24 @@ When submitting the form, the form fields should be reset and the `holiday` fiel
 
 ## Notes
 
-- You only have to touch the [`src/App.js`](./src/App.js) file.
+- You only have to touch the `./src/App.js` file.
 
 ## Development
 
-### CodeSandbox
+### Local Development
 
-Select the "Browser" tab to view this project.
+To work locally, please install the dependencies using `npm i` first.
 
-### Local development
+Run `npm run start` to start a development server and open the displayed URL in a browser.
 
-To run project commands locally, you need to install the dependencies using `npm i` first.
+### CodeSandbox Cloud
 
-You can then use the following commands:
+Select the "Preview: 3000" tab to view this project.
 
-- `npm run start` to start the development server
+> The `npm run start` script runs automatically.
 
-> 💡 This project requires a bundler. You can use `npm run start` to start the development server. You can then view the project in the browser at `http://localhost:3000`. The Live Preview Extension for Visual Studio Code will **not** work for this project.
+### Scripts
+
+You can use the following commands:
+
+- `npm run start` to start a development server

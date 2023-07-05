@@ -1,7 +1,7 @@
 {
   "name": "template-react-minimal",
   "version": "0.0.0-unreleased",
-  "description": "Minimal React",
+  "description": "React Minimal",
   "main": "src/index.js",
   "dependencies": {
     "react": "18.2.0",

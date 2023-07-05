@@ -4,7 +4,7 @@ In this challenge we will build a small app which displays the current location 
 
 ## Task
 
-In the [`src/App.js`](./src/App.js) file, we already have a state called `coords` in the `App` component which will hold the longitude and latitude values of the ISS position.
+In the `./src/App.js` file, we already have a state called `coords` in the `App` component which will hold the longitude and latitude values of the ISS position.
 
 1. Write the function `getISSCoords`. Fetch from the given url saved in the constant `URL`. After fetching successfully update the `coords` state accordingly.
 
@@ -17,24 +17,28 @@ In the [`src/App.js`](./src/App.js) file, we already have a state called `coords
 
 > 💡 Returning a cleanup function is important to not set multiple timers simultaneously. If you wouldn't define a cleanup function, each initial render of the component would start another timer that would never be stopped. This results in updating the coordinates way more often than desired.
 
-Go into the [`src/App.js`](./src/App.js) file and start coding!
+Go into the `./src/App.js` file and start coding!
 
 ## Notes
 
-- You only have to touch the [`src/App.js`](./src/App.js) file.
+- You only have to touch the `./src/App.js` file.
 
 ## Development
 
-### CodeSandbox
+### Local Development
 
-Select the "Browser" tab to view this project.
+To work locally, please install the dependencies using `npm i` first.
 
-### Local development
+Run `npm run start` to start a development server and open the displayed URL in a browser.
 
-To run project commands locally, you need to install the dependencies using `npm i` first.
+### CodeSandbox Cloud
 
-You can then use the following commands:
+Select the "Preview: 3000" tab to view this project.
 
-- `npm run start` to start the development server
+> The `npm run start` script runs automatically.
 
-> 💡 This project requires a bundler. You can use `npm run start` to start the development server. You can then view the project in the browser at `http://localhost:3000`. The Live Preview Extension for Visual Studio Code will **not** work for this project.
+### Scripts
+
+You can use the following commands:
+
+- `npm run start` to start a development server

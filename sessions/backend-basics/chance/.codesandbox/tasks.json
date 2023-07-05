@@ -1,0 +1,27 @@
+{
+  "$schema": "https://codesandbox.io/schemas/tasks.json",
+  "setupTasks": ["npm i"],
+  "tasks": {
+    "start": {
+      "name": "Preview",
+      "command": "npm run start:nowatch",
+      "runAtStart": true,
+      "restartOn": {
+        "files": ["package-lock.json", "*.js"],
+        "branch": true
+      },
+      "preview": {
+        "port": 3000
+      }
+    },
+    "test": {
+      "name": "Tests",
+      "command": "npm run test",
+      "runAtStart": true
+    },
+    "lint": {
+      "name": "Lint",
+      "command": "npm run lint"
+    }
+  }
+}

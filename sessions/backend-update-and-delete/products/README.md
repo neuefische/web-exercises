@@ -20,7 +20,7 @@ Create a `.env.local` file based on the [`.env.local.example`](./.env.local.exam
 
 ### Introduction
 
-Run `npm run dev` and open `localhost:3000` in your browser.
+Run `npm run dev` and open [localhost:3000](http://localhost:3000) in your browser.
 
 Have a look around:
 
@@ -42,9 +42,9 @@ Switch to [`pages/api/products/[id].js`](./pages/api/products/[id].js) and write
 
 For now, the `ProductForm` component sends a `POST` request to your database. We want to reuse the component for editing products and sending `PUT` requests as well.
 
-Switch to [`components/ProductForm/index.js`](./components/ProductForm/index.js).
+Switch to `./components/ProductForm/index.js`.
 
-Lift up all logic regarding the creating of the `productData` to the [`pages/index.js`](./pages/index.js) file.
+Lift up all logic regarding the creating of the `productData` to the `./pages/index.js` file.
 
 > 💡 This includes the destructuring of `const { mutate } = useSWR("/api/products");`, the `handleSubmit` function and the import of `useSWR`.
 
@@ -53,7 +53,7 @@ After doing so,
 - rename the `handleSubmit` function to `handleAddProduct`
 - in the return statement, pass `handleAddProduct` to the `ProductForm` component as a prop called `onSubmit`.
 
-Switch back to [`components/ProductForm/index.js`](./components/ProductForm/index.js) and
+Switch back to `./components/ProductForm/index.js` and
 
 - receive the `onSubmit` prop.
 - use `onSubmit` instead of `handleSubmit` in the form
@@ -100,7 +100,7 @@ Switch to [`pages/api/products/[id].js`](./pages/api/products/[id].js) and write
 
 Deleting a product should be possible from the details page.
 
-Switch to [`components/Product/index.js`](./components/Product/index.js) and implement a delete button:
+Switch to `./components/Product/index.js` and implement a delete button:
 
 - In the return statement, add a `<button>` with
   - `type="button"`,
@@ -131,19 +131,28 @@ Open [`localhost:3000/`](http://localhost:3000/) in your browser, switch to a de
 
 ## Development
 
-### CodeSandbox
+### Local Development
 
-Select the "Browser" tab to view this project. If this project contains tests, select the "Tests" tab to check your progress.
+To work locally, please install the dependencies using `npm i` first.
 
-### Local development
+Run `npm run dev` to start a development server and open the displayed URL in a browser.
 
-To run project commands locally, you need to install the dependencies using `npm i` first.
+Use `npm run test` to run the tests.
 
-You can then use the following commands:
+### CodeSandbox Cloud
 
-- `npm run dev` to start the development server
-- `npm run build` to create a production build
-- `npm run start` to start the production build
-- `npm run test` to run the tests in watch mode (if available)
+Select the "Preview: 3000" tab to view this project.
 
-> 💡 This project requires a bundler. You can use `npm run dev` to start the development server. You can then view the project in the browser at `http://localhost:3000`. The Live Preview Extension for Visual Studio Code will **not** work for this project.
+Select the "Tests: logs" tab to view the tests.
+
+> The `npm run dev` and `npm run test` scripts run automatically.
+
+### Scripts
+
+You can use the following commands:
+
+- `npm run dev` to start a development server
+- `npm run build` to build the project
+- `npm run start` to start a production server
+- `npm run test` to run the tests
+- `npm run lint` to run the linter

@@ -1,9 +1,0 @@
-{
-  "name": "template-html-css-static",
-  "version": "0.0.0-unreleased",
-  "description": "HTML and CSS static",
-  "main": "index.html",
-  "nf": {
-    "template": "html-css-static"
-  }
-}

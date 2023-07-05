@@ -44,7 +44,7 @@ In this exercise you train to write if / else and ternary statements in various 
 
 ## Notes
 
-- You only have to touch the [`index.js`](./index.js) file.
+- You only have to touch the `./index.js` file.
 
 ### Local development
 
@@ -57,3 +57,34 @@ You can then use the following commands:
 - `npm run lint` to run the linter
 
 > 💡 Since this project is JavaScript only there is nothing to preview in the browser. Use `npm run test` to check your progress or `npm run start` to run the code.
+
+## Development
+
+> ❗️ This project is JavaScript only. Please check the browser console (<kbd>⌥</kbd><kbd>⌘</kbd><kbd>I</kbd>) for the output or run the tests to see the results.
+
+### Local Development
+
+To work locally, please install the dependencies using `npm i` first.
+
+Run `npm run start` to start a development server and open [localhost:3000](http://localhost:3000) in a browser.
+
+> Alternatively you can use the Live Preview Extension for Visual Studio Code to view this project.  
+> Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
+
+Use `npm run test` to run the tests.
+
+### CodeSandbox Cloud
+
+Select the "Preview: 3000" tab to view this project.
+
+Select the "Tests: logs" tab to view the tests.
+
+> The `npm run start` and `npm run test` scripts run automatically.
+
+### Scripts
+
+You can use the following commands:
+
+- `npm run start` to start a development server
+- `npm run test` to run the tests
+- `npm run lint` to run the linter
