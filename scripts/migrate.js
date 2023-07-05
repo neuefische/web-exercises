@@ -33,6 +33,8 @@ for (const challengeFolder of challengeFolders) {
     template = await detectTemplate({ challengeFolder, packageJson });
   }
 
+  template = upgradeTemplateName(template);
+
   await applyTemplate(challengeFolder, template, packageJson);
 }
 
@@ -193,6 +195,17 @@ async function applyTemplate(challengeFolder, template, packageJson) {
 
     return readme;
   });
+}
+
+function upgradeTemplateName(template) {
+  // this maps the old template names to the new template names
+  const templateMap = {
+    "html-css-static": "html-css",
+    "html-css-js-static": "html-css-js",
+    node: "node-server",
+  };
+
+  return templateMap[template] ?? template;
 }
 
 async function detectTemplate({ challengeFolder, packageJson }) {
