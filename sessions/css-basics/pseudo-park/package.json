@@ -1,9 +1,10 @@
 {
-  "name": "css-basics_shapes",
+  "name": "css-basics_pseudo-park",
   "version": "0.0.0-unreleased",
-  "description": "CSS Basics: Shapes",
+  "description": "CSS Basics: Pseudo Park",
   "main": "index.html",
   "nf": {
     "template": "html-css-static"
-  }
+  },
+  "private": true
 }
