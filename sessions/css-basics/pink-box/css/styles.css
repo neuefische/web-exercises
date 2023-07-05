@@ -11,8 +11,9 @@ body {
 /* put a selector here to select div elements (see index.html) */
 SELECTOR HERE {
   font-family: cursive;
-  /* set the height and the width of the box to 150px */
   padding: 8px;
+
+  /* set the height and the width of the box to 150px */
 
   /* make the background color "hotpink" */
 
