@@ -9,7 +9,7 @@ const root = document.body;
 const jokeSection = JokeSection();
 root.append(jokeSection);
 
-function setJoke(joke) {
+function renderJoke(joke) {
   // Clear the joke section
   jokeSection.innerHTML = "";
 
@@ -32,7 +32,7 @@ async function getJoke() {
       "https://example-apis.vercel.app/api/bad-jokes/random"
     );
     const data = await response.json();
-    setJoke(data.joke);
+    renderJoke(data.joke);
   } catch (error) {
     console.error("An Error occurred");
   }

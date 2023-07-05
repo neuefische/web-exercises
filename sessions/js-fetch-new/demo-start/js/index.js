@@ -9,7 +9,7 @@ const root = document.body;
 const jokeSection = JokeSection();
 root.append(jokeSection);
 
-function setJoke(joke) {
+function renderJoke(joke) {
   // Clear the joke section
   jokeSection.innerHTML = "";
 
