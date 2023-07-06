@@ -10,12 +10,12 @@
     "test": "jest --watchAll"
   },
   "dependencies": {
-    "eslint": "8.43.0",
-    "eslint-config-next": "13.4.7",
-    "next": "13.4.7",
+    "eslint": "8.44.0",
+    "eslint-config-next": "13.4.8",
+    "next": "13.4.8",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "styled-components": "^6.0.0-rc.6"
+    "styled-components": "^6.0.2"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.0.1",
@@ -23,8 +23,8 @@
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
     "eslint-plugin-jest": "^27.2.2",
-    "jest": "^29.5.0",
-    "jest-environment-jsdom": "^29.5.0"
+    "jest": "^29.6.0",
+    "jest-environment-jsdom": "^29.6.0"
   },
   "description": "Next.js (incl. Styled Components and Jest)",
   "nf": {
