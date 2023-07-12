@@ -48,7 +48,7 @@ Switch to `pages/api/products/index.js`:
   - use the `Product` model to find all products and
   - return them as a response.
 
-Switch to `pages/index.js` and adapt the frontend:
+Switch to `components/ProductList` and adapt the frontend:
 
 - replace all instances of `product.id` with `product._id`.
 
