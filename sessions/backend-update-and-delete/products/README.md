@@ -35,7 +35,8 @@ Your task is to add the functionality for updating and deleting a product. The b
 
 Switch to [`pages/api/products/[id].js`](./pages/api/products/[id].js) and write the code for the `request.method` `PUT` :
 
-- _Wait_ for `Product.findByIdAndUpdate(id, { $set: request.body, })`.
+- Get the updated product from the request body: `const updatedProduct = request.body;`
+- _Wait_ for `Product.findByIdAndUpdate(id, updatedProduct)`.
 - Respond with a status `200` and the message `{ status: "Product successfully updated." }`.
 
 #### Refactor the `ProductForm` component

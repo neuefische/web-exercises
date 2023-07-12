@@ -2,7 +2,7 @@ import useSWR from "swr";
 import { useRouter } from "next/router";
 import { ProductCard } from "./Product.styled";
 import { StyledLink } from "../Link/Link.styled";
-import Comments from "../../../../backend-create/products/components/Comments";
+import Comments from "../Comments";
 
 export default function Product() {
   const router = useRouter();
