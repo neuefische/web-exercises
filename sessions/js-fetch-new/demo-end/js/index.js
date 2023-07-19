@@ -19,23 +19,12 @@ function renderJoke(joke) {
   jokeSection.append(newJoke);
 }
 
-/*
-fetch("https://example-apis.vercel.app/api/bad-jokes/random")
-  .then((response) => response.json())
-  .then((data) => setJoke(data.joke))
-  .catch((error) => console.error("An error occured"));
-*/
-
 async function getJoke() {
-  try {
-    const response = await fetch(
-      "https://example-apis.vercel.app/api/bad-jokes/random"
-    );
-    const data = await response.json();
-    renderJoke(data.joke);
-  } catch (error) {
-    console.error("An Error occurred");
-  }
+  const response = await fetch(
+    "https://example-apis.vercel.app/api/bad-jokes/random"
+  );
+  const data = await response.json();
+  renderJoke(data.joke);
 }
 
 getJoke();
