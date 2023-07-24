@@ -66,4 +66,4 @@ test("isAnyoneOlderThan() returns true if any person is older than the given age
 
 test("isAnyoneOlderThan() returns false if no person is older than the given age", () => {});
 
-test("getFullNamesSortedByAge() returns an array of last names sorted by age", () => {});
+test("getFullNamesSortedByAge() returns an array of full names sorted by age", () => {});
