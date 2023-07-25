@@ -14,8 +14,7 @@ In this challenge you will learn how to use VS Code in the cloud with GitHub Cod
 - Step 6: Enter a name for your repository. It should be named "personal-website".
 - Step 7: (Optional) Enter a description for your repository.
 - Step 8: Choose a repository visibility. You can choose to make your repository public.
-- Step 9: Select "Initialize this repository with a README".
-  This will create a README file in your repository, which is a text file that describes your project.
+- Step 9: It´s not necessary to initialize this repository with a README, gitignore, or license file.
 - Step 10: Click on the "Create repository" button.
 
 Your new repository will be created.
