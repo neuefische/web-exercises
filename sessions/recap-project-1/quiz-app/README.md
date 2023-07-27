@@ -12,9 +12,13 @@ able to:
 later project. But make sure you include the answer texts and bookmark buttons in your app. (You
 might want to look up the "hidden" attribute.)
 
-If you´ve seen more advanced git techniques (pull requests and branches) already … great! Keep in mind starting with a new feature branch for each feature you implement. After you are done with a feature, create a pull request, let it be reviewed and merge it into the main branch.
+💡 **If you´ve seen more advanced git techniques (pull requests and branches) already … great!**
+Keep in mind starting with a new feature branch for each feature you implement.
+After you are done with a feature, create a pull request, let it be reviewed and merge it into the main branch.
 
-If you haven't seen git branches and pull requests yet, don't worry. You will learn about them soon. For now, just follow the instructions below.
+If you haven't seen git branches and pull requests yet, don't worry.
+You will learn about them soon.
+For now, just follow the instructions below.
 
 ## 1. Setup
 

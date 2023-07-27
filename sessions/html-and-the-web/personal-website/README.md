@@ -12,7 +12,7 @@ In this challenge you will start creating your own personal website.
    request a review. While you wait, review someone elses pull request.
   - After committing requested changes and getting an approval for your pull request, merge your
    feature branch into the main branch.
-   
+
      > 💡 Not getting an approval right away for your pull request is absolutely normal. Add or change
      > your code according to the suggestions. Don't let it discourage you and take it as a chance to
      > learn!
@@ -27,7 +27,7 @@ In this challenge you will start creating your own personal website.
    wireframe down below. Don't spend too long on this task, it more important to start coding. You
    can always add new features to your draft later.
 
-   Here is an example of a structure for a website that you can draw inspiration from:
+Here is an example of a structure for a website that you can draw inspiration from:
 
 ![Desktop Wireframe](assets/wireframe-desktop.png)
 
