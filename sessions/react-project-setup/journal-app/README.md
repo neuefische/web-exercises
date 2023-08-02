@@ -4,10 +4,10 @@ In this challenge you will begin building a journal app from scratch. We will co
 
 ## Create the Journal App
 
-Create a new React project called `journal` using Create React App.
+Create a new React project called `journal` using Vite.
 
-> 📙 Read the [Create React App documentation](https://create-react-app.dev/docs/getting-started) to
-> learn how to create a new project using `npx`.
+> 📙 Read the [Vite documentation](https://vitejs.dev/guide/#scaffolding-your-first-vite-project) to
+> learn how to create a new project using React and Vite.
 
 ## Build the Journal App UI
 
@@ -58,4 +58,4 @@ import "./EntryForm.css";
 - If you like you can reference the original Figma design file: `journal_app_design.fig`.
 - The `colors.css` file contains the colors used in the design as CSS variables.
 - Use the `star.svg` and `star-filled.svg` files for the favorite icon button. Import them in your
-  components directly. See the [documentation for adding svgs](https://create-react-app.dev/docs/adding-images-fonts-and-files#adding-svgs).
+  components directly. See the [documentation about importing static assets](https://vitejs.dev/guide/assets.html).

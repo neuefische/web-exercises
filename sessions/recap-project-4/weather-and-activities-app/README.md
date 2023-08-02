@@ -30,7 +30,7 @@ all the information you need in the docs.
 ## Template
 
 There is no template or starter code, so you can start completely fresh! Please use
-[`create-react-app`](https://create-react-app.dev/docs/getting-started) to create a new project.
+[`vite`](https://vitejs.dev/guide/#scaffolding-your-first-vite-project) to create a new project.
 
 The sequence of the tasks described below is a good example for how to _start_ writing an app.
 
