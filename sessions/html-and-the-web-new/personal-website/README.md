@@ -4,20 +4,6 @@ In this challenge you will start creating your own personal website.
 
 💡 If you haven't already, create a new repository on GitHub for your personal website.
 
----
-**If you have seen Git branches and pull requests before**, you should keep in mind:
-  - **Never work on your main branch**. Instead, create a new branch for each feature you are working on.
-  - For each feature branch, create a pull request on GitHub.
-  - Send a link to the pull request to the course slack channel and
-   request a review. While you wait, review someone elses pull request.
-  - After committing requested changes and getting an approval for your pull request, merge your
-   feature branch into the main branch.
-
-     > 💡 Not getting an approval right away for your pull request is absolutely normal. Add or change
-     > your code according to the suggestions. Don't let it discourage you and take it as a chance to
-     > learn!
----
-
 ## Getting started with HTML
 
 1. Start working on the HTML markup of your personal website.
@@ -41,7 +27,5 @@ Here is an example of a structure for a website that you can draw inspiration fr
 
 3. Start to put your ideas into code, giving your website structure and content. Use semantic HTML
    whenever possible.
-4. Work on one feature after another. Commit your work whenever a new part of your website is done.
-5. Send a link to your repository to the course slack channel to the "Solutions" thread.
 
 Congratulations! 🎉 You created your first own website!
