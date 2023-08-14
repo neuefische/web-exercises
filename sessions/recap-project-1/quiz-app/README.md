@@ -66,3 +66,32 @@ Create the profile page in the same way you created the other two pages.
 - Link the pages via the anchor elements.
 
 > 💡 The counter and switch don't have to work for now, we will implement this later.
+
+
+
+# Structure 
+## Separate the Quiz App CSS code into different files
+
+You created a structure of individual components in the previous exercise.
+
+Now create a separate CSS file for each component. The file name should match the name of the
+component.
+
+Move all styles that are used across multiple components to a `global.css` file. (e.g. type
+selectors like `body` or the universal selector `*`)
+
+Your main CSS file (e.g. `styles.css`) should have several `@import` statements.
+
+The file structure might look something like this afterwards:
+
+```
+quiz-app
+├── components
+│   ├── button.css
+│   ├── card.css
+│   ├── header.css
+│   └── navigation.css
+├── global.css
+├── index.html
+└── styles.css
+```
