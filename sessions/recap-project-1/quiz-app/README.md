@@ -22,6 +22,7 @@ Start by:
 - Create a remote repository and connect it to the local repository.
 - Create the `index.html` and `styles.css` files.
 - Make sure the CSS file is loaded in the HTML document.
+- 🚀 Project Deployment to GitHub Pages is required: Please adhere to the deployment guidelines outlined in your [repository's documentation](/docs/github-pages.md) for detailed instructions. 
 
 ## 2. Home Page
 
@@ -65,3 +66,30 @@ Create the profile page in the same way you created the other two pages.
 - Link the pages via the anchor elements.
 
 > 💡 The counter and switch don't have to work for now, we will implement this later.
+
+
+
+## 4. (Recommended) Structure 
+### Separate the Quiz App CSS code into different files
+The file name should match the name of the
+component.
+
+Move all styles that are used across multiple components to a `global.css` file. Your main CSS file (e.g. `styles.css`) should have several `@import` statements.
+
+The file structure might look something like this:
+
+```
+quiz-app
+├── components
+│   ├── button.css
+│   ├── card.css
+│   ├── header.css
+│   └── navigation.css
+├── global.css
+├── styles.css
+├── profile.html
+├── bookmarks.html
+└── index.html
+```
+
+❗️ Make sure you apply the BEM method to your Quiz App (Bring more structure to your code by using BEM to name all classes!)
