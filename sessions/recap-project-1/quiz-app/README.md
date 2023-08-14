@@ -22,7 +22,7 @@ Start by:
 - Create a remote repository and connect it to the local repository.
 - Create the `index.html` and `styles.css` files.
 - Make sure the CSS file is loaded in the HTML document.
-- 🚀 Project Deployment to GitHub Pages is required: Please adhere to the deployment guidelines outlined in your repository's documentation (refer to ./docs/github-pages.md) for detailed instructions. 
+- 🚀 Project Deployment to GitHub Pages is required: Please adhere to the deployment guidelines outlined in your [repository's documentation](/docs/github-pages.md) for detailed instructions. 
 
 ## 2. Home Page
 
