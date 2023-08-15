@@ -12,7 +12,7 @@ Please note: the focus of this challenge is on React logic (and not on design), 
 wireframes only have a very basic styling. Due to the given timeframe, you can consider styling the
 app as bonus task at the very end ;).
 
-🚀 You will deploy this project using Vercel. The owner of the project needs to make an account there. Together as a team, you'll read the instructions in their guide and learn how to deploy the project by yourselves. You can find step-by-step instructions in the Vercel documentation, which you can access here: [Vercel Documentation](https://vercel.com/docs/concepts/deployments/overview).
+🚀 You will deploy this project using [Vercel](https://vercel.com/). The owner of the project needs to make an account there and together as a team, you'll read the instructions in their guide and learn how to deploy the project by yourselves. 
 
 ## Pair Programming
 
