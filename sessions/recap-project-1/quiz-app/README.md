@@ -12,23 +12,16 @@ able to:
 later project. But make sure you include the answer texts and bookmark buttons in your app. (You
 might want to look up the "hidden" attribute.)
 
-💡 **If you´ve seen more advanced git techniques (pull requests and branches) already … great!**
-Keep in mind starting with a new feature branch for each feature you implement.
-After you are done with a feature, create a pull request, let it be reviewed and merge it into the main branch.
-
-If you haven't seen git branches and pull requests yet, don't worry.
-You will learn about them soon.
-For now, just follow the instructions below.
-
 ## 1. Setup
 
-Start by:
+To begin, perform the following tasks:
 
-- Creating a new git repository for your project.
+- Create a new folder for your project.
+- Initialize a local git repository.
 - Create a `.gitignore` file and add `.DS_Store` to the file.
+- Create a remote repository and connect it to the local repository.
 - Create the `index.html` and `styles.css` files.
-- Make sure the CSS file is loaded in the HTML document.
-- (Optional) When you are working locally, connect your local repository to the remote repository on GitHub.
+- Ensure that the CSS file is loaded in the HTML document.
 
 ## 2. Home Page
 
@@ -40,7 +33,9 @@ why the first step to success is to start with the homepage.
 
 ![homepage](assets/homepage.png)
 
-- Start with the feature 'title' and create the app title.
+- Start with the feature 'title' on a fresh feature branch and create the app title.
+
+- When done, use the feature branch workflow to merge your results into the main branch.
 - Continue in the same way with the 'question-card' and 'navbar'.
 
 > 💡 Hint: Make sure to use anchor elements for the navbar, so you can link to the other pages later
