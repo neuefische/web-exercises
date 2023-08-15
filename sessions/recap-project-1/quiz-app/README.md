@@ -14,14 +14,14 @@ might want to look up the "hidden" attribute.)
 
 ## 1. Setup
 
-Start by:
+To begin, perform the following tasks:
 
-- Creating a new folder for your project.
+- Create a new folder for your project.
 - Initialize a local git repository.
 - Create a `.gitignore` file and add `.DS_Store` to the file.
 - Create a remote repository and connect it to the local repository.
 - Create the `index.html` and `styles.css` files.
-- Make sure the CSS file is loaded in the HTML document.
+- Ensure that the CSS file is loaded in the HTML document.
 
 ## 2. Home Page
 
