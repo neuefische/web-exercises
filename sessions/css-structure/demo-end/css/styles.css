@@ -1,0 +1,18 @@
+@import "global.css";
+@import "../components/card.css";
+
+h1 {
+  color: var(--primary-color); /*!important; */
+}
+
+/* .title {
+  color: purple;
+} */
+
+/* #headline {
+  color: green;
+} */
+
+/* h1 {
+  color: blue;
+} */
