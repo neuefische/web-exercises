@@ -67,10 +67,10 @@ Create the profile page in the same way you created the other two pages.
 
 > 💡 The counter and switch don't have to work for now, we will implement this later.
 
+## Recommendation: Structure
 
-
-## 4. (Recommended) Structure 
 ### Separate the Quiz App CSS code into different files
+
 The file name should match the name of the
 component.
 
@@ -93,3 +93,10 @@ quiz-app
 ```
 
 ❗️ Make sure you apply the BEM method to your Quiz App (Bring more structure to your code by using BEM to name all classes!)
+
+## Resources
+
+⬇️ You can [**download the images for the Quiz App here**](./resources.zip?raw=true).
+
+- Unzip the file to get the `resources` folder.
+- Copy them into your app's main directory.
