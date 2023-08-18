@@ -1,11 +1,9 @@
 .button {
-  background-color: var(--color-water-10);
   border: none;
-  color: var(--color-granite);
-  font-size: 1.2rem;
-  transition: 0.3s ease;
+  cursor: pointer;
+  background-color: transparent;
 }
 
 .button:hover {
-  background-color: var(--color-nemo);
+  background-color: var(--color-secondary);
 }
