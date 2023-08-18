@@ -33,4 +33,4 @@ printSquare(5);
 // Uncomment the following function calls and implement the function printRectangleArea
 
 // printRectangleArea(5, 7);
-// printRectangleArea(3, 4));
+// printRectangleArea(3, 4);
