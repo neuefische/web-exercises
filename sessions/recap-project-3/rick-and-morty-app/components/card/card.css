@@ -3,9 +3,7 @@
 }
 .card {
   width: 300px;
-  border-radius: 10px;
   background-color: var(--color-secondary);
-  overflow: hidden;
 }
 
 .card__info {
