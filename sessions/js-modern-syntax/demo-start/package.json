@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npx -y live-server@latest --port=3000",
     "lint": "npx -y eslint@latest .",
-    "test": "NODE_OPTIONS=--experimental-vm-modules npx -y jest@latest --watchAll"
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules npx -y jest@latest --watchAll"
   },
   "nf": {
     "template": "js"
