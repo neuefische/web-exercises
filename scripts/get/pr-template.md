@@ -4,7 +4,7 @@
 
 ### 🔎 Review
 
-Review via [🔗 **CodeSandbox**](https://codesandbox.io/s/github/spiced-academy/fs-web-exercises/tree/BRANCH_NAME/sessions/PATH?file=/README.md) or locally by running this command in your Terminal:
+Review locally by running this command in your terminal:
 
 ```
 npx ghcd@latest spiced-academy/fs-web-exercises/tree/BRANCH_NAME/sessions/PATH -i

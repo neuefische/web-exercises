@@ -2,7 +2,7 @@
 
 This project was created from the Spiced Academy `html-css-js` template.
 
-You can [🔗 **use this template on CodeSandbox**](https://codesandbox.io/p/sandbox/github/spiced-academy/fs-web-exercises/tree/main/templates/html-css-js?file=/README.md) or locally by running this command in your Terminal:
+You can download the project by running this command in your terminal:
 
 ```bash
 npx -y ghcd@latest spiced-academy/fs-web-exercises/tree/main/templates/html-css-js my-app -i
@@ -20,14 +20,6 @@ Run `npm run start` to start a development server and open [localhost:3000](http
 > Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
 
 Use `npm run test` to run the tests.
-
-### CodeSandbox Cloud
-
-Select the "Preview: 3000" tab to view this project.
-
-Select the "Tests: logs" tab to view the tests.
-
-> The `npm run start` and `npm run test` scripts run automatically.
 
 ### Scripts
 

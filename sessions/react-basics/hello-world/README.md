@@ -4,7 +4,7 @@ Welcome to the React Universe!
 
 Have a look at the [App.js](./src/App.js) file: you will find a default export function called `App` which returns a `<div>`.
 
-Check the browser tab of the codesandbox: the content of the `<div>` ("Say hello...") should be visible there as well.
+Once running in your browser, the content of the `<div>` ("Say hello...") should be visible there as well.
 
 Now, let us cherish a tradition and render "Hello world!".
 
@@ -40,12 +40,6 @@ Use the following hints as guideline:
 To work locally, please install the dependencies using `npm i` first.
 
 Run `npm run start` to start a development server and open the displayed URL in a browser.
-
-### CodeSandbox Cloud
-
-Select the "Preview: 3000" tab to view this project.
-
-> The `npm run start` script runs automatically.
 
 ### Scripts
 

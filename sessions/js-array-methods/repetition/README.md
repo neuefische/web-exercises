@@ -1,6 +1,6 @@
 # Repetition: `map` and `filter`
 
-This codesandbox offers a some exercises to recap the array methods `map` and `filter`. Let's dive into them (again)!
+Here are some exercises to recap the array methods `map` and `filter`. Let's dive into them (again)!
 
 ## Task
 
@@ -32,14 +32,6 @@ Run `npm run start` to start a development server and open [localhost:3000](http
 > Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
 
 Use `npm run test` to run the tests.
-
-### CodeSandbox Cloud
-
-Select the "Preview: 3000" tab to view this project.
-
-Select the "Tests: logs" tab to view the tests.
-
-> The `npm run start` and `npm run test` scripts run automatically.
 
 ### Scripts
 
