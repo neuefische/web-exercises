@@ -1,8 +1,6 @@
 # React State: Journal App with Favorite Button State
 
-Now that you've setup your Journal App Project, it's time to include our _favorite_ feature: a button that allows you to favorite an entry.
-
-> 💡 You can use this template as a starting point. But if you are far enough along with your own Journal App, please use that instead.
+In this challenge you will begin building a journal app. We will continue to build on this app throughout the next sessions. In this first part you are about to include our _favorite_ feature: a button that allows you to favorite an entry.
 
 ## Task
 
