@@ -1,6 +1,6 @@
 import useSWR from "swr";
 import { useRouter } from "next/router";
-import { StyledButton } from "../Button/Button.styled";
+import { StyledLink } from "../Link/Link.styled";
 import { ProductCard } from "./Product.styled";
 
 export default function Product() {
@@ -20,9 +20,9 @@ export default function Product() {
       <p>
         Price: {data.price} {data.currency}
       </p>
-      <StyledButton type="button" onClick={() => router.push("/")}>
+      <StyledLink href={"/"}>
         Back to all
-      </StyledButton>
+      </StyledLink>
     </ProductCard>
   );
 }
