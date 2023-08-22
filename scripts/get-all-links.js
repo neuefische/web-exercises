@@ -20,9 +20,9 @@ try {
     );
     const { name } = packageJson;
     out += `${name},`;
-    out += `https://codesandbox.io/p/sandbox/github/neuefische/web-exercises/tree/${branch}/sessions/${exercise},`;
-    out += `https://codesandbox.io/s/github/neuefische/web-exercises/tree/${branch}/sessions/${exercise},`;
-    out += `npx -y ghcd@latest /neuefische/web-exercises/tree/${branch}/sessions/${exercise}`;
+    out += `https://codesandbox.io/p/sandbox/github/spiced-academy/fs-web-exercises/tree/${branch}/sessions/${exercise},`;
+    out += `https://codesandbox.io/s/github/spiced-academy/fs-web-exercises/tree/${branch}/sessions/${exercise},`;
+    out += `npx -y ghcd@latest /spiced-academy/fs-web-exercises/tree/${branch}/sessions/${exercise}`;
     out += "\n";
   }
 

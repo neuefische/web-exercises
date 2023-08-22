@@ -1,7 +1,7 @@
 # web exercises
 
-A monorepo containing exercises, challenges, demos and starters for the neue fische web bootcamps.
-All of the exercises are designed to work locally as well as on CodeSandbox.
+A monorepo containing exercises, challenges, demos and starters for the Spiced Academy web development bootcamps.
+All of the exercises are designed to work in a local development environment.
 
 <!-- toc -->
 
@@ -233,7 +233,7 @@ All exercises must at least contain:
 
 All exercises must be reviewed before they are merged into the `main` branch. Create a pull request on GitHub and add the `needs review` label.
 
-Exercises must be reviewed by at least one neue fische web coach.
+Exercises must be reviewed by at least one web coach.
 
 > **Note**  
 > Exercises deliberately do not have to have passing tests to be merged. It is also fine to merge exercises with linting errors. Failing tests and linting errors can be part of the exercise itself.
@@ -247,14 +247,14 @@ There a two ways to access the exercises or templates:
 Open the the folder of the exercise on GitHub. Change the URL from `github.com` to `codesandbox.io/p/sandbox/github`. This will open the exercise in CodeSandbox. Select the README.md file and copy the URL directly to this file.
 
 ```diff
-- https://github.com/neuefische/web-exercises/tree/main/sessions/js-array-methods/map
-+ https://codesandbox.io/p/sandbox/github/neuefische/web-exercises/tree/main/sessions/js-array-methods/map
+- https://github.com/spiced-academy/fs-web-exercises/tree/main/sessions/js-array-methods/map
++ https://codesandbox.io/p/sandbox/github/spiced-academy/fs-web-exercises/tree/main/sessions/js-array-methods/map
 ```
 
 The shareable link you need to copy looks like this:
 
 ```
-https://codesandbox.io/p/sandbox/github/neuefische/web-exercises/tree/main/sessions/js-array-methods/map?file=/README.md
+https://codesandbox.io/p/sandbox/github/spiced-academy/fs-web-exercises/tree/main/sessions/js-array-methods/map?file=/README.md
 ```
 
 > **Note**  
@@ -265,7 +265,7 @@ https://codesandbox.io/p/sandbox/github/neuefische/web-exercises/tree/main/sessi
 We are using [`ghcd`](https://github.com/djfarly/ghcd#readme) (GitHub Clone Directory) which is a tool that "clones" (or rather downloads) a subdirectory of a GitHub repository. You can share the command containing the URL to the exercise folder on GitHub.
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/map -i
+npx ghcd@latest spiced-academy/fs-web-exercises/tree/main/sessions/js-array-methods/map -i
 ```
 
 > **Note**  
