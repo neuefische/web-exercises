@@ -1,6 +1,6 @@
 import useSWR from "swr";
 import { useRouter } from "next/router";
-import { StyledButton } from "../Button/Button.styled";
+import { StyledLink } from "../Link/Link.styled";
 import { StyledList } from "./ProductList.styled";
 
 export default function ProductList() {
@@ -15,12 +15,11 @@ export default function ProductList() {
     <StyledList>
       {data.map((product) => (
         <li key={product.id}>
-          <StyledButton
-            type="button"
-            onClick={() => router.push(`/${product.id}`)}
+          <StyledLink
+    href={`/${product.id}`}
           >
             {product.name}
-          </StyledButton>
+          </StyledLink>
         </li>
       ))}
     </StyledList>
