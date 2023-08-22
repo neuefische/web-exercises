@@ -1,19 +1,29 @@
-# This is a new minimal React project.
+# New minimal React project
 
-This project was created from the neue fische react-minimal template.
+This project was created from the neue fische `react-minimal` template.
+
+You can [🔗 **use this template on CodeSandbox**](https://codesandbox.io/p/sandbox/github/neuefische/web-exercises/tree/main/templates/react-minimal?file=/README.md) or locally by running this command in your Terminal:
+
+```bash
+npx -y ghcd@latest neuefische/web-exercises/tree/main/templates/react-minimal my-app -i
+```
 
 ## Development
 
-### CodeSandbox
+### Local Development
 
-Select the "Browser" tab to view this project.
+To work locally, please install the dependencies using `npm i` first.
 
-### Local development
+Run `npm run start` to start a development server and open the displayed URL in a browser.
 
-To run project commands locally, you need to install the dependencies using `npm i` first.
+### CodeSandbox Cloud
 
-You can then use the following commands:
+Select the "Preview: 3000" tab to view this project.
 
-- `npm run start` to start the development server
+> The `npm run start` script runs automatically.
 
-> 💡 This project requires a bundler. You can use `npm run start` to start the development server. You can then view the project in the browser at `http://localhost:3000`. The Live Preview Extension for Visual Studio Code will **not** work for this project.
+### Scripts
+
+You can use the following commands:
+
+- `npm run start` to start a development server

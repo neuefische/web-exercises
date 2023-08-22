@@ -1,14 +1,16 @@
 import useSWR from "swr";
-import { useRouter } from "next/router";
 import { StyledHeading, StyledList } from "./ProductList.styled";
-import { StyledButton } from "../Button/Button.styled";
+import { StyledLink } from "../Link/Link.styled";
 
 export default function ProductList() {
-  const router = useRouter();
-  const { data } = useSWR("/api/products");
+  const { data, isLoading } = useSWR("/api/products");
+
+  if (isLoading) {
+    return <h1>Loading...</h1>;
+  }
 
   if (!data) {
-    return <h1>Loading...</h1>;
+    return;
   }
 
   return (
@@ -17,12 +19,7 @@ export default function ProductList() {
       <StyledList>
         {data.map((product) => (
           <li key={product._id}>
-            <StyledButton
-              type="button"
-              onClick={() => router.push(`/${product._id}`)}
-            >
-              {product.name}
-            </StyledButton>
+            <StyledLink href={`/${product._id}`}>{product.name}</StyledLink>
           </li>
         ))}
       </StyledList>

@@ -1,0 +1,9 @@
+{
+  "name": "html-forms_Finding-a11y-errors",
+  "version": "0.0.0-unreleased",
+  "description": "Exercise for A11y in Forms",
+  "main": "index.html",
+  "nf": {
+    "template": "html-css-static"
+  }
+}

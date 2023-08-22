@@ -42,9 +42,11 @@ function greet() {}
 // --^-- write your code here --^--
 
 console.log("-------------");
-console.log("3:");
+console.log("Exercise 3:");
 /*
-3: We log a little separation text for each subtask. This is repetitive code, so lets write a function 'logSeparator' which takes the number of the exercise as an input parameter and logs the respective separator. then use this function to replace the existing separator logs in this javascript file.
+3: We log a little separation text for each subtask. This is repetitive code, so lets write a function 'logSeparator' which takes the number of the exercise as a parameter and logs the respective separator. Then use this function to replace the existing separator logs in this javascript file.
+
+Note: Separation text means the text that is logged into the console before each exercise. For example: "-------------" and "Exercise 1:" are the separation texts for the first exercise.
 */
 
 // --v-- write your code here --v--

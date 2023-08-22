@@ -1,11 +1,12 @@
 import useSWR from "swr";
-import JokeList from "../components/JokeList";
+
 import JokeForm from "../components/JokeForm";
+import JokeList from "../components/JokeList";
 
 export default function HomePage() {
-  const jokes = useSWR("/api/jokes");
+  const { mutate } = useSWR("/api/jokes");
 
-  async function handleCreateJoke(event) {
+  async function handleSubmit(event) {
     event.preventDefault();
 
     const formData = new FormData(event.target);
@@ -13,24 +14,20 @@ export default function HomePage() {
 
     const response = await fetch("/api/jokes", {
       method: "POST",
-      body: JSON.stringify(jokeData),
       headers: {
         "Content-Type": "application/json",
       },
+      body: JSON.stringify(jokeData),
     });
 
     if (response.ok) {
-      await response.json();
-      jokes.mutate();
-      event.target.reset();
-    } else {
-      console.error(`Error: ${response.status}`);
+      mutate();
     }
   }
 
   return (
     <>
-      <JokeForm onSubmit={handleCreateJoke} value="" />
+      <JokeForm onSubmit={handleSubmit} value="" />
       <JokeList />
     </>
   );

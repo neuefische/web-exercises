@@ -1,6 +1,6 @@
 # React Arrays: Fruits
 
-For now, the [`src/App.js`](./src/App.js) file uses a `Card` component to render the text "banana". This is easy to handle if you only have a single use case.
+For now, the `./src/App.js` file uses a `Card` component to render the text "banana". This is easy to handle if you only have a single use case.
 
 Most often, however, you have an array of objects and want to dynamically render a component (like `Card`) for each of these objects.
 
@@ -24,20 +24,24 @@ Use the array method `map` to create a Card component for each fruit in your arr
 
 Change the `Card` component so that it receives a `color` prop and set the background-color of the Card to this value. Use the color property of each fruit object for this prop.
 
-- Hint: check the [`src/components/Card.css`](./src/components/Card.css) file for some cues as to how to handle having the colors change automatically
+- Hint: check the `./src/components/Card.css` file for some cues as to how to handle having the colors change automatically
 
 ## Development
 
-### CodeSandbox
+### Local Development
 
-Select the "Browser" tab to view this project.
+To work locally, please install the dependencies using `npm i` first.
 
-### Local development
+Run `npm run start` to start a development server and open the displayed URL in a browser.
 
-To run project commands locally, you need to install the dependencies using `npm i` first.
+### CodeSandbox Cloud
 
-You can then use the following commands:
+Select the "Preview: 3000" tab to view this project.
 
-- `npm run start` to start the development server
+> The `npm run start` script runs automatically.
 
-> 💡 This project requires a bundler. You can use `npm run start` to start the development server. You can then view the project in the browser at `http://localhost:3000`. The Live Preview Extension for Visual Studio Code will **not** work for this project.
+### Scripts
+
+You can use the following commands:
+
+- `npm run start` to start a development server

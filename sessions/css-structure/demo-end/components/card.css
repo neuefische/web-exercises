@@ -1,0 +1,27 @@
+.card {
+  padding: 30px;
+  margin: 30px;
+  border-radius: 5px;
+  border: solid 2px var(--primary-color);
+  width: 430px;
+}
+
+.highlight {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+
+.definition {
+  max-width: 300px;
+  border: dashed 2px var(--primary-color);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.tag {
+  background-color: var(--tertiary-color);
+  color: var(--background-color);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}

@@ -7,7 +7,7 @@ In this challenge, you will fetch a character from the [Star Wars API](https://s
 - Start the development server and make yourself familiar with the application.
 - Open the browser: there are links to four characters, but only the first one (Luke Skywalker) currently works.
 - Click the link to Luke ([localhost:3000/characters/1](localhost:3000/characters/1)): there is a character displayed together with some information.
-- In your Code editor, switch to [`pages/characters/1.js`](pages/characters/1.js): it renders the `Card` component, but uses hard coded data.
+- In your Code editor, switch to `pages/characters/1.js`: it renders the `Card` component, but uses hard coded data.
 
 ### Fetching with `SWR`
 
@@ -16,7 +16,7 @@ Your task is to fetch a character from the [Star Wars API](https://swapi.dev/). 
 You can use the following hints as guideline:
 
 - `SWR` is already installed, so you just have to import it.
-- Switch to [`pages/characters/1.js`](./pages/characters/1.js):
+- Switch to `./pages/characters/1.js`:
   - fetch only the first character using https://swapi.dev/api/people/1;
   - instead of the hard coded `/1`, interpolate the `id` variable.
   - implement a loading state;
@@ -39,26 +39,33 @@ By now, there is only one static route `/1` fetching one static character. Let's
 ## Notes
 
 - You only have to touch the following files:
-  - [`pages/index.js`](./pages/index.js),
-  - [`pages/characters/1.js`](./pages/characters/1.js).
+  - `./pages/index.js`,
+  - `./pages/characters/1.js`.
 
 ## Development
 
-### CodeSandbox
+### Local Development
 
-Select the "Browser" tab to view this project. If this project contains tests, select the "Tests" tab to check your progress.
+To work locally, please install the dependencies using `npm i` first.
 
-> 💡 Please note that Next.js support on CodeSandbox is not great.
+Run `npm run dev` to start a development server and open the displayed URL in a browser.
 
-### Local development
+Use `npm run test` to run the tests.
 
-To run project commands locally, you need to install the dependencies using `npm i` first.
+### CodeSandbox Cloud
 
-You can then use the following commands:
+Select the "Preview: 3000" tab to view this project.
 
-- `npm run dev` to start the development server
-- `npm run build` to create a production build
-- `npm run start` to start the production build
-- `npm run test` to run the tests in watch mode (if available)
+Select the "Tests: logs" tab to view the tests.
 
-> 💡 This project requires a bundler. You can use `npm run dev` to start the development server. You can then view the project in the browser at `http://localhost:3000`. The Live Preview Extension for Visual Studio Code will **not** work for this project.
+> The `npm run dev` and `npm run test` scripts run automatically.
+
+### Scripts
+
+You can use the following commands:
+
+- `npm run dev` to start a development server
+- `npm run build` to build the project
+- `npm run start` to start a production server
+- `npm run test` to run the tests
+- `npm run lint` to run the linter

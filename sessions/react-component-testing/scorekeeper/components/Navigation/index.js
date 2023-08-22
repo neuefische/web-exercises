@@ -18,8 +18,8 @@ const StyledLink = styled(Link)`
   color: #333;
   background-color: lightgrey;
 
-  ${({ path }) =>
-    path === "active" &&
+  ${({ $path }) =>
+    $path === "active" &&
     css`
       background-color: black;
       color: white;
@@ -32,7 +32,7 @@ export default function Navigation({ players }) {
     <Nav>
       <StyledLink
         href={`${players?.length > 0 ? "/game" : "/"}`}
-        path={
+        $path={
           router.pathname === "/" || router.pathname === "/game" ? "active" : ""
         }
       >

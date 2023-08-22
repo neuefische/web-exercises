@@ -16,15 +16,16 @@ export default async function handler(request, response) {
   }
 
   if (request.method === "PUT") {
-    const jokeToUpdate = await Joke.findByIdAndUpdate(id, {
+    await Joke.findByIdAndUpdate(id, {
       $set: request.body,
     });
 
-    return response.status(200).json(jokeToUpdate);
+    response.status(200).json({ message: "Success!" });
   }
 
   if (request.method === "DELETE") {
-    const jokeToDelete = await Joke.findByIdAndDelete(id);
-    return response.status(200).json(jokeToDelete);
+    await Joke.findByIdAndDelete(id);
+
+    response.status(200).json({ message: "Success!" });
   }
 }

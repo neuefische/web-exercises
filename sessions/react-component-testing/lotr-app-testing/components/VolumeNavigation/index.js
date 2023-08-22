@@ -22,7 +22,7 @@ const LinkTitle = styled.span`
 const LinkContentContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: ${({ align = "start" }) => "flex-" + align};
+  align-items: ${({ $align = "start" }) => "flex-" + $align};
 `;
 
 export default function VolumeNavigation({ previousVolume, nextVolume }) {
@@ -39,7 +39,7 @@ export default function VolumeNavigation({ previousVolume, nextVolume }) {
       ) : null}
       {nextVolume ? (
         <NavigationLink href={`/volumes/${nextVolume.slug}`} align="end">
-          <LinkContentContainer align="end">
+          <LinkContentContainer $align="end">
             <LinkCaption>Next Volume</LinkCaption>
             <LinkTitle>{nextVolume.title}</LinkTitle>
           </LinkContentContainer>

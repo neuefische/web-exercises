@@ -14,9 +14,9 @@ export default function Light({ name }) {
       onClick={() => {
         handleToggle();
       }}
-      isOn={isOn}
+      $isOn={isOn}
     >
-      <Icon isOn={isOn}>💡</Icon>
+      <Icon $isOn={isOn}>💡</Icon>
       <Text>
         <Name>{name}</Name>
         <State>{isOn ? "On" : "Off"}</State>

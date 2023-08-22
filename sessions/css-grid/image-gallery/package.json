@@ -4,6 +4,9 @@
   "description": "CSS Layout with Grid - Exercise - Pictures",
   "main": "index.html",
   "nf": {
-    "template": "html-css-static"
+    "template": "html-css"
+  },
+  "scripts": {
+    "start": "npx -y live-server@latest --port=3000"
   }
 }

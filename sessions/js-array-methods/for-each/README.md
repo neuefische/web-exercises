@@ -4,7 +4,7 @@ The array method `forEach` is great for iterating through an array; let's use th
 
 ## Task 1
 
-In the [`js/index.js`](./js/index.js) file, there is an array `colors` containing some hex codes. Create colored boxes from the array of hex codes using the `forEach` array method.
+In the `./js/index.js` file, there is an array `colors` containing some hex codes. Create colored boxes from the array of hex codes using the `forEach` array method.
 
 The following hints may guide you:
 
@@ -20,25 +20,37 @@ Instead of writing the callback function directly inside the forEach method, we 
 - Copy your code from the arrow function into this new function.
 - Use the forEach method with renderColorBox to create the color boxes a second time!
 
-Switch to the [`js/index.js`](./js/index.js) file and make something great happen!
+Switch to the `./js/index.js` file and make something great happen!
 
 ## Notes
 
-- You only have to touch the [`js/index.js`](./js/index.js) file.
+- You only have to touch the `./js/index.js` file.
 
 ## Development
 
-### CodeSandbox
+### Local Development
 
-Select the "Browser" tab to view this project.
+To work locally, please install the dependencies using `npm i` first.
 
-### Local development
+Run `npm run start` to start a development server and open [localhost:3000](http://localhost:3000) in a browser.
 
-To run project commands locally, you need to install the dependencies using `npm i` first.
+> Alternatively you can use the Live Preview Extension for Visual Studio Code to view this project.  
+> Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
 
-You can then use the following command:
+Use `npm run test` to run the tests.
 
+### CodeSandbox Cloud
+
+Select the "Preview: 3000" tab to view this project.
+
+Select the "Tests: logs" tab to view the tests.
+
+> The `npm run start` and `npm run test` scripts run automatically.
+
+### Scripts
+
+You can use the following commands:
+
+- `npm run start` to start a development server
+- `npm run test` to run the tests
 - `npm run lint` to run the linter
-
-Use the Live Preview Extension for Visual Studio Code to view this project in the browser.  
-Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.

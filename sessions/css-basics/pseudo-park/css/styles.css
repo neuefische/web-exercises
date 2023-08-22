@@ -1,0 +1,49 @@
+/*
+  None of these styles are being applied to the HTML.
+  Can you fix that?
+
+  Once the styles are applied,
+  the park should be pale yellow box with a dashed border.
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.park {
+  margin: 16px;
+  border: 2px dashed silver;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: lightgoldenrodyellow;
+}
+
+.animal {
+  padding: 16px;
+
+  /*
+    The animals are very small.
+    The size of the emojis is controlled via the font size.
+    Set the font size to 32px.
+  */
+}
+
+/*
+  The giraffe is afraid of the crocodile and the dino.
+   - center the giraffe in the park
+   - align the dino to the right
+
+  💡 Select the animals by their class name and use the text align property.
+*/
+
+/* 
+  The animals want some color! 🎨
+  When the mouse hovers over an animal, change the background color.
+   - The crocodile wants to be lightblue.
+   - The giraffe likes lightgreen.
+   - The dino is a huge fan of lightsalmon.
+
+  💡 You'll need to use a pseudo class selector for each animal.
+*/

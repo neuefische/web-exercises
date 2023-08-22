@@ -1,30 +1,24 @@
-import Button from "../Button";
-import { StyledList } from "../StyledList";
-import { StyledListItem } from "../StyledListItem";
 import useSWR from "swr";
-import { useRouter } from "next/router";
+import Link from "next/link";
 
 export default function JokeList() {
-  const router = useRouter();
-  const { data } = useSWR("/api/jokes");
+  const { data, isLoading } = useSWR("/api/jokes");
 
-  if (!data) {
+  if (isLoading) {
     return <h1>Loading...</h1>;
   }
 
+  if (!data) {
+    return;
+  }
+
   return (
-    <StyledList>
+    <ul>
       {data.map((joke) => (
-        <StyledListItem key={joke._id}>
-          <Button
-            type="button"
-            width="100%"
-            onClick={() => router.push(`/${joke._id}`)}
-          >
-            {joke.joke}
-          </Button>
-        </StyledListItem>
+        <li key={joke._id}>
+          <Link href={`/${joke._id}`}>{joke.joke}</Link>
+        </li>
       ))}
-    </StyledList>
+    </ul>
   );
 }

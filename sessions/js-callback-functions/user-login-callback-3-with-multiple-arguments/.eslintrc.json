@@ -2,10 +2,12 @@
   "env": {
     "browser": true,
     "es2022": true,
+    "jest": true,
     "node": true
   },
-  "extends": ["eslint:recommended"],
+  "extends": ["eslint:recommended", "plugin:jest/recommended"],
   "parserOptions": {
     "sourceType": "module"
-  }
+  },
+  "plugins": ["jest"]
 }

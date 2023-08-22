@@ -12,7 +12,7 @@ export default function Movies() {
       </Head>
       <h1>List of Movies</h1>
       <ul>
-        {movies.map(({slug, title, id }) => (
+        {movies.map(({ slug, title, id }) => (
           <li key={id}>
             <Link href={`/movies/${slug}`}>{title}</Link>
           </li>

@@ -6,7 +6,7 @@ import { introduction, volumes } from "../../lib/data";
 
 export default function Volumes() {
   return (
-    <Main gap={48}>
+    <Main $gap={48}>
       <Introduction
         title={
           <>

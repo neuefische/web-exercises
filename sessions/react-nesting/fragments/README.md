@@ -6,7 +6,7 @@ Let's dive into it and see how React fragments can help here!
 
 ## Task
 
-Look at the [`src/App.js`](./src/App.js) file: there is a `<main>` element containing three `Box` components with different colors.
+Look at the `./src/App.js` file: there is a `<main>` element containing three `Box` components with different colors.
 
 Note that the `<main>` wrapper is a flex container which is why the `Box` components are aligned horizontically.
 
@@ -31,20 +31,24 @@ To fix this, replace the `<div>` with fragments `<></>`: they won't create an HT
 
 ## Notes
 
-- You only have to touch the [`src/App.js`](./src/App.js) file.
+- You only have to touch the `./src/App.js` file.
 
 ## Development
 
-### CodeSandbox
+### Local Development
 
-Select the "Browser" tab to view this project.
+To work locally, please install the dependencies using `npm i` first.
 
-### Local development
+Run `npm run start` to start a development server and open the displayed URL in a browser.
 
-To run project commands locally, you need to install the dependencies using `npm i` first.
+### CodeSandbox Cloud
 
-You can then use the following commands:
+Select the "Preview: 3000" tab to view this project.
 
-- `npm run start` to start the development server
+> The `npm run start` script runs automatically.
 
-> 💡 This project requires a bundler. You can use `npm run start` to start the development server. You can then view the project in the browser at `http://localhost:3000`. The Live Preview Extension for Visual Studio Code will **not** work for this project.
+### Scripts
+
+You can use the following commands:
+
+- `npm run start` to start a development server

@@ -1,0 +1,13 @@
+{
+  "name": "css-basics_combined-users",
+  "version": "0.0.0-unreleased",
+  "description": "CSS Basics: Combined Users",
+  "main": "index.html",
+  "nf": {
+    "template": "html-css"
+  },
+  "private": true,
+  "scripts": {
+    "start": "npx -y live-server@latest --port=3000"
+  }
+}

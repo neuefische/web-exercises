@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui;
+  background-color: lightgray;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: auto;
+  padding: 20px;
+  width: 90%;
+  min-height: 100vh;
+  background-color: white;
+}
+
+h1 {
+  padding: 5px;
+  background-color: black;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+legend {
+  background-color: black;
+  color: white;
+}
+
+button {
+  margin: auto;
+  width: fit-content;
+}
+
+input[type="submit"] {
+  margin: auto;
+  width: fit-content;
+}
+
+textarea {
+  width: fit-content;
+}
