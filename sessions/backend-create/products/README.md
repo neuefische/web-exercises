@@ -1,6 +1,6 @@
 # Backend Create: Products
 
-In this challenge, you'll further expand a fish shop. This time, you'll create new data in your local MongoDB using `mongoose` and refresh the UI programmatically to display the new product immediately.
+In this challenge, you'll further expand a fish shop. This time, you'll create new data in your MongoDB using `mongoose` and refresh the UI programmatically to display the new product immediately.
 
 > 💡 You can use this template as a starting point. But if you are far enough along with your own Fish Shop App, please use that instead.
 
@@ -8,7 +8,7 @@ In this challenge, you'll further expand a fish shop. This time, you'll create n
 
 ### Prepare your Database
 
-If you have not done so, use MongoDB Compass to create a database:
+If you have not done so, use MongoDB Atlas to create a database:
 
 - the database should be called `fish-shop`,
 - there should be two collections: `products` and `reviews`,
@@ -16,7 +16,7 @@ If you have not done so, use MongoDB Compass to create a database:
 - import the data of the `products.json` file into your `products` collection;
 - import the data of the `reviews.json` file into your `reviews` collection.
 
-Create a `.env.local` file based on the [`.env.local.example`](./.env.local.example). Be sure to spell the name of the database (`fish-shop`) correctly.
+Create a `.env.local` file based on the [`.env.local.example`](./.env.local.example). Be sure to spell the name of the database (`fish-shop`) correctly and replace the placeholders with your MongoDB values (`username`, `password`, `cluster-name`).
 
 ### Introduction
 
@@ -28,7 +28,7 @@ Have a look around:
 - when clicking a product in the list, you'll be redirected to a details page;
 - note that submitting the form does not do anything right now.
 
-Your task is to refactor the app so that submitting the form creates a new entry in your local MongoDB and refreshes the page to show all products (including the new one).
+Your task is to refactor the app so that submitting the form creates a new entry in your MongoDB and refreshes the page to show all products (including the new one).
 
 ### Add a `POST` route
 
@@ -82,7 +82,7 @@ Open [`localhost:3000/`](http://localhost:3000/) in your browser, submit a new f
 - The files are already in the correct structure for the app.
   - `products.json` contains the data for the all fish,
   - `reviews.json` contain the data for all reviews.
-- Import them into the correct collection of your local MongoDB when you are asked to.
+- Import them into the correct collection of your MongoDB when you are asked to.
 
 ## Development
 

@@ -1,6 +1,7 @@
 # Backend Read: Products
 
-In this challenge (and the upcoming ones), you'll create a fish shop. For now, you'll read data from a local MongoDB using `mongoose` and display it in the frontend.
+In this challenge (and the upcoming ones), you'll create a fish shop.
+You'll read data from your remote MongoDB using `mongoose` and display it in the frontend.
 
 ## Task
 
@@ -13,16 +14,17 @@ Have a look around:
 - there is an overview page with all products and a details page for each of them;
 - the data is taken from `lib/products.js`.
 
-Your task is to refactor the app so that it fetches the data from a local MongoDB.
+Your task is to refactor the app so that it fetches the data from a remote MongoDB.
 
 ### Read Products from Database
 
-Use MongoDB Compass to create a database:
+Use MongoDB Atlas to create a database:
 
 - the database should be called `fish-shop`,
 - there should be one collection called `products`,
 - download and extract the [resources](README.md#resources) and
 - use the `products.json` file to import the data into your `products` collection.
+- Note: you can use MongoDB Atlas to import the data by clicking on the `Insert Document` button, changing to the view `{}` and copy-pasting the data from the `products.json` file.
 
 Create a schema for the `Product` model in the `db/models` folder.
 
@@ -35,7 +37,8 @@ The schema should have the following fields:
 
 At the root of the project, create a `.env.local` file which uses the `MONGODB_URI` environment variable and your MongoDB connection string.
 
-- Copy and paste the following into the `.env.local` file: `MONGODB_URI=mongodb://localhost:27017/fish-shop`.
+- Copy and paste the following into the `.env.local` file: `MONGODB_URI=mongodb+srv://<user>:<password>@<clustername>/fish-shop?retryWrites=true&w=majority`.
+- Replace `<user>` with your database username, `<password>` with your password and `<clustername>` with the name of your cluster. You can find all of this information on the MongoDB Atlas website.
 
 Switch to `pages/api/products/index.js`:
 
@@ -67,7 +70,7 @@ Open the browser and check the details pages: they should now work as well!
 
 Some of the products already have reviews which are stored in a second collection. Your task is to read from that collection and display the reviews on the right details page.
 
-Open MongoDB Compass and adapt your `fish-shop` database:
+Open MongoDB Atlas and adapt your `fish-shop` database:
 
 - Add a new collection called `reviews`; insert the data from `bonus-reviews.json`.
 - Drop the `products` collection; recreate it with the same name, but now insert data from the `bonus-products.json` file.
@@ -104,7 +107,7 @@ Finally, update the frontend to display the reviews:
 - The files are already in the correct structure for the app.
   - `products.json` contains the data for the first task, and
   - `bonus-products.json` and `bonus-reviews.json` contain the data for the bonus task.
-- Import them into the correct collection of your local MongoDB when you are asked to.
+- Import them into the correct collection of your remote MongoDB when you are asked to.
 
 ## Development
 
