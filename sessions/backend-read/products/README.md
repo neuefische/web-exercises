@@ -37,8 +37,8 @@ The schema should have the following fields:
 
 At the root of the project, create a `.env.local` file which uses the `MONGODB_URI` environment variable and your MongoDB connection string.
 
-- Copy and paste the following into the `.env.local` file: `MONGODB_URI=mongodb+srv://<user>:<password>@<clustername>/fish-shop?retryWrites=true&w=majority`.
-- Replace `<user>` with your database username, `<password>` with your password and `<clustername>` with the name of your cluster. You can find all of this information on the MongoDB Atlas website.
+- Copy and paste the following into the `.env.local` file: `MONGODB_URI=mongodb+srv://<user>:<password>@<cluster-name>/fish-shop?retryWrites=true&w=majority`.
+- Replace `<user>` with your database username, `<password>` with your password and `<cluster-name>` with the name of your cluster. You can find all of this information on the MongoDB Atlas website.
 
 Switch to `pages/api/products/index.js`:
 
