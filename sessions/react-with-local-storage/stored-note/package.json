@@ -10,8 +10,9 @@
     "use-local-storage-state": "^18.1.1"
   },
   "devDependencies": {
-    "@babel/runtime": "7.20.0",
-    "eslint-plugin-react-hooks": "4.6.0"
+    "@babel/runtime": "7.22.11",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "@babel/plugin-proposal-private-property-in-object": "7.21.11"
   },
   "scripts": {
     "start": "react-scripts start"
