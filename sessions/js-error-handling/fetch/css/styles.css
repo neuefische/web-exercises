@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 2rem 0;
+  background-color: darkturquoise;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+main > * {
+  margin: 0;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.user > * {
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.actions button {
+  flex: 1;
+  line-height: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.actions button:hover {
+  background-color: rgb(110, 152, 192);
+}
+
+.error {
+  color: red;
+  line-height: 3rem;
+  font-weight: bold;
+}
