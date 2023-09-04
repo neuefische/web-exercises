@@ -6,8 +6,7 @@ export default styled.button`
   cursor: pointer;
   padding: 1rem;
   color: white;
-  background-color: ${({ $color }) =>
-    $color === "danger" ? "var(--secondary-color)" : "var(--primary-color)"};
+  background-color: var(--primary-color);
 
   &:hover {
     color: black;
