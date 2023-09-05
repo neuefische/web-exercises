@@ -1,7 +1,7 @@
 import GlobalStyle from "../styles";
 import useSWR from "swr";
 import Layout from "../components/Layout.js";
-import { useImmerLocalStorageState } from "../lib/hook/useImmerLocalStorageState.js";
+import useLocalStorageState from "use-local-storage-state";
 
 const fetcher = async (...args) => {
   const response = await fetch(...args);
@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }) {
     "https://example-apis.vercel.app/api/art",
     fetcher
   );
-  const [artPiecesInfo, setArtPiecesInfo] = useImmerLocalStorageState(
+  const [artPiecesInfo, setArtPiecesInfo] = useLocalStorageState(
     "art-pieces-info",
     { defaultValue: [] }
   );
