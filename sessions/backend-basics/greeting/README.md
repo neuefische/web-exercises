@@ -22,7 +22,7 @@ In the `./index.js` file:
 
 ✨ You have successfully built your first server! Let's check that it works:
 
-- Run `npm run dev` to run the `index.js` file using `node`.
+- Run `npm run start` to run the `index.js` file using `node`.
 - Switch to your browser and open `localhost:8000` (the port number depends on the number you've passed to the `.listen()` method above).
 - You should now see "Hello, [your name]!".
 
