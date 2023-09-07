@@ -7,7 +7,7 @@ const charactersLeftElement = document.querySelector(
 );
 
 messageInput.addEventListener("input", (event) => {
-  charactersLeftElement.textContent = 150 - parseInt(event.target.value.length);
+  charactersLeftElement.textContent = 150 - event.target.value.length;
 });
 
 form.addEventListener("submit", (event) => {
