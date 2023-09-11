@@ -1,14 +1,10 @@
 # React State: Journal App with Entries Filter
 
-Your journal app includes filter buttons to show all entries or only favorites. Currently the buttons don't work yet. Let's implement this feature!
-
-> 💡 You can use this template as a starting point. But if you are far enough along with your own Journal App, please use that instead.
+In this challenge we need to implement filter buttons to show all entries or only favorites.
 
 ## Task
 
 ### Make the filter buttons clickable (optional)
-
-> 💡 If you didn't write a wrapping component like `Tab` for the `button` tag in your own code, you might not need to do this extra step.
 
 Users should be able to click on the filter buttons to change the list of entries being displayed. First, we want to make sure the buttons are clickable.
 

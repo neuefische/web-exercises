@@ -2,8 +2,6 @@
 
 Make your journal entries persistent by saving them to local storage.
 
-> 💡 You can use this template as a starting point. But if you are far enough along with your own Journal App, please use that instead.
-
 ## Task
 
 Install the [`use-local-storage-state`](https://github.com/astoilkov/use-local-storage-state) package and use it to make the journal entries persistent.
