@@ -6,7 +6,7 @@ export default function HomePage({ lightsOnCount }) {
       <h1>Home</h1>
       <p>{lightsOnCount} light(s) are on.</p>
       <p>
-        <Link href="/lights">All lights →</Link>
+        <Link href="/rooms">All rooms →</Link>
       </p>
       <p>
         <Link href="/actions">Quick actions →</Link>
