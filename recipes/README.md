@@ -13,13 +13,13 @@ They can also be used to create new **projects outside of this repository** usin
 
 ## Why?
 
-Basic templates only contain files. But we want to do more advanced things for Create React App and Next.js: Those templates are created using `create-react-app` and `create-next-app` and then we modify them to our needs by adding and modifiying files as well as running additional commands.
+Basic templates only contain files. But we want to do more advanced things for Create React App and Next.js: Those templates are created using `create-react-app` and `create-next-app` and then we modify them to our needs by adding and modifying files as well as running additional commands.
 
 ## How?
 
 For each recipe, we have a `files` directory that contains the files that should be copied to the template.
 
-There is a `exercise-overrides` directory that contains files that should be overriden by the `create` script, when the template is used to create a new exercise. This allows us to have a different `README.md` (and other files) for exercises.
+There is an `exercise-overrides` directory that contains files that should be overridden by the `create` script, when the template is used to create a new exercise. This allows us to have a different `README.md` (and other files) for exercises.
 
 Each recipe has a `recipe.js` file that exports a default object. This object contains the following properties:
 
