@@ -18,7 +18,7 @@ In this challenge you will automate the lights in your house… well, at least i
 - In the `Lights` component pass down the `onToggle` prop to the `Light` component using an inline function to pass in the `id` of the light:
 
   ```js
-  onToggle={() => handleToggle(light.id)}
+  onToggle={() => toggleLight(light.id)}
   ```
 
   This of course depends on the name of the handle function you choose.
