@@ -5,7 +5,7 @@ This project was created from the Spiced Academy `html-css` template.
 You can download the project by running this command in your terminal:
 
 ```bash
-npx -y ghcd@latest spiced-academy/fs-web-exercises/tree/main/templates/html-css my-app -i
+npx -y ghcd@latest spiced-academy/fs-web-exercises/tree/main/templates/html-css my-app
 ```
 
 ## Development

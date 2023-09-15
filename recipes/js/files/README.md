@@ -5,7 +5,7 @@ This project was created from the Spiced Academy `js` template.
 You can download the project by running this command in your terminal:
 
 ```bash
-npx -y ghcd@latest spiced-academy/fs-web-exercises/tree/main/templates/js my-app -i
+npx -y ghcd@latest spiced-academy/fs-web-exercises/tree/main/templates/js my-app
 ```
 
 ## Development
