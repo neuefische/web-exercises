@@ -2,6 +2,8 @@
 
 ## Task
 
+Please see the comments in `./js/index.js`
+
 ## Notes
 
 - You only have to touch the `./js/index.js` file.

@@ -1,10 +1,6 @@
 # Component Testing: Lord of the Rings
 
-...
-
 ## Task
-
-...
 
 ## Notes
 
