@@ -19,23 +19,25 @@ Use the following hints as guideline:
 
 ## Notes
 
-- You only have to touch the [`server.js`](./server.js) and [`index.js`](./index.js) files.
+- You only have to touch the `./server.js` and `./index.js` files.
 
 ## Development
 
-### CodeSandbox
+> ❗️ This project is a node server. Server output can be viewed in the terminal.
 
-This project is Node.js application. If it listens to any port (alá `server.listen()`) CodeSandbox will open it in the "Browser" tab. Tests only seem to work locally.
+### Local Development
 
-### Local development
+To work locally, please install the dependencies using `npm i` first.
 
-To run project commands locally, you need to install the dependencies using `npm i` first.
+Run `npm run start` to start the node server and open [localhost:3000](http://localhost:3000) in a browser.
 
-You can then use the following commands:
+Use `npm run test` to run the tests.
 
-- `npm run dev` to run the main JavaScript file using `node` in watch mode (restarts on file changes)
-- `npm run start` to run the main JavaScript file using `node`
+### Scripts
+
+You can use the following commands:
+
+- `npm run start` to starts the node server (and watches for changes)
+- `npm run start:nowatch` to start the node server (without watching for changes)
 - `npm run test` to run the tests
 - `npm run lint` to run the linter
-
-> 💡 Since this project is Node.js application you have to run it using `npm run start` or `npm run dev` and then check your browser on the port the app is listening to. Use `npm run test` to check your progress.

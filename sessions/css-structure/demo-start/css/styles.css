@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui;
+  color: #e4e8f0;
+  background-color: #282828;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  color: #ff4a11;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 5px;
+  border: solid 2px #ff4a11;
+  width: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.highlight {
+  color: #ff4a11;
+  font-size: 1.5rem;
+}
+
+.definition {
+  max-width: 300px;
+  border: dashed 2px #ff4a11;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.tag {
+  background-color: #9ca3af;
+  color: #282828;
+  padding: 10px;
+  border-radius: 5px;
+}

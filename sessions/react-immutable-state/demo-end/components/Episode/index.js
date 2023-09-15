@@ -7,8 +7,8 @@ const Title = styled.h4`
   font-weight: 400;
   margin: 0;
 
-  ${({ hasSeen }) =>
-    hasSeen &&
+  ${({ $hasSeen }) =>
+    $hasSeen &&
     css`
       text-decoration: line-through;
       opacity: 0.5;
@@ -26,8 +26,8 @@ const Button = styled.button`
   display: grid;
   place-items: center;
 
-  ${({ hasSeen }) =>
-    hasSeen &&
+  ${({ $hasSeen }) =>
+    $hasSeen &&
     css`
       opacity: 0.5;
     `}
@@ -61,7 +61,7 @@ const StyledEpisode = styled.section`
 export default function Episode({ title, onToggleHasSeen, hasSeen }) {
   return (
     <StyledEpisode>
-      <Title hasSeen={hasSeen}>{title}</Title>
+      <Title $hasSeen={hasSeen}>{title}</Title>
       <Actions>
         <Button
           type="button"
@@ -69,7 +69,7 @@ export default function Episode({ title, onToggleHasSeen, hasSeen }) {
             onToggleHasSeen();
           }}
           aria-label={hasSeen ? "Mark as unwatched" : "Mark as watched"}
-          hasSeen={hasSeen}
+          $hasSeen={hasSeen}
         >
           {hasSeen ? <EyeOff /> : <Eye />}
         </Button>

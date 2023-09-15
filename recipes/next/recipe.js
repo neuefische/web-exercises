@@ -3,31 +3,35 @@ export default {
   description: "Next.js (incl. Styled Components and Jest)",
   cmd: [
     "npx",
-    ["create-next-app@latest", "--js", "--eslint", "--use-npm", "."],
+    [
+      "-y",
+      "create-next-app@13.4",
+      "--js",
+      "--eslint",
+      "--use-npm",
+      "--no-tailwind",
+      "--no-src-dir",
+      "--no-app",
+      "--import-alias",
+      "@/*",
+      ".",
+      "my-app",
+    ],
   ],
   async beforeFiles({ cwd, spinner }) {
-    spinner.text = "Installing Next.js Font…";
-    await installNextjsFont({ cwd });
-
-    spinner.text = "Installing SVGR…";
+    spinner.text = "Cooking next — Installing SVGR…";
     await installSvgr({ cwd });
 
-    spinner.text = "Installing Styled Components…";
+    spinner.text = "Cooking next — Installing Styled Components…";
     await installStyledComponents({ cwd });
 
-    spinner.text = "Installing Jest…";
+    spinner.text = "Cooking next — Installing Jest…";
     await installJest({ cwd });
 
-    spinner.text = "Deleting unnecessary files…";
+    spinner.text = "Cooking next — Deleting unnecessary files…";
     await deleteUnnecessaryFiles({ cwd });
   },
 };
-
-async function installNextjsFont({ cwd }) {
-  const { execa } = await import("execa");
-
-  await execa("npm", ["install", "@next/font"], { cwd });
-}
 
 async function installSvgr({ cwd }) {
   const { execa } = await import("execa");
@@ -73,6 +77,7 @@ async function deleteUnnecessaryFiles({ cwd }) {
   const { join } = await import("node:path");
 
   await fs.rm(join(cwd, "public", "vercel.svg"), { force: true });
+  await fs.rm(join(cwd, "public", "next.svg"), { force: true });
   await fs.rm(join(cwd, "styles"), { force: true, recursive: true });
   await fs.rm(join(cwd, "pages", "api"), { force: true, recursive: true });
 }

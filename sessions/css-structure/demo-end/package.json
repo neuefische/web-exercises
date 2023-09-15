@@ -1,0 +1,13 @@
+{
+  "name": "css-structure_demo-end",
+  "version": "0.0.0-unreleased",
+  "description": "css-structure: demo-end",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx -y live-server@latest --port=3000"
+  },
+  "nf": {
+    "template": "html-css"
+  },
+  "private": true
+}

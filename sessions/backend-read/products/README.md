@@ -6,7 +6,7 @@ In this challenge (and the upcoming ones), you'll create a fish shop. For now, y
 
 ### Introduction
 
-Run `npm run dev` and open `localhost:3000` on your browser.
+Run `npm run dev` and open [localhost:3000](http://localhost:3000) on your browser.
 
 Have a look around:
 
@@ -48,7 +48,7 @@ Switch to `pages/api/products/index.js`:
   - use the `Product` model to find all products and
   - return them as a response.
 
-Switch to `pages/index.js` and adapt the frontend:
+Switch to `components/ProductList` and adapt the frontend:
 
 - replace all instances of `product.id` with `product._id`.
 
@@ -108,19 +108,20 @@ Finally, update the frontend to display the reviews:
 
 ## Development
 
-### CodeSandbox
+### Local Development
 
-Select the "Browser" tab to view this project. If this project contains tests, select the "Tests" tab to check your progress.
+To work locally, please install the dependencies using `npm i` first.
 
-### Local development
+Run `npm run dev` to start a development server and open the displayed URL in a browser.
 
-To run project commands locally, you need to install the dependencies using `npm i` first.
+Use `npm run test` to run the tests.
 
-You can then use the following commands:
+### Scripts
 
-- `npm run dev` to start the development server
-- `npm run build` to create a production build
-- `npm run start` to start the production build
-- `npm run test` to run the tests in watch mode (if available)
+You can use the following commands:
 
-> 💡 This project requires a bundler. You can use `npm run dev` to start the development server. You can then view the project in the browser at `http://localhost:3000`. The Live Preview Extension for Visual Studio Code will **not** work for this project.
+- `npm run dev` to start a development server
+- `npm run build` to build the project
+- `npm run start` to start a production server
+- `npm run test` to run the tests
+- `npm run lint` to run the linter

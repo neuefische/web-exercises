@@ -1,0 +1,10 @@
+{
+  "name": "html-and-the-web_personal-website",
+  "version": "0.0.0-unreleased",
+  "description": "HTML and the web: Personal Website",
+  "main": "n.a.",
+  "nf": {
+    "template": "empty"
+  },
+  "private": true
+}

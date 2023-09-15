@@ -27,15 +27,15 @@ export default function CarRace() {
       {winner ? (
         <Winner winner={winner} onRestart={() => setCars(initialCars)} />
       ) : (
-        <AllCarRoutes finishLine={finishLine}>
+        <AllCarRoutes $finishLine={finishLine}>
           <DistanceHeadline>Last Distance</DistanceHeadline>
           {cars.map((car) => (
             <Fragment key={car.emoji}>
-              <Track finishLine={finishLine}>
+              <Track>
                 <CarButton
                   onClick={() => moveCar(car)}
-                  positionX={car.position.x}
-                  lastDistance={car.position.lastDistance}
+                  $positionX={car.position.x}
+                  $lastDistance={car.position.lastDistance}
                   aria-label={`Move clicked car forward`}
                 >
                   {car.emoji}

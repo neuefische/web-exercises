@@ -8,13 +8,13 @@ And here is the magic: we can only do this with one button component using props
 
 ### 1. A Simple Button Component
 
-Look at the [`src/App.js`](./src/App.js) file: the `App` component returns a default heading element that you need to replace with a custom component.
+Look at the `./src/App.js` file: the `App` component returns a default heading element that you need to replace with a custom component.
 
 Your task is to write a `Button` component which takes three props `color`, `disabled`, and `text` and renders a button with the given color, text and disabled state.
 
 You can use the following hints as guideline:
 
-- Write a `Button` component inside of the [`App.js`](src/App.js).
+- Write a `Button` component inside of the `src/App.js`.
 
   - It accepts three props: `color`, `disabled`, and `text` (make sure to destructure them).
   - It returns an HTML button element which
@@ -62,20 +62,18 @@ As a last step, let's pass a function as a prop to a component.
 
 ## Notes
 
-- You only have to touch the [`src/App.js`](./src/App.js) file.
+- You only have to touch the `./src/App.js` file.
 
 ## Development
 
-### CodeSandbox
+### Local Development
 
-Select the "Browser" tab to view this project.
+To work locally, please install the dependencies using `npm i` first.
 
-### Local development
+Run `npm run start` to start a development server and open the displayed URL in a browser.
 
-To run project commands locally, you need to install the dependencies using `npm i` first.
+### Scripts
 
-You can then use the following commands:
+You can use the following commands:
 
-- `npm run start` to start the development server
-
-> 💡 This project requires a bundler. You can use `npm run start` to start the development server. You can then view the project in the browser at `http://localhost:3000`. The Live Preview Extension for Visual Studio Code will **not** work for this project.
+- `npm run start` to start a development server

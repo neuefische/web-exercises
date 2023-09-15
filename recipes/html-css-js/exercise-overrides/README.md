@@ -24,28 +24,31 @@ You can use the following hints as guideline:
 - Hint 2
 - ...
 
-Switch to the  [`js/index.js`](./js/index.js)  file and make something great happen!
+Switch to the  `./js/index.js`  file and make something great happen!
 
 -->
 
 ## Notes
 
-- You only have to touch the [`js/index.js`](./js/index.js) file.
+- You only have to touch the `./js/index.js` file.
 
 ## Development
 
-### CodeSandbox
+### Local Development
 
-Select the "Browser" tab to view this project. You can select the "Tests" tab to check your progress against the tests.
+To work locally, please install the dependencies using `npm i` first.
 
-### Local development
+Run `npm run start` to start a development server and open [localhost:3000](http://localhost:3000) in a browser.
 
-To run project commands locally, you need to install the dependencies using `npm i` first.
+> Alternatively you can use the Live Preview Extension for Visual Studio Code to view this project.  
+> Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
 
-You can then use the following commands:
+Use `npm run test` to run the tests.
 
-- `npm run test` to run the tests
-- `npm run lint` to run the linter
+### CodeSandbox Cloud
 
-Use the Live Preview Extension for Visual Studio Code to view this project in the browser.  
-Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
+Select the "Preview: 3000" tab to view this project.
+
+Select the "Tests: logs" tab to view the tests.
+
+> The `npm run start` and `npm run test` scripts run automatically.

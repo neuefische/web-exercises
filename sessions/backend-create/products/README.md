@@ -20,7 +20,7 @@ Create a `.env.local` file based on the [`.env.local.example`](./.env.local.exam
 
 ### Introduction
 
-Run `npm run dev` and open `localhost:3000` in your browser.
+Run `npm run dev` and open [localhost:3000](http://localhost:3000) in your browser.
 
 Have a look around:
 
@@ -32,13 +32,13 @@ Your task is to refactor the app so that submitting the form creates a new entry
 
 ### Add a `POST` route
 
-Switch to [`pages/api/products/index.js`](./pages/api/products/index.js) and write the code for the `request.method` `POST` :
+Switch to `./pages/api/products/index.js` and write the code for the `request.method` `POST` :
 
 - Use a `try...catch` block.
 - Try to:
   - Save the product data submitted by the form - accessible in `request.body` - to a variable called `productData`.
-  - Pass the `productData` a `new Product(data_goes_here)` and save it in a variable called `product`.
-  - _Wait_ until the new product was saved in the database with `product.save()`.
+  - use `Product.create` with the `productData` to create a new document in our collection.
+  - _Wait_ until the new product was saved.
   - Respond with a status `201` and the message `{ status: "Product created." }`.
 - If an error occurs:
   - Log the error to the console.
@@ -48,41 +48,29 @@ Submitting the form will not yet work because the form does not know that you've
 
 ### Send a `POST` request
 
-Switch to [`components/ProductForm/index.js`](./components/ProductForm/index.js):
+Switch to `./components/ProductForm/index.js`:
 
 - There already is a `handleSubmit` function which creates a `productData` object with all relevant data.
 
-Your task is to write a fetch for your newly created `POST` route and send the data to your database.
+Your task is to fetch your new `POST` route and send the data to your database. After that use `mutate` from `useSWR` to refetch the data from the database.
 
-- Fetch the route `"/api/products"`; `await` the return value and save it in a variable called `response`.
-- As a second argument, pass an object to the `fetch()` method which contains
-  - the `method` set to `POST`,
-  - the `body` set the `JSON.stringify()` of `productData`, and
-  - an `headers` object with `"Content-Type": "application/json"`.
-  - The object should look like the following:
+- call `useSWR` in your `ProductForm` component with the API endpoint and destructure the `mutate` method.
+- inside the handleSubmit function:
+  > 💡 Hint: have a look at the handout if you get stuck here.
+- send a "POST" request with `fetch` using the following options as the second argument
 
 ```js
 {
-method: "POST",
+  method: "POST",
 headers: {
   "Content-Type": "application/json",
   },
-body: JSON.stringify(productData),
+body: JSON.stringify(???),
 }
 ```
 
-Before handling the `response`,
-
-- go to the top of the file and import `useSWR` from `swr`;
-- within the function body of the `ProductForm` (but not inside of the `handleSubmit` function), add `const products = useSWR("/api/products");` to get access to `/api/products`.
-
-Now, expand the `handleSubmit` function:
-
-- If the `response` is `ok`,
-  - _wait_ for the `response` and use its `.json()` method to produce a JavaScript object;
-  - use `products.mutate()` to trigger a new `GET` request for all products (otherwise, the newly added product will not be displayed until you reload manually),
-  - reset the form with the `event.target` interface.
-- If the `response` is not `ok`, log the `response.status` as an error to the console.
+- use the productData from the form input as the body of the request
+- await the response of the fetch, if the fetch was successful, call the `mutate` method to trigger a data revalidation of the useSWR hooks
 
 Open [`localhost:3000/`](http://localhost:3000/) in your browser, submit a new fish and be happy about your shop being expanded!
 
@@ -98,19 +86,20 @@ Open [`localhost:3000/`](http://localhost:3000/) in your browser, submit a new f
 
 ## Development
 
-### CodeSandbox
+### Local Development
 
-Select the "Browser" tab to view this project. If this project contains tests, select the "Tests" tab to check your progress.
+To work locally, please install the dependencies using `npm i` first.
 
-### Local development
+Run `npm run dev` to start a development server and open the displayed URL in a browser.
 
-To run project commands locally, you need to install the dependencies using `npm i` first.
+Use `npm run test` to run the tests.
 
-You can then use the following commands:
+### Scripts
 
-- `npm run dev` to start the development server
-- `npm run build` to create a production build
-- `npm run start` to start the production build
-- `npm run test` to run the tests in watch mode (if available)
+You can use the following commands:
 
-> 💡 This project requires a bundler. You can use `npm run dev` to start the development server. You can then view the project in the browser at `http://localhost:3000`. The Live Preview Extension for Visual Studio Code will **not** work for this project.
+- `npm run dev` to start a development server
+- `npm run build` to build the project
+- `npm run start` to start a production server
+- `npm run test` to run the tests
+- `npm run lint` to run the linter

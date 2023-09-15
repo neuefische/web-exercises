@@ -6,7 +6,7 @@ This dice rolling app rolls a die (d6 = six sided die). Now you want to show rec
 
 ### Lifting State Up
 
-Look at the [`src/App.js`](./src/App.js) and [`src/components/D6Button/index.js`](./src/components/D6Button/index.js) files.
+Look at the `./src/App.js` and `./src/components/D6Button/index.js` files.
 
 Lift up the `rolls` state into the `App` component.
 
@@ -40,20 +40,18 @@ Install `use-local-storage-state` via npm. Import the `useLocalStorageState` hoo
 
 ## Notes
 
-- You only have to touch the [`src/App.js`](./src/App.js) and [`src/components/D6Button/index.js`](./src/components/D6Button/index.js) files.
+- You only have to touch the `./src/App.js` and `./src/components/D6Button/index.js` files.
 
 ## Development
 
-### CodeSandbox
+### Local Development
 
-Select the "Browser" tab to view this project.
+To work locally, please install the dependencies using `npm i` first.
 
-### Local development
+Run `npm run start` to start a development server and open the displayed URL in a browser.
 
-To run project commands locally, you need to install the dependencies using `npm i` first.
+### Scripts
 
-You can then use the following commands:
+You can use the following commands:
 
-- `npm run start` to start the development server
-
-> 💡 This project requires a bundler. You can use `npm run start` to start the development server. You can then view the project in the browser at `http://localhost:3000`. The Live Preview Extension for Visual Studio Code will **not** work for this project.
+- `npm run start` to start a development server

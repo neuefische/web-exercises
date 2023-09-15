@@ -1,6 +1,6 @@
 # React State: Box
 
-In the [`src/App.js`](./src/App.js) file, there is a button which toggles an `isActive` variable. You can check the console for its value after clicking the button.
+In the `./src/App.js` file, there is a button which toggles an `isActive` variable. You can check the console for its value after clicking the button.
 
 Depending on the `isActive` variable, a class called `box--active` is added to the `<div>` which should then change the `<div>`'s color.
 
@@ -32,20 +32,18 @@ Can you explain why this happens?
 ## Notes
 
 - There is no need to change anything in the return statement of the `App` component (except for the bonus task).
-- You only have to touch the [`src/App.js`](./src/App.js) file.
+- You only have to touch the `./src/App.js` file.
 
 ## Development
 
-### CodeSandbox
+### Local Development
 
-Select the "Browser" tab to view this project.
+To work locally, please install the dependencies using `npm i` first.
 
-### Local development
+Run `npm run start` to start a development server and open the displayed URL in a browser.
 
-To run project commands locally, you need to install the dependencies using `npm i` first.
+### Scripts
 
-You can then use the following commands:
+You can use the following commands:
 
-- `npm run start` to start the development server
-
-> 💡 This project requires a bundler. You can use `npm run start` to start the development server. You can then view the project in the browser at `http://localhost:3000`. The Live Preview Extension for Visual Studio Code will **not** work for this project.
+- `npm run start` to start a development server

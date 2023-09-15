@@ -1,37 +1,11 @@
-import styled from "styled-components";
-import Button from "../Button";
-import { useState } from "react";
-
-const StyledForm = styled.form`
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-block-start: 2rem;
-`;
-
-export default function JokeForm({ onSubmit, value, isEditMode }) {
-  const [joke, setJoke] = useState(value);
-
+export default function JokeForm({ value, onSubmit, isEditMode }) {
   return (
-    <StyledForm
-      onSubmit={(event) => {
-        onSubmit(event);
-        setJoke("");
-      }}
-    >
+    <form onSubmit={onSubmit}>
       <label htmlFor="joke-input">
-        {isEditMode ? "Edit Joke" : "Submit Joke"}
+        {isEditMode ? "Edit the joke" : "Enter a new joke"}
       </label>
-      <input
-        type="text"
-        id="joke-input"
-        name="joke"
-        value={joke}
-        onChange={(event) => setJoke(event.target.value)}
-      />
-      <Button type="submit" width="fit-content">
-        {isEditMode ? "Edit" : "Submit"}
-      </Button>
-    </StyledForm>
+      <input type="text" id="joke-input" name="joke" defaultValue={value} />
+      <button type="submit">Submit</button>
+    </form>
   );
 }

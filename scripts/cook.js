@@ -6,43 +6,52 @@ import ora from "ora";
 const TEMPLATES_DIR = "templates";
 
 // get recipe to cook
-const recipeName = process.argv[2];
+let recipeNames = process.argv.slice(2);
 
-if (!recipeName) {
-  console.error("No recipe specified");
-  process.exit(1);
+if (recipeNames === undefined || recipeNames.length === 0) {
+  let recipes = await fs.readdir("recipes");
+  recipeNames = recipes.filter((recipeName) => recipeName !== "README.md");
 }
-
-if (!fs.existsSync(join("recipes", recipeName, "recipe.js"))) {
-  console.error(`Recipe ${recipeName} does not exist`);
-  process.exit(1);
-}
-
-// load recipe
-const recipe = (await import(join("..", "recipes", recipeName, "recipe.js")))
-  .default;
-
-if (!recipe) {
-  console.error(`Recipe ${recipeName} does not export a recipe`);
-  process.exit(1);
-}
-
-const spinner = ora();
-spinner.start(`Cooking ${recipe.name}…`);
 
 try {
-  // create exercise template for recipe
-  await cookRecipe(recipe, spinner);
+  for (const recipeName of recipeNames) await cookRecipeName(recipeName);
 } catch (error) {
-  spinner.fail(`Failed to cook ${recipeName}`);
+  console.error(`Failed to cook recipe.`);
   console.error(error);
-} finally {
-  // …
+}
+
+async function cookRecipeName(recipeName) {
+  if (!fs.existsSync(join("recipes", recipeName, "recipe.js"))) {
+    console.error(`Recipe ${recipeName} does not exist`);
+    process.exit(1);
+  }
+
+  // load recipe
+  const recipe = (await import(join("..", "recipes", recipeName, "recipe.js")))
+    .default;
+
+  if (!recipe) {
+    console.error(`Recipe ${recipeName} does not export a recipe`);
+    process.exit(1);
+  }
+
+  const spinner = ora();
+  spinner.start(`Cooking ${recipe.name}…`);
+
+  try {
+    // create exercise template for recipe
+    await cookRecipe(recipe, spinner);
+  } catch (error) {
+    spinner.fail(`Failed to cook ${recipeName}`);
+    console.error(error);
+  } finally {
+    // …
+  }
 }
 
 async function cookRecipe(recipe, spinner) {
   const recipeName = recipe.name;
-  const cwd = join(".temp", recipeName);
+  const cwd = join(".temp", recipeName + "-template");
 
   await fs.ensureDir(".temp");
 
@@ -56,22 +65,24 @@ async function cookRecipe(recipe, spinner) {
 
   // run recipe cmd
   if (recipe.cmd) {
-    spinner.text = `Running ${recipe.cmd[0] + " " + recipe.cmd[1].join(" ")}…`;
+    spinner.text = `Cooking ${recipe.name} — Running "${
+      recipe.cmd[0] + " " + recipe.cmd[1].join(" ")
+    }"…`;
     await execa(recipe.cmd[0], recipe.cmd[1], { cwd: cwd });
   }
 
   // post process
   if (recipe.beforeFiles) {
-    spinner.text = `Post processing…`;
+    spinner.text = `Cooking ${recipe.name} — Post processing…`;
     await recipe.beforeFiles({ cwd: cwd, spinner });
   }
   // copy files
-  spinner.text = `Copying files…`;
+  spinner.text = `Cooking ${recipe.name} — Copying files…`;
   await fs.copy(join("recipes", recipeName, "files"), cwd, {
     overwrite: true,
   });
 
-  spinner.text = `Updating package.json…`;
+  spinner.text = `Cooking ${recipe.name} — Updating package.json…`;
 
   // set package.json fields
   const pkgJson =
@@ -85,10 +96,10 @@ async function cookRecipe(recipe, spinner) {
   pkgJson.nf = { template: recipeName };
   await fs.writeJSON(join(cwd, "package.json"), pkgJson);
 
-  spinner.text = `Formatting files…`;
+  spinner.text = `Cooking ${recipe.name} — Formatting files…`;
   await execa("npx", ["prettier", "--write", "."], { cwd: cwd });
 
-  spinner.text = `Cleaning up…`;
+  spinner.text = `Cooking ${recipe.name} — Cleaning up…`;
   await fs.rm(join(cwd, "package-lock.json"), { force: true });
   await fs.rm(join(cwd, "node_modules"), {
     force: true,
@@ -96,7 +107,7 @@ async function cookRecipe(recipe, spinner) {
   });
 
   // move temp folders to templates folder
-  spinner.text = `Moving files into template folder…`;
+  spinner.text = `Cooking ${recipe.name} — Moving files into template folder…`;
   if (fs.existsSync(join(TEMPLATES_DIR, recipeName))) {
     await fs.rm(join(TEMPLATES_DIR, recipeName), {
       recursive: true,

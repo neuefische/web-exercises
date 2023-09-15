@@ -5,9 +5,9 @@ console.clear();
 // Make sure to export your variable as in the example below to make the tests work.
 
 const company = {
-  name: "neuefische",
+  name: "Spiced Academy",
   course: "Web Development",
-  location: "Hamburg",
+  location: "Berlin",
 };
 
 // example: export const {value1} = myObject;

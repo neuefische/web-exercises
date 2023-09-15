@@ -1,10 +1,6 @@
 /* I'm the universal selector. I target EVERYTHING. */
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 /* PART 1: I'm a type selector. I target a specific type of element. */
@@ -53,10 +49,10 @@ a[href^="https"] {
 /* PART 4: I'm a pseudo-class. I'm  a keyword added to a selector that 
 specifies a special state of the selected element. */
 
-a[href^="https"]:hover {
+a:hover {
 }
 
-input[type="text"]:focus {
+input:focus {
 }
 
 /* PART 5: I'm a pseudo-element. I'm a keyword added to a selector that lets
@@ -70,7 +66,7 @@ a[href^="https"]:before {
 
 /* PART 6: I'm the ID selector. I shouldn't be used. */
 
-#very-important-text {
+#do-not-use-this {
 }
 
 /* PART 7: I'm a descendant combinator. I will select all descendants
@@ -87,10 +83,4 @@ of the parent element, but only those descendants that match my type. */
 of the parent element, but only those children that match my type. */
 
 .main-section > article {
-}
-
-/* PART 9: I'm an adjacent sibling selector. The rules I declare 
-only count for my adjacent sibling. */
-
-section div + span {
 }

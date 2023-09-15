@@ -15,21 +15,25 @@ Use the following guidelines:
 - We need a correct email adress (i.e. including an `@` symbol) for contacting the user.
 - It's necessary that the user has read the terms of service and agrees to them.
 
-Switch to the [`index.html`](./index.html) file and validate the form in the mentioned way!
+Switch to the `./index.html` file and validate the form in the mentioned way!
 
 ## Development
 
-### CodeSandbox
+### Local Development
 
-Select the "Browser" tab to view this project.
+To work locally, please install the dependencies using `npm i` first.
 
-### Local development
+Run `npm run start` to start a development server and open [localhost:3000](http://localhost:3000) in a browser.
 
-To run project commands locally, you need to install the dependencies using `npm i` first.
+> Alternatively you can use the Live Preview Extension for Visual Studio Code to view this project.  
+> Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
 
-You can then use the following command:
+Use `npm run test` to run the tests.
 
+### Scripts
+
+You can use the following commands:
+
+- `npm run start` to start a development server
+- `npm run test` to run the tests
 - `npm run lint` to run the linter
-
-Use the Live Preview Extension for Visual Studio Code to view this project in the browser.  
-Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.

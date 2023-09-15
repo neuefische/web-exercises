@@ -1,14 +1,14 @@
 # React State 2: Colored Number
 
-This challenge provides a [`src/components/Counter.js`](./src/components/Counter.js)component with two buttons which shall increment or decrement a count.
+This challenge provides a `./src/components/Counter.js`component with two buttons which shall increment or decrement a count.
 
-This count is then used by the [`src/components/ColoredNumber.js`](./src/components/ColoredNumber.js) component to display the actual number while its color is depending on the value.
+This count is then used by the `./src/components/ColoredNumber.js` component to display the actual number while its color is depending on the value.
 
 For now, however, clicking the buttons doesn't change anything. Let's use state to fix that.
 
 ## Task
 
-Refactor the [`src/components/Counter.js`](./src/components/Counter.js) component so that it updates the displayed number when clicking a button.
+Refactor the `./src/components/Counter.js` component so that it updates the displayed number when clicking a button.
 
 You can use the following hints as guideline:
 
@@ -18,20 +18,18 @@ You can use the following hints as guideline:
 
 ## Notes
 
-- You only have to touch the [`src/components/Counter.js`](./src/components/Counter.js) file.
+- You only have to touch the `./src/components/Counter.js` file.
 
 ## Development
 
-### CodeSandbox
+### Local Development
 
-Select the "Browser" tab to view this project.
+To work locally, please install the dependencies using `npm i` first.
 
-### Local development
+Run `npm run start` to start a development server and open the displayed URL in a browser.
 
-To run project commands locally, you need to install the dependencies using `npm i` first.
+### Scripts
 
-You can then use the following commands:
+You can use the following commands:
 
-- `npm run start` to start the development server
-
-> 💡 This project requires a bundler. You can use `npm run start` to start the development server. You can then view the project in the browser at `http://localhost:3000`. The Live Preview Extension for Visual Studio Code will **not** work for this project.
+- `npm run start` to start a development server

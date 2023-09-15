@@ -2,13 +2,13 @@
   "name": "web-exercises",
   "version": "0.0.0-unreleased",
   "description": "Session exercises",
-  "homepage": "https://github.com/neuefische/web-exercises#readme",
+  "homepage": "https://github.com/spiced-academy/fs-web-exercises#readme",
   "bugs": {
-    "url": "https://github.com/neuefische/web-exercises/issues"
+    "url": "https://github.com/spiced-academy/fs-web-exercises/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/neuefische/web-exercises.git"
+    "url": "git+https://github.com/spiced-academy/fs-web-exercises.git"
   },
   "type": "module",
   "main": "n.a.",

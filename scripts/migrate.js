@@ -33,6 +33,8 @@ for (const challengeFolder of challengeFolders) {
     template = await detectTemplate({ challengeFolder, packageJson });
   }
 
+  template = upgradeTemplateName(template);
+
   await applyTemplate(challengeFolder, template, packageJson);
 }
 
@@ -57,6 +59,11 @@ async function applyTemplate(challengeFolder, template, packageJson) {
     // copy the .prettierrc.json file from the template folder to the challenge folder
     if (fs.existsSync(path.join(templateFolder, file))) {
       if (!patch || !fs.existsSync(path.join(challengeFolder, file))) {
+        const fileFolder = path.dirname(path.join(challengeFolder, file));
+        // create folder if it does not exist
+        if (!fs.existsSync(fileFolder)) {
+          await fs.mkdirp(fileFolder);
+        }
         await fs.copyFile(
           path.join(templateFolder, file),
           path.join(challengeFolder, file)
@@ -108,11 +115,18 @@ async function applyTemplate(challengeFolder, template, packageJson) {
     "jest.setup.js",
     "sandbox.config.json",
     "stylelint.config.js",
+    path.join(".codesandbox", "tasks.json"),
     path.join("pages", "_document.js"),
     path.join(".storybook", "main.js"),
     path.join(".storybook", "preview.js"),
     ".npmrc",
+    "jsconfig.json",
   ]);
+
+  copyFileIfExistsElseRemove("index.html", async (current, template) => {
+    if (current) return current;
+    return template;
+  });
 
   copyFileIfExistsElseRemove(".eslintrc.json", async (current, template) => {
     return {
@@ -181,6 +195,17 @@ async function applyTemplate(challengeFolder, template, packageJson) {
 
     return readme;
   });
+}
+
+function upgradeTemplateName(template) {
+  // this maps the old template names to the new template names
+  const templateMap = {
+    "html-css-static": "html-css",
+    "html-css-js-static": "html-css-js",
+    node: "node-server",
+  };
+
+  return templateMap[template] ?? template;
 }
 
 async function detectTemplate({ challengeFolder, packageJson }) {

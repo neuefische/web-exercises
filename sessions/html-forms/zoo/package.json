@@ -1,9 +1,12 @@
 {
-  "name": "html-forms_zoo",
+  "name": "html-forms_zoo-v1",
   "version": "0.0.0-unreleased",
   "description": "HTML Forms - Additional Input Fields And Form Elements",
   "main": "index.html",
   "nf": {
-    "template": "html-css-static"
+    "template": "html-css"
+  },
+  "scripts": {
+    "start": "npx -y live-server@latest --port=3000"
   }
 }

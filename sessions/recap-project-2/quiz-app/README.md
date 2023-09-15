@@ -92,6 +92,8 @@ displayed as a **card** like the other questions.
 > ❗️ For now the new **card** should be displayed directly below the form. Adding the **card** to
 > the list of the other cards is a topic for later.
 
+> **Note:** To avoid error messages, we recommend creating a new JavaScript file specifically for your form page. This ensures that any event listeners you've added for other pages won't cause problems with HTML elements that aren't present on the form page.
+
 ### 4. Form field text counter
 
 The form fields for question and answer should be limited to a text of 150 characters. While typing
@@ -123,17 +125,21 @@ for inspiration.
 
 ## Development
 
-### CodeSandbox
+### Local Development
 
-Select the "Browser" tab to view this project.
+To work locally, please install the dependencies using `npm i` first.
 
-### Local development
+Run `npm run start` to start a development server and open [localhost:3000](http://localhost:3000) in a browser.
 
-To run project commands locally, you need to install the dependencies using `npm i` first.
+> Alternatively you can use the Live Preview Extension for Visual Studio Code to view this project.  
+> Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
 
-You can then use the following command:
+Use `npm run test` to run the tests.
 
+### Scripts
+
+You can use the following commands:
+
+- `npm run start` to start a development server
+- `npm run test` to run the tests
 - `npm run lint` to run the linter
-
-Use the Live Preview Extension for Visual Studio Code to view this project in the browser.  
-Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.

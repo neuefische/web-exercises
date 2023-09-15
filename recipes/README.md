@@ -6,7 +6,7 @@ This directory contains recipes that can be used to create templates.
 
 Templates are used to create new **exercises, challenges, etc. directly in this repository** using the `npm run create` command.
 
-They can also be used to create new **projects outside of this repository** using the `npx ghcd neuefische/web-exercises/tree/main/templates/<template> my-app -i` command.
+They can also be used to create new **projects outside of this repository** using the `npx ghcd spiced-academy/fs-web-exercises/tree/main/templates/<template> my-app -i` command.
 
 > **Warning**  
 > Never edit the files in the `templates` directory directly. Instead, edit the recipe in this folder and then [cook it using the `npm run cook <recipe>` command](#cooking-a-recipe).

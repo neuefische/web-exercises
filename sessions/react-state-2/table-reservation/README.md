@@ -4,7 +4,7 @@ In this challenge, there is an app to reserve a table at a restaurant.
 
 Have a look at the [`Counter Component`](./src/components/Counter.js): there is a state which gets updated when the buttons are clicked.
 
-In the [`src/App.js`](./src/App.js) file, however, there is a sentence saying "You are going to reserve a table for 2 people." The number should not be hard coded, but equal the current people count and need to be updated on every button click.
+In the `./src/App.js` file, however, there is a sentence saying "You are going to reserve a table for 2 people." The number should not be hard coded, but equal the current people count and need to be updated on every button click.
 
 ## Task
 
@@ -26,20 +26,18 @@ You can use the following hints as guideline:
 
 ## Notes
 
-- You only have to touch the [`src/App.js`](./src/App.js) and [`src/components/Counter.js`](./src/components/Counter.js) file.
+- You only have to touch the `./src/App.js` and `./src/components/Counter.js` file.
 
 ## Development
 
-### CodeSandbox
+### Local Development
 
-Select the "Browser" tab to view this project.
+To work locally, please install the dependencies using `npm i` first.
 
-### Local development
+Run `npm run start` to start a development server and open the displayed URL in a browser.
 
-To run project commands locally, you need to install the dependencies using `npm i` first.
+### Scripts
 
-You can then use the following commands:
+You can use the following commands:
 
-- `npm run start` to start the development server
-
-> 💡 This project requires a bundler. You can use `npm run start` to start the development server. You can then view the project in the browser at `http://localhost:3000`. The Live Preview Extension for Visual Studio Code will **not** work for this project.
+- `npm run start` to start a development server

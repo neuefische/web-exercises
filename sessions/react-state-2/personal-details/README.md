@@ -8,7 +8,7 @@ Unfortunately, hitting the submit button does not do anything. Since you are loo
 
 ### 1. Setting State on Submit
 
-Let's start by fixing the submit event first. Switch to the [`src/components/Form.js`](./src/components/Form.js) file; there already are two states called `name` and `email` and a `handleSubmit` function.
+Let's start by fixing the submit event first. Switch to the `./src/components/Form.js` file; there already are two states called `name` and `email` and a `handleSubmit` function.
 
 1. Extend the `handleSubmit` function to set the `name` and `email` state to its corresponding form field values.
 2. Reset the form after submit.
@@ -36,20 +36,18 @@ You can use the following hints as guideline:
 
 ## Notes
 
-- You only have to touch the [`src/App.js`](./src/App.js) and [`src/components/Form.js`](./src/components/Form.js) file.
+- You only have to touch the `./src/App.js` and `./src/components/Form.js` file.
 
 ## Development
 
-### CodeSandbox
+### Local Development
 
-Select the "Browser" tab to view this project.
+To work locally, please install the dependencies using `npm i` first.
 
-### Local development
+Run `npm run start` to start a development server and open the displayed URL in a browser.
 
-To run project commands locally, you need to install the dependencies using `npm i` first.
+### Scripts
 
-You can then use the following commands:
+You can use the following commands:
 
-- `npm run start` to start the development server
-
-> 💡 This project requires a bundler. You can use `npm run start` to start the development server. You can then view the project in the browser at `http://localhost:3000`. The Live Preview Extension for Visual Studio Code will **not** work for this project.
+- `npm run start` to start a development server

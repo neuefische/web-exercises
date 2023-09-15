@@ -1,7 +1,7 @@
 import useSWR from "swr";
 
 export default function JokeForm() {
-  const jokes = useSWR("/api/jokes");
+  const { mutate } = useSWR("/api/jokes");
 
   async function handleSubmit(event) {
     event.preventDefault();
@@ -11,18 +11,14 @@ export default function JokeForm() {
 
     const response = await fetch("/api/jokes", {
       method: "POST",
-      body: JSON.stringify(jokeData),
       headers: {
         "Content-Type": "application/json",
       },
+      body: JSON.stringify(jokeData),
     });
 
     if (response.ok) {
-      await response.json();
-      jokes.mutate();
-      event.target.reset();
-    } else {
-      console.error(`Error: ${response.status}`);
+      mutate();
     }
   }
 

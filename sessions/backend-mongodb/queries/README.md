@@ -8,8 +8,8 @@ In this challenge, you'll use MongoDB Compass to create a database and a collect
 
 - Open the MongoDB Compass app on your device
 - Create a connection to your local database (it should be `localhost:27017` by default).
-- Create a new database called _neuefische_.
-- Within your _neuefische_ database, create a collection called _students_.
+- Create a new database called _spiced_.
+- Within your _spiced_ database, create a collection called _students_.
 - ⬇️ [Download the provided students' data here](./resources.zip?raw=true).
 - Unpack the `resources.zip` and import the `data.json` file into your _students_ collection.
 
@@ -19,7 +19,7 @@ In this challenge, you'll use MongoDB Compass to create a database and a collect
 
 Open the _mongosh_ at the bottom of MongoDB Compass.
 
-Switch to the _neuefische_ database with the command `use neuefische`.
+Switch to the _spiced_ database with the command `use spiced`.
 
 Do the following queries:
 

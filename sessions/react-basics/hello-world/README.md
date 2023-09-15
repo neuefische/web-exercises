@@ -4,7 +4,7 @@ Welcome to the React Universe!
 
 Have a look at the [App.js](./src/App.js) file: you will find a default export function called `App` which returns a `<div>`.
 
-Check the browser tab of the codesandbox: the content of the `<div>` ("Say hello...") should be visible there as well.
+Once running in your browser, the content of the `<div>` ("Say hello...") should be visible there as well.
 
 Now, let us cherish a tradition and render "Hello world!".
 
@@ -35,16 +35,14 @@ Use the following hints as guideline:
 
 ## Development
 
-### CodeSandbox
+### Local Development
 
-Select the "Browser" tab to view this project.
+To work locally, please install the dependencies using `npm i` first.
 
-### Local development
+Run `npm run start` to start a development server and open the displayed URL in a browser.
 
-To run project commands locally, you need to install the dependencies using `npm i` first.
+### Scripts
 
-You can then use the following commands:
+You can use the following commands:
 
-- `npm run start` to start the development server
-
-> 💡 This project requires a bundler. You can use `npm run start` to start the development server. You can then view the project in the browser at `http://localhost:3000`. The Live Preview Extension for Visual Studio Code will **not** work for this project.
+- `npm run start` to start a development server

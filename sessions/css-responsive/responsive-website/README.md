@@ -6,7 +6,7 @@ Make sure to take a good look at the preview screens.
 
 ## Task
 
-- familiarize yourself with the [`index.html`](./index.html) and [`css/styles.css`](./css/styles.css) files
+- familiarize yourself with the `./index.html` and `./css/styles.css` files
 - find out how many breakpoints you need to implement
 - find out what needs to change to meet the visual guidelines established in the preview screens
 - ... enjoy!
@@ -15,15 +15,19 @@ Make sure to take a good look at the preview screens.
 
 #### Hint ✨
 
-_Several hints can be found in [`css/styles.css`](./css/styles.css) file._
+_Several hints can be found in `./css/styles.css` file._
 
 ## Development
 
-### CodeSandbox
+### Local Development
 
-Select the "Browser" tab to view this project.
+Run `npm run start` to start a development server and open [localhost:3000](http://localhost:3000) in a browser.
 
-### Local development
+> Alternatively you can use the Live Preview Extension for Visual Studio Code to view this project.  
+> Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
 
-Use the Live Preview Extension for Visual Studio Code to view this project in the browser.  
-Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
+### Scripts
+
+You can use the following commands:
+
+- `npm run start` to start a development server

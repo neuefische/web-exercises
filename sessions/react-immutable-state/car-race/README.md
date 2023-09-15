@@ -8,7 +8,7 @@ Everyone loves (electric) car racing, right? Let's become the champion!
 - Open the browser: there are five cars, each has its own track with a finish line and a number how long the last distance driven was.
 - Try to click a car: it's not yet moving.
 - Check the [`CarRace component`](components/CarRace/index.js): the `moveCar` function is not working.
-- Check the [`initialCars variable in the utils.js`](utils/utils.js): it#s an array with five car objects; each car contains two keys: the `emoji` as string and the `position` object. This object determines the exact position of the car on its track (`x` key) and the distance covered with the last button click.
+- Check the `utils/utils.js`: it#s an array with five car objects; each car contains two keys: the `emoji` as string and the `position` object. This object determines the exact position of the car on its track (`x` key) and the distance covered with the last button click.
 
 Switch to the [`CarRace component`](components/CarRace/index.js) again:
 
@@ -43,25 +43,24 @@ You can use the following hints as guideline:
 
 ## Notes
 
-- You only have to touch the [`components/CarRace/index.js`](./components/CarRace/index.js) file.
+- You only have to touch the `./components/CarRace/index.js` file.
 
 ## Development
 
-### CodeSandbox
+### Local Development
 
-Select the "Browser" tab to view this project. If this project contains tests, select the "Tests" tab to check your progress.
+To work locally, please install the dependencies using `npm i` first.
 
-> 💡 Please note that Next.js support on CodeSandbox is not great.
+Run `npm run dev` to start a development server and open the displayed URL in a browser.
 
-### Local development
+Use `npm run test` to run the tests.
 
-To run project commands locally, you need to install the dependencies using `npm i` first.
+### Scripts
 
-You can then use the following commands:
+You can use the following commands:
 
-- `npm run dev` to start the development server
-- `npm run build` to create a production build
-- `npm run start` to start the production build
-- `npm run test` to run the tests in watch mode (if available)
-
-> 💡 This project requires a bundler. You can use `npm run dev` to start the development server. You can then view the project in the browser at `http://localhost:3000`. The Live Preview Extension for Visual Studio Code will **not** work for this project.
+- `npm run dev` to start a development server
+- `npm run build` to build the project
+- `npm run start` to start a production server
+- `npm run test` to run the tests
+- `npm run lint` to run the linter

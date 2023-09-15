@@ -1,58 +1,52 @@
 import useSWR from "swr";
-import Button from "../Button";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import JokeForm from "../JokeForm";
+import Link from "next/link";
 
-export default function Joke({ onSubmit, onDelete }) {
+export default function Joke() {
   const [isEditMode, setIsEditMode] = useState(false);
   const router = useRouter();
   const { id } = router.query;
 
-  const { data, isLoading } = useSWR(id ? `/api/jokes/${id}` : null);
+  const { data, isLoading } = useSWR(`/api/jokes/${id}`);
 
-  if (!data) return;
+  function handleEdit(event) {
+    event.preventDefault();
+  }
+
+  async function handleDelete() {}
 
   if (isLoading) {
     return <h1>Loading...</h1>;
   }
+
+  if (!data) return;
 
   return (
     <>
       <small>ID: {id}</small>
       <h1>{data.joke} </h1>
       <div>
-        <Button
+        <button
           onClick={() => {
             setIsEditMode(!isEditMode);
           }}
-          disabled={isEditMode}
         >
           <span role="img" aria-label="A pencil">
             ✏️
           </span>
-        </Button>
-        <Button onClick={onDelete} disabled={isEditMode}>
+        </button>
+        <button onClick={handleDelete} disabled={isEditMode}>
           <span role="img" aria-label="A cross indicating deletion">
             ❌
           </span>
-        </Button>
+        </button>
       </div>
       {isEditMode && (
-        <JokeForm
-          onSubmit={onSubmit}
-          value={data.joke}
-          isEditMode={isEditMode}
-        />
+        <JokeForm onSubmit={handleEdit} value={data.joke} isEditMode={true} />
       )}
-      <Button
-        type="button"
-        width="fit-content"
-        margin="2rem 0 0 0"
-        onClick={() => router.push("/")}
-      >
-        Back to all
-      </Button>
+      <Link href="/">Back to all</Link>
     </>
   );
 }

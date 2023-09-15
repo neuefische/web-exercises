@@ -16,15 +16,19 @@ Utilize what you've learned about flexbox to complete the following tasks:
 
 ## Notes
 
-- You only have to touch the [`css/styles.css`](./css/styles.css) file.
+- You only have to touch the `./css/styles.css` file.
 
 ## Development
 
-### CodeSandbox
+### Local Development
 
-Select the "Browser" tab to view this project.
+Run `npm run start` to start a development server and open [localhost:3000](http://localhost:3000) in a browser.
 
-### Local development
+> Alternatively you can use the Live Preview Extension for Visual Studio Code to view this project.  
+> Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
 
-Use the Live Preview Extension for Visual Studio Code to view this project in the browser.  
-Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
+### Scripts
+
+You can use the following commands:
+
+- `npm run start` to start a development server

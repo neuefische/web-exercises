@@ -27,7 +27,7 @@ export default function VolumeDetail() {
     <Main>
       <AllVolumesNavigation />
       <Introduction title={title} text={description} />
-      <ColoredBox color={color}>
+      <ColoredBox $color={color}>
         <Books books={books} cover={cover} title={title} />
       </ColoredBox>
       <VolumeNavigation

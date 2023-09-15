@@ -1,6 +1,6 @@
 # React Arrays: Users
 
-The [`src/App.js`](./src/App.js) file should dynamically display a card for each of the nine `USERS` imported from the `db.js` file.
+The `./src/App.js` file should dynamically display a card for each of the nine `USERS` imported from the `db.js` file.
 
 For now, however, there is only one card. Let's fix this with our newly acquired knowledge about arrays in React.
 
@@ -16,20 +16,18 @@ After that, you can implement two more features to make the user overview even m
 
 ## Notes
 
-- You only have to touch the files [`src/App.js`](./src/App.js), [`src/Card.js`](./src/Card.js), and [`src/Tag.js`](./src/Tag.js).
+- You only have to touch the files `./src/App.js`, `./src/Card.js`, and `./src/Tag.js`.
 
 ## Development
 
-### CodeSandbox
+### Local Development
 
-Select the "Browser" tab to view this project.
+To work locally, please install the dependencies using `npm i` first.
 
-### Local development
+Run `npm run start` to start a development server and open the displayed URL in a browser.
 
-To run project commands locally, you need to install the dependencies using `npm i` first.
+### Scripts
 
-You can then use the following commands:
+You can use the following commands:
 
-- `npm run start` to start the development server
-
-> 💡 This project requires a bundler. You can use `npm run start` to start the development server. You can then view the project in the browser at `http://localhost:3000`. The Live Preview Extension for Visual Studio Code will **not** work for this project.
+- `npm run start` to start a development server

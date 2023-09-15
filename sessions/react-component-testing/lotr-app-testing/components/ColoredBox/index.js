@@ -10,5 +10,5 @@ export default styled.div`
       rgba(255, 255, 255, 0) 49.9%,
       rgba(255, 255, 255, 0.2) 100%
     ),
-    ${({ color }) => color};
+    ${({ $color }) => $color};
 `;

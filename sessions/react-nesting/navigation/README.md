@@ -1,6 +1,6 @@
 # React Nesting: Navigation
 
-For now, there is a navigation in the [`src/App.js`](./src/App.js) file which only uses built-in React components.
+For now, there is a navigation in the `./src/App.js` file which only uses built-in React components.
 
 Let's refactor to use custom components instead; you will encounter the `children` prop and recap props in general.
 
@@ -72,11 +72,11 @@ You should now have an `App` component returning only your custom components (be
 To check, you App.js file should look something like this now:
 
 ```js
-import { Avatar } from "./components/Avatar";
-import { Header } from "./components/Header";
-import { Link } from "./components/Link";
-import { Logo } from "./components/Logo";
-import { Navigation } from "./components/Navigation";
+import Header from "./components/Header";
+import Avatar from "./components/Avatar";
+import Logo from "./components/Logo";
+import Navigation from "./components/Navigation";
+import Link from "./components/Link";
 import "./styles.css";
 
 export default function App() {
@@ -99,20 +99,18 @@ export default function App() {
 
 ## Notes
 
-- You only have to touch the [`src/App.js`](./src/App.js) file and the files you are going to create during this exercise.
+- You only have to touch the `./src/App.js` file and the files you are going to create during this exercise.
 
 ## Development
 
-### CodeSandbox
+### Local Development
 
-Select the "Browser" tab to view this project.
+To work locally, please install the dependencies using `npm i` first.
 
-### Local development
+Run `npm run start` to start a development server and open the displayed URL in a browser.
 
-To run project commands locally, you need to install the dependencies using `npm i` first.
+### Scripts
 
-You can then use the following commands:
+You can use the following commands:
 
-- `npm run start` to start the development server
-
-> 💡 This project requires a bundler. You can use `npm run start` to start the development server. You can then view the project in the browser at `http://localhost:3000`. The Live Preview Extension for Visual Studio Code will **not** work for this project.
+- `npm run start` to start a development server
