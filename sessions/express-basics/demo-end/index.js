@@ -25,7 +25,7 @@ app.get("/about", function (req, res) {
   console.log("serving about-us.html...");
 
   // Use `path` to help us get the current directory
-  const currentDirectory = path.dirname(new URL(import.meta.url).pathname);
+  const currentDirectory = __dirname;
 
   // Send the file to the client
   res.sendFile(path.join(currentDirectory, "/about-us.html"));
@@ -53,7 +53,7 @@ app.get("/staff/:person", (req, res) => {
 
 app.get("/contact", function (req, res) {
   // Use `path` to help us get the current directory
-  const currentDirectory = path.dirname(new URL(import.meta.url).pathname);
+  const currentDirectory = __dirname;
 
   // Send the file to the client
   res.sendFile(path.join(currentDirectory, "/contact-page.html"));
