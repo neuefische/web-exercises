@@ -72,9 +72,8 @@ Use a width of `140px` and a height of `230px` for the cover image.
 
 ## Resources
 
-⬇️ You can [**download the data and assets for the Lord of the Rings App here**](./resources.zip?raw=true).
+You can find the movie data, introduction and images in [this folder](./resources/).
 
-- Unzip the file to get the `resources` folder.
 - The files are already in the correct structure for the app.
   - `lib/data.js` contains the data for the app.
   - `public/images` contains the images for the app.
