@@ -122,9 +122,8 @@ Open [`localhost:3000/`](http://localhost:3000/) in your browser, switch to a de
 
 ### Resources
 
-⬇️ You can [**download the data and assets for the Fish Shop here**](./resources.zip?raw=true).
+You can find the fish shop data in [this folder](./resources/).
 
-- Unzip the file to get the `resources` folder.
 - The files are already in the correct structure for the app.
   - `products.json` contains the data for the all fish,
   - `reviews.json` contains the data for all reviews.
