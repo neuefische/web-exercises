@@ -126,7 +126,7 @@ You can find the fish shop data in [this folder](./resources/).
 
 - The files are already in the correct structure for the app.
   - `products.json` contains the data for the all fish,
-  - `reviews.json` contain the data for all reviews.
+  - `reviews.json` contains the data for all reviews.
 - Import them into the correct collection of your MongoDB when you are asked to.
 
 ## Development

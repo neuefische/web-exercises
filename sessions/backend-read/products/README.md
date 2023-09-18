@@ -104,9 +104,9 @@ Finally, update the frontend to display the reviews:
 You can find the fish shop data in [this folder](./resources/).
 
 - The files are already in the correct structure for the app.
-  - `products.json` contains the data for the all fish,
-  - `reviews.json` contain the data for all reviews.
-- Import them into the correct collection of your MongoDB when you are asked to.
+  - `products.json` contains the data for the first task, and
+  - `bonus-products.json` and `bonus-reviews.json` contain the data for the bonus task.
+- Import them into the correct collection of your remote MongoDB when you are asked to.
 
 ## Development
 
