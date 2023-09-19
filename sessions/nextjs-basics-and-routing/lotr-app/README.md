@@ -72,7 +72,15 @@ Use a width of `140px` and a height of `230px` for the cover image.
 
 ## Resources
 
-You can find the movie data, introduction and images in [this folder](./resources/).
+You can find the movie data, introduction and images in [this folder](./resources/). You can download them with our `ghcd` tool by using these commands inside your project folder:
+
+```bash
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/nextjs-basics-and-routing/lotr-app/resources resources
+```
+
+```bash
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/nextjs-basics-and-routing/lotr-app/design-resources design-resources
+```
 
 - The files are already in the correct structure for the app.
   - `lib/data.js` contains the data for the app.
