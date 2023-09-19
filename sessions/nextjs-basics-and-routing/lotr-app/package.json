@@ -1,9 +1,0 @@
-{
-  "name": "nextjs-basics-and-routing_lotr-app",
-  "version": "0.0.0-unreleased",
-  "description": "Next.js Basics: Lord of the Rings App",
-  "main": "n.a.",
-  "nf": {
-    "template": "empty"
-  }
-}
