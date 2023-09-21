@@ -22,7 +22,7 @@ const RatingsList = styled.ul`
   list-style: none;
 `;
 
-export default function Pet() {
+export default function Pet({ user }) {
   const [isRequesting, setRequesting] = useState(false);
   const router = useRouter();
   const { id } = router.query;
@@ -63,6 +63,7 @@ export default function Pet() {
       const rating = await createRating({
         id: pet._id,
         ...data,
+        user: user._id,
       });
       addLocalRating({ pet_id: pet._id, rating_id: rating._id });
       mutate();

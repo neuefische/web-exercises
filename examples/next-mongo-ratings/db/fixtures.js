@@ -17,6 +17,16 @@ const emojis = {
   snake: "🐍",
 };
 
+function getUser() {
+  return {
+    name: `${faker.person.firstName()} ${faker.person.lastName()}`,
+    image: `https://dummyimage.com/100x100/${faker.color.rgb({
+      format: "hex",
+      prefix: "",
+    })}/fff`,
+  };
+}
+
 function getRating() {
   return {
     value: faker.number.int({ min: 3, max: 5 }),
@@ -31,6 +41,8 @@ function getSpecies(type) {
   }
   return species;
 }
+
+export const users = Array.from({ length: 5 }, getUser);
 
 export const pets = Array.from({ length: 20 }, (_) => {
   const type = faker.animal.type();

@@ -8,8 +8,9 @@ const PictureLink = styled(Link)`
   font-size: 10rem;
   align-self: center;
   text-decoration: none;
+  transition: scale 0.2s ease-in-out;
   &:hover {
-    opacity: 0.8;
+    scale: 1.1;
   }
 `;
 

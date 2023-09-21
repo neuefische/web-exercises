@@ -1,11 +1,13 @@
+import Image from "next/image";
+import Flex from "../Layout/Flex";
 import Stars from "../Stars";
 import styled from "styled-components";
 
 const StyledRating = styled.article`
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: start;
   gap: 1rem;
-  height: 3rem;
   padding: 1rem;
   border-radius: 0.5rem;
   font-size: 0.9rem;
@@ -13,10 +15,25 @@ const StyledRating = styled.article`
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 `;
 
-export default function Rating({ value, text }) {
+const Avatar = styled(Image)`
+  border-radius: 50%;
+`;
+
+const Text = styled.span`
+  text-transform: capitalize;
+  font-style: italic;
+`;
+
+export default function Rating({ value, text, user }) {
   return (
     <StyledRating>
-      <Stars value={value} /> {text}
+      <Flex gap="0.5rem" alignItems="center">
+        <Avatar src={user.image} alt={user.name} width={30} height={30} />
+        <strong>{user.name}</strong>
+      </Flex>
+      <Flex gap="0.5rem" alignItems="center">
+        <Stars value={value} /> <Text>{text}</Text>
+      </Flex>
     </StyledRating>
   );
 }
