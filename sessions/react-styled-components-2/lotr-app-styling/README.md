@@ -77,9 +77,12 @@ Implement the light and dark mode theme. Use the predefined color variables.
 
 ## Resources
 
-⬇️ You can [download the design files and assets for the LotR-Fanpage App here](../../nextjs-basics-and-routing/lotr-app/design-resources.zip?raw=true).
+⬇️ You can [download the design files and assets for the LotR-Fanpage App by using this command **inside your project folder**:
 
-- Unzip the file to get the resources folder.
+```bash
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/nextjs-basics-and-routing/lotr-app/design-resources design-resources
+```
+
 - You can use the `[abc] Page [xyz].png` files as a reference for the design.
 - If you like you can reference the original Figma design file: `lotr_app_design.fig`.
 - The `variables.css` file contains the colors, fonts, and box shadows used in the design as CSS variables. Copy them into the `styles.js` of your project.
