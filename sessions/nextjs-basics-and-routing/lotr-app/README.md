@@ -72,7 +72,6 @@ Use a width of `140px` and a height of `230px` for the cover image.
 
 ## Resources
 
-
 You can find the movie data, introduction and images in [this folder](./resources/). You can download them with our `ghcd` tool by using these commands **inside your project folder**:
 
 ```bash
