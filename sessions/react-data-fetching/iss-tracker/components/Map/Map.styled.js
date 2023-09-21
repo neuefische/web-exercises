@@ -3,7 +3,6 @@ import Image from "next/image";
 
 export const MapContainer = styled.div`
   position: relative;
-  padding-bottom: -50px;
   overflow: hidden;
   width: 100%;
   height: auto;
