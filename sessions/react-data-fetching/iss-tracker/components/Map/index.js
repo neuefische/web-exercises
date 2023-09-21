@@ -4,7 +4,7 @@ export default function Map({ longitude, latitude }) {
   const [x, y] = positionToMapCoordinates(longitude, latitude);
 
   return (
-    <MapContainer className="Map">
+    <MapContainer>
       <MapImage
         className="Map__image"
         src="https://upload.wikimedia.org/wikipedia/commons/8/83/Equirectangular_projection_SW.jpg"
@@ -17,7 +17,7 @@ export default function Map({ longitude, latitude }) {
           top: y,
           left: x,
         }}
-      ></MapISS>
+      />
     </MapContainer>
   );
 }
