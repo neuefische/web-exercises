@@ -77,7 +77,7 @@ Implement the light and dark mode theme. Use the predefined color variables.
 
 ## Resources
 
-⬇️ You can [download the design files and assets for the LotR-Fanpage App by using this command **inside your project folder**:
+⬇️ You can download the design files and assets for the LotR-Fanpage App by using this command **inside your project folder**:
 
 ```bash
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/nextjs-basics-and-routing/lotr-app/design-resources design-resources
