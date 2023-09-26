@@ -7,6 +7,22 @@ Use grid to change the layout:
 Hint: you need only three lines of code in your grid container
 */
 
+:root {
+  --primary-dark: #2e016d;
+  --primary: #3f0097;
+  --primary-light: #8236ff;
+
+  --secondary-dark: #38ccda;
+  --secondary: #7fd9e2;
+
+  --accent: #ffd15d;
+  --black-light: #303030;
+  --black: #000000;
+  --white: #ffffff;
+  --grey-dark: #b6b9c2;
+  --grey-light: #f5f6f6;
+}
+
 *,
 *::before,
 *::after {
@@ -18,7 +34,7 @@ Hint: you need only three lines of code in your grid container
 body {
   font-family: system-ui;
 
-  background-color: #e3e5e8;
+  background-color: var(--grey-dark);
 }
 
 .cards {
@@ -30,14 +46,14 @@ body {
 }
 
 .cards__option {
-  background-color: white;
+  background-color: var(--white);
   padding: 2rem;
   border-radius: 6px;
 }
 
 .cards__option--highlight {
-  background-color: #fa4b12;
-  color: white;
+  background-color: var(--primary);
+  color: var(--white);
 }
 
 .cards__name {
