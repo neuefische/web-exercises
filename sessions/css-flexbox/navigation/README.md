@@ -7,8 +7,8 @@
 - [ ] Next, navigate to your `styles.css` file.
 - [ ] Make sure to include the `navigation__menu` class selector.
 - [ ] As part of the `navigation__menu` class selector body, which properties do you need to include to meet the following requirements?
-- [ ] The links should be horizontally spaced as far apart as possible.
-- [ ] The first link should be placed at the beginning and the last link at the end.
+  - [ ] The links should be horizontally spaced as far apart as possible.
+  - [ ] The first link should be placed at the beginning and the last link at the end.
 
 ## Notes
 

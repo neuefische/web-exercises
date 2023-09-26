@@ -1,3 +1,18 @@
+:root {
+    --primary-dark: #2E016D;
+    --primary: #3F0097;
+    --primary-light: #8236FF;
+    --secondary-dark: #38CCDA;
+    --secondary: #7fD9E2;
+    --accent: #FFD15D;
+
+    --black-light: #303030;
+    --black: #000000;
+    --white: #FFFFFF;
+    --grey-dark: #B6B9C2;
+    --grey-light: #F5F6F6;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -11,7 +26,8 @@ body {
 
 .main__title {
   padding: 10px;
-  background: #f3f5f9;
+  background: var(--primary);
+  color: var(--white);
 }
 
 .profile__image {
@@ -27,7 +43,7 @@ body {
 
 .tech-stack__list-item {
   padding: 10px;
-  background-color: #252629;
-  color: #ffffff;
+  background-color: var(--primary-dark);
+  color: var(--white);
   border-radius: 10px;
 }
