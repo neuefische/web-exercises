@@ -7,6 +7,22 @@ Use grid to change the layout:
 Hint: you need only two lines of code in your grid container
 */
 
+:root {
+  --primary-dark: #2e016d;
+  --primary: #3f0097;
+  --primary-light: #8236ff;
+
+  --secondary-dark: #38ccda;
+  --secondary: #7fd9e2;
+
+  --accent: #ffd15d;
+  --black-light: #303030;
+  --black: #000000;
+  --white: #ffffff;
+  --grey-dark: #b6b9c2;
+  --grey-light: #f5f6f6;
+}
+
 *,
 *::before,
 *::after {
@@ -18,7 +34,7 @@ Hint: you need only two lines of code in your grid container
 body {
   margin: 0;
   font-family: system-ui;
-  background-color: rgb(24, 109, 174);
+  background-color: var(--primary-dark);
 }
 
 .fish {
@@ -31,7 +47,7 @@ body {
 .fish__text {
   padding: 1rem;
   margin: 0 0 2rem 0;
-  background-color: rgb(186, 234, 246);
+  background-color: var(--secondary);
 }
 
 .fish__headline {
@@ -43,5 +59,5 @@ body {
   font-size: 3rem;
   padding: 1rem;
   margin: 0 0 2rem 0;
-  background-color: rgb(186, 234, 246);
+  background-color: var(--secondary);
 }

@@ -9,6 +9,21 @@ Use grid to fulfill the following tasks:
 [ ] - .element__20 should start at row six and span two rows
 
 */
+:root {
+  --primary-dark: #2e016d;
+  --primary: #3f0097;
+  --primary-light: #8236ff;
+
+  --secondary-dark: #38ccda;
+  --secondary: #7fd9e2;
+
+  --accent: #ffd15d;
+  --black-light: #303030;
+  --black: #000000;
+  --white: #ffffff;
+  --grey-dark: #b6b9c2;
+  --grey-light: #f5f6f6;
+}
 
 *,
 *::before,
@@ -20,7 +35,7 @@ Use grid to fulfill the following tasks:
 
 body {
   font-family: system-ui;
-  background-color: #f7fdff;
+  background-color: var(--grey-light);
 }
 
 .container {
@@ -36,36 +51,41 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(186, 234, 246);
+  background-color: var(--primary-light);
   border-radius: 3px;
   font-size: 2rem;
 }
+
+.element-1,
+.element-2,
+.element-5,
+.element-8,
+.element-20,
+.element-spiced {
+  background-color: var(--primary-dark);
+  color: var(--white);
+}
+
 .element-1 {
-  background-color: #3a67a4;
   /* Add styles here */
 }
 
 .element-2 {
-  background-color: #3a67a4;
   /* Add styles here */
 }
 
 .element-5 {
-  background-color: #3a67a4;
   /* Add styles here */
 }
 
 .element-8 {
-  background-color: #3a67a4;
   /* Add styles here */
 }
 
-.element-fish {
-  background-color: #3a67a4;
+.element-spiced {
   /* Add styles here */
 }
 
 .element-20 {
-  background-color: #3a67a4;
   /* Add styles here */
 }

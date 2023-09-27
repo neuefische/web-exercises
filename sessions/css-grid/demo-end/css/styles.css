@@ -1,3 +1,19 @@
+:root {
+  --primary-dark: #2e016d;
+  --primary: #3f0097;
+  --primary-light: #8236ff;
+
+  --secondary-dark: #38ccda;
+  --secondary: #7fd9e2;
+
+  --accent: #ffd15d;
+  --black-light: #303030;
+  --black: #000000;
+  --white: #ffffff;
+  --grey-dark: #b6b9c2;
+  --grey-light: #f5f6f6;
+}
+
 *,
 *::before,
 *::after {
@@ -7,12 +23,12 @@
 body {
   margin: 0;
   font-family: system-ui;
-  background-color: white;
+  background-color: var(--white);
   line-height: 1.4;
 }
 
 h1 {
-  color: #252629;
+  color: var(--black-light);
   padding: 0 2rem;
 }
 
@@ -20,32 +36,32 @@ h1 {
   max-width: 1000px;
   padding: 2rem;
   margin: auto;
-  color: white;
+  color: var(--white);
 }
 
 .bootcamp {
   padding: 1.4rem;
-  background-color: #252629;
+  background-color: var(--black-light);
   border-radius: 8px;
 }
 
 .bootcamp--1 {
-  background-color: #e5430f;
+  background-color: var(--primary);
 }
 
 .bootcamp--1 .bootcamp__headline {
-  color: white;
+  color: var(--white);
 }
 
 .bootcamp--3,
 .bootcamp--5 {
-  background-color: #e4e8f0;
-  color: #252629;
+  background-color: var(--grey-dark);
+  color: var(--black-light);
 }
 
 .bootcamp__headline {
   margin: 0 0 1rem 0;
-  color: #fa4b12;
+  color: var(--primary-light);
 }
 
 /* Start here: */

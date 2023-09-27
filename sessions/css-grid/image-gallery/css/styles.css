@@ -9,6 +9,23 @@ Use grid to change the layout:
 Hint: you need only two lines of code in your grid container
 */
 
+:root {
+  --primary-dark: #2e016d;
+  --primary: #3f0097;
+  --primary-light: #8236ff;
+
+  --secondary-dark: #38ccda;
+  --secondary: #7fd9e2;
+
+  --accent: #ffd15d;
+  --black-light: #303030;
+  --black: #000000;
+  --white: #ffffff;
+  --grey-dark: #b6b9c2;
+  --grey-light: #f5f6f6;
+}
+
+
 *,
 *::before,
 *::after {
@@ -23,7 +40,7 @@ body {
 
 .teaser-grid {
   min-width: 40rem;
-  min-height: 50vh;
+  min-height: 100vh;
 
   /* Add styles to the grid container */
 }
@@ -55,6 +72,6 @@ body {
 }
 
 .teaser-grid__link {
-  color: white;
+  color: var(--white);
   text-decoration: none;
 }
