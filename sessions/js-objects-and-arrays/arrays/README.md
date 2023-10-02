@@ -6,7 +6,7 @@ In this exercise, you will encounter the following tasks:
 - the variable itself is an array and you need to adjust it,
 - call a method on a given array.
 
-If you want to check whether you solved the tasks correctly, open the "Tests" tab of Codesandbox.
+If you want to check whether you solved the tasks correctly, run the test following the steps described on "Local Development".
 
 The exact task can be found in the respective exercises.
 

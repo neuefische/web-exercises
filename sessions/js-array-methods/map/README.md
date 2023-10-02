@@ -16,7 +16,7 @@ Switch to the `./index.js` file and map / filtersome recipes!
 
 ## Notes
 
-- If you want to check whether you solved the tasks correctly, open the "Tests" tab of Codesandbox.
+- If you want to check whether you solved the tasks correctly, run the test following the steps described on "Local Development".
 
 ## Development
 

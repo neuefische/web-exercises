@@ -5,7 +5,7 @@ In this exercise, you will encounter the following tasks:
 - assign a variable to a value of an array with several objects,
 - the value can correspond to a simple data type as well as to an array or object.
 
-If you want to check whether you solved the tasks correctly, open the "Tests" tab of Codesandbox.
+If you want to check whether you solved the tasks correctly, run the test following the steps described on "Local Development".
 
 The exact task can be found in the respective exercises.
 
