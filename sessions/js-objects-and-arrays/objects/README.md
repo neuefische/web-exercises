@@ -5,7 +5,7 @@ In this exercise, you will encounter the following tasks:
 - assign or add a variable to a value of an object,
 - the variable itself is an object and you need to adjust it.
 
-If you want to check whether you solved the tasks correctly, open the "Tests" tab of Codesandbox.
+If you want to check whether you solved the tasks correctly, run the test following the steps described on "Local Development".
 
 The exact task can be found in the respective exercises.
 
