@@ -1,10 +1,4 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+@import './global.css';
 
 .remaining-characters {
   font-size: 0.9rem;
@@ -13,7 +7,7 @@
 
 body {
   font-family: system-ui;
-  background-color: lightgray;
+  background-color: var(--grey-light);
 }
 
 main {
@@ -22,13 +16,13 @@ main {
   margin: auto;
   padding: 20px;
   width: 90%;
-  background-color: white;
+  background-color: var(--white);
 }
 
 h1 {
   padding: 5px;
-  background-color: black;
-  color: white;
+  background-color: var(--primary);
+  color: var(--white);
 }
 
 form {
@@ -37,19 +31,21 @@ form {
 }
 
 fieldset {
+  border-color: var(--primary);
   display: grid;
   gap: 10px;
   padding: 10px;
 }
 
 legend {
-  background-color: black;
-  color: white;
+  background-color: var(--primary);
+  color: var(--white);
 }
 
 button {
   margin: auto;
   width: fit-content;
+  padding: 5px 10px;
 }
 
 input[type="submit"] {
