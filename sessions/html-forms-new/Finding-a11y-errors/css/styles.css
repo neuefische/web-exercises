@@ -1,8 +1,4 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+@import './global.css';
 
 body {
   margin: 20px auto;
@@ -19,11 +15,19 @@ button {
 }
 
 legend {
-  background-color: black;
-  color: white;
+  background-color: var(--primary);
+  color: var(--white);
   padding: 0.2rem;
 }
 
 input[type="color"] {
   margin: auto;
+}
+
+h1 {
+  color: var(--primary);
+}
+
+fieldset {
+  border-color: var(--primary);
 }

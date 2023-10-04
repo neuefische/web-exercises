@@ -1,6 +1,6 @@
 # HTML Form Validation
 
-This Codesandbox offers a form where the user can submit a complaint.
+This Challenge offers a form where the user can submit a complaint.
 
 In order to process the complaint, the company needs certain information.
 
@@ -12,7 +12,7 @@ Use the following guidelines:
 
 - First and last name are required and are allowed to have at least 4 and up to 30 characters.
 - The user needs to be at least 14 years old.
-- We need a correct email adress (i.e. including an `@` symbol) for contacting the user.
+- We need a correct email address (i.e. including an `@` symbol) for contacting the user.
 - It's necessary that the user has read the terms of service and agrees to them.
 
 Switch to the [`index.html`](./index.html) file and validate the form in the mentioned way!
@@ -20,10 +20,6 @@ Switch to the [`index.html`](./index.html) file and validate the form in the men
 > 💡 The default behavior of the submit event is turned off and the page does not reload when clicking the submit button. We will discuss in how to achieve this behavior in the `JS Forms` session.
 
 ## Development
-
-### CodeSandbox
-
-Select the "Browser" tab to view this project.
 
 ### Local development
 

@@ -18,10 +18,6 @@ Go to [`index.html`](./index.html) file. Inside the section element, build the f
 
 ## Development
 
-### CodeSandbox
-
-Select the "Browser" tab to view this project.
-
 ### Local development
 
 Use the Live Preview Extension for Visual Studio Code to view this project in the browser.  

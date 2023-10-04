@@ -1,14 +1,8 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+@import './global.css';
 
 body {
   font-family: system-ui;
-  background-color: lightgray;
+  background-color: var(--grey-light);
 }
 
 main {
@@ -19,12 +13,12 @@ main {
   padding: 20px;
   width: 90%;
   min-height: 100vh;
-  background-color: white;
+  background-color: var(--white);
 }
 
 h1 {
   padding: 5px;
-  color: orangered;
+  color: var(--primary);
 }
 
 form {
@@ -41,12 +35,13 @@ fieldset {
 }
 
 legend {
-  color: orangered;
+  color: var(--primary);
 }
 
 button {
   margin: auto;
   width: fit-content;
+  padding: 5px 10px;
 }
 
 input[type="submit"] {
