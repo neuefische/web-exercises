@@ -20,10 +20,6 @@ Log to the console _(replace the values between the quotes)_:
 
 ## Development
 
-### CodeSandbox
-
-Select the "Browser" tab to view this project.
-
 ### Local development
 
 To run project commands locally, you need to install the dependencies using `npm i` first.

@@ -8,7 +8,7 @@ In addition, the error message below the checkbox should only be displayed if th
 
 Can you make the error message hidden initially (before the form is submitted)?
 
-## Bonus: Success message!
+## Bonus: Success message
 
 Add this HTML code to the [`index.html`](./index.html) below the form. Write JavaScript code to only show the div if the submission was valid (`tos` checkbox was checked). Like the error message, it should also be hidden initially.
 
@@ -17,10 +17,6 @@ Add this HTML code to the [`index.html`](./index.html) below the form. Write Jav
 ```
 
 ## Development
-
-### CodeSandbox
-
-Select the "Browser" tab to view this project.
 
 ### Local development
 
