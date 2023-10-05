@@ -1,16 +1,13 @@
 # Project Recipes - Maps
 
-This project is an app that lists pets, and allow people to rate them. How people could rate a pet below 5/5 is beyond us though.
+This project is an app that display location markers over on a [Leaflet.js](https://leafletjs.com/) map, and offers a location detail view too.
 
 ## API Endpoints
 
-| Method | URL             | What it does        |
-|--------|-----------------|---------------------|
-| GET    | /api/places     | Gets all places     |
-| GET    | /api/places/:id | Gets place by id    |
-| POST   | /api/places     | Creates place       |
-| PUT    | /api/places/:id | Updates place by id |
-| DELETE | /api/places/:id | Deletes place by id |
+| Method | URL             | What it does     |
+|--------|-----------------|------------------|
+| GET    | /api/places     | Gets all places  |
+| GET    | /api/places/:id | Gets place by id |
 
 
 ## Pages
