@@ -1,4 +1,3 @@
-// import { places } from '../../../../lib/db.js';
 import dbConnect from "../../../../db/connect";
 import Place from "../../../../db/models/Places";
 import Comment from "../../../../db/models/Comment";

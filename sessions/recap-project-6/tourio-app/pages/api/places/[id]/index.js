@@ -1,8 +1,7 @@
-import { db_places } from '../../../../lib/db_places';
-import { db_comments } from '../../../../lib/db_comments';
+import { db_places } from "../../../../lib/db_places";
+import { db_comments } from "../../../../lib/db_comments";
 
 export default function handler(request, response) {
-  console.log('db_places', db_places);
   const { id } = request.query;
 
   if (!id) {
@@ -17,7 +16,7 @@ export default function handler(request, response) {
   );
 
   if (!place) {
-    return response.status(404).json({ status: 'Not found' });
+    return response.status(404).json({ status: "Not found" });
   }
 
   response.status(200).json({ place: place, comments: comments });

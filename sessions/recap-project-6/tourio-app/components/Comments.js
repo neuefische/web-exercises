@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { FormContainer, Input, Label } from './Form';
-import { StyledButton } from './StyledButton.js';
+import styled from "styled-components";
+import { FormContainer, Input, Label } from "./Form";
+import { StyledButton } from "./StyledButton.js";
 
 export default function Comments({ locationName, comments }) {
   const Article = styled.article`
