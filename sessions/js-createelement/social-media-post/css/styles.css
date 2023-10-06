@@ -1,10 +1,4 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+@import './global.css';
 
 body {
   font-family: system-ui;
@@ -14,17 +8,17 @@ body {
   align-items: center;
   max-width: 40rem;
   gap: 2rem;
-  background-color: rgb(52, 54, 61);
+  background-color: var(--primary-dark);
   padding: 2rem;
   margin: 0 auto;
 }
 
 h1 {
-  color: white;
+  color: var(--white);
 }
 
 .post {
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 6px;
   padding: 1rem;
 }
@@ -41,12 +35,12 @@ h1 {
 
 .post__username {
   font-size: 0.9rem;
-  color: #9f9f9f;
+  color: var(--grey-dark);
 }
 
 .post__button {
   all: unset;
-  border: 1px solid #9f9f9f;
+  border: 1px solid var(--grey-dark);
   padding: 0.25rem 0.5rem;
   border-radius: 6px;
   font-size: 0.9rem;
@@ -54,6 +48,6 @@ h1 {
 
 .post__button--liked {
   background-color: red;
-  color: white;
-  border-color: white;
+  color: var(--white);
+  border-color: var(--white);
 }

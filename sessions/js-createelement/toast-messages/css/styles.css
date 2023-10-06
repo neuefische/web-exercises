@@ -1,13 +1,8 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+@import './global.css';
 
 body {
   font-family: system-ui;
+  background-color: var(--secondary);
 }
 
 .buttons {
@@ -16,6 +11,15 @@ body {
   gap: 1rem;
   padding: 1rem;
   max-width: 15rem;
+}
+
+.buttons button {
+  background-color: var(--primary);
+  color: var(--white);
+  border-radius: 10px;
+  font-size: 1rem;
+  padding: 5px;
+  border: 1px solid var(--primary-dark);
 }
 
 .toast-container {
@@ -32,7 +36,7 @@ body {
 }
 
 .toast-container__message {
-  background-color: #fff;
+  background-color: var(--white);
   padding: 1rem;
   border-radius: 6px;
   box-shadow: 0 0 1rem rgba(133, 133, 133, 0.3);
@@ -43,6 +47,7 @@ body {
   0% {
     transform: translateX(200%);
   }
+
   100% {
     transform: translateX(0);
   }
