@@ -35,7 +35,7 @@ export default function Home() {
                 name={place.name}
                 image={place.image}
                 location={place.location}
-                id={place.id}
+                id={place._id.$oid}
               />
             </ListItem>
           );
