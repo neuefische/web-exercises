@@ -19,17 +19,18 @@ async function getJoke() {
       "https://example-apis.vercel.app/api/bad-jokes/random"
     );
 
-    // Failure (Bad response)
-    if (!response.ok) {
-      console.error("Bad Response");
-    } else {
+    if (response.ok) {
       // Success
       const jokeData = await response.json();
 
       // Assemble DOM for the joke
-      const joke = Joke();
-      joke.textContent = jokeData.joke;
+      const newJoke = jokeData.joke;
+
+      const joke = Joke(newJoke);
       jokeSection.append(joke);
+    } else {
+      // Failure (Bad response)
+      console.error("Bad Response");
     }
     // Failure (Error during fetch)
   } catch (error) {
