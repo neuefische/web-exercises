@@ -1,3 +1,18 @@
+:root {
+    --primary-dark: #2E016D;
+    --primary: #3F0097;
+    --primary-light: #8236FF;
+    --secondary-dark: #38CCDA;
+    --secondary: #7fD9E2;
+    --accent: #FFD15D;
+
+    --black-light: #303030;
+    --black: #000000;
+    --white: #FFFFFF;
+    --grey-dark: #B6B9C2;
+    --grey-light: #F5F6F6;
+}
+
 *,
 *::before,
 *::after {
@@ -16,7 +31,7 @@ ul {
 
 nav {
   padding: 14px 20px;
-  background-color: #dbdbe4;
+  background-color: var(--grey-dark);
 }
 
 a {
@@ -31,9 +46,9 @@ a {
 }
 
 .menu > li {
-  color: #334;
+  color: var(--black-light);
 }
 
 .menu > li:hover {
-  text-decoration: underline #ee4c0b 3px;
+  text-decoration: underline var(--primary-light) 3px;
 }
