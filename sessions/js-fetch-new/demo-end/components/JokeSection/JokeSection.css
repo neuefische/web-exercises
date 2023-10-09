@@ -1,0 +1,15 @@
+.joke-section {
+  position: relative;
+  width: 80%;
+  margin: 10rem auto;
+  border: 1px solid orange;
+  border-radius: 10px;
+}
+
+.joke-section::before {
+  position: absolute;
+  content: "😂";
+  font-size: 2rem;
+  top: -1.5rem;
+  left: -1rem;
+}

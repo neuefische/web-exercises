@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Color Clue 🎨</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./js/index.js" type="module"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Color Clue 🎨</h1>
+      <p>Can you guess the correct color to the color name?</p>
+    </header>
+    <main>
+      <h2 data-js="nameDisplay">
+        Generate a random color to guess by implementing the
+        <code>fetchNewColor</code> function in js/fetch.js
+      </h2>
+      <form class="form">
+        <label for="color" class="sr-only">Choose a color:</label>
+        <input id="color" data-js="colorInput" type="color" value="#ffffff" />
+        <button type="button" data-js="submitButton">Guess</button>
+      </form>
+      <section data-js="restartScreen" class="display--hidden">
+        <p class="score-text" data-js="distanceDisplay">Score:</p>
+        <button type="button" data-js="restartButton">Restart</button>
+      </section>
+    </main>
+  </body>
+</html>
