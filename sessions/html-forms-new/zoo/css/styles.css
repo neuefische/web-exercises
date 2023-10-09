@@ -1,8 +1,4 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+@import './global.css';
 
 body {
   font-family: system-ui;
@@ -18,7 +14,7 @@ input:not(input[type="checkbox"]) {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--grey-light);
 }
 
 .radio-options {
@@ -27,9 +23,9 @@ input:not(input[type="checkbox"]) {
   align-items: flex-start;
 }
 
-.radio-options > legend {
-  background-color: #c8f;
-  color: white;
+.radio-options>legend {
+  background-color: var(--primary-light);
+  color: var(--white);
   padding: 0.2rem;
 }
 
@@ -56,7 +52,7 @@ button {
 }
 
 legend {
-  background-color: black;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
   padding: 0.2rem;
 }

@@ -1,14 +1,14 @@
 # Forms and A11y
 
-This Codesandbox offers a form where the user can submit some information.
+This challenge offers a form where the user can submit some information.
 
 Unfortunately, the form is not accessible because there are some issues in the HTML.
 
-## Task:
+## Task
 
 Switch to the [`index.html`](./index.html) file and make the form accessible!
 
-## Questions to guide you:
+## Questions to guide you
 
 - How do you connect a form with its headline?
 - How do you link a description to a specific <fieldset> element?
@@ -20,10 +20,6 @@ Switch to the [`index.html`](./index.html) file and make the form accessible!
 - Do we need the given placeholder?
 
 ## Development
-
-### CodeSandbox
-
-Select the "Browser" tab to view this project.
 
 ### Local development
 

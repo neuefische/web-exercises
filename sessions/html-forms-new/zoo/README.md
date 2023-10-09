@@ -1,6 +1,6 @@
 # Additional Input Types And Form Elements
 
-In this Codesandbox you will find a contact form for zoo visitors.
+In this Challenge you will find a contact form for zoo visitors.
 
 The contact form is not yet implemented. It is up to you to add the missing pieces.
 
@@ -44,10 +44,6 @@ Hint: Place the `input field` within the `label`.
 Create one `button` of type `reset` to allow for resetting the entire form. Add yet another `button` of type `submit` such that the visitor can submit their request.
 
 ## Development
-
-### CodeSandbox
-
-Select the "Browser" tab to view this project.
 
 ### Local development
 
