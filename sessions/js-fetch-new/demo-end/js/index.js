@@ -14,8 +14,7 @@ function renderJoke(joke) {
   jokeSection.innerHTML = "";
 
   // Create a new joke DOM element and append it to joke section
-  const newJoke = new Joke();
-  newJoke.textContent = joke;
+  const newJoke = Joke(joke);
   jokeSection.append(newJoke);
 }
 
