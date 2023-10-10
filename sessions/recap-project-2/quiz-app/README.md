@@ -123,6 +123,13 @@ You can have a look at
 [this counter example](https://codesandbox.io/s/github/spicedacademy/fs-web-exercises/tree/main/sessions/recap-project-2/character-count-example)
 for inspiration.
 
+## Resources
+
+⬇️ You can [**download the images for the Quiz App here**](./resources.zip?raw=true).
+
+- Unzip the file to get the `resources` folder.
+- Copy them into your app's main directory.
+
 ## Development
 
 ### Local Development
