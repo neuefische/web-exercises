@@ -1,6 +1,6 @@
 {
-  "name": "nextjs",
-  "version": "1.0.0",
+  "name": "next-data-modelling",
+  "version": "0.0.1",
   "scripts": {
     "dev": "next",
     "build": "next build",
