@@ -1,8 +1,17 @@
 :root {
-  --color-nemo: #ff4a11;
-  --color-granite: #252629;
-  --color-water-10: #f3f5f9;
-  --color-foam: #ffffff;
+  --primary-dark: #2e016d;
+  --primary: #3f0097;
+  --primary-light: #8236ff;
+
+  --secondary-dark: #38ccda;
+  --secondary: #7fd9e2;
+
+  --accent: #ffd15d;
+  --black-light: #303030;
+  --black: #000000;
+  --white: #ffffff;
+  --grey-dark: #b6b9c2;
+  --grey-light: #f5f6f6;
 }
 
 *,
@@ -18,14 +27,14 @@ body {
 
 button {
   border: none;
-  background-color: var(--color-nemo);
-  color: var(--color-foam);
+  background-color: var(--primary);
+  color: var(--white);
   padding: 0.5rem;
 }
 
 button:not(:disabled):hover {
-  background-color: var(--color-granite);
-  color: var(--color-water-10);
+  background-color: var(--secondary);
+  color: var(--grey-light);
 }
 
 button:disabled {

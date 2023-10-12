@@ -15,8 +15,8 @@
 .form__submit-button {
   width: 40%;
   align-self: center;
-  background: var(--secondary);
-  color: var(--primary);
+  background: var(--primary);
+  color: var(--white);
   border: none;
   margin: 0 auto;
   padding: 1rem;

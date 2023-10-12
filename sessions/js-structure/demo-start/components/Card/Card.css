@@ -1,11 +1,11 @@
 .card {
   display: flex;
   flex-direction: column;
-  border: 1px solid var(--color-granite);
+  border: 1px solid var(--black-light);
   padding: 1rem;
   border-radius: 8px;
 }
 
 .card--deciphered {
-  background-color: var(--color-water-10);
+  background-color: var(--grey-light);
 }
