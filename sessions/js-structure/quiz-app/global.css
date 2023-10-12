@@ -1,12 +1,19 @@
-:root {
-  --primary: #ffffff;
-  --secondary: #ff4a11;
-  --secondary-light: #fddcd2;
-  --color-water-10: #f3f5f9;
-  --black: #252629;
 
-  --ff-primary: sans-serif;
-  --ff-serif: serif;
+
+:root {
+  --primary-dark: #2e016d;
+  --primary: #3f0097;
+  --primary-light: #8236ff;
+
+  --secondary-dark: #38ccda;
+  --secondary: #7fd9e2;
+
+  --accent: #ffd15d;
+  --black-light: #303030;
+  --black: #000000;
+  --white: #ffffff;
+  --grey-dark: #b6b9c2;
+  --grey-light: #f5f6f6;
 }
 
 *,

@@ -1,5 +1,5 @@
 .card {
-  background-color: var(--primary);
+  background-color: var(--white);
   border: 1px solid var(--black);
   padding: 2rem;
   text-align: center;
@@ -11,8 +11,8 @@
 }
 
 .card__button-answer {
-  background: var(--secondary);
-  color: var(--primary);
+  background: var(--primary);
+  color: var(--white);
   border: none;
   display: block;
   margin: 0 auto 2rem auto;
@@ -48,8 +48,8 @@
 }
 
 .card__tag-list-item {
-  background-color: var(--secondary);
-  color: var(--primary);
+  background-color: var(--primary);
+  color: var(--white);
   border-radius: 4px;
   padding: 0 5px;
 }

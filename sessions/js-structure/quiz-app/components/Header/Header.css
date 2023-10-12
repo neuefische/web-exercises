@@ -11,4 +11,5 @@
 
 .header__title {
   text-align: center;
+  color: var(--white);
 }
