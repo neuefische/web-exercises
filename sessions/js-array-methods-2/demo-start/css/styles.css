@@ -1,14 +1,6 @@
-:root {
-  --primary: #ffffff;
-  --secondary: #ff4a11;
-  --secondary-light: #fddcd2;
-}
+@import './global.css'
+;
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
 body {
   margin: 0;
@@ -25,7 +17,7 @@ ul {
 }
 
 .list {
-  background-color: var(--secondary-light);
+  background-color: var(--secondary);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border-radius: 8px;
   width: 80%;
@@ -38,11 +30,11 @@ ul {
 }
 
 .list__heading {
-  color: var(--secondary);
+  color: var(--primary);
 }
 
 .list__item {
-  background-color: var(--primary);
+  background-color: var(--white);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   width: 80%;
   display: flex;
@@ -62,11 +54,11 @@ ul {
 
 .information__number {
   font-size: 1.5rem;
-  color: var(--secondary);
+  color: var(--primary);
 }
 
 .output {
-  background-color: var(--secondary-light);
+  background-color: var(--secondary);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   width: 80%;
   margin: 1rem auto;
@@ -75,7 +67,7 @@ ul {
 }
 
 .output__heading {
-  color: var(--secondary);
+  color: var(--primary);
 }
 
 .output__value {

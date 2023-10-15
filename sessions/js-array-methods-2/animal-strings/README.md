@@ -1,6 +1,6 @@
 # Array Methods 2: A simple String Array
 
-This CodeSandbox offers some exercises to recap some advanced array methods. Let's dive in!
+Here are some exercises to recap some advanced array methods. Let's dive in!
 
 ## Task
 

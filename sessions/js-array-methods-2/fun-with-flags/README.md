@@ -9,8 +9,7 @@ In this challenge you will learn how to use the array method find and how it dif
 Inside the event listener, use the `find` method to find the country in the countries array which name starts with the search string.
 
 > 💡 Strings have a method `startsWith(string)`, which might be helpful.
-
-> 💡 Each contry in the array as a name attribute.
+> 💡 Each country in the array as a name attribute.
 
 ### 2. Find All Matching Countries
 

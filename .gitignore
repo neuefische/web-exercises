@@ -67,3 +67,6 @@ node_modules/
 # Create Script
 .create-temp
 .temp
+
+# Optional yaml cache directory
+*.yaml
