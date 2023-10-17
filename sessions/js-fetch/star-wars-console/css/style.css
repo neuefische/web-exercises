@@ -1,0 +1,17 @@
+@import './global.css';
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: system-ui;
+
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    color: var(--white);
+    padding: 20px;
+    text-align: center;
+}
