@@ -1,6 +1,14 @@
 console.clear();
 
 const form = document.querySelector('[data-js="form"]');
+const messageInput = document.querySelector('[data-js="personal-message"]');
+const charactersLeftElement = document.querySelector(
+  '[data-js="remaining-characters"]'
+);
+
+messageInput.addEventListener("input", (event) => {
+  charactersLeftElement.textContent = 150 - event.target.value.length;
+});
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();

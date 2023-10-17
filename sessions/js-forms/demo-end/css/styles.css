@@ -6,6 +6,11 @@
   padding: 0;
 }
 
+.remaining-characters {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
 body {
   font-family: system-ui;
   background-color: lightgray;

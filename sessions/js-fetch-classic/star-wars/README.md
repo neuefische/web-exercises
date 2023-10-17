@@ -1,0 +1,56 @@
+# Fetch with Star Wars Cards
+
+Fetching data is awesome, yet it can be frightening at the beginning. But don't worry, we are going to make you familiar with the syntax and it will be fine ;)
+
+## Task
+
+Have a look at the `./js/index.js` file: There is an `EXAMPLE_DATA` object with information about Luke Skywalker. We use this object to create a DOM element with the `Card()` function and append this element to the DOM with the help of `renderElement`.
+
+This approach is very static and not very handy. Lets get more data and create new cards from them dynamically!
+
+### Task 1: Fetch data from the Star Wars Api:
+
+Fetch data from the star wars api (https://swapi.dev/api/people).
+
+Use the `async` and `await` keywords to receive the response and request the data with the `.json() method`.
+Use a `console.log()` to look at the received data!
+
+### Task 2: Moooooooooore cards!
+
+Use an array method to create and render a card for each object in the fetched data array.
+
+The following hints may guide you:
+
+- What was the array method again to perform an action **for each** element?
+- You can use the functions `Card()` and `renderElement()` to create those cards, see the explanation above!
+
+Please switch to the `./js/index.js` file to start counting!
+
+## Development
+
+### Local Development
+
+To work locally, please install the dependencies using `npm i` first.
+
+Run `npm run start` to start a development server and open [localhost:3000](http://localhost:3000) in a browser.
+
+> Alternatively you can use the Live Preview Extension for Visual Studio Code to view this project.  
+> Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
+
+Use `npm run test` to run the tests.
+
+### CodeSandbox Cloud
+
+Select the "Preview: 3000" tab to view this project.
+
+Select the "Tests: logs" tab to view the tests.
+
+> The `npm run start` and `npm run test` scripts run automatically.
+
+### Scripts
+
+You can use the following commands:
+
+- `npm run start` to start a development server
+- `npm run test` to run the tests
+- `npm run lint` to run the linter
