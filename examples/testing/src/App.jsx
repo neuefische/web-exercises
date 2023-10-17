@@ -1,5 +1,6 @@
-import { formatUser } from "./utils";
+import UserList from "./UserList/UserList";
 import Counter from "./Counter/Counter";
+import ConfirmButton from "./ConfirmButton/ConfirmButton";
 
 const users = [
   { id: 1, email: "jane@doe.com", firstName: "Jane", lastName: "Doe" },
@@ -13,15 +14,20 @@ export default function App() {
       <h1>Testing Examples</h1>
       <section>
         <h2>User List</h2>
-        <ul className="user-list">
-          {users.map((user) => (
-            <li key={user.id}>{formatUser(user)}</li>
-          ))}
-        </ul>
+        <UserList users={users} />
       </section>
       <section>
         <h2>Counter</h2>
         <Counter />
+      </section>
+      <section>
+        <h2>Confirm button</h2>
+        <ConfirmButton
+          label="Annihilate the universe"
+          dialogText="Are you sure?"
+          onCancel={() => alert("Phew!")}
+          onConfirm={() => alert("It's over.")}
+        />
       </section>
       <footer>&copy; 2023 ACME.</footer>
     </main>

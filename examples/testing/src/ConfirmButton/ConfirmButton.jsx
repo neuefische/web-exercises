@@ -11,5 +11,9 @@ export default function ConfirmButton({
     }
     onConfirm();
   }
-  return <button onClick={onClick}>{label}</button>;
+  return (
+    <button className="confirm-button" onClick={onClick}>
+      {label}
+    </button>
+  );
 }
