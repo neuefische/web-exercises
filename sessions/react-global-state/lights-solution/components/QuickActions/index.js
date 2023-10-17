@@ -17,18 +17,14 @@ export default function QuickActions({
     <StyledQuickActions>
       <Button
         type="button"
-        onClick={() => {
-          turnAllLightsOff();
-        }}
+        onClick={turnAllLightsOff}
         disabled={lightsOnCount === 0}
       >
         Turn all lights off
       </Button>
       <Button
         type="button"
-        onClick={() => {
-          turnAllLightsOn();
-        }}
+        onClick={turnAllLightsOn}
         disabled={lightsOnCount === lights.length}
       >
         Turn all lights on

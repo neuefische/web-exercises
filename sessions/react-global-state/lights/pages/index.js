@@ -6,10 +6,10 @@ export default function HomePage() {
       <h1>Home</h1>
       <p>?? light(s) are on.</p>
       <p>
-        <Link href="/lights">All lights →</Link>
+        <Link href="/rooms">All Rooms →</Link>
       </p>
       <p>
-        <Link href="/actions">Quick actions →</Link>
+        <Link href="/actions">Quick Actions →</Link>
       </p>
     </div>
   );
