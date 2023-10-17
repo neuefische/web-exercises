@@ -37,7 +37,7 @@ main {
   min-height: 100vh;
   max-width: 600px;
   margin: 0 auto;
-  padding: 3rem 0;
+  padding: 3rem 1rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
