@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/index.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>HTML Form Session</h1>
+      <h2>Email Subscription Form</h2>
+      <p>
+        Please fill out this form if you want to receive updates you don't want
+        to read, ever.
+      </p>
+      <form data-js="form">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="firstName">First Name</label>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="Your first name"
+          />
+
+          <label for="lastName">Last Name</label>
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Your last name"
+          />
+
+          <label for="age">Age</label>
+          <input type="number" name="age" id="age" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Other Information</legend>
+
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+
+          <label for="date">Date</label>
+          <input type="date" name="date" id="date" />
+        </fieldset>
+
+        <fieldset>
+          <legend>More Information</legend>
+          <label for="subOptions">Subscription Option</label>
+          <select name="subOptions" id="subOptions">
+            <option value="one-month" disabled>Subscribe for 1 month</option>
+            <option value="six-months">Subscribe for 6 months</option>
+            <option value="one-year">Subscribe for 1 year</option>
+            <option value="forever" selected>Subscribe forever</option>
+          </select>
+
+          <label for="personal-message">Personal Message</label>
+          <textarea
+            name="personalMessage"
+            id="personal-message"
+            rows="10"
+            cols="50"
+            placeholder="Enter your personal message"
+          ></textarea>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>

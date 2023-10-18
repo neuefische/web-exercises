@@ -9,66 +9,21 @@ const root = document.body;
 const jokeSection = JokeSection();
 root.append(jokeSection);
 
-// Get a random joke from a Bad Jokes API
-async function getJoke() {
+function renderJoke(joke) {
   // Clear the joke section
   jokeSection.innerHTML = "";
 
-  try {
-    const response = await fetch(
-      "https://example-apis.vercel.app/api/bad-jokes/random"
-    );
+  // Create a new joke DOM element and append it to joke section
+  const newJoke = Joke(joke);
+  jokeSection.append(newJoke);
+}
 
-    if (response.ok) {
-      // Success
-      const jokeData = await response.json();
-
-      // Assemble DOM for the joke
-      const newJoke = jokeData.joke;
-
-      const joke = Joke(newJoke);
-      jokeSection.append(joke);
-    } else {
-      // Failure (Bad response)
-      console.error("Bad Response");
-    }
-    // Failure (Error during fetch)
-  } catch (error) {
-    console.error("An Error occurred");
-  }
+async function getJoke() {
+  const response = await fetch(
+    "https://example-apis.vercel.app/api/bad-jokes/random"
+  );
+  const data = await response.json();
+  renderJoke(data.joke);
 }
 
 getJoke();
-
-// Optional Alternative:
-// Get a list of all jokes from Bad Jokes API
-/*
-async function getJokes() {
-	// Clear the joke section
-	jokeSection.innerHTML = '';
-
-	try {
-		const response = await fetch('https://example-apis.vercel.app/api/bad-jokes');
-
-		// Failure (Bad response)
-		if (!response.ok) {
-			console.error('Bad Response');
-		} else {
-			// Success
-			const jokesData = await response.json();
-
-			// Assemble DOM for the jokes
-			jokesData.forEach(jokeData => {
-				const joke = Joke();
-				joke.textContent = jokeData.joke;
-				jokeSection.append(joke);
-			});
-		}
-		// Failure (Error during fetch)
-	} catch (error) {
-		console.error('An Error occurred');
-	}
-}
-
-getJokes();
-*/

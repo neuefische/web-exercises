@@ -10,7 +10,7 @@ Unfortunately, the game does not work because the fetch function to get data fro
 
 ## Task
 
-Check out the `./js/fetch.js` file: There is a `fetchNewColor()` function which creates a random hex code and creates the correct url to fetch data from the Color API.
+Check out the [`js/fetch.js`](./js/fetch.js) file: There is a `fetchNewColor()` function which creates a random hex code and creates the correct url to fetch data from the Color API.
 
 Your task is to implement the fetch functionality:
 
@@ -20,33 +20,21 @@ Your task is to implement the fetch functionality:
 4. Call the `setColorToGuess()` function with the hex value and name of the closest named color.
 5. Guess colors! 🎉
 
-Switch to the `./js/fetch.js` file and start coding!
+Switch to the [`js/fetch.js`](./js/fetch.js) file and start coding!
 
 ## Development
 
-### Local Development
+### CodeSandbox
 
-To work locally, please install the dependencies using `npm i` first.
+Select the "Browser" tab to view this project.
 
-Run `npm run start` to start a development server and open [localhost:3000](http://localhost:3000) in a browser.
+### Local development
 
-> Alternatively you can use the Live Preview Extension for Visual Studio Code to view this project.  
-> Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
+To run project commands locally, you need to install the dependencies using `npm i` first.
 
-Use `npm run test` to run the tests.
+You can then use the following command:
 
-### CodeSandbox Cloud
-
-Select the "Preview: 3000" tab to view this project.
-
-Select the "Tests: logs" tab to view the tests.
-
-> The `npm run start` and `npm run test` scripts run automatically.
-
-### Scripts
-
-You can use the following commands:
-
-- `npm run start` to start a development server
-- `npm run test` to run the tests
 - `npm run lint` to run the linter
+
+Use the Live Preview Extension for Visual Studio Code to view this project in the browser.  
+Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
