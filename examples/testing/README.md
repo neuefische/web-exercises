@@ -33,6 +33,12 @@ On the long run, this would be very impractical, so we wrote tools that **automa
 
 ### Unit tests
 
+A popular choice as testing infrastructure is [Jest](https://jestjs.io/), from the React team. It exposes tools that allow to describe test cases and see if the expectations are met.
+
+**Note**: since the examples in this session are bundled with [Vite](https://vitejs.dev/) instead of the deprecated Create React App, the [Vitest](https://vitest.dev/) library has been used instead. Vitest retains most of the Jest API so it shouldn't be a problem.
+
+The `add` function can now be tested as follows in a `utils.test.js` file:
+
 ```js
 import { describe, it, expect } from "vitest";
 import { add } from './utils.js';
@@ -50,9 +56,9 @@ describe('add', () => {
 })
 ```
 
-Running `npm run test` in the terminal will produce a report of the tests contained in the project.
+Running `npm run test` in the terminal will produce a report of the tests contained in the project, by default checking all the files named `*.test.js` (with the possibility of further configuration).
 
-The tests above are called **unit tests**, because they check the behaviour of the `add` function in isolation, without any further interaction.
+The tests above are called **unit tests**, because they check the behaviour of the `add` function in isolation, without involving anything else.
 
 ### Integration tests
 
@@ -80,7 +86,7 @@ export default async function handler(request, response) {
 
 The expectation is that a new user with the passed information is created after making the request.
 
-Without going into implementation details (since they would involve more tools that just Jest), the following steps will be followed:
+Without going into implementation details (since they would involve more tools that just Jest/Vitest), the following steps will be followed:
 
 - a `fetch` request with method `POST` and some JSON body info corresponding to the mongoose model (e.g. first name, last name, e-mail) is sent;
 - the response status is expected to be 201;
@@ -93,7 +99,7 @@ Observe how the code above has various branches (a `try...catch` and an `if` sta
 
 A good practice is to use a clean database for every test run, so that there are no intermissions from previous operations. [There are specific testing tools](https://github.com/nodkz/mongodb-memory-server) that save you from using a real mongodb instance for this purpose.
 
-**Note**: being comfortable writing and maintaining integration tests goes beyond the duties of a junior web developer (that's why you should stop being a junior as soon as possible, it's fun to write tests!).
+**Note**: being comfortable writing and maintaining integration tests goes beyond the duties of a junior web developer (that's why you should stop being a junior as soon as possible, it's fun to write comprehensive tests!).
 
 ### Integration tests in React
 
