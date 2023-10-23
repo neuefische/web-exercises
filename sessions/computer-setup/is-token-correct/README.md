@@ -1,10 +1,8 @@
 # Computer Setup
 
-We are verifying that you have done the computer setup correctly.
+We are checking to confirm that your computer setup has been executed correctly.
 
-If after downloading this folder, you see `using Github API with token` in the terminal like the image.
-Your computer setup was done correctly.
-
+Upon downloading this folder, if you observe the message `using Github API with token` in your terminal, just as shown in the image below, your computer setup has been executed as intended.
 ![Download](./token-correct.png)
 
-Otherwise you are missing step 8 of the installation file.
+Otherwise, it suggests that you have missed step 8 in the installation guide.
