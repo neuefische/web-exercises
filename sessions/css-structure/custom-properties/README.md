@@ -8,9 +8,9 @@ Check the `./css/styles.css` file and find the three colors that are used multip
 
 Create a new `:root` selector and define three custom properties (variables) for the three colors. Use the following property names:
 
-- "--color-granite" for the dark gray
-- "--color-nemo" for the orange
-- "--color-foam" for the white
+- "--color-black-light" for the light black
+- "--color-primary" for the violet
+- "--color-white" for the white
 
 > 💡 Use a consistent `--color-<name>` naming for your properties.  
 > Make sure that all colors use the same syntax (e.g. hex `#ffffff` or `rgb()`).
