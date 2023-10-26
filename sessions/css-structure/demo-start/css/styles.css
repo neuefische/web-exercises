@@ -6,8 +6,8 @@
 
 body {
   font-family: system-ui;
-  color: #e4e8f0;
-  background-color: #282828;
+  color: #f5f6f6;
+  background-color: #303030;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -17,13 +17,13 @@ body {
 }
 
 h1 {
-  color: #ff4a11;
+  color: #8236ff;
 }
 
 .card {
   padding: 20px;
   border-radius: 5px;
-  border: solid 2px #ff4a11;
+  border: solid 2px #8236ff;
   width: 350px;
   display: flex;
   flex-wrap: wrap;
@@ -34,20 +34,20 @@ h1 {
 }
 
 .highlight {
-  color: #ff4a11;
+  color: #8236ff;
   font-size: 1.5rem;
 }
 
 .definition {
   max-width: 300px;
-  border: dashed 2px #ff4a11;
+  border: dashed 2px #8236ff;
   border-radius: 5px;
   padding: 10px;
 }
 
 .tag {
-  background-color: #9ca3af;
-  color: #282828;
+  background-color: #b6b9c2;
+  color: #303030;
   padding: 10px;
   border-radius: 5px;
 }

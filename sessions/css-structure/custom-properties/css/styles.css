@@ -11,7 +11,7 @@ body {
 }
 
 header {
-  background: rgb(37 38 41 / 100%);
+  background: rgb(48 48 48 / 100%);
 }
 
 h1 {
@@ -29,7 +29,7 @@ h2 {
 }
 
 strong {
-  color: #ff4a11;
+  color: #8236ff;
 }
 
 section {
@@ -57,7 +57,7 @@ figure {
   gap: 10px;
   margin: 0;
   padding: 10px;
-  background-color: #ff4a11ff;
+  background-color: #8236ffff;
   border-radius: 4px;
 }
 
@@ -76,24 +76,24 @@ a {
   font-size: smaller;
   padding: 8px;
   border-radius: 4px;
-  background-color: hsl(14 100% 53%);
+  background-color: hsl(263, 100%, 61%);
   color: #fff;
 }
 
 a:hover,
 a:focus-visible {
-  background-color: rgb(37 38 41);
+  background-color: rgb(48 48 48);
   text-decoration: none;
 }
 
 mark {
-  background-color: rgb(255 74 17);
+  background-color: rgb(130, 54, 255);
   color: #ffffff;
   border-radius: 4px;
   letter-spacing: 0.025em;
 }
 
 ::selection {
-  background-color: #252629;
-  color: #ff4a11;
+  background-color: #303030;
+  color: #8236ff;
 }
