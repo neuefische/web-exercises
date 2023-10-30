@@ -55,6 +55,16 @@ const schema = new Schema(
 
 See how the cover has its own `Schema`, because it's an object.
 
+**Note**: the DB has no notion of Cloudinary, it's just expecting an URL and the image sizes an data for the `cover` field.
+
+The proof is that you can create a post without uploading anything via cURL like:
+
+```
+curl -i -X POST http://localhost:3000/api/posts \
+  -H 'Content-Type: application/json' \
+  -d '{ "title" : "Local Post", "content" : "Some Text", "cover": { "width": 600, "height": 400, "url": "https://dummyimage.com/600x400/000/fff" } }'
+```
+
 ## Configuring Cloudinary for the browser
 
 Add a `NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME` variable in your `.env.local` file with the cloud name you registered from your Cloudinary Dashboard.
