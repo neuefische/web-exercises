@@ -40,16 +40,15 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/recap-project-3/rick
 For now you have only one hard coded character card for Rick Sanchez in your HTML. We want to create
 them dynamically in our JavaScript.
 
-- Write a function `createCharacterCard` inside the `card.js` file and export it.
-- You can use `innerHTML` to generate the HTML of the card. Cut the relevant HTML code of the card
-  from the `index.html` and use it in your function.
+- Write a function `CharacterCard` inside the `CharacterCard.js` file and export it.
+- You can use `innerHTML` to generate the HTML of the card. Cut and paste the relevant HTML code of the card from the `index.html` and use it in your function.
 - The following elements of the card need to be dynamic and change for each character:
   - the `src` of the image
   - the name of the character
   - the status, type and occurrences values
 - HINT: go to the docs and look where you can find all the information in the character objects you
   will receive from the API.
-- Think about which input parameters this function will need.
+- Think about which input parameter(s) this function will need.
 - The function finally returns the created `li` HTML element.
 
 ### Fetch the Data
@@ -59,7 +58,7 @@ Now we can fetch the character data from the API and generate our cards with it.
 - Inside of the `index.js` create a function called `fetchCharacters`.
 - Use your knowledge about fetching to get the first 20 characters from the API. You can find the
   correct API endpoint in the docs.
-- Import the `createCharacterCard` function.
+- Import the `CharacterCard` function.
 - After successfully fetching the character data, use array methods to create an HTML card for each
   character and append it to the `cardContainer`.
 - Make sure that the `cardContainer` is emptied every time new characters are fetched (HINT: you can
@@ -107,7 +106,7 @@ However, we want to tidy up our code so that not everything is written in a sing
 - The next and prev button as well as the pagination and the search bar are currently hard coded in
   the `index.html`. Remove the HTML code and generate them via JavaScript. Use the respective
   JavaScript component files for that.
-- The component functions should be called `createButton`, `createPagination`, and `createSearchBar`
+- The component functions should be called `NavButton`, `NavPagination`, and `SearchBar`
   and should return the created elements.
 - HINT: It is challenging to get the event listener functions right for these components. Use an
   extra input parameter `onClick` or `onSubmit` in your components.
