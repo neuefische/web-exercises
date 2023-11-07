@@ -40,7 +40,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/recap-project-3/rick
 For now you have only one hard coded character card for Rick Sanchez in your HTML. We want to create
 them dynamically in our JavaScript.
 
-- Write a function `CharacterCard` inside the `Card.js` file and export it.
+- Write a function `CharacterCard` inside the `CharacterCard.js` file and export it.
 - You can use `innerHTML` to generate the HTML of the card. Cut and paste the relevant HTML code of the card from the `index.html` and use it in your function.
 - The following elements of the card need to be dynamic and change for each character:
   - the `src` of the image
