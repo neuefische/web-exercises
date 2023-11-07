@@ -1,4 +1,4 @@
-import Card from "./components/Card/Card.js";
+import CharacterCard from "./components/CharacterCard/CharacterCard.js";
 import NavButton from "./components/NavButton/NavButton.js";
 import NavPagination from "./components/NavPagination/NavPagination.js";
 import SearchBar from "./components/SearchBar/SearchBar.js";
@@ -50,5 +50,5 @@ async function fetchCharacters() {
   const characters = data.results;
   pagination.textContent = `${page} / ${maxPage}`;
   cardContainer.innerHTML = "";
-  characters.map(Card).forEach((card) => cardContainer.append(card));
+  characters.map(CharacterCard).forEach((card) => cardContainer.append(card));
 }
