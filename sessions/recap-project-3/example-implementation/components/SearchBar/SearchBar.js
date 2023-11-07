@@ -1,4 +1,4 @@
-export default function createSearchBar(onSubmit) {
+export default function SearchBar(onSubmit) {
   const searchBar = document.createElement("form");
   searchBar.classList.add("search-bar");
   searchBar.innerHTML = `
