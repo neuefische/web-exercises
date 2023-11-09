@@ -79,8 +79,9 @@ li {
 
   Make sure to not change the styles of the .user element anywhere else.
   
-  For guidance you can include some debug styles.
-  To do so, add a "debug" class to the html element.
+  To facilitate layout debugging, apply the 'debug' class to the <html> element. 
+  This triggers visual helper styles from 'debug.css' that outline structural elements
+  like <body>, <main>, <aside>, <ul>, and .user with labeled overlays for easy identification.
 */
 
 /*
