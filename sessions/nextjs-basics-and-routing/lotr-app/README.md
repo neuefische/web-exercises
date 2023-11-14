@@ -28,6 +28,9 @@ Create the following pages:
 
 > 💡 A quick heads up about The Lord of the Rings: The book series has three volumes: The Fellowship of the Ring, The Two Towers and The Return of the King. Each volume contains two books for a total of six books.
 
+## Home Page Contents
+The Home page should contain a link to the Volumes page.
+
 ## Overview Page Contents
 
 > ❗️ **Ignore all styling for now.** Just use the default browser styles. You will add styling in an upcoming session.
