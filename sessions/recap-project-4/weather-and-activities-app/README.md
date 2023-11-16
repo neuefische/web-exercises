@@ -91,7 +91,7 @@ recap-project-4
 > 💡 **Important Tips:**
 >
 > - You can delete all the files in the `public` folder except for `index.html` and `favicon.ico`.
-> - Ensure to adjust the import statements in `index.js` and `App.js` accordingly.
+> - Ensure to adjust the import statements in `index.js` and `App.js` accordingly. Also remove the references of the logo and the `manifest.json` in the `index.html` file.
 > - Collaborators who clone the project from GitHub will need to run `npm install` to install all dependencies.
 
 The sequence of the tasks described below is a good example for how to _start_ writing an app.
