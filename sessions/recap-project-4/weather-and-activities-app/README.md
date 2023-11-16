@@ -80,7 +80,7 @@ recap-project-4
 │   ├── index.css
 │   ├── index.js
 │   ├── logo.svg (this is the React logo which you can delete)
-│   ├── reportWebVitals.js (another you can delete)
+│   ├── reportWebVitals.js (another file you can delete)
 │   └── setupTests.js.js (another file you can delete)
 ├── .gitignore
 ├── package-lock.json (this file contains information about the dependencies of your project and should not be changed manually, you can also commit it to git)
