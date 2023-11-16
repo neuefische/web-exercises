@@ -27,10 +27,72 @@ We are going to fetch all necessary information about the weather from a REST AP
 designed for this project. Check out the [Weather API](https://example-apis.vercel.app/). You find
 all the information you need in the docs.
 
-## Template
+## Project Scaffolding with `Create React App`
 
-There is no template or starter code, so you can start completely fresh! Please use
-[`create-react-app`](https://create-react-app.dev/docs/getting-started) to create a new project.
+Project scaffolding is the process of creating a new project. You will use the
+[Create React App](https://create-react-app.dev/docs/getting-started) tool to create a new React
+project automatically.
+
+To create a new project, run the following command in your terminal:
+
+```bash
+npx create-react-app recap-project-4
+```
+
+This will create a new folder called `recap-project-4` and install all the dependencies needed to run your project. Installing all the dependencies might take a while, so be patient.
+
+> 💡 `npx` is a tool that comes with npm. It allows you to run npm packages without installing them.
+
+> 💡 `create-react-app` is a npm package that is installed globally on your computer. It is a tool that helps you create new React projects.
+
+As a second step, you need to change into the newly created folder and start the development server:
+
+```bash
+cd recap-project-4
+npm run start
+```
+
+This will start a development server that will automatically reload your application whenever you
+make changes to your code.
+
+> 💡 You can stop the development server by pressing `Ctrl + C` in your terminal.
+
+> 💡 You can also run `npm start` to start the development server.
+
+Finally, you can open your project in your browser by navigating to `http://localhost:3000`.
+
+The directory structure will look like this:
+
+```
+recap-project-4
+├── node_modules
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── logo192.png (this is the React logo)
+│   ├── logo512.png (this is the React logo)
+│   ├── manifest.json
+│   └── robots.txt
+├── src (this is where you will write your code)
+│   ├── App.css
+│   ├── App.js (this is the main component of your app)
+│   ├── App.test.js (this is a test file which you can delete)
+│   ├── index.css
+│   ├── index.js
+│   ├── logo.svg (this is the React logo which you can delete)
+│   ├── reportWebVitals.js (another you can delete)
+│   └── setupTests.js.js (another file you can delete)
+├── .gitignore
+├── package-lock.json (this file contains information about the dependencies of your project and should not be changed manually, you can also commit it to git)
+├── package.json (Here you can find all the dependencies of your project)
+└── README.md
+```
+
+> 💡 You can delete all the files in the `public` folder except for `index.html` and `favicon.ico`.
+
+> 💡 Ensure to adjust the import statements in `index.js` and `App.js` accordingly.
+
+> 💡 Collaborators who clone the project from GitHub will need to run `npm install` to install all dependencies.
 
 The sequence of the tasks described below is a good example for how to _start_ writing an app.
 
