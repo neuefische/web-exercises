@@ -10,7 +10,7 @@ First create a new Next.js based on our template using this command:
 npx ghcd@latest neuefische/web-exercises/tree/main/templates/next lotr-app -i
 ```
 
-> 💡 Our Next.js template is very similar to `create-next-app` but it also installs additional dependencies. It adds support for testing using Jest and also installs Styled Components, which you will learn about in the upcoming sessions.
+> 💡 Our Next.js template is very similar to `create-next-app` but it also installs Styled Components, which you will learn more about in upcoming sessions.
 
 Download and extract the [Resources](#resources) into your project folder.
 
