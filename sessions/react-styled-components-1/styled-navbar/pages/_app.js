@@ -2,7 +2,7 @@ import Link from "next/link";
 import GlobalStyle from "../styles";
 import styled from "styled-components";
 
-const Nav = styled.nav`
+const StyledNav = styled.nav`
   border-bottom: solid 2px grey;
   padding: 1rem;
 `;
@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <GlobalStyle />
-      <Nav>
+      <StyledNav>
         <StyledList>
           <li>
             <Link href="/">Home</Link>
@@ -29,7 +29,7 @@ export default function App({ Component, pageProps }) {
             <Link href="/contact">Contact</Link>
           </li>
         </StyledList>
-      </Nav>
+      </StyledNav>
       <Component {...pageProps} />
     </>
   );
