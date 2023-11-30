@@ -1,49 +1,6 @@
 # Part 4 - Hints
 
 <details>
-<summary>💡 Hint: Handling Form Data </summary>
-
-Remember how to get data from a form. You can use either `new FormData` or select the value from the input form directly.
-
-```js
-function handleSubmit(event) {
-  //...
-  const data = new FormData(event.target);
-  //...
-  const inputValue = event.target.elements.inputName.value;
-}
-```
-
-</details>
-
-<details>
-<summary>💡 Hint: SearchBar Parameters</summary>
-
-Which parameters does your Search Bar Component need? Where do you need to store the search query and fetch the data?
-
-```js
-function SearchBar({onSubmit}) {
-  //...
-  return <form onSubmit={onSubmit}>
-}
-```
-
-</details>
-
-<details>
-<summary>💡 Hint: Updating List Title</summary>
-
-There are many ways to dynamically update the AlbumList Title. One might to use a "hasBeenSearched" or "pageState" state which indicates whether a user has submitted the form:
-
-```js
-function App({onSubmit}) {
-  const [hasSearched,setHasSearched] = useState(false);
-
-  return (
-    //...
-    <AlbumList title={hasSearched ? 'Results' : 'Featured'} albums={...}>
-  )
-}
-```
+<summary>💡 Hint: </summary>
 
 </details>
