@@ -1,0 +1,13 @@
+{
+    "name": "html-additional-template",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.html",
+    "scripts": {
+        "start": "serve"
+    },
+    "dependencies": {
+        "serve": "14.2.0"
+    },
+    "keywords": []
+}

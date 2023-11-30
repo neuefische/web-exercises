@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Nested Flex Example</title>
+        <!-- meta tag needed for responsiveness -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <header>
+            <h1>Nested Flex Example</h1>
+        </header>
+
+        <main>
+            <!-- the main has only two children: the .sections <div> and the <aside> -->
+            <div class="sections">
+                <section>
+                    <h2>Section one</h2>
+                    <p>Some content</p>
+                </section>
+                <section>
+                    <h2>Section two</h2>
+                    <p>Some content</p>
+                </section>
+                <section>
+                    <h2>Section three</h2>
+                    <p>Some content</p>
+                </section>
+            </div>
+            <aside>
+                <h2>Didn't you know?</h2>
+                <p>You can nest flex elements inside each other!</p>
+                <p>
+                    See how the whole <code>&lt;body&gt;</code> of the page has
+                    <code>display: flex</code> with
+                    <code>flex-direction: column</code>, and the
+                    <code>&lt;main&gt;</code> element takes up as much vertical
+                    space as possible thanks to its
+                    <code>flex: 1</code> property.
+                </p>
+                <p>
+                    Then the main itself has <code>display: flex</code> on its
+                    own, arranging its two children horizontally by default.
+                </p>
+                <p>
+                    We give fixed <code>width</code> in pixels to the
+                    <code>&lt;aside&gt;</code>, and we tell the
+                    <code>.sections</code> to take up the rest of the space with
+                    <code>flex: 1</code>.
+                </p>
+                <p>
+                    Last but not least, even the <code>.sections</code> element
+                    has <code>display: flex</code>. In combination with some
+                    <code>flex</code> value on its children, the space is
+                    totally arranged.
+                </p>
+            </aside>
+        </main>
+
+        <footer>&copy 2023 ACME</footer>
+    </body>
+</html>

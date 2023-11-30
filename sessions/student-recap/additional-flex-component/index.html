@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Flex Examples</title>
+        <!-- meta tag needed for responsiveness -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <header>
+            <h1>Flex Examples</h1>
+        </header>
+        <main>
+            <section>
+                <h2>No flex on the children</h2>
+                <p>
+                    The elements take just the space of their content (default
+                    behaviour). The
+                    <code>justify-content</code> property on the parent takes
+                    care of their horizontal alignment.
+                </p>
+                <div class="flex-container">
+                    <article class="flex-item">1</article>
+                    <article class="flex-item">2</article>
+                    <article class="flex-item">3</article>
+                </div>
+            </section>
+            <section>
+                <h2>Equally spaced</h2>
+                <p>
+                    Every element has <code>flex: 1</code>, and take as much
+                    space as possible. Observe how this would override any
+                    <code>justify-content</code> value.
+                </p>
+                <div class="flex-container flex-on-children">
+                    <article class="flex-item">1</article>
+                    <article class="flex-item">2</article>
+                    <article class="flex-item">3</article>
+                </div>
+            </section>
+            <section>
+                <h2>One element bigger</h2>
+                <p>
+                    One element has a bigger <code>flex</code> value, and takes
+                    more space.
+                </p>
+                <div class="flex-container flex-on-children">
+                    <article class="flex-item bigger">1</article>
+                    <article class="flex-item">2</article>
+                    <article class="flex-item">3</article>
+                </div>
+            </section>
+            <section>
+                <h2>One element bigger, one even bigger!</h2>
+                <p>Space is divided proportionally (flex ratios 2, 4, 1).</p>
+                <div class="flex-container flex-on-children">
+                    <article class="flex-item bigger">1</article>
+                    <article class="flex-item biggest">2</article>
+                    <article class="flex-item">3</article>
+                </div>
+            </section>
+        </main>
+
+        <footer>&copy 2023 ACME</footer>
+    </body>
+</html>
