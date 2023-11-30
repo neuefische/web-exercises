@@ -25,3 +25,11 @@ data.map(item => <MyComponent key={item.id} first={item.first} second={item.seco
 ```
 
 </details>
+
+<details>
+<summary>🔒 Example Solution </summary>
+Only check this solution after giving this part a good try!
+
+[🔗 Part 1 Example Solution](https://github.com/neuefische/web-react-recap-project-solution/tree/part-1)
+
+</details>
