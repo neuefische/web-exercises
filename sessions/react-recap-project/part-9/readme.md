@@ -8,10 +8,10 @@ Each track inside an Album can be added to the favorite song list. A new page li
 
 ## Acceptance Criteria
 
-- A button is rendered next to each track in the songlist.
-- When the button is pressed on an unsaved track, it is added to the savedTracks.
-- When the button is pressed on a saved track, it is removed from the savedTracks.
-- In the navigation bar, a fourth element for "tracks" is displayed.
+- A button is rendered next to each track in the `SongList`.
+- When the button is pressed on an unsaved track, it is added to the saved tracks.
+- When the button is pressed on a saved track, it is removed from the saved tracks.
+- In the navigation bar, a fourth element for "Tracks" is displayed.
 - Clicking on this element opens the "Favorite Tracks" page.
 - The saved tracks are persisted in the localStorage.
 

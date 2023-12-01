@@ -3,7 +3,7 @@
 <details>
 <summary>💡 Hint: Data</summary>
 
-Take a look at the data you receive from the api. What information is unused at the moment? (what about "spotifyLink" and "previewAudio"?)
+Take a look at the data you receive from the api. What information is unused at the moment? (what about `spotifyLink` and `previewAudio`?)
 
 </details>
 

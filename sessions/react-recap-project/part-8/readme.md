@@ -4,7 +4,7 @@
 
 ## Features
 
-When searching for albums, a maximum of 20 entries are displayed in the results. At the end of the list a button is displayed for fetching more results. These results are appended to the list.
+When searching for albums, a maximum of 20 entries are displayed in the results. At the end of the list, a button is displayed for fetching more results. These results are appended to the list.
 
 ## Acceptance Criteria
 
@@ -19,4 +19,4 @@ When searching for albums, a maximum of 20 entries are displayed in the results.
   https://neuefische-spotify-proxy.vercel.app/api/search?artist=test&offset=20
   ```
   This request returns the found entries 20-40 for the artists named "test".
-- Make sure that the offset is set to 0 when searching for a new artist.
+- Make sure that the offset is set to 0 when submitting a new search.

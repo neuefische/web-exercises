@@ -11,12 +11,12 @@ The app has already a lot of features. The features are separated into different
 ## Acceptance Criteria
 
 - A navigation bar is displayed fixed at the bottom of the screen.
-- A Component "Navigation" is created for the navigation bar.
+- A Component `Navigation` is created for the navigation bar.
 - The navigation bar has 3 elements: "Home", "Search" and "Albums".
 - The navigation item of the current page is visually highlighted.
 - Pressing the "Home" item displays the "featured" album list in the app.
 - Pressing the "Search" item displays the search bar. The results of the search are rendered below the search bar after submitting a search.
-- Pressing the "Saved" item displays the saved album list.
+- Pressing the "Albums" item displays the saved album list.
 
 ## Notes
 

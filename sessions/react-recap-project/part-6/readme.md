@@ -12,4 +12,3 @@ The saved albums are persisted in the local storage of the browser. The albums a
 
 - In this part you practice how to use packages or libraries in your projects.
 - You can use the `use-local-storage-state` package for saving a state in the localStorage. Visit [the documentation](https://github.com/astoilkov/use-local-storage-state) to learn how to use the hook.
-- Please read the documentation of the package. It is a core skill for a developer to learn from documentations how a tool like this package is to be used.
