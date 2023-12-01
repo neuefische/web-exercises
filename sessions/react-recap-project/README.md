@@ -4,7 +4,7 @@ In this recap project you will create a fully functioning music collection appli
 
 ## Preparation
 
-The recap project is split into 10 separate parts. Each part extends on the previous one and adds a specific functionality to the app. For each part a feature description, hints and an example solution is provided. You can find everyting in the following table.
+The recap project is split into 10 separate parts. Each part extends on the previous one and adds a specific functionality to the app. For each part a feature description and list of hints is provided. You can find everything in the following table.
 
 | Part                         | Hints                      |     | Part                           | Hints                       |
 | ---------------------------- | -------------------------- | --- | ------------------------------ | --------------------------- |
