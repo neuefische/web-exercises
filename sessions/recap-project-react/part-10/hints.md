@@ -3,14 +3,14 @@
 <details>
 <summary>💡 Hint: Data</summary>
 
-Take a look at the data you receive from the api. What information is unused at the moment? (what about `spotifyLink` and `previewAudio`?)
+Take a look at the data you receive from the API. What information is unused at the moment? (what about `spotifyLink` and `previewAudio`?)
 
 </details>
 
 <details>
 <summary>💡 Hint: Libraries</summary>
 
-You can always research for libraries and include them in the project. They can help you to grow your app drastically.
+You can always search for libraries and include them in the project. They can help you to grow your app drastically.
 
 </details>
 

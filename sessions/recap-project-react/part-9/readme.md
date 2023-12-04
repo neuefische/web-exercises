@@ -4,7 +4,7 @@
 
 ## Features
 
-Each track inside an Album can be added to the favorite song list. A new page lists all saved songs. The save button changes appearance when the song is saved.
+Each track inside an album can be added to the favorite song list. A new page lists all saved songs. The save button changes appearance when the song is saved.
 
 ## Acceptance Criteria
 

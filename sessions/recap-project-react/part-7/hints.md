@@ -3,7 +3,7 @@
 <details>
 <summary>💡 Hint: Refactoring into Pages</summary>
 
-Think about what parts of the App.js belong to the which page. Move these parts into that "page component" e.g.:
+Think about what parts of the App.js belong to which page. Move these parts into that "page component" e.g.:
 
 ```js
 // in pages/Home.js
@@ -13,7 +13,9 @@ export default function Home({???}){
 
   useEffect(() => {
     //fetch featured albums!
-  })
+  useEffect(() => {
+    //fetch featured albums!
+  }, ??)
 
   return <AlbumList albums={albums} ...>
 }
@@ -24,7 +26,7 @@ export default function Home({???}){
 <details>
 <summary>💡 Hint: Global State</summary>
 
-There are states that need to be global, i.e. need to be accessed by the entire app. There must be placed into the App.js and passed to the pages via props:
+There are states that need to be global, i.e. need to be accessed by the entire app. They must be placed into the App.js and passed to the pages via props:
 
 ```js
 // in App.js

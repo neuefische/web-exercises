@@ -3,7 +3,7 @@
 <details>
 <summary>💡 Hint: State </summary>
 
-Placing a state only where its needed can reduce complexity a lot.
+If you only place a state where it is needed, you can significantly reduce complexity.
 
 ```js
 function App() {

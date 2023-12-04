@@ -14,7 +14,7 @@ When searching for albums, a maximum of 20 entries are displayed in the results.
 
 ## Notes
 
-- The search endpoint of the api can receive an "offset" parameter next to the "artist" parameter for receiving the results starting from this offset value:
+- The search endpoint of the API can receive an "offset" parameter next to the "artist" parameter for receiving the results starting from this offset value:
   ```
   https://neuefische-spotify-proxy.vercel.app/api/search?artist=test&offset=20
   ```

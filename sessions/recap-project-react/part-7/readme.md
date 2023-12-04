@@ -11,7 +11,7 @@ The app has already a lot of features. The features are separated into different
 ## Acceptance Criteria
 
 - A navigation bar is displayed fixed at the bottom of the screen.
-- A Component `Navigation` is created for the navigation bar.
+- A component `Navigation` is created for the navigation bar.
 - The navigation bar has 3 elements: "Home", "Search" and "Albums".
 - The navigation item of the current page is visually highlighted.
 - Pressing the "Home" item displays the "featured" album list in the app.
@@ -22,4 +22,4 @@ The app has already a lot of features. The features are separated into different
 
 - Refactor the code from your App.js into 3 components and save them in a new `pages` folder in your `src` folder.
 - You will need a new state which tracks which page should be displayed.
-- States that are needed in multiple pages should be located in `App.js`.
+- States that are needed in multiple pages should be located in your `App.js`.

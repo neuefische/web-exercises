@@ -20,7 +20,7 @@ useEffect(() => {
 </details>
 
 <details>
-<summary>💡 Hint: Toggling saved track </summary>
+<summary>💡 Hint: Toggling Saved Track </summary>
 
 You need a function to toggle the saved state of each track and pass it down to the "SongList" component:
 
@@ -35,7 +35,7 @@ function toggleSaveTrack(id) {
 }
 ```
 
-pass this function from App.js to Songlist: App => pageComponent => AlbumList => AlbumCard => SongList
+Pass this function from App.js to Songlist: App => pageComponent => AlbumList => AlbumCard => SongList
 
 </details>
 
