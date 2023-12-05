@@ -34,6 +34,8 @@ all the information you need in the docs.
 There is no template or starter code, so you can start completely fresh! Please use
 [`vite`](https://vitejs.dev/guide/#scaffolding-your-first-vite-project) to create a new project.
 
+Your repository in Github must be named `yourName-partnerName-weather-app`
+
 The sequence of the tasks described below is a good example for how to _start_ writing an app.
 
 > 💡 Because we need data to work with, we usually want to start with the C in CRUD. In this

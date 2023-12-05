@@ -10,7 +10,7 @@ Use the following hints as guideline:
 - `chance` is already installed, you just have to import and use it as follows:
   - import via `import Chance from "chance";`
   - instantiate Chance so it can be used: `const chance = new Chance();` (you can do this outside the `createServer()` callback)
-  - use the Change documentation to find out how to create
+  - use the Chance documentation to find out how to create
     - a random person name and save it to a variable: `name`,
     - a random person age and save it to a variable: `age` and
     - a random web profession and save it to a variable: `profession`.

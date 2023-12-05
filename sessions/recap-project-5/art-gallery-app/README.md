@@ -4,7 +4,7 @@ In this recap project you will create an art gallery app.
 
 There is an API that provides you with all art pieces to show in the gallery:
 
-```
+```bash
 https://example-apis.vercel.app/api/art
 ```
 
@@ -26,9 +26,11 @@ The goal of this recap project is not necessarily to finish all features, but to
 
 First create a new Next.js based on our template using this command:
 
-```
+```bash
 npx ghcd@latest spicedacademy/fs-web-exercises/tree/main/templates/next art-gallery-app
 ```
+
+Your repository in Github must be named `yourName-partnerName-art-gallery-app`
 
 Download and extract the [Resources](#resources) into your project folder.
 
