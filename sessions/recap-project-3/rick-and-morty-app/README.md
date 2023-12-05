@@ -23,11 +23,11 @@ information you need in the docs.
 - Open your terminal and navigate to the folder where all your projects are located.
 - Execute the following command to create a new project based on a template:
 
-```
+```bash
 npx ghcd@latest spiced-academy/fs-web-exercises/tree/main/sessions/recap-project-3/rick-and-morty-app
 ```
 
-- Create a new empty repository on GitHub, link it to the created repository on your computer and push the code.
+- Create a new empty repository on GitHub named `yourName-partnerName-ricky-and-morty`, link it to the created repository on your computer and push the code.
 - Each member of the group clones the repository to their local machine.
 - Follow the instructions given in the `README.md` file.
 

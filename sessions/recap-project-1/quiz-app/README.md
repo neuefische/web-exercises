@@ -16,7 +16,7 @@ might want to look up the "hidden" attribute.)
 
 To begin, perform the following tasks:
 
-- Create a new folder for your project.
+- Create a new folder for your project named `yourName-quiz-app`
 - Initialize a local git repository.
 - Create a `.gitignore` file and add `.DS_Store` to the file.
 - Create a remote repository and connect it to the local repository.
