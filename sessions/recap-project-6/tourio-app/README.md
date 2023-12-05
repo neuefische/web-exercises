@@ -2,6 +2,16 @@
 
 In this project you will build a Tourio App, the best friend of all travelers: it displays sights you want to visit and lets you edit them.
 
+## Create the App
+
+Build your own _Tourio App_ by running this command in your Terminal:
+
+```bash
+npx ghcd@latest spiced-academy/fs-web-exercises/tree/main/sessions/recap-project-6/tourio-app
+```
+
+Your repository in Github must be named `yourName-partnerName-tourio-app`
+
 ## Task
 
 ### Read Data
