@@ -1,43 +1,38 @@
 import { useEffect, useState } from "react";
 
-function useFetch(url) {
-  const [data, setData] = useState();
+export default function Joke() {
+  const [joke, setJoke] = useState();
+  const [id, setId] = useState(0);
 
   useEffect(() => {
     async function startFetching() {
-      const response = await fetch(url);
-      const newData = await response.json();
+      const response = await fetch(
+        `https://example-apis.vercel.app/api/bad-jokes/${id}`
+      );
+      const joke = await response.json();
 
-      setData(newData);
+      setJoke(joke);
     }
 
     startFetching();
-  }, [url]);
-
-  return data;
-}
-
-export default function Joke() {
-  const [id, setId] = useState(0);
-
-  const data = useFetch(`https://example-apis.vercel.app/api/bad-jokes/${id}`);
+  }, [id]);
 
   function handlePrevJoke() {
-    setId(data.prevId);
+    setId(joke.prevId);
   }
 
   function handleNextJoke() {
-    setId(data.nextId);
+    setId(joke.nextId);
   }
 
-  if (!data) {
+  if (!joke) {
     return <h1>Loading...</h1>;
   }
 
   return (
     <>
       <small>ID: {id}</small>
-      <h1>{data.joke}</h1>
+      <h1>{joke.joke}</h1>
       <div>
         <button type="button" onClick={handlePrevJoke}>
           ← Prev Joke
