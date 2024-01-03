@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  font-family: monospace;
+  font-size: 2rem;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.letter {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #555;
+  border-radius: 3px;
+  margin-right: 4px;
+  font-family: monospace;
+  font-size: 1.6rem;
+  text-align: center;
+  /* background-color: blue; */
+}
+.small{
+    width: 15px;
+}
+.hidden {
+  border: none;
+}
