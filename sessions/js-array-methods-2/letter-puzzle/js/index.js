@@ -10,159 +10,122 @@ import {
   letter9,
   letter10,
   letter11,
-  letter12,
-  letter13,
-  letter14,
-  letter15,
-  letter16,
-  letter17,
-  letter18,
 } from "../utils/service.js";
 import { employees } from "../utils/data.js";
 
-// Here is an example:
+
 // QUESTION 1: Is there any employee that is older than 65 years?
-// YES: "I" NO: "A"
+// Hint: use some()
 
-// Try some code here:
-const olderThan65 = employees.some((person) => person.age > 65);
-console.log("olderThan65: ", olderThan65); // logs: 'false'
-
-// Fill in the found letter:
-letter4.textContent = "A";
+const hasEmployeesOlderThan65 = null;
+// const hasEmployeesOlderThan65 = employees.some((employee) => employee.age > 65);
 
 //----------------------------------------
-// Now it's your turn. Try to find the answers...
+// QUESTION 2: Is there any employee with first name 'Frederique'?
+// Hint: use some()
 
-// QUESTION 2: Is there any person with first name 'Frederique'?
-// YES: "E" NO: "S"
-
-// Try some code here:
-
-// Fill in the right letter:
-letter10.textContent = "";
+const employeeNamedFrederique = null;
+// const employeeNamedFrederique = employees.some(
+//   (employee) => employee.firstName === "Frederique"
+// );
 
 //----------------------------------------
-// QUESTION 3: Is every employee older than 18 years?
-// YES: "M" NO: "I"
-// Try some code here:
+// QUESTION 3: Is there any employee younger than 18 years?
+// Hint: use some()
 
-// Fill in the right letter:
-letter1.textContent = "";
-
-//----------------------------------------
-// QUESTION 4: What is the last letter of the first name from employee with the id '0.4501839429121537'?
-// Try some code here:
-
-// Fill in the found letter:
-letter18.textContent = "";
+const employeeYoungerThan18 = null;
+// const employeeYoungerThan18 = employees.some((employee) => employee.age < 18);
 
 //----------------------------------------
-// QUESTION 5: Is there any employee with profession 'Landscape Architect' AND older than 50 years?
-// YES: "S" NO: "F"
-// Try some code here:
+// QUESTION 4: Has every employee a phone number?
+// Hint: use every()
 
-// Fill in the right letter:
-letter3.textContent = "";
-
-//----------------------------------------
-// QUESTION 6: What is the last letter of the last Name of the employee with the email 'kip@wetutwab.cw'
-// Try some code here:
-
-// Fill in the found letter:
-letter12.textContent = "";
+const everyEmployeeHasPhoneNumber = null;
+// const everyEmployeeHasPhoneNumber = employees.every(
+//   (employee) => employee.phone
+// );
 
 //----------------------------------------
-// QUESTION 7: What is the first letter of the city from the employee 'Louise' that is 33 years old?
-// Try some code here:
+// QUESTION 5: Does every id start with '0'?
+// Hint: Use every()
 
-// Fill in the found letter:
-letter2.textContent = "";
-
-//----------------------------------------
-// QUESTION 8: Is there any employee with first name or last name 'Radu'?
-// YES: "M" NO: "R"
-// Try some code here:
-
-// Fill in the right letter:
-letter7.textContent = "";
+const everyIdStartsWith0 = null;
+// const everyIdStartsWith0 = employees.every((employee) =>
+//   employee.id.startsWith("0")
+// );
 
 //----------------------------------------
-// QUESTION 9: Has every employee a phone number?
-// YES: "O" NO: "E"
-// Try some code here:
+// QUESTION 6: Has every employee a first name AND a last name?
+// Hint: use every()
 
-// Fill in the right letter:
-letter17.textContent = "";
-
-//----------------------------------------
-// QUESTION 10: What is the first letter of the city from the youngest employee?
-// Hint: Maybe you want to sort the array
-// Try some code here:
-
-// Fill in the found letter:
-letter8.textContent = "";
+const everyEmployeeHasFirstAndLastName = employees.every(
+  (employee) => employee.firstName && employee.lastName
+);
 
 //----------------------------------------
-// QUESTION 11: Is there an employee with name (first name or last name) 'Baxter' and phone '(660) 877-9818'?
-// YES: "I" NO: "V"
-// Try some code here:
+// QUESTION 7: Can you find the employee named 'Louise' that is 33 years old?
+// Hint: use find()
 
-// Fill in the right letter:
-letter6.textContent = "";
-
-//----------------------------------------
-// QUESTION 12: Has every employee at least an IQ > 50?
-// YES: "P" NO: "L"
-// Try some code here:
-
-// Fill in the right letter:
-letter13.textContent = "";
+const employeeLouise33 = null;
+// const employeeLouise33 = employees.find(
+//   (employee) => employee.firstName === "Louise" && employee.age === 33
+// );
 
 //----------------------------------------
-// QUESTION 13: Is there an employee with an IQ > 105?
-// YES: "T" NO: "L"
-// Try some code here:
+// QUESTION 8: We need to find the employee with the id '0.0795620650485831'
+// Hint: Use find()
 
-// Fill in the right letter:
-letter15.textContent = "";
-
-//----------------------------------------
-// QUESTION 14: What is the first letter of the first name of the employee with the lowest IQ?
-// Hint: Maybe you want to sort the array
-// Try some code here:
-
-// Fill in the found letter:
-letter14.textContent = "";
-
-// BONUS:
+const employeeWithId = null;
+// const employeeWithId = employees.find(
+//   (employee) => employee.id === "0.0795620650485831"
+// );
 
 //----------------------------------------
-// QUESTION 15: What is the second letter of the profession from the 111th employee in the employees array?
-// Try some code here:
+// QUESTION 9: Please find the employee with first name 'Edna' and profession 'Inverstment Manager'
+// Hint: use find()
 
-// Fill in the found letter:
-letter16.textContent = "";
-
-//----------------------------------------
-// QUESTION 16: What is the first letter of the profession from employee with the biggest IQ?
-// Try some code here:
-
-// Fill in the found letter:
-letter9.textContent = "";
-
-// EXTRA BONUS:
+const ednaInvestment = null;
+// const ednaInvestment = employees.find(
+//   (employee) =>
+//     employee.firstName === "Edna" &&
+//     employee.profession === "Investment Manager"
+// );
 
 //----------------------------------------
-// QUESTION 17: When sorting the employees by last name ascending (A -> Z). What is the first letter of the first name from the first employee?
-// Try some code here:
+// QUESTION 10: We need a new employees array now sorted by age ascending (1 -> 100)
+// Hint: Use toSorted()
 
-// Fill in the found letter:
-letter5.textContent = "";
+const employeesSortedByAge = null;
+// const employeesSortedByAge = employees.toSorted((a, b) => a.age - b.age);
 
 //----------------------------------------
-// QUESTION 18: When sorting the employees by city descending (Z -> A). What is the first letter of the first name from the first employee?
-// Try some code here:
+// QUESTION 11: We want a new employees array sorted by last name descending (Z -> A)
+// Hint use toSorted()
 
-// Fill in the found letter:
-letter11.textContent = "";
+const employeesSortedByLastName = null;
+// const employeesSortedByLastName = employees.toSorted((a, b) => {
+//   if (a.lastName.toUpperCase() > b.lastName.toUpperCase()) {
+//     return -1;
+//   } else {
+//     return 1;
+//   }
+// });
+
+// Great! 🎉 You got it! 🚀 Now you can read the solution of the letter puzzle. 💪
+
+// ---------- ( this code is used for the puzzle! Don't touch it. ------------
+letter1.textContent = hasEmployeesOlderThan65 ? "A" : "I";
+letter10.textContent = employeesSortedByAge
+  ? employeesSortedByAge[0].city[0]
+  : "I";
+letter2.textContent = employeeNamedFrederique ? "P" : "I";
+letter8.textContent = employeeWithId ? employeeWithId.city[0] : "L";
+letter3.textContent = employeeYoungerThan18 ? "E" : "F";
+letter4.textContent = everyEmployeeHasPhoneNumber ? "I" : "R";
+letter11.textContent = employeesSortedByLastName
+  ? employeesSortedByLastName[0].city[0]
+  : "X";
+letter5.textContent = everyIdStartsWith0 ? "F" : "I";
+letter6.textContent = everyEmployeeHasFirstAndLastName ? "E" : "I";
+letter7.textContent = employeeLouise33 ? employeeLouise33.city[0] : "F";
+letter9.textContent = ednaInvestment ? ednaInvestment.city[0] : "L";
