@@ -58,9 +58,10 @@ const everyIdStartsWith0 = null;
 // QUESTION 6: Has every employee a first name AND a last name?
 // Hint: use every()
 
-const everyEmployeeHasFirstAndLastName = employees.every(
-  (employee) => employee.firstName && employee.lastName
-);
+const everyEmployeeHasFirstAndLastName = null;
+// const everyEmployeeHasFirstAndLastName = employees.every(
+//   (employee) => employee.firstName && employee.lastName
+// );
 
 //----------------------------------------
 // QUESTION 7: Can you find the employee named 'Louise' that is 33 years old?
