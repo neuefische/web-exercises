@@ -1,12 +1,15 @@
-# JS Array Methods 2: Letter Puzzle
+# JS Array Methods 2: Employee Data Puzzle
 
-Imagine you work in a very huge company with 500+ employees. All employees are stored in an array. Finding detailed information about specific employees could be a hard job. Fortunately you know some array methods that can help you. 
+This challenge tasks you with navigating a large dataset of over 500 employees, utilizing JavaScript array methods to uncover and resolve a letter puzzle.
 
 ## Task
 
-First get familiar with the data. You can find the employees array here: `/utils/data.js`. In the browser preview you can see a letter puzzle. You can fill it step by step by answering the following questions. Replace the `null` with an appropriate array method. You can use `console.log` to check what you get. 
+Begin by examining the employees array in /utils/data.js. Your goal is to solve a series of questions, each requiring a specific array method, to gradually complete by cleaning up the chaos of letters displayed in the browser preview.
 
-Switch to the  `./js/index.js`  file, open the console and browser preview and make something great happen!
+### Instructions
+- Access the `employees` data and understand its structure.
+- Proceed to `./js/index.js`. Each question in the challenge corresponds to a part of the puzzle, requiring the use of a particular array method.
+- Test your answers using `console.log()` and track your progress in the console and browser preview.
 
 ## Notes
 
