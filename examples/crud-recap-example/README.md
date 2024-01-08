@@ -19,7 +19,7 @@ Paths are relative to the `/pages` folder.
 | File                            | URL                          | What it does                            |
 |---------------------------------|------------------------------|-----------------------------------------|
 | index.js                        | /                            | Displays all services                   |
-| services/[id].js                | /services/:id                | Displays a service by given in          |
+| services/[id].js                | /services/:id                | Displays a service by given id          |
 | dashboard/index.js              | /dashboard                   | Displays all services with edit actions |
 | dashboard/services/create.js    | /dashboard/services/create   | Displays the create service form        |
 | dashboard/services/[id]/edit.js | /dashboard/services/:id/edit | Displays the edit service form          |
