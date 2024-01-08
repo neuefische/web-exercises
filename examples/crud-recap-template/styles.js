@@ -23,6 +23,7 @@ export default createGlobalStyle`
 
   body {
     margin: 0;
+    padding: 1rem;
   }
 
   #__next {
@@ -30,6 +31,24 @@ export default createGlobalStyle`
     flex-direction: column;
     gap: 1rem;
     min-height: 100vh;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  label {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+
+  nav {
+    display: flex;
+    gap: 1rem;
   }
 `;
 

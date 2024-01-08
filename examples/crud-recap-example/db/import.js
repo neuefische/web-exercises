@@ -10,12 +10,12 @@ await connect(process.env.MONGODB_URI);
 console.log("Dropping existing collections...");
 await Service.collection.drop();
 
-await Promise.all(
-  services.map(async (service, index) => {
-    console.log(`Creating service: ${index}...`);
-    await Service.create(service);
-  })
-);
+function createService(service, index) {
+  console.log(`Creating service: ${index}...`);
+  return Service.create(service);
+}
+
+await Promise.all(services.map(createService));
 
 console.log("Disconnecting...");
 await disconnect();

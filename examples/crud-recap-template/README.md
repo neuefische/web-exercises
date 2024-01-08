@@ -1,6 +1,27 @@
-# CRUD Recap Project Template
+# CRUD Recap Project
 
-This is a template for practicing CRUD activities.
+This project is an app that renders a recipe book, and allows their editing, creation and removal.
+
+## API Endpoints
+
+| Method | URL              | What it does         |
+|--------|------------------|----------------------|
+| GET    | /api/recipes     | Gets all recipes     |
+| POST   | /api/recipes     | Creates new recipes  |
+| GET    | /api/recipes/:id | Gets recipe by id    |
+| PUT    | /api/recipes/:id | Edits recipe by id   |
+| DELETE | /api/recipes/:id | Deletes recipe by id |
+
+## Pages
+
+Paths are relative to the `/pages` folder.
+
+| File                 | URL                | What it does                    |
+|----------------------|--------------------|---------------------------------|
+| index.js             | /                  | Displays all recipes            |
+| new.js               | /new               | Displays the create recipe form |
+| recipes/[id].js      | /services/:id      | Displays a recipe by given `id` |
+| recipes/edit/[id].js | /services/edit/:id | Displays the edit recipe form   |
 
 ## Development
 
@@ -27,4 +48,3 @@ You can use the following commands:
 - `npm run start` to start a production server
 - `npm run test` to run the tests
 - `npm run lint` to run the linter
-- `npm run db:populate` to populate the db with some fixtures

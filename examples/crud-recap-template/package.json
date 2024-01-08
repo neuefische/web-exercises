@@ -7,8 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest --watchAll",
-    "db:populate": "node ./db/import.js"
+    "test": "jest --watchAll"
   },
   "dependencies": {
     "eslint": "8.44.0",
