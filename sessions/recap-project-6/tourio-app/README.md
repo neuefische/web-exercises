@@ -17,8 +17,8 @@ Your repository in Github must be named `yourName-partnerName-tourio-app`
 ### Read Data
 
 - Set up a database; use the [`lib/Tourio-db.places.json` file](lib/Tourio-db.places.json) to insert sample data.
-- In `pages/api/index.js`, replace the `places` variable imported from `lib/db.js` with a `GET` request from your database.
-- Do the same in `pages/api/[id]/index.js` for the details page.
+- In `pages/api/index.js`, replace the `db_places` variable imported from `lib/db.js` with a `GET` request from your database.
+- Do the same in `pages/api/places/[id]/index.js` for the details page.
 
 ### Create Form
 
