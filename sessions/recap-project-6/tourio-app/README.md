@@ -16,7 +16,7 @@ Your repository in Github must be named `yourName-partnerName-tourio-app`
 
 ### Read Data
 
-- Set up a database; use the [`lib/db.json` file](lib/db.json) to insert sample data.
+- Set up a database; use the [`lib/Tourio-db.places.json` file](lib/Tourio-db.places.json) to insert sample data.
 - In `pages/api/index.js`, replace the `places` variable imported from `lib/db.js` with a `GET` request from your database.
 - Do the same in `pages/api/[id]/index.js` for the details page.
 
@@ -45,6 +45,8 @@ Your repository in Github must be named `yourName-partnerName-tourio-app`
 ### Comment Section
 
 - To add a comment section for each place, you'll need to create a database schema or collection to store comments associated with each place. Each comment should have a reference to the place it belongs to, such as a place ID.
+
+- Set up a database; use the [`lib/Tourio-db.comments.json` file](lib/Tourio-db.comments.json) to insert sample data.
 
 - Create a form in your place detail page pages/places/[id]/index.js that allows users to submit comments.
 
