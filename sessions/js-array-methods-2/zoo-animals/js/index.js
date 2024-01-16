@@ -1,4 +1,13 @@
 import { zooAnimals } from "../utils/db.js";
+
+function checkAnimal(animals, animalName) {
+  //return null;
+  return animals.includes(animalName);
+}
+
+// -------------------------------------------------------------------------------------
+// ----- The following code is used for the browser preview. Please don't touch it -----
+
 const animalList = document.querySelector("[data-js='animalList']");
 const animalForm = document.querySelector("[data-js='animalForm']");
 const output = document.querySelector("[data-js='output']");
@@ -25,8 +34,3 @@ zooAnimals.forEach((animal) => {
 // This website uses a function to check wether a specific animal is part of the zoo or not but it's not working correct.
 // Please implement the function 'checkAnimal' that gets an array of animals and an animal name
 // The function should return 'true' if the animal name is included in the array or 'false' if not.
-
-function checkAnimal(animals, animalName) {
-  //return null;
-  return animals.includes(animalName);
-}
