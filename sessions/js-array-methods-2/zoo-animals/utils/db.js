@@ -1,5 +1,5 @@
 export const zooAnimals = [
-    "African Wild Ass",
+    "African Wild Horse",
     "Sheep",
     "Prairie Dog",
     "Antelope",

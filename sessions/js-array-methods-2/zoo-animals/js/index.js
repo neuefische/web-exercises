@@ -4,10 +4,14 @@ import { zooAnimals } from "../utils/db.js";
 // Please implement the function 'checkAnimal' that gets an array of animals and an animal name
 // The function should return 'true' if the animal name is included in the array or 'false' if not.
 
-function checkAnimal(animals, animalName) {
-  //return null;
-  return animals.includes(animalName);
+function hasAnimal(animals, animalName) {
+  return null;
 }
+
+// Bonus:
+// Can you modify the function so that it works case-insensitive?
+// This means it should return true, even if you search for 'sheep' or 'SHEEP' or 'sHeEp'.
+// Hint: Remember the 'map' function
 
 // -------------------------------------------------------------------------------------
 // ----- The following code is used for the browser preview. Please don't touch it -----
@@ -18,15 +22,15 @@ const output = document.querySelector("[data-js='output']");
 
 animalForm.addEventListener("submit", (event) => {
   event.preventDefault();
-  const searchTerm = event.target.searchQuery.value;
+  const searchQuery = event.target.searchQuery.value;
   output.textContent = "";
-  if (searchTerm.trim() === "") {
+  if (searchQuery.trim() === "") {
     return;
   }
-  const result = checkAnimal(zooAnimals, searchTerm);
+  const result = hasAnimal(zooAnimals, searchQuery);
   output.textContent = result
-    ? `Yes, we have ${searchTerm}`
-    : `No, we don't have ${searchTerm}`;
+    ? `Yes, we have ${searchQuery}`
+    : `No, we don't have ${searchQuery}`;
 });
 zooAnimals.forEach((animal) => {
   const tag = document.createElement("span");
@@ -34,4 +38,3 @@ zooAnimals.forEach((animal) => {
   tag.textContent = animal;
   animalList.append(tag);
 });
-
