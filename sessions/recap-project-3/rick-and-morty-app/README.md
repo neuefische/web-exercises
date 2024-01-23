@@ -100,7 +100,7 @@ their name into the search bar.
 > 💡 You might run into some bugs at this point. Think about how the page and max page index might
 > have to change when you start searching for only subsets of all characters.
 
-### Extra: Refactoring your Code
+### Bonus: Refactoring your Code
 
 You've done it: your app is working as expected. 🚀✨
 
@@ -118,6 +118,36 @@ However, we want to tidy up our code so that not everything is written in a sing
   functions. Use them as the argument for `onClick` or `onSubmit`, respectively.
 - Append the created components at the right places in your HTML. All container elements are already
   available in the `index.js`.
+
+### Bonus: Style Your Project
+
+Congratulations on getting your project up and running! Now, let's take it to the next level by adding some flair and personality through styling. The bonus feature focuses on enhancing the visual appeal of your page with creative design elements. Follow these steps to give your project that extra touch:
+
+#### Step 1: Experiment with Colors and Fonts
+
+Dare to be bold with your color palette and font choices. Explore combinations that complement each other and resonate with the theme of your project. Remember, a harmonious color scheme and well-chosen fonts contribute significantly to the overall aesthetic.
+
+#### Step 2: Prioritize Legibility
+
+While getting creative, ensure that your page remains easy to read and navigate. Legibility is key to a positive user experience. Maintain a good contrast between text and background, and choose font sizes that are comfortable for users to consume your content.
+
+#### Step 3: Embrace Animation
+
+Introduce dynamic elements to your project through animations. Whether it's subtle transitions or eye-catching effects, animations can bring your project to life. Consider using CSS animations or JavaScript libraries to achieve the desired visual impact.
+
+#### Step 4: Consistency is Key
+
+Maintain a consistent design language across your project. This includes keeping a uniform style for buttons, navigation elements, and other interactive components. Consistency creates a polished and professional appearance.
+
+#### Step 5: Mobile Responsiveness
+
+Don't forget about the mobile experience! Test your project on various devices to ensure that your styling adjustments look great on both desktop and mobile screens. Responsive design is crucial for reaching a wider audience.
+
+#### Step 6: Get Feedback
+
+Once you've implemented your styling enhancements, gather feedback from colleagues or friends. Fresh perspectives can provide valuable insights and help you fine-tune your design.
+
+Remember, this bonus feature is all about expressing your creativity, so have fun with it! Feel free to push the boundaries, but always keep user experience in mind. Happy styling!
 
 ---
 
