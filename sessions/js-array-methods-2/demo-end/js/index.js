@@ -55,21 +55,21 @@ const stringList = document.querySelector("[data-js='stringList']");
 const stringOutput = document.querySelector("[data-js='string-output']");
 const findOutput = document.querySelector("[data-js='find-output']");
 
-numbers.map((number) => {
+numbers.forEach((number) => {
   const card = document.createElement("li");
   card.classList.add("tag");
   card.innerHTML = `<span>${number}</span>`;
   numberList.append(card);
 });
 
-strings.map((number) => {
+strings.forEach((number) => {
   const card = document.createElement("li");
   card.classList.add("tag");
   card.innerHTML = `<span>${number}</span>`;
   stringList.append(card);
 });
 
-simpsons.map((simpson) => {
+simpsons.forEach((simpson) => {
   const card = document.createElement("li");
   card.classList.add("character");
   card.innerHTML = `<p class="title">${simpson.name}</p>
