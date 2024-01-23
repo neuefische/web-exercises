@@ -1,16 +1,3 @@
-import {
-  letter1,
-  letter2,
-  letter3,
-  letter4,
-  letter5,
-  letter6,
-  letter7,
-  letter8,
-  letter9,
-  letter10,
-  letter11,
-} from "../utils/service.js";
 import { employees } from "../utils/data.js";
 
 // EXAMPLE:
@@ -82,19 +69,16 @@ const employeesSortedByLastName = null;
 
 // Great! 🎉 You got it! 🚀 Now you can read the solution of the letter puzzle. 💪
 
-// ---------- ( this code is used for the puzzle! Don't touch it ) ------------
-letter1.textContent = hasEmployeesOlderThan65 ? "A" : "I";
-letter10.textContent = employeesSortedByAge
-  ? employeesSortedByAge[0].city[0]
-  : "I";
-letter2.textContent = employeeNamedFrederique ? "P" : "I";
-letter8.textContent = employeeWithId ? employeeWithId.city[0] : "L";
-letter3.textContent = employeeYoungerThan18 ? "E" : "F";
-letter4.textContent = everyEmployeeHasPhoneNumber ? "I" : "R";
-letter11.textContent = employeesSortedByLastName
-  ? employeesSortedByLastName[0].city[0]
-  : "X";
-letter5.textContent = everyIdStartsWith0 ? "F" : "I";
-letter6.textContent = everyEmployeeHasFirstAndLastName ? "E" : "I";
-letter7.textContent = employeeLouise33 ? employeeLouise33.city[0] : "F";
-letter9.textContent = ednaInvestment ? ednaInvestment.city[0] : "L";
+export {
+  hasEmployeesOlderThan65,
+  employeesSortedByAge,
+  employeeNamedFrederique,
+  employeeWithId,
+  employeeYoungerThan18,
+  everyEmployeeHasPhoneNumber,
+  employeesSortedByLastName,
+  everyIdStartsWith0,
+  everyEmployeeHasFirstAndLastName,
+  employeeLouise33,
+  ednaInvestment,
+};
