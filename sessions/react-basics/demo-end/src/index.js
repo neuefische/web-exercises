@@ -1,4 +1,6 @@
+import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import App from "./App";
 //----------------------------------------------------------------------
 // Button in Vanilla JS
 
@@ -8,37 +10,26 @@ const vanillaJsRootElement = document.querySelector("#vanilla-js-root");
 // Create a button element, set its type and text content, and add an event listener.
 const button = document.createElement("button");
 button.type = "button";
-button.textContent = "click me";
+button.textContent = "click with Vanilla JS";
 button.addEventListener("click", () => console.log("Hello"));
 
 // Append the button to the dom element.
-vanillaJsRootElement.body.append(button);
+vanillaJsRootElement.append(button);
 
 //----------------------------------------------------------------------
-// Button in React
+// index.js in React
 
 // This is the dom element that React will render into,
-// per convention, it is usually a div with an id of "root".
-const reactRootElement = document.querySelector("#root");
+// per convention, it is usually a div with an ID of "root".
+const rootElement = document.getElementById("root");
 
 // This is the "react" way to create a "root" that react can render into.
-const reactRoot = createRoot(reactRootElement);
+const root = createRoot(rootElement);
 
-function Button() {
-  const buttonText = "click to follow";
-
-  return (
-    <button type="button" onClick={() => console.log("Hello World")}>
-      {buttonText}
-    </button>
-  );
-}
 // Call ".render()" on the root to render the elements into the DOM.
 // Notice that this is NOT a template literal, it is JSX.
-reactRoot.render(
-  <>
-    <Button />
-    <Button />
-    <Button />
-  </>
+root.render(
+  <StrictMode>
+    <App />
+  </StrictMode>
 );
