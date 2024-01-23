@@ -1,7 +1,7 @@
 {
-  "name": "js-error-handling_fetch-solution",
+  "name": "js-array-methods-2_zoo-animals",
   "version": "0.0.0-unreleased",
-  "description": "HTML, CSS and JS with jest support",
+  "description": "JS Array Methods 2: Zoo Animals",
   "main": "index.html",
   "type": "module",
   "scripts": {
@@ -17,5 +17,6 @@
   },
   "nf": {
     "template": "html-css-js"
-  }
+  },
+  "private": true
 }
