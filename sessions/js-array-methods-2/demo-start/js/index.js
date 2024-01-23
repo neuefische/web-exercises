@@ -35,13 +35,40 @@ const simpsons = [
     income: 35,
   },
 ];
+const numbers = [512, 77, 333, 49, 81, 4, -12, 3.14, 1000, 31, 99];
+const strings = [
+  "HTML",
+  "React",
+  "CSS",
+  "Next.js",
+  "MongoDB",
+  "styled components",
+  "mongoose",
+  "next-auth",
+  "Visual Studio Code",
+];
 
 const characterList = document.querySelector("[data-js='characterList']");
-const someArea = document.querySelector("[data-js='some']");
-const everyArea = document.querySelector("[data-js='every']");
-const findArea = document.querySelector("[data-js='find']");
-const sortedByAgeArea = document.querySelector("[data-js='sortNumbers']");
-const sortedByNameArea = document.querySelector("[data-js='sortStrings']");
+const numberList = document.querySelector("[data-js='numberList']");
+const numberOutput = document.querySelector("[data-js='number-output']");
+const stringList = document.querySelector("[data-js='stringList']");
+const stringOutput = document.querySelector("[data-js='string-output']");
+const findOutput = document.querySelector("[data-js='find-output']");
+
+
+numbers.map((number) => {
+  const card = document.createElement("li");
+  card.classList.add("tag");
+  card.innerHTML = `<span>${number}</span>`;
+  numberList.append(card);
+});
+
+strings.map((number) => {
+  const card = document.createElement("li");
+  card.classList.add("tag");
+  card.innerHTML = `<span>${number}</span>`;
+  stringList.append(card);
+});
 
 simpsons.map((simpson) => {
   const card = document.createElement("li");
