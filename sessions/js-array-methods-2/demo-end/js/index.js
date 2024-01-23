@@ -35,13 +35,39 @@ const simpsons = [
     income: 35,
   },
 ];
+const numbers = [512, 77, 333, 49, 81, 4, -12, 3.14, 1000, 31, 99];
+const strings = [
+  "HTML",
+  "React",
+  "CSS",
+  "Next.js",
+  "MongoDB",
+  "styled components",
+  "mongoose",
+  "next-auth",
+  "Visual Studio Code",
+];
 
 const characterList = document.querySelector("[data-js='characterList']");
-const someArea = document.querySelector("[data-js='some']");
-const everyArea = document.querySelector("[data-js='every']");
-const findArea = document.querySelector("[data-js='find']");
-const sortedByAgeArea = document.querySelector("[data-js='sortNumbers']");
-const sortedByNameArea = document.querySelector("[data-js='sortStrings']");
+const numberList = document.querySelector("[data-js='numberList']");
+const numberOutput = document.querySelector("[data-js='number-output']");
+const stringList = document.querySelector("[data-js='stringList']");
+const stringOutput = document.querySelector("[data-js='string-output']");
+const findOutput = document.querySelector("[data-js='find-output']");
+
+numbers.map((number) => {
+  const card = document.createElement("li");
+  card.classList.add("tag");
+  card.innerHTML = `<span>${number}</span>`;
+  numberList.append(card);
+});
+
+strings.map((number) => {
+  const card = document.createElement("li");
+  card.classList.add("tag");
+  card.innerHTML = `<span>${number}</span>`;
+  stringList.append(card);
+});
 
 simpsons.map((simpson) => {
   const card = document.createElement("li");
@@ -57,53 +83,19 @@ simpsons.map((simpson) => {
   characterList.append(card);
 });
 
-// some (returns true or false)
-// const callbackFn = (simpson) => {
-//   //console.log(simpson)
-//   return simpson.age < 15;
-// };
+const numberToCheck = 3333;
+const numberIsIncluded = numbers.includes(numberToCheck);
+numberOutput.textContent = numberIsIncluded
+  ? `Yes, ${numberToCheck} it is included!`
+  : `No, ${numberToCheck} it's not included`;
 
-const someResult = simpsons.some((simpson) => {
-  //console.log(simpson);
-  return simpson.age < 15;
-});
-someArea.textContent = someResult ? "Yes, there is!" : "No, there isn't!";
+const stringToCheck = "MongoDB";
+const stringIsIncluded = strings.includes(stringToCheck);
+stringOutput.textContent = stringIsIncluded
+  ? `Yes, '${stringToCheck}' it is included!`
+  : `No, '${stringToCheck}' it's not included`;
 
-// every (returns true or false)
-const everyResult = simpsons.every((simpson) => {
-  //console.log(simpson);
-  return simpson.age < 15;
-});
-everyArea.textContent = everyResult ? "Yes, everybody!" : "Not everybody!";
-
-// find (returns the first found object or undefined)
-const findResult = simpsons.find((simpson) => {
-  return simpson.name === "Bart";
-});
-findArea.textContent = findResult?.name;
-
-// toSorted (returns a new array, now sorted)
-// return value < 0: sort a before b
-// return value > 0: sort b before a
-// return value === 0: keep order
-const simpsonsSortedByAge = simpsons.toSorted((a, b) => {
-  return a.age - b.age;
-});
-
-simpsonsSortedByAge.map((element) => {
-  return (sortedByAgeArea.textContent += `-${element.name}`);
-});
-
-const simpsonsSortedByName = simpsons.toSorted((a, b) => {
-  const nameA = a.name.toLowerCase();
-  const nameB = b.name.toLowerCase();
-  if (nameA > nameB) {
-    return 1;
-  } else {
-    return -1;
-  }
-});
-
-simpsonsSortedByName.map((element) => {
-  return (sortedByNameArea.textContent += `-${element.name}`);
-});
+const objectToFind = simpsons.find((simpson) => simpson.age === 12);
+findOutput.textContent = objectToFind
+  ? `Yes, it's '${objectToFind.name}'`
+  : "Cannot find any!";

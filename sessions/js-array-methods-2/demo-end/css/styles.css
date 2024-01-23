@@ -13,22 +13,28 @@ ul {
   gap: 0.5em;
   padding-left: 0;
 }
-p {
-  margin: 0.2em;
-}
-.title {
-  margin: 0 0 0.3em;
-  font-size: 1.5em;
-  font-weight: bold;
-}
 h2 {
   font-family: monospace;
   font-size: 0.8rem;
   font-style: italic;
   margin: 0.3em 0;
   color: #666;
+  text-align: center;
 }
-.frame {
-  border-bottom: 1px solid #ccc;
-  font-size: 1.8em;
+.tag {
+  background-color: cornflowerblue;
+  padding: 0.5em;
+  border-radius: 0.4em;
+  color: white;
+}
+section {
+  border: 2px solid #999;
+  border-radius: 0.5em;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+output {
+  display: block;
+  text-align: center;
+  font-size: 1.2em;
 }
