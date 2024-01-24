@@ -1,6 +1,32 @@
-# Finished Demo for JS Array Methods 2 Session
+# JS Array Methods 2: Demo End
+
+<!--
+
+Describe the exercise in a few sentences. E.g.:
+
+This challenge offers a simple form with three input fields. Let's make it interactive with JS!
+
+-->
 
 ## Task
+
+<!--
+
+Explaining the task in detail. E.g.:
+
+Use JavaScript to react to the form submission.
+
+Log all form data (in object form) into the console in the submit event handler.
+
+You can use the following hints as guideline:
+
+- Hint 1
+- Hint 2
+- ...
+
+Switch to the  `./js/index.js`  file and make something great happen!
+
+-->
 
 ## Notes
 
@@ -26,11 +52,3 @@ Select the "Preview: 3000" tab to view this project.
 Select the "Tests: logs" tab to view the tests.
 
 > The `npm run start` and `npm run test` scripts run automatically.
-
-### Scripts
-
-You can use the following commands:
-
-- `npm run start` to start a development server
-- `npm run test` to run the tests
-- `npm run lint` to run the linter
