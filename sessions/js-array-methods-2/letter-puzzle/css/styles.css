@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  font-family: monospace;
+  font-size: 2rem;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px 30px;
+}
+.letter {
+  min-width: 30px;
+  height: 30px;
+  border: 1px solid #555;
+  border-radius: 3px;
+  font-family: monospace;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.word {
+  display: flex;
+  gap: 3px;
+}
