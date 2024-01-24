@@ -1,32 +1,14 @@
-# JS Array Methods 2: Demo Start
+# JS Array Methods 2: Employees
 
-<!--
-
-Describe the exercise in a few sentences. E.g.:
-
-This challenge offers a simple form with three input fields. Let's make it interactive with JS!
-
--->
+This challenge tasks you with navigating a large dataset of over 500 employees, utilizing JavaScript array methods to find out if there is any employee that fits a specific condition.
 
 ## Task
 
-<!--
+Take a look at the browser preview. You will see large set of index cards, one card for each employee. There are four forms that help you finding a specific employees. Unfortunately the forms do not work correct. Your task is to implement the corresponding functions correctly. See `./js/index.js` for more information.
 
-Explaining the task in detail. E.g.:
-
-Use JavaScript to react to the form submission.
-
-Log all form data (in object form) into the console in the submit event handler.
-
-You can use the following hints as guideline:
-
-- Hint 1
-- Hint 2
-- ...
 
 Switch to the  `./js/index.js`  file and make something great happen!
 
--->
 
 ## Notes
 
