@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
+.shape {
+  width: 75px;
+  height: 75px;
+  margin: 30px;
+  background-color: black;
+}
