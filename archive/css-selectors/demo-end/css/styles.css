@@ -1,0 +1,114 @@
+/* I'm the universal selector. I target EVERYTHING. */
+* {
+  box-sizing: border-box;
+}
+
+/* PART 1: I'm a type selector. I target a specific type of element. */
+body {
+  font-family: system-ui;
+}
+
+h1 {
+  color: #ff4a11;
+  text-shadow: 3px 3px #252629;
+}
+
+h1,
+h2 {
+  margin: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* PART 2: I'm a class selector. I correspond with the classes declared as part
+of an HTML tag. Like <section class="main-section">. */
+.main-content {
+  width: 80%;
+  margin: auto;
+}
+
+.main-section {
+  padding: 20px;
+  background-color: #fff0f5;
+  margin-bottom: 20px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+
+.box--pink {
+  background-color: #ffb6c1;
+}
+
+/* PART 3: I'm an attribute selector. I correspond with the attributes declared 
+as part of HTML tags. */
+
+button[type="button"] {
+  padding: 20px;
+}
+
+ul[role="list"] {
+  list-style-type: none;
+}
+
+a[href^="https"] {
+  color: #ff69b4;
+  padding: 8px;
+}
+
+/* PART 4: I'm a pseudo-class. I'm  a keyword added to a selector that 
+specifies a special state of the selected element. */
+
+a:hover {
+  background-color: #ff69b4;
+  color: #fff;
+}
+
+input:focus {
+  outline: 2px solid #ff69b4;
+  border: none;
+  border-radius: 3px;
+}
+
+/* PART 5: I'm a pseudo-element. I'm a keyword added to a selector that lets
+you style a specific part of the selected element. */
+
+p::first-letter {
+  font-size: 32px;
+}
+
+a[href^="https"]:before {
+  content: "🍰";
+  margin-right: 8px;
+}
+
+/* PART 6: I'm the ID selector. I shouldn't be used. */
+
+#do-not-use-this {
+  color: #fff;
+}
+
+/* PART 7: I'm a descendant combinator. I will select all descendants
+of the parent element, but only those descendants that match my type. */
+
+.main-section .text {
+  color: #252629;
+  /* This should overwrite the color rule of the ID selector, but because 
+  of its very high specificity, the ID selector rule remains. The only way to
+  overwrite rules declares inside of an ID selector is to use !important, which
+  we want to avoid. */
+}
+
+/* PART 8: I'm a child combinator. I will select all direct children
+of the parent element, but only those children that match my type. */
+
+.main-section > article {
+  padding: 20px;
+  background-color: #ffb6c1;
+  border: 4px dotted #fff;
+}
