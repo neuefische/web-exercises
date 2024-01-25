@@ -1,20 +1,16 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
+import VanillaApp from "./VanillaApp";
 //----------------------------------------------------------------------
 // Button in Vanilla JS
 
 // This is the dom element we use to append our vanilla js button to.
 const vanillaJsRootElement = document.querySelector("#vanilla-js-root");
 
-// Create a button element, set its type and text content, and add an event listener.
-const button = document.createElement("button");
-button.type = "button";
-button.textContent = "click with Vanilla JS";
-button.addEventListener("click", () => console.log("Hello"));
+const vanillaApp = VanillaApp();
 
-// Append the button to the dom element.
-vanillaJsRootElement.append(button);
+vanillaJsRootElement.append(vanillaApp);
 
 //----------------------------------------------------------------------
 // index.js in React
