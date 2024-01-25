@@ -1,0 +1,8 @@
+.score {
+  font-size: 1.15rem;
+  text-align: center;
+  padding: 1rem 2rem;
+  background-color: rgb(250, 235, 163);
+  border-radius: 0.5rem;
+  width: max-content;
+}

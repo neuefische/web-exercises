@@ -1,0 +1,8 @@
+@import "./css/global.css";
+
+@import "./components/Machine/Machine.css";
+@import "./components/Result/Result.css";
+@import "./components/Score/Score.css";
+@import "./components/SpinButton/SpinButton.css";
+@import "./components/Status/Status.css";
+@import "./components/Wheel/Wheel.css";

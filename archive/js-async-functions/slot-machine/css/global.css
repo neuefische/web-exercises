@@ -1,0 +1,15 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 2rem;
+  min-height: 100vh;
+}

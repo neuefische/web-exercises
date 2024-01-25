@@ -1,0 +1,28 @@
+.spin-button {
+  padding: 1rem 4rem;
+  font-size: 1rem;
+  border: 0;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  background-color: #f0b90b;
+  background: linear-gradient(125deg, #f0b90b 0%, #f3d956 50%, #c9a52f 100%);
+  color: #7d5704d5;
+  text-shadow: 1px 1px 0px #f6efd88b, -1px -1px 0px #b99f4c7a;
+  border: 2px outset #f9c82a;
+}
+
+.spin-button:hover {
+  background-color: #e5c90e;
+  background: linear-gradient(125deg, #e5c90e 0%, #f8df61 50%, #dfb93b 100%);
+}
+
+.spin-button:active {
+  background-color: #f0a90b;
+  background: linear-gradient(125deg, #f0a90b 0%, #e8c459 50%, #e1a131 100%);
+}
+
+.spin-button:disabled {
+  background-color: #c0b6a2;
+  background: linear-gradient(125deg, #c0b6a2 0%, #ccbd90 50%, #cfbea1 100%);
+  border: 2px outset #c0b6a2;
+}
