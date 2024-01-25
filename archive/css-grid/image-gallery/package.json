@@ -1,0 +1,12 @@
+{
+  "name": "css-grid_image-gallery",
+  "version": "0.0.0-unreleased",
+  "description": "CSS Layout with Grid - Exercise - Pictures",
+  "main": "index.html",
+  "nf": {
+    "template": "html-css"
+  },
+  "scripts": {
+    "start": "npx -y live-server@latest --port=3000"
+  }
+}

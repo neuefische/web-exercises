@@ -1,12 +1,6 @@
-# selectors-and-cascading
+# CSS Grid: Demo Start
 
-## Task
-
-- Open the `./css/styles.css` file and follow the instructions given there.
-
-## Notes
-
-- You only have to touch the `./css/styles.css` file.
+This is the starter of the CSS Grid demo.
 
 ## Development
 

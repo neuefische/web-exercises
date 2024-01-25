@@ -1,0 +1,12 @@
+{
+  "name": "css-grid_service-gallery",
+  "version": "0.0.0-unreleased",
+  "description": "CSS Layout with Grid - Exercise - Services",
+  "main": "index.html",
+  "nf": {
+    "template": "html-css"
+  },
+  "scripts": {
+    "start": "npx -y live-server@latest --port=3000"
+  }
+}

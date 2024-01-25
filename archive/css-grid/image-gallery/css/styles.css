@@ -1,0 +1,60 @@
+/*
+Use grid to change the layout:
+
+[ ] - Spring is displayed in the upper left corner
+[ ] - Summer is displayed in the upper right corner
+[ ] - Autumn is displayed at the bottom left
+[ ] - Winter is displayed at the bottom right
+
+Hint: you need only two lines of code in your grid container
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui;
+}
+
+.teaser-grid {
+  min-width: 40rem;
+  min-height: 50vh;
+
+  /* Add styles to the grid container */
+}
+
+.teaser-grid__teaser {
+  padding: 3rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-size: cover;
+  background-position: center;
+}
+
+.teaser-grid__teaser--spring {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://source.unsplash.com/random/600x300?spring");
+}
+.teaser-grid__teaser--summer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://source.unsplash.com/random/600x300?summer");
+}
+.teaser-grid__teaser--autumn {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://source.unsplash.com/random/600x300?autumn");
+}
+.teaser-grid__teaser--winter {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://source.unsplash.com/random/600x300?winter");
+}
+
+.teaser-grid__link {
+  color: white;
+  text-decoration: none;
+}

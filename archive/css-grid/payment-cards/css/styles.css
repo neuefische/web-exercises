@@ -1,0 +1,51 @@
+/*
+Use grid to change the layout:
+
+[ ] - Three cards are displayed next to each other
+[ ] - There is a gap inbetween the cards
+
+Hint: you need only three lines of code in your grid container
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui;
+
+  background-color: #e3e5e8;
+}
+
+.cards {
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 50rem;
+
+  /* Add styles to the container */
+}
+
+.cards__option {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 6px;
+}
+
+.cards__option--highlight {
+  background-color: #fa4b12;
+  color: white;
+}
+
+.cards__name {
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+}
+
+.cards__price {
+  font-size: 2.5rem;
+  font-weight: bold;
+}

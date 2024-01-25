@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui;
+}
+
+/* 
+- Use grid-template areas to place the images as shown in the challenges file
+- Assign an area to each image
+*/
+
+.image-board__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 200px 300px;
+  gap: 1rem;
+  padding: 1rem;
+  /* Add styles here */
+}
+
+.image-board__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.image-board__image--1 {
+  /* Add styles here */
+}
+
+.image-board__image--2 {
+  /* Add styles here */
+}
+
+.image-board__image--3 {
+  /* Add styles here */
+}
+
+.image-board__image--4 {
+  /* Add styles here */
+}
+
+.image-board__image--5 {
+  /* Add styles here */
+}
+
+.image-board__image--6 {
+  /* Add styles here */
+}
