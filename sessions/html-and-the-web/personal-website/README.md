@@ -2,11 +2,9 @@
 
 In this challenge you will start creating your own personal website.
 
-💡 If you haven't already, create a new repository on GitHub for your personal website.
-
 ## Getting started with HTML
 
-1. Start working on the HTML markup of your personal website.
+1. Start working on the HTML markup of your personal website inside the `index.html` file.
 2. Think about the content you want to put on your website and its structure. You can use
    [excalidraw](https://excalidraw.com/) to create a draft of your personal website. Don't worry
    about the styling - we will take care of that later. If you need some ideas, refer to the
