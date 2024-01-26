@@ -1,3 +1,7 @@
+/**
+ * @jest-environment jsdom
+ */
+
 import { getNewRocket, getRocket } from "./core/rocket.js";
 import { FISHSAT, NFSAT } from "./payload/satellites.js";
 import * as launchSequence from "./launchSequence.js";
