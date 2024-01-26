@@ -23,6 +23,9 @@ Here is an example of a structure for a website that you can draw inspiration fr
 > need to be styled (to align horizontally for example). We will improve this during the next days.
 > For now, don't focus on the looks, focus on including all relevant HTML elements.
 
+> 💡 You can open up live preview in vscode to see the website while you are programming!
+> ![live preview 1](assets/live-preview-1.png) > ![live preview 2](assets/live-preview-2.png)
+
 3. Start to put your ideas into code, giving your website structure and content. Use semantic HTML
    whenever possible.
 
