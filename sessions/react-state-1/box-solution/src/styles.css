@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui;
+}
+
+main {
+  display: grid;
+  gap: 20px 0;
+  grid-template-rows: 200px 40px;
+  grid-template-columns: 100%;
+  align-content: center;
+  width: 400px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.box {
+  background: hotpink;
+  grid-column: span 3;
+  border-radius: 3px;
+}
+
+.box--active {
+  background: skyblue;
+}
+
+button {
+  width: 100%;
+}
