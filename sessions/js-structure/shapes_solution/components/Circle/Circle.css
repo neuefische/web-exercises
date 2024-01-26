@@ -1,0 +1,6 @@
+.circle {
+  width: 200px;
+  aspect-ratio: 1;
+  border-radius: 999px;
+  background-color: var(--color-granite);
+}
