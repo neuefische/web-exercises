@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+.form {
+  display: grid;
+  grid-gap: 20px;
+  align-content: center;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 25px;
+  max-width: 500px;
+}
+
+.input,
+.button {
+  border: 1px solid #888;
+  padding: 5px 10px;
+}
+
+.output {
+  border: 1px solid #ccc;
+  height: 30px;
+  padding: 6px 10px;
+}
