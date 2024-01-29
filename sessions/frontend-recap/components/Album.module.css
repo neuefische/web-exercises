@@ -1,0 +1,29 @@
+.album {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+}
+
+.link:has(img) {
+  transition: opacity .2s ease-in-out
+}
+
+.link:has(img):hover {
+  opacity: .6;
+}
+
+.artist {
+  font-weight: bold;
+}
+
+.cover {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}

@@ -1,0 +1,28 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-weight: bold;
+}
+
+.form input:not([type="file"]),
+.form button {
+  margin: 0;
+  padding: 0 1rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.form button {
+  background-color: dodgerblue;
+  color: white;
+}

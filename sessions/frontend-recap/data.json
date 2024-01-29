@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Kind of Blue",
+    "artist": "Miles Davis",
+    "year": 1959,
+    "cover": "https://i.discogs.com/wjjMk1xCKdaPbsUbaXWzHBNi3K-fmt3CYkQGqt0c_Z8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyNzYx/ODMtMTY3NzAwMzM5/Ni0yMDQ1LmpwZWc.jpeg"
+  },
+  {
+    "id": 2,
+    "title": "Are You Experienced?",
+    "artist": "Jimi Hendrix",
+    "year": 1967,
+    "cover": "https://i.discogs.com/Z1qGO9Rly1Jdc0Ra95FC5jKKdQJnUPpvQz9uVBE9ZAI/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg1NDE4/MDYtMTQ3MTExMDU1/My02MzI1LmpwZWc.jpeg"
+  },
+  {
+    "id": 3,
+    "title": "Hejira",
+    "artist": "Joni Mitchell",
+    "year": 1976,
+    "cover": "https://i.discogs.com/VOLirf5O15_wfQOjkIYDMDyIFPrkP-u-9LPtdrePm7Y/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk0MDMy/My0xNjU0MzUxMzc3/LTg3ODYuanBlZw.jpeg"
+  },
+  {
+    "id": 4,
+    "title": "Kate Bush",
+    "artist": "Hounds of Love",
+    "year": 1985,
+    "cover": "https://i.discogs.com/DUcflD1Qg5ukeRgW1jwOkZ4HkB59Cc6qEl2uBh81gxY/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5NzE2/My0xNDc1NTkwOTMy/LTY0MTEuanBlZw.jpeg"
+  },
+  {
+    "id": 6,
+    "title": "Loveless",
+    "artist": "My Bloody Valentine",
+    "year": 1991,
+    "cover": "https://i.discogs.com/BX3VaGJBENv-zgHEdez23DDFIVQlaSWGgdr_8hG6dWA/rs:fit/g:sm/q:90/h:280/w:280/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNzYy/Mi0xMjUwMjA4Njc5/LmpwZWc.jpeg"
+  },
+  {
+    "id": 6,
+    "title": "Kid A",
+    "artist": "Radiohead",
+    "year": 2000,
+    "cover": "https://i.discogs.com/_zg0Us0N_anqCz9hJvFGeRK2v69eDDCxQnHkd7RcgTk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc0NzQz/LTE1NDg5MDI2NDMt/Mzg2OS5qcGVn.jpeg"
+  }
+]
