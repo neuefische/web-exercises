@@ -10,7 +10,6 @@ export default function EditPage({ getAlbum, editAlbum }) {
   }
 
   async function onSubmit(data) {
-    console.log(data);
     editAlbum({ ...data, id: album.id });
     router.push(`/albums/${album.id}`);
   }

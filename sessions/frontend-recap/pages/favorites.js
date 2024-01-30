@@ -1,6 +1,6 @@
 import AlbumList from "@/components/AlbumList";
 
-export default function AllPage({ albums = [] }) {
+export default function FavoritesPage({ albums = [] }) {
   const favoriteAlbums = albums.filter(({ isFavorite }) => isFavorite);
   return (
     <>

@@ -14,7 +14,7 @@ export default function AlbumPage({ getAlbum, toggleFavorite, removeAlbum }) {
   const { artist, title, cover, year, id, isFavorite } = album;
 
   function handleDelete() {
-    if (!confirm("Are you sure?")) {
+    if (!window.confirm("Are you sure?")) {
       return;
     }
     removeAlbum(id);
