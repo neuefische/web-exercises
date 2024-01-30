@@ -2,6 +2,17 @@
 
 This app shows how to handle a list of favourite music albums in Next.js.
 
+## Local installation
+
+Run the following command:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/frontend-recap/sessions/frontend-recap/demo
+cd frontend-crud-recap-demo
+npm install
+npm run dev
+```
+
 ## Pages
 
 Paths are relative to the `/pages` folder.
