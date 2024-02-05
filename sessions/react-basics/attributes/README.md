@@ -4,7 +4,7 @@ By now, you are familiar with rendering HTML in React and how to extract this HT
 
 Let's now focus on HTML attributes in JSX and the (minor) differences to normal HTML.
 
-Have a look at the [App.js](./src/App.js) file: you will find the `App` returning a single `<div>`.
+Have a look at the [App.jsx](./src/App.jsx) file: you will find the `App` returning a single `<div>`.
 
 ## Task
 
@@ -20,7 +20,7 @@ Your component should contain the following parts:
 ## Notes
 
 - You rendered Article component does not have any styling? Remember that you need to use `className` instead of `class` in JSX.
-- You only have to touch the [App.js](src/App.js) file.
+- You only have to touch the [App.jsx](src/App.jsx) file.
 
 ## Development
 
