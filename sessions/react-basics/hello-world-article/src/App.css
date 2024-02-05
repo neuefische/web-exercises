@@ -1,0 +1,45 @@
+:root {
+  /* Color Variables */
+  --primary-dark: #2e016d;
+  --primary: #3f0097;
+  --primary-light: #8236ff;
+  --secondary-dark: #38ccda;
+  --secondary: #7fd9e2;
+  --accent: #ffd15d;
+  --black-light: #303030;
+  --black: #000000;
+  --white: #ffffff;
+  --grey-dark: #b6b9c2;
+  --grey-light: #f5f6f6;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui;
+
+}
+
+article {
+  width: 50%;
+  margin: 2rem auto;
+  padding: 0.5rem;
+  background-color: var(--primary);
+  box-shadow: var(--black) 0px 2px 8px;
+  text-align: center;
+  border: 1px solid var(--black);
+  border-radius: 1rem;
+}
+
+h1 {
+  color: var(--primary);
+}
+
+p {
+  color: var(--black);
+}
