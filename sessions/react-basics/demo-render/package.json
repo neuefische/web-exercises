@@ -3,18 +3,26 @@
   "version": "0.0.0-unreleased",
   "description": "React Render Demo",
   "main": "src/index.js",
+  "type": "module",
   "dependencies": {
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-scripts": "5.0.1"
+    "react-dom": "18.2.0"
   },
-  "devDependencies": {
-    "@babel/runtime": "7.20.0",
-    "eslint-plugin-react-hooks": "4.6.0"
+"devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "vite-plugin-eslint": "^1.8.1",
+    "vite": "^5.0.12"
   },
-  "scripts": {
-    "start": "react-scripts start"
-  },
+"scripts": {
+  "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+  "dev": "vite",
+  "build": "vite build",
+  "serve": "vite preview"
+},
   "nf": {
     "template": "react-minimal"
   },

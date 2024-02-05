@@ -1,4 +1,5 @@
 import { createRoot } from "react-dom/client";
+import './index.css'
 
 // This is the dom element that react will render into,
 // per convention, it is usually a div with an id of "root".
