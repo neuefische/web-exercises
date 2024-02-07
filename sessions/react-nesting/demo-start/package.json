@@ -1,5 +1,6 @@
 {
-  "name": "demo-start",
+  "name": "react-nesting_demo-start",
+  "description": "React Nesting: Demo Start",
   "private": true,
   "version": "0.0.0",
   "type": "module",
