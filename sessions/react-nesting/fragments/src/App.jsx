@@ -1,5 +1,4 @@
-import React from "react";
-import "./styles.css";
+import "./App.css";
 import Box from "./components/Box";
 
 export default function App() {
