@@ -1,35 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Animal from "./components/Animal";
+import AnimalCategory from "./components/AnimalCategory";
+import Header from "./components/Header";
+import "./App.css";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <main>
+      <Header />
+      <AnimalCategory title="Fluffy Fur">
+        <Animal emoji="🐕" name="Lucky" description={<p>Very cute dog</p>} />
+        <Animal
+          emoji="🐈"
+          name="Mittens"
+          description={<p>A playful kitten</p>}
+        />
+      </AnimalCategory>
+      <AnimalCategory title="Waterproof">
+        <Animal
+          emoji="🐢"
+          name="Archibald"
+          description={
+            <>
+              <p>Super relaxed turtle</p>
+              <ul>
+                <li>Eats lettuce all the time</li>
+                <li>Can sleep in your fridge</li>
+              </ul>
+            </>
+          }
+        />
+      </AnimalCategory>
+      <AnimalCategory title="Wingman">
+        <Animal
+          emoji="🐣"
+          name="Chick Norris"
+          description={<p>A nested chick</p>}
+        />
+      </AnimalCategory>
+    </main>
+  );
 }
-
-export default App
