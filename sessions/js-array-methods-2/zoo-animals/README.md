@@ -4,7 +4,7 @@ Our zoo has a lot of animals. These animals are shown on the website. To improve
 
 ## Task
 
-Look inside the `index.js`. There is a function called `hasAnimals`. Your task is to implement this function correctly.
+Look inside the `index.js`. There is a function called `hasAnimal`. Your task is to implement this function correctly.
 
 ## Notes
 
