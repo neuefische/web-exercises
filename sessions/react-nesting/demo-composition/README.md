@@ -1,8 +1,20 @@
-# React + Vite
+# React Nesting: React Nesting Demo Composition
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Notes
 
-Currently, two official plugins are available:
+- This is the final version of the demo
+- You find the starting point for this demo in `sessions/react-nesting/demo-start`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Development
+
+### Local Development
+
+To work locally, please install the dependencies using `npm i` first.
+
+Run `npm run dev` to start a development server and open the displayed URL in a browser.
+
+### Scripts
+
+You can use the following commands:
+
+- `npm run dev` to start a development server
