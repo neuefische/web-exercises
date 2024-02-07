@@ -1,5 +1,6 @@
-import React from "react";
-import "./styles.css";
+import "./App.css";
+
+import { Pet } from "./Pet";
 
 export default function App() {
   function handlePet() {
@@ -11,17 +12,6 @@ export default function App() {
       <Pet sound="Meow" emoji="🐈" name="cat" onPet={handlePet} isHungry />
       <Pet sound="Woof" emoji="🐕" name="dog" onPet={handlePet} />
       <Pet sound="Squeak" emoji="🐁" name="mouse" onPet={handlePet} />
-    </div>
-  );
-}
-
-function Pet({ sound, emoji, name, onPet, isHungry }) {
-  return (
-    <div onClick={onPet}>
-      {isHungry ? "Feed me!" : sound}{" "}
-      <span role="img" aria-label={name}>
-        {emoji}
-      </span>
     </div>
   );
 }
