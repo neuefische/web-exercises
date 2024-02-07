@@ -1,9 +1,9 @@
-# React Nesting: React Nesting Demo Start
+# React Nesting: React Nesting Demo End
 
 ## Notes
 
-- You only have to touch the `./src/App.jsx` file.
-- You find the end point for this demo in `sessions/react-nesting/demo-end`.
+- This is the final version of the demo
+- You find the starting point for this demo in `sessions/react-nesting/demo-start`
 
 ## Development
 
