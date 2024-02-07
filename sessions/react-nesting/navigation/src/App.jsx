@@ -1,7 +1,7 @@
-import "./styles.css";
+import "./App.css";
 
-import avatar from "./img/avatar.jpg";
-import logo from "./img/logo.jpg";
+import avatar from "./assets/avatar.jpg";
+import logo from "./assets/logo.jpg";
 
 export default function App() {
   return (
