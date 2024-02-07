@@ -1,5 +1,6 @@
 {
-  "name": "demo-composition",
+  "name": "react-nesting_demo-composition",
+  "description": "React Nesting: Demo Composition",
   "private": true,
   "version": "0.0.0",
   "type": "module",
