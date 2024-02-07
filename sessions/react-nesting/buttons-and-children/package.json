@@ -1,5 +1,6 @@
 {
-  "name": "buttons-and-children",
+  "name": "react-nesting_buttons-and-children",
+  "description": "React Nesting: Buttons and Children",
   "private": true,
   "version": "0.0.0",
   "type": "module",
