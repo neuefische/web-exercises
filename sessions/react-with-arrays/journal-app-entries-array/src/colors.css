@@ -1,15 +1,13 @@
 :root {
-  /* Used for texts (+ footer background) */
-  --color-granite: #252629;
-  /* Used for backgrounds (+ footer text color) */
-  --color-foam: #ffffff;
-  /* Used for buttons, icons, etc. */
-  --color-nemo: #ff4a11;
-  /* active color for buttons, icons, etc. */
-  --color-nemo-mid: #ff5c29;
-  /* hover color for buttons, icons, etc. */
-  --color-nemo-dark: #e5430f;
-  /* Used for borders and some backgrounds and hover effects */
-  --color-water-10: #e4e8f0;
-  --color-water: #f3f5f9;
+  --primary-dark: #2e016d;
+  --primary: #3f0097;
+  --primary-light: #8236ff;
+  --secondary-dark: #38ccda;
+  --secondary: #7fd9e2;
+  --accent: #ffd15d;
+  --black-light: #303030;
+  --black: #000000;
+  --white: #ffffff;
+  --grey-dark: #b6b9c2;
+  --grey-light: #f5f6f6;
 }
