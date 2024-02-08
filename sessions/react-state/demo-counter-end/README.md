@@ -1,8 +1,21 @@
-# React + Vite
+# React State: Demo Counter End
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the end state of the demo counter app.
 
-Currently, two official plugins are available:
+## Notes
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- You only have to touch the `./src/App.jsx` file.
+
+## Development
+
+### Local Development
+
+To work locally, please install the dependencies using `npm i` first.
+
+Run `npm run dev` to start a development server and open the displayed URL in a browser.
+
+### Scripts
+
+You can use the following commands:
+
+- `npm run dev` to start a development server
