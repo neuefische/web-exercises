@@ -11,7 +11,6 @@ function App() {
       <main className="app__main">
         <EntryForm />
         <EntriesSection />
-        <h1>Hi</h1>
       </main>
       <Footer />
     </div>
