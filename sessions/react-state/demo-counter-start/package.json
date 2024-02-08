@@ -1,5 +1,6 @@
 {
-  "name": "demo-counter-start",
+  "name": "react-state_demo-counter-start",
+  "description": "React State: Demo Counter Start",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,6 +9,9 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
+  },
+ "nf": {
+    "template": "react-minimal"
   },
   "dependencies": {
     "react": "^18.2.0",
