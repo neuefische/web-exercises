@@ -1,8 +1,15 @@
 :root {
-  --nemo: #ff4a11;
-  --granite: #252629;
-  --water: #f3f5f9;
-  --foam: #ffffff;
+  --primary-dark: #2e016d;
+  --primary: #3f0097;
+  --primary-light: #8236ff;
+  --secondary-dark: #38ccda;
+  --secondary: #7fd9e2;
+  --accent: #ffd15d;
+  --black-light: #303030;
+  --black: #000000;
+  --white: #ffffff;
+  --grey-dark: #b6b9c2;
+  --grey-light: #f5f6f6;
 }
 
 *,
@@ -20,13 +27,13 @@ button {
   border: none;
   padding-inline: 20px;
   padding-block: 10px;
-  background-color: var(--granite);
-  color: var(--foam);
+  background-color: var(--primary-light);
+  color: var(--white);
   font-size: 1.5rem;
 }
 
 button:hover {
-  background-color: var(--nemo);
+  background-color: var(--primary);
 }
 
 .container {
