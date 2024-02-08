@@ -3,7 +3,7 @@
   padding: 20px;
   margin-inline: auto;
   margin-block: 20px;
-  background-color: var(--color-water);
+  background-color: var(--grey-light);
 }
 
 .card--green {

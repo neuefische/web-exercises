@@ -1,6 +1,6 @@
 # React Arrays: Fruits
 
-For now, the `./src/App.js` file uses a `Card` component to render the text "banana". This is easy to handle if you only have a single use case.
+For now, the `./src/App.jsx` file uses a `Card` component to render the text "banana". This is easy to handle if you only have a single use case.
 
 Most often, however, you have an array of objects and want to dynamically render a component (like `Card`) for each of these objects.
 
@@ -8,7 +8,7 @@ Most often, however, you have an array of objects and want to dynamically render
 
 Create an array 'fruits'. It should contain at least 5 objects which all have the properties 'name', 'id', 'color', e.g.:
 
-```
+```js
 {
   id: 1337,
   name: '🍌 Banana',
@@ -32,10 +32,10 @@ Change the `Card` component so that it receives a `color` prop and set the backg
 
 To work locally, please install the dependencies using `npm i` first.
 
-Run `npm run start` to start a development server and open the displayed URL in a browser.
+Run `npm run dev` to start a development server and open the displayed URL in a browser.
 
 ### Scripts
 
 You can use the following commands:
 
-- `npm run start` to start a development server
+- `npm run dev` to start a development server
