@@ -1,10 +1,10 @@
 .card {
   display: flex;
   flex-direction: column;
-  background-color: var(--color-foam);
+  background-color: var(--white);
   gap: 10px;
   padding: 20px;
-  border-left: 10px solid var(--color-nemo);
+  border-left: 10px solid var(--primary);
 }
 
 .card h2 {
