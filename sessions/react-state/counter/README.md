@@ -1,6 +1,6 @@
 # React State: Counter
 
-In the `./src/App.js` you'll find the basic building blocks of a counter.
+In the `./src/App.jsx` you'll find the basic building blocks of a counter.
 
 The general idea here is that the counter should count up when the plus button is clicked, and count down when the minus button is clicked.
 
@@ -20,7 +20,7 @@ You can use the following hints as a guideline:
 
 ## Notes
 
-- You only have to touch the `./src/App.js` file.
+- You only have to touch the `./src/App.jsx` file.
 
 ## Development
 
@@ -28,10 +28,10 @@ You can use the following hints as a guideline:
 
 To work locally, please install the dependencies using `npm i` first.
 
-Run `npm run start` to start a development server and open the displayed URL in a browser.
+Run `npm run dev` to start a development server and open the displayed URL in a browser.
 
 ### Scripts
 
 You can use the following commands:
 
-- `npm run start` to start a development server
+- `npm run dev` to start a development server
