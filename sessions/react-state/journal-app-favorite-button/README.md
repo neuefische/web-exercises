@@ -1,8 +1,33 @@
-# React + Vite
+# React State: Journal App with Favorite Button State
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Now that you've setup your Journal App Project, it's time to include our _favorite_ feature: a button that allows you to favorite an entry.
 
-Currently, two official plugins are available:
+> 💡 You can use this template as a starting point. But if you are far enough along with your own Journal App, please use that instead.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Task
+
+Locate the component with the favorite button. Here it's called `FavoriteButton`.
+
+The component has an `isFavorite` boolean variable. This variable is used to determine if the star icon should be filled in or not.
+
+- Make `isFavorite` a state variable.
+- This state variable needs to be toggled when the user clicks the favorite button.
+- Happy Hacking!
+
+## Development
+
+### Local Development
+
+To work locally, please install the dependencies using `npm i` first.
+
+Run `npm run dev` to start a development server and open the displayed URL in a browser.
+
+Use `npm run test` to run the tests.
+
+### Scripts
+
+You can use the following commands:
+
+- `npm run dev` to start a development server
+- `npm run build` to build the project
+- `npm run test` to run the tests
