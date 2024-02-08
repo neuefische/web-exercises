@@ -1,8 +1,8 @@
 import "./App.css";
-import EntriesSection from "./components/EntriesSection";
-import EntryForm from "./components/EntryForm";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import EntriesSection from "./components/EntriesSection/index";
+import EntryForm from "./components/EntryForm/index";
+import Footer from "./components/Footer/index";
+import Header from "./components/Header/index";
 
 function App() {
   return (
