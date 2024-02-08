@@ -1,6 +1,6 @@
 # JS Array Methods 2: Zoo Animals
 
-Our zoo has a lot of animals. These animals are shown on the website. To improve user experience we want to implement a search field, where the user can check whether a specific animal is included or not. The form is already implemented, but it's not working correct yet. Take a look at the browser preview.
+Our zoo has a lot of animals. These animals are shown on the website. To improve the user experience we want to implement a search field where the user can check whether a specific animal is included or not. The form is already implemented, but it's not working correctly yet. Take a look at the browser preview.
 
 ## Task
 
