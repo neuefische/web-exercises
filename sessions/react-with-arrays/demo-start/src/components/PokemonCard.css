@@ -1,5 +1,5 @@
 .pokemon-card {
-  background: var(--color-bright);
+  background: var(--white);
   margin: 0 0 1rem 0;
   padding: 1rem 0 0 0;
 }
@@ -11,8 +11,8 @@
 }
 
 .pokemon-card__content {
-  background-color: var(--color-dark);
-  color: var(--color-bright);
+  background-color: var(--black-light);
+  color: var(--white);
   padding: 1rem;
   position: relative;
 }
