@@ -1,4 +1,3 @@
-import React from "react";
 import PokemonCard from "./components/PokemonCard";
 import "./App.css";
 import "./styles.css";

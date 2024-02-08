@@ -7,8 +7,8 @@
 .app__title {
   margin: 0 0 1rem 0;
   padding: 0.5rem;
-  background-color: var(--color-bright);
-  color: var(--color-dark);
+  background-color: var(--white);
+  color: var(---black-light);
   text-align: center;
 }
 
