@@ -1,14 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
-//----------------------------------------------------------------------
-// Button in Vanilla JS
-
-const vanillaJSRootElement = document.querySelector("#vanilla-js-root");
-
-//----------------------------------------------------------------------
-
-// index.js in React
+import VanillaApp from "./VanillaApp.js";
 
 const rootElement = document.getElementById("root");
 
@@ -19,3 +12,8 @@ root.render(
     <App />
   </StrictMode>
 );
+
+//----------------------------------------------------------------------
+// simulated Vanilla JS environment
+
+const vanillaJSRootElement = document.querySelector("#vanilla-js-root");
