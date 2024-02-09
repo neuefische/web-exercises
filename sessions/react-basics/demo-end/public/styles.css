@@ -23,8 +23,10 @@ div {
 }
 
 button {
-  margin: 2rem;
+  margin: 1rem;
   padding: 0.5rem 1rem;
   color: white;
   background: #ff4a11;
+  border: none;
+  border-radius: 0.25rem;
 }

@@ -1,15 +1,15 @@
 export default function VanillaApp() {
-  const divContainer = document.createElement("div");
+  const appContainer = document.createElement("div");
 
-  const button1 = Button();
+  const button = Button();
   const button2 = Button();
   const button3 = Button();
 
-  divContainer.append(button1);
-  divContainer.append(button2);
-  divContainer.append(button3);
+  appContainer.append(button);
+  appContainer.append(button2);
+  appContainer.append(button3);
 
-  return divContainer;
+  return appContainer;
 }
 
 function Button() {

@@ -2,17 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
 import VanillaApp from "./VanillaApp";
-//----------------------------------------------------------------------
-// Button in Vanilla JS
 
-// This is the dom element we use to append our vanilla js button to.
-const vanillaJsRootElement = document.querySelector("#vanilla-js-root");
-
-const vanillaApp = VanillaApp();
-
-vanillaJsRootElement.append(vanillaApp);
-
-//----------------------------------------------------------------------
 // index.js in React
 
 // This is the dom element that React will render into,
@@ -29,3 +19,17 @@ root.render(
     <App />
   </StrictMode>
 );
+
+//----------------------------------------------------------------------
+// simulated Vanilla JS environment
+
+// This is the dom element we use to append our Vanilla JS App to.
+const vanillaJSRootElement = document.querySelector("#vanilla-js-root");
+
+// We call the VanillaApp function and store the result in a variable.
+const vanillaApp = VanillaApp();
+
+// We append the result of the VanillaApp function to the dom element.
+vanillaJSRootElement.append(vanillaApp);
+
+//----------------------------------------------------------------------
