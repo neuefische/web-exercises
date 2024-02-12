@@ -1,0 +1,18 @@
+.counter__button {
+    border: none;
+    padding-inline: 20px;
+    padding-block: 10px;
+    background-color: var(--secondary-dark);
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+.counter__button:hover {
+    background-color: var(--primary);
+}
+
+.counter__buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
