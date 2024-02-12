@@ -1,3 +1,5 @@
+import "./SearchForm.css";
+
 export default function SearchForm() {
   const searchTerm = "";
 
@@ -12,7 +14,7 @@ export default function SearchForm() {
       <form onSubmit={handleSubmit}>
         <label htmlFor="searchTerm">Search term:</label>
         <input name="searchTerm" id="searchTerm" />
-        <button>
+        <button className="button">
           <span role="img" aria-label="search icon">
             🔍
           </span>{" "}
