@@ -42,7 +42,7 @@ form {
   display: flex;
   gap: 1rem;
   align-items: center;
-  background: var(--grey-dark);
+  background: var(--grey-light);
   padding: 3rem;
 }
 
