@@ -31,3 +31,7 @@ body {
   place-items: center;
   place-content: center;
 }
+
+.container h1 {
+  color: var(--primary);
+}
