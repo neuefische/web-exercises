@@ -1,4 +1,6 @@
 import ColoredNumber from "./ColoredNumber";
+import "./Counter.css";
+
 
 export default function Counter() {
   return (

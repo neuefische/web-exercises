@@ -1,0 +1,29 @@
+.counter__button {
+    border: none;
+    padding-inline: 20px;
+    padding-block: 10px;
+    background-color: var(--primary);
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+.counter {
+    display: grid;
+    min-width: 100vw;
+    min-height: 100vh;
+    grid-template: "container";
+    place-items: center;
+    place-content: center;
+    background-color: var(--white);
+}
+
+
+.counter h1 {
+    color: var(--primary);
+}
+
+.counter__buttons-container {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
