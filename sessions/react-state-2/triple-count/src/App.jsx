@@ -1,6 +1,5 @@
-import React from "react";
-import "./styles.css";
-import Counter from "./components/Counter";
+import "./App.css";
+import Counter from "./components/Counter.jsx";
 
 export default function App() {
   return (
