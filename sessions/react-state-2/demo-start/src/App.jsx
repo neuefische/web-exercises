@@ -1,6 +1,6 @@
 import SearchForm from "./components/SearchForm";
 import SearchResults from "./components/SearchResults";
-import "./styles.css";
+import "./App.css";
 
 export default function App() {
   return (
