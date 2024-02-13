@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(114, 208, 225);
+  color: white;
+}
+
+.header {
+  background-color: rgb(35, 154, 197);
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.question {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.choice-button {
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(35, 154, 197);
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.active-choice {
+  background-color: rgb(72, 181, 33);
+}
+
+.steps {
+  background-color: rgb(35, 154, 197);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.steps-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(114, 208, 225);
+  font-weight: bold;
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+}

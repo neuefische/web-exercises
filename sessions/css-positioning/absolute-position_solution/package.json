@@ -1,0 +1,10 @@
+{
+  "name": "css-positioning-challenge-1-absolute-position-solution",
+  "version": "0.0.0-unreleased",
+  "description": "",
+  "main": "index.html",
+  "nf": {
+    "template": "html-css-static"
+  },
+  "keywords": []
+}

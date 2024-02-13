@@ -1,0 +1,32 @@
+.card-container {
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  position: relative;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card > ul {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.card__category {
+  border: none;
+  padding: 7px 10px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  border-radius: 7px;
+  color: var(--color-granite);
+  background-color: var(--color-water-10);
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}

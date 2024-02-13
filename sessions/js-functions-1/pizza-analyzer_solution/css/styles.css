@@ -1,0 +1,83 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --red: rgb(226, 51, 109);
+  --green: rgb(92, 220, 118);
+}
+
+body {
+  margin: 0;
+  font-family: system-ui;
+}
+
+main {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-areas:
+    "head head"
+    "pizza1 pizza2"
+    "output output";
+  gap: 40px 20px;
+  padding: 20px;
+}
+
+h1 {
+  grid-area: head;
+  place-self: center;
+}
+
+h2 {
+  margin: 0;
+}
+
+.output-display {
+  grid-area: output;
+  display: grid;
+  place-items: center;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 14px;
+  background-color: var(--green);
+  box-shadow: 0 2px 8px 1px rgb(0 0 100 /0.2);
+}
+
+.output-display p {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.pizza-section {
+  padding: 20px;
+  box-shadow: 0 2px 8px 1px rgb(0 0 100 /0.2);
+  border-radius: 14px;
+  display: grid;
+  grid-template-rows: 32px 200px 32px;
+  gap: 40px;
+}
+
+.pizza-section input {
+  width: 50px;
+  border: none;
+  font-size: inherit;
+}
+.pizza-section p {
+  padding: 2px 4px;
+  border-bottom: 3px solid;
+  align-self: center;
+  font-size: 1rem;
+  justify-self: center;
+}
+
+.pizza {
+  border: solid rgb(246, 230, 161) 12px;
+  width: 100px;
+  aspect-ratio: 1;
+  border-radius: 999px;
+  place-self: center;
+  background-color: rgb(244, 69, 46);
+  box-shadow: 0 1px 3px 1px rgb(0 0 100 / 0.3);
+}

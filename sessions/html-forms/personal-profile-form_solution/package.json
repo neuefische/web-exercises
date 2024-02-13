@@ -1,0 +1,10 @@
+{
+  "name": "html-forms-challenge-1-personal-profile-form-solution",
+  "version": "0.0.0-unreleased",
+  "description": "",
+  "main": "index.html",
+  "nf": {
+    "template": "html-css-static"
+  },
+  "keywords": []
+}

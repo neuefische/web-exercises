@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  grid-gap: 20px;
+  margin-top: 50px;
+  height: 100vh;
+}
+
+p {
+  display: grid;
+  grid-gap: 5px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background: hsl(0, 70%, 60%);
+}

@@ -1,0 +1,15 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui;
+}
+
+form {
+  display: grid;
+  gap: 8px;
+  max-width: 400px;
+}

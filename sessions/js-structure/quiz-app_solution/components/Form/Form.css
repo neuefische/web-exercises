@@ -1,0 +1,23 @@
+.form {
+  padding: 10rem 2rem 3rem 2rem;
+  max-width: 650px;
+  margin: 0 auto;
+  display: grid;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form__character-count {
+  justify-self: end;
+  color: #555;
+}
+
+.form__submit-button {
+  width: 40%;
+  align-self: center;
+  background: var(--secondary);
+  color: var(--primary);
+  border: none;
+  margin: 0 auto;
+  padding: 1rem;
+}

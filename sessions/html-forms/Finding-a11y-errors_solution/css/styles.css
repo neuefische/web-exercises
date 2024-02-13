@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20px auto;
+  max-width: 350px;
+}
+
+form * {
+  display: grid;
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 0.5rem;
+}
+
+legend {
+  background-color: black;
+  color: white;
+  padding: 0.2rem;
+}
+
+input[type="color"] {
+  margin: auto;
+}

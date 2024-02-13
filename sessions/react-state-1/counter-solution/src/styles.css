@@ -1,0 +1,45 @@
+:root {
+  --nemo: #ff4a11;
+  --granite: #252629;
+  --water: #f3f5f9;
+  --foam: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui;
+}
+
+button {
+  border: none;
+  padding-inline: 20px;
+  padding-block: 10px;
+  background-color: var(--granite);
+  color: var(--foam);
+  font-size: 1.5rem;
+}
+
+button:hover {
+  background-color: var(--nemo);
+}
+
+.container {
+  display: grid;
+  min-width: 100vw;
+  min-height: 100vh;
+  grid-template: "container";
+  place-items: center;
+  place-content: center;
+}
+
+.button-container {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
