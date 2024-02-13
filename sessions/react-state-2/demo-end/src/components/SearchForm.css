@@ -1,0 +1,13 @@
+.button {
+    border: none;
+    padding-inline: 20px;
+    padding-block: 10px;
+    margin-block: 1rem;
+    background-color: var(--secondary);
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+.button:hover {
+    background-color: var(--primary);
+}

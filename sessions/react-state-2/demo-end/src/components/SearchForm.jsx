@@ -1,3 +1,5 @@
+import "./SearchForm.css";
+
 export default function SearchForm({ searchTerm, onSearch }) {
   function handleSubmit(event) {
     event.preventDefault();
@@ -11,7 +13,7 @@ export default function SearchForm({ searchTerm, onSearch }) {
       <form onSubmit={handleSubmit}>
         <label htmlFor="searchTerm">Search term:</label>
         <input name="searchTerm" id="searchTerm" />
-        <button>
+        <button className="button">
           <span role="img" aria-label="search icon">
             🔍
           </span>{" "}
