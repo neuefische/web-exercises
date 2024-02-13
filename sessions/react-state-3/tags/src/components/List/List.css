@@ -1,0 +1,38 @@
+.tag-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.tag-list__item {
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-light);
+  color: var(--white);
+  border-radius: 999px;
+  padding: 0.75rem 1rem 0.75rem 1.25rem;
+  line-height: 1;
+  gap: 0.8rem;
+}
+
+.tag-list__item > h3 {
+  margin: 0;
+  font-weight: inherit;
+}
+
+.tag-list__item-button {
+  border: none;
+  border-radius: 999px;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  background-color: var(--primary-light);
+  color: var(--white);
+}
+
+.tag-list__item-button:hover {
+  background-color: var(--primary-dark);
+  scale: 1.05;
+}
