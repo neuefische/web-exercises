@@ -1,12 +1,12 @@
 # React State 2: Favourite Holiday
 
-In the `./src/App.js` file, there is a form in which you can enter your favourite holiday and its respective date. Below the form, the submitted data should be displayed.
+In the `./src/App.jsx` file, there is a form in which you can enter your favourite holiday and its respective date. Below the form, the submitted data should be displayed.
 
 Unfortunately, the form is not working correctly. Let's fix that!
 
 ## Task
 
-Switch to the `./src/App.js` file and refactor the `handleSubmit` function so that
+Switch to the `./src/App.jsx` file and refactor the `handleSubmit` function so that
 
 1. the `App` component has access to the submitted data,
 2. the submitted data is dynamically rendered in the respective output fields below the form.
@@ -23,7 +23,7 @@ When submitting the form, the form fields should be reset and the `holiday` fiel
 
 ## Notes
 
-- You only have to touch the `./src/App.js` file.
+- You only have to touch the `./src/App.jsx` file.
 
 ## Development
 
@@ -31,10 +31,10 @@ When submitting the form, the form fields should be reset and the `holiday` fiel
 
 To work locally, please install the dependencies using `npm i` first.
 
-Run `npm run start` to start a development server and open the displayed URL in a browser.
+Run `npm run dev` to start a development server and open the displayed URL in a browser.
 
 ### Scripts
 
 You can use the following commands:
 
-- `npm run start` to start a development server
+- `npm run dev` to start a development server
