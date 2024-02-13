@@ -1,0 +1,34 @@
+{
+  "name": "react-state-3_adding-animals",
+  "version": "0.0.0-unreleased",
+  "description": "React State 3: Adding Animals",
+  "main": "src/index.js",
+  "dependencies": {
+    "uid": "^2.0.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-scripts": "5.0.1"
+  },
+  "devDependencies": {
+    "@babel/runtime": "7.20.0",
+    "eslint-plugin-react-hooks": "4.6.0"
+  },
+  "scripts": {
+    "start": "react-scripts start"
+  },
+  "nf": {
+    "template": "react-minimal"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
