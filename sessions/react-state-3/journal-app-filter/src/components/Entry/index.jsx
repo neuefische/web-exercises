@@ -1,14 +1,7 @@
 import FavoriteButton from "../FavoriteButton";
 import "./Entry.css";
 
-export default function Entry({
-  motto,
-  notes,
-  date,
-  id,
-  isFavorite,
-  onToggleFavorite,
-}) {
+export default function Entry({ motto, notes, date }) {
   return (
     <article className="entry">
       <time className="entry__date">{date}</time>
@@ -17,11 +10,7 @@ export default function Entry({
           <h2 className="entry__motto">
             <q>{motto}</q>
           </h2>
-          <FavoriteButton
-            id={id}
-            isFavorite={isFavorite}
-            onToggleFavorite={onToggleFavorite}
-          />
+          <FavoriteButton />
         </div>
         <p className="entry__notes">{notes}</p>
       </div>
