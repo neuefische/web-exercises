@@ -1,0 +1,14 @@
+.badge {
+  display: inline-block;
+  font-size: 12px;
+  padding: 2px 9px;
+  border-radius: 999px;
+  background-color: var(--grey-light);
+  color: var(--black);
+  font-weight: 400;
+}
+
+.badge--active {
+  background-color: var(--primary-light);
+  color: var(--white);
+}
