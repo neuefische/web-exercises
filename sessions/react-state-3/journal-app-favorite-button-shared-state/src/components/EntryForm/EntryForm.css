@@ -30,7 +30,7 @@
 
 .entry-form__field > :is(input, textarea) {
   padding: 20px;
-  border: 1px solid var(--color-water-10);
+  border: 1px solid var(--grey-dark);
   border-radius: 4px;
   font: inherit;
   resize: vertical;
