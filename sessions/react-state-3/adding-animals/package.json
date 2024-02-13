@@ -1,5 +1,6 @@
 {
-  "name": "adding-animals",
+  "name": "react-state-3_adding-animals",
+  "description": "React State 3: Adding Animals",
   "private": true,
   "version": "0.0.0",
   "type": "module",
