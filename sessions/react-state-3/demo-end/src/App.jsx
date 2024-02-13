@@ -1,6 +1,6 @@
 import { useState } from "react";
-import "./styles.css";
-import Movie from "./components/Movie/index.js";
+import "./App.css";
+import Movie from "./components/Movie";
 import Form from "./components/Form";
 import { uid } from "uid";
 

@@ -10,7 +10,7 @@
 }
 
 .movie:hover {
-  background-color: var(--water);
+  background-color: var(--grey-light);
 }
 
 .movie__actions {
@@ -21,15 +21,15 @@
 
 .movie__button {
   border: none;
-  background-color: var(--granite);
-  color: var(--foam);
+  background-color: var(--primary-light);
+  color: var(--white);
   border-radius: 999px;
   width: 2em;
   height: 2em;
 }
 
 .movie__button:hover {
-  background-color: var(--nemo);
+  background-color: var(--primary-dark);
 }
 
 .movie__title {
@@ -45,5 +45,5 @@
 
 .movie__title--is-liked {
   opacity: 1;
-  text-decoration-color: var(--nemo);
+  text-decoration-color: var(--primary-light);
 }
