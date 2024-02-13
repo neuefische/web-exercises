@@ -29,7 +29,7 @@ Your repository in Github must be named `yourName-partnerName-tourio-app`
 ### Update Entry
 
 - In `pages/places/[id]/edit.js`, write the `editPlace` function to start a `PATCH` request.
-- Write the `PATCH` API route in `pages/api/[id]/index.js`
+- Write the `PATCH` API route in `pages/api/places/[id]/index.js`
 
 ### Delete Entry
 
