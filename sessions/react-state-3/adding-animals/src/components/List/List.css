@@ -7,8 +7,8 @@
 }
 
 .animal-list__item {
-  background-color: var(--granite);
-  color: var(--foam);
+  background-color:  var(--primary-light);
+  color:  var(--white);
   border-radius: 8px;
   padding: 2.5rem 1rem 0.75rem;
   margin-top: 2.5rem;
