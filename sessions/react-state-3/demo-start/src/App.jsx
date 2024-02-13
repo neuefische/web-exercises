@@ -1,35 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
+import Movie from "./components/Movie";
+import Form from "./components/Form";
 
-function App() {
-  const [count, setCount] = useState(0)
+const initialMovieData = [
+  {
+    id: "28djdh72",
+    name: "The Incredible Hulk",
+    isLiked: false,
+  },
+  {
+    id: "dknseu2",
+    name: "Spiderman 1-25",
+    isLiked: false,
+  },
+  {
+    id: "dkwi02ksk",
+    name: "Lord of the Rings",
+    isLiked: true,
+  },
+];
+
+export default function App() {
+  const [movies, setMovies] = useState(initialMovieData);
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="app">
+      <h1>Favorite Movies</h1>
+      <ul className="list">
+        {movies.map((movie) => (
+          <li key={movie.id}>
+            <Movie name={movie.name} isLiked={movie.isLiked} />
+          </li>
+        ))}
+      </ul>
+      <Form />
+    </div>
+  );
 }
-
-export default App
