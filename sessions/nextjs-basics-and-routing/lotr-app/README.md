@@ -7,7 +7,7 @@ You are going to create a fan page about the Lord of the Rings books.
 First create a new Next.js based on our template using this command:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/templates/next lotr-app -i
+npx ghcd@latest neuefische/web-exercises/tree/main/templates/next lotr-app
 ```
 
 > 💡 Our Next.js template is very similar to `create-next-app` but it also installs Styled Components, which you will learn more about in upcoming sessions.
