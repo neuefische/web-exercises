@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "./styles.css";
-import Form from "./components/Form/index.js";
-import List from "./components/List/index.js";
+import Form from "./components/Form";
+import List from "./components/List";
+import "./App.css";
 
 export default function App() {
   const [tags, setTags] = useState(["JavaScript", "React", "CSS", "HTML"]);

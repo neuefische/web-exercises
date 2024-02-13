@@ -31,15 +31,15 @@
   font: inherit;
   font-size: 1.2rem;
   border-radius: 4px;
-  border: 1px solid var(--granite);
+  border: 1px solid var(--primary-light);
 }
 
 .form__button {
-  background-color: var(--granite);
-  color: var(--foam);
+  background-color: var(--primary-light);
+  color: var(--white);
 }
 
 .form__button:hover {
-  background-color: var(--nemo);
-  border-color: var(--nemo);
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
 }

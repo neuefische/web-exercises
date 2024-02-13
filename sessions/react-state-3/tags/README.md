@@ -1,8 +1,8 @@
 # React State 3: Tags
 
-In the `./src/App.js` file, there is a `tags` state passed to the [`List`](./src/components/List/index.js) component. Each tag has a delete button.
+In the `./src/App.jsx` file, there is a `tags` state passed to the [`List`](./src/components/List/index.jsx) component. Each tag has a delete button.
 
-There is also a [`Form`](./src/components/Form/index.js) component which already handles the submit event and the data.
+There is also a [`Form`](./src/components/Form/index.jsx) component which already handles the submit event and the data.
 
 Currently, it's not possible to add or remove a tag from state.
 
@@ -33,7 +33,7 @@ You can use the following hints as guideline:
 
 ## Notes
 
-- You only have to touch the `./src/App.js` file.
+- You only have to touch the `./src/App.jsx` file.
 
 ## Development
 
@@ -41,10 +41,10 @@ You can use the following hints as guideline:
 
 To work locally, please install the dependencies using `npm i` first.
 
-Run `npm run start` to start a development server and open the displayed URL in a browser.
+Run `npm run dev` to start a development server and open the displayed URL in a browser.
 
 ### Scripts
 
 You can use the following commands:
 
-- `npm run start` to start a development server
+- `npm run dev` to start a development server
