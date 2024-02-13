@@ -3,18 +3,18 @@
   border: none;
   width: fit-content;
   padding: 12px 40px;
-  background: var(--primary-light);
+  background: var(--color-nemo);
   font-weight: 700;
   font-size: 16px;
   border-radius: 5px;
-  color: var(--white);
+  color: var(--color-foam);
   transition: background-color 0.2s ease-in-out;
 }
 
 .button:hover {
-  background-color: var(--primary-dark);
+  background-color: var(--color-nemo-dark);
 }
 
 .button:active {
-  background-color: var(--primary);
+  background-color: var(--color-nemo-mid);
 }

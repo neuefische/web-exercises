@@ -12,9 +12,9 @@
 }
 
 .favorite-button:hover {
-  background-color: var(--grey-light);
+  background-color: var(--color-water);
 }
 
 .favorite-button:active {
-  background-color: var(--grey-dark);
+  background-color: var(--color-water-10);
 }
