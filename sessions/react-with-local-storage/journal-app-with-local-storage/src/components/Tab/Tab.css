@@ -14,13 +14,13 @@
 }
 
 .tab:hover {
-  background-color: var(--color-water);
+  background-color: var(--grey-light);
 }
 
 .tab:active {
-  background-color: var(--color-water-10);
+  background-color: var(--grey-dark);
 }
 
 .tab--active {
-  color: var(--color-nemo);
+  color: var(--primary-light);
 }
