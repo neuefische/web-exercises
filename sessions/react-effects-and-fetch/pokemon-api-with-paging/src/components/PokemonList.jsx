@@ -27,7 +27,7 @@ export default function PokemonList() {
       <button type="button" className="button">Next Page</button>
       <ul>
         {pokemon.map(({ name }) => (
-          <li key={name}>{name}</li>
+          <li key={name} className="pokemon">{name}</li>
         ))}
       </ul>
     </main>
