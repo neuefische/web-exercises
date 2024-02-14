@@ -3,12 +3,12 @@
   font-size: 12px;
   padding: 2px 9px;
   border-radius: 999px;
-  background-color: var(--color-water-10);
-  color: var(--color-granite);
+  background-color: var(--grey-light);
+  color: var(--black);
   font-weight: 400;
 }
 
 .badge--active {
-  background-color: var(--color-nemo);
-  color: var(--color-foam);
+  background-color: var(--primary-light);
+  color: var(--white);
 }
