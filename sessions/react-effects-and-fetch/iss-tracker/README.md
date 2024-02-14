@@ -4,7 +4,7 @@ In this challenge we will build a small app which displays the current location 
 
 ## Task
 
-In the `./src/App.js` file, we already have a state called `coords` in the `App` component which will hold the longitude and latitude values of the ISS position.
+In the `./src/App.jsx` file, we already have a state called `coords` in the `App` component which will hold the longitude and latitude values of the ISS position.
 
 1. Write the function `getISSCoords`. Fetch from the given url saved in the constant `URL`. After fetching successfully update the `coords` state accordingly.
 
@@ -17,11 +17,11 @@ In the `./src/App.js` file, we already have a state called `coords` in the `App`
 
 > 💡 Returning a cleanup function is important to not set multiple timers simultaneously. If you wouldn't define a cleanup function, each initial render of the component would start another timer that would never be stopped. This results in updating the coordinates way more often than desired.
 
-Go into the `./src/App.js` file and start coding!
+Go into the `./src/App.jsx` file and start coding!
 
 ## Notes
 
-- You only have to touch the `./src/App.js` file.
+- You only have to touch the `./src/App.jsx` file.
 
 ## Development
 
@@ -29,10 +29,10 @@ Go into the `./src/App.js` file and start coding!
 
 To work locally, please install the dependencies using `npm i` first.
 
-Run `npm run start` to start a development server and open the displayed URL in a browser.
+Run `npm run dev` to start a development server and open the displayed URL in a browser.
 
 ### Scripts
 
 You can use the following commands:
 
-- `npm run start` to start a development server
+- `npm run dev` to start a development server
