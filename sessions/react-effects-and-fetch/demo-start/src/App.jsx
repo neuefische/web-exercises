@@ -1,6 +1,5 @@
-import React from "react";
 import Joke from "./components/Joke";
-import "./styles.css";
+import "./App.css";
 
 export default function App() {
   return <Joke />;
