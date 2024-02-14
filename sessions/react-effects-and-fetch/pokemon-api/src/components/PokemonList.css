@@ -5,6 +5,7 @@
     background-color: var(--primary);
     color: var(--white);
     font-size: 1.5rem;
+    margin: 10px;
 }
 
 .button:hover {
@@ -17,5 +18,6 @@
     padding: 10px;
     background-color: var(--grey-light);
     color: var(--primary-dark);
-    box-shadow: 5px 5px 15px 2px var(--primary-dark);
+    border-radius: 50px;
+    text-align: center;
 }
