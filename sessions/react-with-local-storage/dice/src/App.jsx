@@ -1,6 +1,6 @@
 import { D6Button } from "./components/D6Button";
 import History from "./components/History";
-import "./styles.css";
+import "./App.css";
 
 export default function App() {
   return (

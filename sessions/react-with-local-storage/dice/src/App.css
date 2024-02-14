@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-dark: #2e016d;
+  --primary: #3f0097;
+  --primary-light: #8236ff;
+  --secondary-dark: #38ccda;
+  --secondary: #7fd9e2;
+  --accent: #ffd15d;
+  --black-light: #303030;
+  --black: #000000;
+  --white: #ffffff;
+  --grey-dark: #b6b9c2;
+  --grey-light: #f5f6f6;
+}
+
+
+body {
+  margin: 0;
+  font-family: system-ui;
+}
+
+.app {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+}
+
+.app__aside {
+  padding: 1rem;
+  max-height: 100%;
+  overflow: scroll;
+}
