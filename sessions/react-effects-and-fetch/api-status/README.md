@@ -4,7 +4,7 @@ This App offers an interface to check the status of an API.
 
 ## Task
 
-Look at the `./src/components/StatusCheck/index.js` file.
+Look at the `./src/components/StatusCheck/index.jsx` file.
 
 There is a function named `handleCheckApiStatus`. The function is called when you click the button.
 
@@ -36,7 +36,7 @@ Do you have an idea how to catch this kind of error? Can you implement the error
 
 ## Notes
 
-- You only have to touch the `./src/components/StatusCheck/index.js` file.
+- You only have to touch the `./src/components/StatusCheck/index.jsx` file.
 
 ## Development
 
@@ -44,10 +44,10 @@ Do you have an idea how to catch this kind of error? Can you implement the error
 
 To work locally, please install the dependencies using `npm i` first.
 
-Run `npm run start` to start a development server and open the displayed URL in a browser.
+Run `npm run dev` to start a development server and open the displayed URL in a browser.
 
 ### Scripts
 
 You can use the following commands:
 
-- `npm run start` to start a development server
+- `npm run dev` to start a development server
