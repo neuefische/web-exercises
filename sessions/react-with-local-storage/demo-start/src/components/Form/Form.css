@@ -1,0 +1,23 @@
+.form {
+  display: flex;
+  gap: 1rem;
+  justify-content: stretch;
+  align-items: center;
+  width: 100%;
+}
+
+.form__input {
+  flex: 100%;
+}
+
+.form__input,
+.form__button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #adadad;
+  border-radius: 4px;
+}
+
+.form__button,
+.form__label {
+  flex-shrink: 0;
+}
