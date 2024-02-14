@@ -1,6 +1,6 @@
 .d6 {
   --size: 100px;
-  --color: var(--water);
+  --color: var(--primary-dark);
   position: relative;
   width: var(--size);
   aspect-ratio: 1;
@@ -68,8 +68,8 @@
 .d6__face {
   width: 100%;
   height: 100%;
-  background: var(--color);
-  border: 2px solid var(--granite);
+  background: var(--primary-light);
+  border: 2px solid var(--primary-dark);
   border-radius: 2px;
   position: absolute;
   opacity: 1;
@@ -81,7 +81,7 @@
   content: "";
   width: 20%;
   height: 20%;
-  background: black;
+  background: var(--primary-dark);
   border-radius: 50%;
 }
 
@@ -94,18 +94,18 @@
 }
 .d6__face--2:before {
   background: transparent;
-  box-shadow: var(--granite) calc(var(--size) / -4) calc(var(--size) / -4) 0px
+  box-shadow: var(--primary-dark) calc(var(--size) / -4) calc(var(--size) / -4) 0px
       0px,
-    var(--granite) calc(var(--size) / 4) calc(var(--size) / 4) 0px 0px;
+    var(--primary-dark) calc(var(--size) / 4) calc(var(--size) / 4) 0px 0px;
 }
 
 .d6__face--3 {
   transform: translateY(calc(var(--size) / 2)) rotateX(90deg);
 }
 .d6__face--3:before {
-  box-shadow: var(--granite) calc(var(--size) / -4) calc(var(--size) / 4) 0px
+  box-shadow: var(--primary-dark) calc(var(--size) / -4) calc(var(--size) / 4) 0px
       0px,
-    var(--granite) calc(var(--size) / 4) calc(var(--size) / -4) 0px 0px;
+    var(--primary-dark) calc(var(--size) / 4) calc(var(--size) / -4) 0px 0px;
 }
 
 .d6__face--4 {
@@ -113,22 +113,22 @@
 }
 .d6__face--4:before {
   background: transparent;
-  box-shadow: var(--granite) calc(var(--size) / -4) calc(var(--size) / 4) 0px
+  box-shadow: var(--primary-dark) calc(var(--size) / -4) calc(var(--size) / 4) 0px
       0px,
-    var(--granite) calc(var(--size) / -4) calc(var(--size) / -4) 0px 0px,
-    var(--granite) calc(var(--size) / 4) calc(var(--size) / 4) 0px 0px,
-    var(--granite) calc(var(--size) / 4) calc(var(--size) / -4) 0px 0px;
+    var(--primary-dark) calc(var(--size) / -4) calc(var(--size) / -4) 0px 0px,
+    var(--primary-dark) calc(var(--size) / 4) calc(var(--size) / 4) 0px 0px,
+    var(--primary-dark) calc(var(--size) / 4) calc(var(--size) / -4) 0px 0px;
 }
 
 .d6__face--5 {
   transform: translateX(calc(var(--size) / 2)) rotateY(90deg);
 }
 .d6__face--5:before {
-  box-shadow: var(--granite) calc(var(--size) / -4) calc(var(--size) / -4) 0px
+  box-shadow: var(--primary-dark) calc(var(--size) / -4) calc(var(--size) / -4) 0px
       0px,
-    var(--granite) calc(var(--size) / -4) calc(var(--size) / 4) 0px 0px,
-    var(--granite) calc(var(--size) / 4) calc(var(--size) / -4) 0px 0px,
-    var(--granite) calc(var(--size) / 4) calc(var(--size) / 4) 0px 0px;
+    var(--primary-dark) calc(var(--size) / -4) calc(var(--size) / 4) 0px 0px,
+    var(--primary-dark) calc(var(--size) / 4) calc(var(--size) / -4) 0px 0px,
+    var(--primary-dark) calc(var(--size) / 4) calc(var(--size) / 4) 0px 0px;
 }
 
 .d6__face--6 {
@@ -136,11 +136,11 @@
 }
 .d6__face--6:before {
   background: transparent;
-  box-shadow: var(--granite) calc(var(--size) / -4) calc(var(--size) / -4) 0px
+  box-shadow: var(--primary-dark) calc(var(--size) / -4) calc(var(--size) / -4) 0px
       0px,
-    var(--granite) calc(var(--size) / -4) 0px 0px 0px,
-    var(--granite) calc(var(--size) / -4) calc(var(--size) / 4) 0px 0px,
-    var(--granite) calc(var(--size) / 4) calc(var(--size) / -4) 0px 0px,
-    var(--granite) calc(var(--size) / 4) 0px 0px 0px,
-    var(--granite) calc(var(--size) / 4) calc(var(--size) / 4) 0px 0px;
+    var(--primary-dark) calc(var(--size) / -4) 0px 0px 0px,
+    var(--primary-dark) calc(var(--size) / -4) calc(var(--size) / 4) 0px 0px,
+    var(--primary-dark) calc(var(--size) / 4) calc(var(--size) / -4) 0px 0px,
+    var(--primary-dark) calc(var(--size) / 4) 0px 0px 0px,
+    var(--primary-dark) calc(var(--size) / 4) calc(var(--size) / 4) 0px 0px;
 }
