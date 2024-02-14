@@ -1,0 +1,11 @@
+.button {
+    font-size: larger;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+}
+
+.button:hover {
+    background-color: var(--secondary);
+}

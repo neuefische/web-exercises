@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "./Joke.css";
 
 export default function Joke() {
   const [joke, setJoke] = useState();
