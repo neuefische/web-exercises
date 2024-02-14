@@ -1,5 +1,5 @@
 .status-check {
-  border: 1px solid var(--color-granite);
+  border: 1px solid var(--black-light);
   border-radius: 5px;
   padding: 1rem;
   display: flex;
@@ -9,8 +9,8 @@
 
 .status-check__button {
   border: none;
-  background-color: var(--color-nemo);
-  color: var(--color-foam);
+  background-color: var(--primary);
+  color: var(--white);
   padding: 0.5rem;
 }
 
@@ -26,4 +26,9 @@
   display: flex;
   justify-content: space-evenly;
   margin: 0.25rem;
+}
+
+
+.status-check__button:hover {
+  background-color: var(--primary-dark);
 }
