@@ -22,7 +22,7 @@ export default function PokemonList() {
       </button>
       <ul>
         {pokemon.map(({ name }) => (
-          <li key={name}>{name}</li>
+          <li key={name} className="pokemon">{name}</li>
         ))}
       </ul>
     </main>
