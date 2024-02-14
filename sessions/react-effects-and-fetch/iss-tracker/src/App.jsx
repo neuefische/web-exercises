@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Controls from "./components/Controls";
 import Map from "./components/Map";
-import "./styles.css";
+import "./App.css";
 
 const URL = "https://api.wheretheiss.at/v1/satellites/25544";
 
