@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "./Joke.css";
 
 export default function Joke() {
   const [joke, setJoke] = useState();
@@ -24,7 +25,7 @@ export default function Joke() {
   return (
     <>
       <h1>{joke.joke}</h1>
-      <button type="button" onClick={() => setId(joke.nextId)}>
+      <button type="button" className="button" onClick={() => setId(joke.nextId)}>
         Next Joke
       </button>
     </>
