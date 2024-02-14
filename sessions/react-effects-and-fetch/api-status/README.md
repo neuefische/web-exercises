@@ -21,11 +21,11 @@ You can use the following hints as guideline:
 
 > _Hint:_ Since the side effect using `fetch()` is called upon a user interaction, not upon a render of the component, you don't need `useEffect` to solve this challenge.
 
-### Bonus 1:
+### Bonus 1
 
 Can you display a '⏳' icon while waiting for the response?
 
-### Bonus 2:
+### Bonus 2
 
 The API giving you the status might not be reachable at all, so that the network request cannot be established. In this case the promise given by `fetch()` won't resolve. This might break the app.
 
