@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import "./PokemonList.css";
+
 
 export default function PokemonList() {
   const [pokemon, setPokemon] = useState([]);
@@ -21,11 +23,11 @@ export default function PokemonList() {
 
   return (
     <main>
-      <button type="button">Previous Page</button>
-      <button type="button">Next Page</button>
+      <button type="button" className="button">Previous Page</button>
+      <button type="button" className="button">Next Page</button>
       <ul>
         {pokemon.map(({ name }) => (
-          <li key={name}>{name}</li>
+          <li key={name} className="pokemon">{name}</li>
         ))}
       </ul>
     </main>
