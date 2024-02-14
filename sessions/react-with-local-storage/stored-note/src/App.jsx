@@ -1,7 +1,7 @@
 import { useState } from "react";
 import FontSelector from "./components/FontSelector";
 import Note from "./components/Note";
-import "./styles.css";
+import "./App.css";
 
 export default function App() {
   const [note, setNote] = useState("");
