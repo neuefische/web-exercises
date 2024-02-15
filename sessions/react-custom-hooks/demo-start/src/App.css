@@ -21,8 +21,3 @@ body {
   gap: 2rem;
   align-content: center;
 }
-
-button {
-  font-size: larger;
-  padding: 0.5rem 1rem;
-}
