@@ -1,4 +1,5 @@
 import { useNatureScene } from "../utils/fetch";
+import "./NatureScene.css"
 
 export default function NatureScene() {
   const { natureScene, handleNextNatureScene } = useNatureScene();
@@ -7,15 +8,16 @@ export default function NatureScene() {
     return <h3>Loading...</h3>;
   }
 
+  console.log("natureScene", natureScene);
   return (
     <>
-      <h1>{natureScene.name}</h1>
+      <h1>Nature Scene</h1>
       <figure>
         <img src={natureScene.image} alt="a nature scene" />
         <figcaption>{natureScene.caption}</figcaption>
       </figure>
 
-      <button type="button" onClick={handleNextNatureScene}>
+      <button type="button" className="button" onClick={handleNextNatureScene}>
         Next Scene
       </button>
     </>

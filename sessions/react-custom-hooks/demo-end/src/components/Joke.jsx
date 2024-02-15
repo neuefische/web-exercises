@@ -1,4 +1,5 @@
 import { useJoke } from "../utils/fetch";
+import "./Joke.css";
 
 export default function Joke() {
   const { joke, handleNextJoke } = useJoke();
@@ -10,7 +11,7 @@ export default function Joke() {
   return (
     <>
       <h1>{joke.joke}</h1>
-      <button type="button" onClick={handleNextJoke}>
+      <button type="button" className="button" onClick={handleNextJoke}>
         Next Joke
       </button>
     </>
