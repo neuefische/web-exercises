@@ -8,7 +8,6 @@ export default function NatureScene() {
     return <h3>Loading...</h3>;
   }
 
-  console.log("natureScene", natureScene);
   return (
     <>
       <h1>Nature Scene</h1>
