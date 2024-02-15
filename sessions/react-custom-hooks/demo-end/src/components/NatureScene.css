@@ -1,0 +1,22 @@
+.button {
+    font-size: larger;
+    padding: 0.5rem 1rem;
+    background-color: var(--secondary);
+    color: var(--white);
+    border: none;
+}
+
+.button:hover {
+    background-color: var(--secondary-dark);
+}
+
+
+figure {
+    background-color: var(--grey-light);
+    padding: 10px;
+}
+
+h1 {
+    color: var(--white);
+    margin: 0;
+}
