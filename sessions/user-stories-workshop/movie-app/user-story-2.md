@@ -2,9 +2,9 @@
 
 ## Value Proposition
 
-As a
-I want to
-so that
+As a `<Role>` <br>
+I want to `<Need>` <br>
+so that `<Purpose>` <br>
 
 ## Description
 
