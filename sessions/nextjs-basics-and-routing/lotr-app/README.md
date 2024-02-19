@@ -37,7 +37,7 @@ The overview page should contain the following:
 - A heading with the title "Lord of the Rings" (`h1`)
 - The introduction text imported from `lib/data.js` (`p`)
   ```js
-  import { introduction } from "../../lib/data";
+  import { introduction } from "../lib/data";
   ```
 - A heading with the title "All Volumes" (`h2`)
 - An unordered list with links to all volumes (`ul`, `li` and `Link`)
@@ -89,4 +89,6 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/nextjs-basics-and-ro
 - The files are already in the correct structure for the app.
   - `lib/data.js` contains the data for the app.
   - `public/images` contains the images for the app.
-- Copy them into your app's main directory.
+- To integrate these files into your app, proceed as follows:
+  - move `lib/data.js` to your app's root directory.
+  - move the images folder, along with all its contents, into the public directory located at your app's root.
