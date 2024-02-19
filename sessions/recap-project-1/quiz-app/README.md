@@ -12,13 +12,23 @@ able to:
 later project. But make sure you include the answer texts and bookmark buttons in your app. (You
 might want to look up the "hidden" attribute.)
 
+## Overview
+
+In this project we will have 3 pages:
+
+- **Home page:** were we will be able to view **all** questions.
+- **Bookmark page:** were we will be able to **only** view the bookmark questions, the once that you see in the home page as booked.
+- **Profile page:** were you will be able to view your profile and settings.
+
+[Here](./topics.md) you have some ideas of topics for your quiz app use one or choose one of your own, but please do not use lorem text
+
 ## 1. Setup
 
 To begin, perform the following tasks:
 
 - Create a new folder for your project named `yourName-quiz-app`
 - Initialize a local git repository.
-- Create a `.gitignore` file and add `.DS_Store` to the file.
+- Create a `.gitignore` file and add `.DS_Store` and `.vscode` to the file.
 - Create a remote repository and connect it to the local repository.
 - Create the `index.html` and `styles.css` files.
 - Make sure the CSS file is loaded in the HTML document.
