@@ -3,6 +3,28 @@
 The quiz app can be of the topic you like most.
 Here we leave you some ideas of questions and answers.
 
+**Informative:**
+
+- [CSS and HTML Quiz](#css-and-html-quiz)
+- [The Internet Quiz](#the-internet-quiz)
+
+**Movies:**
+
+- [Harry Potter Quiz](#harry-potter-quiz)
+- [Marvel Universe Quiz](#marvel-universe-quiz)
+
+**Music:**
+
+- [Taylor Swift Quiz](#taylor-swift-quiz)
+- [Imagine Dragons Quiz](#imagine-dragons-quiz)
+
+**TV Series:**
+
+- [Gilmore Girls Quiz](#gilmore-girls-quiz)
+- [Friends Quiz](#friends-quiz)
+- [Big Bang Theory Quiz](#big-bang-theory-quiz)
+- [Castle Quiz](#castle-quiz)
+
 ## CSS and HTML Quiz
 
 **1. Question:** What does CSS stand for?
@@ -44,6 +66,47 @@ Here we leave you some ideas of questions and answers.
 **10. Question:** What does the term "responsive web design" refer to?
 
 - Answer: It refers to designing web pages that adapt and display well on various screen sizes and devices.
+
+## The Internet Quiz
+
+**1. Question:** What does the acronym "WWW" stand for?
+
+- Answer: World Wide Web
+
+**2. Question:** Who is often credited with inventing the World Wide Web?
+
+- Answer: Tim Berners-Lee
+
+**3. Question:** What is the protocol used to transfer data from a web server to a web browser, enabling the viewing of web pages?
+
+- Answer: HTTP (Hypertext Transfer Protocol)
+
+**4. Question:** What is the term for a unique address that identifies a specific webpage on the internet?
+
+- Answer: URL (Uniform Resource Locator)
+
+**5. Question:** What is the most widely used web browser in the world?
+
+- Answer: Google Chrome
+
+**6. Question:** What is the maximum number of characters allowed in a tweet on Twitter?
+
+- Answer: 280 characters (formerly 140 characters)
+
+**7. Question:** What is the name of the technology that allows devices to connect to the internet without the need for physical cables?
+
+- Answer: Wi-Fi (Wireless Fidelity)
+
+**8. Question:** What is the term for the process of transferring data from a remote server to a local device?
+
+- Answer: Downloading
+
+**9. Question:** Which internet protocol is used for sending and receiving emails?
+
+- Answer: SMTP (Simple Mail Transfer Protocol)
+
+**10. Question:** What is the term for malicious software designed to disrupt, damage, or gain unauthorized access to computer systems?
+    - Answer: Malware (Malicious Software)
 
 ## Harry Potter Quiz
 
@@ -87,6 +150,47 @@ Here we leave you some ideas of questions and answers.
 
 - Answer: The Marauder's Map
 
+## Marvel Universe Quiz
+
+**1. Question:** What is the name of the first Marvel Cinematic Universe film, released in 2008?
+
+- Answer: Iron Man
+
+**2. Question:** What is the name of the powerful artifact that Thanos seeks to collect in the MCU?
+
+- Answer: Infinity Stones
+
+**3. Question:** What is the real name of the superhero known as Iron Man?
+
+- Answer: Tony Stark
+
+**4. Question:** Which MCU film features the first appearance of the character Black Panther?
+
+- Answer: Captain America: Civil War
+
+**5. Question:** What is the name of Thor's enchanted hammer?
+
+- Answer: Mjolnir
+
+**6. Question:** Which actor portrays the character Captain America in the MCU?
+
+- Answer: Chris Evans
+
+**7. Question:** What is the name of the organization founded by Nick Fury to protect the Earth from various threats in the MCU?
+
+- Answer: S.H.I.E.L.D. (Strategic Homeland Intervention, Enforcement, and Logistics Division)
+
+**8. Question:** Which film marks the first appearance of the character Spider-Man in the MCU?
+
+- Answer: Captain America: Civil War
+
+**9. Question:** What is the name of the fictional African nation ruled by T'Challa, also known as Black Panther?
+
+- Answer: Wakanda
+
+**10. Question:** In which MCU film does the character Thanos finally gather all six Infinity Stones and snap his fingers to wipe out half of all life in the universe?
+    - Answer: Avengers: Infinity War
+
 ## Taylor Swift Quiz
 
 **1. Question:** What is Taylor Swift's full name?
@@ -126,6 +230,49 @@ Here we leave you some ideas of questions and answers.
 - Answer: "Shake It Off"
 
 **10. Question:** In 2020, Taylor Swift released a sister album to "folklore." What is the name of this sister album? - Answer: "evermore"
+
+## Imagine Dragons Quiz
+
+**1. Question:** What is the name of the lead singer of Imagine Dragons?
+
+- Answer: Dan Reynolds
+
+**2. Question:** Which city did Imagine Dragons originate from?
+
+- Answer: Las Vegas, Nevada, USA
+
+**3. Question:** What was the title of Imagine Dragons' debut studio album released in 2012?
+
+- Answer: "Night Visions"
+
+**4. Question:** Which Imagine Dragons song became a massive hit and won the Grammy Award for Best Rock Performance?
+
+- Answer: "Radioactive"
+
+**5. Question:** What is the name of the album released by Imagine Dragons in 2015, featuring the hit singles "Shots" and "I Bet My Life"?
+
+- Answer: "Smoke + Mirrors"
+
+**6. Question:** Which Imagine Dragons song was featured in the soundtrack of the movie "Suicide Squad"?
+
+- Answer: "Sucker for Pain"
+
+**7. Question:** In 2017, Imagine Dragons released an album featuring the singles "Believer" and "Thunder." What is the title of this album?
+
+- Answer: "Evolve"
+
+**8. Question:** What is the name of Imagine Dragons' fourth studio album, released in 2018, featuring the singles "Natural" and "Zero"?
+
+- Answer: "Origins"
+
+**9. Question:** Which Imagine Dragons song served as the anthem for the League of Legends 2014 World Championship?
+
+- Answer: "Warriors"
+
+**10. Question:** What is the name of the Imagine Dragons song that was used as the theme song for the 2018 FIFA World Cup?
+    - Answer: "Whatever It Takes"
+
+Feel free to use these Imagine Dragons quiz questions and answers in your app. You can also customize them or add more questions to test the knowledge of Imagine Dragons fans.
 
 ## Gilmore Girls Quiz
 
