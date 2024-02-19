@@ -17,8 +17,16 @@ h1 {
   margin-top: 0;
 }
 
+div {
+  display: flex;
+  flex-direction: column;
+}
+
 button {
+  margin: 1rem;
   padding: 0.5rem 1rem;
   color: white;
   background: #ff4a11;
+  border: none;
+  border-radius: 0.25rem;
 }

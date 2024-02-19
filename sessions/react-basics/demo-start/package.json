@@ -1,7 +1,7 @@
 {
-  "name": "react-basics_demo-render",
+  "name": "react-basics_demo-start",
   "version": "0.0.0-unreleased",
-  "description": "React Render Demo",
+  "description": "React Demo Start",
   "main": "src/index.js",
   "dependencies": {
     "react": "18.2.0",
