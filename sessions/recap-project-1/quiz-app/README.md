@@ -16,7 +16,7 @@ might want to look up the "hidden" attribute.)
 
 In this project we will have 3 pages:
 
-- **Home page:** were we will be able to view **all** questions.
+- **Home page:** Here, you'll have access to view all questions available on the platform.
 - **Bookmark page:** This is a dedicated space where you can exclusively view the questions you've bookmarked, similar to the ones marked on the home page.
 - **Profile page:** were you will be able to view your profile and settings.
 
