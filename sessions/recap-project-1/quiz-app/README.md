@@ -17,7 +17,7 @@ might want to look up the "hidden" attribute.)
 In this project we will have 3 pages:
 
 - **Home page:** were we will be able to view **all** questions.
-- **Bookmark page:** were we will be able to **only** view the bookmark questions, the once that you see in the home page as booked.
+- **Bookmark page:** This is a dedicated space where you can exclusively view the questions you've bookmarked, similar to the ones marked on the home page.
 - **Profile page:** were you will be able to view your profile and settings.
 
 [Here](./topics.md) you have some ideas of topics for your quiz app use one or choose one of your own, but please do not use lorem text
