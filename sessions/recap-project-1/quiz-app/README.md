@@ -18,7 +18,7 @@ In this project we will have 3 pages:
 
 - **Home page:** Here, you'll have access to view all questions available on the platform.
 - **Bookmark page:** This is a dedicated space where you can exclusively view the questions you've bookmarked, similar to the ones marked on the home page.
-- **Profile page:** were you will be able to view your profile and settings.
+- **Profile page:** This section allows you to view and manage your profile and settings.
 
 [Here](./topics.md) you have some ideas of topics for your quiz app use one or choose one of your own, but please do not use lorem text
 
