@@ -16,3 +16,20 @@ legend {
 li {
   margin-bottom: 1em;
 }
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+button {
+  padding: 0.8em;
+  border-radius: 0.3em;
+}
+span {
+  margin-left: 2em;
+  font-style: italic;
+  color: blue;
+  font-size: 0.8em;
+}
+.hidden {
+  display: none;
+}
