@@ -19,7 +19,7 @@ const statement = "";
 console.log(statement);
 
 // Part 5: Greeting
-const name = "Archibald";
+const userName = "Archibald";
 
 const greeting = "Hello " + "//enter your code here" + "!";
 
