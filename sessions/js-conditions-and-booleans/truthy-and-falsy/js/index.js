@@ -3,7 +3,6 @@
 
 
 function showAnswers() {
-    console.log("in ShowAnswers()");
     const spans = document.querySelectorAll("span");
     spans.forEach((span) => {
       span.classList.toggle("hidden");
