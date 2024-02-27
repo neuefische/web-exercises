@@ -8,7 +8,7 @@ We have a big database of news articles. Lets find in it the stuff that we are i
 
 Have a look at the `./js/index.js` file: There is a variable `filteredNews` declared with `news.filter()` and a return value `true`.
 
-You task is to change the filter method:
+Your task is to change the filter method:
 
 - filter all cards which have the category "politics" in their category array
 - to do so, use the `includes` method on `card.categories`
