@@ -41,7 +41,7 @@ why the first step to success is to start with the homepage.
 > 💡 Hint: Make sure to use anchor elements for the navbar, so you can link to the other pages later
 > on!
 
-> 💡 Hint: You can ask coaches and fellow students to review your PRs. You will learn and improve a
+> 💡 Hint: You can ask fellow students to review your PRs. You will learn and improve a
 > lot by doing so.
 
 ## 3. Bookmarks Page
