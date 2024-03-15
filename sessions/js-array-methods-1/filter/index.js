@@ -3,6 +3,7 @@ console.clear();
 const cards = [
   {
     id: "1",
+    isBookmarked: false,
     question: "How often can I use <header>?",
     answer: "As often as you like.",
     tags: ["html", "elements", "basic"],
