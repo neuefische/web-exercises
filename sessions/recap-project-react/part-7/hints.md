@@ -77,6 +77,6 @@ export default function App() {
 <summary>🔒 Example Solution </summary>
 Only check this solution after giving this part a good try!
 
-[🔗 Part 7 Example Solution](https://github.com/neuefische/web-react-recap-project-solution/tree/part-7)
+[🔗 Part 7 Example Solution](https://github.com/neuefische-web-demos/theme-creator-example-solution/tree/part-7)
 
 </details>
