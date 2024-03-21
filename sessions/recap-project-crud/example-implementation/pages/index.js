@@ -11,7 +11,9 @@ export default function HomePage({ places }) {
       <List>
         {places.map((place) => (
           <Link key={place.id} href={`/places/${place.id}`}>
-            <Card place={place} />
+            <ListItem>
+              <Card place={place} />
+              </ListItem>
           </Link>
         ))}
       </List>
@@ -27,4 +29,9 @@ const List = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+`;
+
+const ListItem = styled.li`
+  border: 4px solid black;
+  text-align: center;
 `;

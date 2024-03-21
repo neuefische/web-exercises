@@ -78,8 +78,8 @@ As is standard practice, each feature should be developed on a separate branch.
 
 - **Create a Dynamic Route for Place Details**
 
+  - Create a directory `places` inside the `/pages` directory
   - In the `/pages/places` directory, create a dynamic route named `[id]/index.js`. This file will serve as the detail page for each place.
-  - The `[id]` in the file path is a placeholder that Next.js will replace with the actual ID of the place being viewed.
 
 - **Display Place Information**
 

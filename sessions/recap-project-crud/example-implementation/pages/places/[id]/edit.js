@@ -19,7 +19,7 @@ export default function EditPage({ places, handleEditPlace }) {
       <Form
         onSubmit={handleEditPlace}
         defaultData={foundPlace}
-        formName="Edit"
+        isEditMode
       />
     </Container>
   );

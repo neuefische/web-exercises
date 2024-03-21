@@ -1,8 +1,9 @@
 import { useRouter } from "next/router";
 import styled from "styled-components";
 import Button from "./Button";
+import { nanoid } from "nanoid";
 
-export default function Form({ onSubmit, defaultData, formName }) {
+export default function Form({ onSubmit, defaultData, isEditMode }) {
   const router = useRouter();
 
   function handleSubmit(event) {
@@ -11,7 +12,8 @@ export default function Form({ onSubmit, defaultData, formName }) {
     const formData = new FormData(event.target);
     const data = Object.fromEntries(formData);
 
-    const placeData = defaultData ? { ...data, id: defaultData.id } : data;
+    const id = defaultData.id || nanoid();
+    const placeData = {...data, id};
 
     onSubmit(placeData);
 
@@ -20,7 +22,7 @@ export default function Form({ onSubmit, defaultData, formName }) {
 
   return (
     <>
-      <h2>{formName} place</h2>
+      <h2>{isEditMode ? "Edit" : "Add"} place</h2>
       <StyledForm onSubmit={handleSubmit}>
         <label htmlFor="name">Name:</label>
         <input
@@ -58,7 +60,7 @@ export default function Form({ onSubmit, defaultData, formName }) {
           defaultValue={defaultData?.description}
         />
         <Button type="submit">
-          {formName === "Add" ? "Add new place" : "Edit place"}
+          {isEditMode ? "Edit place" : "Add new place"}
         </Button>
       </StyledForm>
     </>

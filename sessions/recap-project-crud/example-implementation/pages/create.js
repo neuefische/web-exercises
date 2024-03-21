@@ -5,7 +5,7 @@ export default function CreatePage({ handleAddPlace }) {
   return (
     <>
       <StyledLink href="/">&larr; Back to Homepage</StyledLink>
-      <Form onSubmit={handleAddPlace} formName="Add" />
+      <Form onSubmit={handleAddPlace} />
     </>
   );
 }

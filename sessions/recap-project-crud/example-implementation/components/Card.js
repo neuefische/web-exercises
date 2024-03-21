@@ -1,10 +1,9 @@
 import Image from "next/image";
-import styled from "styled-components";
 import ImageContainer from "./ImageContainer";
 
 export default function Card({ place }) {
   return (
-    <ListItem>
+    <>
       <figure>
         <ImageContainer>
           <Image
@@ -19,11 +18,8 @@ export default function Card({ place }) {
         <figcaption>{place.name}</figcaption>
       </figure>
       <p>Location: {place.location}</p>
-    </ListItem>
+    </>
   );
 }
 
-const ListItem = styled.li`
-  border: 4px solid black;
-  text-align: center;
-`;
+

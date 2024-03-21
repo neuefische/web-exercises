@@ -1,13 +1,13 @@
 import GlobalStyle from "../styles";
 import { initialPlaces } from "@/lib/db";
 import { useState } from "react";
-import { nanoid } from "nanoid";
+
 
 export default function App({ Component, pageProps }) {
   const [places, setPlaces] = useState(initialPlaces);
 
   function handleAddPlace(newPlace) {
-    setPlaces([...places, { ...newPlace, id: nanoid() }]);
+    setPlaces([...places, newPlace]);
   }
 
   function handleDeletePlace(id) {
