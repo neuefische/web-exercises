@@ -6,24 +6,25 @@
 If a state is only needed in one component, it should be
 kept local inside of that specific component.
 
-```js
+```jsx
 // bad:
 function App() {
-  const [showDetails,setShowDetails] = useState([false,false,false,...])
+  const [showDetails,setShowDetails] = useState(false)
   //...
+
+  <MyComponent showDetails={showDetails} />
 }
 ```
 
-or
-
-```js
-function AlbumCard() {
-  const [showList, setShowList] = useState(false);
+```jsx
+// better:
+function MyComponent() {
+  const [showDetails, setShowDetails] = useState(false);
   //...
+
+  return showDetails ? <MyDetails /> : <MyPreview />;
 }
 ```
-
-Which one is better?
 
 </details>
 
