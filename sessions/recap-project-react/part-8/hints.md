@@ -1,54 +1,64 @@
 # Part 8 - Hints
 
 <details>
-<summary>💡 Hint: Handling Offset</summary>
-You need a new state for saving the Offset. Use this offset in your useEffect to pass the offset to the search endpoint:
+<summary>💡 Hint: Controlled inputs</summary>
+You can couple inputs by using a state which stores the value of both inputs:
 
-```js
-const [offset, setOffset] = useState(0);
+```jsx
+const [value, setValue] = useState(initialValue);
 
-//...
+return <>
+  <input
+    class='input-1'
+    ...
+    value={value}
+    onChange={(event) => setValue(event.target.value)}
+  />
+  <input
+    class='input-2'
+    ...
+    value={value}
+    onChange={(event) => setValue(event.target.value)}
+  />
+<>
 
-useEffect(
-  () =>
-    async function fetchData() {
-      const response = await fetch(
-        `https://neuefische-spotify-proxy.vercel.app/api/search?artist=${query}&offset=${offset}`
-      );
-    },
-  [offset]
-);
 ```
 
 </details>
+
 <details>
-<summary>💡 Hint: Appending new Values</summary>
-Don't overwrite the first entries when appending the new albums to the list:
+<summary>💡 Hint: Efficient Fetching</summary>
+Instead of fetching the color name when the color card is created, it is more efficient to fetch the name once when the color is edited or created:
 
-```js
-setAlbums([...albums, ...receivedAlbums]);
-```
+```jsx
+function App() {
+  ...
+  async function handleAddTheme(newTheme) {
+    // fetch name for every color in colors array
+    const promises = newTheme.colors.map(async color => {
+      const response = await fetch(url)
+      const data = await response.json()
 
-</details>
-<details>
-<summary>💡 Hint: Resetting Offset</summary>
-Reset the offset when submitting the form:
+      return {
+        ...color,
+        name: data.name.value
+      }
+    })
 
-```js
-function handleSubmit(query) {
-  setOffset(0);
-  //...
+    // await all promises
+    const colorsWithName = await Promise.all(promises);
+
+    setThemes([{...newTheme,colors: colorsWithName},...themes])
+
+  }
+
+  async function handleEditTheme(modifiedTheme) {
+    // fetch name for every color in colors array
+    ...
+
+  }
+
 }
-
-useEffect(
-  () =>
-    async function fetchData() {
-      const response = await fetch(
-        `https://neuefische-spotify-proxy.vercel.app/api/search?artist=${query}&offset=${offset}`
-      );
-    },
-  [offset]
-);
 ```
 
 </details>
