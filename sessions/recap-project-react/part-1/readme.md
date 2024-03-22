@@ -10,7 +10,7 @@
 
 ## Description
 
-![wireframe](./assets/user-story-1.png)
+![wireframe](../assets/wireframe-1.png)
 
 ## Acceptance Criteria
 
