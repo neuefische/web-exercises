@@ -31,3 +31,13 @@
 - Create a function called `handleAddTheme` with a `newTheme` parameter which adds it at the top of the theme array state.
 - pass the `handleAddTheme` function to the theme form component.
 - Test the form to ensure it successfully adds themes with titles and colors.
+
+## Notes
+
+- Your new themes need a random id, you can use `uuid` for that:
+
+  ```js
+  import uuid from "uuid";
+
+  const randomId = uuid.v4();
+  ```
