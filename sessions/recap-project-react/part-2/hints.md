@@ -1,13 +1,15 @@
 # Part 2 - Hints
 
 <details>
-<summary>💡 Hint: State </summary>
+<summary>💡 Hint: Local State </summary>
 
-If you only place a state where it is needed, you can significantly reduce complexity.
+If a state is only needed in one component, it should be
+kept local inside of that specific component.
 
 ```js
+// bad:
 function App() {
-  const [albumStates,setAlbumStates] = useState([false,false,false,...])
+  const [showDetails,setShowDetails] = useState([false,false,false,...])
   //...
 }
 ```
