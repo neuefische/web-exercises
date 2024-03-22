@@ -1,27 +1,71 @@
-# Part 2 - Hints
+# Part 3 - Hints
 
 <details>
-<summary>💡 Hint: fetching Data </summary>
+<summary>💡 Hint: Accessing Form Data</summary>
 
-fetching is an async task, so you need an async function for it and a state for the data to be stored after fetching is complete
+You can access the values of your form with the "name" attribute:
 
-```js
-function App() {
-  const [data, setData] = useState(null);
+```jsx
 
-  useEffect(() => {
-    //...
-  }, []);
-  //...
+return (
+  <form onSubmit={handleSubmit}>
+    <input name='primary' ... />
+    <input name='secondary' ... />
+  ...
+  </form>
+)
+
+```
+
+```jsx
+function handleSubmit(event) {
+  const formData = new FormData(event.target);
+  const data = Object.fromEntries(formData);
+
+  const primary = data.primary;
+  const secondary = data.secondary;
 }
 ```
 
 </details>
 
 <details>
-<summary>💡 Hint: Default Data</summary>
+<summary>💡 Hint: Theme Data Structure</summary>
 
-What should be the default data type for your album data? You need to make sure that you don't try to call `data.map(...)` on a data type that does not has a `.map` method.
+Make sure that the new Theme as the same data structure as the other themes:
+
+```js
+const newTheme = {
+  id: string,
+  name: string,
+  colors: [
+    {
+      role: string,
+      value: string,
+    },
+    {
+      role: string,
+      value: string,
+    },
+    ...
+  ]
+}
+```
+
+</details>
+
+<details>
+<summary>💡 Hint: Adding elements to Array state</summary>
+
+remember how to add elements to a complex state:
+
+```js
+  const [state, setState] = useState([...])
+
+  function handleAddTheme(newItem) {
+    setState([...state,newItem])
+  }
+```
 
 </details>
 
