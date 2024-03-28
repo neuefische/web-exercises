@@ -1,27 +1,30 @@
 # Part 2 - Hints
 
 <details>
-<summary>💡 Hint: State </summary>
+<summary>💡 Hint: Local State </summary>
 
-If you only place a state where it is needed, you can significantly reduce complexity.
+If a state is only needed in one component, it should be
+kept local inside of that specific component.
 
-```js
+```jsx
+// bad:
 function App() {
-  const [albumStates,setAlbumStates] = useState([false,false,false,...])
+  const [showDetails,setShowDetails] = useState(false)
   //...
+
+  <MyComponent showDetails={showDetails} />
 }
 ```
 
-or
-
-```js
-function AlbumCard() {
-  const [showList, setShowList] = useState(false);
+```jsx
+// better:
+function MyComponent() {
+  const [showDetails, setShowDetails] = useState(false);
   //...
+
+  return showDetails ? <MyDetails /> : <MyPreview />;
 }
 ```
-
-Which one is better?
 
 </details>
 
@@ -48,6 +51,6 @@ const isOpen = true;
 <summary>🔒 Example Solution </summary>
 Only check this solution after giving this part a good try!
 
-[🔗 Part 2 Example Solution](https://github.com/neuefische/web-react-recap-project-solution/tree/part-2)
+[🔗 Part 2 Example Solution](https://github.com/neuefische-web-demos/theme-creator-example-solution/tree/part-2)
 
 </details>
