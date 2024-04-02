@@ -1,0 +1,22 @@
+:root {
+  --color-nemo: #ff4a11;
+  --color-granite: #252629;
+  --color-water-10: #f3f5f9;
+  --color-foam: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font-family: system-ui;
+  max-width: 300px;
+}
+
+h1 {
+  text-align: center;
+}
