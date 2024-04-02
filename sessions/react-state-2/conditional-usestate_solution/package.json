@@ -1,7 +1,7 @@
 {
-  "name": "react-state-2_triple-count_solution",
+  "name": "react-state-2_conditional-usestate_solution",
   "version": "0.0.0-unreleased",
-  "description": "React State 2: Triple Count",
+  "description": "React State 2: Conditional useState",
   "main": "src/index.js",
   "dependencies": {
     "react": "18.2.0",
