@@ -1,7 +1,7 @@
 {
-  "name": "react-effects-and-fetch_pokemon-api_solution",
+  "name": "react-effects-and-fetch_pokemon-api-with-paging_solution",
   "version": "0.0.0-unreleased",
-  "description": "React Effects and Fetch: Pokémon API",
+  "description": "React Effects and Fetch: Pokémon API with Paging",
   "main": "src/index.js",
   "dependencies": {
     "react": "18.2.0",
