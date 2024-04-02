@@ -1,0 +1,45 @@
+.entry {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.entry__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.entry__date {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.entry__motto-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.entry__motto {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.entry__notes {
+  margin: 0;
+  font-size: 14px;
+}
+
+.entry__favorite-button {
+  appearance: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+}

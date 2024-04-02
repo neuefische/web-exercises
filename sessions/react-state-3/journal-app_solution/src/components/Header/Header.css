@@ -1,0 +1,12 @@
+.header {
+  background: var(--color-water-10);
+  padding: 16px 18px;
+}
+
+.header__title {
+  margin: 0;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
