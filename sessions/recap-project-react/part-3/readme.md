@@ -37,7 +37,7 @@
 - Your new themes need a random id, you can use `uuid` for that:
 
   ```js
-  import uuid from "uuid";
+  import { v4 as uuid } from "uuid";
 
-  const randomId = uuid.v4();
+  const randomId = uuid();
   ```
