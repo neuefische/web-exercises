@@ -34,7 +34,7 @@
 ## Notes
 
 - 💡 (Optional) You can reuse the `ThemeForm` component instead of creating a new component. You need to update the component accordingly to accept default values.
-- Toggling between preview, details and edit form can become quite messy. Instead of using a "boolean" state, you can store the current display state as a string (`"preview"`, `"details"` or `"eidt"`). Then use conditional rendering to display only the elements that correspond to that display state:
+- Toggling between preview, details and edit form can become quite messy. Instead of using a "boolean" state, you can store the current display state as a string (`"preview"`, `"details"` or `"edit"`). Then use conditional rendering to display only the elements that correspond to that display state:
 
   ```jsx
     {displayState === "preview" && <ThemePreview ... />}

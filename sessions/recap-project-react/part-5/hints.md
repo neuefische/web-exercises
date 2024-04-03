@@ -26,6 +26,7 @@ function MyComponent() {
 
   useEffect(() => {
     // fetch data...
+    setData(fetchedData);
   }, []);
   //...
 }
