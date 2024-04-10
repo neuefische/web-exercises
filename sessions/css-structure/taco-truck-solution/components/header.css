@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  gap: 12px;
+  background: var(--header-bg);
+  color: var(--header-text);
+  width: fit-content;
+  padding: 20px;
+}
+
+.header-title {
+  margin: 0;
+}
+
+.header-image {
+  font-size: 2rem;
+}

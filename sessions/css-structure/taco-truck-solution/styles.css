@@ -1,0 +1,21 @@
+@import "./theme.css";
+@import "./components/header.css";
+@import "./components/main.css";
+@import "./components/card.css";
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0;
+  padding: 20px;
+  height: 100vh;
+  width: 100vw;
+  font-family: system-ui;
+  background: var(--body-bg);
+}

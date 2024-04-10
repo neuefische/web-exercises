@@ -1,0 +1,21 @@
+.card {
+  background: var(--card-bg);
+  width: 300px;
+  padding: 20px;
+  border-radius: 12px;
+  color: var(--card-text);
+}
+
+.card-title {
+  margin: 0;
+}
+
+.card-title-wrapper {
+  display: flex;
+  gap: 6px;
+}
+
+.card-list {
+  padding: 0;
+  list-style: none;
+}

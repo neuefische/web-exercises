@@ -1,0 +1,31 @@
+/* -------------------------------------------------------- */
+/* You will need to add more imports eventually.
+/* -------------------------------------------------------- */
+
+@import "./theme.css";
+
+/* ------------------------------------------------------------------------------ */
+/* You don't need to edit the code for the * universal selector and the body.
+/* ------------------------------------------------------------------------------ */
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0;
+  padding: 20px;
+  height: 100vh;
+  width: 100vw;
+  font-family: system-ui;
+  background: var(--body-bg);
+}
+
+/* ------------------------------------------------------------ */
+/* You can write the rest of your code below this line, 
+/* but you may need to move some of it.
+/* ------------------------------------------------------------ */
