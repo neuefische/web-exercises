@@ -31,11 +31,12 @@ Tommy from Tommy's Taco Truck needs your help! He's asked your colleague to crea
 Now it's time to write some CSS!
 
 - You may want to start off by adding your class selectors to HTML elements.
-- Next up is including those classes into your CSS files.
-- Feel free to use the CSS variables defined in your `theme.css` file with `var(--your-variable)` while styling your components.
-- While composing your styles you may realize that some of these classes belong together thematically.
-- Create new CSS files for the groups you identified in your `components` folder (e.g. `card.css`).
-- ⚠️ Don't forget to import these files in your `styles.css`!
+- You remember that it is good practice to split the CSS into grouped chunks, so you create one CSS file for each component you identified (e.g. `card.css`).
+- Create at least 3 CSS files!
+- For some reason the styles don't appear on your website. You remember that you need to import your other CSS files in your `styles.css`.
+- Now you can style your components by writing the CSS into the respective CSS file.
+  💡 Feel free to use the CSS variables defined in the `theme.css` file with `var(--your-variable)` while styling your components.
+- Continue styling the website until it looks fabulous ✨.
 
 ### Final Step
 
