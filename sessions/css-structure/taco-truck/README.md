@@ -16,7 +16,7 @@ Tommy from Tommy's Taco Truck needs your help! He's asked your colleague to crea
 > 🚨 He's let us know that - because we're in such a hurry - we don't need to implement these styles in a pixel-perfect way. **Close enough is good enough!**
 
 - Take a look at the current state of the `index.html`.
-- It looks like your colleague has already linked to a `styled.css`.
+- It looks like your colleague has already linked to a `styles.css`.
 - Take a look at the `styles.css` file.
 - You may notice that there are some styles and one import included here.
 
