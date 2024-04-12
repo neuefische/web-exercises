@@ -14,8 +14,15 @@ body {
   gap: 20px;
   margin: 0;
   padding: 20px;
-  height: 100vh;
-  width: 100vw;
   font-family: system-ui;
   background: var(--body-bg);
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  display: contents;
 }
