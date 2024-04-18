@@ -20,9 +20,9 @@ In this exercise you train to write if / else and ternary statements in various 
 
 - for a given `numberOfHotdogs` a person buys, log the respective price that the person has to pay:
 - for less than 5 hotdogs: 2 euro per hotdog
-- for more than 5 but less than 100 hotdogs: 1.50 euro per hotdog
-- for more than 100 but less than 1 000 000 hotdogs: 1 euro per hotdog
-- for more than 1 000 000 hotdogs: 0.10 euro per hotdog
+- for at least 5 but less than 100 hotdogs: 1.50 euro per hotdog
+- for at least 100 but less than 1 000 000 hotdogs: 1 euro per hotdog
+- for at least 1 000 000 hotdogs: 0.10 euro per hotdog
 - change the `numberOfHotdogs` to see if your code works properly
 
 ### Part 4: Daytime

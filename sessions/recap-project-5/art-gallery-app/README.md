@@ -14,7 +14,7 @@ Besides the art pieces themselves, your gallery app needs to handle data that ch
 
 The following user stories define the features you should add to the app. We advise you to work on the user stories roughly in the order they are noted here. Some user stories depend on each other. Some can be implemented independently.
 
-Create a new repository on GitHub and add everybody in your group als collaborator. When starting with the app you should implement the basic setup in a mob. Afterwards you should split up. Each group member can contribute parts to the app individually or in pair programming. Use different branches and pull requests to work in parallel.
+Create a new repository on GitHub and add everybody in your group als collaborator. When starting with the app you should implement the basic setup in a mob. Afterwards you should split up. Each group member can contribute parts to the app individually or in pair programming. Use different branches to work in parallel.
 
 Plan your work wisely and talk about your next steps in the team.
 
@@ -27,7 +27,7 @@ The goal of this recap project is not necessarily to finish all features, but to
 First create a new Next.js based on our template using this command:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/templates/next art-gallery-app -i
+npx ghcd@latest neuefische/web-exercises/tree/main/templates/next art-gallery-app
 ```
 
 Download the [Favorite Icon](./assets/heart.svg) and save it in a folder named "assets" within your app's main directory.

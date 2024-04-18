@@ -265,7 +265,7 @@ https://codesandbox.io/p/sandbox/github/neuefische/web-exercises/tree/main/sessi
 We are using [`ghcd`](https://github.com/djfarly/ghcd#readme) (GitHub Clone Directory) which is a tool that "clones" (or rather downloads) a subdirectory of a GitHub repository. You can share the command containing the URL to the exercise folder on GitHub.
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/map -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/map
 ```
 
 > **Note**  

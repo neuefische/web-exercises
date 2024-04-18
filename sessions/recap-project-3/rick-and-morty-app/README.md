@@ -22,10 +22,11 @@ information you need in the docs.
 - Execute the following command to create a new project based on a template:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/recap-project-3/rick-and-morty-app -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/recap-project-3/rick-and-morty-app
 ```
 
-- Create a new empty repository on GitHub, link it to the created repository on your computer and push the code.
+- Create a new empty repository on GitHub and add everybody in your group as collaborator.
+- Link your remote repository to the created repository on your computer and push the code.
 - Each member of the group clones the repository to their local machine.
 - Follow the instructions given in the `README.md` file.
 
