@@ -122,18 +122,6 @@ During **"Recap Project 1"** you can essentially "skip" this step, because you'r
 | -------- | ---------------------------- |
 | Settings | ![Add](./assets/screen7.png) |
 
-> ⚠️ It may be that you find your Vercel deployment to have its "Deployment Protection" turned on by default. You can turn that off by
->
-> - navigating to the "Settings" tab of your project on Vercel,
-> - selecting "Deployment Protection" and
-> - clicking on the "Vercel Authentication" toggle.
->
-> This can also be accomplished after the project has already been deployed.
->
-> | Step     | Screen                        |
-> | -------- | ----------------------------- |
-> | Settings | ![Add](./assets/screen11.png) |
-
 ### Deploy your Project
 
 Vercel will then build and deploy your project, providing you with a unique URL to preview your deployment.
@@ -159,3 +147,17 @@ You can now find a link to your deployment on Vercel in the "About" section of t
 | Step          | Screen                        |
 | ------------- | ----------------------------- |
 | About Section | ![Add](./assets/screen10.png) |
+
+### Deployment Protection
+
+> ⚠️ It may be that you find your Vercel deployment to have its "Deployment Protection" turned on by default. You can turn that off by
+>
+> - navigating to the "Settings" tab of your project on Vercel,
+> - selecting "Deployment Protection" and
+> - clicking on the "Vercel Authentication" toggle.
+>
+> This can **only** be accomplished **after** the project has already been deployed.
+>
+> | Step     | Screen                        |
+> | -------- | ----------------------------- |
+> | Settings | ![Add](./assets/screen11.png) |
