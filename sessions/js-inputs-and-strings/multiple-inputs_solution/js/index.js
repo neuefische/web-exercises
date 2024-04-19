@@ -10,13 +10,13 @@ const firstInput = document.querySelector('[data-js=first-input]');
 const secondInput = document.querySelector('[data-js=second-input]');
 const button = document.querySelector('[data-js=button]');
 
-// Solution exercise 3:
+// Solution exercise 1:
 
 // button.addEventListener('click', () => {
 //   secondInput.value = firstInput.value
 // });
 
-// Solution exercise 3:
+// Solution exercise 2:
 
 // button.addEventListener('click', () => {
 //   secondInput.value = firstInput.value.toUpperCase()
