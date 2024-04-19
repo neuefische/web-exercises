@@ -72,7 +72,7 @@ Create the profile page in the same way you created the other two pages.
 
 You may ask yourself: _"How do I share my Quiz App with others now that I've finished it?"_
 
-Fret not, because we have one of many solutions for you. You need just a little time and a small amount of confidence, because what we're going to try to do is pretty easy and there's really not much that can go wrong.
+Here's one of many solutions! It's fairly easy and there's really not much that can go wrong.
 
 Here is a guide on how to deploy a repository on **Vercel**:
 
@@ -122,6 +122,18 @@ During **"Recap Project 1"** you can essentially "skip" this step, because you'r
 | -------- | ---------------------------- |
 | Settings | ![Add](./assets/screen7.png) |
 
+> ⚠️ It may be that you find your Vercel deployment to have its "Deployment Protection" turned on by default. You can turn that off by
+>
+> - navigating to the "Settings" tab of your project on Vercel,
+> - selecting "Deployment Protection" and
+> - clicking on the "Vercel Authentication" toggle.
+>
+> This can also be accomplished after the project has already been deployed.
+>
+> | Step     | Screen                        |
+> | -------- | ----------------------------- |
+> | Settings | ![Add](./assets/screen11.png) |
+
 ### Deploy your Project
 
 Vercel will then build and deploy your project, providing you with a unique URL to preview your deployment.
@@ -139,3 +151,11 @@ You have deployed your first repository!
 | Step | Screen                       |
 | ---- | ---------------------------- |
 | Done | ![Add](./assets/screen9.png) |
+
+### By the way ...
+
+You can now find a link to your deployment on Vercel in the "About" section of the respective repository!
+
+| Step          | Screen                        |
+| ------------- | ----------------------------- |
+| About Section | ![Add](./assets/screen10.png) |
