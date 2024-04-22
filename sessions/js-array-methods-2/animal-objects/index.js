@@ -89,11 +89,15 @@ const indexOfAnimalWithNameLongerFive = null;
 
 // Hint: There is no need to upper-/lowercase the strings before sorting them.
 // Hint: sort() mutates the original array, which is bad.
-// -> Use animals.slice().sort(...) to make a copy (and the tests work).
+// Make sure to use toSorted() instead.
 
 const animalsSortedAlphabetically = null;
 
 const animalsSortedByWeightStartingWithLowest = null;
+
+// Note:
+// - reverse() mutates the original array (like sort() does), which is bad.
+// Use toReversed() instead (or any other method to get the expected result)
 
 const animalsSortedByWeightReversed = null;
 

@@ -34,11 +34,11 @@ const indexOfGiraffe = null;
 // Note:
 // - Sorting strings is slightly more complicated than sorting numbers.
 // - You will need if-statements and return values of -1, 1, and 0.
-// - Check out MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+// - Check out MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toSorted
 
 // Hint: There is no need to upper-/lowercase the strings before sorting them.
 // Hint: sort() mutates the original array, which is bad.
-// -> Use animals.slice().sort(...) to make a copy.
+// That's why we use toSorted()
 const animalsSortedAlphabetically = null;
 
 // Hint: Guess what? There is a string method called `endsWith()`.

@@ -17,7 +17,7 @@ sortedNews.forEach((news) => {
   container.append(cardElement);
 });
 
-// Check your filter and sorting order here:
+// Check your filter and sorting order here. Have a look at the console to see if you're right or wrong.
 checkFilteredNews(filteredNews);
 
 checkSortedNews(sortedNews);
