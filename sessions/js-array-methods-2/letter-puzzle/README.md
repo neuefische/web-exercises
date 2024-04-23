@@ -21,15 +21,7 @@ Begin by examining the employees array in /utils/data.js. Your goal is to solve 
 
 To work locally, please install the dependencies using `npm i` first.
 
-
 > You can use the Live Preview or Live Server Extension for Visual Studio Code to view this project.  
 > Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
 
 
-### CodeSandbox Cloud
-
-Select the "Preview: 3000" tab to view this project.
-
-Select the "Tests: logs" tab to view the tests.
-
-> The `npm run start` and `npm run test` scripts run automatically.

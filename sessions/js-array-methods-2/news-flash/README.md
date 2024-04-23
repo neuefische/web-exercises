@@ -12,13 +12,12 @@ You task is to change the filter method:
 
 - filter all cards which have the category "politics" in their category array
 - to do so, use the `includes` method on `card.categories`
-- don't forget to remove the return statement because you don't need it.
 
 ### Part 2: Sort
 
 In the `./js/index.js` file, you will find another variable called `sortedNews` declared with the value of `filteredNews`.
 
-Use the sort method to sort all filtered cards by the length of their body text.
+Use the toSorted() method to sort all filtered cards by the length of their body text.
 
 ## Note
 
@@ -35,20 +34,9 @@ Run `npm run start` to start a development server and open [localhost:3000](http
 > Alternatively you can use the Live Preview Extension for Visual Studio Code to view this project.  
 > Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
 
-Use `npm run test` to run the tests.
-
-### CodeSandbox Cloud
-
-Select the "Preview: 3000" tab to view this project.
-
-Select the "Tests: logs" tab to view the tests.
-
-> The `npm run start` and `npm run test` scripts run automatically.
-
 ### Scripts
 
 You can use the following commands:
 
 - `npm run start` to start a development server
-- `npm run test` to run the tests
 - `npm run lint` to run the linter
