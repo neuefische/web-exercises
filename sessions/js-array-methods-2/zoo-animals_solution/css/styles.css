@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.tag {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 0.8em;
+  background-color: cornflowerblue;
+  color: white;
+  margin: 0.2em;
+  padding: 0.4em;
+  text-wrap: nowrap;
+}
+ul {
+  overflow-wrap: break-word;
+  line-height: 2em;
+  padding: 0;
+}
+.output {
+  margin-top: 1em;
+  font-size: 1.5em;
+}
+button {
+  border-radius: 0.5em;
+  font-size: 0.8em;
+  padding: 0 0.2em;
+}
+input {
+  border-radius: 0.5em;
+  padding: 0.3em;
+}
