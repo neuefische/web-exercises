@@ -1,0 +1,33 @@
+:root {
+  --nemo: #ff4a11;
+  --granite: #252629;
+  --water: #f3f5f9;
+  --foam: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui;
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: contents;
+}
+
+.app {
+  width: min(600px, 100% - 2rem);
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/index.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>Service</h1>
+      <h2>Customer complaint form</h2>
+      <p>
+        Fill out this form to complain to customer support about our poor
+        service. Please note that due to an increased volume of requests, it
+        currently takes us several months to respond to your request.
+      </p>
+      <p>
+        <strong>Note:</strong> This form is not intended to be used for any
+        other purpose than to complain to customer support.
+      </p>
+      <form data-js="form">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="first-name">First Name</label>
+          <input
+            type="text"
+            name="firstName"
+            id="first-name"
+            placeholder="Your first name"
+            required
+            minlength="4"
+            maxlength="30"
+          />
+
+          <label for="last-name">Last Name</label>
+          <input
+            type="text"
+            name="lastName"
+            id="last-name"
+            placeholder="Your last name"
+            required
+            minlength="4"
+            maxlength="30"
+          />
+
+          <label for="age">Age</label>
+          <input type="number" name="age" id="age" min="14" />
+
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Your complaint</legend>
+          <label for="complaint">What went wrong?</label>
+          <select name="complaint" id="complaint">
+            <option value="nothing" selected>
+              Nothing, everything is fine!
+            </option>
+            <option value="personal">It's me, not you!</option>
+            <option value="broken">
+              My product is broken, can you fix it?
+            </option>
+          </select>
+
+          <label for="details">Details about your complaint</label>
+          <textarea
+            name="details"
+            id="details"
+            placeholder="Please provide as much detail as possible"
+          ></textarea>
+
+          <label for="badness"
+            >How bad was your experience? (On a scale from <q>meh</q> to
+            <q>abysmal</q>)
+          </label>
+          <input
+            id="badness"
+            name="badness"
+            type="range"
+            min="1"
+            max="100"
+            value="100"
+          />
+
+          <label for="order-date">Order Date</label>
+          <input type="date" name="orderDate" id="order-date" />
+
+          <label for="terms-of-service">
+            <input
+              type="checkbox"
+              name="terms-of-service"
+              id="terms-of-service"
+              required
+            />
+            I have read the terms of service and agree to sell my soul
+            <a
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              (click here for more info)
+            </a>
+          </label>
+        </fieldset>
+
+        <button type="submit">Complain now!</button>
+      </form>
+    </main>
+  </body>
+</html>

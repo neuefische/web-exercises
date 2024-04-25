@@ -1,0 +1,50 @@
+:root {
+  /* Color Variables */
+
+  --color-nemo: #ff4a11;
+  --color-granite: #252629;
+  --color-water-10: #f3f5f9;
+  --color-foam: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui;
+}
+
+.article {
+  width: 50%;
+  margin: 2rem auto;
+  padding: 1rem 3rem;
+  background-color: var(--color-foam);
+  box-shadow: var(--color-granite) 0px 2px 8px;
+  border: 1px solid var(--color-granite);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.article__link {
+  width: fit-content;
+  background-color: var(--color-granite);
+  color: var(--color-foam);
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.article__link:hover {
+  background-color: var(--color-nemo);
+  color: var(--color-water-10);
+}
+
+.article__title {
+  color: var(--color-nemo);
+}

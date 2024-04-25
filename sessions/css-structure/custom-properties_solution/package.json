@@ -1,0 +1,14 @@
+{
+  "name": "css-structure-challenge-2-custom-properties-solution",
+  "version": "0.0.0-unreleased",
+  "description": "",
+  "main": "index.html",
+  "nf": {
+    "template": "html-css"
+  },
+  "private": true,
+  "scripts": {
+    "start": "npx -y live-server@latest --port=3000"
+  },
+  "keywords": []
+}

@@ -1,0 +1,11 @@
+.card-list {
+  display: grid;
+  gap: 2rem;
+  padding: 10rem 2rem 4rem 2rem;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.card-list__item {
+  margin: 0 0 4rem;
+}

@@ -1,0 +1,8 @@
+@import "./global.css";
+
+@import "./components/App/App.css";
+@import "./components/Bookmark/Bookmark.css";
+@import "./components/Card/Card.css";
+@import "./components/CardList/CardList.css";
+@import "./components/Form/Form.css";
+@import "./components/Header/Header.css";

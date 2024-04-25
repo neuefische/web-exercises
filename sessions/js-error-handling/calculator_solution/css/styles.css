@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+  font-family: system-ui;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+form * {
+  display: flex;
+  align-items: center;
+  height: 2.5rem;
+  padding: 0 0.5rem;
+}
+
+.error {
+  color: red;
+  line-height: 3rem;
+  font-weight: bold;
+}

@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui;
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  gap: 2rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: contents;
+}

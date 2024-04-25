@@ -1,0 +1,42 @@
+[
+  {
+    "_id": {
+      "$oid": "63b598370e7740872e8c10c1"
+    },
+    "title": "I like!",
+    "text": "Love this one, very handsome!",
+    "rating": 5
+  },
+  {
+    "_id": {
+      "$oid": "63b598370e7740872e8c10c2"
+    },
+    "title": "Well...",
+    "text": "Not my favorite: cannot sing.",
+    "rating": 1
+  },
+  {
+    "_id": {
+      "$oid": "63b598370e7740872e8c10c3"
+    },
+    "title": "Works as expected.",
+    "text": "Swims in rounds and rounds.",
+    "rating": 5
+  },
+  {
+    "_id": {
+      "$oid": "63b598370e7740872e8c10c4"
+    },
+    "title": "Nice fish!",
+    "text": "Says 'Good Morning' each day.",
+    "rating": 4
+  },
+  {
+    "_id": {
+      "$oid": "63b598370e7740872e8c10c5"
+    },
+    "title": "Did not meet my expectations.",
+    "text": "Boring...",
+    "rating": 2
+  }
+]

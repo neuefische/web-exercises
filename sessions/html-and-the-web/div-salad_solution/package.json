@@ -1,0 +1,13 @@
+{
+  "name": "html-and-the-web-challenge-1-div-salad-solution",
+  "version": "0.0.0-unreleased",
+  "description": "",
+  "main": "index.html",
+  "nf": {
+    "template": "html-css"
+  },
+  "scripts": {
+    "start": "npx -y live-server@latest --port=3000"
+  },
+  "keywords": []
+}

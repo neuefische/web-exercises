@@ -1,0 +1,13 @@
+:root {
+  --body-bg: #ffebcd;
+
+  --main-bg: #ffebcd;
+  --main-text: #fff;
+  --main-title-bg: #663399;
+
+  --header-bg: #ffd700;
+  --header-text: #663399;
+
+  --card-bg: #228b22;
+  --card-text: #fff;
+}

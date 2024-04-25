@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+  <script src="./js/index.js" type="module"></script>
+</head>
+
+<body>
+  <h1>Calculator</h1>
+  <form>
+    <input type="number" name="firstNumber" placeholder="First" required />
+    <select name="operation" required>
+      <option value="">Choose an operation</option>
+      <option value="add">+</option>
+      <option value="subtract">-</option>
+      <option value="multiply">*</option>
+      <option value="divide">/</option>
+    </select>
+    <input type="number" name="secondNumber" placeholder="Second" required />
+    <button>=</button>
+    <output name="result">...</output>
+  </form>
+  <p class="error"></p>
+</body>
+
+</html>

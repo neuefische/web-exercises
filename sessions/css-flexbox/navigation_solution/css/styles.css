@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.header {
+  padding: 20px;
+  color: #252629;
+  background-color: #f3f5f9;
+}
+
+.navigation__menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation__link {
+  background-color: #ff4a11;
+  color: #ffffff;
+  padding: 5px 14px;
+  border-radius: 5px;
+}

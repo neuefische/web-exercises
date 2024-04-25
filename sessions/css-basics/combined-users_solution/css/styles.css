@@ -1,0 +1,126 @@
+/*
+  Scroll down to the bottom of the file
+  to see the instructions for this exercise.
+   ⬇
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui;
+  background-color: #f1f4f7;
+  padding: 0 48px;
+  color: #021414;
+}
+
+main,
+aside {
+  max-width: 800px;
+  margin: 24px auto;
+  padding: 16px 32px;
+  border: 2px dotted lightslategray;
+  border-radius: 4px;
+  position: relative;
+}
+
+ul {
+  width: max-content;
+}
+
+li {
+  margin: 8px 0;
+}
+
+.user {
+  position: relative;
+  border: 2px solid lightslategray;
+  border-radius: 8px;
+  box-shadow: 4px 4px 0 lightslategray;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0;
+  background-color: white;
+}
+
+.name {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.bio {
+  font-size: 14px;
+  color: darkslategray;
+}
+
+.location {
+  font-size: 12px;
+  font-weight: 600;
+  text-align: end;
+  margin: 0;
+}
+
+aside .user {
+  position: relative;
+  border: 2px solid lightslategray;
+  border-radius: 4px;
+  box-shadow: 4px 4px 0 lightslategray;
+  padding: 12px;
+  max-width: 250px;
+  margin: 0;
+  background-color: white;
+}
+
+aside .name {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+ul .user .bio {
+  display: none;
+  font-size: 12px;
+  color: darkslategray;
+  margin: 6px 0;
+}
+
+ul .user .location {
+  font-size: 10px;
+  font-weight: 600;
+  text-align: end;
+  margin: 0;
+}
+/*
+  Part 1
+.
+  Make .user elements inside the aside smaller:
+    - reduce the max-width to 250px
+    - reduce the padding to 12px
+    - reduce the border-radius to 4px
+    - reduce the font-size of the .name to 16px
+    - reduce the font-size of the .bio to 12px
+    - set the margin of the .bio to "6px 0"
+    - reduce the font-size of the .location to 10px
+  
+
+  Make sure to not change the styles of the .user element anywhere else.
+  
+  For guidance you can include some debug styles.
+  To do so, add a "debug" class to the html element.
+*/
+
+/*
+  Part 2
+
+  For all .user elements inside an unordered list:
+    - hide the .bio
+    - align the .location to the left and set it's color to darkslategray
+
+  Make sure to not change the styles of the .user element anywhere else.
+
+  💡 You can use the display property to hide elements.
+*/
