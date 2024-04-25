@@ -39,8 +39,7 @@ const indexOfGiraffe = animalStrings.indexOf("giraffe");
 
 // Hint: There is no need to upper-/lowercase the strings before sorting them.
 // Hint: sort() mutates the original array, which is bad.
-// -> Use animals.slice().sort(...) to make a copy.
-const animalsSortedAlphabetically = animalStrings.slice().sort((a, b) => {
+const animalsSortedAlphabetically = animalStrings.toSorted((a, b) => {
   if (a < b) return -1;
   if (a > b) return 1;
   else return 0;
