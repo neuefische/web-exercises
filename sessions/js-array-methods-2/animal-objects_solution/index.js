@@ -93,9 +93,8 @@ const indexOfAnimalWithNameLongerFive = animals.findIndex(
 
 // Hint: There is no need to upper-/lowercase the strings before sorting them.
 // Hint: sort() mutates the original array, which is bad.
-// -> Use animals.slice().sort(...) to make a copy (and the tests work).
 
-const animalsSortedAlphabetically = animals.slice().sort((a, b) => {
+const animalsSortedAlphabetically = animals.toSorted((a, b) => {
   if (a.name < b.name) {
     return -1;
   }
@@ -108,12 +107,10 @@ const animalsSortedAlphabetically = animals.slice().sort((a, b) => {
 });
 
 const animalsSortedByWeightStartingWithLowest = animals
-  .slice()
-  .sort((a, b) => a.weight - b.weight);
+  .toSorted((a, b) => a.weight - b.weight);
 
 const animalsSortedByWeightReversed = animals
-  .slice()
-  .sort((a, b) => b.weight - a.weight);
+  .toSorted((a, b) => b.weight - a.weight);
 
 const animalWithWeightMoreThanFivehundredExists = animals.some(
   (animal) => animal.weight > 500
