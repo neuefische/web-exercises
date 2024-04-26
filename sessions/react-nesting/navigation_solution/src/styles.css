@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui;
+  background-color: #0d1117;
+}
+
+button {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+main {
+  min-height: 85vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  color: rgb(62, 66, 78);
+}
+
+.header {
+  padding: 0.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #c9d1d9;
+}
+
+.round-image {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.navigation__link {
+  color: #ffffee;
+  margin-left: 1rem;
+}
+
+.navigation__link:hover {
+  color: #c9d1d9;
+}
