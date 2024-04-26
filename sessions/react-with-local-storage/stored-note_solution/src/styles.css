@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui;
+  display: grid;
+  min-height: 100vh;
+}
+
+#root,
+.app {
+  display: contents;
+}
+
+::selection {
+  background: hotpink;
+}
