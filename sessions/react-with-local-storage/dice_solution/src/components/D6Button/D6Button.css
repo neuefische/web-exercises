@@ -1,0 +1,14 @@
+.d6-button {
+  all: unset;
+  padding: 12px;
+  margin: -12px;
+  cursor: pointer;
+  border-radius: 999px;
+  background-color: var(--granite);
+  transition: background-color 0.2s;
+}
+
+.d6-button:hover,
+.d6-button:focus-visible {
+  background-color: var(--nemo);
+}
