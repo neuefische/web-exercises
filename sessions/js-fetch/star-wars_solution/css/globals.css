@@ -1,0 +1,16 @@
+:root {
+  --color-nemo: #ff4a11;
+  --color-granite: #252629;
+  --color-water-10: #f3f5f9;
+  --color-foam: #ffffff;
+}
+
+body {
+  background-color: var(--color-foam);
+}
+
+main {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+}
