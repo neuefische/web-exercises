@@ -1,0 +1,33 @@
+:root {
+  --color-granite: #252629;
+  --color-foam: #ffffff;
+  --color-nemo: #ff4a11;
+  --color-water: #f3f5f9;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 5px;
+  background-color: var(--color-water);
+  color: var(--color-granite);
+}
+
+.app__card-grid {
+  display: grid;
+  gap: 30px;
+  padding: 20px;
+}

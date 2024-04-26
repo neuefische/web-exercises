@@ -1,0 +1,16 @@
+.button {
+  border: none;
+  padding: 8px 20px;
+  background-color: var(--color-water);
+  filter: brightness(0.9);
+  border-radius: 4px;
+  color: var(--color-granite);
+  font-size: 1rem;
+  align-self: center;
+}
+
+.button--danger {
+  color: var(--color-foam);
+  background-color: var(--color-nemo);
+  filter: unset;
+}
