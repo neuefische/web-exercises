@@ -1,0 +1,13 @@
+{
+  "name": "js-fetch_color-clue",
+  "version": "0.0.0-unreleased",
+  "description": "Color Clue Challenge for JS Fetch Session",
+  "main": "index.html",
+  "scripts": {
+    "lint": "npx eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "nf": {
+    "template": "html-css-js-static"
+  }
+}
