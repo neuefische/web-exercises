@@ -1,0 +1,11 @@
+:root {
+  --color-granite: #252629;
+  --color-foam: #ffffff;
+  --color-nemo: #ff4a11;
+  --color-water: #f3f5f9;
+}
+
+.app {
+  font-family: sans-serif;
+  text-align: center;
+}
