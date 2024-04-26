@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 2rem auto;
+  width: 50vh;
+  font-family: system-ui;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.box {
+  min-width: 100px;
+  min-height: 100px;
+  flex: 1;
+}
