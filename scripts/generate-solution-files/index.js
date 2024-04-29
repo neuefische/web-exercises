@@ -1,8 +1,7 @@
 import { $, file, write } from "bun";
 import { readdir } from "node:fs/promises";
-import { exit } from "node:process";
 
-const DEV = true;
+const DEV = false;
 
 const sessions = await readdir(import.meta.dir + "/../../sessions");
 
@@ -17,16 +16,18 @@ const sessionSolutions = await Promise.all(
     }))
 );
 
-const basePath = DEV ? "../../output/sessions" : "../../sessions";
+const basePath = DEV
+  ? "../../../web-curriculum/output/sessions"
+  : "../../../web-curriculum/sessions";
 
 sessionSolutions.forEach(async (session) => {
   if (session.solutions.length <= 0) return;
 
   await $`mkdir -p ${basePath}/${session.name}`;
-  write(`${basePath}/${session.name}/${session.name}-solutions.md`, "");
+  write(`${basePath}/${session.name}/solutions-${session.name}.md`, "");
 
   const solutionsFile = file(
-    `${basePath}/${session.name}/${session.name}-solutions.md`
+    `${basePath}/${session.name}/solutions-${session.name}.md`
   ).writer();
 
   solutionsFile.write(`# Solutions: ${deSlug(session.name)}\n\n`);
