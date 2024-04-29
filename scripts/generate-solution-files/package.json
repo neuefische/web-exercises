@@ -1,0 +1,8 @@
+{
+  "name": "week-preview",
+  "module": "index.js",
+  "type": "module",
+  "dependencies": {
+    "bun": "^1.1.6"
+  }
+}
