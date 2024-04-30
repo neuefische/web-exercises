@@ -20,8 +20,6 @@ Utilize what you've learned about flexbox to complete the following tasks:
 
 ## Development
 
-### Local Development
-
 Run `npm run start` to start a development server and open [localhost:3000](http://localhost:3000) in a browser.
 
 > Alternatively you can use the Live Preview Extension for Visual Studio Code to view this project.  

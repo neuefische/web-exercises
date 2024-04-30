@@ -27,8 +27,6 @@ When submitting the form, the form fields should be reset and the `holiday` fiel
 
 ## Development
 
-### Local Development
-
 To work locally, please install the dependencies using `npm i` first.
 
 Run `npm run start` to start a development server and open the displayed URL in a browser.

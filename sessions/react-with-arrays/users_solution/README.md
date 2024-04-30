@@ -20,8 +20,6 @@ After that, you can implement two more features to make the user overview even m
 
 ## Development
 
-### Local Development
-
 To work locally, please install the dependencies using `npm i` first.
 
 Run `npm run start` to start a development server and open the displayed URL in a browser.

@@ -8,8 +8,6 @@ This demo shows how to use props in React.
 
 ## Development
 
-### Local Development
-
 To work locally, please install the dependencies using `npm i` first.
 
 Run `npm run start` to start a development server and open the displayed URL in a browser.

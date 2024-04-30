@@ -67,8 +67,6 @@ Switch to the browser and open `/products/[someId]`: you should now see the prod
 
 ## Development
 
-### Local Development
-
 To work locally, please install the dependencies using `npm i` first.
 
 Run `npm run dev` to start a development server and open the displayed URL in a browser.

@@ -16,8 +16,6 @@ Append the second social media post to the body. Don't forget to add the event l
 
 ## Development
 
-### Local Development
-
 To work locally, please install the dependencies using `npm i` first.
 
 Run `npm run start` to start a development server and open [localhost:3000](http://localhost:3000) in a browser.

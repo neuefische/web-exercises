@@ -14,8 +14,6 @@ Add an event listener to the "buy" button of the second product teaser. When cli
 
 ## Development
 
-### Local Development
-
 To work locally, please install the dependencies using `npm i` first.
 
 Run `npm run start` to start a development server and open [localhost:3000](http://localhost:3000) in a browser.

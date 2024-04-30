@@ -10,8 +10,6 @@ Go into the `./js/index.js` file and fix the described errors. You find there 4 
 
 ## Development
 
-### Local Development
-
 To work locally, please install the dependencies using `npm i` first.
 
 Run `npm run start` to start a development server and open [localhost:3000](http://localhost:3000) in a browser.

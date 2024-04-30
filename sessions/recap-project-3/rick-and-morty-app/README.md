@@ -121,8 +121,6 @@ However, we want to tidy up our code so that not everything is written in a sing
 
 ## Development
 
-### Local Development
-
 To work locally, please install the dependencies using `npm i` first.
 
 Run `npm run start` to start a development server and open [localhost:3000](http://localhost:3000) in a browser.

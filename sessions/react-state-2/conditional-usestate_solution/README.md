@@ -15,8 +15,6 @@ After that, fix the error in the `./src/App.js` file. If you need a clue, search
 
 ## Development
 
-### Local Development
-
 To work locally, please install the dependencies using `npm i` first.
 
 Run `npm run start` to start a development server and open the displayed URL in a browser.

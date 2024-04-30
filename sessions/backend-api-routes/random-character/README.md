@@ -53,8 +53,6 @@ You have now prepared an api route responding with a random character – let's 
 
 ## Development
 
-### Local Development
-
 To work locally, please install the dependencies using `npm i` first.
 
 Run `npm run dev` to start a development server and open the displayed URL in a browser.

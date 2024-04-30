@@ -16,8 +16,6 @@ Check out the `./index.html` and the `./css/styles.css` files.
 
 ## Development
 
-### Local Development
-
 Run `npm run start` to start a development server and open [localhost:3000](http://localhost:3000) in a browser.
 
 > Alternatively you can use the Live Preview Extension for Visual Studio Code to view this project.  

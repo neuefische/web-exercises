@@ -54,8 +54,6 @@ In this challenge you will automate the lights in your house… well, at least i
 
 ## Development
 
-### Local Development
-
 To work locally, please install the dependencies using `npm i` first.
 
 Run `npm run dev` to start a development server and open the displayed URL in a browser.

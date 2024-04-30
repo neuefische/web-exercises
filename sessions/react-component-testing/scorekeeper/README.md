@@ -92,8 +92,6 @@ Congratulations, you have fixed your first bug according to a failing test! 🎉
 
 ## Development
 
-### Local Development
-
 To work locally, please install the dependencies using `npm i` first.
 
 Run `npm run dev` to start a development server and open the displayed URL in a browser.

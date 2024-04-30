@@ -23,8 +23,6 @@ You can find detailed descriptions of the tasks in the comments of the CSS file.
 
 ## Development
 
-### Local Development
-
 Run `npm run start` to start a development server and open [localhost:3000](http://localhost:3000) in a browser.
 
 > Alternatively you can use the Live Preview Extension for Visual Studio Code to view this project.  

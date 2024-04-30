@@ -90,8 +90,6 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/nextjs-basics-and-ro
 
 ## Development
 
-### Local Development
-
 To work locally, please install the dependencies using `npm i` first.
 
 Run `npm run dev` to start a development server and open the displayed URL in a browser.
