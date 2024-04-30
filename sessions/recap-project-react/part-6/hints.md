@@ -45,7 +45,7 @@ function ThemeForm({ onSubmit, initialData = defaultData, isEditMode }) {
   return <>
     <h2>{isEditMode ? "Edit Theme" : "Add Theme"}</h2>
     <form onSubmit={handleSubmit}>
-      <input ... defaultValue={defaultData.name}/>
+      <input ... defaultValue={initialData.name}/>
       ...
     </form>
 }
