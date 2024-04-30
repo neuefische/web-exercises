@@ -1,6 +1,6 @@
 # Quiz App: Importing and Exporting
 
-This codesandbox offers a working Quiz App, but does not use JS Modules. Let's change this lack of structure!
+This challenge offers a working Quiz App, but does not use JS Modules. Let's change this lack of structure!
 
 ## Task
 
@@ -27,20 +27,6 @@ Run `npm run start` to start a development server and open [localhost:3000](http
 > Alternatively you can use the Live Preview Extension for Visual Studio Code to view this project.  
 > Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
 
-Use `npm run test` to run the tests.
+Use `npm run test` to run the test
 
-### CodeSandbox Cloud
 
-Select the "Preview: 3000" tab to view this project.
-
-Select the "Tests: logs" tab to view the tests.
-
-> The `npm run start` and `npm run test` scripts run automatically.
-
-### Scripts
-
-You can use the following commands:
-
-- `npm run start` to start a development server
-- `npm run test` to run the tests
-- `npm run lint` to run the linter

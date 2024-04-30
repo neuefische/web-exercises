@@ -46,12 +46,6 @@ Let's update the background of the output display to indicate whether we gain or
 
 ## Development
 
-### CodeSandbox
-
-Select the "Browser" tab to view this project.
-
-### Local development
-
 To run project commands locally, you need to install the dependencies using `npm i` first.
 
 You can then use the following command:

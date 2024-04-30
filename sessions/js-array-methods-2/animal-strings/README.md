@@ -45,10 +45,4 @@ Run `npm run start` to start a development server and open [localhost:3000](http
 
 Use `npm run test` to run the tests.
 
-### Scripts
 
-You can use the following commands:
-
-- `npm run start` to start a development server
-- `npm run test` to run the tests
-- `npm run lint` to run the linter

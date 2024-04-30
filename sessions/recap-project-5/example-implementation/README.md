@@ -10,14 +10,6 @@ To work locally, please install the dependencies using `npm i` first.
 
 Run `npm run dev` to start a development server and open the displayed URL in a browser.
 
-### CodeSandbox Cloud
-
-Select the "Preview: 3000" tab to view this project.
-
-Select the "Tests: logs" tab to view the tests.
-
-> The `npm run dev` and `npm run test` scripts run automatically.
-
 ### Scripts
 
 You can use the following commands:

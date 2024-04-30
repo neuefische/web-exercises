@@ -1,6 +1,6 @@
 # HTML Form Validation
 
-This Codesandbox offers a form where the user can submit a complaint.
+This challenge offers a form where the user can submit a complaint.
 
 In order to process the complaint, the company needs certain information.
 
@@ -20,12 +20,6 @@ Switch to the [`index.html`](./index.html) file and validate the form in the men
 > 💡 The default behavior of the submit event is turned off and the page does not reload when clicking the submit button. We will discuss in how to achieve this behavior in the `JS Forms` session.
 
 ## Development
-
-### CodeSandbox
-
-Select the "Browser" tab to view this project.
-
-### Local development
 
 To run project commands locally, you need to install the dependencies using `npm i` first.
 

@@ -24,12 +24,6 @@ Go to [`index.js`](./index.js) and start coding!
 
 ## Development
 
-### CodeSandbox
-
-Select the "Browser" tab to view this project.
-
-### Local development
-
 To run project commands locally, you need to install the dependencies using `npm i` first.
 
 You can then use the following command:
