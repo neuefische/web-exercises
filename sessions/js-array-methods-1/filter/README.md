@@ -1,6 +1,6 @@
 # Array Methods: `filter`
 
-This codesandbox offers a some exercises to recap the array method `filter`. Let's dive directly into it!
+This challenge offers a some exercises to recap the array method `filter`. Let's dive directly into it!
 
 ## Task
 
@@ -13,8 +13,6 @@ And now it's your turn: delete the value `null` and write code such that the var
 Switch to the `./index.js` file and map / filtersome recipes!
 
 ## Notes
-
-- If you want to check whether you solved the tasks correctly, open the "Tests" tab of Codesandbox.
 
 ## Development
 
@@ -30,19 +28,3 @@ Run `npm run start` to start a development server and open [localhost:3000](http
 > Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
 
 Use `npm run test` to run the tests.
-
-### CodeSandbox Cloud
-
-Select the "Preview: 3000" tab to view this project.
-
-Select the "Tests: logs" tab to view the tests.
-
-> The `npm run start` and `npm run test` scripts run automatically.
-
-### Scripts
-
-You can use the following commands:
-
-- `npm run start` to start a development server
-- `npm run test` to run the tests
-- `npm run lint` to run the linter

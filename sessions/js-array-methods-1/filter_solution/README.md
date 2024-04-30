@@ -1,6 +1,6 @@
 # Array Methods: `filter`
 
-This codesandbox offers a some exercises to recap the array method `filter`. Let's dive directly into it!
+This challenge offers a some exercises to recap the array method `filter`. Let's dive directly into it!
 
 ## Task
 
@@ -14,15 +14,7 @@ Switch to the [`index.js`](./index.js) file and map / filtersome recipes!
 
 ## Notes
 
-- If you want to check whether you solved the tasks correctly, open the "Tests" tab of Codesandbox.
-
 ## Development
-
-### CodeSandbox
-
-This project is JavaScript only so there is nothing to view in the "Browser" tab. Please select the "Tests" tab to check your progress.
-
-### Local development
 
 To run project commands locally, you need to install the dependencies using `npm i` first.
 

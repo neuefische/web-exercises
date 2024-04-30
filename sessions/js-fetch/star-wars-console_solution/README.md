@@ -22,12 +22,6 @@ Please switch to the [`js/index.js`](./js/index.js) file: May the force be with 
 
 ## Development
 
-### CodeSandbox
-
-Select the "Browser" tab to view this project.
-
-### Local development
-
 To run project commands locally, you need to install the dependencies using `npm i` first.
 
 You can then use the following command:

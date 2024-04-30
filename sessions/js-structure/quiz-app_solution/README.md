@@ -1,6 +1,6 @@
 # Quiz App: Importing and Exporting
 
-This codesandbox offers a working Quiz App, but does not use JS Modules. Let's change this lack of structure!
+This challenge offers a working Quiz App, but does not use JS Modules. Let's change this lack of structure!
 
 ## Task
 
@@ -17,12 +17,6 @@ The following hints might guide you:
 - Don't forget to tell the browser that you are using modules now (inside of the [`index.html`](./index.html) file).
 
 ## Development
-
-### CodeSandbox
-
-Select the "Browser" tab to view this project.
-
-### Local development
 
 To run project commands locally, you need to install the dependencies using `npm i` first.
 

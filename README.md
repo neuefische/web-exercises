@@ -1,7 +1,7 @@
 # web exercises
 
 A monorepo containing exercises, challenges, demos and starters for the neue fische web bootcamps.
-All of the exercises are designed to work locally as well as on CodeSandbox.
+All of the exercises are designed to work locally.
 
 <!-- toc -->
 
@@ -26,7 +26,6 @@ All of the exercises are designed to work locally as well as on CodeSandbox.
   - [Exercise requirements](#exercise-requirements)
   - [Review new or changed exercises](#review-new-or-changed-exercises)
   - [Access exercises or templates](#access-exercises-or-templates)
-    - [CodeSandbox](#codesandbox)
     - [Locally](#locally)
   - [Local development](#local-development)
 
@@ -142,7 +141,7 @@ A template that does not contain any code.
 
 created via [`recipes/html-css-js`](./recipes/html-css-js)
 
-A template that contains HTML, CSS and JavaScript files with jest support. CodeSandbox bundles the code and runs the tests automatically. Locally you can run the tests with `npm run test`.
+A template that contains HTML, CSS and JavaScript files with jest support.
 
 **📝 Create a new exercise inside this repository**
 
@@ -166,7 +165,7 @@ A template that contains HTML and CSS files.
 
 created via [`recipes/js`](./recipes/js)
 
-A template that contains only JavaScript files with jest support. CodeSandbox bundles the code and runs the tests automatically. Locally you can run the tests with `npm run test`.
+A template that contains only JavaScript files with jest support.
 
 **📝 Create a new exercise inside this repository**
 
@@ -214,7 +213,7 @@ A template from executing `npx create-next-app` to create a new Next.js app. Our
 
 created via [`recipes/node-server`](./recipes/node-server)
 
-A template that contains a Node.js server with Jest support. CodeSandbox runs the tests automatically. Locally you can run the tests with `npm run test`.
+A template that contains a Node.js server with Jest support.
 
 **📝 Create a new exercise inside this repository**
 
@@ -242,24 +241,6 @@ Exercises must be reviewed by at least one neue fische web coach.
 
 There a two ways to access the exercises or templates:
 
-### CodeSandbox
-
-Open the the folder of the exercise on GitHub. Change the URL from `github.com` to `codesandbox.io/p/sandbox/github`. This will open the exercise in CodeSandbox. Select the README.md file and copy the URL directly to this file.
-
-```diff
-- https://github.com/neuefische/web-exercises/tree/main/sessions/js-array-methods/map
-+ https://codesandbox.io/p/sandbox/github/neuefische/web-exercises/tree/main/sessions/js-array-methods/map
-```
-
-The shareable link you need to copy looks like this:
-
-```
-https://codesandbox.io/p/sandbox/github/neuefische/web-exercises/tree/main/sessions/js-array-methods/map?file=/README.md
-```
-
-> **Note**  
-> While reviewing an exercise, you can share the link pointing to the respective branch. This way exercises can be reviewed on CodeSandbox before they are merged into the main branch.
-
 ### Locally
 
 We are using [`ghcd`](https://github.com/djfarly/ghcd#readme) (GitHub Clone Directory) which is a tool that "clones" (or rather downloads) a subdirectory of a GitHub repository. You can share the command containing the URL to the exercise folder on GitHub.
@@ -283,5 +264,3 @@ To run commands in a workspace of the monorepo (an exercise folder) on your loca
 1. make sure you have run `npm i` in the root of this repository
 2. `cd` into the folder (`cd sessions/session-name/exercise-name`)
 3. run the script of you choice (`npm run test`)
-
-[^1]: An exercise based on `create-react-app` might not be able to build in CodeSandbox. The `create-react-app` setup includes the package `web-vitals`. The adblocker browser extension [uBlock Origin might block](https://github.com/codesandbox/codesandbox-client/issues/6035) requests to load this package. Please make sure to add the domain `codesandbox.io` and the pattern `/.*csb.app.*/` to the trusted sites ("Ausnahmeregeln") in the uBlock Origin settings.
