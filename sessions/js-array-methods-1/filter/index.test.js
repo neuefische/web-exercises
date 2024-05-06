@@ -21,6 +21,7 @@ describe("Filtering Challenge", () => {
     expect(allCardsWith3Tags).toEqual([
       {
         id: "1",
+        isBookmarked: false,
         question: "How often can I use <header>?",
         answer: "As often as you like.",
         tags: ["html", "elements", "basic"],
@@ -38,6 +39,7 @@ describe("Filtering Challenge", () => {
     expect(allCardsThatAreNotBookmarked).toEqual([
       {
         id: "1",
+        isBookmarked: false,
         question: "How often can I use <header>?",
         answer: "As often as you like.",
         tags: ["html", "elements", "basic"],
