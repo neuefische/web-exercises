@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { Button } from "@/components/Button";
+import { Btn } from "@/components/Button";
 
 import React, { useState } from "react";
 
@@ -93,7 +93,7 @@ export default function HomePage({ setProduct, productToBuy }) {
                 <b style={{ color: "white" }}>{produkt.price}</b>
               </p>
               <p>produkt.size</p>
-              <Button
+              <Btn
                 setProduct={setProduct}
                 produkt={produkt}
                 productToBuy={productToBuy}
