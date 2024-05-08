@@ -74,7 +74,7 @@ export default function HomePage({ setProduct, productToBuy }) {
       <myComponent />
       <h1>My Cosmetics Store</h1>
       <div>
-        {kosmetikProdukte &&
+        {kosmetikProdukt &&
           kosmetikProdukt.map((produkt, index) => (
             <StyledDiv key={index}>
               <h1>Name: {produkt.name}</h1>
