@@ -75,7 +75,7 @@ export default function HomePage({ setProduct, productToBuy }) {
       <h1>My Cosmetics Store</h1>
       <div>
         {kosmetikProdukte &&
-          kosmetikProdukte.map((produkt, index) => (
+          kosmetikProdukt.map((produkt, index) => (
             <StyledDiv key={index}>
               <h1>Name: {produkt.name}</h1>
               <h2>Brand: {produkt.brand}</h2>
