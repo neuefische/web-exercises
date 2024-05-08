@@ -6,7 +6,7 @@ import React, { useState } from "react";
 
 import myComponent from "@/components/myComponent1/myComponent.js";
 
-const kosmetikProdukte = [
+const kosmetikProdukt = [
   {
     name: "Luminous Silk Foundation",
     brand: "Aurora",
