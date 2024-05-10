@@ -10,7 +10,7 @@ Inside the event listener, use the `find` method to find the country in the coun
 
 > 💡 Strings have a method `startsWith(string)`, which might be helpful.
 
-> 💡 Each contry in the array as a name attribute.
+> 💡 Each country in the array has a name attribute.
 
 > 💡 Can you make the search 'case-insensitive'?
 
