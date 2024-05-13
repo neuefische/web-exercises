@@ -27,7 +27,7 @@ The goal of this recap project is not necessarily to finish all features, but to
 First create a new Next.js based on our template using this command:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/templates/next art-gallery-app
+npx ghcd@latest neuefische/web-exercises/tree/main/templates/next art-gallery-app -i
 ```
 
 Download the [Favorite Icon](./assets/heart.svg) and save it in a folder named "assets" within your app's main directory.
