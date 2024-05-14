@@ -4,8 +4,6 @@ In this challenge, you will build a node server which responds depending on the 
 
 ## Task
 
-> 💡 This challenge includes tests. You can run them with `npm run test` and check your progress while working on the challenge.
-
 Build a server that sends a different response depending on the url route:
 
 - if the requested url is `/api/fish/1`, the response should be `"Shrimp"` and the status code should be `200`;
@@ -41,13 +39,10 @@ To work locally, please install the dependencies using `npm i` first.
 
 Run `npm run start` to start the node server and open [localhost:3000](http://localhost:3000) in a browser.
 
-Use `npm run test` to run the tests.
-
 ### Scripts
 
 You can use the following commands:
 
 - `npm run start` to starts the node server (and watches for changes)
 - `npm run start:nowatch` to start the node server (without watching for changes)
-- `npm run test` to run the tests
 - `npm run lint` to run the linter
