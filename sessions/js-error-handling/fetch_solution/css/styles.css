@@ -3,10 +3,10 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: system-ui;
   margin: 0;
   padding: 2rem 0;
-  background-color: darkturquoise;
+  background-color: #b2ebf2;
 }
 
 main {
@@ -17,24 +17,21 @@ main {
   margin: 0 auto;
 }
 
-main > * {
-  margin: 0;
-}
-
 .user {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
   padding: 2rem;
   border-radius: 0.5rem;
-  background-color: white;
+  background-color: #e2e2e2;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
-.user > * {
-  margin: 0;
+.user__image {
+  width: 100px;
+  height: auto
 }
-
 .actions {
   display: flex;
   gap: 0.5rem;
@@ -47,14 +44,15 @@ main > * {
   border-radius: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+ background-color: #e2e2e2;;
 }
 
 .actions button:hover {
-  background-color: rgb(110, 152, 192);
+  background-color: #0097a7;
 }
 
 .error {
-  color: red;
+  color: rgb(255, 0, 47);
   line-height: 3rem;
-  font-weight: bold;
+  font-size: 1.2rem; 
 }
