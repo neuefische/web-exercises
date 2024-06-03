@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+const fetcher = (url) => fetch(url).then((response) => response.json());
+
 export default function HomePage() {
   const [id, setId] = useState(0);
   const [funnyJokeIds, setFunnyJokeIds] = useState([]);
@@ -8,7 +10,7 @@ export default function HomePage() {
     data: joke,
     isLoading,
     error,
-  } = useSWR(`https://example-apis.vercel.app/api/bad-jokes/${id}`);
+  } = useSWR(`https://example-apis.vercel.app/api/bad-jokes/${id}`, fetcher);
 
   function handlePrevJoke() {
     setId(joke.prevId);
