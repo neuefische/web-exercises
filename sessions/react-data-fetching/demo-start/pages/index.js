@@ -33,9 +33,6 @@ export default function HomePage() {
     <>
       <small>ID: {id}</small>
       <h1>{joke.joke}</h1>
-      <button type="button" onClick={() => handleToggleFunnyJoke(id)}>
-        {isFunny ? "😂 is Funny" : "😐 is not Funny"}
-      </button>
       <div>
         <button type="button" onClick={handlePrevJoke}>
           ← Prev Joke
