@@ -3,11 +3,11 @@ import "./styles.css";
 
 export default function App() {
   const [code, setCode] = useState("");
-  console.log(code);
+
   const validCode = "🐡🐠🐋";
 
-  function handleCode(emoji) {
-    setCode(code + emoji);
+  function handleClick(event) {
+    setCode(code + event.target.textContent);
   }
 
   function handleResetCode() {
@@ -17,17 +17,17 @@ export default function App() {
   return (
     <div className="container">
       <div className="button-container">
-        <button type="button" onClick={() => handleCode("🐡")}>
+        <button type="button" onClick={handleClick}>
           <span role="img" aria-label="Pufferfish">
             🐡
           </span>
         </button>
-        <button type="button" onClick={() => handleCode("🐋")}>
+        <button type="button" onClick={handleClick}>
           <span role="img" aria-label="Whale">
             🐋
           </span>
         </button>
-        <button type="button" onClick={() => handleCode("🐠")}>
+        <button type="button" onClick={handleClick}>
           <span role="img" aria-label="Clownfish">
             🐠
           </span>
