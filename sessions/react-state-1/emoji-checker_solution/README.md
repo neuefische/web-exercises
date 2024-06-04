@@ -12,6 +12,7 @@ You can use the following hints as a guideline:
 - You need to make sure to declare a state variable.
 - Write a `handleClick` function that updates the state variable according to which emoji button was clicked.
   - Hint: `event.target.textContent` (use `code + event.target.textContent` to append the new emoji)
+- Implement a reset funtion that clears the state variable when clicked
 
 ## Notes
 
