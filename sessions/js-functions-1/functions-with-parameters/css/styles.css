@@ -1,6 +1,14 @@
 /* No changes required here! */
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
+  font-family: system-ui;
   display: flex;
   justify-content: center;
   align-items: center;
