@@ -6,18 +6,18 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: system-ui;
+  background-color: #ddd;
 }
 
 .form {
   display: grid;
   grid-gap: 20px;
   align-content: center;
-  height: 100vh;
-  margin: 0 auto;
+  margin: 50px auto;
   padding: 25px;
   max-width: 500px;
+  background-color: #fff;
 }
 
 .input,

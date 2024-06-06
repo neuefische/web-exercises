@@ -1,42 +1,59 @@
-const firstInput = document.querySelector('[data-js=first-input]');
-const secondInput = document.querySelector('[data-js=second-input]');
-const button = document.querySelector('[data-js=button]');
-
-/* # Sub-Challenge 1
+/* Sub-Challenge 1
 Implement the following functionality: The value of the first input field is copied into the second input field on button click */
 
+const firstCopyInput = document.querySelector('[data-js=first-copy-input]');
+const secondCopyInput = document.querySelector('[data-js=second-copy-input]');
+const copyButton = document.querySelector('[data-js=copy-button]');
+
 // --v-- write your code here --v--
 
-/* button.addEventListener('click', () => {
-  secondInput.value = firstInput.value
-}); */
+copyButton.addEventListener('click', () => {
+  secondCopyInput.value = firstCopyInput.value;
+});
 
 // --^-- write your code here --^--
 
-/* # Sub-Challenge 2: 
-First: Comment out the Sub-Challenge 1 code to test this Sub-Challenge.
-
+/* Sub-Challenge 2
 Implement the following functionality: The value of the first input field is copied in uppercase into the second input field on button click */
 
+const firstCopyInUppercaseInput = document.querySelector(
+  '[data-js=first-copy-uppercase-input]',
+);
+const secondCopyInUppercaseInput = document.querySelector(
+  '[data-js=second-copy-uppercase-input]',
+);
+const copyInUppercaseButton = document.querySelector(
+  '[data-js=copy-uppercase-button]',
+);
+
 // --v-- write your code here --v--
 
-/* button.addEventListener('click', () => {
-  secondInput.value = firstInput.value.toUpperCase()
-}); */
+copyInUppercaseButton.addEventListener('click', () => {
+  secondCopyInUppercaseInput.value =
+    firstCopyInUppercaseInput.value.toUpperCase();
+});
 
 // --^-- write your code here --^--
 
-/* # Sub-Challenge 3. 
-First: Comment out the previous Sub-Challenges to test this Sub-Challenge.
-
+/* Sub-Challenge 3
 Implement the following functionality: The values of the two input fields switch on button click */
+
+const firstSwitchValueInput = document.querySelector(
+  '[data-js=first-switch-value-input]',
+);
+const secondSwitchValueInput = document.querySelector(
+  '[data-js=second-switch-value-input]',
+);
+const switchValueButton = document.querySelector(
+  '[data-js=switch-value-button]',
+);
 
 // --v-- write your code here --v--
 
-button.addEventListener('click', () => {
-  const firstInputValue = firstInput.value;
-  firstInput.value = secondInput.value;
-  secondInput.value = firstInputValue;
+switchValueButton.addEventListener('click', () => {
+  const firstInputValue = firstSwitchValueInput.value;
+  firstSwitchValueInput.value = secondSwitchValueInput.value;
+  secondSwitchValueInput.value = firstInputValue;
 });
 
 // --^-- write your code here --^--
