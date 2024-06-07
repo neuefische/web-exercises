@@ -10,6 +10,8 @@ In this exercise, you will encounter the following tasks:
 
 Please switch to the `index.js` file to start the exercises. You will find the exact tasks there.
 
+If you want to check whether you solved the tasks correctly, run `npm run test` and check the test results in the console.
+
 ## Notes
 
 - You only have to touch the `index.js` file.
