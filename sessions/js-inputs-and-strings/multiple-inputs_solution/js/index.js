@@ -1,31 +1,59 @@
-/*
-Create a fork for each exercise:
-1. Input value of first input should be copied to second input on button click
-2. Input value of first input should be copied in uppercase to second input on button click
-3. Input values should switch on button click: First input should display the value of the second input and vice versa.
+/* Sub-Challenge 1
+Implement the following functionality: The value of the first input field is copied into the second input field on button click */
 
-*/
+const firstCopyInput = document.querySelector('[data-js=first-copy-input]');
+const secondCopyInput = document.querySelector('[data-js=second-copy-input]');
+const copyButton = document.querySelector('[data-js=copy-button]');
 
-const firstInput = document.querySelector('[data-js=first-input]');
-const secondInput = document.querySelector('[data-js=second-input]');
-const button = document.querySelector('[data-js=button]');
+// --v-- write your code here --v--
 
-// Solution exercise 1:
-
-// button.addEventListener('click', () => {
-//   secondInput.value = firstInput.value
-// });
-
-// Solution exercise 2:
-
-// button.addEventListener('click', () => {
-//   secondInput.value = firstInput.value.toUpperCase()
-// });
-
-// Solution exercise 3:
-
-button.addEventListener('click', () => {
-  const firstInputValue = firstInput.value;
-  firstInput.value = secondInput.value;
-  secondInput.value = firstInputValue;
+copyButton.addEventListener('click', () => {
+  secondCopyInput.value = firstCopyInput.value;
 });
+
+// --^-- write your code here --^--
+
+/* Sub-Challenge 2
+Implement the following functionality: The value of the first input field is copied in uppercase into the second input field on button click */
+
+const firstCopyInUppercaseInput = document.querySelector(
+  '[data-js=first-copy-uppercase-input]',
+);
+const secondCopyInUppercaseInput = document.querySelector(
+  '[data-js=second-copy-uppercase-input]',
+);
+const copyInUppercaseButton = document.querySelector(
+  '[data-js=copy-uppercase-button]',
+);
+
+// --v-- write your code here --v--
+
+copyInUppercaseButton.addEventListener('click', () => {
+  secondCopyInUppercaseInput.value =
+    firstCopyInUppercaseInput.value.toUpperCase();
+});
+
+// --^-- write your code here --^--
+
+/* Sub-Challenge 3
+Implement the following functionality: The values of the two input fields switch on button click */
+
+const firstSwitchValueInput = document.querySelector(
+  '[data-js=first-switch-value-input]',
+);
+const secondSwitchValueInput = document.querySelector(
+  '[data-js=second-switch-value-input]',
+);
+const switchValueButton = document.querySelector(
+  '[data-js=switch-value-button]',
+);
+
+// --v-- write your code here --v--
+
+switchValueButton.addEventListener('click', () => {
+  const firstInputValue = firstSwitchValueInput.value;
+  firstSwitchValueInput.value = secondSwitchValueInput.value;
+  secondSwitchValueInput.value = firstInputValue;
+});
+
+// --^-- write your code here --^--

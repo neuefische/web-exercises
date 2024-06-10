@@ -11,13 +11,66 @@
     <script src="./js/index.js" defer></script>
   </head>
   <body>
+    <!-- ↓ form for the first sub-challenge ↓ -->
     <form class="form">
-      <label for="first-input">First Input</label>
-      <input class="form__input" id="first-input" data-js="first-input" />
-      <label for="second-input">Second Input</label>
-      <input id="second-input" class="form__input" data-js="second-input" />
-      <button class="form__button" type="button" data-js="button">
-        Click!
+      <h2>Part 1: Copy</h2>
+      <label for="first-copy-input">First Input</label>
+      <input
+        class="form__input"
+        id="first-copy-input"
+        data-js="first-copy-input"
+      />
+      <label for="second-copy-input">Second Input</label>
+      <input
+        id="second-copy-input"
+        class="form__input"
+        data-js="second-copy-input"
+      />
+      <button class="form__button" type="button" data-js="copy-button">
+        Click to copy the first input value into the second input field
+      </button>
+    </form>
+    <!-- ↓ form for the second sub-challenge ↓ -->
+    <form class="form">
+      <h2>Part 2: Copy and UpperCase</h2>
+      <label for="first-copy-uppercase-input">First Input</label>
+      <input
+        class="form__input"
+        id="first-copy-uppercase-input"
+        data-js="first-copy-uppercase-input"
+      />
+      <label for="second-copy-uppercase-input">Second Input</label>
+      <input
+        id="second-copy-uppercase-input"
+        class="form__input"
+        data-js="second-copy-uppercase-input"
+      />
+      <button
+        class="form__button"
+        type="button"
+        data-js="copy-uppercase-button"
+      >
+        Click to copy the first input value into the second input field in
+        uppercase
+      </button>
+    </form>
+    <!-- ↓ form for the third sub-challenge ↓ -->
+    <form class="form">
+      <h2>Part 3: Switch Values</h2>
+      <label for="first-switch-value-input">First Input</label>
+      <input
+        class="form__input"
+        id="first-switch-value-input"
+        data-js="first-switch-value-input"
+      />
+      <label for="second-switch-value-input">Second Input</label>
+      <input
+        id="second-switch-value-input"
+        class="form__input"
+        data-js="second-switch-value-input"
+      />
+      <button class="form__button" type="button" data-js="switch-value-button">
+        Click to switch the values of the two input fields
       </button>
     </form>
   </body>
