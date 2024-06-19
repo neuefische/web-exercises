@@ -22,7 +22,7 @@ information you need in the docs.
 - Execute the following command to create a new project based on a template:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/recap-project-3/rick-and-morty-app
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/recap-project-3/rick-and-morty-app -i
 ```
 
 - Create a new empty repository on GitHub and add everybody in your group as collaborator.
