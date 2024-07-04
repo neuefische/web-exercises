@@ -159,9 +159,10 @@ Download the [Favorite Icon](./assets/heart.svg) and save it in a folder named "
 
 #### Acceptance Criteria
 
-- [ ] The favorite-button is displayed in the spotlight view
+
 - [ ] The favorite-button is displayed in each entry in the list view
 - [ ] The favorite-button is displayed in the details view
+- [ ] The favorite-button is NOT displayed in the spotlight view
 - [ ] Clicking the favorite-button on a non-favorite piece saves it as a favorite
 - [ ] Clicking the favorite-button on a favorite piece removes it from favorites
 
