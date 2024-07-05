@@ -34,7 +34,7 @@ export function Form() {
 
   const formFields = form.querySelectorAll('[data-js="input*"]');
   console.log(formFields);
-  const counterOutputs = form.querySelectorAll("[data-js=amount-left*]");
+  const counterOutputs = form.querySelectorAll('[data-js="amount-left*"]');
 
   formFields.forEach((formField, index) => {
     counterOutputs.forEach((output) => {
