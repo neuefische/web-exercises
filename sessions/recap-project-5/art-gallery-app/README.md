@@ -174,7 +174,7 @@ Download the [Favorite Icon](./assets/heart.svg) and save it in a folder named "
 - [ ] Reference art pieces by `slug` in the additional state
 - [ ] Create the component `FavoriteButton`
 - [ ] `FavoriteButton` props: `isFavorite`, `onToggleFavorite`
-- [ ] Render the `FavoriteButton` component in the `Spotlight`, `ArtPiecePreview` and `ArtPieceDetails` component
+- [ ] Render the `FavoriteButton` component in the `ArtPiecePreview` and `ArtPieceDetails` component
 
 ---
 
