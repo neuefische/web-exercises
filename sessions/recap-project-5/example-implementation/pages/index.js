@@ -7,7 +7,7 @@ export default function SpotlightPage({
   onToggleFavorite,
 }) {
   const spotlightPiece =
-    pieces[Math.floor(Math.random() * (pieces.length - 1))];
+    pieces[Math.floor(Math.random() * pieces.length)];
 
   return (
     <>
