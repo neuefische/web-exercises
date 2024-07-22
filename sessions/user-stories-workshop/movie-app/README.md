@@ -1,6 +1,6 @@
 # Challenge: User Stories for the Movie App
 
-In this workshop we will practice to write good and concise users stories for a fictional movie app.
+In this challenge, we will practice writing good and concise user stories for a fictional movie app.
 
 ## User Story 1
 
@@ -10,8 +10,6 @@ Then, start writing the first user story in [this template](./user-story-1.md).
 
 - You can orient yourself with the guide "How to write a user story?" inside the [excalidraw file](./assets/user-story-workshop-start.excalidraw).
 - Make sure to use full sentences, clean english and give your user story enough detail.
-
-After around 30min, meet again with the coach to discuss the first user story.
 
 ## User Story 2 & 3
 
