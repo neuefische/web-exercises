@@ -18,13 +18,23 @@ Your task is to refactor the app so that it fetches the data from a remote Mongo
 
 ### Read Products from Database
 
-Use MongoDB Atlas to create a database:
+Creating a Database and Inserting Multiple Documents:
+> 💡 If you haven't completed this task during the Backend MongoDB session challenge, please follow these steps:
 
-- the database should be called `fish-shop`,
-- there should be one collection called `products`,
-- download and extract the [resources](README.md#resources) and
-- use the `products.json` file to import the data into your `products` collection.
-- Note: you can use MongoDB Atlas to import the data by clicking on the `Insert Document` button, changing to the view `{}` and copy-pasting the data from the `products.json` file.
+- Go to the "Deployments > Database" tab.
+- Click "Browse Collections".
+- Click "Create Database".
+- In the dialog that appears, enter `fish-shop-database` as the `database name`.
+- Enter `products` as the `collection name`.
+- Click "Create" to create the new database and collection.
+- Open the `fish-shop-database` database.
+- Select the `products` collection.
+- Click "Insert Document".
+- A JSON editor will appear where you can insert these products.
+- Change to the view `{}` and copy-paste the data from the `products.json` file.
+- Download and extract the [resources](https://github.com/neuefische/web-exercises/blob/main/sessions/backend-read/products/README.md#resources).
+- Copy-paste the data from the `products.json` file.
+- Click "Insert".
 
 Create a schema for the `Product` model in the `db/models` folder.
 
