@@ -45,3 +45,6 @@ button:hover {
   justify-content: space-between;
   gap: 10px;
 }
+p {
+  font-size: 2em;
+}

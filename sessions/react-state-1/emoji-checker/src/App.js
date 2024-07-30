@@ -1,4 +1,3 @@
-import React from "react";
 import "./styles.css";
 
 export default function App() {
@@ -6,13 +5,18 @@ export default function App() {
 
   const validCode = "🐡🐠🐋";
 
+  function handleClick(emoji) {
+    console.log(emoji);
+    console.log(code);
+  }
+
   return (
     <div className="container">
       <div className="button-container">
         <button
           type="button"
           onClick={() => {
-            console.log("Update Code!");
+            handleClick("🐡");
           }}
         >
           <span role="img" aria-label="Pufferfish">
@@ -22,7 +26,7 @@ export default function App() {
         <button
           type="button"
           onClick={() => {
-            console.log("Update Code!");
+            handleClick("🐋");
           }}
         >
           <span role="img" aria-label="Whale">
@@ -32,13 +36,13 @@ export default function App() {
         <button
           type="button"
           onClick={() => {
-            console.log("Update Code!");
+            handleClick("🐠");
           }}
         >
           <span role="img" aria-label="Clownfish">
             🐠
           </span>
-        </button>{" "}
+        </button>
       </div>
 
       <button
@@ -50,7 +54,7 @@ export default function App() {
         Reset
       </button>
 
-      {code === validCode && <p>Valid code!</p>}
+      {code === validCode && <p>Valid code! 🎉</p>}
     </div>
   );
 }
