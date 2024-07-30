@@ -1,8 +1,8 @@
-# Taco Truck
+# The Taco Truck
 
 ## Task
 
-Tommy from Tommy's Taco Truck needs your help! He's asked your colleague to create a menu website for his taco truck, but now your colleague has gone on vacation and Tommy needs his website tomorrow!
+The owner of The Taco Truck has realized that his website's design needs frequent updates due to changing menu items and offers. To make future updates easier, the CSS needs to be reworked for better maintainability and readability. Your colleague started this task but is now on holiday, and you need to take over.
 
 ### Step 1
 
@@ -11,41 +11,35 @@ Tommy from Tommy's Taco Truck needs your help! He's asked your colleague to crea
 | Wireframe                                                  | Components                                              |
 | ---------------------------------------------------------- | ------------------------------------------------------- |
 | ![Wireframe](./assets/wireframe.png)                       | ![Components](./assets/components.png)                  |
-| This is the general look Tommy wants for his menu website. | These are the components your colleague has identified. |
+| This is the general look of the website. | These are the components your colleague has identified. |
 
-> 🚨 He's let us know that - because we're in such a hurry - we don't need to implement these styles in a pixel-perfect way. **Close enough is good enough!**
-
-- Take a look at the current state of the `index.html`.
-- It looks like your colleague has already linked to a `styles.css`.
+- Review the current state of the `index.html` file.
+- Notice that your colleague has already linked a `styles.css` file.
 - Take a look at the `styles.css` file.
-- You may notice that there are some styles and one import included here.
+- Examine the `styles.css` file to see the existing styles and the import statement included.
 
 ### Step 2
 
-- Looking at the "Components" image, your colleague has identified three components that need to be styled.
+- Referring to the "Components" image, your colleague has identified three components to be styled.
 - Each component (Header, Main, Card) consists of several parts.
-- Take a look at the `index.html` and try to find out which HTML elements are already nested ("grouped") in a way that resembles the components in the image.
+- Check the `index.html` to see which HTML elements are nested in a way that resembles the components in the image.
 
 ### Step 3
 
-Now it's time to write some CSS!
+Now it's time to refactor the CSS for better structure and maintainability!
 
-- You may want to start off by adding your class selectors to HTML elements.
-- You remember that it is good practice to split the CSS into grouped chunks, so you create one CSS file for each component you identified (e.g. `card.css`).
-- Create at least 3 CSS files!
-- For some reason the styles don't appear on your website. You remember that you need to import your other CSS files in your `styles.css`.
-- Now you can style your components by writing the CSS into the respective CSS file.
-  💡 Feel free to use the CSS variables defined in the `theme.css` file with `var(--your-variable)` while styling your components.
-- Continue styling the website until it looks fabulous ✨.
+- Split the CSS into grouped chunks by creating a separate CSS file for each component (e.g., `header.css`, `main.css`, `card.css`).
+- Create at least 3 CSS files.
+- Ensure your styles appear on the website by importing the new CSS files into styles.css using `@import`.
 
 ### Final Step
 
-- Once everthing's in order, you should have a menu website that looks something like the "Wireframe" image, and you should have at least three component-based CSS files sitting in your `components` folder.
+- Once everything is in order, your menu website should resemble the "Wireframe" image, and you should have at least three component-based CSS files in your `components` folder.
 
 ### Bonus Step
 
-- Have fun! Try writing entirely new HTML and corresponding CSS to build your own components!
-- Maybe Tommy might appreciate a footer component, or a button component, or ... something else entirely?
+- Have fun and be creative! Try writing new HTML and corresponding CSS to build additional components.
+- Consider adding a footer component, a button component, or any other component you think Tommy might appreciate.
 
 ## Notes
 
