@@ -10,7 +10,7 @@ The owner of The Taco Truck has realized that his website's design needs frequen
 
 | Wireframe                                                  | Components                                              |
 | ---------------------------------------------------------- | ------------------------------------------------------- |
-| ![Wireframe](./assets/wireframe.png)                       | ![Components](./assets/components.png)                  |
+| ![Wireframe](./assets/wireframe-image.png)                       | ![Components](./assets/components-image.png)                  |
 | This is the general look of the website. | These are the components your colleague has identified. |
 
 - Review the current state of the `index.html` file.
