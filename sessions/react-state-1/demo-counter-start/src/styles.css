@@ -27,3 +27,7 @@ button {
   display: flex;
   flex-direction: column;
 }
+.dark {
+  background: #333;
+  color: #fff;
+}
