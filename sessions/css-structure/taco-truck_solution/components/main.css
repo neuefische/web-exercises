@@ -1,18 +1,22 @@
-.main {
-  background: var(--main-bg);
-}
+.main-content {
+    background: var(--main-bg);
+    margin-top: 10vh;
+    padding: 20px;
+  }  
 
-.main-menu-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-.main-title {
-  color: var(--main-text);
-  background: var(--main-title-bg);
-  margin: 0 0 20px 0;
-  padding: 12px;
-  width: fit-content;
-  height: fit-content;
-}
+.main-content__title {
+    color: var(--main-text);
+    background: var(--main-title-bg);
+    margin: 0 0 20px 0;
+    padding: 10px;
+  }
+  
+  .main-content__menu-list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+   
+  }

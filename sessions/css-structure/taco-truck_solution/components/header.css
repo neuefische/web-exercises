@@ -1,12 +1,14 @@
 .header {
-  display: flex;
-  gap: 12px;
-  background: var(--header-bg);
-  color: var(--header-text);
-  width: fit-content;
-  padding: 20px;
-}
-
-.header-title {
-  margin: 0;
-}
+    position: fixed;
+    top: 0;
+    background: var(--header-bg);
+    color: var(--header-text);
+    padding: 20px;
+    width: 100%;
+  
+  }
+  
+  .header__title {
+    margin: 0;
+  }
+  

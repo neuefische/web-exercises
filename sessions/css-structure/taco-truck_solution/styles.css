@@ -3,6 +3,10 @@
 @import "./components/main.css";
 @import "./components/card.css";
 
+/* -------------------------------------------------------- */
+/* Global Styles */
+/* -------------------------------------------------------- */
+
 *::before,
 *::after {
   box-sizing: border-box;
@@ -11,18 +15,9 @@
 body {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   margin: 0;
-  padding: 20px;
-  font-family: system-ui;
+  height: 100vh;
+  font-family: system-ui, sans-serif;
   background: var(--body-bg);
-}
-
-ul {
-  padding: 0;
-  list-style: none;
-}
-
-li {
-  display: contents;
 }
