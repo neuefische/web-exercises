@@ -24,8 +24,6 @@ body {
   background: var(--header-bg);
   color: var(--header-text);
   padding: 20px;
-  width: 100%;
-
 }
 
 .header__title {
