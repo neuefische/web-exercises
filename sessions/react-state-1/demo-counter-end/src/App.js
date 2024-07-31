@@ -16,7 +16,7 @@ function Counter() {
   const [darkTheme, setDarkTheme] = useState(false);
   return (
     <div className={darkTheme ? "counter dark" : "counter"}>
-      <h2>You have clicked {count} times</h2>
+      <p>You have clicked {count} times</p>
       <button
         onClick={() => {
           setCount(count + 1);
