@@ -6,107 +6,125 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>Taco Truck</title>
+    <title>The Taco Truck</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header class="header">
-      <h1 class="header-title">
-        Tommy's Taco Truck
-        <span role="img" aria-label="A taco">🌮</span>
+      <h1 class="header__title">
+        The Taco Truck
+        <span
+          role="img"
+          aria-label="Taco emoji representing the restaurant theme"
+          >🌮</span
+        >
       </h1>
     </header>
 
-    <main class="main">
-      <h2 class="main-title">Menu</h2>
-      <ul class="main-menu-list">
-        <li>
-          <section class="card">
-            <h3 class="card-title">
-              Classic Beef Tacos <span role="img" aria-label="A taco">🌮</span>
-            </h3>
-            <p>Price: €4.50</p>
-            <h4>Ingredients:</h4>
-            <p>
-              Seasoned ground beef, lettuce, cheese, diced tomatoes, and salsa,
-              served in a crispy corn tortilla shell.
-            </p>
-          </section>
+    <main class="main-content">
+      <h2 class="main-content__title">Daily menu</h2>
+      <ul class="main-content__menu-list">
+        <li class="card">
+          <h3 class="card__title">
+            Classic Beef Tacos
+            <span
+              role="img"
+              aria-label="Taco emoji representing Classic Beef Tacos"
+              >🌮</span
+            >
+          </h3>
+          <p>Price: €4.50</p>
+          <h4>Ingredients:</h4>
+          <p>
+            Seasoned ground beef, lettuce, cheese, diced tomatoes, and salsa,
+            served in a crispy corn tortilla shell.
+          </p>
         </li>
 
-        <li>
-          <section class="card">
-            <h3 class="card-title">
-              Grilled Chicken Burrito
-              <span role="img" aria-label="A burrito">🌯</span>
-            </h3>
-            <p>Price: €7.99</p>
-            <h4>Ingredients:</h4>
-            <p>
-              Grilled chicken, rice, beans, cheese, lettuce, tomato, and sour
-              cream wrapped in a flour tortilla.
-            </p>
-          </section>
+        <li class="card">
+          <h3 class="card__title">
+            Grilled Chicken Burrito
+            <span
+              role="img"
+              aria-label="Burrito emoji representing Grilled Chicken Burrito"
+              >🌯</span
+            >
+          </h3>
+          <p>Price: €7.99</p>
+          <h4>Ingredients:</h4>
+          <p>
+            Grilled chicken, rice, beans, cheese, lettuce, tomato, and sour
+            cream wrapped in a flour tortilla.
+          </p>
         </li>
 
-        <li>
-          <section class="card">
-            <h3 class="card-title">
-              Vegetarian Quesadilla
-              <span role="img" aria-label="A quesadilla">🧀</span>
-            </h3>
-            <p>Price: €6.50</p>
-            <h4>Ingredients:</h4>
-            <p>
-              Mixed vegetables, cheese, and salsa folded in a grilled flour
-              tortilla.
-            </p>
-          </section>
+        <li class="card">
+          <h3 class="card__title">
+            Vegetarian Quesadilla
+            <span
+              role="img"
+              aria-label="Cheese emoji representing Vegetarian Quesadilla"
+              >🧀</span
+            >
+          </h3>
+          <p>Price: €6.50</p>
+          <h4>Ingredients:</h4>
+          <p>
+            Mixed vegetables, cheese, and salsa folded in a grilled flour
+            tortilla.
+          </p>
         </li>
 
-        <li>
-          <section class="card">
-            <h3 class="card-title">
-              Spicy Shrimp Tacos
-              <span role="img" aria-label="Shrimp tacos">🍤</span>
-            </h3>
-            <p>Price: €8.50</p>
-            <h4>Ingredients:</h4>
-            <p>
-              Spicy shrimp, cabbage slaw, avocado crema, and salsa served in
-              warm corn tortillas.
-            </p>
-          </section>
+        <li class="card">
+          <h3 class="card__title">
+            Spicy Shrimp Tacos
+            <span
+              role="img"
+              aria-label="Shrimp emoji representing Spicy Shrimp Tacos"
+              >🍤</span
+            >
+          </h3>
+          <p>Price: €8.50</p>
+          <h4>Ingredients:</h4>
+          <p>
+            Spicy shrimp, cabbage slaw, avocado crema, and salsa served in warm
+            corn tortillas.
+          </p>
         </li>
 
-        <li>
-          <section class="card">
-            <h3 class="card-title">
-              Carne Asada Nachos <span role="img" aria-label="Nachos">🥩</span>
-            </h3>
-            <p>Price: €9.99</p>
-            <h4>Ingredients:</h4>
-            <p>
-              Crispy tortilla chips topped with tender spces of carne asada,
-              melted cheese, black beans, pico de gallo, guacamole, and sour
-              cream.
-            </p>
-          </section>
+        <li class="card">
+          <h3 class="card__title">
+            Carne Asada Nachos
+            <span
+              role="img"
+              aria-label="Steak emoji representing Carne Asada Nachos"
+              >🥩</span
+            >
+          </h3>
+          <p>Price: €9.99</p>
+          <h4>Ingredients:</h4>
+          <p>
+            Crispy tortilla chips topped with tender spces of carne asada,
+            melted cheese, black beans, pico de gallo, guacamole, and sour
+            cream.
+          </p>
         </li>
 
-        <li>
-          <section class="card">
-            <h3 class="card-title">
-              Mexican Street Corn (Elote)
-              <span role="img" aria-label="Corn">🌽</span>
-            </h3>
-            <p>Price: €3.99</p>
-            <h4>Ingredients:</h4>
-            <p>
-              Grilled corn on the cob slathered with mayonnaise, cotija cheese,
-              chip powder, and pme juice.
-            </p>
-          </section>
+        <li class="card">
+          <h3 class="card__title">
+            Mexican Street Corn (Elote)
+            <span
+              role="img"
+              aria-label="Corn emoji representing Mexican Street Corn"
+              >🌽</span
+            >
+          </h3>
+          <p>Price: €3.99</p>
+          <h4>Ingredients:</h4>
+          <p>
+            Grilled corn on the cob slathered with mayonnaise, cotija cheese,
+            chip powder, and lime juice.
+          </p>
         </li>
       </ul>
     </main>
