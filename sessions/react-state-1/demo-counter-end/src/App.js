@@ -13,25 +13,20 @@ export default function App() {
 
 function Counter() {
   const [count, setCount] = useState(0);
-  const [darkTheme, setDarkTheme] = useState(false);
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
+
+  function handleIncreaseCount() {
+    setCount(count + 1);
+    console.log("Button clicked", count);
+  }
+  function handleToggleTheme() {
+    setIsDarkTheme(!isDarkTheme);
+  }
   return (
-    <div className={darkTheme ? "counter dark" : "counter"}>
+    <div className={isDarkTheme ? "counter dark" : "counter"}>
       <p>You have clicked {count} times</p>
-      <button
-        onClick={() => {
-          setCount(count + 1);
-          console.log("Button clicked", count);
-        }}
-      >
-        Click me
-      </button>
-      <button
-        onClick={() => {
-          setDarkTheme(!darkTheme);
-        }}
-      >
-        Toggle Theme
-      </button>
+      <button onClick={handleIncreaseCount}>Click me</button>
+      <button onClick={handleToggleTheme}>Toggle Theme</button>
     </div>
   );
 }
