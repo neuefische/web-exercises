@@ -20,7 +20,7 @@ body {
 }
 
 .header {
-  position: fixed;
+  position: sticky;
   top: 0;
   background: var(--header-bg);
   color: var(--header-text);
