@@ -7,7 +7,7 @@ export default function App() {
 function Counter() {
   return (
     <div className="counter">
-      <h2>You have clicked 0 times</h2>
+      <p>You have clicked 0 times</p>
       <button>Click me</button>
     </div>
   );
