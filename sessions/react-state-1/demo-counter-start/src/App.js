@@ -5,5 +5,10 @@ export default function App() {
 }
 
 function Counter() {
-  return <button>You have clicked this button 0 times</button>;
+  return (
+    <div className="counter">
+      <p>You have clicked 0 times</p>
+      <button>Click me</button>
+    </div>
+  );
 }

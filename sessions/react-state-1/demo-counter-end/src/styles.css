@@ -21,3 +21,18 @@ button {
   font-size: larger;
   padding: 0.5rem 1rem;
 }
+.counter {
+  border: 1px solid black;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.dark {
+  background: #333;
+  color: #fff;
+}
+p{
+  padding: 0.5em;
+  font-size: 1.5em;
+  font-weight: bold;
+}
