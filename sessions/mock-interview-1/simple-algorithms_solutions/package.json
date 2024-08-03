@@ -1,0 +1,13 @@
+{
+  "name": "simple-algorithms_solutions",
+  "version": "1.0.0",
+  "description": "Practice problem solving with algorithms",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "J-1000",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}

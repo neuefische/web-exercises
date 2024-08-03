@@ -140,12 +140,10 @@ module.exports = {
   maxOfTwoNumbers,
   findLongestWord,
   sumNumbers,
-  averageNumbers,
   averageWordLength,
   uniquifyArray,
   doesWordExist,
   howManyTimes,
   sum,
-  avg,
   greatestProduct 
 }
