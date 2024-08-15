@@ -9,8 +9,7 @@ export default function SpotlightPage({
 }) {
   const [spotlightPiece, setSpotlight] = useState(null);
   useEffect(() => {
-    console.log("useEffekt");
-    setSpotlight(pieces[Math.floor(Math.random() * (pieces.length - 1))]);
+    setSpotlight(pieces[Math.floor(Math.random() * (pieces.length))]);
   }, [pieces]);
 
   return (
