@@ -1,0 +1,25 @@
+:root {
+  --color-nemo: #ff4a11;
+  --color-granite: #252629;
+  --color-water-10: #f3f5f9;
+  --color-foam: #ffffff;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: system-ui;
+}
+h1,
+h2 {
+  color: var(--color-nemo);
+}
+article {
+  margin: 2rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  background: var(--color-water-10);
+}
