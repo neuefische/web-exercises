@@ -29,7 +29,7 @@ export default function CommentForm({ addComment }) {
   function handleSubmit(event) {
     event.preventDefault();
     const { comment } = event.target.elements;
-    addComment(comment.value);
+    addComment({ comment: comment.value, date: new Date().toLocaleString() });
     event.target.reset();
   }
   return (

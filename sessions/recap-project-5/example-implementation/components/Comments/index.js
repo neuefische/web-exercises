@@ -17,7 +17,7 @@ export default function Comments({ comments }) {
         {comments.map((comment, index) => (
           <li key={index}>
             <p>
-              <q>{comment}</q>
+              <q>{comment.comment}</q> ({comment.date})
             </p>
           </li>
         ))}

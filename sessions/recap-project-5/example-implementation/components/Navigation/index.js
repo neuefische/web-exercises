@@ -22,12 +22,18 @@ const NavLink = styled(Link)`
     border-bottom: 5px dotted var(--primary-color);
   }
 `;
+const Nav = styled.nav`
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+  background-color: white;
+`;
 
 export default function Navigation() {
   const router = useRouter();
 
   return (
-    <nav>
+    <Nav>
       <List role="list">
         <li>
           <NavLink href="/" $isActive={router.pathname === "/"}>
@@ -51,6 +57,6 @@ export default function Navigation() {
           </NavLink>
         </li>
       </List>
-    </nav>
+    </Nav>
   );
 }
