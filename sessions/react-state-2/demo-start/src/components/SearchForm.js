@@ -1,10 +1,10 @@
 export default function SearchForm() {
-  const searchTerm = "";
+  let searchTerm = "";
 
   function handleSubmit(event) {
     event.preventDefault();
 
-    console.log("submit");
+    console.log("searchTerm: ", searchTerm);
   }
 
   return (
