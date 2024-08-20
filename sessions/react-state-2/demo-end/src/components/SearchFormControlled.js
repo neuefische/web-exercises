@@ -1,12 +1,6 @@
-import { useState } from "react";
-
 export default function SearchForm({ searchTerm, onSearch }) {
-  const [searchFieldValue, setSearchFieldValue] = useState("");
-
   function handleSubmit(event) {
     event.preventDefault();
-
-    onSearch(searchFieldValue);
   }
 
   return (
@@ -16,9 +10,9 @@ export default function SearchForm({ searchTerm, onSearch }) {
         <input
           name="searchTerm"
           id="searchTerm"
-          value={searchFieldValue}
+          value={searchTerm}
           onChange={(event) => {
-            setSearchFieldValue(event.target.value);
+            onSearch(event.target.value);
           }}
         />
         <button>
