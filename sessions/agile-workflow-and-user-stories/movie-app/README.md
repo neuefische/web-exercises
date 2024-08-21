@@ -1,4 +1,4 @@
-# Challenge: User Stories for the Movie App
+# Agile Workflow and User Stories: User Stories for the Movie App
 
 In this challenge, we will practice writing good and concise user stories for a fictional movie app.
 

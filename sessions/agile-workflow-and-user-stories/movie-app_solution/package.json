@@ -1,0 +1,10 @@
+{
+  "name": "agile-workflow-and-user-stories_movie-app_solution",
+  "version": "0.0.0-unreleased",
+  "description": "agile-workflow-and-user-stories: movie-app",
+  "main": "n.a.",
+  "nf": {
+    "template": "empty"
+  },
+  "private": true
+}
