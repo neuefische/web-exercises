@@ -8,7 +8,7 @@
 
 ## Description
 
-![wireframe](./assets/scribble-movie-detail-page.png)
+![wireframe](./assets/scribble-movie-details-page.png)
 
 ## Acceptance Criteria
 
