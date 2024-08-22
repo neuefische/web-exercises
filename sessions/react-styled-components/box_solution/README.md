@@ -13,18 +13,13 @@ Create a new component called `BoxWithStyledComponents`. It should feature the s
 You can use the following hints as guideline:
 
 - Inside of the `components` folder, create a file `BoxWithStyledComponents.js`.
-- It should export a function which
-  - accepts a prop `$isBlack` (note the `$` sign)
-  - returns a `div`
-- Inside of the same file, create a styled component called `StyledBox` which styles a `div`.
-  - Inside of the return statement of your function, replace the `div` with `StyledBox`.
-  - Pass the `$isBlack` prop to the `StyledBox` component.
-  - `StyledBox` should have the same styling as the `BoxWithClassName` component.
-  - Check whether the `$isBlack` prop is true and set the correct `background-color` accordingly.
-  - How could you set the styling for the hover effect again?
+- It should export a styled component as default export 
+  - Use a `div` element to style
+  - Make use of string interpolation to check the `$isBlack` prop and adjust the background-color accordingly
+  - Don't forget to add the styling for the hover effect
 - Switch to `./pages/index.js`:
   - import `BoxWithStyledComponents` and
-  - below the two `BoxWithClassName` components, render two `BoxWithStyledComponents`, one green and one black.
+  - below the two `BoxWithClassName` components, render two `BoxWithStyledComponents`, one without and one with the `$isBlack` prop
 
 ### Bonus: Aligning Boxes Horizontally
 
