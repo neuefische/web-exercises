@@ -1,5 +1,19 @@
 console.clear();
 
+const strings = [
+  "HTML",
+  "React",
+  "CSS",
+  "Next.js",
+  "MongoDB",
+  "styled components",
+  "mongoose",
+  "next-auth",
+  "Visual Studio Code",
+];
+
+// --- Games ---
+const gamesContainer = document.querySelector("[data-js='games-container']");
 const games = [
   {
     id: 1,
