@@ -1,5 +1,33 @@
 console.clear();
 
+const strings = [
+  "HTML",
+  "React",
+  "CSS",
+  "Next.js",
+  "MongoDB",
+  "styled components",
+  "mongoose",
+  "next-auth",
+  "Visual Studio Code",
+];
+
+strings.forEach(function (string) {
+  console.log(string);
+});
+
+strings.forEach((string) => {
+  console.log(string);
+});
+
+const upperCaseStrings = strings.map((string) => string.toUpperCase());
+console.log(upperCaseStrings);
+
+const searchResult = strings.find((string) => string.includes("React"));
+console.log(searchResult);
+
+// --- Games ---
+const gamesContainer = document.querySelector("[data-js='games-container']");
 const games = [
   {
     id: 1,
@@ -83,47 +111,26 @@ const games = [
   },
 ];
 
-/** forEach **/
-
 games.forEach((game) => {
   console.log(game.name);
 });
 
 games.forEach((game) => {
-  const card = document.createElement("article");
+  const article = document.createElement("article");
+  const h2 = document.createElement("h2");
+  const p = document.createElement("p");
 
-  const headline = document.createElement("h2");
-  headline.textContent = game.name;
-  card.append(headline);
+  h2.textContent = game.name;
+  p.textContent = game.description;
 
-  const description = document.createElement("p");
-  description.textContent = game.description;
-  card.append(description);
+  article.append(h2);
+  article.append(p);
 
-  document.body.append(card);
+  gamesContainer.append(article);
 });
 
-/** map **/
-
-const uppercaseNames = games.map((game) => {
-  return game.name.toUpperCase();
-});
-
-const uppercaseNamesShorthandSyntax = games.map((game) => game.name);
-
-console.log(uppercaseNames);
-console.log(uppercaseNamesShorthandSyntax);
-
-/** filter **/
+const upperCaseNames = games.map((game) => game.name.toUpperCase());
+console.log(upperCaseNames);
 
 const gamesBefore2000 = games.filter((game) => game.publishingYear < 2000);
-
 console.log(gamesBefore2000);
-
-/** Method chaining **/
-
-const uppercaseNamesBefore2000 = games
-  .filter((game) => game.publishingYear < 2000)
-  .map((game) => game.name.toUpperCase());
-
-console.log(uppercaseNamesBefore2000);

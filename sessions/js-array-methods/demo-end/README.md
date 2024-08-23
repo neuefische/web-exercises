@@ -1,4 +1,4 @@
-# Finished Demo for JS Array Methods Session
+# Start of Demo for JS Array Methods Session
 
 ## Task
 
