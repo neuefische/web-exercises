@@ -20,7 +20,9 @@ strings.forEach((string) => {
   console.log(string);
 });
 
-const upperCaseStrings = strings.map((string) => string.toUpperCase());
+const upperCaseStrings = strings.map((string) => {
+  return string.toUpperCase();
+});
 console.log(upperCaseStrings);
 
 const searchResult = strings.find((string) => string.includes("React"));
