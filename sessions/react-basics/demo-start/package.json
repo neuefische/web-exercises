@@ -3,6 +3,7 @@
   "version": "0.0.0-unreleased",
   "description": "React Demo Start",
   "main": "src/index.js",
+  "type": "module",
   "dependencies": {
     "eslint-plugin-jest": "^28.8.0",
     "eslint-plugin-react": "^7.35.0",
