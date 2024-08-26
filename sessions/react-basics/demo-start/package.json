@@ -5,19 +5,18 @@
   "main": "src/index.js",
   "dependencies": {
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-scripts": "5.0.1"
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@babel/runtime": "7.22.11",
+    "@vitejs/plugin-react": "^4.3.1",
     "eslint-plugin-react-hooks": "4.6.0",
-    "@babel/plugin-proposal-private-property-in-object": "7.21.11"
+    "vite": "^5.4.2"
   },
   "scripts": {
-    "start": "react-scripts start"
-  },
-  "nf": {
-    "template": "react-minimal"
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
   },
   "browserslist": {
     "production": [
