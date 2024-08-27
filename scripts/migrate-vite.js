@@ -9,6 +9,7 @@
 3. ✅ rename .js files to .jsx 
 4. ✅ create new index.html in root, delete old one in /public
 5. ✅ create vite.config.js
+5. create vite.config.js
 */
 import { $, Glob, write } from "bun";
 import { existsSync, readdir } from "fs-extra";
@@ -53,8 +54,9 @@ for (const session of sessions) {
         await $`rm "${challengePath}/public/index.html"`;
       }
 
-      // create vite.config.js
-      await write(challengePath + "/vite.config.js", getViteConfig());
+      // create vite.config.js and .eslintrc.json
+      // await write(challengePath + "/vite.config.js", getViteConfig());
+      await $`cp ./scripts/vite-assets/* ${challengePath}`
     } catch (error) {
       console.log(error);
     }
@@ -81,24 +83,3 @@ function generateIndexHtml(name) {
 </html>`;
 }
 
-function getViteConfig() {
-  return `import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import eslint from "vite-plugin-eslint";
-
-export default defineConfig(() => {
-  return {
-    build: {
-      outDir: "build",
-    },
-    plugins: [react(), eslint()],
-    server: {
-      open: true,
-      port: 3000,
-    },
-    define: {
-      "process.env": {},
-    },
-  };
-});`;
-}
