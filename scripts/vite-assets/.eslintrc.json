@@ -11,17 +11,18 @@
     "plugin:react/recommended",
     "plugin:react-hooks/recommended"
   ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
   "parserOptions": {
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true
     }
   },
-  "plugins": [
-    "jest",
-    "react", 
-    "react-refresh"
-  ],
+  "plugins": ["jest", "react", "react-refresh"],
   "rules": {
     "react/prop-types": 0,
     "react/react-in-jsx-scope": 0,
