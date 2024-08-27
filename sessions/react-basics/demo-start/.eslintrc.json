@@ -5,27 +5,24 @@
     "jest": true,
     "node": true
   },
-  "settings": {
-    "react": {
-      "version": "detect"
-    }
-  },
   "extends": [
     "eslint:recommended",
     "plugin:jest/recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended"
   ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
   "parserOptions": {
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true
     }
   },
-  "plugins": [
-    "jest",
-    "react"
-  ],
+  "plugins": ["jest", "react", "react-refresh"],
   "rules": {
     "react/prop-types": 0,
     "react/react-in-jsx-scope": 0,
