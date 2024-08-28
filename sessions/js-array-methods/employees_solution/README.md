@@ -1,4 +1,4 @@
-# JS Array Methods 2: Employees
+# JS Array Methods: Employees
 
 This challenge tasks you with navigating a large dataset of over 500 employees, utilizing JavaScript array methods to find out if there is any employee that fits a specific condition.
 

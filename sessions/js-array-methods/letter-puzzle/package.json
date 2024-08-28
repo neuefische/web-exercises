@@ -1,7 +1,7 @@
 {
-  "name": "js-array-methods-2_letter-puzzle",
+  "name": "js-array-methods_letter-puzzle",
   "version": "0.0.0-unreleased",
-  "description": "JS Array Methods 2: Letter Puzzle",
+  "description": "JS Array Methods: Letter Puzzle",
   "main": "index.html",
   "type": "module",
   "scripts": {

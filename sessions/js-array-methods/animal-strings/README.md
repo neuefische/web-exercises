@@ -1,4 +1,4 @@
-# Array Methods 2: A simple String Array
+# Array Methods: A simple String Array
 
 This Challenge offers some exercises to recap some advanced array methods. Let's dive in!
 

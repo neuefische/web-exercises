@@ -1,7 +1,7 @@
 {
-  "name": "js-array-methods-2_news-flash_solution",
+  "name": "js-array-methods_news-flash_solution",
   "version": "0.0.0-unreleased",
-  "description": "News Flash Challenge for JS Array Methods 2",
+  "description": "News Flash Challenge for JS Array Methods",
   "main": "index.html",
   "scripts": {
     "lint": "npx eslint .",

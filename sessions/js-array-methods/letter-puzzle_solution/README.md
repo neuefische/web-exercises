@@ -1,4 +1,4 @@
-# JS Array Methods 2: Employee Data Puzzle
+# JS Array Methods: Employee Data Puzzle
 
 This challenge tasks you with navigating a large dataset of over 500 employees, utilizing JavaScript array methods to uncover and resolve a letter puzzle.
 
