@@ -11,7 +11,7 @@ The function behavior we're looking for is to get different (or _no_) drinks eac
 
 > ⚠️ Read all of the tasks carefully before starting to code!
 
-1. Remember the `vendingMachine` function you've created as part of the Functions 1 challenges? Now write the same function still called `vendingMachine`, but as an **arrow function expression**.
+1. Remember the `vendingMachine` function you've created as part of the Functions challenges? Now write the same function still called `vendingMachine`, but as an **arrow function expression**.
 2. The function should include one parameter: `money`.
 3. In the function body, implement the following logic:
    - an **early return** for the condition `money === 0`

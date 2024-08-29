@@ -1,7 +1,7 @@
 console.clear();
 
 function printPersonalData() {
-  const name = Alex;
+  const name = "Alex";
   const age = 24;
   console.log(name + " is " + age + " years old");
 }

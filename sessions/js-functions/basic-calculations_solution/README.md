@@ -1,4 +1,4 @@
-# basic calculations JS js-functions-2 Session
+# basic calculations JS js-functions Session
 
 ## Task
 

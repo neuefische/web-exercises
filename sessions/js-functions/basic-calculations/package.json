@@ -1,7 +1,7 @@
 {
-  "name": "js-functions-2_basic-calculations",
+  "name": "js-functions_basic-calculations",
   "version": "0.0.0-unreleased",
-  "description": "basic calculations JS js-functions-2 Session",
+  "description": "basic calculations JS js-functions Session",
   "main": "index.js",
   "scripts": {
     "start": "npx -y live-server@latest --port=3000",
