@@ -1,4 +1,4 @@
-# Array Methods: An Array with Objects
+# JS Array Methods: An Array with Objects
 
 This Challenge offers some more exercises to recap some advanced array methods. Let's dive in!
 
@@ -47,5 +47,3 @@ Run `npm run start` to start a development server and open [localhost:3000](http
 > Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
 
 Use `npm run test` to run the tests.
-
-

@@ -1,4 +1,4 @@
-# Array Methods: A simple String Array
+# JS Array Methods: A simple String Array
 
 This Challenge offers some exercises to recap some advanced array methods. Let's dive in!
 
@@ -29,7 +29,6 @@ Switch to the `./index.js` file and work with animals!
 
 This challenge comes with tests. See below how to start them.
 
-
 ## Development
 
 > ❗️ This project is JavaScript only. Please check the browser console (<kbd>⌥</kbd><kbd>⌘</kbd><kbd>I</kbd>) for the output or run the tests to see the results.
@@ -44,5 +43,3 @@ Run `npm run start` to start a development server and open [localhost:3000](http
 > Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
 
 Use `npm run test` to run the tests.
-
-

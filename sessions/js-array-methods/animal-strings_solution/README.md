@@ -1,4 +1,4 @@
-# Array Methods: A simple String Array
+# JS Array Methods: A simple String Array
 
 This challenge offers some exercises to recap some advanced array methods. Let's dive in!
 

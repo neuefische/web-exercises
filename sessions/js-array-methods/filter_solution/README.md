@@ -1,4 +1,4 @@
-# Array Methods: `filter`
+# JS Array Methods: `filter`
 
 This challenge offers a some exercises to recap the array method `filter`. Let's dive directly into it!
 
