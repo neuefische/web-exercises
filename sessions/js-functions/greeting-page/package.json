@@ -1,0 +1,21 @@
+{
+  "name": "js-functions_greeting-page",
+  "version": "0.0.0-unreleased",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "lint": "npx -y eslint@latest .",
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx -y jest@latest --watchAll",
+    "start": "npx -y live-server@latest --port=3000"
+  },
+  "nf": {
+    "template": "html-css-js"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@types/jest": "^29.5.2",
+    "eslint-plugin-jest": "^27.2.2",
+    "eslint": "^8.43.0"
+  }
+}
