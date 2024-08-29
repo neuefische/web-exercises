@@ -12,7 +12,6 @@
   },
   "devDependencies": {
     "eslint": "^8",
-    "eslint-plugin-jest": "^26.0.0",
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "4.6.0",
     "eslint-plugin-react-refresh": "^0.4.11",
