@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui;
+}
+
+main {
+  display: flex;
+  gap: 0.5em;
+  padding: 20px;
+}
+
+ul {
+  display: flex;
+  gap: 0.5em;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+}
