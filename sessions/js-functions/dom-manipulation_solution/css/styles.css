@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui;
+}
+
+header {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  gap: 50px;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 300px;
+  height: 300px;
+}
+
+.red {
+  background-color: crimson;
+}
+
+.blue {
+  background-color: royalblue;
+}
+
+.green {
+  background-color: seagreen;
+}
+
+.gray {
+  background-color: darkslategray;
+}
