@@ -2,12 +2,10 @@
   "env": {
     "browser": true,
     "es2022": true,
-    "jest": true,
     "node": true
   },
   "extends": [
     "eslint:recommended",
-    "plugin:jest/recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended"
   ],
@@ -22,7 +20,7 @@
       "jsx": true
     }
   },
-  "plugins": ["jest", "react", "react-refresh"],
+  "plugins": ["react", "react-refresh"],
   "rules": {
     "react/prop-types": 0,
     "react/react-in-jsx-scope": 0,
