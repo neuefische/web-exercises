@@ -2,7 +2,7 @@
 
 Welcome to the React Universe!
 
-Have a look at the [App.js](./src/App.js) file: you will find a default export function called `App` which returns a `<div>`.
+Have a look at the [App.jsx](./src/App.jsx) file: you will find a default export function called `App` which returns a `<div>`.
 
 Start you application and open it in your browser: the content of the `<div>` ("Say hello...") should be visible there as well.
 
@@ -37,7 +37,7 @@ Use the following hints as guideline:
 
 To work locally, please install the dependencies using `npm i` first.
 
-Run `npm run start` to start a development server and open the displayed URL in a browser.
+Run `npm run dev` to start a development server and open the displayed URL in a browser.
 
 
 
@@ -45,4 +45,4 @@ Run `npm run start` to start a development server and open the displayed URL in 
 
 You can use the following commands:
 
-- `npm run start` to start a development server
+- `npm run dev` to start a development server

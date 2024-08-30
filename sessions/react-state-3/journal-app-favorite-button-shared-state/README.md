@@ -58,9 +58,7 @@ You have successfully refactored your app to have a more concise state handling!
 
 To work locally, please install the dependencies using `npm i` first.
 
-Run `npm run start` to start a development server and open the displayed URL in a browser.
-
-Use `npm run test` to run the tests.
+Run `npm run dev` to start a development server and open the displayed URL in a browser.
 
 
 
@@ -68,6 +66,5 @@ Use `npm run test` to run the tests.
 
 You can use the following commands:
 
-- `npm run start` to start a development server
+- `npm run dev` to start a development server
 - `npm run build` to build the project
-- `npm run test` to run the tests
