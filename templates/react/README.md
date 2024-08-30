@@ -1,25 +1,27 @@
-# New React Project
+# React Project Template
 
-This project was created from the neue fische `react` template.
+This is the basic react project template.
 
-You can [🔗 **use this template on CodeSandbox**](https://codesandbox.io/p/sandbox/github/neuefische/web-exercises/tree/main/templates/react?file=/README.md) or locally by running this command in your Terminal:
+Copy this folder and adjust the following elements:
+- Project name in the package.json.
+- Title in the index.html.
+- Content of this Readme.
 
-```bash
-npx -y ghcd@latest neuefische/web-exercises/tree/main/templates/react my-app
-```
+## Notes
+
+- You only have to touch the `./src/App.js` file.
+- You find the end point for this demo in `sessions/react-props/demo-end`.
 
 ## Development
 
 To work locally, please install the dependencies using `npm i` first.
 
-Run `npm run start` to start a development server and open the displayed URL in a browser.
+Run `npm run dev` to start a development server and open the displayed URL in a browser.
 
-Use `npm run test` to run the tests.
+
 
 ### Scripts
 
 You can use the following commands:
 
-- `npm run start` to start a development server
-- `npm run build` to build the project
-- `npm run test` to run the tests
+- `npm run dev` to start a development server
