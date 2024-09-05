@@ -1,6 +1,6 @@
 # React Data Fetching: Star Wars
 
-In this challenge, you will fetch a character from the [Star Wars API](https://swapi.dev/) with `SWR` and combine this with dynamic routes.
+In this challenge, you will fetch a character from the [Star Wars API](https://swapi.py4e.com/) with `SWR` and combine this with dynamic routes.
 
 ## Task
 
@@ -11,13 +11,13 @@ In this challenge, you will fetch a character from the [Star Wars API](https://s
 
 ### Fetching with `SWR`
 
-Your task is to fetch a character from the [Star Wars API](https://swapi.dev/). Use `SWR` to do so and implement a loading as well as an error state.
+Your task is to fetch a character from the [Star Wars API](https://swapi.py4e.com/). Use `SWR` to do so and implement a loading as well as an error state.
 
 You can use the following hints as guideline:
 
 - `SWR` is already installed, so you just have to import it.
 - Switch to `./pages/characters/1.js`:
-  - fetch only the first character using https://swapi.dev/api/people/1;
+  - fetch only the first character using https://swapi.py4e.com/api/people/1;
   - instead of the hard coded `/1`, interpolate the `id` variable.
   - implement a loading state;
   - to implement a proper error state based on an error object, you need to adapt the fetcher function [as explained in the SWR docs](https://swr.vercel.app/docs/error-handling#status-code-and-error-object).

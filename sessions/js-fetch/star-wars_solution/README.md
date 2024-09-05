@@ -10,7 +10,7 @@ This approach is very static and not very handy. Lets get more data and create n
 
 ### Task 1: Fetch data from the Star Wars Api:
 
-Fetch data from the star wars api (https://swapi.dev/api/people).
+Fetch data from the star wars api (https://swapi.py4e.com/api/people).
 
 Use the `async` and `await` keywords to receive the response and request the data with the `.json() method`.
 Use a `console.log()` to look at the received data!
