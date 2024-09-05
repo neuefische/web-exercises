@@ -1,4 +1,26 @@
 console.clear();
+const gamesContainer = document.querySelector("[data-js=games-container]");
+
+const strings = [
+  "React",
+  "Redux",
+  "React Router",
+  "Next.js",
+  "Create React App",
+  "Gatsby",
+  "React Native",
+  "React Query",
+  "Styled Components",
+  "Material-UI",
+  "Chakra UI",
+  "React Hook Form",
+  "Storybook",
+  "Jest",
+  "Webpack",
+  "Babel",
+  "ESLint",
+  "Prettier",
+];
 
 const games = [
   {
@@ -82,3 +104,51 @@ const games = [
       "Have you heard of the Extreme Laser Cats From Jupiter? Of course you have! Unfortunately, they have decided to attack earth. The Apocalypse is upon us - and it's very cute.",
   },
 ];
+/** includes **/
+
+const isReactIncluded = strings.includes("React");
+console.log(isReactIncluded);
+
+/** forEach **/
+
+strings.forEach(function (firstParameter) {
+  console.log(firstParameter);
+});
+
+games.forEach((game) => {
+  console.log(game.name);
+});
+
+games.forEach((game) => {
+  const articleElement = document.createElement("article");
+  const titleElement = document.createElement("h2");
+  const descriptionElement = document.createElement("p");
+
+  titleElement.textContent = game.name;
+  descriptionElement.textContent = game.description;
+
+  articleElement.append(titleElement);
+  articleElement.append(descriptionElement);
+
+  gamesContainer.append(articleElement);
+});
+
+/** map **/
+
+const upperCaseStrings = strings.map((string) => string.toUpperCase());
+console.log(upperCaseStrings);
+
+const gameNames = games.map((game) => game.name);
+console.log(gameNames);
+
+/** find **/
+
+const searchResult = games.find(
+  (game) => game.name === "Attack of the Mutant Camels"
+);
+console.log(searchResult);
+
+/** filter **/
+
+const gamesBefore2000 = games.filter((game) => game.publishingYear < 2000);
+console.log(gamesBefore2000);
