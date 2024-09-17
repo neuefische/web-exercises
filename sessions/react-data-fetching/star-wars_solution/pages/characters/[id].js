@@ -3,7 +3,7 @@ import Layout from "../../components/Layout";
 import useSWR from "swr";
 import { useRouter } from "next/router";
 
-const URL = `https://swapi.dev/api/people/${id}`;
+const URL = `https://swapi.py4e.com/api/people/${id}`;
 
 export default function Character() {
   const router = useRouter();
