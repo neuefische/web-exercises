@@ -26,7 +26,7 @@ Use the following hints as guideline:
 
 To work locally, please install the dependencies using `npm i` first.
 
-Run `npm run start` to start a development server and open the displayed URL in a browser.
+Run `npm run dev` to start a development server and open the displayed URL in a browser.
 
 
 
@@ -34,4 +34,4 @@ Run `npm run start` to start a development server and open the displayed URL in 
 
 You can use the following commands:
 
-- `npm run start` to start a development server
+- `npm run dev` to start a development server
