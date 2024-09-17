@@ -1,7 +1,7 @@
 {
-  "name": "js-array-methods-2_animal-strings",
+  "name": "js-array-methods_animal-strings",
   "version": "0.0.0-unreleased",
-  "description": "Challenge for JS Array Methods 2 with Array of animal strings",
+  "description": "Challenge for JS Array Methods with Array of animal strings",
   "main": "index.js",
   "devDependencies": {
     "@babel/core": "^7.22.5",

@@ -1,7 +1,7 @@
 {
-  "name": "js-array-methods_demo-end",
+  "name": "js-array-methods_demo-start",
   "version": "0.0.0-unreleased",
-  "description": "Finished Demo for JS Array Methods Session",
+  "description": "Start of Demo for JS Array Methods Session",
   "main": "index.html",
   "scripts": {
     "lint": "npx -y eslint@latest .",

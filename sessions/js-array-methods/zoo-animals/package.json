@@ -1,7 +1,7 @@
 {
-  "name": "js-array-methods-2_zoo-animals",
+  "name": "js-array-methods_zoo-animals",
   "version": "0.0.0-unreleased",
-  "description": "JS Array Methods 2: Zoo Animals",
+  "description": "JS Array Methods: Zoo Animals",
   "main": "index.html",
   "type": "module",
   "scripts": {

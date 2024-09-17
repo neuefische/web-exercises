@@ -1,27 +1,35 @@
 console.clear();
-const gamesContainer = document.querySelector("[data-js=games-container]");
 
 const strings = [
+  "HTML",
   "React",
-  "Redux",
-  "React Router",
+  "CSS",
   "Next.js",
-  "Create React App",
-  "Gatsby",
-  "React Native",
-  "React Query",
-  "Styled Components",
-  "Material-UI",
-  "Chakra UI",
-  "React Hook Form",
-  "Storybook",
-  "Jest",
-  "Webpack",
-  "Babel",
-  "ESLint",
-  "Prettier",
+  "MongoDB",
+  "styled components",
+  "mongoose",
+  "next-auth",
+  "Visual Studio Code",
 ];
 
+strings.forEach(function (string) {
+  console.log(string);
+});
+
+strings.forEach((string) => {
+  console.log(string);
+});
+
+const upperCaseStrings = strings.map((string) => {
+  return string.toUpperCase();
+});
+console.log(upperCaseStrings);
+
+const searchResult = strings.find((string) => string.includes("React"));
+console.log(searchResult);
+
+// --- Games ---
+const gamesContainer = document.querySelector("[data-js='games-container']");
 const games = [
   {
     id: 1,
@@ -104,51 +112,27 @@ const games = [
       "Have you heard of the Extreme Laser Cats From Jupiter? Of course you have! Unfortunately, they have decided to attack earth. The Apocalypse is upon us - and it's very cute.",
   },
 ];
-/** includes **/
-
-const isReactIncluded = strings.includes("React");
-console.log(isReactIncluded);
-
-/** forEach **/
-
-strings.forEach(function (firstParameter) {
-  console.log(firstParameter);
-});
 
 games.forEach((game) => {
   console.log(game.name);
 });
 
 games.forEach((game) => {
-  const articleElement = document.createElement("article");
-  const titleElement = document.createElement("h2");
-  const descriptionElement = document.createElement("p");
+  const article = document.createElement("article");
+  const h2 = document.createElement("h2");
+  const p = document.createElement("p");
 
-  titleElement.textContent = game.name;
-  descriptionElement.textContent = game.description;
+  h2.textContent = game.name;
+  p.textContent = game.description;
 
-  articleElement.append(titleElement);
-  articleElement.append(descriptionElement);
+  article.append(h2);
+  article.append(p);
 
-  gamesContainer.append(articleElement);
+  gamesContainer.append(article);
 });
 
-/** map **/
-
-const upperCaseStrings = strings.map((string) => string.toUpperCase());
-console.log(upperCaseStrings);
-
-const gameNames = games.map((game) => game.name);
-console.log(gameNames);
-
-/** find **/
-
-const searchResult = games.find(
-  (game) => game.name === "Attack of the Mutant Camels"
-);
-console.log(searchResult);
-
-/** filter **/
+const upperCaseNames = games.map((game) => game.name.toUpperCase());
+console.log(upperCaseNames);
 
 const gamesBefore2000 = games.filter((game) => game.publishingYear < 2000);
 console.log(gamesBefore2000);

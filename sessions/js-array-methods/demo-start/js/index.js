@@ -1,26 +1,19 @@
 console.clear();
 
 const strings = [
+  "HTML",
   "React",
-  "Redux",
-  "React Router",
+  "CSS",
   "Next.js",
-  "Create React App",
-  "Gatsby",
-  "React Native",
-  "React Query",
-  "Styled Components",
-  "Material-UI",
-  "Chakra UI",
-  "React Hook Form",
-  "Storybook",
-  "Jest",
-  "Webpack",
-  "Babel",
-  "ESLint",
-  "Prettier",
+  "MongoDB",
+  "styled components",
+  "mongoose",
+  "next-auth",
+  "Visual Studio Code",
 ];
 
+// --- Games ---
+const gamesContainer = document.querySelector("[data-js='games-container']");
 const games = [
   {
     id: 1,

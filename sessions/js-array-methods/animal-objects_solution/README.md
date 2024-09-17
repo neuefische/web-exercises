@@ -1,4 +1,4 @@
-# Array Methods 2: An Array with Objects
+# JS Array Methods: An Array with Objects
 
 This challenge offers some more exercises to recap some advanced array methods. Let's dive in!
 

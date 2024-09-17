@@ -1,7 +1,7 @@
 {
-  "name": "js-array-methods-2_fun-with-flags_solution",
+  "name": "js-array-methods_fun-with-flags_solution",
   "version": "0.0.0-unreleased",
-  "description": "JS Array Methods 2 Challenge: Fun with Flags",
+  "description": "JS Array Methods Challenge: Fun with Flags",
   "main": "index.html",
   "scripts": {
     "lint": "npx eslint .",

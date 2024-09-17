@@ -1,7 +1,7 @@
 {
-  "name": "js-array-methods-2_employees_solution",
+  "name": "js-array-methods_employees_solution",
   "version": "0.0.0-unreleased",
-  "description": "JS Array Methods 2: Employees",
+  "description": "JS Array Methods: Employees",
   "main": "index.html",
   "type": "module",
   "scripts": {
