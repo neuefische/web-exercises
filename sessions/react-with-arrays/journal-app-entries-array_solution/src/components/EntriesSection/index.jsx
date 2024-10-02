@@ -48,7 +48,7 @@ export default function EntriesSection() {
       </Tabs>
       <div className="entries-section__entries">
         {entries.map((entry, index) => (
-          <>
+          <div key={entry.id}>
             {index !== 0 && <Divider key={"divider-" + entry.id} />}
             <Entry
               key={entry.id}
@@ -56,7 +56,7 @@ export default function EntriesSection() {
               notes={entry.notes}
               date={entry.date}
             />
-          </>
+          </div>
         ))}
       </div>
     </section>
