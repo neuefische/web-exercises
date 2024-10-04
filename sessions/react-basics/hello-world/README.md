@@ -2,7 +2,7 @@
 
 Welcome to the React Universe!
 
-Have a look at the [App.jsxx](./src/App.jsxx) file: you will find a default export function called `App` which returns a `<div>`.
+Have a look at the [App.jsx](./src/App.jsx) file: you will find a default export function called `App` which returns a `<div>`.
 
 Start you application and open it in your browser: the content of the `<div>` ("Say hello...") should be visible there as well.
 
