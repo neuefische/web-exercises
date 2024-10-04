@@ -3,7 +3,7 @@
 ## Notes
 
 - This is the start version of the demo
-- You only have to touch the `./src/App.js` file.
+- You only have to touch the `./src/App.jsx` file.
 
 ## Development
 

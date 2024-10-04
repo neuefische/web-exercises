@@ -2,7 +2,7 @@
 
 ## Notes
 
-- You only have to touch the `./src/App.js` file.
+- You only have to touch the `./src/App.jsx` file.
 - You find the end point for this demo in `sessions/react-nesting/demo-end`.
 
 ## Development

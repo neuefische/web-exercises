@@ -1,14 +1,14 @@
 # React State 2: Colored Number
 
-This challenge provides a `./src/components/Counter.js`component with two buttons which shall increment or decrement a count.
+This challenge provides a `./src/components/Counter.jsx`component with two buttons which shall increment or decrement a count.
 
-This count is then used by the `./src/components/ColoredNumber.js` component to display the actual number while its color is depending on the value.
+This count is then used by the `./src/components/ColoredNumber.jsx` component to display the actual number while its color is depending on the value.
 
 For now, however, clicking the buttons doesn't change anything. Let's use state to fix that.
 
 ## Task
 
-Refactor the `./src/components/Counter.js` component so that it updates the displayed number when clicking a button.
+Refactor the `./src/components/Counter.jsx` component so that it updates the displayed number when clicking a button.
 
 You can use the following hints as guideline:
 
@@ -18,7 +18,7 @@ You can use the following hints as guideline:
 
 ## Notes
 
-- You only have to touch the `./src/components/Counter.js` file.
+- You only have to touch the `./src/components/Counter.jsx` file.
 
 ## Development
 

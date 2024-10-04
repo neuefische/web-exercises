@@ -6,13 +6,13 @@ Let's dive into it and see how React fragments can help here!
 
 ## Task
 
-Look at the `./src/App.js` file: there is a `<main>` element containing three `Box` components with different colors.
+Look at the `./src/App.jsx` file: there is a `<main>` element containing three `Box` components with different colors.
 
 Note that the `<main>` wrapper is a flex container which is why the `Box` components are aligned horizontically.
 
 Task: Outsource the three `Box` components to a `Boxes` component.
 
-- In the `App.js` file, create a `Boxes` component which
+- In the `App.jsx` file, create a `Boxes` component which
   - returns the same three `Box` components as given above.
   - For now, use a `<div>` component as a wrapper in the return statement of the `Boxes` component.
 - In the `App` component, replace the three `Box` components with the `Boxes` component.
@@ -31,7 +31,7 @@ To fix this, replace the `<div>` with fragments `<></>`: they won't create an HT
 
 ## Notes
 
-- You only have to touch the `./src/App.js` file.
+- You only have to touch the `./src/App.jsx` file.
 
 ## Development
 
