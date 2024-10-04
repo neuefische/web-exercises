@@ -2,9 +2,9 @@
 
 In this challenge, there is an app to reserve a table at a restaurant.
 
-Have a look at the [`Counter Component`](./src/components/Counter.js): there is a state which gets updated when the buttons are clicked.
+Have a look at the [`Counter Component`](./src/components/Counter.jsx): there is a state which gets updated when the buttons are clicked.
 
-In the `./src/App.js` file, however, there is a sentence saying "You are going to reserve a table for 2 people." The number should not be hard coded, but equal the current people count and need to be updated on every button click.
+In the `./src/App.jsx` file, however, there is a sentence saying "You are going to reserve a table for 2 people." The number should not be hard coded, but equal the current people count and need to be updated on every button click.
 
 ## Task
 
@@ -26,7 +26,7 @@ You can use the following hints as guideline:
 
 ## Notes
 
-- You only have to touch the `./src/App.js` and `./src/components/Counter.js` file.
+- You only have to touch the `./src/App.jsx` and `./src/components/Counter.jsx` file.
 
 ## Development
 

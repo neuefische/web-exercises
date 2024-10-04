@@ -8,13 +8,13 @@ And here is the magic: we can only do this with one button component using props
 
 ### 1. A Simple Button Component
 
-Look at the `./src/App.js` file: the `App` component returns a default heading element that you need to replace with a custom component.
+Look at the `./src/App.jsx` file: the `App` component returns a default heading element that you need to replace with a custom component.
 
 Your task is to write a `Button` component which takes three props `color`, `disabled`, and `text` and renders a button with the given color, text and disabled state.
 
 You can use the following hints as guideline:
 
-- Write a `Button` component inside of the `src/App.js`.
+- Write a `Button` component inside of the `src/App.jsx`.
 
   - It accepts three props: `color`, `disabled`, and `text` (make sure to destructure them).
   - It returns an HTML button element which
@@ -62,7 +62,7 @@ As a last step, let's pass a function as a prop to a component.
 
 ## Notes
 
-- You only have to touch the `./src/App.js` file.
+- You only have to touch the `./src/App.jsx` file.
 
 ## Development
 

@@ -5,8 +5,8 @@ This is the start state of the demo app.
 ## Notes
 
 - You only have to touch this files:
-  - `./src/App.js`
-  - `./src/components/SearchForm.js`
+  - `./src/App.jsx`
+  - `./src/components/SearchForm.jsx`
 
 ## Development
 

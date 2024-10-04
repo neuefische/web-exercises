@@ -8,7 +8,7 @@ Locate the component that renders your journal entries. Here it's called `Entrie
 
 Copy the `entries` array below into the component that renders your journal entries.
 
-```js
+``.jsx
 const entries = [
   {
     id: 1000,

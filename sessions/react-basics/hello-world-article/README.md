@@ -2,7 +2,7 @@
 
 Welcome back to the React Universe! This exercise lets you build a React component containing more than one HTML tag.
 
-Have a look at the [App.js](./src/App.js) file: the default export function called `App` returns a `<div>` which wants to be replaced. Let us comply with its request!
+Have a look at the [App.jsx](./src/App.jsx) file: the default export function called `App` returns a `<div>` which wants to be replaced. Let us comply with its request!
 
 ## Task
 
@@ -10,7 +10,7 @@ Render an HTML `article` tag containing a heading and a paragraph to the browser
 
 Use the following hints as guideline:
 
-- In the [App.js](src/App.js), create a new function called `HelloWorldArticle()`.
+- In the [App.jsx](src/App.jsx), create a new function called `HelloWorldArticle()`.
 - `HelloWorldArticle()` should return an HTML `article` tag as a wrapper which contains;
   - an `h1` heading
   - at least one `p` tag
@@ -20,7 +20,7 @@ Use the following hints as guideline:
 
 ## Notes
 
-- You only have to touch the [App.js](src/App.js) file.
+- You only have to touch the [App.jsx](src/App.jsx) file.
 
 ## Development
 

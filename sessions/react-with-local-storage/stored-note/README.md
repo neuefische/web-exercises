@@ -4,15 +4,15 @@ The contents of this notepad are lost when you refresh the page. Make it persist
 
 ## Task
 
-Switch to the `./src/App.js` file and replace both `useState` hooks with `useLocalStorageState` hooks to make the notepad and the font selection persistent. The `use-local-storage-state` package is already installed. Import it like this:
+Switch to the `./src/App.jsx` file and replace both `useState` hooks with `useLocalStorageState` hooks to make the notepad and the font selection persistent. The `use-local-storage-state` package is already installed. Import it like this:
 
-```js
+``.jsx
 import useLocalStorageState from "use-local-storage-state";
 ```
 
 ## Notes
 
-- You only have to touch the `./src/App.js` file.
+- You only have to touch the `./src/App.jsx` file.
 
 ## Development
 

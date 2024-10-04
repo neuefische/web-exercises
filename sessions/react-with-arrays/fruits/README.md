@@ -1,6 +1,6 @@
 # React Arrays: Fruits
 
-For now, the `./src/App.js` file uses a `Card` component to render the text "banana". This is easy to handle if you only have a single use case.
+For now, the `./src/App.jsx` file uses a `Card` component to render the text "banana". This is easy to handle if you only have a single use case.
 
 Most often, however, you have an array of objects and want to dynamically render a component (like `Card`) for each of these objects.
 

@@ -3,7 +3,7 @@
 ## Notes
 
 - This is the final version of the demo.
-- You only have to touch the `./src/components/Jokes.js` file.
+- You only have to touch the `./src/components/Jokes.jsx` file.
 
 ## Development
 

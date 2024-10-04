@@ -4,7 +4,7 @@ This app should load and display a list of Pokémon.
 
 ## Task
 
-Open the file `./src/components/PokemonList.js`.
+Open the file `./src/components/PokemonList.jsx`.
 
 For now the Pokémon are only fetched when we click the button below. Let's change the code so that our app does this automatically when the app renders.
 
@@ -15,7 +15,7 @@ _Hint:_ Don't forget the dependency array!
 
 ## Notes
 
-- You only have to touch the `./src/components/PokemonList.js` file.
+- You only have to touch the `./src/components/PokemonList.jsx` file.
 
 ## Development
 

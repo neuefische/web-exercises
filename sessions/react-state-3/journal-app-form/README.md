@@ -49,7 +49,7 @@ Your new journal entry needs a date.
 - Create a string containing the date in the desired format with the snippet below.
 - Add the key `date` to the object describing the new entry.
 
-```js
+``.jsx
 const date = new Date().toLocaleDateString("en-us", { dateStyle: "medium" });
 ```
 

@@ -8,7 +8,7 @@ Unfortunately, hitting the submit button does not do anything. Since you are loo
 
 ### 1. Setting State on Submit
 
-Let's start by fixing the submit event first. Switch to the `./src/components/Form.js` file; there already are two states called `name` and `email` and a `handleSubmit` function.
+Let's start by fixing the submit event first. Switch to the `./src/components/Form.jsx` file; there already are two states called `name` and `email` and a `handleSubmit` function.
 
 1. Extend the `handleSubmit` function to set the `name` and `email` state to its corresponding form field values.
 2. Reset the form after submit.
@@ -17,7 +17,7 @@ Let's start by fixing the submit event first. Switch to the `./src/components/Fo
 
 🎉 Congratulations, the submit works and the data is stored in state variables!
 
-Unfortunately, the submitted details are not dynamically displayed in the [`App` component](./src/App.js) because the state only lives in the `Form` component.
+Unfortunately, the submitted details are not dynamically displayed in the [`App` component](./src/App.jsx) because the state only lives in the `Form` component.
 
 Refactor the code so that
 
@@ -36,7 +36,7 @@ You can use the following hints as guideline:
 
 ## Notes
 
-- You only have to touch the `./src/App.js` and `./src/components/Form.js` file.
+- You only have to touch the `./src/App.jsx` and `./src/components/Form.jsx` file.
 
 ## Development
 
