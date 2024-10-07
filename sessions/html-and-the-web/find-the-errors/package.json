@@ -1,0 +1,10 @@
+{
+  "name": "html-and-the-web_find-the-errors",
+  "version": "0.0.0-unreleased",
+  "description": "HTML and the web: Find the errors",
+  "main": "n.a.",
+  "nf": {
+    "template": "empty"
+  },
+  "private": true
+}
