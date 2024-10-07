@@ -32,6 +32,6 @@ In this challenge you will debug and see the bad formatting of a code..
 4. Once the file is saved, you should see all the code correctly indented.
    ![Indented](assets/indented-code.png)
 
-> If your code, after saving it, hasn't been indented it mean that you haven't configure [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) correctly in VS code. Please go back to the computer set up document and configure correctly Prettier
+> If your code, after saving it, hasn't been indented it mean that you haven't configure [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) correctly in VS code. Please go back to the computer set up document and reconfigure Prettier.
 
 Congratulations! 🎉 Prettier is correctly setup!
