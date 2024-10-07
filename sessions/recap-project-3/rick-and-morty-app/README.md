@@ -4,7 +4,7 @@ In this recap project, you are going to create a single page app for browsing al
 
 You are going to work in a group. Create **only one project per group** using the [guide in the template section](./README.md#template) below!
 
-🚀 Project Deployment to GitHub Pages is required: Please adhere to the deployment guidelines outlined in your repository's documentation `(https://github.com/neuefische/[your-cohort-name]/blob/main/docs/github-pages.md)` for detailed instructions. In the URL replace `[your-cohort-name]` with your cohort's designated name.
+🚀 Project Deployment to GitHub Pages is required: Please adhere to the deployment guidelines outlined in your [repository's documentation](https://github.com/neuefische/web-protocol-template/blob/main/docs/deployment-github-pages.md) for detailed instructions.
 
 ---
 
