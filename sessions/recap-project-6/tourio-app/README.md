@@ -26,9 +26,10 @@ In this project you will build a Tourio App, the best friend of all travelers: i
 - In `pages/places/[id].index.js`, write the `deletePlace` function to start a `DELETE` request.
 - Write the `DELETE` API route in `pages/api/places/[id]/index.js`.
 
-### Deploy to Vercel
+### Deploy your Project to Vercel
+Follow [these instructions](https://github.com/neuefische/web-protocol-template/blob/main/docs/deployment-vercel.md) to deploy the project to Vercel.
 
-Deploy your app to Vercel and make sure the deployment can access the cloud database with the help of environment variables.
+
 
 #### Vercel and MongoDB Atlas (environment variables)
 
