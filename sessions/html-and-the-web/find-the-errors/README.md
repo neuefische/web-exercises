@@ -30,7 +30,7 @@ In this challenge, you will debug HTML code to understand the importance of Pret
 
    ```
 
-3. Save the file. Once saved, you will notice that Prettier (in the bottom right of VS Code) is showing as red. This indicates that there are some formatting or syntax errors. Additionally, you will see that the code is not auto-indenting, which means there might be missing or incorrect tags.
+3. Save the file. Once saved, you will notice that Prettier (in the bottom right of VS Code) is showing as red. This indicates that there are some formatting or syntax errors. Prettier cannot format files which contain syntax errors, therefore the HTML is not indented as expected.
 
    ![Prettier Red](./assets/prettier-red.png)
 
