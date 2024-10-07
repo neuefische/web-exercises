@@ -1,6 +1,6 @@
 # HTML and the web: Format Salad
 
-In this challenge you will debug and see the bad formatting of a code..
+This little challenge checks if you set up VSCode and Prettier correctly.
 
 ## Getting started with HTML
 
