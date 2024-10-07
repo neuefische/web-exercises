@@ -22,6 +22,8 @@ command to create a new project based on a template:
 
 Alternatively you can keep working with the Quiz App you built in Recap Project 1.
 
+🚀 Project Deployment to GitHub Pages is required: Please adhere to the deployment guidelines outlined in your repository's documentation `(https://github.com/neuefische/[your-cohort-name]/blob/main/docs/github-pages.md)` for detailed instructions. In the URL replace `[your-cohort-name]` with your cohort's designated name.
+
 ## Tasks
 
 ### 1. Toggle functionality
@@ -106,9 +108,30 @@ users should be informed about the amount of characters left.
   result
 - Think of ways to use the same logic for both form fields and to not repeat your code
 
+
+## 5. Bonus
+
+1. When adding a new question card in your newly created form.html; add as well event listeners to the new button and icon which will have the same functionality as described in Task 1.
+
+   > ❗️ You DON'T need any loops or querySelectorAll. Just try to grab the individual button and icon directly after adding them to the DOM by giving them unique attributes.
+
+2. Add an event listener to the dark mode toggle button in your profile page which should toggle on a dark or light version of the profile page
+
+   > ❗️ You'll need to set some CSS variables as attributes to the <body> element for example
+
+   > ❗️ This functionality should only work for the profile page. We will have a look later how to implement dark/light mode on the whole application later in the course.
+
 You can have a look at
 [this counter example](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/recap-project-2/character-count-example)
 for inspiration.
+
+## Resources
+
+⬇️ You can [**download the images for the Quiz App here**](./resources.zip?raw=true).
+
+- Unzip the file to get the `resources` folder.
+- Copy them into your app's main directory.
+
 
 ## Development
 
