@@ -6,68 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz-App</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script src="form.js" defer></script>
   </head>
   <body>
     <header class="header">
-      <h1 class="header__title">Profile</h1>
+      <h1 class="header__title">Add Question</h1>
     </header>
-    <main class="profile">
-      <div class="profile__card">
-        <img
-          class="profile__card-img"
-          src="https://source.unsplash.com/random/300x300?portrait"
-          alt=""
-          height="200"
-          width="200"
-        />
-        <h2 class="profile-card__name">Max Doe</h2>
-      </div>
-      <h3>About me</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum
-        dignissimos, reprehenderit quam facilis animi in distinctio nemo est
-        culpa velit non unde expedita porro. Expedita animi quo voluptates
-        blanditiis libero?
-      </p>
-      <ul class="counter-list">
-        <li class="counter-list__item">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="24"
-            width="24"
-            viewbox="0 0 48 48"
+    <main>
+      <form class="question-form" data-js="form">
+        <label class="question-form__input">
+          <span>Question</span>
+          <textarea
+            name="question"
+            maxlength="150"
+            data-js="question-input"
+          ></textarea>
+          <span
+            class="question-form__character-count"
+            data-js="question-character-count"
+            >0/150</span
           >
-            <path
-              d="M21.55 31.5q.05-3.6.825-5.25.775-1.65 2.925-3.6 2.1-1.9 3.225-3.525t1.125-3.475q0-2.25-1.5-3.75t-4.2-1.5q-2.6 0-4 1.475T17.9 14.95l-4.2-1.85q1.1-2.95 3.725-5.025T23.95 6q5 0 7.7 2.775t2.7 6.675q0 2.4-1.025 4.35-1.025 1.95-3.275 4.1-2.45 2.35-2.95 3.6t-.55 4Zm2.4 12.5q-1.45 0-2.475-1.025Q20.45 41.95 20.45 40.5q0-1.45 1.025-2.475Q22.5 37 23.95 37q1.45 0 2.475 1.025Q27.45 39.05 27.45 40.5q0 1.45-1.025 2.475Q25.4 44 23.95 44Z"
-            />
-          </svg>
-          <span>12</span>
-        </li>
-        <li class="counter-list__item">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="24px"
-            viewbox="0 0 24 24"
-            width="24px"
-            fill="#000000"
+        </label>
+        <label class="question-form__input">
+          <span>Answer</span>
+          <textarea
+            name="answer"
+            maxlength="150"
+            data-js="answer-input"
+          ></textarea>
+          <span
+            class="question-form__character-count"
+            data-js="answer-character-count"
+            >0/150</span
           >
-            <path d="M0 0h24v24H0V0z" fill="none" />
-            <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z" />
-          </svg>
-          <span>4</span>
-        </li>
-      </ul>
-      <h2 id="title">Settings</h2>
-      <form class="profile__settings" aria-labelledby="title">
-        <input
-          type="checkbox"
-          id="switch-darkmode"
-          class="profile__settings-darkmode-input"
-        />
-        <label for="switch-darkmode" class="profile__settings-darkmode-label"
-          >Toggle Darkmode</label
-        >
+        </label>
+        <label class="question-form__input">
+          <span>Tag</span>
+          <input type="text" name="tag" />
+        </label>
+        <button class="question-form__submit-button" type="submit">
+          Create
+        </button>
       </form>
+      <ul class="card-list" data-js="card-container"></ul>
     </main>
 
     <nav class="navigation">
@@ -108,7 +89,7 @@
             </svg>
           </a>
         </li>
-        <li class="navigation__list-item">
+        <li class="navigation__list-item navigation__list-item--active">
           <a
             class="navigation__link"
             href="form.html"
@@ -131,7 +112,7 @@
             </svg>
           </a>
         </li>
-        <li class="navigation__list-item navigation__list-item--active">
+        <li class="navigation__list-item">
           <a
             class="navigation__link"
             href="profile.html"
