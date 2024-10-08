@@ -13,10 +13,7 @@
 }
 
 .navigation__list-item {
-  padding: 1.5rem 0.5rem;
   width: 100%;
-  display: flex;
-  justify-content: center;
 }
 
 .navigation__list-item--active {
@@ -28,10 +25,12 @@
 }
 
 .navigation__link {
+  padding: 1.5rem 0.5rem;
   color: var(--black);
   background: transparent;
   border: none;
-  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .navigation__link svg {
