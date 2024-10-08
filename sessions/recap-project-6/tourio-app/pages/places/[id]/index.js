@@ -14,8 +14,9 @@ const ImageContainer = styled.div`
 
 const ButtonContainer = styled.section`
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  gap: 0.2rem;
+  gap: 0.5rem;
 
   & > * {
     flex-grow: 1;
@@ -25,8 +26,9 @@ const ButtonContainer = styled.section`
 
 const StyledLocationLink = styled(StyledLink)`
   text-align: center;
-  background-color: white;
-  border: 3px solid lightsalmon;
+  background-color: lightgray;
+  color: black;
+  border: none;
 `;
 
 export default function DetailsPage() {
@@ -49,7 +51,7 @@ export default function DetailsPage() {
   return (
     <>
       <Link href={"/"} passHref legacyBehavior>
-        <StyledLink $justifySelf="start">back</StyledLink>
+        <StyledLink justifySelf="start">back</StyledLink>
       </Link>
       <ImageContainer>
         <StyledImage
@@ -73,7 +75,7 @@ export default function DetailsPage() {
         <Link href={`/places/${id}/edit`} passHref legacyBehavior>
           <StyledLink>Edit</StyledLink>
         </Link>
-        <StyledButton onClick={deletePlace} type="button" $variant="delete">
+        <StyledButton onClick={deletePlace} type="button" variant="delete">
           Delete
         </StyledButton>
       </ButtonContainer>
