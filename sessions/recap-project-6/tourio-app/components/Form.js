@@ -1,26 +1,26 @@
-import styled from "styled-components";
-import { StyledButton } from "./StyledButton.js";
+import styled from 'styled-components';
+import { StyledButton } from './StyledButton.js';
 
-const FormContainer = styled.form`
+export const FormContainer = styled.form`
   display: grid;
   gap: 0.5rem;
 `;
 
-const Input = styled.input`
+export const Input = styled.input`
   padding: 0.5rem;
   font-size: inherit;
-  border: 3px solid black;
+  border: 1px solid black;
   border-radius: 0.5rem;
 `;
 
-const Textarea = styled.textarea`
+export const Textarea = styled.textarea`
   font-family: inherit;
-  border: 3px solid black;
+  border: 1px solid black;
   border-radius: 0.5rem;
   padding: 0.5rem;
 `;
 
-const Label = styled.label`
+export const Label = styled.label`
   font-weight: bold;
 `;
 
@@ -71,7 +71,7 @@ export default function Form({ onSubmit, formName, defaultData }) {
         defaultValue={defaultData?.description}
       ></Textarea>
       <StyledButton type="submit">
-        {defaultData ? "Update place" : "Add place"}
+        {defaultData ? 'Update place' : 'Add place'}
       </StyledButton>
     </FormContainer>
   );

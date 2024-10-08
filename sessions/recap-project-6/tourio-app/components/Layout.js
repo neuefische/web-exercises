@@ -1,6 +1,6 @@
-import TitleBar from "./TitleBar.js";
-import styled from "styled-components";
-import Head from "next/head.js";
+import TitleBar from './TitleBar.js';
+import styled from 'styled-components';
+import Head from 'next/head.js';
 
 const Main = styled.main`
   display: grid;
