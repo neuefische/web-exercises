@@ -10,6 +10,7 @@
   justify-content: space-evenly;
   width: 70px;
   padding: 0.5rem;
-  border: 1px solid var(--black);
+  color: var(--foreground);
+  border: 1px solid var(--foreground);
   border-radius: 4px;
 }
