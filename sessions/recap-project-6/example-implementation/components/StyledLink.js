@@ -1,24 +1,25 @@
 import styled, { css } from "styled-components";
 
 export const StyledLink = styled.a`
-  background-color: lightsalmon;
+  background-color: black;
   padding: 0.8rem 1.5rem;
   border-radius: 0.6rem;
-  color: black;
+  color: white;
+  border: 1px solid black;
   text-decoration: none;
   font-weight: bold;
 
-  ${({ $justifySelf }) =>
-    $justifySelf &&
+  ${({ justifySelf }) =>
+    justifySelf &&
     css`
-      justify-self: ${$justifySelf};
+      justify-self: ${justifySelf};
     `}
 
-  ${({ $variant }) =>
-    $variant === "outlined" &&
+  ${({ variant }) =>
+    variant === "outlined" &&
     css`
       text-align: center;
       background-color: white;
-      border: 3px solid lightsalmon;
+      border: 1px solid black;
     `}
 `;

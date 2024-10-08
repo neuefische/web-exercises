@@ -14,7 +14,9 @@ const List = styled.ul`
 `;
 
 const ListItem = styled.li`
-  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
   width: 100%;
 `;
 const FixedLink = styled(StyledLink)`
@@ -28,18 +30,19 @@ export default function Home() {
   return (
     <>
       <List role="list">
-        {data.map((place) => {
-          return (
-            <ListItem key={place._id}>
+        <ListItem>
+          {data.map((place, idx) => {
+            return (
               <Card
+                key={idx}
                 name={place.name}
                 image={place.image}
                 location={place.location}
                 id={place._id}
               />
-            </ListItem>
-          );
-        })}
+            );
+          })}
+        </ListItem>
       </List>
       <Link href="/create" passHref legacyBehavior>
         <FixedLink>+ place</FixedLink>
