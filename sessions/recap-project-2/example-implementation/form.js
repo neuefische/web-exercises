@@ -80,5 +80,32 @@ function Card(cardData) {
   newTag.textContent = cardData.tag;
   tagList.append(newTag);
 
+  // --v-- Only for Bonus Task --v--
+
+  const answerButton = cardElement.querySelector("[data-js=answer-button]");
+  const bookmarkButton = cardElement.querySelector("[data-js=bookmark-button]");
+
+  // Bookmark Interaction
+  bookmarkButton.addEventListener("click", () => {
+    bookmarkButton.classList.toggle("bookmark--active");
+  });
+
+  // Answer Display Toggling
+  answerButton.addEventListener("click", () => {
+    const isAnswerVisible = answerDisplay.classList.contains(
+      "card__answer--active"
+    );
+
+    if (isAnswerVisible) {
+      answerDisplay.classList.remove("card__answer--active");
+      answerButton.textContent = "Show answer";
+    } else {
+      answerDisplay.classList.add("card__answer--active");
+      answerButton.textContent = "Hide answer";
+    }
+  });
+
+  // --^-- Only for Bonus Task --^--
+
   return cardElement;
 }

@@ -38,6 +38,13 @@ body {
   line-height: 1.5;
   font-family: var(--ff-primary);
   color: var(--black);
+  background-color: var(--white);
+}
+
+body.dark {
+  --primary: #252629;
+  --white: #252629;
+  --black: #ffffff;
 }
 
 button {
