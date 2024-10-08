@@ -26,9 +26,23 @@ In this project you will build a Tourio App, the best friend of all travelers: i
 - In `pages/places/[id].index.js`, write the `deletePlace` function to start a `DELETE` request.
 - Write the `DELETE` API route in `pages/api/places/[id]/index.js`.
 
+## Bonus
+
+### Comment Section
+
+- To add a comment section for each place, you'll need to create a database schema or collection to store comments associated with each place. Each comment should have a reference to the place it belongs to, such as a place ID.
+
+- Set up a database; use the [`lib/Tourio-db.comments.json` file](lib/Tourio-db.comments.json) to insert sample data.
+
+- Create a form in your place detail page pages/places/[id]/index.js that allows users to submit comments.
+
+- Write a POST API route to handle comment submissions. This route should associate each comment with the appropriate place in your database.
+
+- Implement a mechanism to retrieve and display comments for each place on the detail page.
+
 ### Deploy to Vercel
 
-Deploy your app to Vercel and make sure the deployment can access the cloud database with the help of environment variables.
+- Deploy your app to Vercel and make sure the deployment can access the cloud database with the help of environment variables.
 
 #### Vercel and MongoDB Atlas (environment variables)
 
@@ -43,6 +57,7 @@ This is why we need to provide Vercel with the access details.
 1. In the dashboard of your Vercel project, navigate to "Settings".
 
 2. In the left-hand navigation, choose "Environment Variables".
+
    1. Add the key (`MONGODB_URI`) and the value (`mongodb+srv...`)
    2. Tick all environments (Production, Preview, and Development).
    3. Click "Save".
@@ -50,6 +65,7 @@ This is why we need to provide Vercel with the access details.
 3. At the bottom of this page, you should now see a new environment variable
 
 4. Redeploy your application:
+
    1. In the main navigation, choose "Deployments".
    2. Open the three dots next to your last deployment and choose "Redeploy".
 
@@ -59,23 +75,15 @@ This is why we need to provide Vercel with the access details.
 
 ## Development
 
-To work locally, please install the dependencies using `npm i` first.
+### Local development
 
-Run `npm run dev` to start a development server and open the displayed URL in a browser.
+To run project commands locally, you need to install the dependencies using `npm i` first.
 
-Use `npm run test` to run the tests.
+You can then use the following commands:
 
-### Scripts
+- `npm run dev` to start the development server
+- `npm run build` to create a production build
+- `npm run start` to start the production build
+- `npm run test` to run the tests in watch mode (if available)
 
-You can use the following commands:
-
-- `npm run dev` to start a development server
-- `npm run build` to build the project
-- `npm run start` to start a production server
-- `npm run test` to run the tests
-- `npm run lint` to run the linter
-
-## Resources
-
-- [MongoDB Atlas Tutorial](https://www.mongodb.com/basics/mongodb-atlas-tutorial)
-- [Environment Variables (Vercel Docs)](https://vercel.com/docs/projects/environment-variables)
+> 💡 This project requires a bundler. You can use `npm run dev` to start the development server. You can then view the project in the browser at `http://localhost:3000`. The Live Preview Extension for Visual Studio Code will **not** work for this project.
