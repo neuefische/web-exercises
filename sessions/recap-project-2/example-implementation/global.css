@@ -4,6 +4,8 @@
   --secondary-light: #fddcd2;
   --white: #ffffff;
   --black: #252629;
+  --background: var(--white);
+  --foreground: var(--black);
   --ff-primary: sans-serif;
   --ff-serif: serif;
   --fs-200: 0.6rem;
@@ -37,14 +39,13 @@ p {
 body {
   line-height: 1.5;
   font-family: var(--ff-primary);
-  color: var(--black);
-  background-color: var(--white);
+  color: var(--foreground);
+  background-color: var(--background);
 }
 
 body.dark {
-  --primary: #252629;
-  --white: #252629;
-  --black: #ffffff;
+  --background: var(--black);
+  --foreground: var(--white);
 }
 
 button {

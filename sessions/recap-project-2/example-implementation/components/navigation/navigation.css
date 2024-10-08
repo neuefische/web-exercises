@@ -1,6 +1,6 @@
 .navigation {
-  background: var(--primary);
-  border-top: 1px solid var(--black);
+  background: var(--background);
+  border-top: 1px solid var(--foreground);
   position: fixed;
   bottom: 0;
   left: 0;
@@ -14,19 +14,21 @@
 
 .navigation__list-item {
   width: 100%;
+  color: var(--foreground);
 }
 
 .navigation__list-item--active {
   background-color: var(--secondary-light);
+  color: var(--black);
 }
 
 .navigation__list-item:not(:first-child) {
-  border-left: 1px solid var(--black);
+  border-left: 1px solid var(--foreground);
 }
 
 .navigation__link {
   padding: 1.5rem 0.5rem;
-  color: var(--black);
+  color: inherit;
   background: transparent;
   border: none;
   display: flex;
