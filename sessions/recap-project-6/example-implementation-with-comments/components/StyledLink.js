@@ -9,14 +9,14 @@ export const StyledLink = styled.a`
   text-decoration: none;
   font-weight: bold;
 
-  ${({ justifySelf }) =>
-    justifySelf &&
+  ${({ $justifySelf }) =>
+    $justifySelf &&
     css`
-      justify-self: ${justifySelf};
+      justify-self: ${$justifySelf};
     `}
 
-  ${({ variant }) =>
-    variant === "outlined" &&
+  ${({ $variant }) =>
+    $variant === "outlined" &&
     css`
       text-align: center;
       background-color: white;

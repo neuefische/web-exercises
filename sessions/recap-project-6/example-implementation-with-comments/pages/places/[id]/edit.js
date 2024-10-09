@@ -1,5 +1,5 @@
-import { useRouter } from "next/router";
-import Link from "next/link";
+import { useRouter } from "next/router.js";
+import Link from "next/link.js";
 import useSWR from "swr";
 import Form from "../../../components/Form.js";
 import { StyledLink } from "../../../components/StyledLink.js";
@@ -8,11 +8,7 @@ export default function EditPage() {
   const router = useRouter();
   const { isReady } = router;
   const { id } = router.query;
-  const {
-    data: { place } = {},
-    isLoading,
-    error,
-  } = useSWR(`/api/places/${id}`);
+  const { data: place, isLoading, error } = useSWR(`/api/places/${id}`);
 
   async function editPlace(place) {
     const response = await fetch(`/api/places/${id}`, {

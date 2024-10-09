@@ -1,39 +1,47 @@
 import styled from "styled-components";
 import { useRouter } from "next/router.js";
-import { FormContainer, Input, Label } from "./Form";
+import { FormContainer, Input, Label } from "./Form.js";
 import { StyledButton } from "./StyledButton.js";
 import useSWR from "swr";
+import { Fragment } from "react";
 
-export default function Comments({ locationName, comments, mutate }) {
+const Article = styled.article`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 0.8rem;
+  padding: 0.5rem;
+  text-align: center;
+  p {
+    border-bottom: solid 1px black;
+    padding: 20px;
+  }
+`;
+
+export default function Comments({ locationName }) {
   const router = useRouter();
+  const { isReady } = router;
   const { id } = router.query;
-  // const { data, mutate } = useSWR(`/api/places/${id}`);
+  const {
+    data: comments,
+    mutate,
+    isLoading,
+    error,
+  } = useSWR(`/api/comments/${id}`);
 
-  const Article = styled.article`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid black;
-    border-radius: 0.8rem;
-    padding: 0.5rem;
-    text-align: center;
-    p {
-      border-bottom: solid 1px black;
-      padding: 20px;
-    }
-  `;
+  if (!isReady || isLoading || error) return <h2>Loading...</h2>;
 
   async function handleSubmitComment(e) {
     e.preventDefault();
     const formData = new FormData(e.target);
     const commentData = Object.fromEntries(formData);
-    // const finalData = { ...commentData, place: id };
-    const response = await fetch(`/api/places/${id}/comment`, {
+    const response = await fetch(`/api/comments/${id}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(commentData),
+      body: JSON.stringify({ ...commentData, place: id }),
     });
     if (response.ok) {
       await response.json();
@@ -44,14 +52,13 @@ export default function Comments({ locationName, comments, mutate }) {
     }
   }
 
-  async function handleDeleteComment(_id) {
-    const response = await fetch(`/api/places/${id}/comment`, {
-      method: "DELETE",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(_id),
-    });
+  async function handleDeleteComment(comment_id) {
+    const response = await fetch(
+      `/api/comments/${id}?comment_id=${comment_id}`,
+      {
+        method: "DELETE",
+      }
+    );
     if (response.ok) {
       await response.json();
       mutate();
@@ -59,8 +66,6 @@ export default function Comments({ locationName, comments, mutate }) {
       console.error(`Error: ${response.status}`);
     }
   }
-
-  // const comments = data?.comments;
 
   return (
     <Article>
@@ -73,26 +78,20 @@ export default function Comments({ locationName, comments, mutate }) {
       </FormContainer>
       {comments && (
         <>
-          <h1>
-            {comments.length} fan{comments.length > 1 && "s"} commented on this
-            place:
-          </h1>
-          {comments.map(({ name, comment, _id }, idx) => {
+          <h2>{comments.length} fans commented on this place:</h2>
+          {comments.map(({ _id, name, comment }) => {
             return (
-              <>
-                <p key={idx}>
+              <Fragment key={_id}>
+                <p>
                   <small>
                     <strong>{name}</strong> commented on {locationName}
                   </small>
                 </p>
                 <span>{comment}</span>
-                <StyledButton
-                  onClick={() => handleDeleteComment(_id)}
-                  style={{ cursor: "pointer" }}
-                >
+                <StyledButton onClick={() => handleDeleteComment(_id)}>
                   X
                 </StyledButton>
-              </>
+              </Fragment>
             );
           })}
         </>

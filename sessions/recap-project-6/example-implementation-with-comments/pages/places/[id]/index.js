@@ -36,8 +36,8 @@ export default function DetailsPage() {
   const { isReady } = router;
   const { id } = router.query;
 
-  const { data, mutate, isLoading, error } = useSWR(`/api/places/${id}`);
-  console.log("data", data);
+  const { data: place, isLoading, error } = useSWR(`/api/places/${id}`);
+
   if (!isReady || isLoading || error) return <h2>Loading...</h2>;
 
   async function deletePlace() {
@@ -50,12 +50,10 @@ export default function DetailsPage() {
     }
   }
 
-  const { place, comments } = data;
-
   return (
     <>
       <Link href={"/"} passHref legacyBehavior>
-        <StyledLink justifySelf="start">back</StyledLink>
+        <StyledLink $justifySelf="start">back</StyledLink>
       </Link>
       <ImageContainer>
         <StyledImage
@@ -79,11 +77,11 @@ export default function DetailsPage() {
         <Link href={`/places/${id}/edit`} passHref legacyBehavior>
           <StyledLink>Edit</StyledLink>
         </Link>
-        <StyledButton onClick={deletePlace} type="button" variant="delete">
+        <StyledButton onClick={deletePlace} type="button" $variant="delete">
           Delete
         </StyledButton>
       </ButtonContainer>
-      <Comments locationName={place.name} mutate={mutate} comments={comments} />
+      <Comments locationName={place.name} />
     </>
   );
 }
