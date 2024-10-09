@@ -14,9 +14,7 @@ const List = styled.ul`
 `;
 
 const ListItem = styled.li`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
+  position: relative;
   width: 100%;
 `;
 const FixedLink = styled(StyledLink)`
@@ -24,26 +22,24 @@ const FixedLink = styled(StyledLink)`
   bottom: 50px;
   right: 50px;
 `;
-
 export default function Home() {
   const { data } = useSWR("/api/places", { fallbackData: [] });
 
   return (
     <>
       <List role="list">
-        <ListItem>
-        {data.map((place, idx) => {
+        {data.map((place) => {
           return (
+            <ListItem key={place.id}>
               <Card
-                key={idx}
                 name={place.name}
                 image={place.image}
                 location={place.location}
-                id={`${place._id.$oid ?? place._id}`}
+                id={place.id}
               />
-            );
-          })}
-          </ListItem>
+            </ListItem>
+          );
+        })}
       </List>
       <Link href="/create" passHref legacyBehavior>
         <FixedLink>+ place</FixedLink>
