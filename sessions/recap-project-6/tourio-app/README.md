@@ -40,9 +40,9 @@ In this project you will build a Tourio App, the best friend of all travelers: i
 
 - Consider the case where a place is deleted. Ensure associated comments are also removed to avoid orphaned data in your database.
 
-### Deploy to Vercel
+### Deploy your Project to Vercel
 
-- Deploy your app to Vercel and make sure the deployment can access the cloud database with the help of environment variables.
+Follow [these instructions](https://github.com/neuefische/web-protocol-template/blob/main/docs/deployment-vercel.md) to deploy the project to Vercel.   
 
 #### Vercel and MongoDB Atlas (environment variables)
 
