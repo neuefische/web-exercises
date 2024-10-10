@@ -7,7 +7,7 @@ In this project you will build a Tourio App, the best friend of all travelers: i
 ### Read Data
 
 - Set up a database; use the [`lib/db.json` file](lib/db.json) to insert sample data.
-- In `pages/api/places/index.js`, replace the `places` variable imported from `lib/db.js` with a `GET` request from your database.
+- In `pages/api/index.js`, replace the `places` variable imported from `lib/db.js` with a `GET` request from your database.
 - Do the same in `pages/api/[id]/index.js` for the details page.
 
 ### Create Form
@@ -32,17 +32,17 @@ In this project you will build a Tourio App, the best friend of all travelers: i
 
 - To add a comment section for each place, you'll need to create a database schema or collection to store comments associated with each place. Each comment should have a reference to the place it belongs to, such as a place ID.
 
-- Use the [`lib/db_comments.json` file](lib/db_comments.json) to insert sample data.
+- Set up a database; use the [`lib/Tourio-db.comments.json` file](lib/Tourio-db.comments.json) to insert sample data.
+
+- Create a form in your place detail page pages/places/[id]/index.js that allows users to submit comments.
 
 - Write a POST API route to handle comment submissions. This route should associate each comment with the appropriate place in your database.
 
-- Implement a mechanism to retrieve, display and delete comments for each place on the detail page.
+- Implement a mechanism to retrieve and display comments for each place on the detail page.
 
-- Consider the case where a place is deleted. Ensure associated comments are also removed to avoid orphaned data in your database.
+### Deploy to Vercel
 
-### Deploy your Project to Vercel
-
-Follow [these instructions](https://github.com/neuefische/web-protocol-template/blob/main/docs/deployment-vercel.md) to deploy the project to Vercel.   
+- Deploy your app to Vercel and make sure the deployment can access the cloud database with the help of environment variables.
 
 #### Vercel and MongoDB Atlas (environment variables)
 
