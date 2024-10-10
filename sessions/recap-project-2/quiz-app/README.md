@@ -108,6 +108,7 @@ users should be informed about the amount of characters left.
   result
 - Think of ways to use the same logic for both form fields and to not repeat your code
 
+You can have a look at [this counter example](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/recap-project-2/character-count-example) for inspiration.
 
 ## 5. Bonus
 
@@ -121,10 +122,6 @@ users should be informed about the amount of characters left.
 
    > ❗️ This functionality should only work for the profile page. We will have a look later how to implement dark/light mode on the whole application later in the course.
 
-You can have a look at
-[this counter example](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/recap-project-2/character-count-example)
-for inspiration.
-
 ## Resources
 
 ⬇️ You can [**download the images for the Quiz App here**](./resources.zip?raw=true).
@@ -132,14 +129,13 @@ for inspiration.
 - Unzip the file to get the `resources` folder.
 - Copy them into your app's main directory.
 
-
 ## Development
 
 To work locally, please install the dependencies using `npm i` first.
 
 Run `npm run start` to start a development server and open [localhost:3000](http://localhost:3000) in a browser.
 
-> Alternatively you can use the Live Preview Extension for Visual Studio Code to view this project.  
+> Alternatively you can use the Live Preview Extension for Visual Studio Code to view this project.
 > Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
 
 Use `npm run test` to run the tests.
