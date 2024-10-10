@@ -32,6 +32,9 @@ npx ghcd@latest neuefische/web-exercises/tree/main/templates/next art-gallery-ap
 
 Download the [Favorite Icon](./assets/heart.svg) and save it in a folder named "assets" within your app's main directory.
 
+## Deploy your Project to Vercel
+Follow [these instructions](https://github.com/neuefische/web-protocol-template/blob/main/docs/deployment-vercel.md) to deploy the project to Vercel.   
+
 ---
 
 ## User Stories

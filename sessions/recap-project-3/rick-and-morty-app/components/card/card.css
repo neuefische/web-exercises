@@ -1,0 +1,25 @@
+.card-container {
+  margin-bottom: 10px;
+}
+.card {
+  width: 300px;
+  background-color: var(--color-secondary);
+}
+
+.card__info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+.card__content {
+  padding: 10px 20px 20px;
+  display: grid;
+  gap: 20px;
+}
+
+.card__info-description {
+  text-align: right;
+}
+
+li {
+  list-style: none;
+}

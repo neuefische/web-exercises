@@ -43,6 +43,11 @@ body {
   background-color: var(--background);
 }
 
+body.dark {
+  --background: var(--black);
+  --foreground: var(--white);
+}
+
 button {
   font-size: var(--fs-400);
   font-family: var(--ff-primary);

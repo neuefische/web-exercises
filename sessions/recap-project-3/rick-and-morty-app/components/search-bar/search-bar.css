@@ -1,0 +1,29 @@
+.search-bar-container {
+  width: 300px;
+}
+
+.search-bar {
+  padding: 10px 20px;
+  background-color: var(--color-secondary);
+  display: grid;
+  grid-template-columns: 1fr 24px;
+}
+
+.search-bar__input {
+  background-color: transparent;
+  border: none;
+  color: var(--color-primary);
+}
+
+.search-bar__button {
+  border: none;
+  background-color: transparent;
+}
+
+.search-bar__input:focus {
+  outline: none;
+}
+
+.search-bar__icon {
+  width: 20px;
+}
