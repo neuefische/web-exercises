@@ -8,42 +8,56 @@ In this challenge, you will debug HTML code to understand the importance of Pret
 2. Inside `index.html`, paste the following code:
 
    ```html
-   <html>
-     <head>
-       <title>Badly Formatted Page</title>
-     </head>
-     <body>
-       <h1>The Importance of Indented Code</h1>
-       <p>
-         Indented code is crucial for maintaining readability and organization,
-         especially in collaborative environments. It helps developers quickly
-         understand the structure of the code, find elements, and nested
-         elements. Proper indentation visually separates different blocks of
-         code, making it easier to identify relationships between functions,
-         classes, and other components, ultimately reducing the chance of
-         errors.
-       </p>
-       <p>
-         Additionally, well-indented code follows common best practices and
-         standards, which are essential for teamwork and long-term maintenance
-         of a project. When code is uniformly indented, it becomes easier for
-         others to jump in, review, or modify it without confusion. This clarity
-         improves communication between developers and enhances the overall
-         quality of the project.
-       </p>
-       <div>
-         <img
-         src=https://images.unsplash.com/32/RgJQ82pETlKd0B7QzcJO_5912578701_92397ba76c_b.jpg?q=80&w=1024&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-         width="300" height="200" /><br /><a href="https://www.google.com/"
-           >Google Here <br
-         /></a>
-         <ul>
-           <li>First item</li>
-           <li>Second item</li>
-         </ul>
-       </div>
-       <footer><p>Footer</p></footer>
-     </body>
+   <!DOCTYPE html>
+   <html lang="en">
+      <head>
+         <meta charset="UTF-8" />
+         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+         <title>Find the Errors
+         <nav>
+         <a href="https://www.google.com/" target="_blank">Google</a
+         ><a href="#article-eslint">ESLint Importance
+         <a href="#article-prettier">Prettier Importance</a>
+         <main>
+         <article id="article-eslint">
+         <h1>ESLint Importance
+         ESLint is an essential tool for maintaining code quality and
+         consistency in JavaScript projects. It helps developers
+         automatically detect and fix issues related to code style,
+         syntax, and potential bugs, ensuring that the codebase
+         adheres to a set of predefined rules. By catching errors
+         early in the development process, ESLint reduces the risk of
+         introducing bugs and improves the readability of the code,
+         making it easier for teams to collaborate and maintain the
+         project over time.</p><p>
+         Additionally, well-indented code follows common best
+         practices and standards, which are essential for teamwork
+         and long-term maintenance of a project. When code is
+         uniformly indented, it becomes easier for others to jump in,
+         review, or modify it without confusion. This clarity
+         improves communication between developers and enhances the
+         overall quality of the project.
+         <article id="article-prettier">
+         Prettier Importance</h1>
+         Prettier is important because it enforces a consistent code
+         style throughout a project, making the code easier to read
+         and maintain. By automatically formatting code, Prettier
+         eliminates the need for developers to manually align,
+         indent, or adjust spacing, which saves time and reduces the
+         chance of errors. This consistency also makes it easier for
+         teams to collaborate, as everyone works with the same
+         structure, reducing the back-and-forth about formatting
+         preferences.</p>
+         Moreover, Prettier enhances code quality by making it easier
+         to spot logical errors or bugs. When the code is uniformly
+         structured, developers can focus on functionality rather
+         than being distracted by formatting inconsistencies. In
+         addition, using Prettier ensures that the codebase follows
+         best practices, leading to cleaner, more
+         professional-looking projects that are easier to scale and
+         maintain in the long term.
+      <footer>Web Development Bootcamp
+      </body>
    </html>
    ```
 
