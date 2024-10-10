@@ -56,7 +56,7 @@ In this challenge, you will debug HTML code to understand the importance of Pret
          best practices, leading to cleaner, more
          professional-looking projects that are easier to scale and
          maintain in the long term.
-      <footer>Web development Bootcamp
+      <footer>Web Development Bootcamp
       </body>
    </html>
    ```
