@@ -92,7 +92,7 @@ quiz-app
 └── index.html
 ```
 
-❗️ Make sure you apply the BEM method to your Quiz App (Bring more structure to your code by using BEM to name all classes!)
+❗️ Make sure you apply the BEM method to your Quiz App (bring more structure to your code by using BEM to name all classes!).
 
 ## Resources
 

@@ -112,15 +112,15 @@ You can have a look at [this counter example](https://codesandbox.io/s/github/ne
 
 ## 5. Bonus
 
-1. When adding a new question card in your newly created form.html; add as well event listeners to the new button and icon which will have the same functionality as described in Task 1.
+1. When adding a new question card in your newly created `form.html`, also add event listeners to the new button and icon which will have the same functionality as described in Task 1.
 
    > ❗️ You DON'T need any loops or querySelectorAll. Just try to grab the individual button and icon directly after adding them to the DOM by giving them unique attributes.
 
-2. Add an event listener to the dark mode toggle button in your profile page which should toggle on a dark or light version of the profile page
+2. Add an event listener to the dark mode toggle button in your profile page which should toggle on a dark or light version of the profile page.
 
-   > ❗️ You'll need to set some CSS variables as attributes to the <body> element for example
+   > ❗️ You'll need to set some CSS variables as attributes to the <body> element for example.
 
-   > ❗️ This functionality should only work for the profile page. We will have a look later how to implement dark/light mode on the whole application later in the course.
+   > ❗️ This functionality should only work for the profile page. Later in the course we will have a look at how to implement dark/light mode on the whole application.
 
 ## Resources
 

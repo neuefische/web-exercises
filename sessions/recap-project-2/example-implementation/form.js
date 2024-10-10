@@ -1,5 +1,5 @@
 const form = document.querySelector("[data-js=form]");
-const cardContainter = document.querySelector("[data-js=card-container]");
+const cardContainer = document.querySelector("[data-js=card-container]");
 const questionInput = document.querySelector("[data-js=question-input]");
 const answerInput = document.querySelector("[data-js=answer-input]");
 const questionCounter = document.querySelector(
@@ -17,7 +17,7 @@ form.addEventListener("submit", (event) => {
   const data = Object.fromEntries(formData);
 
   const newCard = Card(data);
-  cardContainter.append(newCard);
+  cardContainer.append(newCard);
 
   formElement.reset();
 });
