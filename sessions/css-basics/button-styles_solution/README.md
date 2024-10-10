@@ -1,4 +1,4 @@
-# button-styles
+# CSS Basics: Button Styles
 
 ## Task
 
@@ -17,6 +17,6 @@ Run `npm run start` to start a development server and open [localhost:3000](http
 
 ### Scripts
 
-You can use the following commands:
+You can use the following command:
 
 - `npm run start` to start a development server

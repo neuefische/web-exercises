@@ -4,7 +4,7 @@ This challenge will teach you how to
 
 - link a stylesheet,
 - style elements and
-- use pseudo classes to style elements when they are in a certain state.
+- use pseudo-classes to style elements when they are in a certain state.
 
 ## Task
 
@@ -30,6 +30,6 @@ Run `npm run start` to start a development server and open [localhost:3000](http
 
 ### Scripts
 
-You can use the following commands:
+You can use the following command:
 
 - `npm run start` to start a development server

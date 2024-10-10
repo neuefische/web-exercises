@@ -3,7 +3,7 @@
   Can you fix that?
 
   Once the styles are applied,
-  the park should be pale yellow box with a dashed border.
+  the park should appear as a pale yellow box with a dashed border.
 */
 
 *,
@@ -33,10 +33,10 @@
 
 /*
   The giraffe is afraid of the crocodile and the dino.
-   - center the giraffe in the park
-   - align the dino to the right
+   - Center the giraffe in the park.
+   - Align the dino to the right.
 
-  💡 Select the animals by their class name and use the text align property.
+  💡 Select the animals by their class names and use the text-align property.
 */
 .giraffe {
   text-align: center;
@@ -51,7 +51,7 @@
    - The giraffe likes lightgreen.
    - The dino is a huge fan of lightsalmon.
 
-  💡 You'll need to use a pseudo class selector for each animal.
+  💡 You'll need to use a pseudo-class selector for each animal.
 */
 .crocodile:hover {
   background-color: lightblue;
