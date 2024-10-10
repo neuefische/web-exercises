@@ -8,6 +8,7 @@ This little challenge checks if you have set up VS Code and Prettier correctly.
 2. Inside `index.html`, paste the following code:
 
    ```html
+   <!DOCTYPE html>
    <html>
      <head>
        <title>Badly Formatted Page</title>
