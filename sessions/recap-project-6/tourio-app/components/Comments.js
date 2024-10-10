@@ -27,8 +27,8 @@ export default function Comments({ locationName }) {
 
     if (!isReady || isLoading || error) return <h2>Loading...</h2>;
 
-    function handleSubmitComment(e) {
-        e.preventDefault();
+    function handleSubmitComment(event) {
+        event.preventDefault();
     }
 
     return (
