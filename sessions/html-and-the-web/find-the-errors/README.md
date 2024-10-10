@@ -14,13 +14,16 @@ In this challenge, you will debug HTML code to understand the importance of Pret
          <meta charset="UTF-8" />
          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
          <title>Find the Errors
+         <header>
          <nav>
          <a href="https://www.google.com/" target="_blank">Google</a
          ><a href="#article-eslint">ESLint Importance
          <a href="#article-prettier">Prettier Importance</a>
+         </header>
          <main>
+         <h1>ESLint and Prettier</h1>
          <article id="article-eslint">
-         <h1>ESLint Importance
+         <h2>ESLint Importance
          ESLint is an essential tool for maintaining code quality and
          consistency in JavaScript projects. It helps developers
          automatically detect and fix issues related to code style,
@@ -38,7 +41,7 @@ In this challenge, you will debug HTML code to understand the importance of Pret
          improves communication between developers and enhances the
          overall quality of the project.
          <article id="article-prettier">
-         Prettier Importance</h1>
+         Prettier Importance</h2>
          Prettier is important because it enforces a consistent code
          style throughout a project, making the code easier to read
          and maintain. By automatically formatting code, Prettier
