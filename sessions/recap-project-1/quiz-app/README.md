@@ -1,16 +1,17 @@
 # Recap Project I: Quiz App - Layout
 
 In this project you will build the layout of your first mobile web application, a quiz app. In later
-projects we will expand this app and add all sorts of cool functionality. In this app you will be
-able to:
+projects we will expand this app and add all sorts of cool functionality.
 
-- Read questions and click buttons to look up the answers.
-- Bookmark questions and view them on a bookmarks page.
-- Visit your profile page.
+## Overview
 
-❗️ You don't have to worry about how to toggle answers or bookmarks, we will work on that in a
-later project. But make sure you include the answer texts and bookmark buttons in your app. (You
-might want to look up the "hidden" attribute.)
+In this project we will have 3 pages:
+
+- **Home page:** Here, you’ll have access to view all questions available on the platform.
+- **Bookmark page:** This is a dedicated space where you can exclusively view the questions you’ve bookmarked, similar to the ones marked on the home page.
+- **Profile page:** This section allows you to view and manage your profile and settings.
+
+Explore [these topic](./assets/topics.md) ideas for your quiz app or choose your own, avoiding placeholder text.
 
 ## 1. Setup
 
@@ -44,6 +45,10 @@ why the first step to success is to start with the homepage.
 
 > 💡 Hint: You can ask fellow students to review your PRs. You will learn and improve a
 > lot by doing so.
+
+❗️ You don't have to worry about how to toggle answers or bookmarks, we will work on that in a
+later project. But make sure you include the answer texts and bookmark buttons in your app. (You
+might want to look up the "hidden" attribute.)
 
 ## 3. Bookmarks Page
 
