@@ -8,13 +8,24 @@ body {
   margin: 0;
   font-family: system-ui;
   padding: 20px;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: #eee;
 }
 
-main {
-  padding: 5px;
+button {
+  background-color: dodgerblue;
+  color: #eee;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 12px;
 }
 
 .dark {
-  background-color: black;
+  background-color: #333;
   color: #eee;
 }

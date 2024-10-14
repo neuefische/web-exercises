@@ -1,33 +1,16 @@
-// Query the main element and log it to the console
-const mainElement = document.querySelector('[data-js="main"]');
+const bodyElement = document.querySelector("[data-js=root]");
+const addButton = document.querySelector('[data-js="add-button"]');
+const removeButton = document.querySelector('[data-js="remove-button"]');
+const toggleButton = document.querySelector('[data-js="toggle-button"]');
 
-console.log(mainElement);
-
-// Change styling via classList
-mainElement.classList.add("dark");
-mainElement.classList.remove("dark");
-
-// React to events with addEventListener
-const myLoggingButton = document.querySelector('[data-js="logging-button"]');
-
-myLoggingButton.addEventListener("click", () => {
-  console.log("You clicked a button");
+addButton.addEventListener("click", () => {
+  bodyElement.classList.add("dark");
 });
 
-// Change color on button click
-
-const addColorButton = document.querySelector('[data-js="add-button"]');
-const removeColorButton = document.querySelector('[data-js="remove-button"]');
-const toggleColorButton = document.querySelector('[data-js="toggle-button"]');
-
-addColorButton.addEventListener("click", () => {
-  mainElement.classList.add("dark");
+removeButton.addEventListener("click", () => {
+  bodyElement.classList.remove("dark");
 });
 
-removeColorButton.addEventListener("click", () => {
-  mainElement.classList.remove("dark");
-});
-
-toggleColorButton.addEventListener("click", () => {
-  mainElement.classList.toggle("dark");
+toggleButton.addEventListener("click", () => {
+  bodyElement.classList.toggle("dark");
 });
