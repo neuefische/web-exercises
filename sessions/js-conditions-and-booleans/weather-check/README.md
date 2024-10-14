@@ -1,4 +1,4 @@
-# JS Conditions and Booleans: Weather
+# JS Conditions and Booleans: Weather check
 
 In this exercise you train to write a `switch` statment. Please also refer to the handout.
 
