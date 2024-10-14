@@ -1,7 +1,7 @@
 {
-  "name": "js-conditions-and-booleans_statements",
+  "name": "js-conditions-and-booleans_weather-check",
   "version": "0.0.0-unreleased",
-  "description": "JS Conditions and Booleans: statements",
+  "description": "JS Conditions and Booleans: Weather check",
   "main": "index.js",
   "type": "module",
   "scripts": {
