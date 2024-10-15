@@ -29,33 +29,23 @@ In this exercise you train to write a `switch` statment. Please also refer to th
 
 > 💡 Tip: Use the `break` statement to avoid the "fall-through" effect.
 
-## Notes
+
+### Running the Code
+
+> 💡 Since this project is JavaScript only there is nothing to preview in the browser. 
+
+- To run your code:
+  - Open your terminal.
+  - Navigate to the folder where `index.js` is located.
+  - Run npm run start to execute the `index.js` file using Node.js.
+  - Check the output in the terminal to see if your messages are logged correctly.
+
+### Notes
 
 - You only have to touch the `./index.js` file.
 
-### Local development
 
-To run project commands locally, you need to install the dependencies using `npm i` first.
 
-You can then use the following commands:
 
-- `npm run start` to run the main JavaScript file using `node`
-- `npm run test` to run the tests
-- `npm run lint` to run the linter
 
-> 💡 Since this project is JavaScript only there is nothing to preview in the browser. Use `npm run test` to check your progress or `npm run start` to run the code.
 
-## Development
-
-> ❗️ This project is JavaScript only. Please check the browser console (<kbd>⌥</kbd><kbd>⌘</kbd><kbd>I</kbd>) for the output or run the tests to see the results.
-
-### Local Development
-
-To work locally, please install the dependencies using `npm i` first.
-
-Run `npm run start` to start a development server and open [localhost:3000](http://localhost:3000) in a browser.
-
-> Alternatively you can use the Live Preview Extension for Visual Studio Code to view this project.  
-> Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
-
-Use `npm run test` to run the tests.
