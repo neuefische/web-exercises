@@ -1,0 +1,21 @@
+{
+  "name": "js-conditions-and-booleans_log-type",
+  "version": "0.0.0-unreleased",
+  "description": "JS Conditions and Booleans: LogType",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node js/index.js",
+    "lint": "npx -y eslint@latest ."
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@types/jest": "^29.5.2",
+    "eslint-plugin-jest": "^27.2.2",
+    "eslint": "^8.43.0"
+  },
+  "nf": {
+    "template": "js"
+  },
+  "private": true
+}
