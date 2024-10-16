@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import HistoryEntry from ".";
 
-test.skip("renders name of game and 'show score' button only", () => {
+test("renders name of game and 'show score' button only", () => {
   render(
     <HistoryEntry
       nameOfGame="Dodelido"
@@ -20,7 +20,7 @@ test.skip("renders name of game and 'show score' button only", () => {
   expect(button).toBeInTheDocument();
 });
 
-test.skip("renders player names and scores after button click", async () => {
+test("renders player names and scores after button click", async () => {
   render(
     <HistoryEntry
       nameOfGame="Dodelido"

@@ -26,7 +26,7 @@ export default function HistoryEntry({ nameOfGame, players }) {
   return (
     <Wrapper>
       <GameTitle>{nameOfGame}</GameTitle>
-      <Button onClick={() => setScoreToggle(!scoreToggle)}>Display more</Button>
+      <Button onClick={() => setScoreToggle(!scoreToggle)}>Show score</Button>
       {scoreToggle &&
         players.map(({ name, score, id }) => (
           <Player key={id}>
