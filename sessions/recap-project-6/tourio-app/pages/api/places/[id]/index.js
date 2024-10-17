@@ -3,10 +3,6 @@ import { places } from "../../../../lib/db.js";
 export default function handler(request, response) {
   const { id } = request.query;
 
-  if (!id) {
-    return;
-  }
-
   const place = places.find((place) => place.id === id);
 
   if (!place) {

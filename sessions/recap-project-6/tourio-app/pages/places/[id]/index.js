@@ -1,11 +1,10 @@
-import Link from "next/link";
-import { useRouter } from "next/router.js";
+import { useRouter } from "next/router";
 import useSWR from "swr";
 import styled from "styled-components";
-import { StyledLink } from "../../../components/StyledLink.js";
-import { StyledButton } from "../../../components/StyledButton.js";
-import { StyledImage } from "../../../components/StyledImage.js";
-import Comments from "@/components/Comments.js";
+import Comments from "../../../components/Comments";
+import { StyledLink } from "../../../components/StyledLink";
+import { StyledButton } from "../../../components/StyledButton";
+import { StyledImage } from "../../../components/StyledImage";
 
 const ImageContainer = styled.div`
   position: relative;
@@ -14,8 +13,9 @@ const ImageContainer = styled.div`
 
 const ButtonContainer = styled.section`
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  gap: 0.2rem;
+  gap: 0.5rem;
 
   & > * {
     flex-grow: 1;
@@ -25,8 +25,9 @@ const ButtonContainer = styled.section`
 
 const StyledLocationLink = styled(StyledLink)`
   text-align: center;
-  background-color: white;
-  border: 3px solid lightsalmon;
+  background-color: lightgray;
+  color: black;
+  border: none;
 `;
 
 export default function DetailsPage() {
@@ -38,15 +39,15 @@ export default function DetailsPage() {
 
   if (!isReady || isLoading || error) return <h2>Loading...</h2>;
 
-  function deletePlace() {
-    console.log("deleted?");
+  async function deletePlace() {
+    console.log("Deleting place ...");
   }
 
   return (
     <>
-      <Link href={"/"} passHref legacyBehavior>
-        <StyledLink $justifySelf="start">back</StyledLink>
-      </Link>
+      <StyledLink href={"/"} $justifySelf="start">
+        back
+      </StyledLink>
       <ImageContainer>
         <StyledImage
           src={place.image}
@@ -61,19 +62,16 @@ export default function DetailsPage() {
       <h2>
         {place.name}, {place.location}
       </h2>
-      <Link href={place.mapURL} passHref legacyBehavior>
-        <StyledLocationLink>Location on Google Maps</StyledLocationLink>
-      </Link>
+      <StyledLocationLink href={place.mapURL}>
+        Location on Google Maps
+      </StyledLocationLink>
       <p>{place.description}</p>
       <ButtonContainer>
-        <Link href={`/places/${id}/edit`} passHref legacyBehavior>
-          <StyledLink>Edit</StyledLink>
-        </Link>
+        <StyledLink href={`/places/${id}/edit`}>Edit</StyledLink>
         <StyledButton onClick={deletePlace} type="button" $variant="delete">
           Delete
         </StyledButton>
       </ButtonContainer>
-      <Comments locationName={place.name} />
     </>
   );
 }

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { StyledButton } from "./StyledButton.js";
+import { StyledButton } from "./StyledButton";
 
 export const FormContainer = styled.form`
   display: grid;
@@ -9,13 +9,13 @@ export const FormContainer = styled.form`
 export const Input = styled.input`
   padding: 0.5rem;
   font-size: inherit;
-  border: 3px solid black;
+  border: 1px solid black;
   border-radius: 0.5rem;
 `;
 
-const Textarea = styled.textarea`
+export const Textarea = styled.textarea`
   font-family: inherit;
-  border: 3px solid black;
+  border: 1px solid black;
   border-radius: 0.5rem;
   padding: 0.5rem;
 `;
