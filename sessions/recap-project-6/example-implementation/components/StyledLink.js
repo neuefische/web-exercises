@@ -2,10 +2,11 @@ import Link from "next/link";
 import styled, { css } from "styled-components";
 
 export const StyledLink = styled(Link)`
-  background-color: lightsalmon;
+  background-color: black;
   padding: 0.8rem 1.5rem;
   border-radius: 0.6rem;
-  color: black;
+  color: white;
+  border: 1px solid black;
   text-decoration: none;
   font-weight: bold;
 
@@ -20,6 +21,6 @@ export const StyledLink = styled(Link)`
     css`
       text-align: center;
       background-color: white;
-      border: 3px solid lightsalmon;
+      border: 1px solid black;
     `}
 `;

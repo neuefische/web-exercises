@@ -1,8 +1,7 @@
-import Link from "next/link.js";
 import styled from "styled-components";
 import { useRouter } from "next/router";
-import Form from "../components/Form.js";
-import { StyledLink } from "../components/StyledLink.js";
+import Form from "../components/Form";
+import { StyledLink } from "../components/StyledLink";
 
 const StyledBackLink = styled(StyledLink)`
   justify-self: flex-start;
@@ -10,7 +9,6 @@ const StyledBackLink = styled(StyledLink)`
 
 export default function CreatePlacePage() {
   const router = useRouter();
-
   async function addPlace(place) {
     const response = await fetch("/api/places", {
       method: "POST",
@@ -30,9 +28,7 @@ export default function CreatePlacePage() {
   return (
     <>
       <h2 id="add-place">Add Place</h2>
-      <Link href="/" passHref legacyBehavior>
-        <StyledBackLink>back</StyledBackLink>
-      </Link>
+      <StyledBackLink href="/">back</StyledBackLink>
       <Form onSubmit={addPlace} formName={"add-place"} />
     </>
   );

@@ -1,8 +1,7 @@
 import { useRouter } from "next/router";
-import Link from "next/link";
 import useSWR from "swr";
-import Form from "../../../components/Form.js";
-import { StyledLink } from "../../../components/StyledLink.js";
+import Form from "../../../components/Form";
+import { StyledLink } from "../../../components/StyledLink";
 
 export default function EditPage() {
   const router = useRouter();
@@ -11,14 +10,19 @@ export default function EditPage() {
   const { data: place, isLoading, error } = useSWR(`/api/places/${id}`);
 
   async function editPlace(place) {
-    await fetch(`/api/places/${id}`, {
-      method: "PATCH",
+    const response = await fetch(`/api/places/${id}`, {
+      method: "PUT",
       body: JSON.stringify(place),
       headers: {
         "Content-Type": "application/json",
       },
     });
-    router.push("/");
+    if (response.ok) {
+      await response.json();
+      router.push(`/places/${id}`);
+    } else {
+      console.error(`Error: ${response.status}`);
+    }
   }
 
   if (!isReady || isLoading || error) return <h2>Loading...</h2>;
@@ -26,9 +30,9 @@ export default function EditPage() {
   return (
     <>
       <h2 id="edit-place">Edit Place</h2>
-      <Link href={`/places/${id}`} passHref legacyBehavior>
-        <StyledLink $justifySelf="start">back</StyledLink>
-      </Link>
+      <StyledLink href={`/places/${id}`} $justifySelf="start">
+        back
+      </StyledLink>
       <Form onSubmit={editPlace} formName={"edit-place"} defaultData={place} />
     </>
   );
