@@ -16,7 +16,7 @@ export default async function handler(request, response) {
   }
   if (request.method === "POST") {
     try {
-      await Comment.create(request.body);
+      await Comment.create({ ...request.body, placeId: id });
       response.status(200).json({ success: "comment uploaded" });
     } catch (error) {
       response.status(500).json({ error: "error uploading comment" });
