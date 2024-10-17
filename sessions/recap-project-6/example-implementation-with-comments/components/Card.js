@@ -24,7 +24,7 @@ const Figure = styled.figure`
 export default function Card({ name, image, location, id }) {
   return (
     <Article>
-      <Link href={`places/${id}`} passHref legacyBehavior>
+      <Link href={`places/${id}`}>
         <Figure>
           <ImageContainer>
             <StyledImage
