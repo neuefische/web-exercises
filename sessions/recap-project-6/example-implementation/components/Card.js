@@ -1,6 +1,6 @@
-import Link from "next/link.js";
+import Link from "next/link";
 import styled from "styled-components";
-import { StyledImage } from "./StyledImage.js";
+import { StyledImage } from "./StyledImage";
 
 const Article = styled.article`
   border: 5px solid black;

@@ -14,6 +14,7 @@ export default async function handler(request, response) {
       console.error(error);
     }
   }
+
   if (request.method === "POST") {
     try {
       await Comment.create({ ...request.body, placeId: id });
@@ -23,6 +24,7 @@ export default async function handler(request, response) {
       console.error(error);
     }
   }
+
   if (request.method === "DELETE") {
     try {
       const { comment_id } = request.query;

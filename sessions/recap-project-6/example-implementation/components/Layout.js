@@ -1,4 +1,4 @@
-import TitleBar from "./TitleBar.js";
+import TitleBar from "./TitleBar";
 import styled from "styled-components";
 import Head from "next/head.js";
 

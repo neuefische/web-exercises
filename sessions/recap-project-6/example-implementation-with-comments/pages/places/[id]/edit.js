@@ -31,9 +31,9 @@ export default function EditPage() {
   return (
     <>
       <h2 id="edit-place">Edit Place</h2>
-      <Link href={`/places/${id}`} passHref legacyBehavior>
-        <StyledLink justifySelf="start">back</StyledLink>
-      </Link>
+      <StyledLink href={`/places/${id}`} $justifySelf="start">
+        back
+      </StyledLink>
       <Form onSubmit={editPlace} formName={"edit-place"} defaultData={place} />
     </>
   );

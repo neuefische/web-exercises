@@ -4,7 +4,8 @@ import useSWR from "swr";
 import Link from "next/link";
 import { StyledLink } from "../components/StyledLink";
 
-const ListContainer = styled.li`
+const ListContainer = styled.ul`
+  list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
@@ -22,21 +23,20 @@ export default function Home() {
   return (
     <>
       <ListContainer>
-        {data.map((place, idx) => {
+        {data.map((place) => {
           return (
-            <Card
-              key={idx}
-              name={place.name}
-              image={place.image}
-              location={place.location}
-              id={place._id}
-            />
+            <li key={place._id}>
+              <Card
+                name={place.name}
+                image={place.image}
+                location={place.location}
+                id={place._id}
+              />
+            </li>
           );
         })}
       </ListContainer>
-      <Link href="/create" passHref legacyBehavior>
-        <FixedLink>+ place</FixedLink>
-      </Link>
+      <FixedLink href="/create">+ place</FixedLink>
     </>
   );
 }

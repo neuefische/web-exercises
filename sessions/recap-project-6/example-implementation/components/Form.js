@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { StyledButton } from "./StyledButton.js";
+import { StyledButton } from "./StyledButton";
 
 const FormContainer = styled.form`
   display: grid;
