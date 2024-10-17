@@ -44,7 +44,6 @@ export default function Comments({ locationName }) {
       body: JSON.stringify({ ...commentData, place: id }),
     });
     if (response.ok) {
-      await response.json();
       mutate();
       e.target.reset();
     } else {
