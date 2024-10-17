@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import Card from "../components/Card";
 import useSWR from "swr";
-import Link from "next/link";
 import { StyledLink } from "../components/StyledLink";
 
 const ListContainer = styled.ul`

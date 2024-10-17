@@ -1,5 +1,4 @@
 import { useRouter } from "next/router";
-import Link from "next/link.js";
 import useSWR from "swr";
 import Form from "../../../components/Form";
 import { StyledLink } from "../../../components/StyledLink";
