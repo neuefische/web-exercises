@@ -32,9 +32,9 @@ export default function Comments({ locationName }) {
 
   if (!isReady || isLoading || error) return <h2>Loading...</h2>;
 
-  async function handleSubmitComment(e) {
-    e.preventDefault();
-    const formData = new FormData(e.target);
+  async function handleSubmitComment(event) {
+    event.preventDefault();
+    const formData = new FormData(event.target);
     const commentData = Object.fromEntries(formData);
     const response = await fetch(`/api/comments/${id}`, {
       method: "POST",
@@ -45,7 +45,7 @@ export default function Comments({ locationName }) {
     });
     if (response.ok) {
       mutate();
-      e.target.reset();
+      event.target.reset();
     } else {
       console.error(`Error: ${response.status}`);
     }
