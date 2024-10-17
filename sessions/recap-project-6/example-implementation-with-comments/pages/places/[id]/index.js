@@ -1,11 +1,11 @@
 import Link from "next/link";
-import { useRouter } from "next/router.js";
+import { useRouter } from "next/router";
 import useSWR from "swr";
 import styled from "styled-components";
-import Comments from "../../../components/Comments.js";
-import { StyledLink } from "../../../components/StyledLink.js";
-import { StyledButton } from "../../../components/StyledButton.js";
-import { StyledImage } from "../../../components/StyledImage.js";
+import Comments from "../../../components/Comments";
+import { StyledLink } from "../../../components/StyledLink";
+import { StyledButton } from "../../../components/StyledButton";
+import { StyledImage } from "../../../components/StyledImage";
 
 const ImageContainer = styled.div`
   position: relative;

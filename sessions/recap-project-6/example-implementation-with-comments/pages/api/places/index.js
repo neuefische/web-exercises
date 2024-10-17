@@ -12,6 +12,7 @@ export default async function handler(request, response) {
       console.log(error);
     }
   }
+
   if (request.method === "POST") {
     try {
       await Place.create(request.body);

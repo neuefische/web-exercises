@@ -1,8 +1,8 @@
-import { useRouter } from "next/router.js";
+import { useRouter } from "next/router";
 import Link from "next/link.js";
 import useSWR from "swr";
-import Form from "../../../components/Form.js";
-import { StyledLink } from "../../../components/StyledLink.js";
+import Form from "../../../components/Form";
+import { StyledLink } from "../../../components/StyledLink";
 
 export default function EditPage() {
   const router = useRouter();

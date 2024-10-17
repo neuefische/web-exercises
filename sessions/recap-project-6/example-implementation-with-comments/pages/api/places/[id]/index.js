@@ -19,6 +19,7 @@ export default async function handler(request, response) {
       console.log(error);
     }
   }
+
   if (request.method === "PUT") {
     try {
       const placeToUpdate = await Place.findByIdAndUpdate(id, request.body);
@@ -27,6 +28,7 @@ export default async function handler(request, response) {
       console.log(error);
     }
   }
+
   if (request.method === "DELETE") {
     try {
       await Place.findByIdAndDelete(id);

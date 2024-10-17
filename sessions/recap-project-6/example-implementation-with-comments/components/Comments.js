@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { useRouter } from "next/router.js";
-import { FormContainer, Input, Label } from "./Form.js";
-import { StyledButton } from "./StyledButton.js";
+import { useRouter } from "next/router";
+import { FormContainer, Input, Label } from "./Form";
+import { StyledButton } from "./StyledButton";
 import useSWR from "swr";
 import { Fragment } from "react";
 
