@@ -24,12 +24,12 @@ export default function Home() {
       <ListContainer>
         {data.map((place) => {
           return (
-            <li key={place._id}>
+            <li key={place.id}>
               <Card
                 name={place.name}
                 image={place.image}
                 location={place.location}
-                id={place._id}
+                id={place.id}
               />
             </li>
           );
