@@ -13,10 +13,11 @@ const Article = styled.article`
   border-radius: 0.8rem;
   padding: 0.5rem;
   text-align: center;
-  p {
-    border-bottom: solid 1px black;
-    padding: 20px;
-  }
+`;
+
+const CommentText = styled.p`
+  border-bottom: solid 1px black;
+  padding: 20px;
 `;
 
 export default function Comments({ locationName }) {
@@ -81,11 +82,11 @@ export default function Comments({ locationName }) {
           {comments.map(({ _id, name, comment }) => {
             return (
               <Fragment key={_id}>
-                <p>
+                <CommentText>
                   <small>
                     <strong>{name}</strong> commented on {locationName}
                   </small>
-                </p>
+                </CommentText>
                 <span>{comment}</span>
                 <StyledButton onClick={() => handleDeleteComment(_id)}>
                   X
