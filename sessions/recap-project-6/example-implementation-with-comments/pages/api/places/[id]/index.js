@@ -1,5 +1,5 @@
 import dbConnect from "../../../../db/connect";
-import Place from "../../../../db/models/Places";
+import Place from "../../../../db/models/Place";
 import Comment from "../../../../db/models/Comment";
 
 export default async function handler(request, response) {
