@@ -10,12 +10,16 @@ export default async function handler(request, response) {
       const foundPlace = await Place.findById(id);
 
       if (!foundPlace) {
-        return response.status(404).json({ status: "Not Found" });
+        response.status(404).json({ status: "Not Found" });
+        return;
       }
 
-      return response.status(200).json(foundPlace);
+      response.status(200).json(foundPlace);
+      return;
     } catch (error) {
       console.log(error);
+      response.status(500).json({ status: "error finding place" });
+      return;
     }
   }
 
@@ -23,8 +27,11 @@ export default async function handler(request, response) {
     try {
       const placeToUpdate = await Place.findByIdAndUpdate(id, request.body);
       response.status(200).json(placeToUpdate);
+      return;
     } catch (error) {
       console.log(error);
+      response.status(500).json({ status: "error updating places" });
+      return;
     }
   }
 
@@ -32,8 +39,11 @@ export default async function handler(request, response) {
     try {
       await Place.findByIdAndDelete(id);
       response.status(260).json("Place deleted");
+      return;
     } catch (error) {
       console.log(error);
+      response.status(500).json({ status: "error deleting places" });
+      return;
     }
   }
 }

@@ -9,9 +9,11 @@ export default async function handler(request, response) {
     try {
       const comments = await Comment.find({ placeId: id });
       response.status(200).json(comments);
+      return;
     } catch (error) {
-      response.status(500).json({ error: "error finding comments" });
       console.error(error);
+      response.status(500).json({ error: "error finding comments" });
+      return;
     }
   }
 
@@ -19,9 +21,11 @@ export default async function handler(request, response) {
     try {
       await Comment.create({ ...request.body, placeId: id });
       response.status(200).json({ success: "comment uploaded" });
+      return;
     } catch (error) {
-      response.status(500).json({ error: "error uploading comment" });
       console.error(error);
+      response.status(500).json({ error: "error uploading comment" });
+      return;
     }
   }
 
@@ -31,9 +35,11 @@ export default async function handler(request, response) {
       console.log("comment_id", comment_id);
       await Comment.findByIdAndDelete(comment_id);
       response.status(200).json({ success: "comment deleted" });
+      return;
     } catch (error) {
-      response.status(500).json({ error: "error deleting comment" });
       console.error(error);
+      response.status(500).json({ error: "error deleting comment" });
+      return;
     }
   }
 }

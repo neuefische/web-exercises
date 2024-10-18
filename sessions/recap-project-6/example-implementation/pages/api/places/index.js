@@ -7,20 +7,24 @@ export default async function handler(request, response) {
   if (request.method === "GET") {
     try {
       const places = await Place.find();
-      return response.status(200).json(places);
+      response.status(200).json(places);
+      return;
     } catch (error) {
       console.log(error);
+      response.status(500).json({ status: "error finding all places" });
+      return;
     }
   }
 
   if (request.method === "POST") {
     try {
       await Place.create(request.body);
-      return response
-        .status(200)
-        .json({ success: true, status: "Place created" });
+      response.status(200).json({ success: true, status: "Place created" });
+      return;
     } catch (error) {
       console.log(error);
+      response.status(500).json({ status: "error creating place" });
+      return;
     }
   }
 }
