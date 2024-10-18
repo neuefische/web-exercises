@@ -5,13 +5,13 @@ import Link from "next/link";
 import JokeForm from "@/components/JokeForm";
 
 export default function Joke() {
-  const [isEditMode, setIsEditMode] = useState(false);
+  const [showEditForm, setShowEditForm] = useState(false);
   const router = useRouter();
   const { id } = router.query;
 
   const { data, isLoading, mutate } = useSWR(`/api/jokes/${id}`);
 
-  async function handleEdit(event) {
+  async function handleEditJoke(event) {
     event.preventDefault();
 
     const formData = new FormData(event.target);
@@ -30,7 +30,7 @@ export default function Joke() {
     }
   }
 
-  async function handleDelete() {
+  async function handleDeleteJoke() {
     const response = await fetch(`/api/jokes/${id}`, { method: "DELETE" });
 
     if (!response.ok) {
@@ -54,21 +54,25 @@ export default function Joke() {
       <div>
         <button
           onClick={() => {
-            setIsEditMode(!isEditMode);
+            setShowEditForm(!showEditForm);
           }}
         >
           <span role="img" aria-label="A pencil">
             ✏️
           </span>
         </button>
-        <button onClick={handleDelete} disabled={isEditMode}>
+        <button onClick={handleDeleteJoke} disabled={showEditForm}>
           <span role="img" aria-label="A cross indicating deletion">
             ❌
           </span>
         </button>
       </div>
-      {isEditMode && (
-        <JokeForm onSubmit={handleEdit} value={data.joke} isEditMode={true} />
+      {showEditForm && (
+        <JokeForm
+          onSubmit={handleEditJoke}
+          value={data.joke}
+          isEditMode={true}
+        />
       )}
       <Link href="/">Back to all</Link>
     </>

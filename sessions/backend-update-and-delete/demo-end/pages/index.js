@@ -1,12 +1,11 @@
 import useSWR from "swr";
-
 import JokeForm from "@/components/JokeForm";
 import JokeList from "@/components/JokeList";
 
 export default function HomePage() {
   const { mutate } = useSWR("/api/jokes");
 
-  async function handleSubmit(event) {
+  async function handleAddJoke(event) {
     event.preventDefault();
 
     const formData = new FormData(event.target);
@@ -27,7 +26,7 @@ export default function HomePage() {
 
   return (
     <>
-      <JokeForm onSubmit={handleSubmit} value="" />
+      <JokeForm onSubmit={handleAddJoke} value="" />
       <JokeList />
     </>
   );
