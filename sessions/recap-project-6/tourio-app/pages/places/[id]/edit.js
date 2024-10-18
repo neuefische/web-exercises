@@ -1,8 +1,7 @@
 import { useRouter } from "next/router";
-import Link from "next/link";
 import useSWR from "swr";
-import Form from "../../../components/Form.js";
-import { StyledLink } from "../../../components/StyledLink.js";
+import Form from "../../../components/Form";
+import { StyledLink } from "../../../components/StyledLink";
 
 export default function EditPage() {
   const router = useRouter();
@@ -11,7 +10,7 @@ export default function EditPage() {
   const { data: place, isLoading, error } = useSWR(`/api/places/${id}`);
 
   async function editPlace(place) {
-    console.log("Place edited (but not really...");
+    console.log("Editing place ...");
   }
 
   if (!isReady || isLoading || error) return <h2>Loading...</h2>;
@@ -19,9 +18,9 @@ export default function EditPage() {
   return (
     <>
       <h2 id="edit-place">Edit Place</h2>
-      <Link href={`/places/${id}`} passHref legacyBehavior>
-        <StyledLink $justifySelf="start">back</StyledLink>
-      </Link>
+      <StyledLink href={`/places/${id}`} $justifySelf="start">
+        back
+      </StyledLink>
       <Form onSubmit={editPlace} formName={"edit-place"} defaultData={place} />
     </>
   );

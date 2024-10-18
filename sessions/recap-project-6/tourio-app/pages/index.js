@@ -1,20 +1,13 @@
 import styled from "styled-components";
-import Card from "../components/Card.js";
+import Card from "../components/Card";
 import useSWR from "swr";
-import Link from "next/link.js";
-import { StyledLink } from "../components/StyledLink.js";
+import { StyledLink } from "../components/StyledLink";
 
-const List = styled.ul`
+const ListContainer = styled.ul`
   list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  padding-left: 0;
-`;
-
-const ListItem = styled.li`
-  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
   width: 100%;
 `;
 const FixedLink = styled(StyledLink)`
@@ -22,28 +15,27 @@ const FixedLink = styled(StyledLink)`
   bottom: 50px;
   right: 50px;
 `;
+
 export default function Home() {
   const { data } = useSWR("/api/places", { fallbackData: [] });
 
   return (
     <>
-      <List role="list">
+      <ListContainer>
         {data.map((place) => {
           return (
-            <ListItem key={place.id}>
+            <li key={place.id}>
               <Card
                 name={place.name}
                 image={place.image}
                 location={place.location}
                 id={place.id}
               />
-            </ListItem>
+            </li>
           );
         })}
-      </List>
-      <Link href="/create" passHref legacyBehavior>
-        <FixedLink>+ place</FixedLink>
-      </Link>
+      </ListContainer>
+      <FixedLink href="/create">+ place</FixedLink>
     </>
   );
 }
