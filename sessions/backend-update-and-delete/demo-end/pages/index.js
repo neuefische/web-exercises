@@ -1,7 +1,7 @@
 import useSWR from "swr";
 
-import JokeForm from "../components/JokeForm";
-import JokeList from "../components/JokeList";
+import JokeForm from "@/components/JokeForm";
+import JokeList from "@/components/JokeList";
 
 export default function HomePage() {
   const { mutate } = useSWR("/api/jokes");
