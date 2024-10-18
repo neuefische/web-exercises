@@ -1,9 +1,0 @@
-{
-  "name": "template-empty",
-  "version": "0.0.0-unreleased",
-  "description": "Empty",
-  "main": "n.a.",
-  "nf": {
-    "template": "empty"
-  }
-}

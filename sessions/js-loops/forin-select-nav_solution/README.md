@@ -1,6 +1,6 @@
 # For...in Loop and Select Navigation
 
-We can use loops for creating HTML elements. In this Codesandbox, the website needs a select input with language options and a navigation bar. Let's do this with the help of `for...in`!
+We can use loops for creating HTML elements. In this challenge, the website needs a select input with language options and a navigation bar. Let's do this with the help of `for...in`!
 
 ## Task
 
@@ -44,7 +44,7 @@ To work locally, please install the dependencies using `npm i` first.
 
 Run `npm run start` to start a development server and open [localhost:3000](http://localhost:3000) in a browser.
 
-> Alternatively you can use the Live Preview Extension for Visual Studio Code to view this project.  
+> Alternatively you can use the Live Preview Extension for Visual Studio Code to view this project.
 > Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
 
 Use `npm run test` to run the tests.
