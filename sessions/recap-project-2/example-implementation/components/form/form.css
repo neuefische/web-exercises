@@ -1,0 +1,25 @@
+.question-form {
+  padding: 10rem 2rem 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.question-form__input {
+  display: flex;
+  flex-direction: column;
+}
+
+.question-form__submit-button {
+  background: var(--secondary);
+  color: var(--white);
+  border: none;
+  display: block;
+  margin: 0 auto 2rem auto;
+  padding: 1rem;
+}
+
+.question-form__character-count {
+  font-size: 14px;
+  align-self: end;
+}

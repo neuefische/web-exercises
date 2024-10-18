@@ -67,7 +67,7 @@ This is why we need to provide Vercel with the access details.
 
 - Use the [`lib/db_comments.json` file](lib/db_comments.json) to insert sample data.
 
-- Replace the value of `placeId` in each comment with one of the place ids in your MongoDB. You can open MongoDB Atlas and checkout your places collection to find fitting ids.
+- Replace the value of `placeId` in each comment with one of the place id strings in your MongoDB. You can open MongoDB Atlas and checkout your places collection to find fitting ids.
 
 - Write a POST API route to handle comment submissions. This route should associate each comment with the appropriate place in your database.
 

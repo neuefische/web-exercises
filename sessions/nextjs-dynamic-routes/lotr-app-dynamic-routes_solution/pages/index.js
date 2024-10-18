@@ -1,13 +1,26 @@
 import { volumes } from "@/lib/data";
 import Link from "next/link";
+import { useRouter } from "next/router.js";
+
+function getRandomElement(array) {
+  return array[Math.floor(Math.random() * array.length)];
+}
 
 export default function HomePage() {
-  const randomVolume = volumes[Math.floor(Math.random() * volumes.length)];
+  const router = useRouter();
 
   return (
     <div>
       <Link href="/volumes">Go to all volumes</Link>
-      <Link href={`/volumes/${randomVolume.slug}`}>Go to a random volume</Link>
+      <button
+        type="button"
+        onClick={() => {
+          const randomVolume = getRandomElement(volumes);
+          router.push(`/volumes/${randomVolume.slug}`);
+        }}
+      >
+        Go to random volume
+      </button>
     </div>
   );
 }

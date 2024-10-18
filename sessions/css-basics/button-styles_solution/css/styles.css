@@ -25,9 +25,10 @@ button {
   padding: 8px 25px;
 }
 
-/* Your exercise starts here */
+/* Your exercise starts here. */
 
-/* Add your CSS styles below this line. Feel free to replace the comments with your code. Make sure not to put your code into the comments, because then nothing will happen. */
+/* Add your CSS styles below this line. Feel free to replace the comments with your code. 
+Make sure not to put your code into the comments, because then nothing will happen. */
 
 .button1 {
   border: 2px solid hotpink;
@@ -48,4 +49,4 @@ button {
   box-shadow: rgba(253, 81, 2, 0.4) 0px 7px 20px 0px;
 }
 
-/* Feel free to play around with other properties, as well. */
+/* Feel free to play around with other properties, too. */

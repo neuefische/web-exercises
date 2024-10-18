@@ -91,8 +91,9 @@ ul .user .bio {
 ul .user .location {
   font-size: 10px;
   font-weight: 600;
-  text-align: end;
+  text-align: left;
   margin: 0;
+  color: darkslategray;
 }
 /*
   Part 1

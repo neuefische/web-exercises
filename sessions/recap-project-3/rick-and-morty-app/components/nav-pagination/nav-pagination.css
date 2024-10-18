@@ -1,0 +1,10 @@
+.navigation {
+  height: 30px;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+}
+
+.navigation__pagination {
+  display: grid;
+  place-items: center;
+}

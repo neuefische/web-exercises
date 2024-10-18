@@ -8,18 +8,18 @@ body {
   font-family: system-ui;
 }
 
-/* put a selector here to select div elements (see index.html) */
+/* Put a selector here to select div elements (see index.html). */
 SELECTOR HERE {
   font-family: cursive;
   padding: 8px;
 
-  /* set the height and the width of the box to 150px */
+  /* Set the height and the width of the box to 150px. */
 
-  /* make the background color "hotpink" */
+  /* Make the background color "hotpink". */
 
-  /* make the text color "white" */
+  /* Make the text color "white". */
 
-  /* can you give the box round edges with an radius of 8px? */
+  /* Can you give the box round edges with a radius of 8px? */
 
-  /* ✨ feel free to experiment! */
+  /* ✨ Feel free to experiment! */
 }

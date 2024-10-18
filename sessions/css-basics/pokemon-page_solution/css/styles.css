@@ -1,16 +1,16 @@
-/* The exercise will start here! Sometimes you may need to add a class attribute to some elements in your HTML structure, but otherwise it won't be necessary to adjust the HTML to solve the tasks. */
+/* The exercise starts here! Sometimes you may need to add a class attribute to some elements in your HTML structure, but otherwise, it won't be necessary to adjust the HTML to solve the tasks. */
 
 /* ------- General Styles ------- */
 
-/* Task 1: First of all we want to adjust how the size of our elements is calculated when working with CSS. Do you know how to switch from "content-box" to "border-box"? */
+/* Task 1: First, we want to adjust how the size of our elements is calculated in CSS. Do you know how to switch from "content-box" to "border-box"? */
 
 * {
   box-sizing: border-box;
 }
 
-/* Task 2: Let's work on some basic stylings that we want to apply to all elements of your code via inheritance. Which selector do we need for this? */
+/* Task 2: Let's work on some basic stylings that we want to apply to all elements in your code via inheritance. Which selector do we need for this? */
 
-/* add selector */
+/* Add selector */
 body {
   font-family: monospace;
   font-size: 1rem;
@@ -27,11 +27,11 @@ h2 {
   line-height: 1.2;
 }
 
-/* Task 4: Now we want to give our h1 element more styles to shine! Add the following styles by writing the correct declarations inside of the declaration block of the next CSS rule:
+/* Task 4: Now we want to give our h1 element more styles to shine! Add the following styles by writing the correct declarations inside the next CSS rule:
 
 - Change the background color to white
 - Set the top margin to "0"
-- Add a padding of 10px
+- Add padding of 10px
 - Center the text of the heading
 */
 
@@ -44,12 +44,12 @@ h2 {
 
 /* ------- Sections ------- */
 
-/* Task 5: Our page consists of two sections that contain information about why Pokémon are cool and what the favorite Pokémon are. Let's style these sections:
+/* Task 5: Our page consists of two sections containing information about why Pokémon are cool and what the favorite Pokémon are. Let's style these sections:
 
-- We want to have a white background for our sections
-- Add a padding of 20px and a margin of 10px
+- Set a white background for our sections
+- Add padding of 20px and margin of 10px
 - A fancy add on: Add a solid 5px border with the color "orange" that is only visible on the left. Hint: Use "border-left". :)
-- Bonus:  The left border of the second section which contains a list of favourite Pokémon should have the color "gold". Hint: You may need a second CSS rule.
+- Bonus:  The left border of the second section, which contains a list of favorite Pokémon, should have the color "gold". Hint: You may need a second CSS rule.
 */
 
 section {
@@ -67,10 +67,10 @@ section.favourites {
 
 /* Task 6: The headings of our sections somehow look boring. Therefore, we want to change this:
 
-- We want a border to the left and the right of the title only. The border should be 3px solid with the color "gold".)
-- There should be some space between the characters and the border.
+- Add a border to the left and the right of the title only. The border should be 3px solid with the color "gold".
+- There should be some space between the text and the border.
 - The right border should end with the last character of the title. Hint: If you don't know how to do this, think about the display property.
-- Bonus: The color of the border of "Favourite Pokémon" should be "orange". Hint: You may need another CSS rule.
+- Bonus: The border color of the "Favorite Pokémon" title should be "orange". Hint: You may need another CSS rule.
 */
 
 .subtitle {
@@ -86,9 +86,9 @@ section.favourites {
 
 /* ------- List ------- */
 
-/* Task 7: Last but not least! We want to style our list with our favorite Pokémon. Which selector do we need? And also add values for the padding. */
+/* Task 7: Finally, let's style our list with of favorite Pokémon. Which selector do we need? Also, add values for padding. */
 
-/* add selector */
+/* Add selector */
 ul {
   list-style: "🧡";
   padding-left: 1.5rem;
@@ -105,4 +105,4 @@ ul li {
   height: auto;
 }
 
-/* Note: After finishing all tasks this class should also work. This means that the image should flexibly adjust its size to the width of the viewport. */
+/* Note: After finishing all tasks, this class should also work. The image should adjust its size flexibly according to the width of the viewport. */

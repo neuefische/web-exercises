@@ -1,0 +1,7 @@
+.button {
+  border: none;
+}
+
+.button:hover {
+  background-color: var(--color-secondary);
+}
