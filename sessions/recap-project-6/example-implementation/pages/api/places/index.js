@@ -1,4 +1,4 @@
-import dbConnect from "../../../db/connect";
+import dbConnect from "@/db/connect";
 import Place from "../../../db/models/Place";
 
 export default async function handler(request, response) {

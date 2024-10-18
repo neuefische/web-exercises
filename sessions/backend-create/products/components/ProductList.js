@@ -1,6 +1,6 @@
 import useSWR from "swr";
-import { StyledHeading, StyledList } from "./ProductList.styled";
-import { StyledLink } from "../Link/Link.styled";
+import StyledLink from "@/components/Link";
+import styled from "styled-components";
 
 export default function ProductList() {
   const { data, isLoading } = useSWR("/api/products");
@@ -26,3 +26,16 @@ export default function ProductList() {
     </>
   );
 }
+
+const StyledHeading = styled.h2`
+  text-align: center;
+  color: var(--color-nemo);
+`;
+
+const StyledList = styled.ul`
+  list-style-type: none;
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+  padding: 0;
+`;

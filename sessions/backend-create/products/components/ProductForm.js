@@ -1,5 +1,5 @@
-import { StyledForm, StyledHeading, StyledLabel } from "./ProductForm.styled";
-import { StyledButton } from "../Button/Button.styled";
+import styled from "styled-components";
+import StyledButton from "@/components/Button";
 
 export default function ProductForm() {
   async function handleSubmit(event) {
@@ -36,3 +36,20 @@ export default function ProductForm() {
     </StyledForm>
   );
 }
+
+export const StyledForm = styled.form`
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+`;
+
+export const StyledHeading = styled.h2`
+  text-align: center;
+  color: var(--color-nemo);
+`;
+
+export const StyledLabel = styled.label`
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+`;

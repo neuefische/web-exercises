@@ -1,11 +1,6 @@
-import ProductList from "../components/ProductList";
 import styled from "styled-components";
-import ProductForm from "../components/ProductForm";
-
-const Heading = styled.h1`
-  text-align: center;
-  color: var(--color-nemo);
-`;
+import ProductList from "@/components/ProductList";
+import ProductForm from "@/components/ProductForm";
 
 export default function HomePage() {
   return (
@@ -22,3 +17,8 @@ export default function HomePage() {
     </>
   );
 }
+
+const Heading = styled.h1`
+  text-align: center;
+  color: var(--color-nemo);
+`;
