@@ -1,5 +1,6 @@
 import useSWR from "swr";
-import StyledLink from "@/Link/Link";
+import StyledLink from "@/components/Link";
+import styled from "styled-components";
 
 export default function ProductList() {
   const { data, isLoading } = useSWR("/api/products");
