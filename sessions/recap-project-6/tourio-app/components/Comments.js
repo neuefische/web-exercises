@@ -35,36 +35,11 @@ export default function Comments({ locationName }) {
 
   async function handleSubmitComment(event) {
     event.preventDefault();
-    const formData = new FormData(event.target);
-    const commentData = Object.fromEntries(formData);
-    const response = await fetch(`/api/comments/${id}`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ ...commentData, place: id }),
-    });
-    if (response.ok) {
-      mutate();
-      event.target.reset();
-    } else {
-      console.error(`Error: ${response.status}`);
-    }
+    console.log("adding comment");
   }
 
   async function handleDeleteComment(comment_id) {
-    const response = await fetch(
-      `/api/comments/${id}?comment_id=${comment_id}`,
-      {
-        method: "DELETE",
-      }
-    );
-    if (response.ok) {
-      await response.json();
-      mutate();
-    } else {
-      console.error(`Error: ${response.status}`);
-    }
+    console.log("deleting comment");
   }
 
   return (
