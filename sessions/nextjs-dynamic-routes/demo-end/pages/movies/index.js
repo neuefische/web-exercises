@@ -5,6 +5,13 @@ import { movies } from "../../lib/data";
 
 export default function Movies() {
   const router = useRouter();
+
+  function handleRandomRedirect() {
+    const randomIndex = Math.floor(Math.random() * movies.length);
+    const randomMovie = movies[randomIndex];
+    router.push(`/movies/${randomMovie.slug}`);
+  }
+
   return (
     <>
       <Head>
@@ -18,15 +25,7 @@ export default function Movies() {
           </li>
         ))}
       </ul>
-      <button
-        onClick={() => {
-          if (confirm("Are you Aquaman?")) {
-            router.push("/movies/aquaman");
-          }
-        }}
-      >
-        Are you Aquaman?
-      </button>
+      <button onClick={handleRandomRedirect}>Suprise me!</button>
     </>
   );
 }
