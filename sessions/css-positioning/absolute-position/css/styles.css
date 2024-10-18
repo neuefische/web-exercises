@@ -32,7 +32,7 @@ main {
  * Adjust the rule-sets for each selector to satisfy the name.
  *
  * @example
- * .box--top-left -> This element should be be placed in the top, left corner.
+ * .box--top-left -> This element should be placed in the top, left corner.
  */
 
 .box--top-left {
