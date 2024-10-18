@@ -7,7 +7,7 @@ In this project you will build a Tourio App, the best friend of all travelers: i
 ### Read Data
 
 - Set up a database; use the [`lib/db.json` file](lib/db.json) to insert sample data.
-- In `pages/api/index.js`, replace the `places` variable imported from `lib/db.js` with a `GET` request from your database.
+- In `pages/api/places/index.js`, replace the `places` variable imported from `lib/db.js` with a `GET` request from your database.
 - Do the same in `pages/api/[id]/index.js` for the details page.
 
 ### Create Form
@@ -26,23 +26,9 @@ In this project you will build a Tourio App, the best friend of all travelers: i
 - In `pages/places/[id].index.js`, write the `deletePlace` function to start a `DELETE` request.
 - Write the `DELETE` API route in `pages/api/places/[id]/index.js`.
 
-## Bonus
+### Deploy your Project to Vercel
 
-### Comment Section
-
-- To add a comment section for each place, you'll need to create a database schema or collection to store comments associated with each place. Each comment should have a reference to the place it belongs to, such as a place ID.
-
-- Set up a database; use the [`lib/Tourio-db.comments.json` file](lib/Tourio-db.comments.json) to insert sample data.
-
-- Create a form in your place detail page pages/places/[id]/index.js that allows users to submit comments.
-
-- Write a POST API route to handle comment submissions. This route should associate each comment with the appropriate place in your database.
-
-- Implement a mechanism to retrieve and display comments for each place on the detail page.
-
-### Deploy to Vercel
-
-- Deploy your app to Vercel and make sure the deployment can access the cloud database with the help of environment variables.
+Follow [these instructions](https://github.com/neuefische/web-protocol-template/blob/main/docs/deployment-vercel.md) to deploy the project to Vercel.
 
 #### Vercel and MongoDB Atlas (environment variables)
 
@@ -72,6 +58,22 @@ This is why we need to provide Vercel with the access details.
 5. If there's a popup, hit the "Redeploy" button again.
 
 6. Congratulations, you are done! Open the Vercel URL of your project to see that your deployed application has now access to the cloud database.
+
+## Bonus
+
+### Comment Section
+
+- To add a comment section for each place, you'll need to create a database schema or collection to store comments associated with each place. Each comment should have a reference to the place it belongs to, such as a place ID.
+
+- Use the [`lib/db_comments.json` file](lib/db_comments.json) to insert sample data.
+
+- Replace the value of `placeId` in each comment with one of the place ids in your MongoDB. You can open MongoDB Atlas and checkout your places collection to find fitting ids.
+
+- Write a POST API route to handle comment submissions. This route should associate each comment with the appropriate place in your database.
+
+- Implement a mechanism to retrieve, display and delete comments for each place on the detail page.
+
+- Consider the case where a place is deleted. Ensure associated comments are also removed to avoid orphaned data in your database.
 
 ## Development
 
