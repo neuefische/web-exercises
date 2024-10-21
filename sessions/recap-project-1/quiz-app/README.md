@@ -19,7 +19,7 @@ To begin, perform the following tasks:
 
 - Create a new folder for your project insinde `web-bootcamp`.
 - Initialize a local git repository.
-- Create a `.gitignore` file and add `.DS_Store` to the file.
+- Create a `.gitignore` file and add `.DS_Store` and `.vscode` to the file.
 - Create a remote repository and connect it to the local repository.
 - Create the `index.html` and `styles.css` files.
 - Ensure that the CSS file is loaded in the HTML document.
