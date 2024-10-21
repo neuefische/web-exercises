@@ -17,7 +17,7 @@ Explore [these topic](./assets/topics.md) ideas for your quiz app or choose your
 
 To begin, perform the following tasks:
 
-- Create a new folder for your project.
+- Create a new folder for your project insinde `web-bootcamp`.
 - Initialize a local git repository.
 - Create a `.gitignore` file and add `.DS_Store` to the file.
 - Create a remote repository and connect it to the local repository.
@@ -98,10 +98,3 @@ quiz-app
 ```
 
 ❗️ Make sure you apply the BEM method to your Quiz App (bring more structure to your code by using BEM to name all classes!).
-
-## Resources
-
-⬇️ You can [**download the images for the Quiz App here**](./resources.zip?raw=true).
-
-- Unzip the file to get the `resources` folder.
-- Copy them into your app's main directory.
