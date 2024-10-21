@@ -48,10 +48,10 @@ the start of the introduction. */
 
 /* ==[ INTRODUCTION ]== */
 
-/* !-- In short: Look at the selectors, then scroll down to the bottom of the file. 
+/* !-- In short: Look at the selectors, then scroll down to the bottom of the file.
 Write your media queries there. --! */
 
-/* Hint 1: Investigate! Take a good, long look at the previews to find out 
+/* Hint 1: Investigate! Take a good, long look at the previews to find out
 which elements need to change at what point. It's always useful to change
 the size of your viewport or to take a look at the dev tools.
 Your solution doesn't need to be pixel-perfect. If it looks close enough,
@@ -66,6 +66,8 @@ you'll find the prompts to write your code.*/
 /* Hint 4: Maybe you need a special selector to make changes to just one
 element at some point. Perhaps take another look at your CSS Basics handout
 if you're unsure. */
+
+/* Hint 5: CSS Grid might be a useful tool in some situations. Take a look at the CSS Flexbox handout to learn more about it! */
 
 *,
 *::before,
@@ -239,7 +241,7 @@ fairly essential to completing this challenge. */
 /* ==[ MEDIA QUERIES & BREAKPOINTS ]== */
 
 /* Now it's your turn! Here we're using media queries to partially overwrite our
-CSS when certain conditions that we declare are met - such as a certain viewport 
+CSS when certain conditions that we declare are met - such as a certain viewport
 width, etc. */
 
 /* Media Query Tablet */

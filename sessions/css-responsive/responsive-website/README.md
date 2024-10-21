@@ -13,7 +13,7 @@ Make sure to take a good look at the preview screens.
 
 ---
 
-#### Hint ✨
+## Hint ✨
 
 _Several hints can be found in `./css/styles.css` file._
 
@@ -21,10 +21,8 @@ _Several hints can be found in `./css/styles.css` file._
 
 Run `npm run start` to start a development server and open [localhost:3000](http://localhost:3000) in a browser.
 
-> Alternatively you can use the Live Preview Extension for Visual Studio Code to view this project.  
+> Alternatively you can use the Live Preview Extension for Visual Studio Code to view this project.
 > Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
-
-
 
 ### Scripts
 
