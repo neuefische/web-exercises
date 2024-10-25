@@ -14,9 +14,9 @@ const company = {
 
 // EXERCISE 2
 // We have an object called "user".
-// Write the destructuring assignment that reads:
-//  2.1: "name" property into the variable "name".
-//  2.2: "years" property into the variable "age".
+// Use destructuring assignment to extract the following:
+//  2.1: The "name" property into the variable "name".
+//  2.2: The "years" property into the variable "age".
 //  2.3: The "isAdmin" property into the variable "isAdmin".
 //       Set a default value of "false" if the "isAdmin" property does not exist.
 

@@ -15,11 +15,12 @@ export const { course } = company;
 // example: export const {value1} = myObject;
 
 // EXERCISE 2
-// We have an object called 'user'.
-// Write the destructuring assignment that reads:
-//  2.1: 'name' property into the variable 'name'.
-//  2.2: 'years' property into the variable 'age'.
-//  2.3: 'isAdmin' property into the variable 'isAdmin' (false, if no such property exists)
+// We have an object called "user".
+// Use destructuring assignment to extract the following:
+//  2.1: The "name" property into the variable "name".
+//  2.2: The "years" property into the variable "age".
+//  2.3: The "isAdmin" property into the variable "isAdmin".
+//       Set a default value of "false" if the "isAdmin" property does not exist.
 
 const user = { name: 'John', years: 30 };
 
@@ -37,7 +38,7 @@ const dog = {
 
 export const { name: dogName, breed: dogBreed, age: dogAge } = dog;
 // EXERCISE 4
-// Extract the 'lastName' property from the person object as "personLastName".
+// Extract the "lastName" property from the person object as "personLastName".
 // Store all other properties in an object called "moreInformation".
 
 const person = {
@@ -47,3 +48,20 @@ const person = {
 };
 
 export const { lastName: personLastName, ...moreInformation } = person;
+
+
+// EXERCISE 5
+// Rewrite the following function to use destructuring assignment for the
+// three variables "name", "country" and "numPeople"  it creates.
+// Hint: You may need to rename one of the properties during destructuring.
+
+function logInfo(city) {
+  const { name, country, population: numPeople } = city;
+
+  console.log(
+      `${name} is in ${country} and has ${numPeople} inhabitants in it.`
+  );
+}
+
+// This is how you call it:
+logInfo({ name: "Marseille", country: "France", population: 861635 });
