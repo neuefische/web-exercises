@@ -13,11 +13,12 @@ const company = {
 // example: export const {value1} = myObject;
 
 // EXERCISE 2
-// We have an object called 'user'.
+// We have an object called "user".
 // Write the destructuring assignment that reads:
-//  2.1: 'name' property into the variable 'name'.
-//  2.2: 'years' property into the variable 'age'.
-//  2.3: 'isAdmin' property into the variable 'isAdmin' (false, if no such property exists)
+//  2.1: "name" property into the variable "name".
+//  2.2: "years" property into the variable "age".
+//  2.3: The "isAdmin" property into the variable "isAdmin".
+//       Set a default value of "false" if the "isAdmin" property does not exist.
 
 const user = { name: "John", years: 30 };
 
