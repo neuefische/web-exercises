@@ -40,3 +40,21 @@ const person = {
   age: 24,
   firstName: "Alex",
 };
+
+// EXERCISE 5
+// Rewrite the following function to use destructuring assignment for the
+// three variables "name", "country" and "numPeople"  it creates.
+// Hint: You may need to rename one of the properties during destructuring.
+
+function logInfo(city) {
+  const name = city.name;
+  const country = city.country;
+  const numPeople = city.population;
+
+  console.log(
+      `${name} is in ${country} and has ${numPeople} inhabitants in it.`
+  );
+}
+
+// This is how you call it:
+logInfo({ name: "Marseille", country: "France", population: 861635 });
