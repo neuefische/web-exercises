@@ -1,8 +1,65 @@
 # Recap Project 6: Tourio App
 
-In this project you will build a Tourio App, the best friend of all travelers: it displays sights you want to visit and lets you edit them.
+In this project, your team will create **Tourio**, an app designed for travelers.
 
-## Task
+This is a group project, so please create **only one project per group** following the [guide in the template section](./README.md#template).
+
+## Overview
+
+In this project, you will build **Tourio**—the ultimate travel companion. Tourio allows users to view a list of sights they want to visit, with the ability to add, edit, or remove entries to keep their travel plans organized.
+
+## Template
+
+Please follow the instructions given in the `README.md` file.
+
+1. Open your terminal and navigate to the folder where your projects are stored.
+2. Execute the following command to create a new project based on a template:
+
+   ```bash
+   nnpx ghcd@latest neuefische/web-exercises/tree/main/sessions/recap-project-6/tourio-app -i
+   ```
+
+3. Create a new empty repository on GitHub and add all group members as collaborators.
+4. Link your local repository to the GitHub repository and push the code.
+5. Each group member clones the repository to their local machine.
+6. Follow the instructions in the `README.md` file.
+
+> 💡 **Tip**: Work on feature branches to avoid merge conflicts!
+
+## Deploying Your Project
+
+Follow [these instructions](https://github.com/neuefische/web-protocol-template/blob/main/docs/deployment-vercel.md) to deploy the project to Vercel.
+
+### Vercel and MongoDB Atlas (environment variables)
+
+When deploying an application to Vercel, the app is not immediately able to connect with your cloud database. This is because the authentication information (user and password) is stored in a `.env.local` file which is only available to your local development environment. You can't upload this file to Vercel because it contains sensitive information. This is why we added the `.env.local` file to the `.gitignore` file.
+
+To make the app work on Vercel, we need to provide the authentication information in a different way. This is where environment variables come in. Environment variables are a way to store sensitive information in a secure way. You can read more about environment variables in the [Vercel docs](https://vercel.com/docs/projects/environment-variables).
+
+This is why we need to provide Vercel with the access details.
+
+### Connecting Vercel with MongoDB Atlas
+
+1. In the dashboard of your Vercel project, navigate to "Settings".
+
+2. In the left-hand navigation, choose "Environment Variables".
+
+   1. Add the key (`MONGODB_URI`) and the value (`mongodb+srv...`)
+   2. Tick all environments (Production, Preview, and Development).
+   3. Click "Save".
+
+3. At the bottom of this page, you should now see a new environment variable
+
+4. Redeploy your application:
+
+   1. In the main navigation, choose "Deployments".
+   2. Open the three dots next to your last deployment and choose "Redeploy".
+
+5. If there's a popup, hit the "Redeploy" button again.
+
+6. Congratulations, you are done! Open the Vercel URL of your project to see that your deployed application has now access to the cloud database.
+
+## Tasks
 
 ### Read Data
 
@@ -25,39 +82,6 @@ In this project you will build a Tourio App, the best friend of all travelers: i
 
 - In `pages/places/[id].index.js`, write the `deletePlace` function to start a `DELETE` request.
 - Write the `DELETE` API route in `pages/api/places/[id]/index.js`.
-
-### Deploy your Project to Vercel
-
-Follow [these instructions](https://github.com/neuefische/web-protocol-template/blob/main/docs/deployment-vercel.md) to deploy the project to Vercel.
-
-#### Vercel and MongoDB Atlas (environment variables)
-
-When deploying an application to Vercel, the app is not immediately able to connect with your cloud database. This is because the authentication information (user and password) is stored in a `.env.local` file which is only available to your local development environment. You can't upload this file to Vercel because it contains sensitive information. This is why we added the `.env.local` file to the `.gitignore` file.
-
-To make the app work on Vercel, we need to provide the authentication information in a different way. This is where environment variables come in. Environment variables are a way to store sensitive information in a secure way. You can read more about environment variables in the [Vercel docs](https://vercel.com/docs/projects/environment-variables).
-
-This is why we need to provide Vercel with the access details.
-
-#### Connecting Vercel with MongoDB Atlas
-
-1. In the dashboard of your Vercel project, navigate to "Settings".
-
-2. In the left-hand navigation, choose "Environment Variables".
-
-   1. Add the key (`MONGODB_URI`) and the value (`mongodb+srv...`)
-   2. Tick all environments (Production, Preview, and Development).
-   3. Click "Save".
-
-3. At the bottom of this page, you should now see a new environment variable
-
-4. Redeploy your application:
-
-   1. In the main navigation, choose "Deployments".
-   2. Open the three dots next to your last deployment and choose "Redeploy".
-
-5. If there's a popup, hit the "Redeploy" button again.
-
-6. Congratulations, you are done! Open the Vercel URL of your project to see that your deployed application has now access to the cloud database.
 
 ## Bonus
 
