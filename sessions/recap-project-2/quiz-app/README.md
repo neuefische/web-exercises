@@ -1,7 +1,17 @@
 # Recap Project 2: Quiz App - Interactivity
 
-In a previous project, you've created the layout for a Quiz App with HTML and CSS. The focus of this
-project is to add interactivity with JavaScript.
+In a previous project, you created the layout for a Quiz App using HTML and CSS. The focus of this project is to add interactivity with JavaScript.
+
+## Overview
+
+We will add interactivity to the **Home** and **Bookmark** pages, allowing users to bookmark a card and show or hide the answer to a question. Additionally, we will create a new page, **Add**, where users can submit their own questions with answers and hashtags. These newly created question cards will be displayed on the **Add** page.
+
+In summary, this project will include the following four pages:
+
+- **Home page:** Users can view all questions available on the platform.
+- **Bookmark page:** A dedicated space to view bookmarked questions, similar to the ones marked on the home page.
+- **Profile page:** This section allows users to view and manage their profile and settings.
+- **Add page:** A page for users to create new questions by submitting a question, answer, and hashtag.
 
 ## Template
 
@@ -11,7 +21,13 @@ work.
 Open your terminal and navigate to the folder where all your projects are located. Execute the following
 command to create a new project based on a template:
 
-`npx ghcd@latest neuefische/web-exercises/tree/main/sessions/recap-project-2/quiz-app -i`
+```bash
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/recap-project-2/quiz-app -i
+```
+
+Alternatively you can keep working with the Quiz App you built in Recap Project 1.
+
+### Template Overview
 
 - There are three pages:
   - an `index.html` with a list of all question cards
@@ -20,7 +36,13 @@ command to create a new project based on a template:
 - The structure of styling follows [BEM](http://getbem.com/introduction/); this is why the CSS files
   are organized according to their corresponding component.
 
-Alternatively you can keep working with the Quiz App you built in Recap Project 1.
+## Resources
+
+Download the require [Icons](https://lucide.dev/icons/) and save it in an "assets" folder within your app's main directory.
+
+## Deploying Your Project
+
+If you are using the template, you will need to deploy you project.
 
 🚀 Project Deployment to GitHub Pages is required: Please adhere to the deployment guidelines outlined in your [repository's documentation](https://github.com/neuefische/web-protocol-template/blob/main/docs/deployment-github-pages.md) for detailed instructions.
 
@@ -108,7 +130,7 @@ users should be informed about the amount of characters left.
   result
 - Think of ways to use the same logic for both form fields and to not repeat your code
 
-## 5. Bonus
+## Bonus
 
 1. When adding a new question card in your newly created `form.html`, also add event listeners to the new button and icon which will have the same functionality as described in Task 1.
 
@@ -119,21 +141,3 @@ users should be informed about the amount of characters left.
    > ❗️ You'll need to set some CSS variables as attributes to the <body> element for example.
 
    > ❗️ This functionality should only work for the profile page. Later in the course we will have a look at how to implement dark/light mode on the whole application.
-
-## Resources
-
-⬇️ You can [**download the images for the Quiz App here**](./resources.zip?raw=true).
-
-- Unzip the file to get the `resources` folder.
-- Copy them into your app's main directory.
-
-## Development
-
-To work locally, please install the dependencies using `npm i` first.
-
-Run `npm run start` to start a development server and open [localhost:3000](http://localhost:3000) in a browser.
-
-> Alternatively you can use the Live Preview Extension for Visual Studio Code to view this project.
-> Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
-
-Use `npm run test` to run the tests.
