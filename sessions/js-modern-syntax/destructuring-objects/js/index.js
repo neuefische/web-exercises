@@ -13,11 +13,12 @@ const company = {
 // example: export const {value1} = myObject;
 
 // EXERCISE 2
-// We have an object called 'user'.
-// Write the destructuring assignment that reads:
-//  2.1: 'name' property into the variable 'name'.
-//  2.2: 'years' property into the variable 'age'.
-//  2.3: 'isAdmin' property into the variable 'isAdmin' (false, if no such property exists)
+// We have an object called "user".
+// Use destructuring assignment to extract the following:
+//  2.1: The "name" property into the variable "name".
+//  2.2: The "years" property into the variable "age".
+//  2.3: The "isAdmin" property into the variable "isAdmin".
+//       Set a default value of "false" if the "isAdmin" property does not exist.
 
 const user = { name: "John", years: 30 };
 
@@ -40,3 +41,19 @@ const person = {
   age: 24,
   firstName: "Alex",
 };
+
+// EXERCISE 5
+// Rewrite the following function to use destructuring assignment for the
+// three variables "name", "country" and "numPeople"  it creates.
+// Hint: You may need to rename one of the properties during destructuring.
+
+export function logInfo(city) {
+  const name = city.name;
+  const country = city.country;
+  const numPeople = city.population;
+
+  return  `${name} is in ${country} and has ${numPeople} inhabitants in it.`
+}
+
+// This is how you call it:
+console.log(logInfo({ name: "Marseille", country: "France", population: 861635 }));
