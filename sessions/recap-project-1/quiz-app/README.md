@@ -73,7 +73,9 @@ The second page is the bookmarks page.
 - Update the navbar so that the bookmark icon is highlighted.
 - Link the two pages via the anchor elements. (Also on the homepage).
 
-## Bonus: Profile Page
+## Bonus
+
+### Profile Page
 
 ![profilePage](./assets/profilepage.png)
 
