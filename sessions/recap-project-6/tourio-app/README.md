@@ -1,36 +1,36 @@
 # Recap Project 6: Tourio App
 
-In this project you will build a Tourio App, the best friend of all travelers: it displays sights you want to visit and lets you edit them.
+In this project, your team will create **Tourio**, an app designed for travelers.
 
-## Task
+This is a group project, so please create **only one project per group** following the [guide in the template section](./README.md#template).
 
-### Read Data
+## Overview
 
-- Set up a database; use the [`lib/db.json` file](lib/db.json) to insert sample data.
-- In `pages/api/places/index.js`, replace the `places` variable imported from `lib/db.js` with a `GET` request from your database.
-- Do the same in `pages/api/[id]/index.js` for the details page.
+In this project, you will build **Tourio**—the ultimate travel companion. Tourio allows users to view a list of sights they want to visit, with the ability to add, edit, or remove entries to keep their travel plans organized.
 
-### Create Form
+## Template
 
-- In `pages/create.js`, write the `addPlace` function to start a `POST` request.
-- Write the `POST` API route in `pages/api/places/index.js`.
-- Submitting the form should redirect the user to the homepage `/`.
+Please follow the instructions given in the `README.md` file.
 
-### Update Entry
+1. Open your terminal and navigate to the folder where your projects are stored.
+2. Execute the following command to create a new project based on a template:
 
-- In `pages/places/[id]/edit.js`, write the `editPlace` function to start a `PATCH` request.
-- Write the `PATCH` API route in `pages/api/[id]/index.js`
+   ```bash
+   nnpx ghcd@latest neuefische/web-exercises/tree/main/sessions/recap-project-6/tourio-app -i
+   ```
 
-### Delete Entry
+3. Create a new empty repository on GitHub and add all group members as collaborators.
+4. Link your local repository to the GitHub repository and push the code.
+5. Each group member clones the repository to their local machine.
+6. Follow the instructions in the `README.md` file.
 
-- In `pages/places/[id].index.js`, write the `deletePlace` function to start a `DELETE` request.
-- Write the `DELETE` API route in `pages/api/places/[id]/index.js`.
+> 💡 **Reminder**: Work on feature branches to avoid merge conflicts!
 
-### Deploy your Project to Vercel
+## Deploying Your Project
 
 Follow [these instructions](https://github.com/neuefische/web-protocol-template/blob/main/docs/deployment-vercel.md) to deploy the project to Vercel.
 
-#### Vercel and MongoDB Atlas (environment variables)
+### Vercel and MongoDB Atlas (environment variables)
 
 When deploying an application to Vercel, the app is not immediately able to connect with your cloud database. This is because the authentication information (user and password) is stored in a `.env.local` file which is only available to your local development environment. You can't upload this file to Vercel because it contains sensitive information. This is why we added the `.env.local` file to the `.gitignore` file.
 
@@ -38,7 +38,7 @@ To make the app work on Vercel, we need to provide the authentication informatio
 
 This is why we need to provide Vercel with the access details.
 
-#### Connecting Vercel with MongoDB Atlas
+### Connecting Vercel with MongoDB Atlas
 
 1. In the dashboard of your Vercel project, navigate to "Settings".
 
@@ -58,6 +58,30 @@ This is why we need to provide Vercel with the access details.
 5. If there's a popup, hit the "Redeploy" button again.
 
 6. Congratulations, you are done! Open the Vercel URL of your project to see that your deployed application has now access to the cloud database.
+
+## Tasks
+
+### Read Data
+
+- Set up a database. Use the [`lib/db.json` file](lib/db.json) to insert sample data.
+- In `pages/api/places/index.js`, replace the `places` variable imported from `lib/db.js` with a `GET` request from your database.
+- Do the same in `pages/api/[id]/index.js` for the details page.
+
+### Create Form
+
+- In `pages/create.js`, write the `addPlace` function to start a `POST` request.
+- Write the `POST` API route in `pages/api/places/index.js`.
+- Submitting the form should redirect the user to the homepage `/`.
+
+### Update Entry
+
+- In `pages/places/[id]/edit.js`, write the `editPlace` function to start a `PUT` request.
+- Write the `PUT` API route in `pages/api/[id]/index.js`
+
+### Delete Entry
+
+- In `pages/places/[id].index.js`, write the `deletePlace` function to start a `DELETE` request.
+- Write the `DELETE` API route in `pages/api/places/[id]/index.js`.
 
 ## Bonus
 

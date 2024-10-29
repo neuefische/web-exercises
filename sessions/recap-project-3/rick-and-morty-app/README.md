@@ -1,31 +1,27 @@
 # Recap Project 3: Rick and Morty App
 
-In this recap project, you are going to create a single page app for browsing all the characters of the famous tv show "Rick and Morty".
+In this project, you will create a single-page app for browsing all characters from the popular TV show **Rick and Morty**.
 
-You are going to work in a group. Create **only one project per group** using the [guide in the template section](./README.md#template) below!
+This is a group project, so please create **only one project per group** following the [guide in the template section](./README.md#template).
 
-🚀 Project Deployment to GitHub Pages is required: Please adhere to the deployment guidelines outlined in your [repository's documentation](https://github.com/neuefische/web-protocol-template/blob/main/docs/deployment-github-pages.md) for detailed instructions.
+## Overview
 
----
+This single-page app will allow users to browse all characters from *Rick and Morty*. The app will include a search input to filter characters and all relevant results should be displayed after a search. A basic pagination system with "Next" and "Previous" navigation buttons lets the user browse large numbers of results with ease.
 
 ## API
 
-We are going to fetch all necessary information about the characters from a REST API specifically
-designed for Rick and Morty. Check out the [API](https://rickandmortyapi.com/). You find all the
-information you need in the docs.
+We will fetch all character information from a REST API specifically designed for *Rick and Morty*. You can find the [API documentation here](https://rickandmortyapi.com/).
 
-> ❗️ This API has pagination, that means that you can fetch only 20 characters at a time.
-
----
+> ❗️ **Note**: This API uses pagination, meaning only 20 characters are returned per request.
 
 ## Template
 
 - Open your terminal and navigate to the folder where all your projects are located.
 - Execute the following command to create a new project based on a template:
 
-```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/recap-project-3/rick-and-morty-app -i
-```
+    ```bash
+    npx ghcd@latest neuefische/web-exercises/tree/main/sessions/recap-project-3/rick-and-morty-app -i
+    ```
 
 - Create a new empty repository on GitHub and add everybody in your group as collaborator.
 - Link your remote repository to the created repository on your computer and push the code.
@@ -34,7 +30,9 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/recap-project-3/rick
 
 > 💡 Don't forget to work on feature branches, otherwise you might run into merge conflicts!
 
----
+## Deploying Your Project
+
+🚀 Project Deployment to GitHub Pages is required: Please adhere to the deployment guidelines outlined in your [repository's documentation](https://github.com/neuefische/web-protocol-template/blob/main/docs/deployment-github-pages.md) for detailed instructions.
 
 ## Tasks
 
@@ -100,7 +98,9 @@ their name into the search bar.
 > 💡 You might run into some bugs at this point. Think about how the page and max page index might
 > have to change when you start searching for only subsets of all characters.
 
-### Bonus: Refactoring your Code
+## Bonus
+
+### Refactoring your Code
 
 You've done it: your app is working as expected. 🚀✨
 
@@ -119,7 +119,7 @@ However, we want to tidy up our code so that not everything is written in a sing
 - Append the created components at the right places in your HTML. All container elements are already
   available in the `index.js`.
 
-### Bonus: Style Your Project
+### Style Your Project
 
 Congratulations on getting your project up and running! Now, let's take it to the next level by adding some flair and personality through styling. The bonus feature focuses on enhancing the visual appeal of your page with creative design elements. Follow these steps to give your project that extra touch:
 
@@ -149,8 +149,6 @@ Once you've implemented your styling enhancements, gather feedback from colleagu
 
 Remember, this bonus feature is all about expressing your creativity, so have fun with it! Feel free to push the boundaries, but always keep user experience in mind. Happy styling!
 
----
-
 ## Development
 
 To work locally, please install the dependencies using `npm i` first.
@@ -159,7 +157,3 @@ Run `npm run start` to start a development server and open [localhost:3000](http
 
 > Alternatively you can use the Live Preview Extension for Visual Studio Code to view this project.  
 > Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
-
-Use `npm run test` to run the tests.
-
-

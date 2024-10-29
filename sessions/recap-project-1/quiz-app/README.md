@@ -1,4 +1,4 @@
-# Recap Project I: Quiz App - Layout
+# Recap Project 1: Quiz App - Layout
 
 In this project you will build the layout of your first mobile web application, a quiz app. In later
 projects we will expand this app and add all sorts of cool functionality.
@@ -13,7 +13,9 @@ In this project we will have 3 pages:
 
 Explore [these topic](./assets/topics.md) ideas for your quiz app or choose your own, avoiding placeholder text.
 
-## 1. Setup
+![Quiz App Overview](./assets/overview.png)
+
+## Setup
 
 To begin, perform the following tasks:
 
@@ -23,9 +25,18 @@ To begin, perform the following tasks:
 - Create a remote repository and connect it to the local repository.
 - Create the `index.html` and `styles.css` files.
 - Ensure that the CSS file is loaded in the HTML document.
-- 🚀 Project Deployment to GitHub Pages is required: Please adhere to the deployment guidelines outlined in your [repository's documentation](https://github.com/neuefische/web-protocol-template/blob/main/docs/deployment-github-pages.md) for detailed instructions.
 
-## 2. Home Page
+## Resources
+
+Download the required [Icons](https://lucide.dev/icons/) and save them in an "assets" folder within your app's main directory.
+
+## Deploying Your Project
+
+🚀 Project Deployment to GitHub Pages is required: Please adhere to the deployment guidelines outlined in your [repository's documentation](https://github.com/neuefische/web-protocol-template/blob/main/docs/deployment-github-pages.md) for detailed instructions.
+
+## Tasks
+
+### 1. Home Page
 
 As you already know from previous challenges, as developers we want to always finish a feature and
 add it to our main branch, instead of starting 3 different features and none of them work. This is
@@ -50,9 +61,9 @@ why the first step to success is to start with the homepage.
 later project. But make sure you include the answer texts and bookmark buttons in your app. (You
 might want to look up the "hidden" attribute.)
 
-## 3. Bookmarks Page
+### 2. Bookmarks Page
 
-![homepage](assets/bookmarkspage.png)
+![homepage](./assets/bookmarkpage.png)
 
 The second page is the bookmarks page.
 
@@ -62,7 +73,11 @@ The second page is the bookmarks page.
 - Update the navbar so that the bookmark icon is highlighted.
 - Link the two pages via the anchor elements. (Also on the homepage).
 
-## Extra: Profile Page
+## Bonus
+
+### Profile Page
+
+![profilePage](./assets/profilepage.png)
 
 Create the profile page in the same way you created the other two pages.
 
@@ -72,7 +87,7 @@ Create the profile page in the same way you created the other two pages.
 
 > 💡 The counter and switch don't have to work for now, we will implement this later.
 
-## Recommendation: Structure
+## Recommendations
 
 ### Separate the Quiz App CSS code into different files
 

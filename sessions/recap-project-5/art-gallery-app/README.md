@@ -1,41 +1,53 @@
-# Recap Project 5: Art Gallery App
 
-In this recap project you will create an art gallery app.
+# Recap Project 5: Art Gallery
 
-There is an API that provides you with all art pieces to show in the gallery:
+In this project, your team will create an interactive art gallery app.
 
-```
+This is a group project, so please create **only one project per group** following the [guide in the template section](./README.md#template).
+
+## Overview
+
+This project involves creating an art gallery app with four main pages: **Spotlight**, **Gallery**, **Favorite**, and **Detail**. Users will have the ability to like or unlike art pieces, and all liked pieces will appear on the **Favorite** page.
+
+Each item from the API includes a URL to the art piece image. Use the `next/image` component to display these images. Remember to add `example-apis.vercel.app` to the allowed domains in the Next.js configuration file. You can refer to the **Next.js Basics and Routing** session handout for guidance. (Don’t forget to restart the development server after making any configuration changes.)
+
+In addition to displaying the art pieces, your gallery app should handle dynamic data that updates based on user interactions. You’ll need to establish a state to manage information linked to the art pieces from the API. Refer to the **React Data Fetching** session handout for further guidance.
+
+The goal of this project is to write clean code with well-isolated components rather than to complete all features. Follow the outlined tasks within each user story to get on track.
+
+Plan your work effectively, and coordinate your next steps as a team.
+
+## API
+
+We will fetch all necessary information about the art pieces from an API specifically designed for this course. [Check out the API](https://example-apis.vercel.app/api/art).
+
+```bash
 https://example-apis.vercel.app/api/art
 ```
 
-Each item given by the API will include an URL to the image of the art piece. Use the `next/image` component to display the image. Don't forget to add the domain `example-apis.vercel.app` to the Next.js config file. Refer to the handout of the Session **Next.js Basics and Routing** for help (always restart the dev server after a config change).
+## Template
 
-Besides the art pieces themselves, your gallery app needs to handle data that changes on user interaction. You are required to establish a state to store additional information, that is linked to the art pieces given by the API. Please refer to the handout of the session **React Data Fetching** for guidance.
+1. Open your terminal and navigate to your projects folder.
+2. Execute the following command to create a new project based on a template:
 
-The following user stories define the features you should add to the app. We advise you to work on the user stories roughly in the order they are noted here. Some user stories depend on each other. Some can be implemented independently.
+   ```bash
+   npx ghcd@latest neuefische/web-exercises/tree/main/templates/next art-gallery-app -i
+   ```
 
-Create a new repository on GitHub and add everybody in your group als collaborator. When starting with the app you should implement the basic setup in a mob. Afterwards you should split up. Each group member can contribute parts to the app individually or in pair programming. Use different branches to work in parallel.
+3. Create a new empty repository on GitHub and add all group members as collaborators.
+4. Link your local repository to the GitHub repository and push the code.
+5. Each group member should clone the repository to their local machine.
+6. Follow the instructions in the `README.md` file.
 
-Plan your work wisely and talk about your next steps in the team.
+> 💡 **Reminder**: Work on feature branches to avoid merge conflicts!
 
-The goal of this recap project is not necessarily to finish all features, but to write clean code with isolated components. It is advised to follow the noted tasks in each user story.
+## Resources
 
----
+Download a [Favorite Icon](https://lucide.dev/icons/) and save it in an "assets" folder within your app's main directory.
 
-## Create the App
+## Deploying Your Project
 
-First create a new Next.js based on our template using this command:
-
-```
-npx ghcd@latest neuefische/web-exercises/tree/main/templates/next art-gallery-app -i
-```
-
-Download the [Favorite Icon](./assets/heart.svg) and save it in a folder named "assets" within your app's main directory.
-
-## Deploy your Project to Vercel
-Follow [these instructions](https://github.com/neuefische/web-protocol-template/blob/main/docs/deployment-vercel.md) to deploy the project to Vercel.   
-
----
+🚀 Project Deployment to Vercel is required: Please follow [these instructions](https://github.com/neuefische/web-protocol-template/blob/main/docs/deployment-vercel.md) to deploy the project on Vercel.
 
 ## User Stories
 
@@ -161,7 +173,6 @@ Follow [these instructions](https://github.com/neuefische/web-protocol-template/
 **so that** I can find them easier.
 
 #### Acceptance Criteria
-
 
 - [ ] The favorite-button is displayed in each entry in the list view
 - [ ] The favorite-button is displayed in the details view
