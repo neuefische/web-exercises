@@ -13,7 +13,7 @@ Each item from the API includes a URL to the art piece image. Use the `next/imag
 
 In addition to displaying the art pieces, your gallery app should handle dynamic data that updates based on user interactions. You’ll need to establish a state to manage information linked to the art pieces from the API. Refer to the **React Data Fetching** session handout for further guidance.
 
-The goal of this project is to write clean code with well-isolated components rather than to complete all features. Follow the outlined tasks within each user story for structure.
+The goal of this project is to write clean code with well-isolated components rather than to complete all features. Follow the outlined tasks within each user story to get on track.
 
 Plan your work effectively, and coordinate your next steps as a team.
 
