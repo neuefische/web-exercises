@@ -63,7 +63,7 @@ This is why we need to provide Vercel with the access details.
 
 ### Read Data
 
-- Set up a database; use the [`lib/db.json` file](lib/db.json) to insert sample data.
+- Set up a database. Use the [`lib/db.json` file](lib/db.json) to insert sample data.
 - In `pages/api/places/index.js`, replace the `places` variable imported from `lib/db.js` with a `GET` request from your database.
 - Do the same in `pages/api/[id]/index.js` for the details page.
 
