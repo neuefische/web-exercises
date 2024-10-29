@@ -24,7 +24,7 @@ Please follow the instructions given in the `README.md` file.
 5. Each group member clones the repository to their local machine.
 6. Follow the instructions in the `README.md` file.
 
-> 💡 **Tip**: Work on feature branches to avoid merge conflicts!
+> 💡 **Reminder**: Work on feature branches to avoid merge conflicts!
 
 ## Deploying Your Project
 
