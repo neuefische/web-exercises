@@ -25,7 +25,7 @@ command to create a new project based on a template:
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/recap-project-2/quiz-app -i
 ```
 
-Alternatively you can keep working with the Quiz App you built in Recap Project 1.
+Alternatively, you can keep working with the Quiz App you built in Recap Project 1.
 
 ### Template Overview
 
