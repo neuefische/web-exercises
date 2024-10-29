@@ -6,7 +6,7 @@ This is a group project, so please create **only one project per group** followi
 
 ## Overview
 
-This single-page app will allow users to browse all characters from *Rick and Morty*. The app will include a search input to filter characters, and all relevant results should display after a search. If the search results span multiple pages, users should be able to navigate through the pages using "Next" and "Previous" buttons.
+This single-page app will allow users to browse all characters from *Rick and Morty*. The app will include a search input to filter characters and all relevant results should be displayed after a search. A basic pagination system with "Next" and "Previous" navigation buttons lets the user browse large numbers of results with ease.
 
 ## API
 
