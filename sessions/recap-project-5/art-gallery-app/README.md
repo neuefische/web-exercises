@@ -39,7 +39,7 @@ https://example-apis.vercel.app/api/art
 5. Each group member should clone the repository to their local machine.
 6. Follow the instructions in the `README.md` file.
 
-> 💡 **Tip**: Work on feature branches to avoid merge conflicts!
+> 💡 **Reminder**: Work on feature branches to avoid merge conflicts!
 
 ## Resources
 
