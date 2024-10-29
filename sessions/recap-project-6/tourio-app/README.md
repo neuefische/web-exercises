@@ -75,8 +75,8 @@ This is why we need to provide Vercel with the access details.
 
 ### Update Entry
 
-- In `pages/places/[id]/edit.js`, write the `editPlace` function to start a `PATCH` request.
-- Write the `PATCH` API route in `pages/api/[id]/index.js`
+- In `pages/places/[id]/edit.js`, write the `editPlace` function to start a `PUT` request.
+- Write the `PUT` API route in `pages/api/[id]/index.js`
 
 ### Delete Entry
 
