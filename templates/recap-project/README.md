@@ -47,7 +47,7 @@ Download a [Favorite Icon](https://lucide.dev/icons/) and save it in an "assets"
 
 ## Deploying Your Project
 
-> Select the correspond deployment. Delete the one that doesn't apply.
+> Select the corresponding deployment. Delete the one that doesn't apply.
 
 🚀 Project Deployment to GitHub Pages is required: Please adhere to the deployment guidelines outlined in your [repository's documentation](https://github.com/neuefische/web-protocol-template/blob/main/docs/deployment-github-pages.md) for detailed instructions.
 
