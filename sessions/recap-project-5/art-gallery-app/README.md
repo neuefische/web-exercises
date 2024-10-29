@@ -147,7 +147,7 @@ When a user clicks on an art piece, they should see all detailed information abo
 #### Tasks
 
 - [ ] Create a new component for displaying Art Piece Details.
-- [ ] Create a single page that renders the Art Piece Details, displaying information for the selected art piece.
+- [ ] Create a single dynamic page that renders the Art Piece Details, displaying information for the selected art piece.
 - [ ] Write tests for the Art Piece Details component to confirm that all information is rendered correctly.
 
 ### 5. Favorite Page
