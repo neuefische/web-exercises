@@ -10,8 +10,8 @@ In summary, this project will include the following four pages:
 
 - **Home page:** Users can view all questions available on the platform.
 - **Bookmark page:** A dedicated space to view bookmarked questions, similar to the ones marked on the home page.
-- **Profile page:** This section allows users to view and manage their profile and settings.
 - **Add page:** A page for users to create new questions by submitting a question, answer, and hashtag.
+- **Profile page:** This section allows users to view and manage their profile and settings.
 
 ## Template
 
