@@ -85,7 +85,7 @@ Create the profile page in the same way you created the other two pages.
 
 > 💡 The counter and switch don't have to work for now, we will implement this later.
 
-## Recommendation
+## Recommendations
 
 ### Separate the Quiz App CSS code into different files
 
