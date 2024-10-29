@@ -38,7 +38,7 @@ Alternatively, you can keep working with the Quiz App you built in Recap Project
 
 ## Resources
 
-Download the require [Icons](https://lucide.dev/icons/) and save it in an "assets" folder within your app's main directory.
+Download the required [Icons](https://lucide.dev/icons/) and save them in an "assets" folder within your app's main directory.
 
 ## Deploying Your Project
 
