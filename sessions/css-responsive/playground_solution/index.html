@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Playground</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Let's play!</h1>
+      <section class="playground">
+        <section class="section">
+          <h3>Part 1</h3>
+          <p>
+            I currently have a fixed width. Can you replace it with a relative
+            unit so my width changes based on the size of my parent element?
+          </p>
+          <div class="box box--one">🫐</div>
+        </section>
+        <section class="section">
+          <h3>Part 2</h3>
+          <p>
+            I want my width to change to <strong>200px</strong> when the
+            viewport is wider than 599px, and to <strong>400px</strong> when the
+            viewport is wider than 1199px.
+          </p>
+          <div class="box box--two">🍏</div>
+        </section>
+        <section class="section">
+          <h3>Part 3</h3>
+          <p>
+            I want to be <strong>flat</strong> when viewed in landscape mode.
+          </p>
+          <div class="box box--three">🍉</div>
+        </section>
+        <section class="section">
+          <h3>Part 4</h3>
+          <p>
+            I want my background-color to change when
+            <strong>dark mode</strong> is enabled.
+          </p>
+          <div class="box box--four">🥥</div>
+        </section>
+
+        <section class="section">
+          <h3>Bonus (The &lt;picture&gt; Element)</h3>
+          <p>
+            I want to automatically switch images when the viewport width is
+            above 599px and then again above 1199px. Take a look at the img
+            folder for options to use.
+          </p>
+          <div class="box box--five">
+            <!-- You might want to use the <picture> element here. -->
+            <picture>
+              <source
+                media="(min-width: 600px) and (max-width: 1199px)"
+                srcset="./img/cat_medium.jpg"
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="./img/cat_large.jpg"
+              />
+              <img src="./img/cat_small.jpg" alt="A cat" />
+            </picture>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
