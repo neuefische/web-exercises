@@ -7,9 +7,24 @@ Make sure to take a good look at the preview screens.
 ## Task
 
 - Familiarize yourself with the `./index.html` and `./css/styles.css` files.
-- Determine how many breakpoints you need to implement.
-- Identify what needs to change to meet the visual guidelines established in the preview screens.
+- Review the preview screens below to get an idea of the necessary adjustments.
+- Determine the number of breakpoints to achieve a responsive layout.
+- Identify the changes needed to meet the visual guidelines shown in the preview screens.
 - ... enjoy!
+
+### Preview Screens
+
+#### Mobile Screens
+
+![Mobile - 1](assets/mobile_1.png) ![Mobile - 2](assets/mobile_2.png)
+
+#### Tablet Screen
+
+![Tablet](assets/tablet.png)
+
+#### Desktop Screen
+
+![Desktop](assets/desktop.png)
 
 ---
 
