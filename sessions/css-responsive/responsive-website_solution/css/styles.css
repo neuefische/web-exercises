@@ -1,9 +1,8 @@
 /* ==[ ATTENTION! ]== */
 
-/* I've made use of native CSS variables and calculations to give you an idea
-of how they work and how they can be useful. You don't need to adjust these
-to complete the challenge. Feel free to take a look, then scroll down to
-the start of the introduction. */
+/* We have made use of native CSS variables and calculations here to demonstrate their functionality and usefulness. 
+You don't need to adjust these to complete the challenge. Feel free to take a look, then scroll down to the start 
+of the introduction. */
 
 @import "fonts.css";
 
@@ -41,31 +40,30 @@ the start of the introduction. */
   /* Calculating the nav height */
   --nav-height: calc(var(--regular-line-height) + (2 * var(--gap)));
 
-  /* Calculating the exact margin required to put the main content
-    right under the header and nav*/
+  /* Calculating the exact margin required to position the main content
+    directly below the header and nav*/
   --main-content-margin-top: calc(var(--header-height) + var(--nav-height));
 }
 
 /* ==[ INTRODUCTION ]== */
 
-/* !-- In short: Look at the selectors, then scroll down to the bottom of the file. 
-Write your media queries there. --! */
+/* In short: Look at the selectors, then scroll down to the bottom of the file to add your media queries. */
 
-/* Hint 1: Investigate! Take a good, long look at the previews to find out 
-which elements need to change at what point. It's always useful to change
-the size of your viewport or to take a look at the dev tools.
-Your solution doesn't need to be pixel-perfect. If it looks close enough,
-it's fine. Your main objective is to understand the concept of media queries.
-Once you feel ready to write your media queries, scroll down further to where
-you'll find the prompts to write your code.*/
+/* Hint 1: Investigate! Take a good, long look at the preview screens to identify 
+which elements need adjustments and at what screen sizes. 
+Changing your viewport size or using the developer tools is often helpful.
+Your solution doesn't need to be pixel-perfect. If it looks close enough, it's fine. 
+Your main objective is to understand the concept of media queries.
+Once you feel ready to write your media queries, scroll down to find prompts where you can write your code.*/
 
 /* Hint 2: You do NOT need to change the HTML to complete this challenge. */
 
 /* Hint 3: Sometimes small changes lead to BIG results. */
 
-/* Hint 4: Maybe you need a special selector to make changes to just one
-element at some point. Perhaps take another look at your CSS Selectors handout
-if you're unsure. */
+/* Hint 4: You may need a specific selector to change just one element. 
+If you're unsure, refer to your CSS Basics handout. */
+
+/* Hint 5: CSS Grid might come in handy for certain layouts. Refer to your CSS Flexbox handout for more details! */
 
 *,
 *::before,
@@ -130,8 +128,7 @@ body {
 }
 
 /* Page Content */
-/* Note: understanding what main-content and card-section do is
-fairly essential to completing this challenge. */
+/* Note: Understanding the purpose of main-content and card-section is essential for completing this challenge. */
 
 .main-content {
   margin-top: var(--main-content-margin-top);
@@ -238,99 +235,53 @@ fairly essential to completing this challenge. */
 
 /* ==[ MEDIA QUERIES & BREAKPOINTS ]== */
 
+/* Now it's your turn! Use media queries to partially overwrite our
+CSS based on conditions such as viewport width, etc. */
+
 /* Media Query Tablet */
-@media (min-width: 768px) {
+@media screen and (min-width: 900px) {
   .card-section {
     display: grid;
-    grid-template-areas:
-      "forest intro"
-      "mountain river"
-      "ocean desert";
-    grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-  }
 
-  .intro-text {
-    grid-area: intro;
-  }
-  .--forest {
-    width: calc(100% - var(--gap));
-    grid-area: forest;
-    margin-left: var(--gap);
-  }
+    /* Adjustments to better match the expected design */
+    padding: 0 20px;
+    align-items: start;
+    gap: var(--gap) calc(var(--gap) * 2);
+    /* End of adjustments */
 
-  .--mountain {
-    width: calc(100% - var(--gap));
-    grid-area: mountain;
-    margin-left: var(--gap);
-  }
-
-  .--river {
-    grid-area: river;
-    width: calc(100% - var(--gap));
-  }
-
-  .--ocean {
-    grid-area: ocean;
-    width: calc(100% - var(--gap));
-    margin-left: var(--gap);
-  }
-
-  .--desert {
-    width: calc(100% - var(--gap));
-    grid-area: desert;
+    .product-card,
+    .intro-text {
+      width: 100%;
+    }
   }
 }
 
 /* Media Query Desktop */
-@media (min-width: 1024px) {
-  .card-section {
-    display: grid;
+@media screen and (min-width: 1200px) {
+  body,
+  .main-header,
+  .navbar {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    grid-template-areas:
-      "forest forest forest forest"
-      "intro intro mountain mountain"
-      "river river ocean ocean"
-      ". desert desert .";
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+  .card-section {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
+  .product-card,
   .intro-text {
-    grid-area: intro;
-    margin-left: var(--gap);
-    width: calc(100% - 2 * var(--gap));
-    align-self: flex-start;
+    grid-column: span 2;
   }
+
   .--forest {
-    width: calc(100% - 2 * var(--gap));
-    grid-area: forest;
-    margin-left: var(--gap);
-    margin-right: var(--gap);
-  }
-
-  .--mountain {
-    width: calc(100% - 2 * var(--gap));
-    grid-area: mountain;
-    margin-left: var(--gap);
-    margin-right: var(--gap);
-  }
-
-  .--river {
-    grid-area: river;
-
-    margin-right: var(--gap);
-    margin-left: var(--gap);
-  }
-
-  .--ocean {
-    grid-area: ocean;
-    width: calc(100% - 2 * var(--gap));
-    margin-left: var(--gap);
-    margin-right: var(--gap);
+    grid-column: 1 / 5;
+    height: 400px;
   }
 
   .--desert {
-    grid-area: desert;
+    grid-column: 2 / span 2;
   }
 }
