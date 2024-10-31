@@ -45,7 +45,17 @@ Download a [Favorite Icon](https://lucide.dev/icons/) and save it in an "assets"
 
 ## Tasks
 
-In this app, users will have access to a **Spotlight**, **Gallery**, **Favorite**, and **Detail** page.
+This app will include four main pages: **Spotlight**, **Gallery**, **Favorite**, and **Detail**.
+
+Each page will need access to the information from the API. Consider where to fetch and store the art piece data to ensure that all pages can easily access it.
+
+<details>
+<summary>Hints 🙈</summary>
+In Next.js, the place to store data or states that need to be accessed across the app is in `_app.js`.
+
+It's best practice to consolidate related information in a single state. However, if you're not comfortable with this approach, you can use separate states. Keep in mind that you’ll need to identify which information corresponds to each art piece, so consider saving the slug or a unique identifier in each state to maintain clarity.
+
+</details>
 
 ### 1. Spotlight Page
 
@@ -178,7 +188,7 @@ To achieve this, we’ll divide the tasks into two parts:
 - [ ] The favorite button is **NOT** displayed in the spotlight view.
 - [ ] Clicking the favorite button on a non-favorite piece saves it as a favorite.
 - [ ] Clicking the favorite button on a favorited piece removes it from favorites.
-- [ ] The favorite state of an art piece is visually highlighted by changing the color of the favorite button. 
+- [ ] The favorite state of an art piece is visually highlighted by changing the color of the favorite button.
 
 #### Tasks
 
