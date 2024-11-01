@@ -185,7 +185,7 @@ To achieve this, we’ll divide the tasks into two parts:
 
 - [ ] The favorite button is displayed on each entry in the list view.
 - [ ] The favorite button is displayed in the details view.
-- [ ] The favorite button is **NOT** displayed in the spotlight view.
+- [ ] The favorite button is displayed in the spotlight view.
 - [ ] Clicking the favorite button on a non-favorite piece saves it as a favorite.
 - [ ] Clicking the favorite button on a favorited piece removes it from favorites.
 - [ ] The favorite state of an art piece is visually highlighted by changing the color of the favorite button.
