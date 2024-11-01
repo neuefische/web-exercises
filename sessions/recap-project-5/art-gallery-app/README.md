@@ -79,7 +79,6 @@ This page will serve as the app's homepage. A random art piece image, along with
 
 - [ ] Write a function to select a random art piece. [Refer to this resource](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random#examples).
 - [ ] Create a new component for the Spotlight page.
-- [ ] Write tests for the Spotlight component.
 
 ### 2. Gallery Page
 
@@ -104,7 +103,6 @@ The Gallery page will display a list of all art pieces. Each art piece's image, 
 
 - [ ] Create a component to render the list of art pieces.
 - [ ] Create a component to render each Art Piece Preview.
-- [ ] Write tests for the Art Piece Preview and List of Art Pieces components.
 
 ### 3. App Navigation Design
 
@@ -129,7 +127,6 @@ Since we have multiple pages, we want to enable smooth navigation between them. 
 
 - [ ] Create a Navigation component that renders all navigation links.
 - [ ] Render the Navigation component only once, ensuring it appears on all pages.
-- [ ] Write tests for the Navigation component to confirm that the links are rendered correctly.
 
 ### 4. Art Piece Details Page
 
@@ -158,7 +155,6 @@ When a user clicks on an art piece, they should see all detailed information abo
 
 - [ ] Create a new component for displaying Art Piece Details.
 - [ ] Create a single dynamic page that renders the Art Piece Details, displaying information for the selected art piece.
-- [ ] Write tests for the Art Piece Details component to confirm that all information is rendered correctly.
 
 ### 5. Favorite Page
 
@@ -194,7 +190,6 @@ To achieve this, we’ll divide the tasks into two parts:
 
 - [ ] Create a new component for the favorite button.
 - [ ] Store this additional information (favorite status) in a state. We will also be adding comments to each art piece, so consider how to store both types of information together.
-- [ ] Write tests to verify that the favorite button appears in the list view and details view but is not shown in the spotlight.
 
 ### 5.2. Favorite Listing Page
 
@@ -219,7 +214,6 @@ To achieve this, we’ll divide the tasks into two parts:
 #### Tasks
 
 - [ ] Reuse an existing component to display only the favorite art pieces.
-- [ ] Write tests to verify that the navigation link labeled "Favorites" is displayed in all pages.
 
 <details>
 <summary>Hint ✨</summary>
@@ -227,7 +221,30 @@ You could write a new function for checking whether an art Piece is favorite.
 
 </details>
 
-### 6. Comments for Art Pieces
+### 6. Testing Components
+
+As developers, we aim to avoid repetitive manual testing by automating component tests.
+
+#### Value Proposition
+
+**As a** programmer
+
+**I want to** automate component testing
+
+**so that** I can identify bugs more easily.
+
+#### Acceptance Criteria
+
+- [ ] Automated tests cover all core components, ensuring they render and function as expected.
+
+#### Tasks
+
+- [ ] Write tests for the Spotlight component.
+- [ ] Write tests for the Art Piece Preview and List of Art Pieces components.
+- [ ] Write tests for the Navigation component to confirm that links are rendered correctly.
+- [ ] Write tests for the Art Piece Details component to confirm that all details are displayed correctly.
+
+### 7. Comments for Art Pieces
 
 To enhance user engagement, we’ll add a commenting feature that allows users to write and view comments on each art piece. A comment section will be displayed on the details page, showing comments specifically for the art piece being viewed.
 
@@ -251,9 +268,8 @@ To enhance user engagement, we’ll add a commenting feature that allows users t
 #### Tasks
 
 - [ ] Create at least two new components for managing and displaying comments.
-- [ ] Write tests for the comments components to ensure that all information is displayed correctly.
 
-### 7. Persist Favorites and Comments in the Browser
+### 8. Persist Favorites and Comments in the Browser
 
 Currently, all data is saved using `useState`, meaning it’s lost upon page refresh. To improve the user experience, we want to persist data in local storage. Keep in mind that when there is no data in local storage, we’ll need to fetch everything from the API.
 
@@ -293,3 +309,11 @@ To enrich the information displayed on the details page, we’ll add a color pal
 #### Tasks
 
 - [ ] Create a new component for displaying the color palette.
+
+## Bonus
+
+### More Testing
+
+- [ ] Write tests for the comments components to ensure that all information is displayed correctly.
+- [ ] Write tests for the color palette that it is displayed correctly on the details page.
+
