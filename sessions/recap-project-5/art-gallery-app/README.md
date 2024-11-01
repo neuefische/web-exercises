@@ -291,7 +291,8 @@ To enhance user engagement, we’ll add a commenting feature that allows users t
 
 #### Tasks
 
-- [ ] Create at least two new components for managing and displaying comments.
+- [ ] Create at least two new components: one for managing the comment input and submission, and another for displaying the list of comments.
+- [ ] Store the comment information in a state. You can either create a new state specifically for comments or add this information to an existing state, ensuring it’s easily accessible for each relevant art piece.
 
 ### 8. Persist Favorites and Comments in the Browser
 
