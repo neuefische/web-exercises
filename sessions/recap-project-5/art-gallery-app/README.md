@@ -178,17 +178,27 @@ It’s best practice to consolidate related information into a single state. How
 
 **Example:**
 
-- **Using Multiple States:**
-
-   ```js
-   const [carColors, setCarColors] = useState({ model: "vw-taos", colors: ["red", "blue", "white"] });
-   const [carAutomatic, setCarAutomatic] = useState({ model: "vw-taos", automatic: true });
-   ```
-
 - **Using a Single State:**
 
    ```js
-   const [car, setCar] = useState({ model: "vw-taos", colors: ["red", "blue", "white"], automatic: true });
+   const [carInfo, setCarInfo] = useState([
+      { model: "vw-taos", colors: ["red", "blue", "white"], automatic: true }, 
+      { model: "vw-golf", colors: [ "black", "white"], automatic: false }
+      ]);
+   ```
+
+- **Separate States per information:**
+
+   ```js
+   const [carColors, setCarColors] = useState([
+      { model: "vw-taos", colors: ["red", "blue", "white"] }, 
+      { model: "vw-golf", colors: [ "black", "white"] }
+      ]);
+   
+   const [carAutomatic, setCarAutomatic] = useState([
+      { model: "vw-taos", automatic: true }, 
+      { model: "vw-golf",, automatic: false }
+      ]);
    ```
 
 </details>
