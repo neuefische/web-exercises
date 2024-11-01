@@ -50,8 +50,8 @@ This app will include four main pages: **Spotlight**, **Gallery**, **Favorite**,
 Each page will need access to the information from the API. Consider where to fetch and store the art piece data to ensure that all pages can easily access it.
 
 <details>
-<summary>Hints 🙈</summary>
-In Next.js, the place to store data or states that need to be accessed across the app is in `_app.js`.
+<summary>Hint ✨</summary>
+In Next.js, the place to store data or states that need to be accessed across the app is in <code>_app.js</code>.
 
 It's best practice to consolidate related information in a single state. However, if you're not comfortable with this approach, you can use separate states. Keep in mind that you’ll need to identify which information corresponds to each art piece, so consider saving the slug or a unique identifier in each state to maintain clarity.
 
@@ -220,6 +220,12 @@ To achieve this, we’ll divide the tasks into two parts:
 
 - [ ] Reuse an existing component to display only the favorite art pieces.
 - [ ] Write tests to verify that the navigation link labeled "Favorites" is displayed in all pages.
+
+<details>
+<summary>Hint ✨</summary>
+You could write a new function for checking whether an art Piece is favorite.
+
+</details>
 
 ### 6. Comments for Art Pieces
 
