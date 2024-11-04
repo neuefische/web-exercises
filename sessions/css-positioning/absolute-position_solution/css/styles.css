@@ -29,11 +29,11 @@ main {
 
 /**
  * Look at the selectors defined below.
- * Position each element, so that the placement matches the name of the selector.
- * Adjust the rule-sets for each selector to satisfy the name.
+ * Position each element so that its placement matches the name of the selector.
+ * Adjust the rule sets for each selector to achieve the correct positioning.
  *
  * @example
- * .box--top-left -> This element should be placed in the top, left corner.
+ * .box--top-left -> This element should be placed in the top-left corner.
  */
 
 .box--top-left {
