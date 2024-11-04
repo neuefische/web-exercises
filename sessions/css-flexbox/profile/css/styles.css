@@ -15,9 +15,9 @@ body {
 }
 
 .profile__image {
+  object-fit: cover;
   border-radius: 50%;
   max-width: 50%;
-  height: auto;
 }
 
 .tech-stack__list {
