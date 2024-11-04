@@ -7,7 +7,7 @@ They should return the result of the respective calculation:
 - subtract: the difference between the two numbers
 - multiply: the product of the numbers
 - divide: the division of the two numbers
-- remainder: the modulo or remainder of of "a modulo b"
+- remainder: the modulo or remainder of "a modulo b"
 */
 
 function add(a, b) {
