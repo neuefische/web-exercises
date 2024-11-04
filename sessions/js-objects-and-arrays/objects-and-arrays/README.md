@@ -1,21 +1,21 @@
-# Objects and Arrays
+# JS Objects and Arrays: Objects and Arrays
 
 ## Task
 
 In this exercise, you will encounter the following tasks:
 
-- assign a variable to a value of an array with several objects,
-- the value can correspond to a simple data type as well as to an array or object.
+- Assign a variable to a value within an array containing multiple objects.
+- Work with values that may correspond to a simple data type, an array, or an object.
 
-Please switch to the `index.js` file to start the exercises. You will find the exact tasks there.
+Please switch to the `index.js` file to begin the exercises, where you’ll find the specific instructions.
 
-If you want to check whether you solved the tasks correctly, run `npm run test` and check the test results in the console.
+To check if you’ve solved the tasks correctly, run `npm run test` and review the test results in the console.
 
 ## Notes
 
-- You only have to touch the `index.js` file.
-- This project is JavaScript only. Please check the browser console (<kbd>⌥</kbd><kbd>⌘</kbd><kbd>I</kbd>) for the output or run the tests to see the results.
-- This challenge includes **tests** for the first time. Instructions on how to execute them can be found below in the third section of "Development".
+- You only need to touch the `index.js` file.
+- This project is JavaScript-only. Please check the browser console (<kbd>⌥</kbd><kbd>⌘</kbd><kbd>I</kbd>) for the output or run the tests to see the results.
+- This challenge includes **tests** for the first time, with instructions on running them below in the “Development” section.
 
 ## Development
 
