@@ -1,6 +1,4 @@
-/*
-Goal: Add a second button, that changes the input to lowercase after clicking on it.
-*/
+console.clear();
 
 const input = document.querySelector('[data-js="first-input"]');
 const uppercaseButton = document.querySelector('[data-js="button-uppercase"]');
