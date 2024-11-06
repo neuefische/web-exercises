@@ -1,44 +1,42 @@
-# For...in Loop and Select Navigation
+# JS Loops: Select and Navigation Bar
 
-We can use loops for creating HTML elements. In this challenge, the website needs a select input with language options and a navigation bar. Let's do this with the help of `for...in`!
+We can use loops for creating HTML elements. In this challenge, the goal is to generate a dropdown menu with language options and a navigation bar, using a `for...in` loop!
 
 ## Task
 
 ### Part 1: Creating a Select Input
 
-Looking at the `./js/index.js` , there is a `languages` object with some key-value pairs. Additionally, a `select` element with the name "languages" is created and appended to the main element.
+In `./js/index.js`, you’ll find a `languages` object with key-value pairs. A `select` element with the name “languages” has also been created and appended to the `main` element.
 
-Iterate through the `languages` object using `for...in` and add the `option` elements for this dropdown menu.
+Use a `for...in` loop to iterate over the `languages` object and add `option` elements to the dropdown menu.
 
-The following hints may guide you:
+Hints:
 
-- Create one `option` element for each entry in `languages`.
-- For each option, set its `value` and `textContent` to the value of each entry in `languages`. You will need bracket notation, e.g. `languages[myIteratorName]`.
-- Don't forget to append each option!
+- Create an `option` element for each entry in `languages`.
+- Set each option's `value` and `textContent` to the value from `languages`, using bracket notation (e.g. `languages[myIteratorName]`).
+- Remember to append each `option` to the `select` element!
 
 ### Part 2: Creating a Navigation Bar
 
-Before we create a navigation bar, let's have a look what's already there in `./js/index.js` :
+Before building the navigation bar, let’s see what’s provided in `./js/index.js`:
 
-- There is a `nav` object with the keys "home", "about", and "contact".
-- Each value is an object containing an "href" and "text" key and a string value.
-- A `nav` and `ul` element is created and appended to the `main` element.
+- A `nav` object with keys ("home", "about", and "contact") is available.
+- Each key's value is an object with `href` and `text` properties.
+- `nav` and `ul` elements have already been created and appended to the `main` element.
 
-Your task is to fill this list with list items and anchor tags; as content, use the `nav` object which you can access with a `for...in` loop.
+Your task is to fill this list with list items containing anchor tags. Use the `nav` object in a `for...in` loop.
 
-Use the following hints as a guideline:
+Guidelines:
 
 - Write a `for...in` loop for the `nav` object.
-- In each iteration,
-  - create a list item and an anchor tag
-  - set the anchor tag's `href` and `textContent` properties to the relevant values of the `nav` object; you want to use bracket notation with your iterator variable
-  - append your created items accordingly.
+- In each iteration:
+  - Create a list item and an anchor tag.
+  - Set the anchor's `href` and `textContent` properties using values from the `nav` object, accessed via bracket notation and the iterator variable.
+  - Append the list item and anchor tag to their respective parent elements.
 
-Please switch to the `./js/index.js` file and be a navigator!
+Switch to `./js/index.js` to begin!
 
 ## Development
-
-### Local Development
 
 To work locally, please install the dependencies using `npm i` first.
 

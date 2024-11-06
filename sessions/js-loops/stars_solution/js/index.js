@@ -3,10 +3,11 @@ console.clear();
 const starContainer = document.querySelector('[data-js="star-container"]');
 
 function renderStars(filledStars) {
-  // reset the star container before rerendering stars
+  // Reset the star container before re-rendering stars
   starContainer.innerHTML = "";
 
-  //--v-- your code here --v--
+  // --v-- write or modify code below this line --v--
+
   for (let i = 1; i <= 5; i++) {
     const star = document.createElement("img");
     star.src =
@@ -18,7 +19,7 @@ function renderStars(filledStars) {
 
     starContainer.append(star);
   }
-  //--^-- your code here --^--
+  // --^-- write or modify code above this line --^--
 }
 
 renderStars(3);

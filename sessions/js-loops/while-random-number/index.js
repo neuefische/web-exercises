@@ -1,13 +1,11 @@
 console.clear();
 
-// `while` loop
-
 let number = 0;
 let count = 0;
 
-// --v-- write/change code here --v--
+// --v-- write or modify code below this line --v--
 
-// --^-- write/change code here --^--
+// --^-- write or modify code above this line --^--
 
 console.log(
   `The number that ended the loop was ${number} and it took ${count} rounds to do this!`

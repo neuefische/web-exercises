@@ -1,21 +1,19 @@
-# Pixels
+# JS Loops: Pixels
 
-In this challenge we go one dimension higher and will draw pixels from a "2d" array.
+In this challenge, we’ll add another dimension and draw pixels using a “2D” array.
 
 ## Task
 
-Use the color values in the array `pixelValues` to create "pixel" elements and append them to the `canvas` element.
+Use the color values in the `pixelValues` array to create "pixel" elements and append them to the `canvas` element.
 
-- use `for` loops to generate the pixel elements
-- pixels should be a `div` element with the class `pixel` and the background color set to respective color from the `pixelValues` array.
-- You can append all pixels directly to the canvas, no need for extra row grouping etc.
-- Hint: The colors are stored in Arrays inside another Array. How can you access these values with for loops?
+- Use `for` loops to generate the pixel elements.
+- Each pixel should be a `div` element with the class `pixel` and have a background color set to the respective color from the `pixelValues` array.
+- Append all pixels directly to the canvas - no additional row grouping is necessary.
+- Hint: The colors are stored as arrays within another array. Consider how you can access these values with nested `for` loops.
 
-Switch to the `./js/index.js` file and make something great happen!
+Switch to the `./js/index.js` file and bring your pixel art to life!
 
 ## Development
-
-### Local Development
 
 To work locally, please install the dependencies using `npm i` first.
 

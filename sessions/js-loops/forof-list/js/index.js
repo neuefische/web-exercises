@@ -2,8 +2,6 @@ console.clear();
 
 const main = document.querySelector('[data-js="main"]');
 
-// Create a list from an array
-
 const ol = document.createElement("ol");
 main.append(ol);
 
@@ -17,6 +15,6 @@ const programmingLanguages = [
   "Ruby",
 ];
 
-// --v-- write/change code here --v--
+// --v-- write or modify code below this line --v--
 
-// --^-- write/change code here --^--
+// --^-- write or modify code above this line --^--
