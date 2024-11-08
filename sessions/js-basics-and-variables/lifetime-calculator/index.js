@@ -1,19 +1,22 @@
 console.clear();
 
 /*
-Let's calculate some interesting facts based on the age of a user! It is expected that the user of this program provides a number as the input. The code for receiving this input is provided below.
+Let's calculate some interesting facts based on a user's age! 
+The program expects the user to provide their age as a numerical input. 
+The code for receiving this input is provided below.
 
 Calculate the following:
-- The number of days the person has lived.
-- The expected number of remaining days for the person. Use an expected life span of 80 years.
-- The percentage of already lived days in relation to the life expectancy.
-- The cumulative number of days the person already slept in their life. Assume the person sleeps on average 8 hours per day.
+1. The total number of days the person has lived.
+2. The estimated number of remaining days, assuming an average life span of 80 years.
+3. The percentage of life already lived, in relation to the expected life span.
+4. The cumulative number of days the person has spent sleeping, assuming an average of 8 hours of sleep per day.
 
-Make sure to log every number with a nice descriptive text. Hint: you can combine text by using "+"
+Log each result with a clear and descriptive message. 
+Hint: You can combine text and variables using the `+` operator.
 
-💡 You can ignore leap years.
+💡 For simplicity, ignore leap years.
 */
 
-const currentAge = Number(process.argv[2]); // this gives you the <age> the user entered in the command "nodex index.js <age>"
+const currentAge = Number(process.argv[2]); // This takes the `<age>` entered in the command `node index.js <age>`.
 
 console.log("Your current age is: " + currentAge);
