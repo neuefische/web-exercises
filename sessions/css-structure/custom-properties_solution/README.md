@@ -2,7 +2,7 @@
 
 The CSS code in this challenge references three different colors multiple times. Use custom properties (variables) to extract them for easier maintenance.
 
-## Task
+## Tasks
 
 Open the `./css/styles.css` file and identify the three colors that are used repeatedly. Note that not all instances of the same color follow the same syntax.
 

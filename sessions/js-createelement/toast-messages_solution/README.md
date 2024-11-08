@@ -1,6 +1,6 @@
 # toast-messages
 
-## Task
+## Tasks
 
 In the bottom right corner you can find a toast messages container with one entry.
 

@@ -2,7 +2,7 @@
 
 This app should load and display a list of Pokémon.
 
-## Task
+## Tasks
 
 Open the file `./src/components/PokemonList.jsx`.
 
@@ -22,8 +22,6 @@ _Hint:_ Don't forget the dependency array!
 To work locally, please install the dependencies using `npm i` first.
 
 Run `npm run dev` to start a development server and open the displayed URL in a browser.
-
-
 
 ### Scripts
 

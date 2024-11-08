@@ -2,7 +2,7 @@
 
 We can use loops for creating HTML elements. In this challenge, the goal is to generate a dropdown menu with language options and a navigation bar, using a `for...in` loop!
 
-## Task
+## Tasks
 
 ### Part 1: Creating a Select Input
 

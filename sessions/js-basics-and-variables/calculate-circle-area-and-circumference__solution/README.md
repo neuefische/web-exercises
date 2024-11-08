@@ -1,6 +1,6 @@
 # JS Basics and Variables: Calculate Circle Area and Circumference
 
-## Task
+## Tasks
 
 In this challenge, you’ll create a program to calculate the area and circumference of a circle.
 

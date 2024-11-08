@@ -4,7 +4,7 @@ In this challenge, you'll further expand a fish shop. This time, you'll update a
 
 > 💡 You can use this template as a starting point. But if you are far enough along with your own Fish Shop App, please use that instead.
 
-## Task
+## Tasks
 
 ### Prepare your Database
 

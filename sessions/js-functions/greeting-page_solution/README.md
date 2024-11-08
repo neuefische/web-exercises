@@ -1,6 +1,6 @@
 # greeting-page
 
-## Task
+## Tasks
 
 ## Notes
 

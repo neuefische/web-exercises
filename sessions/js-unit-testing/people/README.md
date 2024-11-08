@@ -2,7 +2,7 @@
 
 This exercise lets you perform Test Driven Development: writing the test first and implement the function afterwards. Let's do it!
 
-## Task
+## Tasks
 
 Have a look at the following files:
 

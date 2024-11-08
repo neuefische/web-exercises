@@ -1,6 +1,6 @@
 # selectors-and-cascading
 
-## Task
+## Tasks
 
 - Open the `./css/styles.css` file and follow the instructions given there.
 

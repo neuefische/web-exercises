@@ -2,7 +2,7 @@
 
 This challenge offers a some exercises to recap the array method `map`. Let's dive directly into it!
 
-## Task
+## Tasks
 
 In the `./index.js` file, there is a `cards` array with three objects.
 

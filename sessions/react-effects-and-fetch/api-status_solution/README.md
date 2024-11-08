@@ -2,7 +2,7 @@
 
 This App offers an interface to check the status of an API.
 
-## Task
+## Tasks
 
 Look at the `./src/components/StatusCheck/index.jsx` file.
 

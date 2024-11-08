@@ -1,6 +1,6 @@
 # simple-calculator
 
-## Task
+## Tasks
 
 ## Notes
 

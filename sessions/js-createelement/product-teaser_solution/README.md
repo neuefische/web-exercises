@@ -1,6 +1,6 @@
 # product-teaser
 
-## Task
+## Tasks
 
 This exercise includes an example of a product teaser for an online shop. Please append a second product teaser to the page with JavaScript based on the data given in the `index.js` file.
 

@@ -1,6 +1,6 @@
 # JS Inputs and Strings: Multiple Inputs
 
-## Task
+## Tasks
 
 Implement the following functionalities within the `index.js` file:
 

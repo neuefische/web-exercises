@@ -2,7 +2,7 @@
 
 We can use loops to iterate through an array and perform actions on each item. Let's create HTML elements with the help of a `for...of` loop and a given array!
 
-## Task
+## Tasks
 
 In `./js/index.js`, you'll find:
 

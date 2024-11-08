@@ -1,6 +1,6 @@
 # CSS Structure: The Taco Truck
 
-## Task
+## Tasks
 
 The owner of The Taco Truck has realized that his website's design needs frequent updates due to changing menu items and offers. To make future updates easier, the CSS needs to be restructured for improved maintainability and readability. Your colleague started this task but is now on holiday, so you'll need to take over.
 

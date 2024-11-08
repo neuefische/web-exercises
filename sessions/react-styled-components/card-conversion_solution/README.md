@@ -2,7 +2,7 @@
 
 We currently have a `Card` component that is styled using `BEM`. Let's change it to use `styled components`. The initial setup for `styled components` has been completed for you.
 
-## Task
+## Tasks
 
 ### Redo the `Card` component to use `styled components`
 

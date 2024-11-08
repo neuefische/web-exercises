@@ -4,7 +4,7 @@ In the `./src/App.jsx` file, there is a form in which you can enter your favouri
 
 Unfortunately, the form is not working correctly. Let's fix that!
 
-## Task
+## Tasks
 
 Switch to the `./src/App.jsx` file and refactor the `handleSubmit` function so that
 
@@ -30,8 +30,6 @@ When submitting the form, the form fields should be reset and the `holiday` fiel
 To work locally, please install the dependencies using `npm i` first.
 
 Run `npm run dev` to start a development server and open the displayed URL in a browser.
-
-
 
 ### Scripts
 

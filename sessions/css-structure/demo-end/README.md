@@ -8,7 +8,7 @@ This challenge offers a simple static website. Let's make it more gorgeous with 
 
 -->
 
-## Task
+## Tasks
 
 <!--
 

@@ -2,7 +2,7 @@
 
 Click the button "Show Message" to render a hidden message to the UI. The App will crash because there is a bug in the code. You won't see the hidden message, but an error regarding the `useState` hook being conditionally rendered.
 
-## Task
+## Tasks
 
 Switch to the `./src/App.jsx` file and make yourself familiar with the App.
 

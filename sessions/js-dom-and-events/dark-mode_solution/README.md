@@ -2,7 +2,7 @@
 
 This challenge offers a website with three buttons that currently have no functionality. Let’s add interactivity so the user can switch between light and dark modes, depending on their current mood.
 
-## Task
+## Tasks
 
 Add interactivity to this website. Use the following hints as a guideline:
 

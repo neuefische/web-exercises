@@ -4,7 +4,7 @@ This challenge focuses on making a website responsive via media queries and brea
 
 Make sure to take a good look at the preview screens.
 
-## Task
+## Tasks
 
 - Familiarize yourself with the `./index.html` and `./css/styles.css` files.
 - Review the preview screens below to get an idea of the necessary adjustments.

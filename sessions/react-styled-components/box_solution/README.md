@@ -4,7 +4,7 @@ Currently, there is a component called [`BoxWithClassName`](./components/BoxWith
 
 This is why there are two boxes displayed, a green and a black one. They become red when you hover over them. Their styling is done via BEM and the `className` attribute.
 
-## Task
+## Tasks
 
 ### Box with Styled Components
 
@@ -13,7 +13,7 @@ Create a new component called `BoxWithStyledComponents`. It should feature the s
 You can use the following hints as guideline:
 
 - Inside of the `components` folder, create a file `BoxWithStyledComponents.js`.
-- It should export a styled component as default export 
+- It should export a styled component as default export
   - Use a `div` element to style
   - Make use of string interpolation to check the `$isBlack` prop and adjust the background-color accordingly
   - Don't forget to add the styling for the hover effect
@@ -26,7 +26,6 @@ You can use the following hints as guideline:
 Using styled components, can you align the four boxes horizontally by only changing `./pages/index.js`?
 
 - Hint: Use `display: flex` to achieve this goal.
-
 
 ## Notes
 

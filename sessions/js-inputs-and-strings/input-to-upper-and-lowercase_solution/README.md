@@ -1,6 +1,6 @@
 # JS Inputs and Strings: Input to Uppercase and Lowercase
 
-## Task
+## Tasks
 
 Convert the input value to lowercase when a second button is clicked.
 

@@ -2,7 +2,7 @@
 
 This challenge will teach you how to use CSS selector combinators to style elements based on their position in the HTML document.
 
-## Task
+## Tasks
 
 Check out the `./index.html` and the `./css/styles.css` files.
 

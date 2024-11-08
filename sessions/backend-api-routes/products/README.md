@@ -5,7 +5,7 @@ In this challenge, you will
 - create an api with two endpoints (for all products and for a single one) and
 - consume these endpoints with `SWR` to render the products in the browser.
 
-## Task
+## Tasks
 
 - Check `./services/productServices.js`: there is an array of products and two functions which return either all or a single product.
 

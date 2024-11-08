@@ -6,7 +6,7 @@ Unfortunately, all buttons show the same text; supposing that different buttons 
 
 Let's use the `children` prop to make the component more flexible!
 
-## Task
+## Tasks
 
 Switch to the `./src/App.jsx` file and
 

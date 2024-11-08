@@ -2,7 +2,7 @@
 
 Pizza is amazing. So we want the most pizza for our money. Let's build a tool that compares two pizza sizes and gives us the net plus in pizza area.
 
-## Task
+## Tasks
 
 ### 1 Calculate the Pizza Gain
 

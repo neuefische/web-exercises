@@ -6,7 +6,7 @@ Depending on the `isActive` variable, a class called `box--active` is added to t
 
 However, the color stays the same because React is not informed to re-render the UI.
 
-## Task
+## Tasks
 
 Refactor the code so that React re-renders the `App` component when `isActive` is changed.
 

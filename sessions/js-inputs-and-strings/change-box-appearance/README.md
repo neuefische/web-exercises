@@ -1,6 +1,6 @@
 # JS Inputs and Strings: Change Box Appearance
 
-## Task
+## Tasks
 
 Change the appearance of the box according to the slider values (color, border radius, and rotation).
 

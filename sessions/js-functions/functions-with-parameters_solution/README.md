@@ -1,6 +1,6 @@
 # JavaScript exercises for functions with parameters
 
-## Task
+## Tasks
 
 ## Notes
 

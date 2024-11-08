@@ -1,6 +1,6 @@
 # CSS Flexbox: Profile
 
-## Task
+## Tasks
 
 Utilize what you've learned about flexbox to complete the following tasks:
 

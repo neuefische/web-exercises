@@ -4,7 +4,7 @@ In the `./src/App.jsx` file, there is a form in which you can enter your favouri
 
 Unfortunately, the form is not working correctly. Let's fix that!
 
-## Task
+## Tasks
 
 Switch to the `./src/App.jsx` file and refactor the `handleSubmit` function so that
 

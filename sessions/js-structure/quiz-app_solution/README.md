@@ -2,7 +2,7 @@
 
 This challenge offers a working Quiz App, but does not use JS Modules. Let's change this lack of structure!
 
-## Task
+## Tasks
 
 Look at the [`index.js`](./index.js) file: what a mess! It contains all necessary functions to keep the app working, but it's very confusing.
 

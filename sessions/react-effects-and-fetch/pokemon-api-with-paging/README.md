@@ -2,7 +2,7 @@
 
 We want to display a list of all Pokémon, but the API returns only `20` Pokémon at a time and has multiple pages. Let's write down the logic to browse through the individual pages.
 
-## Task
+## Tasks
 
 ### The "Next Page" button
 
@@ -31,8 +31,6 @@ You might experience that the app crashes when you are on the first page and cli
 To work locally, please install the dependencies using `npm i` first.
 
 Run `npm run dev` to start a development server and open the displayed URL in a browser.
-
-
 
 ### Scripts
 

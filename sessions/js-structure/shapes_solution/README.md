@@ -2,7 +2,7 @@
 
 In this challenge you will practice to use the JS modules syntax with `export` and `import` as well as to learn how to think in components.
 
-## Task
+## Tasks
 
 ### Apply random colors
 

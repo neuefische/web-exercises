@@ -2,7 +2,7 @@
 
 In this challenge, you will build a very basic HTTP server which responds with a greeting when the url is called.
 
-## Task
+## Tasks
 
 Switch to the `./server.js` file and build an HTTP server which responds with "Hello, [your name]!".
 
@@ -37,7 +37,6 @@ In the `./index.js` file:
 To work locally, please install the dependencies using `npm i` first.
 
 Run `npm run start` to start the node server and open [localhost:3000](http://localhost:3000) in a browser.
-
 
 ### Scripts
 

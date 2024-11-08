@@ -2,7 +2,7 @@
 
 In this challenge we need to implement filter buttons to show all entries or only favorites.
 
-## Task
+## Tasks
 
 ### Make the filter buttons clickable (optional)
 
@@ -87,7 +87,6 @@ Awesome job! You've worked your way through a rather complex app and coded many 
 To work locally, please install the dependencies using `npm i` first.
 
 Run `npm run dev` to start a development server and open the displayed URL in a browser.
-
 
 ### Scripts
 

@@ -1,6 +1,6 @@
 # progress-bar
 
-## Task
+## Tasks
 
 ## Notes
 

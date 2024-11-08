@@ -2,7 +2,7 @@
 
 In this challenge we want to style the `Link` component from [Next.js](https://nextjs.org/docs/pages/api-reference/components/link). This simple app has 3 pages that we can navigate between with the navbar in `_app.js`.
 
-## Task
+## Tasks
 
 Switch to the `./pages/_app.js` file and make something great happen!
 

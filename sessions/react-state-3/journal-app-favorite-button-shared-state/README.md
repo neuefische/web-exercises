@@ -2,7 +2,7 @@
 
 In this challenge we want to store the favorite feature in the shared state alongside the other entry data.
 
-## Task
+## Tasks
 
 ### Prepare the state for entries
 
@@ -59,8 +59,6 @@ You have successfully refactored your app to have a more concise state handling!
 To work locally, please install the dependencies using `npm i` first.
 
 Run `npm run dev` to start a development server and open the displayed URL in a browser.
-
-
 
 ### Scripts
 

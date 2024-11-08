@@ -6,7 +6,7 @@ This challenge will teach you how to
 - style elements and
 - use pseudo-classes to style elements when they are in a certain state.
 
-## Task
+## Tasks
 
 Check out the `./index.html` and the `./css/styles.css` files.
 

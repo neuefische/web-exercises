@@ -4,7 +4,7 @@ Unlike `for` loops, a `while` loop does not need to know how many times it will 
 
 Let's generate random numbers and stop once they become too large!
 
-## Task
+## Tasks
 
 In `./index.js`, there are two variables:
 

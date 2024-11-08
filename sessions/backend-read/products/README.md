@@ -3,7 +3,7 @@
 In this challenge (and the upcoming ones), you'll create a fish shop.
 You'll read data from your remote MongoDB using `mongoose` and display it in the frontend.
 
-## Task
+## Tasks
 
 ### Introduction
 
@@ -19,6 +19,7 @@ Your task is to refactor the app so that it fetches the data from a remote Mongo
 ### Read Products from Database
 
 Creating a Database and Inserting Multiple Documents:
+
 > 💡 If you haven't completed this task during the Backend MongoDB session challenge, please follow these steps:
 
 - Go to the "Deployments > Database" tab.

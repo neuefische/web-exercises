@@ -1,6 +1,6 @@
 # JS Basics and Variables: Console Methods
 
-## Task
+## Tasks
 
 In this challenge, you’ll explore different console methods to better understand debugging and logging in JavaScript.
 

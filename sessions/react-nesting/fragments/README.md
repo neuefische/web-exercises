@@ -4,7 +4,7 @@ A React component can only return one single element at the top level. Using a `
 
 Let's dive into it and see how React fragments can help here!
 
-## Task
+## Tasks
 
 Look at the `./src/App.jsx` file: there is a `<main>` element containing three `Box` components with different colors.
 
@@ -38,8 +38,6 @@ To fix this, replace the `<div>` with fragments `<></>`: they won't create an HT
 To work locally, please install the dependencies using `npm i` first.
 
 Run `npm run dev` to start a development server and open the displayed URL in a browser.
-
-
 
 ### Scripts
 

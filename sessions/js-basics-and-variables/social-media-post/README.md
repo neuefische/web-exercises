@@ -1,6 +1,6 @@
 # JS Basics and Variables: Social Media Post
 
-## Task
+## Tasks
 
 In this challenge, you’ll create and manipulate data for a simple social media post.
 

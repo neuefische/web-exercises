@@ -10,7 +10,7 @@ After starting a game, you are redirected to `/game`, where you can increase, de
 
 Every finished game is also visible in the `/history` overview.
 
-## Task
+## Tasks
 
 ### Discussion
 

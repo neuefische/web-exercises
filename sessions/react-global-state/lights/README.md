@@ -2,7 +2,7 @@
 
 In this challenge you will automate the lights in your house… well, at least in your browser.
 
-## Task
+## Tasks
 
 - Start the development server and make yourself familiar with the application.
 - Notice that the lights are working as expected but the count of turned on lights on the home page (`/`) is not and the buttons on the `/actions` page are not working.

@@ -1,6 +1,6 @@
 # JS Basics and Variables: Track Your Savings Goals
 
-## Task
+## Tasks
 
 In this challenge, you’ll create a program that calculates your total savings over a specified time period based on your initial balance and monthly contributions.
 

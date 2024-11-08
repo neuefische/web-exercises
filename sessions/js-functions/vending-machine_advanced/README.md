@@ -1,6 +1,6 @@
 # JavaScript exercises for basic functions
 
-## Task
+## Tasks
 
 ### Vending Machine - Advanced ✨
 

@@ -2,7 +2,7 @@
 
 We currently have a `StyledButton` component that is styled using `styled-components`. Let’s extend this by creating a `PrimaryButton` styled component that inherits styles from the `StyledButton` component and adds additional styles.
 
-## Task
+## Tasks
 
 ### Extend the `StyledButton` component to create a `PrimaryButton`
 

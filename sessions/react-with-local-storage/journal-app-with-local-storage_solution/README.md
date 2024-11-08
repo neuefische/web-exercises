@@ -2,7 +2,7 @@
 
 Make your journal entries persistent by saving them to local storage.
 
-## Task
+## Tasks
 
 Install the [`use-local-storage-state`](https://github.com/astoilkov/use-local-storage-state) package and use it to make the journal entries persistent.
 

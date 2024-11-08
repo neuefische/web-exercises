@@ -6,7 +6,7 @@ For now, however, there is only one card. Let's fix this with our newly acquired
 
 After that, you can implement two more features to make the user overview even more shiny!
 
-## Task
+## Tasks
 
 1. Use `Array.map` to create a card for each user in the `USERS` array. Make sure to add a unique key to each card.
 
@@ -23,8 +23,6 @@ After that, you can implement two more features to make the user overview even m
 To work locally, please install the dependencies using `npm i` first.
 
 Run `npm run dev` to start a development server and open the displayed URL in a browser.
-
-
 
 ### Scripts
 

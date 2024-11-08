@@ -1,6 +1,6 @@
 # basic calculations JS js-functions Session
 
-## Task
+## Tasks
 
 - Open the [`index.js`](./index.js) file and follow the instructions given there.
 

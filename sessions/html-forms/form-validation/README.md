@@ -4,7 +4,7 @@ This challenge offers a form where the user can submit a complaint.
 
 In order to process the complaint, the company needs certain information.
 
-## Task
+## Tasks
 
 Make sure that the user submits all relevant information in a correct format.
 
