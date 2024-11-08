@@ -1,0 +1,10 @@
+{
+  "name": "test_test",
+  "version": "0.0.0-unreleased",
+  "description": "test: test",
+  "main": "n.a.",
+  "nf": {
+    "template": "empty"
+  },
+  "private": true
+}

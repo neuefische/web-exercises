@@ -1,0 +1,10 @@
+{
+  "name": "js-basics-and-variables_console-methods",
+  "version": "0.0.0-unreleased",
+  "description": "",
+  "main": "index.js",
+  "nf": {
+    "template": "empty"
+  },
+  "private": true
+}
