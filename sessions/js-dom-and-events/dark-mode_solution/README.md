@@ -1,20 +1,19 @@
-# Dark Mode Example
+# JS DOM and Events: Dark Mode Example
 
-This challenge offers a website with three buttons, but they don't do anything.
-Let's write some code so that the user can decide between lightness and darkness (maybe depending on their current mood).
+This challenge offers a website with three buttons that currently have no functionality. Let’s add interactivity so the user can switch between light and dark modes, depending on their current mood.
 
 ## Task
 
-Add some interactivity to this website. You can use the following hints as guideline:
+Add interactivity to this website. Use the following hints as a guideline:
 
-- if the body has the class "dark", the page is displayed in dark mode
-- query all 3 buttons with the 'data-js' attribute
-- add an event listener to each button:
-  - "switch to dark mode" button always adds the class "dark" to the body
-  - "switch to light mode" button always removes the class "dark" from the body
-  - "toggle mode" button toggles the class "dark" on the body
+- If the `body` has the class "dark", the page displays in dark mode.
+- Select all 3 buttons by their `data-js` attribute.
+- Add an event listener to each button:
+  - The “Switch to Dark Mode” button should add the class "dark" to the `body`.
+  - The “Switch to Light Mode” button should remove the class "dark" from the `body`.
+  - The “Toggle Mode” button should toggle the "dark" class on the `body`.
 
-Switch to the index.js file and find some light where there seems to be only darkness!
+Switch to the `index.js` file to get started and bring some light to this dark page!
 
 ## Development
 
@@ -26,3 +25,11 @@ Run `npm run start` to start a development server and open [localhost:3000](http
 > Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
 
 Use `npm run test` to run the tests.
+
+### Scripts
+
+You can use the following commands:
+
+- `npm run start` to start a development server
+- `npm run test` to run the tests
+- `npm run lint` to run the linter
