@@ -2,11 +2,11 @@
 
 In this challenge, you’ll use JavaScript to add interactivity to a simple calculator. You’ll work with `document.querySelector` and `addEventListener` to perform calculations when buttons are clicked.
 
-## Task
+## Tasks
 
-1. **Examine the HTML**: Open the `index.html` file and take a look at the structure of the calculator. Notice that each button corresponds to a specific operation or action, but the calculator currently has no functionality.
+1. Open the `index.html` file and take a look at the structure of the calculator. Notice that each button corresponds to a specific operation or action, but the calculator currently has no functionality.
 
-2. **Add Functionality**: Open the `./js/index.js` file and complete each step as described in the comments.
+2. Open the `./js/index.js` file and complete each step as described in the comments.
 
    - **Mathematical Operations**: Write code to perform each mathematical operation (addition, subtraction, etc.) when its corresponding button is clicked. Each operation should use `operand1` and `operand2`, then log the result to the console.
    - **Update the First Operand**: Implement functionality to update the value of `operand1` using the buttons in the "Update the First Operand" section. Each button should modify `operand1` and log the updated value.
