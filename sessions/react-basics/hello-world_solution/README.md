@@ -8,7 +8,7 @@ Start you application and open it in your browser: the content of the `<div>` ("
 
 Now, let us cherish a tradition and render "Hello world!".
 
-## Task
+## Tasks
 
 ### Render by Modifying the `App` component
 

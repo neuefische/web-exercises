@@ -2,7 +2,7 @@
 
 This challenge offers a some exercises to recap the array method `filter`. Let's dive directly into it!
 
-## Task
+## Tasks
 
 In the [`index.js`](./index.js) file, there is a `cards` array with three objects.
 

@@ -1,6 +1,6 @@
 # JS Objects and Arrays: Objects
 
-## Task
+## Tasks
 
 In this exercise, you will encounter the following tasks:
 

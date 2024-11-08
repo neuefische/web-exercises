@@ -7,7 +7,7 @@ single web document and updates the body content of that single document via Jav
 In the following challenges, there is a dummy SPA of the Quiz App; additionally, there are two
 enhanced versions which make use of `forEach` in order to improve and reduce the necessary code.
 
-**Task:**
+## Tasks
 
 Working in groups, use the challenges `spa-1` to `spa-3`; make sure that every student understands every
 single line of code and is able to explain it (don't worry, we are not going to ask you to do so).

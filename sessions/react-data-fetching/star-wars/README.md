@@ -2,7 +2,7 @@
 
 In this challenge, you will fetch a character from the [Star Wars API](https://swapi.py4e.com/) with `SWR` and combine this with dynamic routes.
 
-## Task
+## Tasks
 
 - Start the development server and make yourself familiar with the application.
 - Open the browser: there are links to four characters, but only the first one (Luke Skywalker) currently works.

@@ -2,7 +2,7 @@
 
 In this challenge you will practice to use the JS modules syntax with `export` and `import` as well as to learn how to think in components.
 
-## Task
+## Tasks
 
 ### Apply random colors
 
@@ -42,7 +42,3 @@ Run `npm run start` to start a development server and open [localhost:3000](http
 > Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
 
 Use `npm run test` to run the tests.
-
-
-
-

@@ -1,6 +1,6 @@
 # social-media-post
 
-## Task
+## Tasks
 
 This page shows an example of a social media post. Your task is to replicate the social media post with JavaScript. Use `document.createElement()` to generate all HTML elements separately.
 

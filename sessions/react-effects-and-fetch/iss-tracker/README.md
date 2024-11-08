@@ -2,7 +2,7 @@
 
 In this challenge we will build a small app which displays the current location of the international space station. We will also practice our `useEffect` skills.
 
-## Task
+## Tasks
 
 In the `./src/App.jsx` file, we already have a state called `coords` in the `App` component which will hold the longitude and latitude values of the ISS position.
 
@@ -28,8 +28,6 @@ Go into the `./src/App.jsx` file and start coding!
 To work locally, please install the dependencies using `npm i` first.
 
 Run `npm run dev` to start a development server and open the displayed URL in a browser.
-
-
 
 ### Scripts
 

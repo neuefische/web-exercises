@@ -1,6 +1,6 @@
 # JS Inputs and Strings: Switch Values
 
-## Task
+## Tasks
 
 Switch the values of two input fields when clicking the switch button.
 

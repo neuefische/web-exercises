@@ -8,7 +8,7 @@ Of course, you could replace the two `setCount` calls by one `setCount(count + 3
 
 Fortunately, there is another solution!
 
-## Task
+## Tasks
 
 Fix the `handleIncrement` function so that it increments the `count` state by 3. For the sake of this challenge, make sure to still call `setCount` three times, incrementing by 1 each time.
 

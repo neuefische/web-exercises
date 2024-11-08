@@ -4,7 +4,7 @@ This challenge offers a form where the user can submit some information.
 
 Unfortunately, the form is not accessible because there are some issues in the HTML.
 
-## Task:
+## Tasks
 
 Switch to the [`index.html`](./index.html) file and make the form accessible!
 

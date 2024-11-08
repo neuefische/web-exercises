@@ -2,7 +2,7 @@
 
 In this challenge, we’ll add another dimension and draw pixels using a “2D” array.
 
-## Task
+## Tasks
 
 Use the color values in the `pixelValues` array to create "pixel" elements and append them to the `canvas` element.
 

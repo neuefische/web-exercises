@@ -2,7 +2,7 @@
 
 This Challenge offers some more exercises to recap some advanced array methods. Let's dive in!
 
-## Task
+## Tasks
 
 In the `./index.js` file, there is an `animals` array with - guess what? - animals. Each animal is an object with some key-value-pairs.
 

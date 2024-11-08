@@ -1,6 +1,6 @@
 # JS Basics and Variables: Lifetime Calculator
 
-## Task
+## Tasks
 
 In this challenge, you’ll create a program to calculate interesting statistics based on the age of a user.
 

@@ -2,7 +2,7 @@
 
 Fetching data is awesome, yet it can be frightening in the beginning. But don't worry – we are going to help you familiarize yourself with the syntax of fetch and all will be fine ;)
 
-## Task
+## Tasks
 
 Have a look at the [`js/index.js`](./js/index.js) file: There is an `url` variable and an empty `fetchData()` function.
 

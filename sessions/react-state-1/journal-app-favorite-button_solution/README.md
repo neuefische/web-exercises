@@ -2,7 +2,7 @@
 
 In this challenge you will begin building a journal app. We will continue to build on this app throughout the next sessions. In this first part you are about to include our _favorite_ feature: a button that allows you to favorite an entry.
 
-## Task
+## Tasks
 
 Locate the component with the favorite button. Here it's called `FavoriteButton`.
 

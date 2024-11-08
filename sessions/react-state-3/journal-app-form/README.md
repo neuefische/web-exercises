@@ -2,7 +2,7 @@
 
 In this challenge we want to store the entries information in a state to be able to add new entries.
 
-## Task
+## Tasks
 
 ### Store the entries in state
 
@@ -51,7 +51,8 @@ Your new journal entry needs a date.
 
 ``.jsx
 const date = new Date().toLocaleDateString("en-us", { dateStyle: "medium" });
-```
+
+````
 
 Each entry in the `entries` array needs an ID – a unique identifier.
 
@@ -61,7 +62,7 @@ Each entry in the `entries` array needs an ID – a unique identifier.
 
 ```sh
 npm install uid
-```
+````
 
 - Call the `setEntries` function and insert the new entry at the beginning of the array.
 - Pass the `handleAddEntry` function with the prop `onAddEntry` to the `EntryForm` component.
@@ -73,7 +74,6 @@ Done! You can add new entries to your journal now! 🚀 🚀 🚀
 To work locally, please install the dependencies using `npm i` first.
 
 Run `npm run dev` to start a development server and open the displayed URL in a browser.
-
 
 ### Scripts
 

@@ -1,6 +1,6 @@
 # React Global State: Lights
 
-## Task
+## Tasks
 
 ## Notes
 

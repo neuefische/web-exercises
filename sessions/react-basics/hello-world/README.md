@@ -8,7 +8,7 @@ Start you application and open it in your browser: the content of the `<div>` ("
 
 Now, let us cherish a tradition and render "Hello world!".
 
-## Task
+## Tasks
 
 ### Render by Modifying the `App` component
 
@@ -38,8 +38,6 @@ Use the following hints as guideline:
 To work locally, please install the dependencies using `npm i` first.
 
 Run `npm run dev` to start a development server and open the displayed URL in a browser.
-
-
 
 ### Scripts
 

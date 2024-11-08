@@ -1,6 +1,6 @@
 # JS Inputs and Strings: Input to Uppercase
 
-## Task
+## Tasks
 
 Convert the text in the input field to uppercase when the button is clicked.
 

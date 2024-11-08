@@ -2,7 +2,7 @@
 
 This challenge offers a some exercises to recap the array methods `map` and `filter`. Let's dive into them (again)!
 
-## Task
+## Tasks
 
 In the `./index.js` file, there is a `recipes` array with four objects.
 

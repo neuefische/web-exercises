@@ -2,7 +2,7 @@
 
 In this challenge, you will build a very basic HTTP server which responds with a greeting when the url is called.
 
-## Task
+## Tasks
 
 > 💡 This challenge includes tests. You can run them with `npm run test` and check your progress while working on the challenge.
 

@@ -2,7 +2,7 @@
 
 This challenge tasks you with navigating a large dataset of over 500 employees, utilizing JavaScript array methods to uncover and resolve a letter puzzle.
 
-## Task
+## Tasks
 
 Begin by examining the employees array in /utils/data.js. Your goal is to solve a series of questions, each requiring a specific array method, to gradually complete by cleaning up the chaos of letters displayed in the browser preview.
 

@@ -1,6 +1,6 @@
 # JS DOM and Events: Errors in a Survey App
 
-## Task
+## Tasks
 
 You’ll be working on fixing a rough draft implementation of a Survey App. The developer made several errors, and the app has some bugs. Can you fix all the issues in the JavaScript code?
 

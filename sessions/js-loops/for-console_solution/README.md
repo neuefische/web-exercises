@@ -2,7 +2,7 @@
 
 Let’s be clear: Loops can seem intimidating at first. But don’t worry! We’ll guide you through the syntax, and soon they’ll feel much more approachable.
 
-## Task
+## Tasks
 
 Use a `for` loop to log the numbers from 0 to 100 (inclusive) in the console.
 

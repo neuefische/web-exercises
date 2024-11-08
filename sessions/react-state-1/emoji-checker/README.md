@@ -4,7 +4,7 @@ In the `./src/App.jsx` file, you can find the building blocks for an emoji passc
 
 Looking at the `validCode` variable, we understand that the code consists of a sequence of three emojis. Each button click should "lock in" one emoji. If the code that was entered matches the passcode, your code will be confirmed as valid. The reset button should reset the code, so you can start over. Toward the bottom of the `App` function you'll find a line that conditionally generates a `p` element as soon as the input code matches the `validCode` declared at top of the function.
 
-## Task
+## Tasks
 
 You can use the following hints as a guideline:
 

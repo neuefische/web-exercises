@@ -4,7 +4,7 @@ For now, the `./src/App.jsx` file uses a `Card` component to render the text "ba
 
 Most often, however, you have an array of objects and want to dynamically render a component (like `Card`) for each of these objects.
 
-## Task
+## Tasks
 
 Create an array 'fruits'. It should contain at least 5 objects which all have the properties 'name', 'id', 'color', e.g.:
 

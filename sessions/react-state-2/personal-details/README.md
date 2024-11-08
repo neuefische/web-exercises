@@ -4,7 +4,7 @@ In this challenge, there is a `Form` component which should handle entered data 
 
 Unfortunately, hitting the submit button does not do anything. Since you are looking at components now, you will need to lift state up to make the app work.
 
-## Task
+## Tasks
 
 ### 1. Setting State on Submit
 
@@ -43,8 +43,6 @@ You can use the following hints as guideline:
 To work locally, please install the dependencies using `npm i` first.
 
 Run `npm run dev` to start a development server and open the displayed URL in a browser.
-
-
 
 ### Scripts
 

@@ -1,6 +1,6 @@
 # CSS Flexbox: Navigation
 
-## Task
+## Tasks
 
 - [ ] Open your `index.html` file.
 - [ ] To create a flexbox container, determine which HTML element within the `<nav>` structure should have the `navigation__menu` class applied.

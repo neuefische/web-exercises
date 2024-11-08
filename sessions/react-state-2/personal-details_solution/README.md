@@ -4,7 +4,7 @@ In this challenge, there is a `Form` component which should handle entered data 
 
 Unfortunately, hitting the submit button does not do anything. Since you are looking at components now, you will need to lift state up to make the app work.
 
-## Task
+## Tasks
 
 ### 1. Setting State on Submit
 

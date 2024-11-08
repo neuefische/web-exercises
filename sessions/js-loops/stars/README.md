@@ -2,7 +2,7 @@
 
 Let's build an awesome interactive 5-star rating scale! The goal is to dynamically display filled or empty stars based on user input. Clicking on a star should fill all stars up to that point, leaving the remaining stars empty.
 
-## Task
+## Tasks
 
 ### Part 1: Render Stars
 

@@ -4,7 +4,7 @@ For now, there is a navigation in the `./src/App.jsx` file which only uses built
 
 Let's refactor to use custom components instead; you will encounter the `children` prop and recap props in general.
 
-## Task
+## Tasks
 
 In order to provide a clear guide, the exercise is split into sub-tasks to help you following along.
 
@@ -80,21 +80,22 @@ import Link from "./components/Link";
 import "./styles.css";
 
 export default function App() {
-  return (
-    <>
-      <Header>
-        <Logo />
-        <Navigation>
-          <Link href="#home">Home</Link>
-          <Link href="#about">About</Link>
-          <Link href="#impressum">Impressum</Link>
-        </Navigation>
-        <Avatar />
-      </Header>
-      <main>content goes here…</main>
-    </>
-  );
+return (
+<>
+<Header>
+<Logo />
+<Navigation>
+<Link href="#home">Home</Link>
+<Link href="#about">About</Link>
+<Link href="#impressum">Impressum</Link>
+</Navigation>
+<Avatar />
+</Header>
+<main>content goes here…</main>
+</>
+);
 }
+
 ```
 
 ## Notes
@@ -112,3 +113,4 @@ Run `npm run dev` to start a development server and open the displayed URL in a 
 You can use the following commands:
 
 - `npm run dev` to start a development server
+```

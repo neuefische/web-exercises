@@ -6,7 +6,7 @@ Have a look at the [`Counter Component`](./src/components/Counter.jsx): there is
 
 In the `./src/App.jsx` file, however, there is a sentence saying "You are going to reserve a table for 2 people." The number should not be hard coded, but equal the current people count and need to be updated on every button click.
 
-## Task
+## Tasks
 
 Lift the `people` state up so that
 
@@ -33,8 +33,6 @@ You can use the following hints as guideline:
 To work locally, please install the dependencies using `npm i` first.
 
 Run `npm run dev` to start a development server and open the displayed URL in a browser.
-
-
 
 ### Scripts
 

@@ -5,7 +5,7 @@ In this challenge, you will
 - create an api route which returns a character object with random values using [the `chance` package](https://chancejs.com/) and
 - consume this endpoint with `SWR` to render the information in the browser.
 
-## Task
+## Tasks
 
 ### Create the API
 

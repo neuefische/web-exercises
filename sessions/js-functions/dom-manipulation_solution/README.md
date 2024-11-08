@@ -1,6 +1,6 @@
 # dom-manipulation
 
-## Task
+## Tasks
 
 ## Notes
 

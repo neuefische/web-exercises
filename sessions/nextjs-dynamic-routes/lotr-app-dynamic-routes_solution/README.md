@@ -2,7 +2,7 @@
 
 Currently, the overview about the Lord of the Rings volumes is done with static routing. You are going to refactor the code with dynamic routes as well as links. Finally, you will create a button to navigate to a random volume.
 
-## Task
+## Tasks
 
 ### Refactor: Dynamic Routes
 

@@ -2,7 +2,7 @@
 
 This app should load and display a list of Pokémon.
 
-## Task
+## Tasks
 
 Open the file `./src/components/PokemonList.jsx`.
 

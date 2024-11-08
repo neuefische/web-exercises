@@ -6,7 +6,7 @@ This count is then used by the `./src/components/ColoredNumber.jsx` component to
 
 For now, however, clicking the buttons doesn't change anything. Let's use state to fix that.
 
-## Task
+## Tasks
 
 Refactor the `./src/components/Counter.jsx` component so that it updates the displayed number when clicking a button.
 

@@ -6,7 +6,7 @@ The general idea here is that the counter should count up when the plus button i
 
 Currently, the value `0` is hardcoded and doesn't respond to the buttons being clicked.
 
-## Task
+## Tasks
 
 Refactor the code so that it features React state and makes use of it. Declare a state variable and make sure to have the buttons update said state variable.
 

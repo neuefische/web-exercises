@@ -2,7 +2,7 @@
 
 Props are versatile: you cannot only pass strings or numbers, but a boolean value as well! Let's use this feature to render smileys ;)
 
-## Task
+## Tasks
 
 Look at the `./src/App.jsx` file: the `App` component returns a heading which wants to be replaced by a component. Your task is to write a `Smiley` component which renders a smiley depending on a prop called `isHappy`.
 

@@ -2,7 +2,7 @@
 
 This dice rolling app rolls a die (d6 = six sided die). Now you want to show recent dice rolls in a list and store them in local storage.
 
-## Task
+## Tasks
 
 ### Lifting State Up
 

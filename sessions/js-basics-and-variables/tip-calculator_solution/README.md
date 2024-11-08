@@ -1,6 +1,6 @@
 # JS Basics and Variables: Tip Calculator
 
-## Task
+## Tasks
 
 In this challenge, you’ll create a program that calculates the total cost of a meal, including the tip.
 
