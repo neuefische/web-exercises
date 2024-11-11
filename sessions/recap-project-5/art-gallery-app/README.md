@@ -165,7 +165,7 @@ To achieve this, we’ll divide the tasks into two parts:
 1. Implement the favorite button where needed.
 2. Create the Favorite page.
 
-### 5.1. Favorite Button
+### 5.1. Mark Art Pieces as Favorites
 
 Users want the ability to add additional information to each art piece. Consider where to store the art piece data to ensure all pages can access it efficiently. Remember that we’ll be reusing this favorite button across multiple pages.
 
