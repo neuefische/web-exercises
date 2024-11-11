@@ -1,4 +1,4 @@
-# JS DOM and Events: Errors in a Survey App
+# JS DOM and Events: Survey Error Fixing
 
 ## Tasks
 
