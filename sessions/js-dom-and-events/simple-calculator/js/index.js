@@ -3,82 +3,40 @@ console.clear();
 const operand1 = 12;
 const operand2 = 4;
 
-/*
-Mathematical operations
+// ----- Mathematical Operations -----
+
+// Step 1: Use `document.querySelector` to select each button by its `data-js` attribute.
+
+// --v-- write your code here --v--
+
+// --^-- write your code here --^--
+
+/* 
+Step 2: Add event listeners for each mathematical operation:
+
+For each operation (add, subtract, multiply, divide, exponent, and modulo):
+1. Add an event listener to the corresponding button.
+2. Within the event listener, perform the operation using `operand1` and `operand2`.
+3. Store the result in a variable.
+4. Log the result to the console.
 */
-const addButton = document.querySelector('[data-js="add"]');
-const subtractButton = document.querySelector('[data-js="subtract"]');
-const multiplyButton = document.querySelector('[data-js="multiply"]');
-const divideButton = document.querySelector('[data-js="divide"]');
-const exponentButton = document.querySelector('[data-js="exponent"]');
-const moduloButton = document.querySelector('[data-js="modulo"]');
 
-addButton.addEventListener("click", () => {
-  // 1. Add the two operands and store the result in a variable. Log the variable's value to the console.
-});
+// --v-- write your code here --v--
 
-subtractButton.addEventListener("click", () => {
-  // 2. Subtract the two operands and store the result in a variable. Log the variable's value to the console.
-});
+// --^-- write your code here --^--
 
-multiplyButton.addEventListener("click", () => {
-  // 3. Multiply the two operands and store the result in a variable. Log the variable's value to the console.
-});
-
-divideButton.addEventListener("click", () => {
-  // 4. Divide the two operands and store the result in a variable. Log the variable's value to the console.
-});
-
-exponentButton.addEventListener("click", () => {
-  // 5. Raise "operand1" to the value of "operand2" and store the result in a variable. Log the variable's value to the console.
-});
-
-moduloButton.addEventListener("click", () => {
-  // 6. Calculate the remainder when dividing "operand1" by "operand2" and store the result in a variable. Log the variable's value to the console.
-});
+// ----- Update the First Operand -----
 
 /*
-Update the first operand
+In the following section, update the value of `operand1` using the buttons in the "Update the First Operand" section.
+Each button should adjust the value of `operand1` and log the new value to the console.
 
-Please don't forget to think about the declaration of the variable "operand1".
+Hint: To allow `operand1` to be updated, you might need to change its declaration.
+
+Step 1: Select each button for updating `operand1` by its `data-js` attribute.
+Step 2: Add event listeners to update `operand1` based on the button clicked. Log the updated value to the console.
 */
-const increaseByOneButton = document.querySelector(
-  '[data-js="increase-by-one"]'
-);
-const increaseByFiveButton = document.querySelector(
-  '[data-js="increase-by-five"]'
-);
-const decreaseByOneButton = document.querySelector(
-  '[data-js="decrease-by-one"]'
-);
-const decreaseByFiveButton = document.querySelector(
-  '[data-js="decrease-by-five"]'
-);
-const multiplyByTwoButton = document.querySelector(
-  '[data-js="multiply-by-two"]'
-);
-const divideByTwoButton = document.querySelector('[data-js="divide-by-two"]');
 
-increaseByOneButton.addEventListener("click", () => {
-  // 7. Increase the value of "operand1" by 1. Log the new value to the console.
-});
+// --v-- write your code here --v--
 
-increaseByFiveButton.addEventListener("click", () => {
-  // 8. Increase the value of "operand1" by 5. Log the new value to the console.
-});
-
-decreaseByOneButton.addEventListener("click", () => {
-  // 7. Decrease the value of "operand1" by 1. Log the new value to the console.
-});
-
-decreaseByFiveButton.addEventListener("click", () => {
-  // 8. Decrease the value of "operand1" by 5. Log the new value to the console.
-});
-
-multiplyByTwoButton.addEventListener("click", () => {
-  // 11. Multiply the value of "operand1" by 2. Log the new value to the console.
-});
-
-divideByTwoButton.addEventListener("click", () => {
-  // 12. Divide the value of "operand1" by 2. Log the new value to the console.
-});
+// --^-- write your code here --^--
