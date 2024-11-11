@@ -152,7 +152,7 @@ When a user clicks on an art piece, they should see all detailed information abo
 #### Tasks
 
 - [ ] Create a new component for displaying Art Piece Details.
-- [ ] Create a single dynamic page that renders the Art Piece Details, displaying information for the selected art piece.
+- [ ] Create a single **dynamic page** that renders the Art Piece Details, displaying information for the selected art piece.
 
 ### 5. Favorite Page
 
@@ -215,11 +215,11 @@ It’s best practice to consolidate related information into a single state. How
 #### Acceptance Criteria
 
 - [ ] The favorite button is displayed on each entry in the list view.
-- [ ] The favorite button is displayed in the details view.
-- [ ] The favorite button is displayed in the spotlight view.
-- [ ] Clicking the favorite button on a non-favorite piece saves it as a favorite.
-- [ ] Clicking the favorite button on a favorite piece removes it from favorites.
-- [ ] The favorite state of an art piece is visually highlighted by changing the color of the favorite button.
+- [ ] The favorite button is displayed on the details view.
+- [ ] The favorite button is displayed on the spotlight view.
+- [ ] Clicking the favorite button on a non-favorite piece saves it as a favorite and provides a visual indication (e.g., changing color or icon) to show it’s now a favorite.
+- [ ] Clicking the favorite button on a favorite piece removes it from favorites and provides a visual indication (e.g., changing color or icon) to show it’s no longer a favorite.
+- [ ] Favorite art pieces are visually highlighted to clearly show their favorite status.
 
 #### Tasks
 
