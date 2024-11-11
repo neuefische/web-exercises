@@ -313,9 +313,9 @@ Currently, all data is saved using `useState`, meaning it’s lost upon page ref
 
 **As an** art enthusiast
 
-**I want to** persist my favorites and comments
+**I want** my favorites and comments to be saved
 
-**so that** my data remains saved even if I close the app.
+**so that** my data remains accessible even when I close or refresh the app.
 
 #### Acceptance Criteria
 
