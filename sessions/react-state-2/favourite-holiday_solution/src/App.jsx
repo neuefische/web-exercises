@@ -4,14 +4,20 @@ import "./styles.css";
 export default function App() {
   const [holiday, setHoliday] = useState("");
   const [date, setDate] = useState("");
+
   function handleSubmit(event) {
     event.preventDefault();
 
-    const formData = new FormData(event.target);
+    const form = event.target;
+    const formData = new FormData(form);
     const data = Object.fromEntries(formData);
 
     setHoliday(data.holiday);
     setDate(data.date);
+
+    // Bonus Task
+    form.reset();
+    form.elements.holiday.focus();
   }
 
   return (
