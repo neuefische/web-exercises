@@ -1,29 +1,30 @@
-# React State: Emoji Passcode Checker
+# React State 1: Emoji Passcode Checker
 
-In the [`src/App.jsx`](./src/App.jsx) file, you can find the building blocks for an emoji passcode checker.
+In the `./src/App.jsx` file, you will find the building blocks for an emoji passcode checker.
 
-Looking at the `validCode` variable, we understand that the code consists of a sequence of three emojis. Each button click should "lock in" one emoji. If the code that was entered matches the passcode, your code will be confirmed as valid. The reset button should reset the code, so you can start over. Toward the bottom of the `App` function you'll find a line that conditionally generates a `p` element as soon as the input code matches the `validCode` declared at top of the function.
+The `validCode` variable defines the passcode as a sequence of three emojis. Each button click should "lock in" one emoji. If the entered code matches the passcode, it will be confirmed as valid. The reset button should reset the code, so you can start over. Toward the bottom of the `App` function, you'll find a line that conditionally generates a `p` element when the input code matches the `validCode` declared at the top of the function.
 
 ## Tasks
 
-You can use the following hints as a guideline:
+You can follow these hints as a guideline:
 
-- Most importantly, you need to import a built-in React function you'll be using during this challenge.
-- You need to make sure to declare a state variable.
-- Write a `handleClick` function that updates the state variable according to which emoji button was clicked.
-  - Hint: `event.target.textContent` (use `code + event.target.textContent` to append the new emoji)
-- Implement a reset funtion that clears the state variable when clicked
+- Import a built-in React function that you will need for this challenge.
+- Declare a state variable to keep track of the input code.
+- Implement the `handleClick` function to update the state variable based on the emoji button that was clicked.
+  - Hint: Use string concatenation to append something to the end of a string.
 
 ## Notes
 
-- You only have to touch the [`src/App.jsx`](./src/App.jsx) file.
+- You only have to touch the `./src/App.jsx` file.
 
 ## Development
 
-To run project commands locally, you need to install the dependencies using `npm i` first.
+To work locally, please install the dependencies using `npm i` first.
 
-You can then use the following commands:
+Run `npm run dev` to start a development server and open the displayed URL in a browser.
 
-- `npm run dev` to start the development server
+### Scripts
 
-> 💡 This project requires a bundler. You can use `npm run dev` to start the development server. You can then view the project in the browser at `http://localhost:3000`. The Live Preview Extension for Visual Studio Code will **not** work for this project.
+You can use the following command:
+
+- `npm run dev` to start a development server
