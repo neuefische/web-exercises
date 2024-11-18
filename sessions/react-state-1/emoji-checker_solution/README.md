@@ -12,6 +12,7 @@ You can follow these hints as a guideline:
 - Declare a state variable to keep track of the input code.
 - Implement the `handleClick` function to update the state variable based on the emoji button that was clicked.
   - Hint: Use string concatenation to append something to the end of a string.
+- Implement the functionality of the reset button to clear the input code and allow the user to start over.
 
 ## Notes
 
