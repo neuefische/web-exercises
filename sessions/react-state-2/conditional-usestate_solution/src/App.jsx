@@ -1,11 +1,10 @@
-import React from "react";
 import "./styles.css";
 import { useState } from "react";
 
 export default function App() {
   const [showMessage, setShowMessage] = useState(false);
   const [message, setMessage] = useState("Secret message incoming...");
-  // useState hooks need to be executed on every call of the Component!
+  // useState hooks need to be executed on every call of the component!
 
   if (!showMessage) {
     return (
