@@ -1,6 +1,6 @@
 ## `PATH`
 
-### 📄 [Rendered Exercise](https://github.com/neuefische/web-exercises/tree/BRANCH_NAME/sessions/PATH)
+### 📄 [Rendered Exercise](https://github.com/wd-bootcamp/web-exercises/tree/BRANCH_NAME/sessions/PATH)
 
 ### 🔎 Review
 

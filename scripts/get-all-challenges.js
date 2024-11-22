@@ -37,7 +37,7 @@ const challengeStrings = Object.entries(challenges)
   .map(([name, hasSolution]) => {
     const [session, challenge] = name.split("_");
     return hasSolution
-      ? `- [x] [${name}](https://github.com/neuefische/web-exercises/tree/solutions/sessions/${session}/${challenge}_solution)`
+      ? `- [x] [${name}](https://github.com/wd-bootcamp/web-exercises/tree/solutions/sessions/${session}/${challenge}_solution)`
       : `- [ ] ${name}`;
   });
 

@@ -1,4 +1,3 @@
-
 # Recap Project #: Name
 
 In this project, your team will create an **describe in 1 line the project**.
@@ -49,9 +48,9 @@ Download a [Favorite Icon](https://lucide.dev/icons/) and save it in an "assets"
 
 > Select the corresponding deployment. Delete the one that doesn't apply.
 
-🚀 Project Deployment to GitHub Pages is required: Please adhere to the deployment guidelines outlined in your [repository's documentation](https://github.com/neuefische/web-protocol-template/blob/main/docs/deployment-github-pages.md) for detailed instructions.
+🚀 Project Deployment to GitHub Pages is required: Please adhere to the deployment guidelines outlined in your [repository's documentation](https://github.com/wd-bootcamp/cohort-template/blob/main/docs/deployment-github-pages.md) for detailed instructions.
 
-🚀 Project Deployment to Vercel is required: Please follow [these instructions](https://github.com/neuefische/web-protocol-template/blob/main/docs/deployment-vercel.md) to deploy the project on Vercel.
+🚀 Project Deployment to Vercel is required: Please follow [these instructions](https://github.com/wd-bootcamp/cohort-template/blob/main/docs/deployment-vercel.md) to deploy the project on Vercel.
 
 ## Tasks
 

@@ -28,7 +28,7 @@ In this project you will build a Tourio App, the best friend of all travelers: i
 
 ### Deploy your Project to Vercel
 
-Follow [these instructions](https://github.com/neuefische/web-protocol-template/blob/main/docs/deployment-vercel.md) to deploy the project to Vercel.
+Follow [these instructions](https://github.com/wd-bootcamp/cohort-template/blob/main/docs/deployment-vercel.md) to deploy the project to Vercel.
 
 #### Vercel and MongoDB Atlas (environment variables)
 

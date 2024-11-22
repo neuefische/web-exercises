@@ -50,6 +50,6 @@ Your button for saving the track to the list has to know if the track is current
 <summary>🔒 Example Solution </summary>
 Only check this solution after giving this part a good try!
 
-[🔗 Part 9 Example Solution](https://github.com/neuefische/web-react-recap-project-solution/tree/part-9)
+[🔗 Part 9 Example Solution](https://github.com/wd-bootcamp/web-react-recap-project-solution/tree/part-9)
 
 </details>

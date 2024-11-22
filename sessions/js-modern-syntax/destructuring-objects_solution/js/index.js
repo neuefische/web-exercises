@@ -5,9 +5,9 @@ console.clear();
 // Make sure to export your variable as in the example below to make the tests work.
 
 const company = {
-  name: 'neuefische',
-  course: 'Web Development',
-  location: 'Hamburg',
+  name: "wd-bootcamp",
+  course: "Web Development",
+  location: "Hamburg",
 };
 
 export const { course } = company;
@@ -22,7 +22,7 @@ export const { course } = company;
 //  2.3: The "isAdmin" property into the variable "isAdmin".
 //       Set a default value of "false" if the "isAdmin" property does not exist.
 
-const user = { name: 'John', years: 30 };
+const user = { name: "John", years: 30 };
 
 export const { name, years: age, isAdmin = false } = user;
 
@@ -31,8 +31,8 @@ export const { name, years: age, isAdmin = false } = user;
 // rename them like "dogName", "dogBreed", and "dogAge", respectively.
 
 const dog = {
-  name: 'Pluto',
-  breed: 'husky',
+  name: "Pluto",
+  breed: "husky",
   age: 5,
 };
 
@@ -42,13 +42,12 @@ export const { name: dogName, breed: dogBreed, age: dogAge } = dog;
 // Store all other properties in an object called "moreInformation".
 
 const person = {
-  lastName: 'Main',
+  lastName: "Main",
   age: 24,
-  firstName: 'Alex',
+  firstName: "Alex",
 };
 
 export const { lastName: personLastName, ...moreInformation } = person;
-
 
 // EXERCISE 5
 // Rewrite the following function to use destructuring assignment for the
@@ -59,7 +58,7 @@ function logInfo(city) {
   const { name, country, population: numPeople } = city;
 
   console.log(
-      `${name} is in ${country} and has ${numPeople} inhabitants in it.`
+    `${name} is in ${country} and has ${numPeople} inhabitants in it.`
   );
 }
 

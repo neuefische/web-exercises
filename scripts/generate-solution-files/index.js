@@ -33,7 +33,7 @@ sessionSolutions.forEach(async (session) => {
   solutionsFile.write(`# Solutions: ${deSlug(session.name)}\n\n`);
 
   session.solutions.forEach((solution) => {
-    const link = `https://github.com/neuefische/web-exercises/tree/main/sessions/${session.name}/${solution}`;
+    const link = `https://github.com/wd-bootcamp/web-exercises/tree/main/sessions/${session.name}/${solution}`;
     const displayName = deSlug(solution.replace("_solution", ""));
 
     console.log(displayName);

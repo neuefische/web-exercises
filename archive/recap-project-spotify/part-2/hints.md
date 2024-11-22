@@ -48,6 +48,6 @@ const isOpen = true;
 <summary>🔒 Example Solution </summary>
 Only check this solution after giving this part a good try!
 
-[🔗 Part 2 Example Solution](https://github.com/neuefische/web-react-recap-project-solution/tree/part-2)
+[🔗 Part 2 Example Solution](https://github.com/wd-bootcamp/web-react-recap-project-solution/tree/part-2)
 
 </details>

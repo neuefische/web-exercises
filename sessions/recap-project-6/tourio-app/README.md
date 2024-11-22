@@ -28,7 +28,7 @@ Please follow the instructions given in the `README.md` file.
 
 ## Deploying Your Project
 
-Follow [these instructions](https://github.com/neuefische/web-protocol-template/blob/main/docs/deployment-vercel.md) to deploy the project to Vercel.
+Follow [these instructions](https://github.com/wd-bootcamp/cohort-template/blob/main/docs/deployment-vercel.md) to deploy the project to Vercel.
 
 ### Vercel and MongoDB Atlas (environment variables)
 

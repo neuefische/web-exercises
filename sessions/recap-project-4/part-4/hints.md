@@ -21,6 +21,6 @@ Remember how to delete elements from a complex state:
 <summary>🔒 Example Solution </summary>
 Only check this solution after giving this part a good try!
 
-[🔗 Part 4 Example Solution](https://github.com/neuefische-web-demos/theme-creator-example-solution/tree/part-4)
+[🔗 Part 4 Example Solution](https://github.com/wd-bootcamp/theme-creator-example-solution/tree/part-4)
 
 </details>

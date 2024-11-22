@@ -5,7 +5,7 @@ console.clear();
 // Make sure to export your variable as in the example below to make the tests work.
 
 const company = {
-  name: "neuefische",
+  name: "wd-bootcamp",
   course: "Web Development",
   location: "Hamburg",
 };
@@ -52,8 +52,10 @@ export function logInfo(city) {
   const country = city.country;
   const numPeople = city.population;
 
-  return  `${name} is in ${country} and has ${numPeople} inhabitants in it.`
+  return `${name} is in ${country} and has ${numPeople} inhabitants in it.`;
 }
 
 // This is how you call it:
-console.log(logInfo({ name: "Marseille", country: "France", population: 861635 }));
+console.log(
+  logInfo({ name: "Marseille", country: "France", population: 861635 })
+);
