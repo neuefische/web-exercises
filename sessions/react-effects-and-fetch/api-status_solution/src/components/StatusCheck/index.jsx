@@ -10,11 +10,11 @@ export default function StatusCheck() {
   async function handleCheckApiStatus() {
     /**
      * Hint 1:
-     * Use the `fetch()` function and pass the `apiStatusUrl` into it
+     * Use the `fetch()` function to send a request to `apiStatusUrl`.
      *
      * Hint 2:
-     * The fetch function returns a promise which resolves to a Response
-     * object once it is ready.
+     * The `fetch()` function returns a promise that resolves to a Response
+     * object.
      *
      * Hint 3:
      * The Response object has a `ok` property which is true if the response
