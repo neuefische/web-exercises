@@ -1,38 +1,38 @@
 # React Effects and Fetch: API Status
 
-This App offers an interface to check the status of an API.
+This app provides an interface to check the status of an API.
 
 ## Tasks
 
-Look at the `./src/components/StatusCheck/index.jsx` file.
+Open the `./src/components/StatusCheck/index.jsx` file.
 
-There is a function named `handleCheckApiStatus`. The function is called when you click the button.
+Inside this file, there is a function named `handleCheckApiStatus` that is called when you click the button.
 
-Inside of this function use `fetch()` to load status information from the API URL given in the variable `apiStatusUrl`. You will receive a different random result every time you call the API.
+Within this function, use `fetch()` to load status information from the API URL provided in the variable `apiStatusUrl`. The API returns a different random result each time you call it.
 
-Your task is to write the logic for `handleCheckApiStatus` so that - depending on `response.ok` - the icon displays either ✅ or ❌.
+Your task is to write the logic for `handleCheckApiStatus` so that depending on `response.ok`, the icon displays either ✅ or ❌.
 
-You can use the following hints as guideline:
+You can use the following hints as guidelines:
 
 - `fetch()` returns a promise, so make sure to wait for the result.
-- Check whether `response.ok` is truthy;
-- if so, the icon should display ✅
-- if not, the icon should display ❌
+- Check whether `response.ok` is truthy:
+  - If it is, the icon should display ✅.
+  - If it isn't, the icon should display ❌.
 
-> _Hint:_ Since the side effect using `fetch()` is called upon a user interaction, not upon a render of the component, you don't need `useEffect` to solve this challenge.
+> _Hint:_ Since the side effect using `fetch()` is triggered by user interaction and not by rendering the component, you don't need `useEffect` to solve this challenge.
 
-### Bonus 1:
+### Bonus 1
 
-Can you display a '⏳' icon while waiting for the response?
+Can you display a "⏳" icon while waiting for the response?
 
-### Bonus 2:
+### Bonus 2
 
-The API giving you the status might not be reachable at all, so that the network request cannot be established. In this case the promise given by `fetch()` won't resolve. This might break the app.
+The API might be unreachable, preventing the network request from being established. This case would cause the promise returned by `fetch()` to reject, potentially breaking the app.
 
-Do you have an idea how to catch this kind of error? Can you implement the error handling and show the status icon 🚨 if it happens.
+Can you implement error handling to catch such cases and display the 🚨 icon if this happens?
 
-> _Hint:_ This type of error will most probably not happen by chance. To test this case you can simulate the situation with your browser's dev tools.
-> Follow this [Firefox Docs guide](https://firefox-source-docs.mozilla.org/devtools-user/network_monitor/request_list/index.html#blocking-specific-urls) to block the request. You can use the the wildcard `*` as URL to block all requests. Don't forget to turn this setting off again after your test.
+> _Hint:_ This type of error is unlikely to occur by chance. To test it, simulate the situation using your browser's developer tools.
+> Follow this [Firefox Docs guide](https://firefox-source-docs.mozilla.org/devtools-user/network_monitor/request_list/index.html#blocking-specific-urls) to block the request. Use the wildcard `*` to block all requests. Don't forget to disable this setting after testing.
 
 ## Notes
 

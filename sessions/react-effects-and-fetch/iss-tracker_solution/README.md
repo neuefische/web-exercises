@@ -1,21 +1,26 @@
 # React Effects and Fetch: ISS Tracker
 
-In this challenge we will build a small app which displays the current location of the international space station. We will also practice our `useEffect` skills.
+In this challenge, we will build a small app that displays the current location of the International Space Station (ISS) and practice using the `useEffect` hook.
 
 ## Tasks
 
-In the `./src/App.jsx` file, we already have a state called `coords` in the `App` component which will hold the longitude and latitude values of the ISS position.
+In the `./src/App.jsx` file, there is already a state called `coords` which will hold the longitude and latitude values of the ISS position.
 
-1. Write the function `getISSCoords`. Fetch from the given url saved in the constant `URL`. After fetching successfully update the `coords` state accordingly.
+1. Write the function `getISSCoords`. Fetch from the URL saved in the constant `URL`. After successfully fetching the data, update the `coords` state with the new values.
 
-2. The refresh button already executes `getISSCoords` when pressed. Test if the function works as expected. (HINT: You can check if the position is displayed correctly by double checking on [this website](http://open-notify.org/Open-Notify-API/)).
+2. The refresh button already executes `getISSCoords` when pressed. Test whether the function works as expected.
 
-3. With the help of `useEffect` set an interval (with `setInterval`) to update the ISS coords every 5 seconds. The interval should be installed only on the first render of the app.
-   (HINT: Research `setInterval` on MDN if you don't know it)
+   _Hint:_ You can verify the displayed position by cross-checking it on [this website](http://open-notify.org/Open-Notify-API/).
 
-4. The `setInterval` function returns an ID of the respective interval. You can clear the interval by calling `clearInterval` with this id. Inside the useEffect, return a cleanup function, which executes this `clearInterval` function with the correct ID.
+3. Use the `useEffect` hook to set an interval (using `setInterval`) that updates the ISS coordinates every 5 seconds. Ensure that the interval is set up only on the first render of the app.
 
-> 💡 Returning a cleanup function is important to not set multiple timers simultaneously. If you wouldn't define a cleanup function, each initial render of the component would start another timer that would never be stopped. This results in updating the coordinates way more often than desired.
+   _Hint:_ Check out the documentation for `setInterval` on MDN if you’re unfamiliar with it.
+
+4. The `setInterval` function returns an ID for the created interval. To prevent multiple timers from running simultaneously, return a cleanup function from your `useEffect` that calls `clearInterval` with the interval ID.
+
+> 💡**Why is the cleanup function important?**
+>
+> Without a cleanup function, each initial render of the component would start a new timer that never stops. This would result in the coordinates being updated far more frequently than desired, causing performance issues.
 
 Go into the `./src/App.jsx` file and start coding!
 

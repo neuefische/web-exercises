@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-// Variant 1: offset counter
+// Variant 1: Offset Counter
 export default function PokemonList() {
   const [pokemon, setPokemon] = useState([]);
   const [offset, setOffset] = useState(0);
@@ -51,7 +51,7 @@ export default function PokemonList() {
   );
 }
 
-// Variant 2: prev and next value
+// Variant 2: Prev and Next Value
 function PokemonListV2() {
   const [pokemonData, setPokemonData] = useState({
     results: [],
