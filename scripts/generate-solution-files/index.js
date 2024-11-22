@@ -44,7 +44,7 @@ sessionSolutions.forEach(async (session) => {
     );
     solutionsFile.write(`\`\`\`bash\n`);
     solutionsFile.write(
-      `npx ghcd@latest neuefische/web-exercises/tree/main/sessions/${session.name}/${solution}\n`
+      `npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/${session.name}/${solution}\n`
     );
     solutionsFile.write(`\`\`\`\n`);
   });

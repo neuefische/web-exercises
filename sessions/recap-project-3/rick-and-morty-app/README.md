@@ -6,11 +6,11 @@ This is a group project, so please create **only one project per group** followi
 
 ## Overview
 
-This single-page app will allow users to browse all characters from *Rick and Morty*. The app will include a search input to filter characters and all relevant results should be displayed after a search. A basic pagination system with "Next" and "Previous" navigation buttons lets the user browse large numbers of results with ease.
+This single-page app will allow users to browse all characters from _Rick and Morty_. The app will include a search input to filter characters and all relevant results should be displayed after a search. A basic pagination system with "Next" and "Previous" navigation buttons lets the user browse large numbers of results with ease.
 
 ## API
 
-We will fetch all character information from a REST API specifically designed for *Rick and Morty*. You can find the [API documentation here](https://rickandmortyapi.com/).
+We will fetch all character information from a REST API specifically designed for _Rick and Morty_. You can find the [API documentation here](https://rickandmortyapi.com/).
 
 > ❗️ **Note**: This API uses pagination, meaning only 20 characters are returned per request.
 
@@ -19,9 +19,9 @@ We will fetch all character information from a REST API specifically designed fo
 - Open your terminal and navigate to the folder where all your projects are located.
 - Execute the following command to create a new project based on a template:
 
-    ```bash
-    npx ghcd@latest neuefische/web-exercises/tree/main/sessions/recap-project-3/rick-and-morty-app -i
-    ```
+  ```bash
+  npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/recap-project-3/rick-and-morty-app -i
+  ```
 
 - Create a new empty repository on GitHub and add everybody in your group as collaborator.
 - Link your remote repository to the created repository on your computer and push the code.
