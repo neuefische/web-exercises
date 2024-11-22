@@ -4,7 +4,7 @@ In this challenge you will finally style the LotR-Fanpage with the help of `styl
 
 > 💡 You can use this template as a starting point. But if you are far enough along with your own LotR-Fanpage App, please use that instead.
 
-## Task
+## Tasks
 
 Use `styled-components` to create the design you can find in the [design files for the LotR-Fanpage](./README.md#resources).
 

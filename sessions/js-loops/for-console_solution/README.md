@@ -1,24 +1,24 @@
-# For Loop and `console.log()`
+# JS Loops: `for` Loop and `console.log()`
 
-To be clear: Loops can be frightening at the beginning. But don't worry, we are going to make you familiar with the syntax and it will be fine ;)
+Let’s be clear: Loops can seem intimidating at first. But don’t worry! We’ll guide you through the syntax, and soon they’ll feel much more approachable.
 
-## Task
+## Tasks
 
-Log the numbers from 0 to 100 (including) into the console. Use a for loop.
+Use a `for` loop to log the numbers from 0 to 100 (inclusive) in the console.
 
-Make sure your for loop has
+Make sure your `for` loop includes:
 
-- an internal counter variable
-- a criterion to be met by the counter variable
-- a rule how the counter variable is increased
+- An internal counter variable
+- A condition to be met by the counter variable
+- A rule for how the counter variable increments
 
-Please switch to the `./index.js` file to start counting!
+Switch to the `./index.js` file to start coding!
 
-## Development
+## Notes
 
 > ❗️ This project is JavaScript only. Please check the browser console (<kbd>⌥</kbd><kbd>⌘</kbd><kbd>I</kbd>) for the output or run the tests to see the results.
 
-### Local Development
+## Development
 
 To work locally, please install the dependencies using `npm i` first.
 

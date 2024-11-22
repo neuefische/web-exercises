@@ -1,33 +1,35 @@
-# React State: Counter
+# React State 1: Counter
 
-In the [`src/App.jsx`](./src/App.jsx) you'll find the basic building blocks of a counter.
+In the `./src/App.jsx` file, you'll find the basic building blocks of a counter.
 
-The general idea here is that the counter should count up when the plus button is clicked, and count down when the minus button is clicked.
+The goal is for the counter to increment when the plus button is clicked and decrement when the minus button is clicked.
 
-Currently, the value `0` is hardcoded and doesn't respond to the buttons being clicked.
+Currently, the value `0` is hardcoded and does not respond to button clicks.
 
-## Task
+## Tasks
 
-Refactor the code so that it features React state and makes use of it. Declare a state variable and make sure to have the buttons update said state variable.
+Refactor the code to use React state and ensure that the buttons update the state variable correctly. Declare a state variable, and connect the buttons so they adjust this state variable.
 
-You can use the following hints as a guideline:
+You can follow these hints as a guideline:
 
-- `let` doesn't seem to be the appropriate way to declare a variable in this instance.
+- Using `let` doesn't seem to be the right approach for declaring a variable in this scenario.
 - Is there a built-in React function you can use instead?
-  - Make sure to import said function.
-- At present, the `<button>`s' event handler is logging an emoji to the console.
-  - Clearly, the event handler should be handling a different type of functionality.
+  - Make sure to import this function.
+- Currently, the `<button>`s' event handlers log an emoji to the console.
+  - The event handlers should instead handle a different type of functionality.
 
 ## Notes
 
-- You only have to touch the [`src/App.jsx`](./src/App.jsx) file.
+- You only have to touch the `./src/App.jsx` file.
 
 ## Development
 
-To run project commands locally, you need to install the dependencies using `npm i` first.
+To work locally, please install the dependencies using `npm i` first.
 
-You can then use the following commands:
+Run `npm run dev` to start a development server and open the displayed URL in a browser.
 
-- `npm run dev` to start the development server
+### Scripts
 
-> 💡 This project requires a bundler. You can use `npm run dev` to start the development server. You can then view the project in the browser at `http://localhost:3000`. The Live Preview Extension for Visual Studio Code will **not** work for this project.
+You can use the following command:
+
+- `npm run dev` to start a development server

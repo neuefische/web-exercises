@@ -3,7 +3,7 @@
 This challenge asks you to refactor the existing code of the ISS Tracker to use `SWR`.
 You will need to fetch on interval and refetch on click of a button.
 
-## Task
+## Tasks
 
 - Start the development server and make yourself familiar with the application.
 - Switch to the [`ISSTracker`](./components/ISSTracker/index.js) component: it features a `coords` state, a `getISSCoords` function and a `useEffect` to fetch data on interval.

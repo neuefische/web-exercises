@@ -1,20 +1,18 @@
-/* Sub-Challenge 1
-Implement the following functionality: The value of the first input field is copied into the second input field on button click */
+// Task 1: Copy
 
 const firstCopyInput = document.querySelector('[data-js=first-copy-input]');
 const secondCopyInput = document.querySelector('[data-js=second-copy-input]');
 const copyButton = document.querySelector('[data-js=copy-button]');
 
-// --v-- write your code here --v--
+// --v-- Write your code here --v--
 
 copyButton.addEventListener('click', () => {
   secondCopyInput.value = firstCopyInput.value;
 });
 
-// --^-- write your code here --^--
+// --^-- End of Task 1 --^--
 
-/* Sub-Challenge 2
-Implement the following functionality: The value of the first input field is copied in uppercase into the second input field on button click */
+// Task 2: Copy and Uppercase
 
 const firstCopyInUppercaseInput = document.querySelector(
   '[data-js=first-copy-uppercase-input]',
@@ -26,17 +24,16 @@ const copyInUppercaseButton = document.querySelector(
   '[data-js=copy-uppercase-button]',
 );
 
-// --v-- write your code here --v--
+// --v-- Write your code here --v--
 
 copyInUppercaseButton.addEventListener('click', () => {
   secondCopyInUppercaseInput.value =
     firstCopyInUppercaseInput.value.toUpperCase();
 });
 
-// --^-- write your code here --^--
+// --^-- End of Task 2 --^--
 
-/* Sub-Challenge 3
-Implement the following functionality: The values of the two input fields switch on button click */
+// Task 3: Switch Values
 
 const firstSwitchValueInput = document.querySelector(
   '[data-js=first-switch-value-input]',
@@ -48,7 +45,7 @@ const switchValueButton = document.querySelector(
   '[data-js=switch-value-button]',
 );
 
-// --v-- write your code here --v--
+// --v-- Write your code here --v--
 
 switchValueButton.addEventListener('click', () => {
   const firstInputValue = firstSwitchValueInput.value;
@@ -56,4 +53,4 @@ switchValueButton.addEventListener('click', () => {
   secondSwitchValueInput.value = firstInputValue;
 });
 
-// --^-- write your code here --^--
+// --^-- End of Task 3 --^--

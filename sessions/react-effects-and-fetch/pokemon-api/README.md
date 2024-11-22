@@ -1,17 +1,17 @@
 # React Effects and Fetch: Pokémon API
 
-This app should load and display a list of Pokémon.
+This app is designed to load and display a list of Pokémon.
 
-## Task
+## Tasks
 
 Open the file `./src/components/PokemonList.jsx`.
 
-For now the Pokémon are only fetched when we click the button below. Let's change the code so that our app does this automatically when the app renders.
+Currently, the Pokémon are only fetched when the "Load Pokémon" button is clicked. Let’s update the code so that the app fetches Pokémon automatically when it first renders.
 
-- Remove the 'Load Pokémon' button.
-- Change the code below so that the `loadPokemon` function is only executed when the app component is rendered initially`
+- Remove the "Load Pokémon" button.
+- Modify the code so that the `loadPokemon` function is executed automatically when the component is initially rendered.`
 
-_Hint:_ Don't forget the dependency array!
+_Hint:_ Don’t forget to include the dependency array!
 
 ## Notes
 
@@ -22,8 +22,6 @@ _Hint:_ Don't forget the dependency array!
 To work locally, please install the dependencies using `npm i` first.
 
 Run `npm run dev` to start a development server and open the displayed URL in a browser.
-
-
 
 ### Scripts
 

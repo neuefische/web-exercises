@@ -2,7 +2,7 @@
 
 Make your journal entries persistent by saving them to local storage.
 
-## Task
+## Tasks
 
 Install the [`use-local-storage-state`](https://github.com/astoilkov/use-local-storage-state) package and use it to make the journal entries persistent.
 
@@ -13,8 +13,6 @@ Install the [`use-local-storage-state`](https://github.com/astoilkov/use-local-s
 To work locally, please install the dependencies using `npm i` first.
 
 Run `npm run dev` to start a development server and open the displayed URL in a browser.
-
-
 
 ### Scripts
 

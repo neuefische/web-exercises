@@ -2,7 +2,7 @@
 
 In this challenge, you will build a node server which responds depending on the url route opened on the browser.
 
-## Task
+## Tasks
 
 > 💡 This challenge includes tests. You can run them with `npm run test` and check your progress while working on the challenge.
 

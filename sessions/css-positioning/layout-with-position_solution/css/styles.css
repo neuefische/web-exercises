@@ -52,7 +52,7 @@ body {
 
 /**
  *
- * Define the card as reference frame for descendant elements, that require absolute positioning.
+ * Define the card as the reference frame for its descendant elements that require absolute positioning.
  */
 .card {
   margin: 20px 10%;
@@ -68,7 +68,7 @@ body {
 }
 
 /**
- * Place the bookmark in the top, right corner of each card.
+ * Place the bookmark in the top-right corner of each card.
  */
 .card__bookmark {
   border: 2px solid #ff4a11;
@@ -82,8 +82,8 @@ body {
 }
 
 /**
- * The go-to-top button should cover all other elements, so that it is always visible, and
- * unaffected when the document is scrolled.
+ * Position the go-to-top button so that it covers all other elements, ensuring it is always visible
+ * and remains fixed in place when the document is scrolled.
  */
 .goto-top {
   width: 48px;

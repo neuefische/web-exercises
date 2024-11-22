@@ -1,6 +1,4 @@
-/*
-  Goal: When the button is clicked, the text in the input should be transformed to uppercase.
-*/
+console.clear();
 
 const input = document.querySelector('[data-js="first-input"]');
 const button = document.querySelector('[data-js="button-uppercase"]');

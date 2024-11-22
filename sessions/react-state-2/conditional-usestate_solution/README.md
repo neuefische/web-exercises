@@ -1,16 +1,18 @@
 # React State 2: Conditional useState
 
-Click the button "Show Message" to render a hidden message to the UI. The App will crash because there is a bug in the code. You won't see the hidden message, but an error regarding the `useState` hook being conditionally rendered.
+Click the "Show Message" button to render a hidden message in the UI. However, the app will crash due to a bug in the code. Instead of seeing the hidden message, you'll encounter an error related to the `useState` hook being conditionally rendered.
 
-## Task
+## Tasks
 
-Switch to the `./src/App.jsx` file and make yourself familiar with the App.
+Open the `./src/App.jsx` file and familiarise yourself with the structure and functionality of the app.
 
-After that, fix the error in the `./src/App.jsx` file. If you need a clue, search the internet for the eslint rule or the error message.
+Fix the error in the `./src/App.jsx` file to prevent the crash. If you need help, search the internet for the eslint rule or the error message.
+
+Ensure the hidden message is correctly displayed when the button is clicked.
 
 ## Notes
 
-- If you are wondering about your solution: yes, it is that easy!
+- If you're questioning your solution: yes, it really is that simple!
 - You only have to touch the `./src/App.jsx` file.
 
 ## Development
@@ -21,6 +23,6 @@ Run `npm run dev` to start a development server and open the displayed URL in a 
 
 ### Scripts
 
-You can use the following commands:
+You can use the following command:
 
 - `npm run dev` to start a development server

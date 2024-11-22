@@ -21,7 +21,7 @@ const secondChoiceButton = document.querySelector(
   '[data-js="choice-button-2"]'
 );
 
-// 3. This event listener is connected properly. When clicked the button is shown active. However, the debug message doesn't appear in the debug console. Where is the error with this code?
+// 3. This event listener is connected properly. When clicked, the button is shown active. However, the debug message doesn't appear in the debug console. Where is the error with this code?
 firstChoiceButton.addEventListener("click", () => {
   firstChoiceButton.classList.add("active-choice");
   secondChoiceButton.classList.remove("active-choice");

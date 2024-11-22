@@ -1,4 +1,3 @@
-import React from "react";
 import "./styles.css";
 import Form from "./components/Form";
 
@@ -9,7 +8,7 @@ export default function App() {
       <Form />
       <h2>Your submitted details:</h2>
       <p>
-        Name: <span className="output">John doe</span>
+        Name: <span className="output">John Doe</span>
       </p>
       <p>
         Email: <span className="output">John@Doe.com</span>

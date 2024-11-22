@@ -1,26 +1,24 @@
-# For...of to create a list
+# JS Loops: Creating a List
 
-We can use loops to iterate through an array and do some stuff with each item. Let's create HTML elements with the help of `for...of` and a given array!
+We can use loops to iterate through an array and perform actions on each item. Let's create HTML elements with the help of a `for...of` loop and a given array!
 
-## Task
+## Tasks
 
-Looking at the `./js/index.js` , there is
+In `./js/index.js`, you'll find:
 
-- an `ol` created and appended to the document
-- a string array stored to a variable called `programmingLanguages`.
+- An `ol` element that’s been created and appended to the document.
+- A string array stored in a variable called `programmingLanguages`.
 
-For each array item, create a list item for the ordered list with its value as visible text. Use the `for...of` loop.
+Your task is to create a list item for each array item and add it to the ordered list. Each list item should display the value of the current array item. Use a `for...of` loop to accomplish this.
 
 The following hints may guide you:
 
-- What was the property to set the text of an HTML element again?
-- Don't forget to append each list item!
+- Do you remember the property for setting the text of an HTML element?
+- Be sure to append each list item to the ordered list.
 
-Please switch to the `./js/index.js` file and be a navigator!
+Switch to the `./js/index.js` to begin!
 
 ## Development
-
-### Local Development
 
 To work locally, please install the dependencies using `npm i` first.
 

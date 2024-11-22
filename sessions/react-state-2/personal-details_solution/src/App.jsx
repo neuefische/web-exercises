@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./styles.css";
 import Form from "./components/Form";
 
@@ -6,9 +6,9 @@ export default function App() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
 
-  function handleSubmit(data) {
-    setName(data.name);
-    setEmail(data.email);
+  function handleSubmit(name, email) {
+    setName(name);
+    setEmail(email);
   }
   return (
     <div className="container">

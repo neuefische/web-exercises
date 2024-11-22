@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 export default function Form({ onSubmit }) {
   function handleSubmit(event) {
     event.preventDefault();
@@ -7,7 +5,7 @@ export default function Form({ onSubmit }) {
     const formData = new FormData(event.target);
     const data = Object.fromEntries(formData);
 
-    onSubmit(data);
+    onSubmit(data.name, data.email);
 
     event.target.reset();
   }

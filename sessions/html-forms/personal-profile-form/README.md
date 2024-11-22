@@ -5,7 +5,7 @@ Let's create our first form!
 In the images folder, you find a screenshot how the form should look like:
 ![Personal Profile Form](./images/final_result.png)
 
-## Task
+## Tasks
 
 Go to [`index.html`](./index.html) file. Inside the section element, build the form as shown in the screenshot.
 

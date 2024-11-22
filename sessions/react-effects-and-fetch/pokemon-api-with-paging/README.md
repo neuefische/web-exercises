@@ -1,26 +1,26 @@
 # React Effects and Fetch: Pokémon API with Paging
 
-We want to display a list of all Pokémon, but the API returns only `20` Pokémon at a time and has multiple pages. Let's write down the logic to browse through the individual pages.
+We want to display a complete list of Pokémon, but the API only returns 20 Pokémon per request and uses pagination. Let's implement the logic to navigate through the individual pages.
 
-## Task
+## Tasks
 
-### The "Next Page" button
+### The "Next Page" Button
 
 Open the file `./src/components/PokemonList.jsx`.
 
-There is a button to show the next page, but it has no functionality yet. Try to find a way to load the next page.
+There is a button labeled "Next Page", but it currently has no functionality. Add the logic to load the next page of Pokémon.
 
-> _Hint 1:_ You need a way to store which page you are displaying right now and be able to update this value to the next page.
+> _Hint 1:_ You need a way to store the current page and update this value to load the next page.
 
-> _Hint 2:_ Have a look at the URL parameter `?offset=` used for `fetch`. The API starts by giving you the first `20` Pokémon. In the end the URL needs to change. You can either keep track of the offset yourself, or use the value given and `next` in the API response.
+> _Hint 2:_ Look at the URL parameter `?offset=` used in the `fetch` request. The API starts by returning the first 20 Pokémon. You need to modify the URL to fetch the next page. You can either keep track of the `offset` yourself or use the `next` value provided in the API response.
 
-### The "Previous Page" button
+### The "Previous Page" Button
 
-Can you adopt your solution for the button to show the previous page?
+Can you adapt your solution for the button to navigate to the previous page?
 
-You might experience that the app crashes when you are on the first page and click on the "Previous Page" button. Can you find a way to hide the button on the first page?
+You might notice that the app crashes when you are on the first page and click the "Previous Page" button. Can you implement a way to disable or hide the button when there is no previous page available?
 
-> _Hint:_ There is also a `previous` value given in the API response.
+> _Hint:_ The API response includes a `previous` value, which indicates if a previous page exists.
 
 ## Notes
 
@@ -31,8 +31,6 @@ You might experience that the app crashes when you are on the first page and cli
 To work locally, please install the dependencies using `npm i` first.
 
 Run `npm run dev` to start a development server and open the displayed URL in a browser.
-
-
 
 ### Scripts
 

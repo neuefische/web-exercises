@@ -1,16 +1,16 @@
-# React State: Journal App with Favorite Button State
+# React State 1: Journal App with Favorite Button State
 
-In this challenge you will begin building a journal app. We will continue to build on this app throughout the next sessions. In this first part you are about to include our _favorite_ feature: a button that allows you to favorite an entry.
+In this challenge, you will start building a journal app. We will continue to expand on this app in the upcoming sessions. In this first part, you will implement our _favorite_ feature: a button that allows you to mark an entry as a favorite.
 
-## Task
+## Tasks
 
-Locate the component with the favorite button. Here it's called `FavoriteButton`.
+Locate the component with the favorite button, called `FavoriteButton`.
 
-The component has an `isFavorite` boolean variable. This variable is used to determine if the star icon should be filled in or not.
+The component currently uses an `isFavorite` boolean variable to determine whether the star icon should be filled or not.
 
-- Make `isFavorite` a state variable.
-- This state variable needs to be toggled when the user clicks the favorite button.
-- Happy Hacking!
+- Convert `isFavorite` into a state variable.
+- Ensure this state variable is toggled when the user clicks the favorite button.
+- Happy hacking!
 
 ## Development
 
@@ -20,7 +20,6 @@ Run `npm run dev` to start a development server and open the displayed URL in a 
 
 ### Scripts
 
-You can use the following commands:
+You can use the following command:
 
 - `npm run dev` to start a development server
-- `npm run build` to build the project

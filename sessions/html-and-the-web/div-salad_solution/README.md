@@ -1,6 +1,6 @@
 # HTML and the Web: `div`-Salad
 
-## Task
+## Tasks
 
 - Open the `./index.html` file and follow the instructions given there.
 

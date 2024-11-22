@@ -1,4 +1,3 @@
-import React from "react";
 import StatusCheck from "./components/StatusCheck";
 import "./styles.css";
 

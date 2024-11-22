@@ -1,6 +1,6 @@
 # social-media-post
 
-## Task
+## Tasks
 
 This page shows an example of a social media post. Your task is to replicate the social media post with JavaScript. Use `document.createElement()` to generate all HTML elements separately.
 
@@ -24,7 +24,3 @@ Run `npm run start` to start a development server and open [localhost:3000](http
 > Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
 
 Use `npm run test` to run the tests.
-
-
-
-

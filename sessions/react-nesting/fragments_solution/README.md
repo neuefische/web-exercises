@@ -4,7 +4,7 @@ A React component can only return one single element at the top level. Using a `
 
 Let's dive into it and see how React fragments can help here!
 
-## Task
+## Tasks
 
 Look at the `./src/App.jsx` file: there is a `<main>` element containing three `Box` components with different colors.
 

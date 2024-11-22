@@ -3,7 +3,7 @@
 In this challenge (and the upcoming ones), you'll create a fish shop.
 You'll read data from your remote MongoDB using `mongoose` and display it in the frontend.
 
-## Task
+## Tasks
 
 ### Introduction
 

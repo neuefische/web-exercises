@@ -1,20 +1,16 @@
 # React State 2: Triple Count
 
-The `./src/components/Counter.jsx` file offers a `count` state, a button to increment this state and a `handleIncrement` function.
+The `./src/components/Counter.jsx` file contains a `count` state, a button to increment this state, and a `handleIncrement` function.
 
-Clicking the button should increment the `count` by 3. Currently, however, it's incremented by 1, although the `handleIncrement` function calls `setCount(count + 1)` three times.
+Clicking the button should increment the `count` by 3. However, it currently increments by only 1, even though the `handleIncrement` function calls `setCount(count + 1)` three times.
 
-Of course, you could replace the two `setCount` calls by one `setCount(count + 3)`, but let's imagine that this is not possible.
+While you could simply replace the three `setCount` calls with a single `setCount(count + 3)`, let’s assume that this approach is not an option.
 
 Fortunately, there is another solution!
 
-## Task
+## Tasks
 
-Fix the `handleIncrement` function so that it increments the `count` state by 3. For the sake of this challenge, make sure to still call `setCount` three times, incrementing by 1 each time.
-
-You can use the following hint as guideline:
-
-- How can you update state based on the previous state?
+Fix the `handleIncrement` function so that it increments the `count` state by 3. For this challenge, ensure that `setCount` is still called three times, incrementing the value by 1 each time. How can you update state based on the previous state?
 
 ## Notes
 
@@ -28,6 +24,6 @@ Run `npm run dev` to start a development server and open the displayed URL in a 
 
 ### Scripts
 
-You can use the following commands:
+You can use the following command:
 
 - `npm run dev` to start a development server

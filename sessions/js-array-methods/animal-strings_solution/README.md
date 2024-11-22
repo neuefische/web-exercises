@@ -2,7 +2,7 @@
 
 This challenge offers some exercises to recap some advanced array methods. Let's dive in!
 
-## Task
+## Tasks
 
 In the [`index.js`](./index.js) file, there is an `animalStrings` array with - guess what? - animal names as strings.
 

@@ -4,7 +4,7 @@ In the `./src/App.jsx` file, there is an `animals` state used to render a list o
 
 Currently, the only thing not working is the state update.
 
-## Task
+## Tasks
 
 ### Updating State
 

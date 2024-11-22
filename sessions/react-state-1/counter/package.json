@@ -1,5 +1,5 @@
 {
-  "name": "react-state_counter",
+  "name": "react-state-1_counter",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -4,7 +4,7 @@ In the `./src/App.jsx` file, there is an `animals` state used to render a list o
 
 Currently, the only thing not working is the state update.
 
-## Task
+## Tasks
 
 ### Updating State
 
@@ -38,8 +38,6 @@ There is, however, a warning regarding the `key` prop in list items. This happen
 To work locally, please install the dependencies using `npm i` first.
 
 Run `npm run dev` to start a development server and open the displayed URL in a browser.
-
-
 
 ### Scripts
 

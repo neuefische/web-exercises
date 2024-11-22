@@ -20,9 +20,9 @@ const select = document.createElement("select");
 select.name = "languages";
 main.append(select);
 
-// --v-- write/change code here --v--
+// --v-- write or modify code below this line --v--
 
-// --^-- write/change code here --^--
+// --^-- write or modify code above this line --^--
 
 // Part 2: Creating a Navigation Bar
 
@@ -37,6 +37,6 @@ const ul = document.createElement("ul");
 main.append(navElement);
 navElement.append(ul);
 
-// --v-- write/change code here --v--
+// --v-- write or modify code below this line --v--
 
-// --^-- write/change code here --^--
+// --^-- write or modify code above this line --^--

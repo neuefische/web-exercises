@@ -2,7 +2,7 @@
 
 Fetching data is awesome, yet it can be frightening at the beginning. But don't worry, we are going to make you familiar with the syntax and it will be fine ;)
 
-## Task
+## Tasks
 
 Have a look at the [`js/index.js`](./js/index.js) file: There is an `EXAMPLE_DATA` object with information about Luke Skywalker. We use this object to create a DOM element with the `Card()` function and append this element to the DOM with the help of `renderElement`.
 
@@ -27,8 +27,6 @@ The following hints may guide you:
 Please switch to the [`js/index.js`](./js/index.js) file to start counting!
 
 ## Development
-
-
 
 To run project commands locally, you need to install the dependencies using `npm i` first.
 

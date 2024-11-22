@@ -1,13 +1,17 @@
-# Tip Calculator
+# JS Basics and Variables: Tip Calculator
 
-## Task
+## Tasks
 
-Checkout the `index.js` file and follow the instructions. You can run your code in the terminal with the command:
+In this challenge, you’ll create a program that calculates the total cost of a meal, including the tip.
 
-```bash
-node index.js
-```
+Please switch to the `index.js` file to begin the exercise, where you’ll find all instructions.
 
 ## Notes
 
 - You only have to touch the `index.js` file.
+
+> ❗️ This project is JavaScript with Node only. Run your code in the terminal with the following command:
+>
+> ```bash
+> node index.js
+> ```

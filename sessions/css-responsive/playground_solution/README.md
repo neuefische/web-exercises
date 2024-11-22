@@ -2,7 +2,7 @@
 
 In this challenge, you’ll experiment with responsive features like relative units and different types of media queries.
 
-## Task
+## Tasks
 
 - Open the `index.html` file to view each mini-challenge and its requirements.
 - Find a solution that meets each requirement.

@@ -1,32 +1,32 @@
-# `while` loop
+# JS Loops: `while`
 
-In contrast to for loops, a `while` loop does not need to know how many times it will run in advance. It will run if a condition is met, and will stop otherwise.
+Unlike `for` loops, a `while` loop does not need to know how many times it will run in advance. It will continue running as long as a specified condition is true and stop once that condition is no longer met.
 
-Let's create a couple of random numbers and stop if they grow too big!
+Let's generate random numbers and stop once they become too large!
 
-## Task
+## Tasks
 
-Looking at the `./index.js`, there are two variables:
+In `./index.js`, there are two variables:
 
-- `number`: a random number, set in each iteration of the while loop
-- `count`: the number of iterations, increased by 1 everytime the while loop runs
+- `number`: a random number, updated in each iteration of the `while` loop
+- `count`: keeps track of the number of iterations, incremented by 1 every time the `while` loop runs
 
-Create a `while` loop that
+Create a `while` loop that:
 
-- runs if `number` is less or equal to 0.9,
-- increments `count` by 1 in each iteration
-- logs `number` to the console
-- sets `number` to a random number; you can use `Math.random()` here.
+- runs while `number` is less than or equal to 0.9,
+- increments `count` by 1 in each iteration,
+- logs `number` to the console,
+- sets `number` to a new random number (using `Math.random()`).
 
-If you're done, test your loop by refreshing the browser several times and watching the console!
+Once complete, test your loop by refreshing the browser a few times and checking the console output!
 
-Please switch to the `./index.js` file and be random!
+Switch to `./index.js` to get started!
 
-## Development
+## Notes
 
 > ❗️ This project is JavaScript only. Please check the browser console (<kbd>⌥</kbd><kbd>⌘</kbd><kbd>I</kbd>) for the output or run the tests to see the results.
 
-### Local Development
+## Development
 
 To work locally, please install the dependencies using `npm i` first.
 

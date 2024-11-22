@@ -1,38 +1,38 @@
 # React State 2: Personal Details
 
-In this challenge, there is a `Form` component which should handle entered data on submit. Below the form, the submitted data should be displayed.
+In this challenge, there is a `Form` component that should handle the entered data on submit. Below the form, the submitted data should be dynamically displayed.
 
-Unfortunately, hitting the submit button does not do anything. Since you are looking at components now, you will need to lift state up to make the app work.
+Unfortunately, clicking the submit button currently does nothing. To make the app work, you will need to fix the form functionality and lift the state up.
 
-## Task
+## Tasks
 
-### 1. Setting State on Submit
+### Setting State on Submit
 
-Let's start by fixing the submit event first. Switch to the `./src/components/Form.jsx` file; there already are two states called `name` and `email` and a `handleSubmit` function.
+Let's start by fixing the submit event. Switch to the `./src/components/Form.jsx` file. You'll notice two state variables, `name` and `email`, as well as a `handleSubmit` function.
 
-1. Extend the `handleSubmit` function to set the `name` and `email` state to its corresponding form field values.
-2. Reset the form after submit.
+1. Extend the `handleSubmit` function to set the `name` and `email` state variables to their corresponding form field values.
+2. Reset the form fields after submission.
 
-### 2. Lifting State up
+### Lifting State Up
 
-🎉 Congratulations, the submit works and the data is stored in state variables!
+🎉 Congratulations, the submit functionality now works, and the data is stored in state variables!
 
-Unfortunately, the submitted details are not dynamically displayed in the [`App` component](./src/App.jsx) because the state only lives in the `Form` component.
+However, the submitted details are not dynamically displayed in the [`App` component](./src/App.jsx) because the state currently lives only in the `Form` component.
 
-Refactor the code so that
+Refactor the code so that:
 
-1. on submitting the form, the entered data is available in the `App` component and
-2. the submitted data are dynamically displayed in the respective output area.
+1. When the form is submitted, the entered data is available in the `App` component.
+2. The submitted data is dynamically displayed in the respective output fields below the form.
 
-You can use the following hints as guideline:
+You can use the following hints as a guideline:
 
 - Lift both states up to the `App` component.
-- Write a `handleCreateUser` function which receives the two parameters `name` and `email` and uses them to set both state variables.
-- Pass `handleCreateUser` to the `Form` component:
+- Write a `handleCreateUser` function, which takes two parameters, `name` and `email`, and uses them to update the states.
+- Pass the `handleCreateUser` function to the `Form` component:
   - Hint: `onDelete={handleDelete}`
-  - Make sure to receive the prop inside of the `Form` component.
-- Refactor the `handleSubmit` function so that it calls `onCreateUser` with the correct values of the form fields as arguments.
-- Go back to the `App` component and display both states in the respective output fields below the `Form` component.
+  - Ensure the `Form` component correctly receives this prop.
+- Refactor the `handleSubmit` function in the `Form` component to call `onCreateUser` with the appropiate form field values as arguments.
+- Finally, in the `App` component, dynamically render both states in the output fields below the form.
 
 ## Notes
 
@@ -44,10 +44,8 @@ To work locally, please install the dependencies using `npm i` first.
 
 Run `npm run dev` to start a development server and open the displayed URL in a browser.
 
-
-
 ### Scripts
 
-You can use the following commands:
+You can use the following command:
 
 - `npm run dev` to start a development server

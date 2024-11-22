@@ -14,34 +14,33 @@
     <main class="layout">
       <section class="info">
         <article class="info__intro">
-          <h2>🫡 Welcome cadette!</h2>
+          <h2>🫡 Welcome, cadet!</h2>
           <p>
-            We're glad you've made it. Since everyone is on vacation you'll have
-            to take over the launch of the brand new SpaceRocket™️ Mission 001.
-            Unfortunately our intern didn't finish the launch sequence code.
-            We're sorry for the inconvenience. Don't worry its just rocket
+            We're glad you made it. Since everyone else is on vacation, you'll
+            be responsible for launching the brand new SpaceRocket™️ Mission
+            001. Unfortunately, our intern didn't finish the launch sequence
+            code. We're sorry for the inconvenience — but hey, it's just rocket
             science…
           </p>
           <p>
             Implement the launch sequence code in the
-            <code>launchSequence.js</code> file according to the instructions
-            below.
+            <code>launchSequence.js</code> file as per the instructions below.
           </p>
         </article>
 
         <article class="info__briefing">
           <h2>🚀 SpaceRocket™️ — Mission 001 Briefing</h2>
           <p>
-            On our first mission SpaceRocket™️ will bring one
+            On our first mission SpaceRocket™️ will carry one
             <code>NFSAT</code> and one
             <code>FISHSAT</code>
-            satellites to earths orbit. The payload can be found in
+            satellite into Earth's orbit. The payload can be found in
             <code>payload/satellites.js</code>.
           </p>
-          <p>The agreed upon countdown length is 5.</p>
+          <p>The countdown length for this mission is 5 seconds.</p>
           <p>
-            Oh and by the way: One SpaceRocket™️ costs $12 millon, NFSAT costs
-            $2.5 million and FISHSAT $4 millon. Be frugal.
+            Oh and by the way: One SpaceRocket™️ costs $12 millon, the NFSAT
+            $2.5 million, and the FISHSAT $4 millon. Be frugal.
           </p>
         </article>
 
@@ -49,7 +48,7 @@
           <h2>🚀 SpaceRocket™️ — Launch Sequence Manual</h2>
           <p>
             The subroutine modules need to be included in the
-            <code>launchSequence.js</code> file in the body of the
+            <code>launchSequence.js</code> file within the body of the
             <code>launch()</code> function.<br />
             The <code>launch()</code> function must be the default export of the
             module.
@@ -58,22 +57,21 @@
             <dt>Step 1: Load Payload</dt>
             <dd>
               <code>core/load.js</code> provides the
-              <code>loadPayload(payload)</code> function. It can be used to load
-              the required mission payload. Refer to the Mission Briefing for
-              the payload to be loaded.
+              <code>loadPayload(payload)</code> function to load the required
+              mission payload. See the Mission Briefing for details on what to
+              load.
             </dd>
             <dt>Step 2: Fueling</dt>
             <dd>
               <code>core/fuel.js</code> provides the
-              <code>fuel()</code> function. Fueling should be done before
+              <code>fuel()</code> function. Fueling must be completed before
               starting the countdown.
             </dd>
             <dt>Step 3: Countdown</dt>
             <dd>
               <code>core/countdown.js</code> provides the
-              <code>countdown()</code> function. Each mission defines its own
-              countdown length. The function has to be called as many times as
-              required by the countdown length.
+              <code>countdown()</code> function. Call this function the number
+              of times specified by the countdown length.
             </dd>
             <dt>Step 4: Liftoff</dt>
             <dd>
@@ -85,8 +83,8 @@
             <dt>Step 5: Deploy Payload</dt>
             <dd>
               <code>core/deploy.js</code> provides the
-              <code>deployPayload()</code> function. Once in the correct orbit,
-              the function must be called to deploy the payload.
+              <code>deployPayload()</code> function. Call this function once in
+              orbit to release the payload.
             </dd>
           </dl>
         </article>
@@ -94,7 +92,7 @@
       <div class="game">
         <section class="visual" data-js="visual">
           <div class="no-js">
-            If you can read this text, please refresh this page or check the
+            If you can read this text, please refresh the page or check the
             console for errors. 🫠
           </div>
         </section>

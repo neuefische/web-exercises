@@ -4,7 +4,7 @@ import Star from "./star.svg?react";
 import { useState } from "react";
 
 export default function FavoriteButton() {
-  // this should be a state variable
+  // This should be a state variable.
   const [isFavorite, setIsFavorite] = useState(false);
 
   return (

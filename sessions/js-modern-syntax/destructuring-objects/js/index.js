@@ -1,30 +1,40 @@
 console.clear();
 
-// EXERCISE 1
-// Extract only the course name from the company object.
-// Make sure to export your variable as in the example below to make the tests work.
+/*
+EXERCISE 1
+Extract only the course name from the company object.
+Make sure to export your variable as shown in the example below for the tests to work.
+*/
 
 const company = {
+<<<<<<< HEAD
   name: "wd-bootcamp",
+=======
+  name: "TechAcademy",
+>>>>>>> main
   course: "Web Development",
   location: "Hamburg",
 };
 
-// example: export const {value1} = myObject;
+// Example: export const { value1 } = myObject;
 
-// EXERCISE 2
-// We have an object called "user".
-// Use destructuring assignment to extract the following:
-//  2.1: The "name" property into the variable "name".
-//  2.2: The "years" property into the variable "age".
-//  2.3: The "isAdmin" property into the variable "isAdmin".
-//       Set a default value of "false" if the "isAdmin" property does not exist.
+/*
+EXERCISE 2
+We have an object called `user`.
+Use destructuring to extract the following:
+ 2.1: The `name` property into a variable `name`.
+ 2.2: The `years` property into a variable `age`.
+ 2.3: The `isAdmin` property into the variable `isAdmin`.
+      Set a default value of `false` if `isAdmin` is not present.
+*/
 
 const user = { name: "John", years: 30 };
 
-// EXERCISE 3
-// Extract the variables from the dog object and
-// rename them like "dogName", "dogBreed", and "dogAge", respectively.
+/*
+EXERCISE 3
+Extract properties from the dog object and
+rename them as `dogName`, `dogBreed`, and `dogAge`, respectively.
+*/
 
 const dog = {
   name: "Pluto",
@@ -32,9 +42,11 @@ const dog = {
   age: 5,
 };
 
-// EXERCISE 4
-// Extract the 'lastName' property from the person object as "personLastName".
-// Store all other properties in an object called "moreInformation".
+/*
+EXERCISE 4
+Extract the `lastName` property from the `person` object as `personLastName`.
+Store all other properties in an object called `moreInformation`.
+*/
 
 const person = {
   lastName: "Main",
@@ -42,10 +54,12 @@ const person = {
   firstName: "Alex",
 };
 
-// EXERCISE 5
-// Rewrite the following function to use destructuring assignment for the
-// three variables "name", "country" and "numPeople"  it creates.
-// Hint: You may need to rename one of the properties during destructuring.
+/*
+EXERCISE 5
+Refactor the following function to use destructuring assignment for the
+three variables `name`, `country` and `numPeople`.
+Hint: You may need to rename one property during destructuring.
+*/
 
 export function logInfo(city) {
   const name = city.name;
@@ -55,7 +69,11 @@ export function logInfo(city) {
   return `${name} is in ${country} and has ${numPeople} inhabitants in it.`;
 }
 
+<<<<<<< HEAD
 // This is how you call it:
+=======
+// Usage example:
+>>>>>>> main
 console.log(
   logInfo({ name: "Marseille", country: "France", population: 861635 })
 );

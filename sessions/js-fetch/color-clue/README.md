@@ -8,7 +8,7 @@ To get the names of the colors, we use the Color API.
 
 Unfortunately, the game does not work because the fetch function to get data from the color api is not implemented. Let's fix this!
 
-## Task
+## Tasks
 
 Check out the [`js/fetch.js`](./js/fetch.js) file: There is a `fetchNewColor()` function which creates a random hex code and creates the correct url to fetch data from the Color API.
 

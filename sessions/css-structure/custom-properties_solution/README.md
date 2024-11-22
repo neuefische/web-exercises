@@ -1,35 +1,35 @@
 # CSS Structure: Custom Properties
 
-The CSS code in this challenge has multiple references to three different colors. Make use of custom properties (variables) to extract them.
+The CSS code in this challenge references three different colors multiple times. Use custom properties (variables) to extract them for easier maintenance.
 
-## Task
+## Tasks
 
-Check the `./css/styles.css` file and find the three colors that are used multiple times. Unfortunately not all references to the same color use the same syntax.
+Open the `./css/styles.css` file and identify the three colors that are used repeatedly. Note that not all instances of the same color follow the same syntax.
 
-Create a new `:root` selector and define three custom properties (variables) for the three colors. Use the following property names:
+In a new `:root` selector, define three custom properties (variables) for these colors. Use the following names:
 
-- "--color-granite" for the dark gray
-- "--color-nemo" for the orange
-- "--color-foam" for the white
+- `--color-granite` for the dark gray
+- `--color-nemo` for the orange
+- `--color-foam` for the white
 
-> 💡 Use a consistent `--color-<name>` naming for your properties.  
-> Make sure that all colors use the same syntax (e.g. hex `#ffffff` or `rgb()`).
+> 💡 Maintain a consistent `--color-<name>` naming convention.  
+> Ensure all color values use the same syntax (e.g., hex `#ffffff` or `rgb()`).
 
-Replace all references to the colors with the custom properties (variables) you have created.
+Replace all color references with the new custom properties (variables) you've created.
 
-Make sure that everything still looks the same as before.
+Verify that the design still appears as it did before.
 
 > 💡 Use the [CSS Variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) (`var()`) syntax.
 
-Switch to the `./css/styles.css` file create some custom properties!
+Switch to the `./css/styles.css` file and implement the custom properties!
 
-## Bonus
+### Bonus
 
-Check the stylesheet for other values that might warrant extraction. One example may be the border radius of `4px`. But you might find other things, too like letter spacing, spaces (8px, 16px, 32px), etc..
+Review the stylesheet for other values that could benefit from extraction. Examples might include the `4px` border-radius, letter-spacing, or spacing values like `8px`, `16px`, `32px`, etc.
 
-> 💡 Not everything should be a custom property. Only extract values that are **used multiple times** and that might **change together**.
+> 💡 Not everything should be a custom property. Only extract values that are **used multiple times** and that might **change together** in the future.
 
-> 💡 It's good practice to name your custom properties (variables) in a way that makes it clear what they are used for. For example, if you have a custom property for the border radius, you might call it `--border-radius-small`, etc..
+> 💡 Naming your custom properties descriptively helps clarify their use. For example, for a border-radius, consider naming it `--border-radius-small`, etc.
 
 ## Notes
 
@@ -44,6 +44,6 @@ Run `npm run start` to start a development server and open [localhost:3000](http
 
 ### Scripts
 
-You can use the following commands:
+You can use the following command:
 
 - `npm run start` to start a development server

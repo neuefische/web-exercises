@@ -4,7 +4,7 @@ Welcome back to the React Universe! This exercise lets you build a React compone
 
 Have a look at the [App.jsx](./src/App.jsx) file: the default export function called `App` returns a `<div>` which wants to be replaced. Let us comply with its request!
 
-## Task
+## Tasks
 
 Render an HTML `article` tag containing a heading and a paragraph to the browser. To do so, create a component called `HelloWorldArticle`.
 
@@ -27,8 +27,6 @@ Use the following hints as guideline:
 To work locally, please install the dependencies using `npm i` first.
 
 Run `npm run dev` to start a development server and open the displayed URL in a browser.
-
-
 
 ### Scripts
 

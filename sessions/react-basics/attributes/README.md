@@ -6,7 +6,7 @@ Let's now focus on HTML attributes in JSX and the (minor) differences to normal 
 
 Have a look at the [App.jsx](./src/App.jsx) file: you will find the `App` returning a single `<div>`.
 
-## Task
+## Tasks
 
 Write an `Article` component and use it to replace the given `<div>`.
 
@@ -27,8 +27,6 @@ Your component should contain the following parts:
 To work locally, please install the dependencies using `npm i` first.
 
 Run `npm run start` to start a development server and open the displayed URL in a browser.
-
-
 
 ### Scripts
 

@@ -4,7 +4,7 @@ In React, you can build components and reuse them as often as you like. However,
 
 Let us use `props` to make components totally reusable!
 
-## Task
+## Tasks
 
 ### Create a Component with props
 
@@ -30,8 +30,6 @@ Update your `Greeting` component to show "Hello, Coach!" if the `name` prop is e
 To work locally, please install the dependencies using `npm i` first.
 
 Run `npm run dev` to start a development server and open the displayed URL in a browser.
-
-
 
 ### Scripts
 

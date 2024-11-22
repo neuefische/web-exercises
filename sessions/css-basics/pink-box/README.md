@@ -2,7 +2,7 @@
 
 Let's get started with CSS! In this challenge, you will create a pink box.
 
-## Task
+## Tasks
 
 Check out the `./index.html` and the `./css/styles.css` files.
 

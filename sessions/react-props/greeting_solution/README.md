@@ -4,7 +4,7 @@ In React, you can build components and reuse them as often as you like. However,
 
 Let us use `props` to make components totally reusable!
 
-## Task
+## Tasks
 
 ### Create a Component with props
 

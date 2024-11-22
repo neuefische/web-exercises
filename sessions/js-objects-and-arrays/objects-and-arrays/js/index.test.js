@@ -3,7 +3,7 @@ import {
   homersOtherFriends,
   ageOfThirdPerson,
   mothersNameOfSecondPerson,
-  animaltypeOfLisasPet,
+  animalTypeOfLisasPet,
 } from "./index";
 
 test('Exercise 1: nameOfFirstPerson is "Homer"', () => {
@@ -26,6 +26,6 @@ test('Exercise 4: mothersNameOfSecondPerson is "Jacqueline Bouvier"', () => {
   expect(mothersNameOfSecondPerson).toEqual("Jacqueline Bouvier");
 });
 
-test("Exercise 5: animaltypeOfLisasPet is dog", () => {
-  expect(animaltypeOfLisasPet).toEqual("dog");
+test("Exercise 5: animalTypeOfLisasPet is dog", () => {
+  expect(animalTypeOfLisasPet).toEqual("dog");
 });

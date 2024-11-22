@@ -1,18 +1,19 @@
 # CSS Flexbox: Profile
 
-## Task
+## Tasks
 
 Utilize what you've learned about flexbox to complete the following tasks:
 
-1. The profile section contains a level 2 heading, an image and an about text.
+1. **Profile Section Structure**
 
-- [ ] The image should be centered.
+- The profile section contains a level 2 heading, an image and an about text.
+- Center the image within this section.
 
-2. The "Tech Stack" list needs to be polished.
+2. **Tech Stack List Styling**
 
-- [ ] The list items are currently following the normal flow of the document, but they should be packed horizontally rather than stacked vertically.
-- [ ] There should be a gap of at least 10px between every "Tech Stack" entry.
-- [ ] The list items should wrap to the next line, if there is not enough horizontal space.
+- Arrange the list items horizontally instead of stacking them vertically.
+- Ensure there is a gap of at least 10px between each “Tech Stack” item.
+- Allow list items to wrap to the next line when there isn’t enough horizontal space.
 
 ## Notes
 
@@ -27,6 +28,6 @@ Run `npm run start` to start a development server and open [localhost:3000](http
 
 ### Scripts
 
-You can use the following commands:
+You can use the following command:
 
 - `npm run start` to start a development server

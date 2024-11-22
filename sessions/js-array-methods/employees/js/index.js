@@ -23,7 +23,7 @@ function findByCitySubString(employees, string) {
 }
 
 // Bonus:
-// You want to find any employee whose profession includes a specific substring
+// You want to find the first employee whose profession includes a specific substring
 // AND who is older than a specific age
 
 function findByProfessionSubStringAndAge(employees, string, age) {
