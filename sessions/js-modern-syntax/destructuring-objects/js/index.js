@@ -7,7 +7,11 @@ Make sure to export your variable as shown in the example below for the tests to
 */
 
 const company = {
+<<<<<<< HEAD
+  name: "wd-bootcamp",
+=======
   name: "TechAcademy",
+>>>>>>> main
   course: "Web Development",
   location: "Hamburg",
 };
@@ -65,7 +69,11 @@ export function logInfo(city) {
   return `${name} is in ${country} and has ${numPeople} inhabitants in it.`;
 }
 
+<<<<<<< HEAD
+// This is how you call it:
+=======
 // Usage example:
+>>>>>>> main
 console.log(
   logInfo({ name: "Marseille", country: "France", population: 861635 })
 );

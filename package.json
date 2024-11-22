@@ -2,13 +2,13 @@
   "name": "web-exercises",
   "version": "0.0.0-unreleased",
   "description": "Session exercises",
-  "homepage": "https://github.com/neuefische/web-exercises#readme",
+  "homepage": "https://github.com/wd-bootcamp/web-exercises#readme",
   "bugs": {
-    "url": "https://github.com/neuefische/web-exercises/issues"
+    "url": "https://github.com/wd-bootcamp/web-exercises/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/neuefische/web-exercises.git"
+    "url": "git+https://github.com/wd-bootcamp/web-exercises.git"
   },
   "type": "module",
   "main": "n.a.",
@@ -21,7 +21,7 @@
     "get": "node ./scripts/get.js -c",
     "markdown-toc": "npx markdown-toc -i README.md",
     "ncu": "npx npm-check-updates",
-    "cook": "node ./scripts/cook.js", 
+    "cook": "node ./scripts/cook.js",
     "migrate-vite": "bun run ./scripts/migrate-vite.js"
   },
   "dependencies": {

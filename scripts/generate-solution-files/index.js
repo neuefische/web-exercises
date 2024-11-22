@@ -33,7 +33,7 @@ sessionSolutions.forEach(async (session) => {
   solutionsFile.write(`# Solutions: ${deSlug(session.name)}\n\n`);
 
   session.solutions.forEach((solution) => {
-    const link = `https://github.com/neuefische/web-exercises/tree/main/sessions/${session.name}/${solution}`;
+    const link = `https://github.com/wd-bootcamp/web-exercises/tree/main/sessions/${session.name}/${solution}`;
     const displayName = deSlug(solution.replace("_solution", ""));
 
     console.log(displayName);
@@ -44,7 +44,7 @@ sessionSolutions.forEach(async (session) => {
     );
     solutionsFile.write(`\`\`\`bash\n`);
     solutionsFile.write(
-      `npx ghcd@latest neuefische/web-exercises/tree/main/sessions/${session.name}/${solution}\n`
+      `npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/${session.name}/${solution}\n`
     );
     solutionsFile.write(`\`\`\`\n`);
   });

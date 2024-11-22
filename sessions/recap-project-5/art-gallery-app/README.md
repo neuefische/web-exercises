@@ -1,4 +1,3 @@
-
 # Recap Project 5: Art Gallery
 
 In this project, your team will create an interactive art gallery app.
@@ -25,7 +24,7 @@ https://example-apis.vercel.app/api/art
 2. Execute the following command to create a new project based on a template:
 
    ```bash
-   npx ghcd@latest neuefische/web-exercises/tree/main/templates/next art-gallery-app -i
+   npx ghcd@latest wd-bootcamp/web-exercises/tree/main/templates/next art-gallery-app -i
    ```
 
 3. Create a new empty repository on GitHub and add all group members as collaborators.
@@ -41,7 +40,7 @@ Download a [Favorite Icon](https://lucide.dev/icons/) and save it in an "assets"
 
 ## Deploying Your Project
 
-🚀 Project Deployment to Vercel is required: Please follow [these instructions](https://github.com/neuefische/web-protocol-template/blob/main/docs/deployment-vercel.md) to deploy the project on Vercel.
+🚀 Project Deployment to Vercel is required: Please follow [these instructions](https://github.com/wd-bootcamp/cohort-template/blob/main/docs/deployment-vercel.md) to deploy the project on Vercel.
 
 ## Tasks
 

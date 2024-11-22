@@ -3,7 +3,7 @@
 Clone this demo to your computer:
 
 ```sh
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-unit-testing/demo-start -i
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-unit-testing/demo-start -i
 ```
 
 ## Development

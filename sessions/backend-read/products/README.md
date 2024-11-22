@@ -33,7 +33,7 @@ Creating a Database and Inserting Multiple Documents:
 - Click "Insert Document".
 - A JSON editor will appear where you can insert these products.
 - Change to the view `{}` and copy-paste the data from the `products.json` file.
-- Download and extract the [resources](https://github.com/neuefische/web-exercises/blob/main/sessions/backend-read/products/README.md#resources).
+- Download and extract the [resources](https://github.com/wd-bootcamp/web-exercises/blob/main/sessions/backend-read/products/README.md#resources).
 - Copy-paste the data from the `products.json` file.
 - Click "Insert".
 

@@ -29,6 +29,6 @@ What should be the default data type for your album data? You need to make sure 
 <summary>🔒 Example Solution </summary>
 Only check this solution after giving this part a good try!
 
-[🔗 Part 3 Example Solution](https://github.com/neuefische/web-react-recap-project-solution/tree/part-3)
+[🔗 Part 3 Example Solution](https://github.com/wd-bootcamp/web-react-recap-project-solution/tree/part-3)
 
 </details>

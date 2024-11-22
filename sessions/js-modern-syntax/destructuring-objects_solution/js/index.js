@@ -7,7 +7,11 @@ Make sure to export your variable as shown in the example below for the tests to
 */
 
 const company = {
+<<<<<<< HEAD
+  name: "wd-bootcamp",
+=======
   name: "TechAcademy",
+>>>>>>> main
   course: "Web Development",
   location: "Hamburg",
 };
@@ -58,16 +62,32 @@ const person = {
 
 export const { lastName: personLastName, ...moreInformation } = person;
 
+<<<<<<< HEAD
+// EXERCISE 5
+// Rewrite the following function to use destructuring assignment for the
+// three variables "name", "country" and "numPeople"  it creates.
+// Hint: You may need to rename one of the properties during destructuring.
+=======
 /*
 EXERCISE 5
 Refactor the following function to use destructuring assignment for the
 three variables `name`, `country` and `numPeople`.
 Hint: You may need to rename one property during destructuring.
 */
+>>>>>>> main
 
 function logInfo(city) {
   const { name, country, population: numPeople } = city;
 
+<<<<<<< HEAD
+  console.log(
+    `${name} is in ${country} and has ${numPeople} inhabitants in it.`
+  );
+}
+
+// This is how you call it:
+logInfo({ name: "Marseille", country: "France", population: 861635 });
+=======
   return `${name} is in ${country} and has ${numPeople} inhabitants in it.`;
 }
 
@@ -75,3 +95,4 @@ function logInfo(city) {
 console.log(
   logInfo({ name: "Marseille", country: "France", population: 861635 })
 );
+>>>>>>> main

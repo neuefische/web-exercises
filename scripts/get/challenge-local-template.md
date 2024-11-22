@@ -1,5 +1,5 @@
 DO_THIS locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/PATH
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/PATH
 ```

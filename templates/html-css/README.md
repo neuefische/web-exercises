@@ -2,10 +2,10 @@
 
 This project was created from the neue fische `html-css` template.
 
-You can [🔗 **use this template on CodeSandbox**](https://codesandbox.io/p/sandbox/github/neuefische/web-exercises/tree/main/templates/html-css?file=/README.md) or locally by running this command in your Terminal:
+You can [🔗 **use this template on CodeSandbox**](https://codesandbox.io/p/sandbox/github/wd-bootcamp/web-exercises/tree/main/templates/html-css?file=/README.md) or locally by running this command in your Terminal:
 
 ```bash
-npx -y ghcd@latest neuefische/web-exercises/tree/main/templates/html-css my-app
+npx -y ghcd@latest wd-bootcamp/web-exercises/tree/main/templates/html-css my-app
 ```
 
 ## Development

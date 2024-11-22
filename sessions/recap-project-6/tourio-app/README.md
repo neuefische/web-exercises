@@ -16,7 +16,7 @@ Please follow the instructions given in the `README.md` file.
 2. Execute the following command to create a new project based on a template:
 
    ```bash
-   nnpx ghcd@latest neuefische/web-exercises/tree/main/sessions/recap-project-6/tourio-app -i
+   nnpx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/recap-project-6/tourio-app -i
    ```
 
 3. Create a new empty repository on GitHub and add all group members as collaborators.
@@ -28,7 +28,7 @@ Please follow the instructions given in the `README.md` file.
 
 ## Deploying Your Project
 
-Follow [these instructions](https://github.com/neuefische/web-protocol-template/blob/main/docs/deployment-vercel.md) to deploy the project to Vercel.
+Follow [these instructions](https://github.com/wd-bootcamp/cohort-template/blob/main/docs/deployment-vercel.md) to deploy the project to Vercel.
 
 ### Vercel and MongoDB Atlas (environment variables)
 
