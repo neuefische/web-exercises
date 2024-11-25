@@ -70,17 +70,12 @@ body {
   text-align: center;
 }
 
-.button {
-  appearance: none;
-  border: none;
+.link {
+  color: #fff;
+  text-decoration: none;
   background: #ff7dcb;
   padding: 10px;
   border-radius: 10px;
-}
-
-.button__link {
-  color: #fff;
-  text-decoration: none;
 }
 
 .footer {
