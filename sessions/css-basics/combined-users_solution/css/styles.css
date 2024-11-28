@@ -81,17 +81,20 @@ aside .name {
   margin: 0;
 }
 
-ul .user .bio {
-  display: none;
+aside .bio {
   font-size: 12px;
-  color: darkslategray;
   margin: 6px 0;
 }
 
-ul .user .location {
+aside .location {
   font-size: 10px;
-  font-weight: 600;
-  text-align: left;
+}
+
+ul .user .bio {
+  display: none;
+}
+
+ul .user .location {
   margin: 0;
   color: darkslategray;
 }
