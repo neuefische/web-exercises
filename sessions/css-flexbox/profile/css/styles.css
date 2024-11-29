@@ -16,7 +16,9 @@ body {
 
 .profile__image {
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 999px;
+  aspect-ratio: 1 / 1;
+  border: solid black 1px;
   max-width: 50%;
 }
 

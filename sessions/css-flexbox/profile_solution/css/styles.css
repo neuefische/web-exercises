@@ -20,9 +20,11 @@ body {
 }
 
 .profile__image {
-  border-radius: 50%;
+  object-fit: cover;
+  border-radius: 999px;
+  aspect-ratio: 1 / 1;
   max-width: 50%;
-  height: auto;
+  border: solid black 1px;
   align-self: center;
 }
 

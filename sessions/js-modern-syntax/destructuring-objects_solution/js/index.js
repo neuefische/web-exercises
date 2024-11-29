@@ -7,11 +7,7 @@ Make sure to export your variable as shown in the example below for the tests to
 */
 
 const company = {
-<<<<<<< HEAD
-  name: "wd-bootcamp",
-=======
   name: "TechAcademy",
->>>>>>> main
   course: "Web Development",
   location: "Hamburg",
 };
