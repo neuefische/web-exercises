@@ -67,7 +67,7 @@ might want to look up the "hidden" attribute.)
 
 The second page is the bookmarks page.
 
-- Create a new file called 'bookmarks.html'.
+- Create a new file called `bookmarks.html`.
 - Add content to the page. You can copy content of the `index.html` to save time.
 - Make sure that only bookmarked questions are on this page.
 - Update the navbar so that the bookmark icon is highlighted.
