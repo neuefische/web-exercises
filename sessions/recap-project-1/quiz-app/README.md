@@ -32,7 +32,7 @@ Download the required [Icons](https://lucide.dev/icons/) and save them in an "as
 
 ## Deploying Your Project
 
-🚀 Project Deployment to GitHub Pages is required: Please adhere to the deployment guidelines outlined in your [repository's documentation](https://github.com/wd-bootcamp/cohort-template/blob/main/docs/deployment-github-pages.md) for detailed instructions.
+🚀 Project Deployment to GitHub Pages is required: Please adhere to the deployment guidelines outlined in your repository's documentation (`docs/deployment-github-pages.md`) for detailed instructions.
 
 ## Tasks
 
