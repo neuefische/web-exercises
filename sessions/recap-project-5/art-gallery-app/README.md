@@ -324,7 +324,7 @@ Currently, all data is saved using `useState`, meaning it’s lost upon page ref
 
 - [ ] Use local storage to save information on art pieces, including favorites and comments.
 
-### 8. Show Color Palette
+### 9. Show Color Palette
 
 To enrich the information displayed on the details page, we’ll add a color palette for each art piece.
 
