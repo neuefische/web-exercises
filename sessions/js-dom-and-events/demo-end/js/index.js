@@ -1,4 +1,4 @@
-const bodyElement = document.querySelector("[data-js=root]");
+const bodyElement = document.querySelector('[data-js="root"]');
 const addButton = document.querySelector('[data-js="add-button"]');
 const removeButton = document.querySelector('[data-js="remove-button"]');
 const toggleButton = document.querySelector('[data-js="toggle-button"]');
