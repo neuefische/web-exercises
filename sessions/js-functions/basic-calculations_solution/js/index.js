@@ -2,12 +2,12 @@ console.clear();
 
 /*
 Complete the functions add, subtract, multiply, divide and remainder.
-They should return the result of the respective calculation:
+Each function should return the result of its respective calculation:
 - add: the sum of the two numbers
 - subtract: the difference between the two numbers
-- multiply: the product of the numbers
-- divide: the division of the two numbers
-- remainder: the modulo or remainder of "a modulo b"
+- multiply: the product of the two numbers
+- divide: the quotient of the two numbers
+- remainder: the remainder of "a divided by b"
 */
 
 function add(a, b) {
@@ -36,7 +36,8 @@ function remainder(a, b) {
 }
 
 /*
-These console.asserts check if your functions are correct. If nothing appears in your console it works properly!
+These console.assert statements verify that your functions work correctly.
+If there is no output in the console, your implementations are correct.
 */
 
 console.assert(

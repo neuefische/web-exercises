@@ -1,18 +1,26 @@
-# JavaScript exercises for basic functions
+# JS Functions: Basic Functions
+
+This challenge is about creating and using basic JavaScript functions.
 
 ## Tasks
 
+The tasks for this challenge are outlined in the comments inside the `./js/index.js` file.
+
 ## Notes
 
-- You only have to touch the [`js/index.js`](./js/index.js) file.
+- You only have to touch the `./js/index.js` file.
 
 ## Development
 
-To run project commands locally, you need to install the dependencies using `npm i` first.
+To work locally, please install the dependencies using `npm i` first.
 
-You can then use the following command:
+Run `npm run start` to start a development server and open [localhost:3000](http://localhost:3000) in a browser.
 
-- `npm run lint` to run the linter
+> Alternatively you can use the Live Preview Extension for Visual Studio Code to view this project.  
+> Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
 
-Use the Live Preview Extension for Visual Studio Code to view this project in the browser.  
-Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
+### Scripts
+
+You can use the following command:
+
+- `npm run start` to start a development server

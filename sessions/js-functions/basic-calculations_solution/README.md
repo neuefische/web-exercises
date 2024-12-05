@@ -1,21 +1,26 @@
-# basic calculations JS js-functions Session
+# JS Functions: Calculations
+
+In this exercise, you will practice writing and completing functions to perform basic mathematical operations.
 
 ## Tasks
 
-- Open the [`index.js`](./index.js) file and follow the instructions given there.
+Open the `./js/index.js` file and complete the tasks described in the comments.
 
 ## Notes
 
-- You only have to touch the [`index.js`](./index.js) file.
+- You only have to touch the `./index.js` file.
 
 ## Development
 
-To run project commands locally, you need to install the dependencies using `npm i` first.
+To work locally, please install the dependencies using `npm i` first.
 
-You can then use the following commands:
+Run `npm run start` to start a development server and open [localhost:3000](http://localhost:3000) in a browser.
 
-- `npm run start` to run the main JavaScript file using `node`
-- `npm run test` to run the tests once
-- `npm run lint` to run the linter
+> Alternatively you can use the Live Preview Extension for Visual Studio Code to view this project.  
+> Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
 
-> 💡 Since this project is JavaScript only there is nothing to preview in the browser. Use `npm run test` to check your progress or `npm run start` to run the code.
+### Scripts
+
+You can use the following command:
+
+- `npm run start` to start a development server

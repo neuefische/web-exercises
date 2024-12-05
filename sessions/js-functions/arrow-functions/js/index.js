@@ -2,7 +2,9 @@ console.clear();
 
 /*
 Rewrite the following functions as arrow functions.
-Use implicit returns when possible
+Use implicit returns when possible.
+
+HINT: You can find more information about arrow functions and implicit returns in the handout.
 */
 
 function getCurrentHour() {
