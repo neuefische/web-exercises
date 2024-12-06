@@ -37,7 +37,7 @@ const getCurrentHour = () => {
   }
 };
 
-console.log("Get current Hour", getCurrentHour());
+console.log("Get current hour: ", getCurrentHour());
 
 /*
 function getVectorLength(x, y, z) {
@@ -45,11 +45,9 @@ function getVectorLength(x, y, z) {
 }
 */
 
-const getVectorLength = (x, y, z) => {
-  return (x ** 2 + y ** 2 + z ** 2) ** 0.5;
-};
+const getVectorLength = (x, y, z) => (x ** 2 + y ** 2 + z ** 2) ** 0.5;
 
-console.log("Get vector length", getVectorLength(2, 2, 2));
+console.log("Get vector length: ", getVectorLength(2, 3, 4));
 
 /*
 function cleanInput(string) {
@@ -57,11 +55,9 @@ function cleanInput(string) {
 }
 */
 
-const cleanInput = (string) => {
-  return string.toLowerCase().trim();
-};
+const cleanInput = (string) => string.toLowerCase().trim();
 
-console.log("Clean input", cleanInput("shdsidhd OH"));
+console.log("Clean input: ", cleanInput("       Hello World!      "));
 
 /*
 Rewrite the following arrow functions as classic functions.
@@ -92,14 +88,16 @@ function isOddAndSmall(number) {
 
   return true;
 }
-console.log("Is odd and small", isOddAndSmall(7));
+
+console.log("Is odd and small: ", isOddAndSmall(7));
 
 // const add3 = (a, b, c) => a + b + c;
 
 function add3(a, b, c) {
   return a + b + c;
 }
-console.log("Add three", add3(7, 8, 9));
+
+console.log("Add three: ", add3(7, 8, 9));
 
 //const repeat10 = string => string.repeat(10);
 
@@ -107,4 +105,4 @@ function repeat10(string) {
   return string.repeat(10);
 }
 
-console.log("Repreat Ten", repeat10("J"));
+console.log("Repeat ten: ", repeat10("J"));

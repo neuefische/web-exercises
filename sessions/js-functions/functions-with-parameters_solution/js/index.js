@@ -6,12 +6,11 @@ logSeparator(1);
 */
 
 // Uncomment the next line of code and figure out why it does not work:
-// logText;
+logText();
 
 function logText() {
   console.log("This text does not appear. Why?");
 }
-logText();
 
 logSeparator(2);
 /*
@@ -19,21 +18,21 @@ logSeparator(2);
    Replace the function calls below with your new function.
 */
 
-function greetBob() {
-  console.log("Welcome Bob, good to see you again!");
-}
+// function greetBob() {
+//   console.log("Welcome Bob, good to see you again!");
+// }
 
-function greetAlice() {
-  console.log("Welcome Alice, good to see you again!");
-}
+// function greetAlice() {
+//   console.log("Welcome Alice, good to see you again!");
+// }
 
-function greetMary() {
-  console.log("Welcome Mary, good to see you again!");
-}
+// function greetMary() {
+//   console.log("Welcome Mary, good to see you again!");
+// }
 
-greetAlice();
-greetBob();
-greetMary();
+// greetAlice();
+// greetBob();
+// greetMary();
 
 // --v-- write your code here --v--
 
@@ -56,15 +55,16 @@ Note: Separation text refers to the text that is logged in the console before ea
 */
 
 // --v-- write your code here --v--
+
 function logSeparator(exerciseNumber) {
   console.log("-------------");
   console.log("Exercise " + exerciseNumber + ":");
 }
 
 // Alternative
-function logSeparator2(exercise) {
-  console.log(`------------- \nExercise ${exercise}:`);
-}
 
-logSeparator2(4);
+// function logSeparator(exercise) {
+//   console.log(`------------- \nExercise ${exercise}:`);
+// }
+
 // --^-- write your code here --^--

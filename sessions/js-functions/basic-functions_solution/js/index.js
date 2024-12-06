@@ -32,15 +32,23 @@ Then:
 */
 
 // --v-- write your code here --v--
-console.log(`Title: ${title}`);
-console.log("Author: " + author);
-console.log("Rating: " + rating);
-console.log("Number of Sales: " + numberOfSales);
 
+// console.log(`Title: ${title}`);
+// console.log("Author: " + author);
+// console.log("Rating: " + rating);
+// console.log("Number of Sales: " + numberOfSales);
+
+logBookData();
+
+numberOfSales = numberOfSales + 1000;
 rating = 7;
 
-// numberOfSales = numberOfSales + 1000;
-// numberOfSales = 24345;
+// console.log(`Title: ${title}`);
+// console.log("Author: " + author);
+// console.log("Rating: " + rating);
+// console.log("Number of Sales: " + numberOfSales);
+
+logBookData();
 
 // --^-- write your code here --^--
 
@@ -56,21 +64,13 @@ rating = 7;
 // --v-- write your code here --v--
 function logBookData() {
   console.log(title + ", " + author + ", " + rating + ", " + numberOfSales);
+  // console.log(`${title} ${author} ${rating} ${numberOfSales})
 }
-// console.log(`${title} ${author} ${rating} ${numberOfSales})
-logBookData();
 
-//numberOfSales = numberOfSales + 500;
+numberOfSales = numberOfSales + 500;
 logBookData();
-
-//numberOfSales = numberOfSales + 1000;
-logBookData();
-
-function logBookData2(numberOfSales) {
-  console.log(title + ", " + author + ", " + rating + ", " + numberOfSales);
-}
 
 numberOfSales = numberOfSales + 1000;
-logBookData2(numberOfSales);
+logBookData();
 
 // --^-- write your code here --^--
