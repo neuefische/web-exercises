@@ -1,13 +1,19 @@
 console.clear();
 
+// Function Declaration
+
 function printPersonalData() {
   const name = "Alex";
   const age = 24;
   console.log(name + " is " + age + " years old");
 }
 
+// Function Call
+
 printPersonalData();
 printPersonalData();
+
+// Function Parameters
 
 function printPersonalDataWithInputs(name, age) {
   console.log(name + " is " + age + " years old");
@@ -15,6 +21,8 @@ function printPersonalDataWithInputs(name, age) {
 
 printPersonalDataWithInputs("Max", 23);
 printPersonalDataWithInputs("Jordan", 25);
+
+// Return Value
 
 function calculateSum(a, b) {
   return a + b;
