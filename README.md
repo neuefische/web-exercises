@@ -1,11 +1,13 @@
-# web exercises
+# [DEPRECATED] web exercises
+
+> ❌ This repository is deprecated. The content was moved to a neutral organisation [wd-bootcamp](www.github.com/wd-bootcamp/web-exercises). Pushing to a remote branch in this repository is blocked. For backward compatibility (old links to resources in alumni repositories) this repository is not deleted.
 
 A monorepo containing exercises, challenges, demos and starters for the neue fische web bootcamps.
 All of the exercises are designed to work locally.
 
 <!-- toc -->
 
-- [web exercises](#web-exercises)
+- [\[DEPRECATED\] web exercises](#deprecated-web-exercises)
   - [Structure of this Repository](#structure-of-this-repository)
     - [Sessions and Exercises](#sessions-and-exercises)
     - [Templates](#templates)
