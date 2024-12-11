@@ -16,7 +16,7 @@ Please follow the instructions given in the `README.md` file.
 2. Execute the following command to create a new project based on a template:
 
    ```bash
-   nnpx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/recap-project-6/tourio-app -i
+   npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/recap-project-6/tourio-app -i
    ```
 
 3. Create a new empty repository on GitHub and add all group members as collaborators.
