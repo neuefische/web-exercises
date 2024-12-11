@@ -32,7 +32,7 @@ We will fetch all character information from a REST API specifically designed fo
 
 ## Deploying Your Project
 
-🚀 Project Deployment to GitHub Pages is required: Please adhere to the deployment guidelines outlined in your [repository's documentation](https://github.com/wd-bootcamp/cohort-template/blob/main/docs/deployment-github-pages.md) for detailed instructions.
+🚀 Project Deployment to GitHub Pages is required: Please adhere to the deployment guidelines outlined in your [repository's documentation](https://github.com/neuefische/web-protocol-template/blob/main/docs/deployment-vercel.md) for detailed instructions.
 
 ## Tasks
 
