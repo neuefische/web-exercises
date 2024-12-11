@@ -40,7 +40,7 @@ Download a [Favorite Icon](https://lucide.dev/icons/) and save it in an "assets"
 
 ## Deploying Your Project
 
-🚀 Project Deployment to Vercel is required: Please follow [these instructions](https://github.com/wd-bootcamp/cohort-template/blob/main/docs/deployment-vercel.md) to deploy the project on Vercel.
+🚀 Project Deployment to Vercel is required: Please follow [these instructions](https://github.com/neuefische/web-protocol-template/blob/main/docs/deployment-vercel.md) to deploy the project on Vercel.
 
 ## Tasks
 
