@@ -1,4 +1,4 @@
-# [DEPRECATED] web exercises
+# [DEPRECATED] web exercises - Testing PR Drafts
 
 > ❌ This repository is deprecated. The content was moved to a neutral organisation [wd-bootcamp](www.github.com/wd-bootcamp/web-exercises). Pushing to a remote branch in this repository is blocked. For backward compatibility (old links to resources in alumni repositories) this repository is not deleted.
 
@@ -7,7 +7,7 @@ All of the exercises are designed to work locally.
 
 <!-- toc -->
 
-- [\[DEPRECATED\] web exercises](#deprecated-web-exercises)
+- [\[DEPRECATED\] web exercises - Testing PR Drafts](#deprecated-web-exercises---testing-pr-drafts)
   - [Structure of this Repository](#structure-of-this-repository)
     - [Sessions and Exercises](#sessions-and-exercises)
     - [Templates](#templates)
